@@ -21,7 +21,6 @@ var searchData=
   ['array_3c_20keyval_20_2a_20_3e',['Array&lt; KeyVal * &gt;',['../classasl_1_1_array.html',1,'asl']]],
   ['array_3c_20keyval_20_2a_3e',['Array&lt; KeyVal *&gt;',['../classasl_1_1_array.html',1,'asl']]],
   ['array_3c_20keyval_20_3e',['Array&lt; KeyVal &gt;',['../classasl_1_1_array.html',1,'asl']]],
-  ['array_3c_20staticspace_3c_20t_20_3e_20_3e',['Array&lt; StaticSpace&lt; T &gt; &gt;',['../classasl_1_1_array.html',1,'asl']]],
   ['array_5f',['Array_',['../classasl_1_1_array__.html',1,'Array_&lt; T, N &gt;'],['../group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7',1,'asl::array_(const T &amp;a0, const T &amp;a1)']]],
   ['arraysize',['arraysize',['../classasl_1_1_ini_file.html#aa33b5f8eaec0698a767ddf40c02cda8f',1,'asl::IniFile']]],
   ['asl_5ffactory_5fexport',['ASL_FACTORY_EXPORT',['../group___factory.html#ga4b2f5e5bf38efc7dd8e6f63a4245b8aa',1,'Factory.h']]],

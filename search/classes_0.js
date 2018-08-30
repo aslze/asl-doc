@@ -14,6 +14,5 @@ var searchData=
   ['array_3c_20keyval_20_2a_20_3e',['Array&lt; KeyVal * &gt;',['../classasl_1_1_array.html',1,'asl']]],
   ['array_3c_20keyval_20_2a_3e',['Array&lt; KeyVal *&gt;',['../classasl_1_1_array.html',1,'asl']]],
   ['array_3c_20keyval_20_3e',['Array&lt; KeyVal &gt;',['../classasl_1_1_array.html',1,'asl']]],
-  ['array_3c_20staticspace_3c_20t_20_3e_20_3e',['Array&lt; StaticSpace&lt; T &gt; &gt;',['../classasl_1_1_array.html',1,'asl']]],
   ['array_5f',['Array_',['../classasl_1_1_array__.html',1,'asl']]]
 ];
