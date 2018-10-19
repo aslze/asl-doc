@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_2a',['operator*',['../classasl_1_1_vec2.html#acb5a7f9fcf884afd14c363ed8003cc5e',1,'asl::Vec2::operator*()'],['../classasl_1_1_vec3.html#a52755c5fe23242535c73c47d06de92c4',1,'asl::Vec3::operator*()'],['../classasl_1_1_vec4.html#a1a2538e254e9625634f7958fa684f919',1,'asl::Vec4::operator*()']]]
+  ['operator_2a',['operator*',['../classasl_1_1_vec2__.html#af389491dd3cf5df5ecfa7dab2982d9cd',1,'asl::Vec2_::operator*()'],['../classasl_1_1_vec3__.html#aebb5c221ce6016697cdcc605f23d0b6b',1,'asl::Vec3_::operator*()'],['../classasl_1_1_vec4__.html#a4908de90f34c0b2482551e9b80575547',1,'asl::Vec4_::operator*()']]]
 ];

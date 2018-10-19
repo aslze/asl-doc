@@ -29,6 +29,7 @@ var classasl_1_1_file =
     [ "read", "classasl_1_1_file.html#a7e5525948a27e6be0cd7e74552908339", null ],
     [ "remove", "classasl_1_1_file.html#a1f9c4a4bd47b7cd9beb431504c5ae46c", null ],
     [ "seek", "classasl_1_1_file.html#ab689b70128cb3a68db7c8d8ef57b5e3c", null ],
+    [ "setLastModified", "classasl_1_1_file.html#ab7c1b54a3c88ed2fa9dd02abf9177e30", null ],
     [ "size", "classasl_1_1_file.html#aa7428f0eb50010cc1ccb5f00bb76dc8d", null ],
     [ "write", "classasl_1_1_file.html#acc8c816d015fab3d9db6d3258ead9b5a", null ]
 ];

@@ -147,8 +147,9 @@ const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><
 const <a class="el" href="classasl_1_1_dic.html">Dic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_request.html#a8f7021addf75a280bf1aeac342412132">query</a> ()</td></tr>
 <tr class="memdesc:a8f7021addf75a280bf1aeac342412132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the query converted to a <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings. ">Dic</a>, assuming that it consists of keys and values like <code>key1=value1&amp;key2=value2</code>. <br /></td></tr>
 <tr class="separator:a8f7021addf75a280bf1aeac342412132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65ea91cf18b0515b16bbadcbe283576"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_request.html#aa65ea91cf18b0515b16bbadcbe283576">query</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;key)</td></tr>
-<tr class="memdesc:aa65ea91cf18b0515b16bbadcbe283576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with the named key in the query.  <a href="#aa65ea91cf18b0515b16bbadcbe283576">More...</a><br /></td></tr>
+<tr class="memitem:aa65ea91cf18b0515b16bbadcbe283576"><td class="memItemLeft" align="right" valign="top"><a id="aa65ea91cf18b0515b16bbadcbe283576"></a>
+const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_request.html#aa65ea91cf18b0515b16bbadcbe283576">query</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;key)</td></tr>
+<tr class="memdesc:aa65ea91cf18b0515b16bbadcbe283576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unescaped value associated with the named key in the query; For example if the query was <code>key1=value1&amp;key2=value2%26</code>, then <code>request.query("key2")</code> would return "value1&amp;". <br /></td></tr>
 <tr class="separator:aa65ea91cf18b0515b16bbadcbe283576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasl_1_1_http_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasl_1_1_http_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasl_1_1_http_message.html">HttpMessage</a></td></tr>
 <tr class="memitem:ad6e6f1651aef6b6ae1abafdac086367f inherit pub_methods_classasl_1_1_http_message"><td class="memItemLeft" align="right" valign="top"><a id="ad6e6f1651aef6b6ae1abafdac086367f"></a>
@@ -191,9 +192,11 @@ const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt; &amp;
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_message.html#a54804c489764ed1e4180199953fb360c">text</a> () const</td></tr>
 <tr class="memdesc:a54804c489764ed1e4180199953fb360c inherit pub_methods_classasl_1_1_http_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the message body as text. <br /></td></tr>
 <tr class="separator:a54804c489764ed1e4180199953fb360c inherit pub_methods_classasl_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5537dc1c93b1a4ed16388f3c93a25810 inherit pub_methods_classasl_1_1_http_message"><td class="memItemLeft" align="right" valign="top"><a id="a5537dc1c93b1a4ed16388f3c93a25810"></a>
-<a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_message.html#a5537dc1c93b1a4ed16388f3c93a25810">data</a> () const</td></tr>
-<tr class="memdesc:a5537dc1c93b1a4ed16388f3c93a25810 inherit pub_methods_classasl_1_1_http_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the message body interpreted as JSON. <br /></td></tr>
+<tr class="memitem:abdeca9d6e6ecf38c70a45ceb37bdf678 inherit pub_methods_classasl_1_1_http_message"><td class="memItemLeft" align="right" valign="top"><a id="abdeca9d6e6ecf38c70a45ceb37bdf678"></a>
+<a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_message.html#abdeca9d6e6ecf38c70a45ceb37bdf678">json</a> () const</td></tr>
+<tr class="memdesc:abdeca9d6e6ecf38c70a45ceb37bdf678 inherit pub_methods_classasl_1_1_http_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the message body interpreted as JSON. <br /></td></tr>
+<tr class="separator:abdeca9d6e6ecf38c70a45ceb37bdf678 inherit pub_methods_classasl_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5537dc1c93b1a4ed16388f3c93a25810 inherit pub_methods_classasl_1_1_http_message"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_message.html#a5537dc1c93b1a4ed16388f3c93a25810">data</a> () const</td></tr>
 <tr class="separator:a5537dc1c93b1a4ed16388f3c93a25810 inherit pub_methods_classasl_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa368ed9737dcf3ad9f6c7c993bff524c inherit pub_methods_classasl_1_1_http_message"><td class="memItemLeft" align="right" valign="top"><a id="aa368ed9737dcf3ad9f6c7c993bff524c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_message.html#aa368ed9737dcf3ad9f6c7c993bff524c">sendHeaders</a> ()</td></tr>
@@ -238,27 +241,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="aa65ea91cf18b0515b16bbadcbe283576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa65ea91cf18b0515b16bbadcbe283576">&#9670;&nbsp;</a></span>query()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classasl_1_1_string.html">String</a>&amp; query </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the value associated with the named key in the query. </p>
-<p>For example if the query was <code>key1=value1&amp;key2=value2</code>, then <code>request.query("key1")</code> would return "value1". </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Http.h</li>
 </ul>
@@ -268,7 +250,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>asl</b></li><li class="navelem"><a class="el" href="classasl_1_1_http_request.html">HttpRequest</a></li>
-    <li class="footer">Generated on Thu Aug 30 2018 23:49:40 for ASL by
+    <li class="footer">Generated on Fri Oct 19 2018 23:17:32 for ASL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

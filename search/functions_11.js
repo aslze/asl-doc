@@ -1,8 +1,6 @@
 var searchData=
 [
   ['rad2deg',['rad2deg',['../group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8',1,'asl']]],
-  ['random',['random',['../group___global.html#ga2557078c3d4996acbc0e5abaa9860785',1,'asl::random()'],['../group___global.html#gad257b4d48dbae1cd0ce00280a2e61a0f',1,'asl::random(double m)'],['../group___global.html#ga03dcd030f6a9d56f612072f3ad0670b8',1,'asl::random(double m, double M)'],['../group___global.html#gaf06ca15bbefe94093110198114d7b695',1,'asl::random(int m)'],['../group___global.html#ga0ffcd3d9511eced909538f1f6f47de34',1,'asl::random(int m, int M)']]],
-  ['random_5finit',['random_init',['../group___global.html#ga0b0d0e5ed19ba83b4c24787aa73f4c8b',1,'asl']]],
   ['read',['read',['../classasl_1_1_file.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::File::read()'],['../structasl_1_1_json.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Json::read()'],['../classasl_1_1_serial_port.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::SerialPort::read()'],['../classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf',1,'asl::Socket::read(void *data, int size)'],['../classasl_1_1_socket.html#a7c6ae5ceb5a015e1f11090189c210386',1,'asl::Socket::read(int n=-1)'],['../structasl_1_1_xdl.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Xdl::read()'],['../classasl_1_1_xml.html#aa124c1d2a7c4ba099cda66817bf87e88',1,'asl::Xml::read()']]],
   ['readas',['readAs',['../classasl_1_1_tabular_data_file.html#ac04976f1e027d2d2f353304e83b72e98',1,'asl::TabularDataFile']]],
   ['readerrors',['readErrors',['../classasl_1_1_process.html#a899113da3ae74c0afe0f93344940eea8',1,'asl::Process']]],
@@ -27,11 +25,11 @@ var searchData=
   ['resize',['resize',['../classasl_1_1_array.html#a24719f54c155101f4b5ff290b7163d64',1,'asl::Array::resize()'],['../classasl_1_1_string.html#a2f64ceab5cd4b9fa24f648f116b204a8',1,'asl::String::resize()'],['../classasl_1_1_var.html#a578be9c59132b8633a67a98c39318777',1,'asl::Var::resize()']]],
   ['rest',['rest',['../classasl_1_1_cmd_args.html#afea0ac04884773e17580d98db2dbe871',1,'asl::CmdArgs']]],
   ['reversed',['reversed',['../classasl_1_1_array.html#a5f162b368671bcfcd9777ea36630b974',1,'asl::Array']]],
-  ['rotate',['rotate',['../classasl_1_1_matrix3.html#adcbaeb532ea440ebbbdd1c6b61d888d4',1,'asl::Matrix3::rotate()'],['../classasl_1_1_matrix4.html#a93f99fedc85fe5cf6e6349e5dfa92899',1,'asl::Matrix4::rotate()'],['../classasl_1_1_vec2.html#ab4e5c2441d97e69ddedf2d0da708c400',1,'asl::Vec2::rotate()']]],
-  ['rotatex',['rotateX',['../classasl_1_1_matrix4.html#a8bf44a86bd7804343024c1c2d7080ef5',1,'asl::Matrix4']]],
-  ['rotatey',['rotateY',['../classasl_1_1_matrix4.html#a86ff550e61fb10500598bc6372b594a3',1,'asl::Matrix4']]],
-  ['rotatez',['rotateZ',['../classasl_1_1_matrix4.html#ab40d16ba6d6bfe6cd1a5bb460e0d64ac',1,'asl::Matrix4']]],
-  ['rotation',['rotation',['../classasl_1_1_matrix4.html#af4fba6607ff11dcf675217c8937a414a',1,'asl::Matrix4']]],
+  ['rotate',['rotate',['../classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d',1,'asl::Matrix3_::rotate()'],['../classasl_1_1_matrix4__.html#acafbf106f816e950062ca6d89495580d',1,'asl::Matrix4_::rotate()'],['../classasl_1_1_vec2__.html#a6444b0e6a62214f2807114d6fb1ab3f6',1,'asl::Vec2_::rotate()']]],
+  ['rotatex',['rotateX',['../classasl_1_1_matrix4__.html#acb726caf444ac7ae09bbdc6199d47f7c',1,'asl::Matrix4_']]],
+  ['rotatey',['rotateY',['../classasl_1_1_matrix4__.html#ae9feb7750675999bc309ed8e42b12024',1,'asl::Matrix4_']]],
+  ['rotatez',['rotateZ',['../classasl_1_1_matrix4__.html#a837898101d8fee5720d9ee5478ea9721',1,'asl::Matrix4_']]],
+  ['rotation',['rotation',['../classasl_1_1_matrix4__.html#a989d82725dedae9fa09dae58064a1e15',1,'asl::Matrix4_']]],
   ['run',['run',['../classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207',1,'asl::Process::run()'],['../classasl_1_1_thread.html#a72fcb26a14f6beb1c3fbace9ab3e7dbb',1,'asl::Thread::run()']]],
   ['running',['running',['../classasl_1_1_process.html#aaa6432a11cc8aa43cdcac30e43bf038f',1,'asl::Process']]]
 ];

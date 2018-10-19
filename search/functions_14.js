@@ -9,5 +9,6 @@ var searchData=
   ['usefile',['useFile',['../classasl_1_1_log.html#a6c18638ba33deef880b6237de733c762',1,'asl::Log']]],
   ['usekey',['useKey',['../classasl_1_1_tls_socket.html#a4c81123471118954f70549870448d4cb',1,'asl::TlsSocket']]],
   ['usequotes',['useQuotes',['../classasl_1_1_tabular_data_file.html#a83c8d6925be37cd9fb31a96a23e12cac',1,'asl::TabularDataFile']]],
-  ['usleep',['usleep',['../group___global.html#gaa85b7b1a3abd2e77e87c5f282f9003e4',1,'asl']]]
+  ['usleep',['usleep',['../group___global.html#gaa85b7b1a3abd2e77e87c5f282f9003e4',1,'asl']]],
+  ['uuid',['Uuid',['../classasl_1_1_uuid.html#a6d849a41808ba41ed235eaa912084449',1,'asl::Uuid']]]
 ];

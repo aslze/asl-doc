@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['t',['t',['../classasl_1_1_matrix4.html#a32ae2d650cde9640fa8a7c2ddc1eef94',1,'asl::Matrix4']]],
+  ['t',['t',['../classasl_1_1_matrix4__.html#ab3d27947f1ccfcbac86a417dbed4cad3',1,'asl::Matrix4_']]],
   ['tabulardatafile',['TabularDataFile',['../classasl_1_1_tabular_data_file.html#a572ff912d75e4a543813923079fc4b49',1,'asl::TabularDataFile::TabularDataFile(const String &amp;filename)'],['../classasl_1_1_tabular_data_file.html#abef3396527d157e0856ffd786efc561a',1,'asl::TabularDataFile::TabularDataFile(const String &amp;filename, const Array&lt; String &gt; &amp;cols)']]],
   ['tag',['tag',['../classasl_1_1_xml.html#ac04f20bf4ccd137d4ec07d328ec8813d',1,'asl::Xml']]],
   ['temp',['temp',['../classasl_1_1_file.html#a86198760704d1bcb96c3f42fc7dbdb2c',1,'asl::File']]],
@@ -12,8 +12,8 @@ var searchData=
   ['tostring',['toString',['../classasl_1_1_date.html#a0cdfd84b2149d827232f240a0fed3b6b',1,'asl::Date::toString()'],['../classasl_1_1_inet_address.html#a26b2839c6b49fe42966074e2375553d7',1,'asl::InetAddress::toString()']]],
   ['touppercase',['toUpperCase',['../classasl_1_1_string.html#a8bbea5921941917e2ba15aaefef33e35',1,'asl::String']]],
   ['toutcstring',['toUTCString',['../classasl_1_1_date.html#a47b24c5779cd9091e5345683994a3213',1,'asl::Date']]],
-  ['translate',['translate',['../classasl_1_1_matrix3.html#aef9fabe451915f56a950499ecc8a867c',1,'asl::Matrix3::translate()'],['../classasl_1_1_matrix4.html#af9bdac8abfa8769c58f76850477998f6',1,'asl::Matrix4::translate(const Vec3 &amp;)'],['../classasl_1_1_matrix4.html#a18ea626c35efbcbe73b308a2c397a4c0',1,'asl::Matrix4::translate(float x, float y, float z)']]],
-  ['translation',['translation',['../classasl_1_1_matrix4.html#a377bd08afe3f13cdf8aeef064ef3db89',1,'asl::Matrix4']]],
+  ['translate',['translate',['../classasl_1_1_matrix3__.html#a4607a4f020085df272d080e22a821264',1,'asl::Matrix3_::translate()'],['../classasl_1_1_matrix4__.html#a6ea3b33218fe35294646e68adb47ec81',1,'asl::Matrix4_::translate(const Vec3_&lt; T &gt; &amp;)'],['../classasl_1_1_matrix4__.html#a2a88c3b35a9873624211b4aafcf273a3',1,'asl::Matrix4_::translate(T x, T y, T z)']]],
+  ['translation',['translation',['../classasl_1_1_matrix4__.html#a31ab7738cbaba3f04623ffce6d72b402',1,'asl::Matrix4_']]],
   ['traverse',['traverse',['../classasl_1_1_xml.html#a6d8153e3dc5724c51f70c556b9a73837',1,'asl::Xml']]],
   ['trim',['trim',['../classasl_1_1_string.html#a86864c88ee12eb322f1645f238c1dbe5',1,'asl::String']]],
   ['trimmed',['trimmed',['../classasl_1_1_string.html#ae3d33bbd29d2104ba6c851815b992803',1,'asl::String']]],
