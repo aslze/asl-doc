@@ -8,7 +8,7 @@ var searchData=
   ['normal',['normal',['../classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033',1,'asl::Random::normal()'],['../classasl_1_1_random.html#ae2de995eec73d238d1a75ae07a8e95a8',1,'asl::Random::normal(double m, double s2)']]],
   ['normalized',['normalized',['../classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261',1,'asl::Vec2_::normalized()'],['../classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e',1,'asl::Vec3_::normalized()'],['../classasl_1_1_vec4__.html#a564fb691ab413062bfc8637076584eaf',1,'asl::Vec4_::normalized()']]],
   ['notin',['notIn',['../classasl_1_1_set.html#a647adcd79dcb6aab1012cd1ab53c5d4d',1,'asl::Set']]],
-  ['now',['now',['../classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58',1,'asl::Date::now()'],['../group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f',1,'asl::now()']]],
+  ['now',['now',['../classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58',1,'asl::Date::now()'],['../group___global.html#gaeee00efb34004ec2b57f90d5f729d499',1,'asl::now()']]],
   ['numchildren',['numChildren',['../classasl_1_1_xml.html#abac75603813a179b4d11347cda47769f',1,'asl::Xml']]],
   ['numcolumns',['numColumns',['../classasl_1_1_tabular_data_file.html#a46290746a0de85de8fcb5b7d70b833d5',1,'asl::TabularDataFile']]],
   ['numprocessors',['numProcessors',['../classasl_1_1_thread.html#a97c4d3433c0050cfbd008133d94892a6',1,'asl::Thread']]]

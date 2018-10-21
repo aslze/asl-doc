@@ -1,17 +1,19 @@
 var searchData=
 [
-  ['factory',['Factory',['../classasl_1_1_factory.html',1,'Factory&lt; T, K &gt;'],['../group___factory.html',1,'(Global Namespace)']]],
-  ['file',['File',['../classasl_1_1_file.html',1,'File'],['../classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b',1,'asl::File::File()'],['../classasl_1_1_file.html#ab5cfdf44e333e62051d88c279fa83b6c',1,'asl::File::File(const String &amp;name)'],['../classasl_1_1_file.html#a208d11162405a15bab26acdb81746562',1,'asl::File::File(const String &amp;name, OpenMode mode)']]],
-  ['filename',['fileName',['../classasl_1_1_ini_file.html#a307f4d44998fde78418ddab34e57b5be',1,'asl::IniFile']]],
-  ['files',['files',['../classasl_1_1_directory.html#a0b0bfe551db9a96c709f1c389a94c59d',1,'asl::Directory']]],
-  ['find',['find',['../classasl_1_1_map.html#a56f114da82dea494d96a2157a26d2902',1,'asl::Map::find()'],['../classasl_1_1_xml.html#a3369ef9bea53053e8f9dea52e049e5f4',1,'asl::Xml::find()']]],
-  ['findone',['findOne',['../classasl_1_1_xml.html#a0bfe8b55f3c888d1851f2740ab92887d',1,'asl::Xml']]],
-  ['finished',['finished',['../classasl_1_1_process.html#abfe11b2f0982fcc143be53a6e233ea36',1,'asl::Process']]],
-  ['firstbytes',['firstBytes',['../classasl_1_1_file.html#a12ffffa307f30e38668ec47f8f8c7b83',1,'asl::File']]],
-  ['fix',['fix',['../classasl_1_1_string.html#af2391a784a77bd3ab02cb00e50026487',1,'asl::String::fix()'],['../classasl_1_1_string.html#ad85f30cbce914593cf6aa4195886ae81',1,'asl::String::fix(int n)']]],
-  ['flush',['flush',['../classasl_1_1_file.html#adac116554b543b7c4228c018a85882f5',1,'asl::File']]],
-  ['flushevery',['flushEvery',['../classasl_1_1_tabular_data_file.html#a4d8024fde886b6a0304d9d6fd00b8e21',1,'asl::TabularDataFile']]],
-  ['foreach',['foreach',['../group___containers.html#gaf4fcfe5872c70e4998812a767e267925',1,'foreach1.h']]],
-  ['foreach2',['foreach2',['../group___containers.html#gada2796cfee1961387a09942600ecf5cd',1,'foreach1.h']]],
-  ['fract',['fract',['../group___global.html#ga7092e898a987d3fd7f760cac9c479fc7',1,'asl']]]
+  ['enable',['enable',['../classasl_1_1_log.html#a08d57afde6bfd8989add62a990b1245e',1,'asl::Log']]],
+  ['encode',['encode',['../structasl_1_1_json.html#a8394006f5f3da97f8f6eb5a9a2c186eb',1,'asl::Json::encode()'],['../structasl_1_1_xdl.html#a8394006f5f3da97f8f6eb5a9a2c186eb',1,'asl::Xdl::encode()'],['../classasl_1_1_xml.html#ad31e4f810cefd0e840fdaeb0b5859f31',1,'asl::Xml::encode()']]],
+  ['encodebase64',['encodeBase64',['../group___global.html#ga47687865c2314d8e644e941947c9ab82',1,'asl::encodeBase64(const Array&lt; byte &gt; &amp;s)'],['../group___global.html#ga6bae29174d19311edeb57f5570370c8b',1,'asl::encodeBase64(const String &amp;s)']]],
+  ['encodehex',['encodeHex',['../group___global.html#ga84e6d57f34660f25f64e4192e0af14ba',1,'asl']]],
+  ['encodeurl',['encodeUrl',['../group___global.html#ga37a551efdc9f842da850e5ad06f65fe5',1,'asl']]],
+  ['end',['end',['../classasl_1_1_file.html#af545ab12986d2fe462f1013c3bafb5f3',1,'asl::File']]],
+  ['endswith',['endsWith',['../classasl_1_1_string.html#aa993cfc949231fa88689e5d80a67b967',1,'asl::String::endsWith(const String &amp;s) const'],['../classasl_1_1_string.html#a4b9b22737918037d68c44b87266de188',1,'asl::String::endsWith(char c) const']]],
+  ['env',['env',['../classasl_1_1_process.html#a8cb553e83de017bfbfe33c627666f5ac',1,'asl::Process']]],
+  ['equals',['equals',['../classasl_1_1_path.html#a9826f57f70f9f055993464273e7cb272',1,'asl::Path']]],
+  ['errors',['errors',['../classasl_1_1_process.html#a2bb1bf434ba92b4f64d61b1c189cc64e',1,'asl::Process']]],
+  ['execute',['execute',['../classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f',1,'asl::Process']]],
+  ['exists',['exists',['../classasl_1_1_directory.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::Directory::exists()'],['../classasl_1_1_file.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::File::exists()']]],
+  ['exitstatus',['exitStatus',['../classasl_1_1_process.html#a674b88c61390cb2cd29f2eeddbe4a2a9',1,'asl::Process']]],
+  ['exp',['exp',['../classasl_1_1_complex.html#a0341a25e9a17ebb0a7f89496592e3579',1,'asl::Complex']]],
+  ['exp_5fi',['exp_i',['../classasl_1_1_complex.html#ad988e173c7234870690ea388e899a950',1,'asl::Complex::exp_i()'],['../classasl_1_1_complex.html#a2cd6f43b039c9a8e3090a506ef6b85a4',1,'asl::Complex::exp_i(T t) const']]],
+  ['extension',['extension',['../classasl_1_1_file.html#a532cbcfeabf2e538b6f8c84d6d94c9a6',1,'asl::File::extension()'],['../classasl_1_1_path.html#a532cbcfeabf2e538b6f8c84d6d94c9a6',1,'asl::Path::extension()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['threading',['Threading',['../group___threading.html',1,'']]]
+  ['socket_20communication',['Socket communication',['../group___sockets.html',1,'']]]
 ];

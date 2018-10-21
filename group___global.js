@@ -23,7 +23,7 @@ var group___global =
     [ "fract", "group___global.html#ga7092e898a987d3fd7f760cac9c479fc7", null ],
     [ "infinity", "group___global.html#gab4d190299eb4ca8933c1f9243fb383cf", null ],
     [ "nan", "group___global.html#gab85ae34914b58515796d573c63357dea", null ],
-    [ "now", "group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f", null ],
+    [ "now", "group___global.html#gaeee00efb34004ec2b57f90d5f729d499", null ],
     [ "rad2deg", "group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8", null ],
     [ "sleep", "group___global.html#ga260867c1920d22c6dba6f64cdc1db7f9", null ],
     [ "sqr", "group___global.html#gae4bfeae0f82d926c7875ced8c4a8e3df", null ],

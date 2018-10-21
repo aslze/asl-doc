@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('group___global.html','');});
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These utilities allow simple code like: </p>
 <p>Measuring time and sleeping for some time:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> t1 = <a class="code" href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">now</a>();</div><div class="line">sleep(0.5);         <span class="comment">// sleep for 500 ms</span></div><div class="line"><span class="keywordtype">double</span> t2 = <a class="code" href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">now</a>();</div><div class="line"><span class="keywordtype">double</span> elapsed = t2 - t1;  <span class="comment">// -&gt; around 0.5</span></div></div><!-- fragment --><p>Convert radians to degrees and limit to 0-360 deg interval:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> t1 = <a class="code" href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">now</a>();</div><div class="line">sleep(0.5);         <span class="comment">// sleep for 500 ms</span></div><div class="line"><span class="keywordtype">double</span> t2 = <a class="code" href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">now</a>();</div><div class="line"><span class="keywordtype">double</span> elapsed = t2 - t1;  <span class="comment">// -&gt; around 0.5</span></div></div><!-- fragment --><p>Convert radians to degrees and limit to 0-360 deg interval:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> degrees = <a class="code" href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">clamp</a>(<a class="code" href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">rad2deg</a>(angle), 0, 360);</div></div><!-- fragment --><p>Get random numbers in an interval:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> x = <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>(-1.0, 1.0);</div><div class="line"></div><div class="line">String item = names[ <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>( names.length() ) ];  <span class="comment">// pick random array item</span></div></div><!-- fragment --><p>Turn a file into a base64 representation:</p>
 <div class="fragment"><div class="line">TextFile(<span class="stringliteral">&quot;image.jpg.b64&quot;</span>).put( encodeBase64(File(<span class="stringliteral">&quot;image.jpg&quot;</span>).content()) );</div></div><!-- fragment --> <table class="memberdecls">
@@ -144,9 +144,9 @@ template&lt;class T &gt; </td></tr>
 <a class="el" href="classasl_1_1_string.html">String</a> ASL_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga895ee055739d8db3173b79993bce4c26">decodeUrl</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;params)</td></tr>
 <tr class="memdesc:ga895ee055739d8db3173b79993bce4c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a string with percent encoding. <br /></td></tr>
 <tr class="separator:ga895ee055739d8db3173b79993bce4c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a5d089416f7e5f28d51a3abefd6bd0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">now</a> ()</td></tr>
-<tr class="memdesc:ga8a5d089416f7e5f28d51a3abefd6bd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as a real number in seconds since a fixed epoch.  <a href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">More...</a><br /></td></tr>
-<tr class="separator:ga8a5d089416f7e5f28d51a3abefd6bd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeee00efb34004ec2b57f90d5f729d499"><td class="memItemLeft" align="right" valign="top">double ASL_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">now</a> ()</td></tr>
+<tr class="memdesc:gaeee00efb34004ec2b57f90d5f729d499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as a real number in seconds since a fixed epoch.  <a href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">More...</a><br /></td></tr>
+<tr class="separator:gaeee00efb34004ec2b57f90d5f729d499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa85b7b1a3abd2e77e87c5f282f9003e4"><td class="memItemLeft" align="right" valign="top"><a id="gaa85b7b1a3abd2e77e87c5f282f9003e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gaa85b7b1a3abd2e77e87c5f282f9003e4">usleep</a> (int us)</td></tr>
 <tr class="memdesc:gaa85b7b1a3abd2e77e87c5f282f9003e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the current thread sleep for the given number of microseconds. <br /></td></tr>
@@ -157,7 +157,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="separator:ga260867c1920d22c6dba6f64cdc1db7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga764968a708bc825f26560aa66b4a884e"><td class="memItemLeft" align="right" valign="top"><a id="ga764968a708bc825f26560aa66b4a884e"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga764968a708bc825f26560aa66b4a884e">decodeBase64</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
-<tr class="memdesc:ga764968a708bc825f26560aa66b4a884e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a base64 encoded string into a byte array. <br /></td></tr>
+<tr class="memdesc:ga764968a708bc825f26560aa66b4a884e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a base64 encoded string into a byte array; the string can contain whitespace. <br /></td></tr>
 <tr class="separator:ga764968a708bc825f26560aa66b4a884e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47687865c2314d8e644e941947c9ab82"><td class="memItemLeft" align="right" valign="top"><a id="ga47687865c2314d8e644e941947c9ab82"></a>
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga47687865c2314d8e644e941947c9ab82">encodeBase64</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt; &amp;s)</td></tr>
@@ -184,27 +184,19 @@ ASL_API <a class="el" href="classasl_1_1_random.html">Random</a>&#160;</td><td c
 <tr class="separator:ga06b58cda8825a240534d5615e399a311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga8a5d089416f7e5f28d51a3abefd6bd0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8a5d089416f7e5f28d51a3abefd6bd0f">&#9670;&nbsp;</a></span>now()</h2>
+<a id="gaeee00efb34004ec2b57f90d5f729d499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeee00efb34004ec2b57f90d5f729d499">&#9670;&nbsp;</a></span>now()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double asl::now </td>
+          <td class="memname">double ASL_API asl::now </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns the current time as a real number in seconds since a fixed epoch. </p>
@@ -217,7 +209,7 @@ ASL_API <a class="el" href="classasl_1_1_random.html">Random</a>&#160;</td><td c
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 19 2018 23:17:32 for ASL by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
