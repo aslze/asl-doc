@@ -81,9 +81,7 @@ $(document).ready(function(){initNavTree('group___global.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Global functions</div>  </div>
 </div><!--header-->
@@ -93,14 +91,8 @@ $(document).ready(function(){initNavTree('group___global.html','');});
 <p>Measuring time and sleeping for some time:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> t1 = <a class="code" href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">now</a>();</div><div class="line">sleep(0.5);         <span class="comment">// sleep for 500 ms</span></div><div class="line"><span class="keywordtype">double</span> t2 = <a class="code" href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">now</a>();</div><div class="line"><span class="keywordtype">double</span> elapsed = t2 - t1;  <span class="comment">// -&gt; around 0.5</span></div></div><!-- fragment --><p>Convert radians to degrees and limit to 0-360 deg interval:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> degrees = <a class="code" href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">clamp</a>(<a class="code" href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">rad2deg</a>(angle), 0, 360);</div></div><!-- fragment --><p>Get random numbers in an interval:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> x = <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>(-1.0, 1.0);</div><div class="line"></div><div class="line">String item = names[ <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>( names.length() ) ];  <span class="comment">// pick random array item</span></div></div><!-- fragment --><p>Turn a file into a base64 representation:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> x = random(-1.0, 1.0);</div><div class="line"></div><div class="line">String item = names[ random( names.length() ) ];  <span class="comment">// pick random array item</span></div></div><!-- fragment --><p>Turn a file into a base64 representation:</p>
 <div class="fragment"><div class="line">TextFile(<span class="stringliteral">&quot;image.jpg.b64&quot;</span>).put( encodeBase64(File(<span class="stringliteral">&quot;image.jpg&quot;</span>).content()) );</div></div><!-- fragment --> <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html">Random</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A random number generator.  <a href="classasl_1_1_random.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gab85ae34914b58515796d573c63357dea"><td class="memItemLeft" align="right" valign="top"><a id="gab85ae34914b58515796d573c63357dea"></a>
@@ -175,13 +167,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 ASL_API <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga8c072bc08f20927bda362aaeebdc1d4c">decodeHex</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;src)</td></tr>
 <tr class="memdesc:ga8c072bc08f20927bda362aaeebdc1d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a hexadecimal encoded string into a byte array. <br /></td></tr>
 <tr class="separator:ga8c072bc08f20927bda362aaeebdc1d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga06b58cda8825a240534d5615e399a311"><td class="memItemLeft" align="right" valign="top"><a id="ga06b58cda8825a240534d5615e399a311"></a>
-ASL_API <a class="el" href="classasl_1_1_random.html">Random</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a></td></tr>
-<tr class="memdesc:ga06b58cda8825a240534d5615e399a311"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global random number generator. <br /></td></tr>
-<tr class="separator:ga06b58cda8825a240534d5615e399a311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaeee00efb34004ec2b57f90d5f729d499"></a>

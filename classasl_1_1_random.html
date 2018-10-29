@@ -84,15 +84,15 @@ $(document).ready(function(){initNavTree('classasl_1_1_random.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classasl_1_1_random-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Random Class Reference<div class="ingroups"><a class="el" href="group___global.html">Global functions</a></div></div>  </div>
+<div class="title">Random Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A random number generator. </p>
 <p>Generates uniformly distributed pseudo-random numbers, except in the <code><a class="el" href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033" title="Returns a floating point random number with standard normal distribution. ">normal()</a></code> functions.</p>
-<div class="fragment"><div class="line">Random <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>;</div><div class="line"><span class="keywordtype">int</span> n = <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>(256);          <span class="comment">// get an integer between 0 and 255</span></div><div class="line"><span class="keywordtype">double</span> x = <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>(-1.5, 1.5); <span class="comment">// get a number between -1.5 and +1.5</span></div><div class="line"><span class="keywordtype">double</span> y = random.normal(10, 0.75); <span class="comment">// get a number between -1.5 and +1.5</span></div></div><!-- fragment --><p>The generator initially has a constant seed, so it will always produce the same sequence. You can change the seed with the <code><a class="el" href="classasl_1_1_random.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Initializes the seed for the random functions randomly. ">init()</a></code> function, either with values or with no arguments to automatically seed it randomly:</p>
+<div class="fragment"><div class="line">Random random;</div><div class="line"><span class="keywordtype">int</span> n = random(256);          <span class="comment">// get an integer between 0 and 255</span></div><div class="line"><span class="keywordtype">double</span> x = random(-1.5, 1.5); <span class="comment">// get a number between -1.5 and +1.5</span></div><div class="line"><span class="keywordtype">double</span> y = random.normal(10, 0.75); <span class="comment">// get a number between -1.5 and +1.5</span></div></div><!-- fragment --><p>The generator initially has a constant seed, so it will always produce the same sequence. You can change the seed with the <code><a class="el" href="classasl_1_1_random.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Initializes the seed for the random functions randomly. ">init()</a></code> function, either with values or with no arguments to automatically seed it randomly:</p>
 <div class="fragment"><div class="line">random.init();</div></div><!-- fragment --><p>Or you can create the object with a true argument to auto seed it :</p>
-<div class="fragment"><div class="line">Random <a class="code" href="group___global.html#ga06b58cda8825a240534d5615e399a311">random</a>(<span class="keyword">true</span>);</div></div><!-- fragment --><p>For compatibility with older code, there is a global <code>asl::random</code> object already random initialized ready for use. But it is recommended to use new <a class="el" href="classasl_1_1_random.html" title="A random number generator. ">Random</a> objects when separate sequences or multithreading are needed. </p>
+<div class="fragment"><div class="line">Random random(<span class="keyword">true</span>);</div></div><!-- fragment --><p>For compatibility with older code, there is a global <code>asl::random</code> object already random initialized ready for use. But it is recommended to use new <a class="el" href="classasl_1_1_random.html" title="A random number generator. ">Random</a> objects when separate sequences or multithreading are needed. </p>
 </div>
 <p><code>#include &lt;defs.h&gt;</code></p>
 <table class="memberdecls">
@@ -112,11 +112,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="separator:aacb4040c75e1681774e5de70387cc867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01bd0f39f361f439ddae732f185df858"><td class="memItemLeft" align="right" valign="top"><a id="a01bd0f39f361f439ddae732f185df858"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#a01bd0f39f361f439ddae732f185df858">operator()</a> (int m)</td></tr>
-<tr class="memdesc:a01bd0f39f361f439ddae732f185df858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an integer random number in the [0, M-1] interval. <br /></td></tr>
+<tr class="memdesc:a01bd0f39f361f439ddae732f185df858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an integer random number in the [0, M] interval. <br /></td></tr>
 <tr class="separator:a01bd0f39f361f439ddae732f185df858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab64a22e90e195653fcf4a69b103aec80"><td class="memItemLeft" align="right" valign="top"><a id="ab64a22e90e195653fcf4a69b103aec80"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#ab64a22e90e195653fcf4a69b103aec80">operator()</a> (int m, int M)</td></tr>
-<tr class="memdesc:ab64a22e90e195653fcf4a69b103aec80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an integer random number in the [m, M-1] interval. <br /></td></tr>
+<tr class="memdesc:ab64a22e90e195653fcf4a69b103aec80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an integer random number in the [m, M] interval. <br /></td></tr>
 <tr class="separator:ab64a22e90e195653fcf4a69b103aec80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0706c04d7c5b32dd0f7596fba6fc033"><td class="memItemLeft" align="right" valign="top"><a id="aa0706c04d7c5b32dd0f7596fba6fc033"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033">normal</a> ()</td></tr>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['rad2deg',['rad2deg',['../group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8',1,'asl']]],
-  ['random',['Random',['../classasl_1_1_random.html',1,'Random'],['../group___global.html#ga06b58cda8825a240534d5615e399a311',1,'asl::random()']]],
+  ['random',['Random',['../classasl_1_1_random.html',1,'asl']]],
   ['read',['read',['../classasl_1_1_file.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::File::read()'],['../structasl_1_1_json.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Json::read()'],['../classasl_1_1_serial_port.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::SerialPort::read()'],['../classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf',1,'asl::Socket::read(void *data, int size)'],['../classasl_1_1_socket.html#a7c6ae5ceb5a015e1f11090189c210386',1,'asl::Socket::read(int n=-1)'],['../structasl_1_1_xdl.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Xdl::read()'],['../classasl_1_1_xml.html#aa124c1d2a7c4ba099cda66817bf87e88',1,'asl::Xml::read()']]],
   ['readas',['readAs',['../classasl_1_1_tabular_data_file.html#ac04976f1e027d2d2f353304e83b72e98',1,'asl::TabularDataFile']]],
   ['readerrors',['readErrors',['../classasl_1_1_process.html#a899113da3ae74c0afe0f93344940eea8',1,'asl::Process']]],
