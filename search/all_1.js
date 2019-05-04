@@ -30,5 +30,5 @@ var searchData=
   ['available',['available',['../classasl_1_1_serial_port.html#a4549a76725f2e4c013e4d57018366109',1,'asl::SerialPort::available()'],['../classasl_1_1_socket.html#a4549a76725f2e4c013e4d57018366109',1,'asl::Socket::available()']]],
   ['axis',['axis',['../classasl_1_1_quaternion__.html#a6b365d4d62dd5c060e02dc0bc2d7cfd6',1,'asl::Quaternion_']]],
   ['axisangle',['axisAngle',['../classasl_1_1_quaternion__.html#ae310084d484e6085740c5f2625c81cd5',1,'asl::Quaternion_']]],
-  ['asl_20_2d_20all_2dpurpose_20simple_20library',['ASL - All-purpose Simple Library',['../index.html',1,'']]]
+  ['asl_20_2d_20all_2dpurpose_20simple_20_25library',['ASL - All-purpose Simple %Library',['../index.html',1,'']]]
 ];
