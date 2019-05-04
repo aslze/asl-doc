@@ -7,5 +7,6 @@ var modules =
     [ "Factory class and macros", "group___factory.html", "group___factory" ],
     [ "Socket communication", "group___sockets.html", "group___sockets" ],
     [ "Reference-counted objects", "group___shared.html", null ],
-    [ "3D Math", "group___math3_d.html", "group___math3_d" ]
+    [ "3D Math", "group___math3_d.html", "group___math3_d" ],
+    [ "Binary data", "group___binary.html", "group___binary" ]
 ];

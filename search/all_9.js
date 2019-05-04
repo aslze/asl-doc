@@ -6,7 +6,7 @@ var searchData=
   ['inetaddress',['InetAddress',['../classasl_1_1_inet_address.html',1,'InetAddress'],['../classasl_1_1_inet_address.html#ac962edb5ea3a16e8dd6d18fa14eabb1d',1,'asl::InetAddress::InetAddress()']]],
   ['infinity',['infinity',['../group___global.html#gab4d190299eb4ca8933c1f9243fb383cf',1,'asl']]],
   ['inifile',['IniFile',['../classasl_1_1_ini_file.html',1,'IniFile'],['../classasl_1_1_ini_file.html#a1e97abb845618efac593d45810a02673',1,'asl::IniFile::IniFile()']]],
-  ['init',['init',['../classasl_1_1_random.html#a6d1c3737a68f8f0a66d439fb7548dcb9',1,'asl::Random::init(ULong s1, ULong s2)'],['../classasl_1_1_random.html#a02fd73d861ef2e4aabb38c0c9ff82947',1,'asl::Random::init()']]],
+  ['init',['init',['../classasl_1_1_random.html#a6d1c3737a68f8f0a66d439fb7548dcb9',1,'asl::Random::init(ULong s1, ULong s2)'],['../classasl_1_1_random.html#a1e55087f09d3a8bfb68e804694e9c729',1,'asl::Random::init(bool fast=true)']]],
   ['insert',['insert',['../classasl_1_1_array.html#ae0f6d19157f3323b20635d0170a4e143',1,'asl::Array::insert()'],['../classasl_1_1_xml.html#acaaf899d75ca347eb14093819cf907a8',1,'asl::Xml::insert()']]],
   ['instance',['instance',['../classasl_1_1_singleton.html#ade6193af70013295b23e0318cbb276bd',1,'asl::Singleton']]],
   ['interpolate',['interpolate',['../classasl_1_1_pose.html#a8de0150468aef81ba29950835524d983',1,'asl::Pose']]],

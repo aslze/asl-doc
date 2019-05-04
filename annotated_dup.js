@@ -47,6 +47,7 @@ var annotated_dup =
       [ "SocketServer", "classasl_1_1_socket_server.html", "classasl_1_1_socket_server" ],
       [ "Stack", "classasl_1_1_stack.html", "classasl_1_1_stack" ],
       [ "StreamBuffer", "classasl_1_1_stream_buffer.html", "classasl_1_1_stream_buffer" ],
+      [ "StreamBufferReader", "classasl_1_1_stream_buffer_reader.html", "classasl_1_1_stream_buffer_reader" ],
       [ "String", "classasl_1_1_string.html", "classasl_1_1_string" ],
       [ "TabularDataFile", "classasl_1_1_tabular_data_file.html", "classasl_1_1_tabular_data_file" ],
       [ "TextFile", "classasl_1_1_text_file.html", "classasl_1_1_text_file" ],

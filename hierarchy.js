@@ -11,7 +11,7 @@ var hierarchy =
     ] ],
     [ "Array< asl::Thread >", "classasl_1_1_array.html", null ],
     [ "Array< asl::Var >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::WebSocket *>", "classasl_1_1_array.html", null ],
+    [ "Array< asl::WebSocket * >", "classasl_1_1_array.html", null ],
     [ "Array< asl::Xml >", "classasl_1_1_array.html", null ],
     [ "Array< byte >", "classasl_1_1_array.html", [
       [ "StreamBuffer", "classasl_1_1_stream_buffer.html", null ]
@@ -23,7 +23,6 @@ var hierarchy =
       [ "Stack< Context >", "classasl_1_1_stack.html", null ]
     ] ],
     [ "Array< KeyVal * >", "classasl_1_1_array.html", null ],
-    [ "Array< KeyVal *>", "classasl_1_1_array.html", null ],
     [ "Array< KeyVal >", "classasl_1_1_array.html", null ],
     [ "Array_< T, N >", "classasl_1_1_array__.html", null ],
     [ "CmdArgs", "classasl_1_1_cmd_args.html", null ],
@@ -97,6 +96,7 @@ var hierarchy =
       [ "HttpServer", "classasl_1_1_http_server.html", null ],
       [ "WebSocketServer", "classasl_1_1_web_socket_server.html", null ]
     ] ],
+    [ "StreamBufferReader", "classasl_1_1_stream_buffer_reader.html", null ],
     [ "String", "classasl_1_1_string.html", null ],
     [ "TabularDataFile", "classasl_1_1_tabular_data_file.html", null ],
     [ "Thread", "classasl_1_1_thread.html", null ],

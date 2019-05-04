@@ -5,11 +5,11 @@ var classasl_1_1_vec2__ =
     [ "length", "classasl_1_1_vec2__.html#a319b1046f6f739132918623ea8aa25d8", null ],
     [ "length2", "classasl_1_1_vec2__.html#afa9fffbf60ee884d989d5e337db4c3ca", null ],
     [ "normalized", "classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261", null ],
+    [ "operator *", "classasl_1_1_vec2__.html#a3dab36702478468145019323d34fbb2d", null ],
+    [ "operator *", "classasl_1_1_vec2__.html#a91054f8ab81858e2e1618b28c93196c1", null ],
+    [ "operator *=", "classasl_1_1_vec2__.html#abc27b3f40cba1e8d60abf74bdc6a57b4", null ],
     [ "operator!", "classasl_1_1_vec2__.html#a7b164ea42c7c29a5876f7aec20a45544", null ],
     [ "operator!=", "classasl_1_1_vec2__.html#a6dab3c99ad474f8d32c91f6cc9f942f0", null ],
-    [ "operator*", "classasl_1_1_vec2__.html#acd32a8af766f8e60e26a68e2995a9782", null ],
-    [ "operator*", "classasl_1_1_vec2__.html#a0aba407870a1441cd39889f43cd22297", null ],
-    [ "operator*=", "classasl_1_1_vec2__.html#a14ada57b0625fbd2689c9ad70bc634b8", null ],
     [ "operator+", "classasl_1_1_vec2__.html#abe282bfcf8c123b44c17dbd2bc136b6e", null ],
     [ "operator+=", "classasl_1_1_vec2__.html#a20b3287a24919103a677f584ce23f0f6", null ],
     [ "operator-", "classasl_1_1_vec2__.html#ae096299983e1a35bdc94118b86ae3a0b", null ],
@@ -23,5 +23,5 @@ var classasl_1_1_vec2__ =
     [ "perpend", "classasl_1_1_vec2__.html#a4e01e6bb88879b42dcaf1de62e7a0f60", null ],
     [ "rotate", "classasl_1_1_vec2__.html#a6444b0e6a62214f2807114d6fb1ab3f6", null ],
     [ "set", "classasl_1_1_vec2__.html#ac3e4c41b2052a34df96658084fa734e7", null ],
-    [ "operator*", "classasl_1_1_vec2__.html#af389491dd3cf5df5ecfa7dab2982d9cd", null ]
+    [ "operator *", "classasl_1_1_vec2__.html#a36e241e7fbf0b79a6fd20141b449a4f8", null ]
 ];

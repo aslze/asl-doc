@@ -15,5 +15,6 @@ var searchData=
   ['stack_3c_20container_20_3e',['Stack&lt; Container &gt;',['../classasl_1_1_stack.html',1,'asl']]],
   ['stack_3c_20context_20_3e',['Stack&lt; Context &gt;',['../classasl_1_1_stack.html',1,'asl']]],
   ['streambuffer',['StreamBuffer',['../classasl_1_1_stream_buffer.html',1,'asl']]],
+  ['streambufferreader',['StreamBufferReader',['../classasl_1_1_stream_buffer_reader.html',1,'asl']]],
   ['string',['String',['../classasl_1_1_string.html',1,'asl']]]
 ];

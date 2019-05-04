@@ -1,3 +1,26 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "ASL", "index.html", [
@@ -23,9 +46,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classasl_1_1_map.html#a168902c408924506c6fdbec55457a06d",
-"classasl_1_1_tabular_data_file.html#a46290746a0de85de8fcb5b7d70b833d5",
-"group___containers.html#gada2796cfee1961387a09942600ecf5cd"
+"classasl_1_1_map.html#a0ec905121b18af11dfd2dec7ea7e9e95",
+"classasl_1_1_string.html#ac5bdc0b083bdc3725129fb934536d946",
+"functions_q.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
