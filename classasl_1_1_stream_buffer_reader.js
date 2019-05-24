@@ -1,7 +1,7 @@
 var classasl_1_1_stream_buffer_reader =
 [
-    [ "StreamBufferReader", "classasl_1_1_stream_buffer_reader.html#a5d61a2758f202d511a52b0bd0835a08a", null ],
-    [ "StreamBufferReader", "classasl_1_1_stream_buffer_reader.html#a70294eb8b5adffb78749e01a50d8c095", null ],
+    [ "StreamBufferReader", "classasl_1_1_stream_buffer_reader.html#ab10dce9a7e47723e9731f92e822e3e62", null ],
+    [ "StreamBufferReader", "classasl_1_1_stream_buffer_reader.html#a9f10dc05a144b1980abf1bb7c5accd98", null ],
     [ "operator>>", "classasl_1_1_stream_buffer_reader.html#a6627bdb43a902651f349b8404df4837e", null ],
     [ "operator>>", "classasl_1_1_stream_buffer_reader.html#a8932c8984f6ab20914e56d9e7e7f4ef9", null ],
     [ "operator>>", "classasl_1_1_stream_buffer_reader.html#a2dd424171f17f668b9740abe49127220", null ],

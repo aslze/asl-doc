@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_stream_buffer.html','');}
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a buffer that can be written to as a binary stream. </p>
 <p>The buffer is initially empty and grows as you append variables. You can change endianness at any moment.</p>
-<p>You can then get the content as an <a class="el" href="classasl_1_1_array.html">Array&lt;byte&gt;</a> and for example write it to a file or send it through a socket. </p><div class="fragment"><div class="line">StreamBuffer buffer(StreamBuffer::BIGENDIAN);</div><div class="line">buffer &lt;&lt; 1 &lt;&lt; <span class="stringliteral">&quot;abc&quot;</span> &lt;&lt; 1.5 &lt;&lt; short(33);</div><div class="line"></div><div class="line">File(<span class="stringliteral">&quot;data&quot;</span>).put(buffer);</div><div class="line"></div><div class="line">socket &lt;&lt; *buffer;</div></div><!-- fragment --> </div>
+<p>You can then get the content as an <a class="el" href="classasl_1_1_array.html">Array&lt;byte&gt;</a> and for example write it to a file or send it through a socket. </p><div class="fragment"><div class="line">StreamBuffer buffer(ENDIAN_BIG);</div><div class="line">buffer &lt;&lt; 1 &lt;&lt; <span class="stringliteral">&quot;abc&quot;</span> &lt;&lt; 1.5 &lt;&lt; short(33);</div><div class="line"></div><div class="line">File(<span class="stringliteral">&quot;data&quot;</span>).put(buffer);</div><div class="line"></div><div class="line">socket &lt;&lt; *buffer;</div></div><!-- fragment --> </div>
 <p><code>#include &lt;StreamBuffer.h&gt;</code></p>
 
 <p>Inherits <a class="el" href="classasl_1_1_array.html">Array&lt; byte &gt;</a>.</p>
@@ -113,6 +113,22 @@ template&lt;class T &gt; </td></tr>
 <tr class="memdesc:addfe006585416e46b1bb42533f8ec36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes variable x to the buffer respecting endianness in binary form. <br /></td></tr>
 <tr class="separator:addfe006585416e46b1bb42533f8ec36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasl_1_1_array"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasl_1_1_array')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasl_1_1_array.html">Array&lt; byte &gt;</a></td></tr>
+<tr class="memitem:af9474cac29f3177edf5e8d72ea4a440c inherit pub_methods_classasl_1_1_array"><td class="memItemLeft" align="right" valign="top"><a id="af9474cac29f3177edf5e8d72ea4a440c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#af9474cac29f3177edf5e8d72ea4a440c">Array</a> ()</td></tr>
+<tr class="memdesc:af9474cac29f3177edf5e8d72ea4a440c inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty array. <br /></td></tr>
+<tr class="separator:af9474cac29f3177edf5e8d72ea4a440c inherit pub_methods_classasl_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af12f398329757b4f8a3ec2d26ba72d inherit pub_methods_classasl_1_1_array"><td class="memItemLeft" align="right" valign="top"><a id="a7af12f398329757b4f8a3ec2d26ba72d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a7af12f398329757b4f8a3ec2d26ba72d">Array</a> (int n)</td></tr>
+<tr class="memdesc:a7af12f398329757b4f8a3ec2d26ba72d inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array of n elements. <br /></td></tr>
+<tr class="separator:a7af12f398329757b4f8a3ec2d26ba72d inherit pub_methods_classasl_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f53f01412b964613461ea84889c61d inherit pub_methods_classasl_1_1_array"><td class="memItemLeft" align="right" valign="top"><a id="af5f53f01412b964613461ea84889c61d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#af5f53f01412b964613461ea84889c61d">Array</a> (const byte *p, int n)</td></tr>
+<tr class="memdesc:af5f53f01412b964613461ea84889c61d inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array of n elements and copies them from the pointer p. <br /></td></tr>
+<tr class="separator:af5f53f01412b964613461ea84889c61d inherit pub_methods_classasl_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae990240872f862a0e9b65daee4de9aed inherit pub_methods_classasl_1_1_array"><td class="memItemLeft" align="right" valign="top"><a id="ae990240872f862a0e9b65daee4de9aed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#ae990240872f862a0e9b65daee4de9aed">Array</a> (int n, const byte &amp;x)</td></tr>
+<tr class="memdesc:ae990240872f862a0e9b65daee4de9aed inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array of n elements and gives them the value x. <br /></td></tr>
+<tr class="separator:ae990240872f862a0e9b65daee4de9aed inherit pub_methods_classasl_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad77fc28a20608f93aea09399c719bf30 inherit pub_methods_classasl_1_1_array"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#ad77fc28a20608f93aea09399c719bf30">operator=</a> (const <a class="el" href="classasl_1_1_array.html">Array</a> &amp;b)</td></tr>
 <tr class="memdesc:ad77fc28a20608f93aea09399c719bf30 inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns array b into this array by reference.  <a href="classasl_1_1_array.html#ad77fc28a20608f93aea09399c719bf30">More...</a><br /></td></tr>
 <tr class="separator:ad77fc28a20608f93aea09399c719bf30 inherit pub_methods_classasl_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>

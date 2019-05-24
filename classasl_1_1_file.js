@@ -23,6 +23,7 @@ var classasl_1_1_file =
     [ "operator bool", "classasl_1_1_file.html#a67b76affb3b5d35fa419ac234144038b", null ],
     [ "operator<<", "classasl_1_1_file.html#af816897b3f872dab78829867f7d49f26", null ],
     [ "operator==", "classasl_1_1_file.html#a4f2ff8eb5dbf0585392fec0c85c21c8f", null ],
+    [ "operator>>", "classasl_1_1_file.html#abbcec1643bb62b010f6b3435e4228bde", null ],
     [ "path", "classasl_1_1_file.html#abba96bc56bc6b0d69a3712f250ace70a", null ],
     [ "position", "classasl_1_1_file.html#a4ae6c1ba17d17d02a2a27dc227149a1b", null ],
     [ "put", "classasl_1_1_file.html#af8f3ae63cd1e2cb1743923b39ba22795", null ],
