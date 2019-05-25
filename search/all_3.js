@@ -2,7 +2,7 @@ var searchData=
 [
   ['catalog',['catalog',['../classasl_1_1_factory.html#ac71fc66b15fbc7458243d95c7a3f73c2',1,'asl::Factory']]],
   ['change',['change',['../classasl_1_1_directory.html#a339e54dd1ac4bae6c050b61dc97b6518',1,'asl::Directory']]],
-  ['chars',['chars',['../classasl_1_1_string.html#ac5bdc0b083bdc3725129fb934536d946',1,'asl::String::chars()'],['../classasl_1_1_string.html#a5e19e3c3799b73edb06c12e438ec59e1',1,'asl::String::chars() const']]],
+  ['chars',['chars',['../classasl_1_1_string.html#a5e19e3c3799b73edb06c12e438ec59e1',1,'asl::String']]],
   ['child',['child',['../classasl_1_1_xml.html#ad80f32bb5fc61e703f5c33d5f8e540bc',1,'asl::Xml']]],
   ['children',['children',['../classasl_1_1_xml.html#a0d2a6089cbc5cdf630fa006b69f6f0d8',1,'asl::Xml::children() const'],['../classasl_1_1_xml.html#a58fbcdff59808056fa63184458f78f60',1,'asl::Xml::children(const String &amp;tag)']]],
   ['clamp',['clamp',['../group___global.html#ga1158c41b115d2e2bae4c3020a427127c',1,'asl']]],
@@ -20,7 +20,7 @@ var searchData=
   ['concat',['concat',['../classasl_1_1_array.html#a81e91ddf1e762cd9a915507eb1aca3c2',1,'asl::Array']]],
   ['condition',['Condition',['../classasl_1_1_condition.html',1,'Condition'],['../classasl_1_1_condition.html#aa41f69fe2496271c3e796a147cc5455e',1,'asl::Condition::Condition()']]],
   ['config',['config',['../classasl_1_1_serial_port.html#a7f8416f0b5aa2acfa235321296c0c3d9',1,'asl::SerialPort']]],
-  ['conj',['conj',['../classasl_1_1_complex.html#a1345a0486780ffc971e8923a659d0038',1,'asl::Complex']]],
+  ['conj',['conj',['../classasl_1_1_complex.html#a1345a0486780ffc971e8923a659d0038',1,'asl::Complex::conj()'],['../classasl_1_1_quaternion__.html#a8379ed3675af9a2a13a7e6139e44cefb',1,'asl::Quaternion_::conj()']]],
   ['connect',['connect',['../classasl_1_1_socket.html#ae8d90dc9077858552aa2e4d297ba5657',1,'asl::Socket::connect(const String &amp;host, int port)'],['../classasl_1_1_socket.html#a835bceb441732a46f630d199bdd9c14a',1,'asl::Socket::connect(const String &amp;host)'],['../classasl_1_1_web_socket.html#ab7435c2d095801af47e247b9f4b512a4',1,'asl::WebSocket::connect()']]],
   ['console',['Console',['../classasl_1_1_console.html',1,'asl']]],
   ['containers',['Containers',['../group___containers.html',1,'']]],

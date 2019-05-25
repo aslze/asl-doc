@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_quaternion__.html','');})
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_quaternion__-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Quaternion_&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___math3_d.html">3D Math</a></div></div>  </div>
@@ -103,14 +104,14 @@ class asl::Quaternion_&lt; T &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae59d86f51fcec28dbfbc73d2139ec4ea"><td class="memItemLeft" align="right" valign="top"><a id="ae59d86f51fcec28dbfbc73d2139ec4ea"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#ae59d86f51fcec28dbfbc73d2139ec4ea">Quaternion_</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;v, T t)</td></tr>
-<tr class="memdesc:ae59d86f51fcec28dbfbc73d2139ec4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion representing a rotation of angle <code>t</code> around axis <code>v</code> <br /></td></tr>
-<tr class="separator:ae59d86f51fcec28dbfbc73d2139ec4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e0b5ac6e81b41695486b42d162a70ea"><td class="memItemLeft" align="right" valign="top"><a id="a5e0b5ac6e81b41695486b42d162a70ea"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a5e0b5ac6e81b41695486b42d162a70ea">Quaternion_</a> (T _r, T _x, T _y, T _z)</td></tr>
-<tr class="memdesc:a5e0b5ac6e81b41695486b42d162a70ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion by its 4 elements. <br /></td></tr>
-<tr class="separator:a5e0b5ac6e81b41695486b42d162a70ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5ef75e45f1c7d95e00c6c9be0dedaf"><td class="memItemLeft" align="right" valign="top"><a id="a5c5ef75e45f1c7d95e00c6c9be0dedaf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a5c5ef75e45f1c7d95e00c6c9be0dedaf">Quaternion_</a> (T w, T x, T y, T z)</td></tr>
+<tr class="memdesc:a5c5ef75e45f1c7d95e00c6c9be0dedaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from its 4 elements. <br /></td></tr>
+<tr class="separator:a5c5ef75e45f1c7d95e00c6c9be0dedaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709b89781d634de3323f14437d28a0a2"><td class="memItemLeft" align="right" valign="top"><a id="a709b89781d634de3323f14437d28a0a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a709b89781d634de3323f14437d28a0a2">Quaternion_</a> (T w, const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;v)</td></tr>
+<tr class="memdesc:a709b89781d634de3323f14437d28a0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from a scalar and a vector. <br /></td></tr>
+<tr class="separator:a709b89781d634de3323f14437d28a0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c14f664b5a14473eadf565b05ce54d9"><td class="memItemLeft" align="right" valign="top"><a id="a0c14f664b5a14473eadf565b05ce54d9"></a>
 T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a0c14f664b5a14473eadf565b05ce54d9">angle</a> () const</td></tr>
 <tr class="memdesc:a0c14f664b5a14473eadf565b05ce54d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle rotated by this quaternion. <br /></td></tr>
@@ -126,10 +127,61 @@ T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classas
 <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a8706289522e210e5673fe2b9584e4e4e">matrix</a> () const</td></tr>
 <tr class="memdesc:a8706289522e210e5673fe2b9584e4e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a transform matrix equivalent to the rotation of this quaternion. <br /></td></tr>
 <tr class="separator:a8706289522e210e5673fe2b9584e4e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04199ddcdc0c7a7ddd777f460125c7c"><td class="memItemLeft" align="right" valign="top"><a id="aa04199ddcdc0c7a7ddd777f460125c7c"></a>
-<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#aa04199ddcdc0c7a7ddd777f460125c7c">slerp</a> (const <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a> &amp;b, T t) const</td></tr>
-<tr class="memdesc:aa04199ddcdc0c7a7ddd777f460125c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an interpolated quaternion between this and <code>b</code> at the given interpolation factor <code>t</code> in [0..1]. <br /></td></tr>
-<tr class="separator:aa04199ddcdc0c7a7ddd777f460125c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab148d3a762feddb5601e73d3463cbf05"><td class="memItemLeft" align="right" valign="top"><a id="ab148d3a762feddb5601e73d3463cbf05"></a>
+<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#ab148d3a762feddb5601e73d3463cbf05">operator-</a> () const</td></tr>
+<tr class="memdesc:ab148d3a762feddb5601e73d3463cbf05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this quaternion negated. <br /></td></tr>
+<tr class="separator:ab148d3a762feddb5601e73d3463cbf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8379ed3675af9a2a13a7e6139e44cefb"><td class="memItemLeft" align="right" valign="top"><a id="a8379ed3675af9a2a13a7e6139e44cefb"></a>
+<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a8379ed3675af9a2a13a7e6139e44cefb">conj</a> () const</td></tr>
+<tr class="memdesc:a8379ed3675af9a2a13a7e6139e44cefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the conjugate of this quaternion. <br /></td></tr>
+<tr class="separator:a8379ed3675af9a2a13a7e6139e44cefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5372c762d728d44357f24f8897dda5b9"><td class="memItemLeft" align="right" valign="top"><a id="a5372c762d728d44357f24f8897dda5b9"></a>
+<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a5372c762d728d44357f24f8897dda5b9">operator *</a> (T t) const</td></tr>
+<tr class="memdesc:a5372c762d728d44357f24f8897dda5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this quaternion multiplied by a scalar. <br /></td></tr>
+<tr class="separator:a5372c762d728d44357f24f8897dda5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8f33bca794370e9769300bc2af5d67"><td class="memItemLeft" align="right" valign="top"><a id="a3f8f33bca794370e9769300bc2af5d67"></a>
+<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a3f8f33bca794370e9769300bc2af5d67">operator/</a> (T t) const</td></tr>
+<tr class="memdesc:a3f8f33bca794370e9769300bc2af5d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this quaternion divided by a scalar. <br /></td></tr>
+<tr class="separator:a3f8f33bca794370e9769300bc2af5d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319b1046f6f739132918623ea8aa25d8"><td class="memItemLeft" align="right" valign="top"><a id="a319b1046f6f739132918623ea8aa25d8"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a319b1046f6f739132918623ea8aa25d8">length</a> () const</td></tr>
+<tr class="memdesc:a319b1046f6f739132918623ea8aa25d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length (norm) of this quaternion. <br /></td></tr>
+<tr class="separator:a319b1046f6f739132918623ea8aa25d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9fffbf60ee884d989d5e337db4c3ca"><td class="memItemLeft" align="right" valign="top"><a id="afa9fffbf60ee884d989d5e337db4c3ca"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#afa9fffbf60ee884d989d5e337db4c3ca">length2</a> () const</td></tr>
+<tr class="memdesc:afa9fffbf60ee884d989d5e337db4c3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length (norm) of this quaternion squared. <br /></td></tr>
+<tr class="separator:afa9fffbf60ee884d989d5e337db4c3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ea4cc8d90583e383fa3f9be047d0ad"><td class="memItemLeft" align="right" valign="top"><a id="ab1ea4cc8d90583e383fa3f9be047d0ad"></a>
+<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#ab1ea4cc8d90583e383fa3f9be047d0ad">inverse</a> () const</td></tr>
+<tr class="memdesc:ab1ea4cc8d90583e383fa3f9be047d0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inverse of this quaternion. <br /></td></tr>
+<tr class="separator:ab1ea4cc8d90583e383fa3f9be047d0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242dd4c7e320a8ff60a52ee0804502ca"><td class="memItemLeft" align="right" valign="top"><a id="a242dd4c7e320a8ff60a52ee0804502ca"></a>
+<a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a242dd4c7e320a8ff60a52ee0804502ca">operator *</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;v) const</td></tr>
+<tr class="memdesc:a242dd4c7e320a8ff60a52ee0804502ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the given vector rotated by this quaterion. <br /></td></tr>
+<tr class="separator:a242dd4c7e320a8ff60a52ee0804502ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f55b93417ea6fa5cc2e6dde8f6c78b"><td class="memItemLeft" align="right" valign="top"><a id="af3f55b93417ea6fa5cc2e6dde8f6c78b"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#af3f55b93417ea6fa5cc2e6dde8f6c78b">operator *</a> (const <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a> &amp;q) const</td></tr>
+<tr class="memdesc:af3f55b93417ea6fa5cc2e6dde8f6c78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dot product of this quaternion and q. <br /></td></tr>
+<tr class="separator:af3f55b93417ea6fa5cc2e6dde8f6c78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bf72ed364e93843a15f429f53b712d"><td class="memItemLeft" align="right" valign="top"><a id="ac8bf72ed364e93843a15f429f53b712d"></a>
+<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#ac8bf72ed364e93843a15f429f53b712d">operator^</a> (const <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a> &amp;q) const</td></tr>
+<tr class="memdesc:ac8bf72ed364e93843a15f429f53b712d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the product of this quaternion and q, representing the rotation q followed by this rotation. <br /></td></tr>
+<tr class="separator:ac8bf72ed364e93843a15f429f53b712d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2103f284d7c61a4f9ffd8eb88775ba2"><td class="memItemLeft" align="right" valign="top"><a id="ab2103f284d7c61a4f9ffd8eb88775ba2"></a>
+<a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#ab2103f284d7c61a4f9ffd8eb88775ba2">slerp</a> (const <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a> &amp;q, T t) const</td></tr>
+<tr class="memdesc:ab2103f284d7c61a4f9ffd8eb88775ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an interpolated quaternion between this and <code>b</code> at the given interpolation factor <code>t</code> in [0..1]. <br /></td></tr>
+<tr class="separator:ab2103f284d7c61a4f9ffd8eb88775ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7e8b9301896371ecb049aaaca170b7e8"><td class="memItemLeft" align="right" valign="top"><a id="a7e8b9301896371ecb049aaaca170b7e8"></a>
+static <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a7e8b9301896371ecb049aaaca170b7e8">fromAxisAngle</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;<a class="el" href="classasl_1_1_quaternion__.html#a6b365d4d62dd5c060e02dc0bc2d7cfd6">axis</a>, T <a class="el" href="classasl_1_1_quaternion__.html#a0c14f664b5a14473eadf565b05ce54d9">angle</a>)</td></tr>
+<tr class="memdesc:a7e8b9301896371ecb049aaaca170b7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion representing a rotation of angle <code>angle</code> around axis <code>axis</code> <br /></td></tr>
+<tr class="separator:a7e8b9301896371ecb049aaaca170b7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a785efd97af4778d31163fbc14f64d5"><td class="memItemLeft" align="right" valign="top"><a id="a8a785efd97af4778d31163fbc14f64d5"></a>
+static <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_quaternion__.html#a8a785efd97af4778d31163fbc14f64d5">fromAxisAngleU</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;<a class="el" href="classasl_1_1_quaternion__.html#a6b365d4d62dd5c060e02dc0bc2d7cfd6">axis</a>, T <a class="el" href="classasl_1_1_quaternion__.html#a0c14f664b5a14473eadf565b05ce54d9">angle</a>)</td></tr>
+<tr class="memdesc:a8a785efd97af4778d31163fbc14f64d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion representing a rotation of angle <code>angle</code> around axis <code>axis</code> <b>of length one</b> <br /></td></tr>
+<tr class="separator:a8a785efd97af4778d31163fbc14f64d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae310084d484e6085740c5f2625c81cd5"></a>

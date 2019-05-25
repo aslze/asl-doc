@@ -27,7 +27,7 @@ var searchData=
   ['resize',['resize',['../classasl_1_1_array.html#a24719f54c155101f4b5ff290b7163d64',1,'asl::Array::resize()'],['../classasl_1_1_string.html#a2f64ceab5cd4b9fa24f648f116b204a8',1,'asl::String::resize()'],['../classasl_1_1_var.html#a578be9c59132b8633a67a98c39318777',1,'asl::Var::resize()']]],
   ['rest',['rest',['../classasl_1_1_cmd_args.html#afea0ac04884773e17580d98db2dbe871',1,'asl::CmdArgs']]],
   ['reversed',['reversed',['../classasl_1_1_array.html#a5f162b368671bcfcd9777ea36630b974',1,'asl::Array']]],
-  ['rotate',['rotate',['../classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d',1,'asl::Matrix3_::rotate()'],['../classasl_1_1_matrix4__.html#acafbf106f816e950062ca6d89495580d',1,'asl::Matrix4_::rotate()'],['../classasl_1_1_vec2__.html#a6444b0e6a62214f2807114d6fb1ab3f6',1,'asl::Vec2_::rotate()']]],
+  ['rotate',['rotate',['../classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d',1,'asl::Matrix3_::rotate()'],['../classasl_1_1_matrix4__.html#acafbf106f816e950062ca6d89495580d',1,'asl::Matrix4_::rotate(const Vec3_&lt; T &gt; &amp;axis, T angle)'],['../classasl_1_1_matrix4__.html#a30500e2d8208460dc946286e79695d61',1,'asl::Matrix4_::rotate(const Vec3_&lt; T &gt; &amp;axisAngle)'],['../classasl_1_1_vec2__.html#a6444b0e6a62214f2807114d6fb1ab3f6',1,'asl::Vec2_::rotate()']]],
   ['rotatex',['rotateX',['../classasl_1_1_matrix4__.html#acb726caf444ac7ae09bbdc6199d47f7c',1,'asl::Matrix4_']]],
   ['rotatey',['rotateY',['../classasl_1_1_matrix4__.html#ae9feb7750675999bc309ed8e42b12024',1,'asl::Matrix4_']]],
   ['rotatez',['rotateZ',['../classasl_1_1_matrix4__.html#a837898101d8fee5720d9ee5478ea9721',1,'asl::Matrix4_']]],

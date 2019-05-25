@@ -13,5 +13,7 @@ var searchData=
   ['flushevery',['flushEvery',['../classasl_1_1_tabular_data_file.html#a4d8024fde886b6a0304d9d6fd00b8e21',1,'asl::TabularDataFile']]],
   ['foreach',['foreach',['../group___containers.html#gaf4fcfe5872c70e4998812a767e267925',1,'foreach1.h']]],
   ['foreach2',['foreach2',['../group___containers.html#gada2796cfee1961387a09942600ecf5cd',1,'foreach1.h']]],
-  ['fract',['fract',['../group___global.html#ga7092e898a987d3fd7f760cac9c479fc7',1,'asl']]]
+  ['fract',['fract',['../group___global.html#ga7092e898a987d3fd7f760cac9c479fc7',1,'asl']]],
+  ['fromaxisangle',['fromAxisAngle',['../classasl_1_1_quaternion__.html#a7e8b9301896371ecb049aaaca170b7e8',1,'asl::Quaternion_']]],
+  ['fromaxisangleu',['fromAxisAngleU',['../classasl_1_1_quaternion__.html#a8a785efd97af4778d31163fbc14f64d5',1,'asl::Quaternion_']]]
 ];
