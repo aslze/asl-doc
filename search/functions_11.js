@@ -1,7 +1,7 @@
 var searchData=
 [
   ['rad2deg',['rad2deg',['../group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8',1,'asl']]],
-  ['read',['read',['../classasl_1_1_file.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::File::read()'],['../structasl_1_1_json.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Json::read()'],['../classasl_1_1_serial_port.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::SerialPort::read()'],['../classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf',1,'asl::Socket::read(void *data, int size)'],['../classasl_1_1_socket.html#a7c6ae5ceb5a015e1f11090189c210386',1,'asl::Socket::read(int n=-1)'],['../classasl_1_1_stream_buffer_reader.html#a16b887199560a8c482c1662eadaeadbe',1,'asl::StreamBufferReader::read()'],['../structasl_1_1_xdl.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Xdl::read()'],['../classasl_1_1_xml.html#aa124c1d2a7c4ba099cda66817bf87e88',1,'asl::Xml::read()']]],
+  ['read',['read',['../classasl_1_1_file.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::File::read()'],['../structasl_1_1_json.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Json::read()'],['../classasl_1_1_serial_port.html#a7e5525948a27e6be0cd7e74552908339',1,'asl::SerialPort::read()'],['../classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf',1,'asl::Socket::read(void *data, int size)'],['../classasl_1_1_socket.html#a7c6ae5ceb5a015e1f11090189c210386',1,'asl::Socket::read(int n=-1)'],['../classasl_1_1_stream_buffer_reader.html#a16b887199560a8c482c1662eadaeadbe',1,'asl::StreamBufferReader::read()'],['../classasl_1_1_stream_buffer_reader.html#a7c6ae5ceb5a015e1f11090189c210386',1,'asl::StreamBufferReader::read(int n=-1)'],['../structasl_1_1_xdl.html#a09a8057a5f8500009e26dde50684ac5a',1,'asl::Xdl::read()'],['../classasl_1_1_xml.html#aa124c1d2a7c4ba099cda66817bf87e88',1,'asl::Xml::read()']]],
   ['readas',['readAs',['../classasl_1_1_tabular_data_file.html#ac04976f1e027d2d2f353304e83b72e98',1,'asl::TabularDataFile']]],
   ['readerrors',['readErrors',['../classasl_1_1_process.html#a899113da3ae74c0afe0f93344940eea8',1,'asl::Process']]],
   ['readfrom',['readFrom',['../classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297',1,'asl::PacketSocket']]],
@@ -15,7 +15,9 @@ var searchData=
   ['removeattr',['removeAttr',['../classasl_1_1_xml.html#ac70b89811526c62855628692ec33b4ff',1,'asl::Xml']]],
   ['removeddots',['removeDDots',['../classasl_1_1_path.html#ab676aadfe0300620c51a175b71b379e3',1,'asl::Path']]],
   ['removeif',['removeIf',['../classasl_1_1_array.html#a8d0019bda85073cfb9d7c968a2e50ba7',1,'asl::Array']]],
+  ['removelast',['removeLast',['../classasl_1_1_array.html#afb97c3b96c74eb1f38e4266c8b587db6',1,'asl::Array']]],
   ['removeone',['removeOne',['../classasl_1_1_array.html#ae42c71c512d9366d10856c23464676fd',1,'asl::Array']]],
+  ['removerecursive',['removeRecursive',['../classasl_1_1_directory.html#a98276312cae4a78cd701054d56bd2037',1,'asl::Directory']]],
   ['repeat',['repeat',['../classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3',1,'asl::String']]],
   ['replace',['replace',['../classasl_1_1_string.html#a1e5d91b847d2cb2b9476efc89b940a56',1,'asl::String']]],
   ['replaceme',['replaceme',['../classasl_1_1_string.html#acfd13cc118643ae9c7bff3ec00c222db',1,'asl::String']]],
@@ -25,11 +27,11 @@ var searchData=
   ['resize',['resize',['../classasl_1_1_array.html#a24719f54c155101f4b5ff290b7163d64',1,'asl::Array::resize()'],['../classasl_1_1_string.html#a2f64ceab5cd4b9fa24f648f116b204a8',1,'asl::String::resize()'],['../classasl_1_1_var.html#a578be9c59132b8633a67a98c39318777',1,'asl::Var::resize()']]],
   ['rest',['rest',['../classasl_1_1_cmd_args.html#afea0ac04884773e17580d98db2dbe871',1,'asl::CmdArgs']]],
   ['reversed',['reversed',['../classasl_1_1_array.html#a5f162b368671bcfcd9777ea36630b974',1,'asl::Array']]],
-  ['rotate',['rotate',['../classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d',1,'asl::Matrix3_::rotate()'],['../classasl_1_1_matrix4__.html#acafbf106f816e950062ca6d89495580d',1,'asl::Matrix4_::rotate(const Vec3_&lt; T &gt; &amp;axis, T angle)'],['../classasl_1_1_matrix4__.html#a30500e2d8208460dc946286e79695d61',1,'asl::Matrix4_::rotate(const Vec3_&lt; T &gt; &amp;axisAngle)'],['../classasl_1_1_vec2__.html#a6444b0e6a62214f2807114d6fb1ab3f6',1,'asl::Vec2_::rotate()']]],
-  ['rotatex',['rotateX',['../classasl_1_1_matrix4__.html#acb726caf444ac7ae09bbdc6199d47f7c',1,'asl::Matrix4_']]],
-  ['rotatey',['rotateY',['../classasl_1_1_matrix4__.html#ae9feb7750675999bc309ed8e42b12024',1,'asl::Matrix4_']]],
-  ['rotatez',['rotateZ',['../classasl_1_1_matrix4__.html#a837898101d8fee5720d9ee5478ea9721',1,'asl::Matrix4_']]],
-  ['rotation',['rotation',['../classasl_1_1_matrix4__.html#a989d82725dedae9fa09dae58064a1e15',1,'asl::Matrix4_']]],
+  ['rotate',['rotate',['../classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d',1,'asl::Matrix3_::rotate()'],['../classasl_1_1_matrix4__.html#a89fc0c57773aac49a1a478970603e555',1,'asl::Matrix4_::rotate(const Vec3_&lt; T &gt; &amp;axis, T angle)'],['../classasl_1_1_matrix4__.html#a30500e2d8208460dc946286e79695d61',1,'asl::Matrix4_::rotate(const Vec3_&lt; T &gt; &amp;axisAngle)'],['../classasl_1_1_vec2__.html#a6444b0e6a62214f2807114d6fb1ab3f6',1,'asl::Vec2_::rotate()']]],
+  ['rotatex',['rotateX',['../classasl_1_1_matrix4__.html#aad7f20aae5c9b8499d9ed9cef1a04c7e',1,'asl::Matrix4_']]],
+  ['rotatey',['rotateY',['../classasl_1_1_matrix4__.html#aac590d601afa7ebe5ddf58d1b6841384',1,'asl::Matrix4_']]],
+  ['rotatez',['rotateZ',['../classasl_1_1_matrix4__.html#ac14e400fe332b72194c443c5ca7777c6',1,'asl::Matrix4_']]],
+  ['rotation',['rotation',['../classasl_1_1_matrix4__.html#a40b7e9cd1f5fdc0e2ec081582879ed7d',1,'asl::Matrix4_']]],
   ['run',['run',['../classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207',1,'asl::Process::run()'],['../classasl_1_1_thread.html#a72fcb26a14f6beb1c3fbace9ab3e7dbb',1,'asl::Thread::run()']]],
   ['running',['running',['../classasl_1_1_process.html#aaa6432a11cc8aa43cdcac30e43bf038f',1,'asl::Process']]]
 ];

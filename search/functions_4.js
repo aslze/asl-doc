@@ -9,6 +9,7 @@ var searchData=
   ['endswith',['endsWith',['../classasl_1_1_string.html#aa993cfc949231fa88689e5d80a67b967',1,'asl::String::endsWith(const String &amp;s) const'],['../classasl_1_1_string.html#a4b9b22737918037d68c44b87266de188',1,'asl::String::endsWith(char c) const']]],
   ['env',['env',['../classasl_1_1_process.html#a8cb553e83de017bfbfe33c627666f5ac',1,'asl::Process']]],
   ['equals',['equals',['../classasl_1_1_path.html#a9826f57f70f9f055993464273e7cb272',1,'asl::Path']]],
+  ['error',['error',['../classasl_1_1_serial_port.html#a91004c239942d94aa16e9d9dc0f45160',1,'asl::SerialPort']]],
   ['errors',['errors',['../classasl_1_1_process.html#a2bb1bf434ba92b4f64d61b1c189cc64e',1,'asl::Process']]],
   ['execute',['execute',['../classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f',1,'asl::Process']]],
   ['exists',['exists',['../classasl_1_1_directory.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::Directory::exists()'],['../classasl_1_1_file.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::File::exists()']]],

@@ -12,7 +12,7 @@ var searchData=
   ['tostring',['toString',['../classasl_1_1_date.html#a0cdfd84b2149d827232f240a0fed3b6b',1,'asl::Date::toString()'],['../classasl_1_1_inet_address.html#a26b2839c6b49fe42966074e2375553d7',1,'asl::InetAddress::toString()']]],
   ['touppercase',['toUpperCase',['../classasl_1_1_string.html#a8bbea5921941917e2ba15aaefef33e35',1,'asl::String']]],
   ['toutcstring',['toUTCString',['../classasl_1_1_date.html#a47b24c5779cd9091e5345683994a3213',1,'asl::Date']]],
-  ['translate',['translate',['../classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561',1,'asl::Matrix3_::translate()'],['../classasl_1_1_matrix4__.html#a6ea3b33218fe35294646e68adb47ec81',1,'asl::Matrix4_::translate(const Vec3_&lt; T &gt; &amp;)'],['../classasl_1_1_matrix4__.html#a2a88c3b35a9873624211b4aafcf273a3',1,'asl::Matrix4_::translate(T x, T y, T z)']]],
+  ['translate',['translate',['../classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561',1,'asl::Matrix3_::translate()'],['../classasl_1_1_matrix4__.html#a50a0a4d2607d90ea987b624bd3b93fbc',1,'asl::Matrix4_::translate(const Vec3_&lt; T &gt; &amp;)'],['../classasl_1_1_matrix4__.html#a2a88c3b35a9873624211b4aafcf273a3',1,'asl::Matrix4_::translate(T x, T y, T z)']]],
   ['translation',['translation',['../classasl_1_1_matrix4__.html#a31ab7738cbaba3f04623ffce6d72b402',1,'asl::Matrix4_']]],
   ['traverse',['traverse',['../classasl_1_1_xml.html#a6d8153e3dc5724c51f70c556b9a73837',1,'asl::Xml']]],
   ['trim',['trim',['../classasl_1_1_string.html#a86864c88ee12eb322f1645f238c1dbe5',1,'asl::String']]],

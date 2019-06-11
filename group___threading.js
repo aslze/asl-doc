@@ -16,8 +16,16 @@ var group___threading =
       [ "wait", "classasl_1_1_condition.html#a3be50c5fde5c5a2edee4efe73a92f05b", null ]
     ] ],
     [ "Lock", "classasl_1_1_lock.html", null ],
+    [ "Atomic", "classasl_1_1_atomic.html", [
+      [ "mutex", "classasl_1_1_atomic.html#ac904e42293f33414e08f376895175fe2", null ],
+      [ "operator *", "classasl_1_1_atomic.html#acd9f2ee3a1bcd0468bba24f98905b00f", null ],
+      [ "operator T", "classasl_1_1_atomic.html#a54724b9dd792a6022b918eae2f393734", null ],
+      [ "operator->", "classasl_1_1_atomic.html#a61f986d1655444750449ed13c40c9184", null ],
+      [ "operator~", "classasl_1_1_atomic.html#a717677c3a678e78bca61ea73763b6f8b", null ]
+    ] ],
     [ "Thread", "classasl_1_1_thread.html", [
       [ "Thread", "classasl_1_1_thread.html#a0a0f82d84246de28c25b8a8293c9c7b5", null ],
+      [ "finished", "classasl_1_1_thread.html#aebaed0be88cbcf45f1985b819c9dabb7", null ],
       [ "join", "classasl_1_1_thread.html#a6c7abfff648dad193674fc432ad4840d", null ],
       [ "kill", "classasl_1_1_thread.html#aae9d52caad9fb2892deeb25596cfd2ab", null ],
       [ "run", "classasl_1_1_thread.html#a72fcb26a14f6beb1c3fbace9ab3e7dbb", null ],

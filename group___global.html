@@ -142,8 +142,9 @@ template&lt;class T &gt; </td></tr>
 <a class="el" href="classasl_1_1_string.html">String</a> ASL_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga895ee055739d8db3173b79993bce4c26">decodeUrl</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;params)</td></tr>
 <tr class="memdesc:ga895ee055739d8db3173b79993bce4c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a string with percent encoding. <br /></td></tr>
 <tr class="separator:ga895ee055739d8db3173b79993bce4c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeee00efb34004ec2b57f90d5f729d499"><td class="memItemLeft" align="right" valign="top">double ASL_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">now</a> ()</td></tr>
-<tr class="memdesc:gaeee00efb34004ec2b57f90d5f729d499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as a real number in seconds since a fixed epoch.  <a href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">More...</a><br /></td></tr>
+<tr class="memitem:gaeee00efb34004ec2b57f90d5f729d499"><td class="memItemLeft" align="right" valign="top"><a id="gaeee00efb34004ec2b57f90d5f729d499"></a>
+double ASL_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gaeee00efb34004ec2b57f90d5f729d499">now</a> ()</td></tr>
+<tr class="memdesc:gaeee00efb34004ec2b57f90d5f729d499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as a real number in seconds since a fixed epoch (precision is platform-dependent, often around a microsecond). <br /></td></tr>
 <tr class="separator:gaeee00efb34004ec2b57f90d5f729d499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa85b7b1a3abd2e77e87c5f282f9003e4"><td class="memItemLeft" align="right" valign="top"><a id="gaa85b7b1a3abd2e77e87c5f282f9003e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gaa85b7b1a3abd2e77e87c5f282f9003e4">usleep</a> (int us)</td></tr>
@@ -151,7 +152,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="separator:gaa85b7b1a3abd2e77e87c5f282f9003e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga260867c1920d22c6dba6f64cdc1db7f9"><td class="memItemLeft" align="right" valign="top"><a id="ga260867c1920d22c6dba6f64cdc1db7f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga260867c1920d22c6dba6f64cdc1db7f9">sleep</a> (double s)</td></tr>
-<tr class="memdesc:ga260867c1920d22c6dba6f64cdc1db7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the current thread sleep for the given number of seconds. <br /></td></tr>
+<tr class="memdesc:ga260867c1920d22c6dba6f64cdc1db7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the current thread sleep for the given time in seconds (can be fractional) <br /></td></tr>
 <tr class="separator:ga260867c1920d22c6dba6f64cdc1db7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga764968a708bc825f26560aa66b4a884e"><td class="memItemLeft" align="right" valign="top"><a id="ga764968a708bc825f26560aa66b4a884e"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga764968a708bc825f26560aa66b4a884e">decodeBase64</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
@@ -174,27 +175,6 @@ ASL_API <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt;&#16
 <tr class="memdesc:ga8c072bc08f20927bda362aaeebdc1d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a hexadecimal encoded string into a byte array. <br /></td></tr>
 <tr class="separator:ga8c072bc08f20927bda362aaeebdc1d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="gaeee00efb34004ec2b57f90d5f729d499"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeee00efb34004ec2b57f90d5f729d499">&#9670;&nbsp;</a></span>now()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double ASL_API asl::now </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the current time as a real number in seconds since a fixed epoch. </p>
-<p>It has a platform-dependent precision, usually around the microsecond. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

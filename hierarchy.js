@@ -25,6 +25,7 @@ var hierarchy =
     [ "Array< KeyVal * >", "classasl_1_1_array.html", null ],
     [ "Array< KeyVal >", "classasl_1_1_array.html", null ],
     [ "Array_< T, N >", "classasl_1_1_array__.html", null ],
+    [ "Atomic< T >", "classasl_1_1_atomic.html", null ],
     [ "CmdArgs", "classasl_1_1_cmd_args.html", null ],
     [ "Complex< T >", "classasl_1_1_complex.html", null ],
     [ "Condition", "classasl_1_1_condition.html", null ],
@@ -48,17 +49,10 @@ var hierarchy =
     [ "Json", "structasl_1_1_json.html", null ],
     [ "Library", "classasl_1_1_library.html", null ],
     [ "Lock", "classasl_1_1_lock.html", null ],
-    [ "Map< K, T >", "classasl_1_1_map.html", null ],
-    [ "Map< String, asl::Array< asl::String > >", "classasl_1_1_map.html", [
-      [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ]
-    ] ],
-    [ "Map< String, asl::String >", "classasl_1_1_map.html", [
-      [ "Dic< asl::String >", "classasl_1_1_dic.html", null ]
-    ] ],
-    [ "Map< String, Section >", "classasl_1_1_map.html", [
-      [ "Dic< Section >", "classasl_1_1_dic.html", null ]
-    ] ],
-    [ "Map< String, T * >", "classasl_1_1_map.html", [
+    [ "Map< K, T >", "classasl_1_1_map.html", [
+      [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ],
+      [ "Dic< asl::String >", "classasl_1_1_dic.html", null ],
+      [ "Dic< Section >", "classasl_1_1_dic.html", null ],
       [ "Dic< T *(*)()>", "classasl_1_1_dic.html", null ],
       [ "Dic< T *(*)(K)>", "classasl_1_1_dic.html", null ]
     ] ],

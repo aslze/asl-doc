@@ -31,6 +31,7 @@ var group___containers =
       [ "remove", "classasl_1_1_array.html#a06f887a6ec25372a9d534273501af0a5", null ],
       [ "remove", "classasl_1_1_array.html#a5c9f641c4774cbb1a50e1b1633418aa7", null ],
       [ "removeIf", "classasl_1_1_array.html#a8d0019bda85073cfb9d7c968a2e50ba7", null ],
+      [ "removeLast", "classasl_1_1_array.html#afb97c3b96c74eb1f38e4266c8b587db6", null ],
       [ "removeOne", "classasl_1_1_array.html#ae42c71c512d9366d10856c23464676fd", null ],
       [ "reserve", "classasl_1_1_array.html#a56e0d971cb52732bfc94ce25a5255a75", null ],
       [ "resize", "classasl_1_1_array.html#a24719f54c155101f4b5ff290b7163d64", null ],

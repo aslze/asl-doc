@@ -3,6 +3,7 @@ var annotated_dup =
     [ "asl", null, [
       [ "Array", "classasl_1_1_array.html", "classasl_1_1_array" ],
       [ "Array_", "classasl_1_1_array__.html", "classasl_1_1_array__" ],
+      [ "Atomic", "classasl_1_1_atomic.html", "classasl_1_1_atomic" ],
       [ "CmdArgs", "classasl_1_1_cmd_args.html", "classasl_1_1_cmd_args" ],
       [ "Complex", "classasl_1_1_complex.html", "classasl_1_1_complex" ],
       [ "Condition", "classasl_1_1_condition.html", "classasl_1_1_condition" ],

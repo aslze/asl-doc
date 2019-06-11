@@ -13,6 +13,7 @@ var classasl_1_1_stream_buffer_reader =
     [ "operator>>", "classasl_1_1_stream_buffer_reader.html#ae834c6bbc7a59cdd6944f1d41fd60f02", null ],
     [ "operator>>", "classasl_1_1_stream_buffer_reader.html#ae013353dffd50274df8577e3f2e4fa9c", null ],
     [ "read", "classasl_1_1_stream_buffer_reader.html#a16b887199560a8c482c1662eadaeadbe", null ],
+    [ "read", "classasl_1_1_stream_buffer_reader.html#a7c6ae5ceb5a015e1f11090189c210386", null ],
     [ "setEndian", "classasl_1_1_stream_buffer_reader.html#ab8b59b8d8776fde8418d6692453404c1", null ],
     [ "skip", "classasl_1_1_stream_buffer_reader.html#a22e04fd90a8da8fbaa968a171d19c6f8", null ]
 ];

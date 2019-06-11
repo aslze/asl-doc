@@ -105,6 +105,8 @@ class asl::Map&lt; K, T &gt;</h3>
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; e : headers);</div><div class="line">{</div><div class="line">    request &lt;&lt; e.key &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; e.value &lt;&lt; <span class="stringliteral">&quot;\r\n&quot;</span>;</div><div class="line">}</div></div><!-- fragment --><p>And in C++17:</p>
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [name, value] : headers);</div><div class="line">{</div><div class="line">    request &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; value &lt;&lt; <span class="stringliteral">&quot;\r\n&quot;</span>;</div><div class="line">}</div></div><!-- fragment --> </div>
 <p><code>#include &lt;Map.h&gt;</code></p>
+
+<p>Inherited by <a class="el" href="classasl_1_1_dic.html">Dic&lt; asl::Array&lt; asl::String &gt; &gt;</a>, <a class="el" href="classasl_1_1_dic.html">Dic&lt; asl::String &gt;</a>, <a class="el" href="classasl_1_1_dic.html">Dic&lt; Section &gt;</a>, <a class="el" href="classasl_1_1_dic.html">Dic&lt; T *(*)()&gt;</a>, and <a class="el" href="classasl_1_1_dic.html">Dic&lt; T *(*)(K)&gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

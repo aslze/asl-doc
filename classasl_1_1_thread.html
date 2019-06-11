@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_thread.html','');});
 <div class="textblock"><p>The <a class="el" href="classasl_1_1_thread.html" title="The Thread class represents an execution thread.">Thread</a> class represents an execution thread. </p>
 <p>To create threads, derive a class from <a class="el" href="classasl_1_1_thread.html" title="The Thread class represents an execution thread.">Thread</a> and reimplement the <code><a class="el" href="classasl_1_1_thread.html#a72fcb26a14f6beb1c3fbace9ab3e7dbb" title="The thread procedure.">run()</a></code> function. That is what objects of the new class will execute in parallel when the <code><a class="el" href="classasl_1_1_thread.html#a60de64d75454385b23995437f1d72669" title="Starts a new thread by calling run() in parallel.">start()</a></code> function is called.</p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>Worker : <span class="keyword">public</span> Thread</div><div class="line">{</div><div class="line">    <span class="keywordtype">void</span> <a class="code" href="classasl_1_1_thread.html#a72fcb26a14f6beb1c3fbace9ab3e7dbb">run</a>()</div><div class="line">    {</div><div class="line">        ... <span class="comment">// what the function will do in a parallel thread</span></div><div class="line">    }</div><div class="line">};</div><div class="line"></div><div class="line">Worker worker;</div><div class="line">worker.start();</div><div class="line">...</div><div class="line">worker.join();</div></div><!-- fragment --><p>In compilers supporting <em>lambdas</em> threads can now be started with a lambda without defining a specific <a class="el" href="classasl_1_1_thread.html" title="The Thread class represents an execution thread.">Thread</a> subclass. These threads can get input data or keep state using variables captured by the lambda.</p>
-<div class="fragment"><div class="line">Thread thread([=]() {</div><div class="line">    ... <span class="comment">// what the thread does</span></div><div class="line">});</div><div class="line">...</div><div class="line">thread.join();</div></div><!-- fragment --><p>See also <a class="el" href="classasl_1_1_mutex.html" title="A mutex that can be locked or unlocked to protect concurrent access to a resource.">Mutex</a>, <a class="el" href="classasl_1_1_semaphore.html" title="A semaphore allows synchronizing access to shared resources and signaling observers when they can use...">Semaphore</a> and <a class="el" href="classasl_1_1_lock.html" title="A Lock is an automatic locker/unlocker of a Mutex.">Lock</a>. </p>
+<div class="fragment"><div class="line">Thread thread([&amp;]() {</div><div class="line">    ... <span class="comment">// what the thread does</span></div><div class="line">});</div><div class="line">...</div><div class="line">thread.join();</div></div><!-- fragment --><p>See also <a class="el" href="classasl_1_1_mutex.html" title="A mutex that can be locked or unlocked to protect concurrent access to a resource.">Mutex</a>, <a class="el" href="classasl_1_1_semaphore.html" title="A semaphore allows synchronizing access to shared resources and signaling observers when they can use...">Semaphore</a> and <a class="el" href="classasl_1_1_lock.html" title="A Lock is an automatic locker/unlocker of a Mutex.">Lock</a>. </p>
 </div>
 <p><code>#include &lt;Thread.h&gt;</code></p>
 <table class="memberdecls">
@@ -119,6 +119,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#a6c7abfff648dad193674fc432ad4840d">join</a> ()</td></tr>
 <tr class="memdesc:a6c7abfff648dad193674fc432ad4840d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for this thread to end. <br /></td></tr>
 <tr class="separator:a6c7abfff648dad193674fc432ad4840d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebaed0be88cbcf45f1985b819c9dabb7"><td class="memItemLeft" align="right" valign="top"><a id="aebaed0be88cbcf45f1985b819c9dabb7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#aebaed0be88cbcf45f1985b819c9dabb7">finished</a> () const</td></tr>
+<tr class="memdesc:aebaed0be88cbcf45f1985b819c9dabb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this thread has finished. <br /></td></tr>
+<tr class="separator:aebaed0be88cbcf45f1985b819c9dabb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a0f82d84246de28c25b8a8293c9c7b5"><td class="memTemplParams" colspan="2"><a id="a0a0f82d84246de28c25b8a8293c9c7b5"></a>
 template&lt;class F &gt; </td></tr>
 <tr class="memitem:a0a0f82d84246de28c25b8a8293c9c7b5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#a0a0f82d84246de28c25b8a8293c9c7b5">Thread</a> (const F &amp;f)</td></tr>
@@ -131,10 +135,10 @@ Static Public Member Functions</h2></td></tr>
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#a97c4d3433c0050cfbd008133d94892a6">numProcessors</a> ()</td></tr>
 <tr class="memdesc:a97c4d3433c0050cfbd008133d94892a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of logical processors or cores. <br /></td></tr>
 <tr class="separator:a97c4d3433c0050cfbd008133d94892a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01fc1b81d2b03bd100b612d12b2e348"><td class="memTemplParams" colspan="2">template&lt;class F &gt; </td></tr>
-<tr class="memitem:ae01fc1b81d2b03bd100b612d12b2e348"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#ae01fc1b81d2b03bd100b612d12b2e348">parallel_for</a> (int i0, int i1, const F &amp;f, bool wait=true)</td></tr>
-<tr class="memdesc:ae01fc1b81d2b03bd100b612d12b2e348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulates an OpenMP <em>parallel for</em> by running function <code>f</code> several times in parallel.  <a href="#ae01fc1b81d2b03bd100b612d12b2e348">More...</a><br /></td></tr>
-<tr class="separator:ae01fc1b81d2b03bd100b612d12b2e348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d48648ca85756de4aff2bdb8c4f21e"><td class="memTemplParams" colspan="2">template&lt;class F &gt; </td></tr>
+<tr class="memitem:a65d48648ca85756de4aff2bdb8c4f21e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#a65d48648ca85756de4aff2bdb8c4f21e">parallel_for</a> (int i0, int i1, const F &amp;f, int nth=8)</td></tr>
+<tr class="memdesc:a65d48648ca85756de4aff2bdb8c4f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulates an OpenMP <em>parallel for</em> by running function <code>f</code> several times in parallel.  <a href="#a65d48648ca85756de4aff2bdb8c4f21e">More...</a><br /></td></tr>
+<tr class="separator:a65d48648ca85756de4aff2bdb8c4f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b2f00ee16bd9f4d00afdee584db3f7"><td class="memTemplParams" colspan="2"><a id="ad5b2f00ee16bd9f4d00afdee584db3f7"></a>
 template&lt;class F1 , class F2 &gt; </td></tr>
 <tr class="memitem:ad5b2f00ee16bd9f4d00afdee584db3f7"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#ad5b2f00ee16bd9f4d00afdee584db3f7">parallel_invoke</a> (const F1 &amp;f1, const F2 &amp;f2)</td></tr>
@@ -152,8 +156,8 @@ template&lt;class F1 , class F2 , class F3 , class F4 &gt; </td></tr>
 <tr class="separator:ad9b7502af24e369ca3d5b32dc6b0486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae01fc1b81d2b03bd100b612d12b2e348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae01fc1b81d2b03bd100b612d12b2e348">&#9670;&nbsp;</a></span>parallel_for()</h2>
+<a id="a65d48648ca85756de4aff2bdb8c4f21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d48648ca85756de4aff2bdb8c4f21e">&#9670;&nbsp;</a></span>parallel_for()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,8 +186,8 @@ template&lt;class F1 , class F2 , class F3 , class F4 &gt; </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>wait</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nth</em> = <code>8</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -199,9 +203,9 @@ template&lt;class F1 , class F2 , class F3 , class F4 &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Emulates an OpenMP <em>parallel for</em> by running function <code>f</code> several times in parallel. </p>
-<p>Function <code>f</code> must receive an integer argument which will get the values from <code>i0</code> up to but not including <code>i1</code>. If the argument <code>wait</code> is true, the call is blocking and will wait for all executions to end.</p>
-<p>This is equivalent to running:</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=i0; i&lt;i1; i++)</div><div class="line">    f(i);</div></div><!-- fragment --><p>but with all iterations run in parallel threads. Needs lambda support. </p>
+<p>Function <code>f</code> must receive an integer argument which will get the values from <code>i0</code> up to but not including <code>i1</code>.</p>
+<div class="fragment"><div class="line"><a class="code" href="classasl_1_1_thread.html#a65d48648ca85756de4aff2bdb8c4f21e">Thread::parallel_for</a>(i0, i1, [&amp;](<span class="keywordtype">int</span> i) {</div><div class="line">    f(i);</div><div class="line">});</div></div><!-- fragment --><p>Is equivalent to running:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=i0; i&lt;i1; i++) {</div><div class="line">    f(i);</div><div class="line">}</div></div><!-- fragment --><p>but with iterations run in <code>nth</code> parallel threads. </p>
 
 </div>
 </div>

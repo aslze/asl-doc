@@ -5,7 +5,7 @@ var searchData=
   ['files',['files',['../classasl_1_1_directory.html#a0b0bfe551db9a96c709f1c389a94c59d',1,'asl::Directory']]],
   ['find',['find',['../classasl_1_1_map.html#a56f114da82dea494d96a2157a26d2902',1,'asl::Map::find()'],['../classasl_1_1_xml.html#a3369ef9bea53053e8f9dea52e049e5f4',1,'asl::Xml::find()']]],
   ['findone',['findOne',['../classasl_1_1_xml.html#a0bfe8b55f3c888d1851f2740ab92887d',1,'asl::Xml']]],
-  ['finished',['finished',['../classasl_1_1_process.html#abfe11b2f0982fcc143be53a6e233ea36',1,'asl::Process']]],
+  ['finished',['finished',['../classasl_1_1_process.html#abfe11b2f0982fcc143be53a6e233ea36',1,'asl::Process::finished()'],['../classasl_1_1_thread.html#aebaed0be88cbcf45f1985b819c9dabb7',1,'asl::Thread::finished()']]],
   ['firstbytes',['firstBytes',['../classasl_1_1_file.html#a12ffffa307f30e38668ec47f8f8c7b83',1,'asl::File']]],
   ['fix',['fix',['../classasl_1_1_string.html#af2391a784a77bd3ab02cb00e50026487',1,'asl::String::fix()'],['../classasl_1_1_string.html#ad85f30cbce914593cf6aa4195886ae81',1,'asl::String::fix(int n)']]],
   ['flush',['flush',['../classasl_1_1_file.html#adac116554b543b7c4228c018a85882f5',1,'asl::File']]],

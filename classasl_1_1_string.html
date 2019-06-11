@@ -154,6 +154,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a3f0ab30ee3d70109b85479a51e418692">String</a> (Long x)</td></tr>
 <tr class="memdesc:a3f0ab30ee3d70109b85479a51e418692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string from a 64bit long integer number. <br /></td></tr>
 <tr class="separator:a3f0ab30ee3d70109b85479a51e418692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e37cdafd4f04cd4d578c73a972a95b6"><td class="memItemLeft" align="right" valign="top"><a id="a6e37cdafd4f04cd4d578c73a972a95b6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a6e37cdafd4f04cd4d578c73a972a95b6">String</a> (ULong x)</td></tr>
+<tr class="memdesc:a6e37cdafd4f04cd4d578c73a972a95b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string from a 64bit unsigned long integer number. <br /></td></tr>
+<tr class="separator:a6e37cdafd4f04cd4d578c73a972a95b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a237450338e350fcc3e1d124102369ac6"><td class="memItemLeft" align="right" valign="top"><a id="a237450338e350fcc3e1d124102369ac6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a237450338e350fcc3e1d124102369ac6">String</a> (int x)</td></tr>
 <tr class="memdesc:a237450338e350fcc3e1d124102369ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string from an integer number. <br /></td></tr>
@@ -342,6 +346,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#aa87e37cd98cdce73075d032995a8d0fd">split</a> () const</td></tr>
 <tr class="memdesc:aa87e37cd98cdce73075d032995a8d0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of strings obtained by cutting this string by whitespace. <br /></td></tr>
 <tr class="separator:aa87e37cd98cdce73075d032995a8d0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b18180ce3a94d135d41a330cd5a2332"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_dic.html">Dic</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a5b18180ce3a94d135d41a330cd5a2332">split</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;sep1, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;sep2) const</td></tr>
+<tr class="memdesc:a5b18180ce3a94d135d41a330cd5a2332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string and creates a <code><a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a></code> using <code>sep1</code> as pair separator (e.g.  <a href="#a5b18180ce3a94d135d41a330cd5a2332">More...</a><br /></td></tr>
+<tr class="separator:a5b18180ce3a94d135d41a330cd5a2332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e5d91b847d2cb2b9476efc89b940a56"><td class="memItemLeft" align="right" valign="top"><a id="a1e5d91b847d2cb2b9476efc89b940a56"></a>
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a1e5d91b847d2cb2b9476efc89b940a56">replace</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;a, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;b) const</td></tr>
 <tr class="memdesc:a1e5d91b847d2cb2b9476efc89b940a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string like this one but in which occurences of substring <code>a</code> are replaced by <code>b</code> <br /></td></tr>
@@ -432,6 +439,38 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 
 <p>Constructs a string by formatting values using <code>sprintf</code>-style specification <code>fmt</code>. </p>
 <p>The first argument can give an initial buffer _size, but will be automatically calculated if it is 0. In any case, the function will automatically allocate _space as needed. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5b18180ce3a94d135d41a330cd5a2332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b18180ce3a94d135d41a330cd5a2332">&#9670;&nbsp;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_dic.html">Dic</a>&lt;<a class="el" href="classasl_1_1_string.html">String</a>&gt; split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>sep1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>sep2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a string and creates a <code><a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a></code> using <code>sep1</code> as pair separator (e.g. </p>
+<p>','), and <code>sep2</code> as key/value separator (e.g. '='). It is the opposite of <code>join()</code>. </p>
 
 </div>
 </div>
