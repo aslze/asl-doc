@@ -33,7 +33,7 @@ var annotated_dup =
       [ "Mutex", "classasl_1_1_mutex.html", "classasl_1_1_mutex" ],
       [ "PacketSocket", "classasl_1_1_packet_socket.html", "classasl_1_1_packet_socket" ],
       [ "Path", "classasl_1_1_path.html", "classasl_1_1_path" ],
-      [ "Pose", "classasl_1_1_pose.html", "classasl_1_1_pose" ],
+      [ "Pose_", "classasl_1_1_pose__.html", "classasl_1_1_pose__" ],
       [ "Process", "classasl_1_1_process.html", "classasl_1_1_process" ],
       [ "Quaternion_", "classasl_1_1_quaternion__.html", "classasl_1_1_quaternion__" ],
       [ "Queue", "classasl_1_1_queue.html", "classasl_1_1_queue" ],

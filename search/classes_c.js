@@ -6,7 +6,7 @@ var searchData=
   ['set',['Set',['../classasl_1_1_set.html',1,'asl']]],
   ['sharedmem',['SharedMem',['../classasl_1_1_shared_mem.html',1,'asl']]],
   ['singleton',['Singleton',['../classasl_1_1_singleton.html',1,'asl']]],
-  ['singleton_3c_20factory_3c_20t_2c_20k_20_3e_20_3e',['Singleton&lt; Factory&lt; T, K &gt; &gt;',['../classasl_1_1_singleton.html',1,'asl']]],
+  ['singleton_3c_20factory_3c_20t_20_3e_20_3e',['Singleton&lt; Factory&lt; T &gt; &gt;',['../classasl_1_1_singleton.html',1,'asl']]],
   ['singleton_3c_20log_20_3e',['Singleton&lt; Log &gt;',['../classasl_1_1_singleton.html',1,'asl']]],
   ['socket',['Socket',['../classasl_1_1_socket.html',1,'asl']]],
   ['socketserver',['SocketServer',['../classasl_1_1_socket_server.html',1,'asl']]],

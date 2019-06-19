@@ -53,8 +53,7 @@ var hierarchy =
       [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ],
       [ "Dic< asl::String >", "classasl_1_1_dic.html", null ],
       [ "Dic< Section >", "classasl_1_1_dic.html", null ],
-      [ "Dic< T *(*)()>", "classasl_1_1_dic.html", null ],
-      [ "Dic< T *(*)(K)>", "classasl_1_1_dic.html", null ]
+      [ "Dic< T *(*)()>", "classasl_1_1_dic.html", null ]
     ] ],
     [ "Map< String, T >", "classasl_1_1_map.html", [
       [ "Dic< T >", "classasl_1_1_dic.html", null ]
@@ -63,10 +62,9 @@ var hierarchy =
     [ "Matrix4_< T >", "classasl_1_1_matrix4__.html", null ],
     [ "Mutex", "classasl_1_1_mutex.html", null ],
     [ "Path", "classasl_1_1_path.html", null ],
-    [ "Pose", "classasl_1_1_pose.html", null ],
+    [ "Pose_< T >", "classasl_1_1_pose__.html", null ],
     [ "Process", "classasl_1_1_process.html", null ],
     [ "Quaternion_< T >", "classasl_1_1_quaternion__.html", null ],
-    [ "Quaternion_< float >", "classasl_1_1_quaternion__.html", null ],
     [ "Random", "classasl_1_1_random.html", null ],
     [ "SafeString", "classasl_1_1_safe_string.html", null ],
     [ "Semaphore", "classasl_1_1_semaphore.html", null ],
@@ -74,8 +72,8 @@ var hierarchy =
     [ "Set< T >", "classasl_1_1_set.html", null ],
     [ "SharedMem", "classasl_1_1_shared_mem.html", null ],
     [ "Singleton< T >", "classasl_1_1_singleton.html", null ],
-    [ "Singleton< Factory< T, K > >", "classasl_1_1_singleton.html", [
-      [ "Factory< T, K >", "classasl_1_1_factory.html", null ]
+    [ "Singleton< Factory< T > >", "classasl_1_1_singleton.html", [
+      [ "Factory< T >", "classasl_1_1_factory.html", null ]
     ] ],
     [ "Singleton< Log >", "classasl_1_1_singleton.html", [
       [ "Log", "classasl_1_1_log.html", null ]
@@ -99,7 +97,6 @@ var hierarchy =
     [ "Var", "classasl_1_1_var.html", null ],
     [ "Vec2_< T >", "classasl_1_1_vec2__.html", null ],
     [ "Vec3_< T >", "classasl_1_1_vec3__.html", null ],
-    [ "Vec3_< float >", "classasl_1_1_vec3__.html", null ],
     [ "Vec4_< T >", "classasl_1_1_vec4__.html", null ],
     [ "WebSocket", "classasl_1_1_web_socket.html", null ],
     [ "Xdl", "structasl_1_1_xdl.html", null ],

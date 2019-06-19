@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASL: Factory&lt; T, K &gt; Class Template Reference</title>
+<title>ASL: Factory&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,19 +90,19 @@ $(document).ready(function(){initNavTree('classasl_1_1_factory.html','');});
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Factory&lt; T, K &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___factory.html">Factory class and macros</a></div></div>  </div>
+<div class="title">Factory&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___factory.html">Factory class and macros</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class T, class K = void*&gt;<br />
-class asl::Factory&lt; T, K &gt;</h3>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class asl::Factory&lt; T &gt;</h3>
 
 <p>A <a class="el" href="classasl_1_1_factory.html" title="A Factory allows creating objects given a class name as a String.">Factory</a> allows creating objects given a class name as a <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a>. </p>
 <p>They are used through pointers to their base class and through virtual functions. A <a class="el" href="classasl_1_1_factory.html" title="A Factory allows creating objects given a class name as a String.">Factory</a> is created for a given base class, and subclasses must be registered with <code><a class="el" href="group___factory.html#ga7a2fb5df10e8d7961461170143e8f9b1" title="Registers class Class in the factory for class Base for instantiation by name (Class must be a subcla...">ASL_FACTORY_REGISTER()</a></code> before use.</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>Dog : <span class="keyword">public</span> Animal {...};</div><div class="line"></div><div class="line"><a class="code" href="group___factory.html#ga7a2fb5df10e8d7961461170143e8f9b1">ASL_FACTORY_REGISTER</a>( Animal, Dog )</div><div class="line">...</div><div class="line">Animal* animal = <a class="code" href="classasl_1_1_factory.html#ad044b4b850cd57ac77d2cbfc517161e0">Factory&lt;Animal&gt;::create</a>(<span class="stringliteral">&quot;Dog&quot;</span>);</div></div><!-- fragment --> </div>
 <p><code>#include &lt;Factory.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="classasl_1_1_singleton.html">Singleton&lt; Factory&lt; T, K &gt; &gt;</a>.</p>
+<p>Inherits <a class="el" href="classasl_1_1_singleton.html">Singleton&lt; Factory&lt; T &gt; &gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -120,11 +120,19 @@ static <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" 
 <tr class="separator:ac71fc66b15fbc7458243d95c7a3f73c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08428682dd330620a7019e4970040c35"><td class="memItemLeft" align="right" valign="top"><a id="a08428682dd330620a7019e4970040c35"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_factory.html#a08428682dd330620a7019e4970040c35">has</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;clas)</td></tr>
-<tr class="memdesc:a08428682dd330620a7019e4970040c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the given class name is registered <br /></td></tr>
+<tr class="memdesc:a08428682dd330620a7019e4970040c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given class name is registered. <br /></td></tr>
 <tr class="separator:a08428682dd330620a7019e4970040c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classasl_1_1_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classasl_1_1_singleton')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classasl_1_1_singleton.html">Singleton&lt; Factory&lt; T, K &gt; &gt;</a></td></tr>
+<tr class="memitem:aa8b6e903519016ba80db6f1212566575"><td class="memItemLeft" align="right" valign="top"><a id="aa8b6e903519016ba80db6f1212566575"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_factory.html#aa8b6e903519016ba80db6f1212566575">setClassInfo</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;clas, const <a class="el" href="classasl_1_1_dic.html">Dic</a>&lt;&gt; &amp;info)</td></tr>
+<tr class="memdesc:aa8b6e903519016ba80db6f1212566575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates an information string with a registered class. <br /></td></tr>
+<tr class="separator:aa8b6e903519016ba80db6f1212566575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e13624d2101814db494674ab8fb802"><td class="memItemLeft" align="right" valign="top"><a id="ae5e13624d2101814db494674ab8fb802"></a>
+static const <a class="el" href="classasl_1_1_dic.html">Dic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_factory.html#ae5e13624d2101814db494674ab8fb802">classInfo</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;clas)</td></tr>
+<tr class="memdesc:ae5e13624d2101814db494674ab8fb802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information associated with a class. <br /></td></tr>
+<tr class="separator:ae5e13624d2101814db494674ab8fb802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classasl_1_1_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classasl_1_1_singleton')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classasl_1_1_singleton.html">Singleton&lt; Factory&lt; T &gt; &gt;</a></td></tr>
 <tr class="memitem:ade6193af70013295b23e0318cbb276bd inherit pub_static_methods_classasl_1_1_singleton"><td class="memItemLeft" align="right" valign="top"><a id="ade6193af70013295b23e0318cbb276bd"></a>
-static <a class="el" href="classasl_1_1_factory.html">Factory</a>&lt; T, K &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_singleton.html#ade6193af70013295b23e0318cbb276bd">instance</a> ()</td></tr>
+static <a class="el" href="classasl_1_1_factory.html">Factory</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_singleton.html#ade6193af70013295b23e0318cbb276bd">instance</a> ()</td></tr>
 <tr class="memdesc:ade6193af70013295b23e0318cbb276bd inherit pub_static_methods_classasl_1_1_singleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to an instance of class T, creating it on the first call. <br /></td></tr>
 <tr class="separator:ade6193af70013295b23e0318cbb276bd inherit pub_static_methods_classasl_1_1_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

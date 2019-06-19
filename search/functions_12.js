@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['scale',['scale',['../classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c',1,'asl::Matrix3_::scale()'],['../classasl_1_1_matrix4__.html#adafb4f52a30e6733100024a048c051d0',1,'asl::Matrix4_::scale(const Vec3_&lt; T &gt; &amp;)'],['../classasl_1_1_matrix4__.html#a56854ab086677f15ccd5452f0442ed23',1,'asl::Matrix4_::scale(T s)']]],
+  ['scale',['scale',['../classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c',1,'asl::Matrix3_::scale()'],['../classasl_1_1_matrix4__.html#af11820156d49496997a4df080de8cd3c',1,'asl::Matrix4_::scale(const Vec3_&lt; T &gt; &amp;s)'],['../classasl_1_1_matrix4__.html#a56854ab086677f15ccd5452f0442ed23',1,'asl::Matrix4_::scale(T s)']]],
   ['scanf',['scanf',['../classasl_1_1_text_file.html#a49c94ef8890dc4541c2059c3c2e4c014',1,'asl::TextFile']]],
   ['seconds',['seconds',['../classasl_1_1_date.html#aa6eda1d98689af71532175b8f30d8fb2',1,'asl::Date']]],
   ['section',['section',['../classasl_1_1_ini_file.html#aba64d5bde3196b601571021287854fd2',1,'asl::IniFile']]],
@@ -14,6 +14,7 @@ var searchData=
   ['service',['service',['../classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a',1,'asl::SocketServer']]],
   ['set',['set',['../classasl_1_1_xml.html#a70af2fbc3ff922b292f250803257ea57',1,'asl::Xml::set(const String &amp;value)'],['../classasl_1_1_xml.html#a8f8ee0e24ca48f20bc757e7da882aa53',1,'asl::Xml::set(const String &amp;name, const String &amp;val)']]],
   ['setattr',['setAttr',['../classasl_1_1_xml.html#a9117ae298de23d2f398b02ffe74f66b1',1,'asl::Xml']]],
+  ['setclassinfo',['setClassInfo',['../classasl_1_1_factory.html#aa8b6e903519016ba80db6f1212566575',1,'asl::Factory']]],
   ['setcrossdomain',['setCrossDomain',['../classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7',1,'asl::HttpServer']]],
   ['setdecimal',['setDecimal',['../classasl_1_1_tabular_data_file.html#a3605313a253aad3f9efcd79c290e3d82',1,'asl::TabularDataFile']]],
   ['setendian',['setEndian',['../classasl_1_1_stream_buffer_reader.html#ab8b59b8d8776fde8418d6692453404c1',1,'asl::StreamBufferReader::setEndian()'],['../classasl_1_1_stream_buffer.html#ab8b59b8d8776fde8418d6692453404c1',1,'asl::StreamBuffer::setEndian()']]],
@@ -23,6 +24,7 @@ var searchData=
   ['setheader',['setHeader',['../classasl_1_1_http_message.html#a52593078e5cd7510dd80c19d100e37af',1,'asl::HttpMessage']]],
   ['setlastmodified',['setLastModified',['../classasl_1_1_file.html#ab7c1b54a3c88ed2fa9dd02abf9177e30',1,'asl::File']]],
   ['setmaxlevel',['setMaxLevel',['../classasl_1_1_log.html#a2d3a00327fdbc63ae4b0dc00e6837114',1,'asl::Log']]],
+  ['setnewline',['setNewline',['../classasl_1_1_serial_port.html#a6eb706689a6e502372aa1f40841d50ae',1,'asl::SerialPort']]],
   ['setproto',['setProto',['../classasl_1_1_http_response.html#aec71fd305217502019a43aaed41ea9a1',1,'asl::HttpResponse']]],
   ['setseparator',['setSeparator',['../classasl_1_1_tabular_data_file.html#a68b15f415ce57036b6ce666f5f903b72',1,'asl::TabularDataFile']]],
   ['setsequential',['setSequential',['../classasl_1_1_socket_server.html#a3211a7836021248bdae20320974abc64',1,'asl::SocketServer']]],

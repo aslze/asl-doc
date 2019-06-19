@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['factory',['Factory',['../classasl_1_1_factory.html',1,'Factory&lt; T, K &gt;'],['../group___factory.html',1,'(Global Namespace)']]],
+  ['factory',['Factory',['../classasl_1_1_factory.html',1,'Factory&lt; T &gt;'],['../group___factory.html',1,'(Global Namespace)']]],
   ['file',['File',['../classasl_1_1_file.html',1,'File'],['../classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b',1,'asl::File::File()'],['../classasl_1_1_file.html#ab5cfdf44e333e62051d88c279fa83b6c',1,'asl::File::File(const String &amp;name)'],['../classasl_1_1_file.html#a208d11162405a15bab26acdb81746562',1,'asl::File::File(const String &amp;name, OpenMode mode)']]],
   ['filename',['fileName',['../classasl_1_1_ini_file.html#a307f4d44998fde78418ddab34e57b5be',1,'asl::IniFile']]],
   ['files',['files',['../classasl_1_1_directory.html#a0b0bfe551db9a96c709f1c389a94c59d',1,'asl::Directory']]],

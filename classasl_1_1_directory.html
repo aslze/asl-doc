@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a12726cbe648de48a425ec2cacaae64de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d8623150e6d43ab4bf7493aa8cbc1a"><td class="memItemLeft" align="right" valign="top"><a id="aa7d8623150e6d43ab4bf7493aa8cbc1a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#aa7d8623150e6d43ab4bf7493aa8cbc1a">exists</a> () const</td></tr>
-<tr class="memdesc:aa7d8623150e6d43ab4bf7493aa8cbc1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this directory exists (but false if it does not exist or refers to a file. <br /></td></tr>
+<tr class="memdesc:aa7d8623150e6d43ab4bf7493aa8cbc1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this directory exists, or false if it does not exist or refers to a file. <br /></td></tr>
 <tr class="separator:aa7d8623150e6d43ab4bf7493aa8cbc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb178c9e4c9e9d00d55d5b3e361d3df"><td class="memItemLeft" align="right" valign="top"><a id="acdb178c9e4c9e9d00d55d5b3e361d3df"></a>
 const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_file.html">File</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#acdb178c9e4c9e9d00d55d5b3e361d3df">items</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;which=&quot;*&quot;, ItemType t=ALL)</td></tr>
@@ -160,8 +160,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#a5c145e5ac8508626dae54e97b56ffc5c">create</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a554c3e7ca3ebc1c1b358b92f5b5980c2">name</a>)</td></tr>
 <tr class="memdesc:a5c145e5ac8508626dae54e97b56ffc5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new directory (and its ancestors if they don't exist), returns false on failure. <br /></td></tr>
 <tr class="separator:a5c145e5ac8508626dae54e97b56ffc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57773a9420612464fea4bcc3aa7345af"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#a57773a9420612464fea4bcc3aa7345af">createOne</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a554c3e7ca3ebc1c1b358b92f5b5980c2">name</a>)</td></tr>
-<tr class="memdesc:a57773a9420612464fea4bcc3aa7345af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new directory, returns false on failure (e.g.  <a href="#a57773a9420612464fea4bcc3aa7345af">More...</a><br /></td></tr>
+<tr class="memitem:a57773a9420612464fea4bcc3aa7345af"><td class="memItemLeft" align="right" valign="top"><a id="a57773a9420612464fea4bcc3aa7345af"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#a57773a9420612464fea4bcc3aa7345af">createOne</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a554c3e7ca3ebc1c1b358b92f5b5980c2">name</a>)</td></tr>
+<tr class="memdesc:a57773a9420612464fea4bcc3aa7345af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new directory, returns false on failure (e.g if its parent does not exist) <br /></td></tr>
 <tr class="separator:a57773a9420612464fea4bcc3aa7345af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a6ab15ecbc66072b4875adf4f00356d"><td class="memItemLeft" align="right" valign="top"><a id="a1a6ab15ecbc66072b4875adf4f00356d"></a>
 static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#a1a6ab15ecbc66072b4875adf4f00356d">createTemp</a> ()</td></tr>
@@ -184,36 +185,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a98276312cae4a78cd701054d56bd2037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given directory with all its content recursively and returns true on success (USE WITH CARE!) <br /></td></tr>
 <tr class="separator:a98276312cae4a78cd701054d56bd2037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a57773a9420612464fea4bcc3aa7345af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57773a9420612464fea4bcc3aa7345af">&#9670;&nbsp;</a></span>createOne()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool createOne </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a new directory, returns false on failure (e.g. </p>
-<p>if its parent does not exist) </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Directory.h</li>
 </ul>
