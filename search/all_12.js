@@ -36,5 +36,6 @@ var searchData=
   ['rotation',['rotation',['../classasl_1_1_matrix4__.html#a40b7e9cd1f5fdc0e2ec081582879ed7d',1,'asl::Matrix4_']]],
   ['run',['run',['../classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207',1,'asl::Process::run()'],['../classasl_1_1_thread.html#a72fcb26a14f6beb1c3fbace9ab3e7dbb',1,'asl::Thread::run()']]],
   ['running',['running',['../classasl_1_1_process.html#aaa6432a11cc8aa43cdcac30e43bf038f',1,'asl::Process']]],
+  ['runtest',['runTest',['../group___testing.html#ga9ea97eb41007844d14247b53ae352b0e',1,'asl']]],
   ['reference_2dcounted_20objects',['Reference-counted objects',['../group___shared.html',1,'']]]
 ];

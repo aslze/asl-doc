@@ -2,7 +2,7 @@ var searchData=
 [
   ['magnitude',['magnitude',['../classasl_1_1_complex.html#a72ececb75ae72a493f34b27c064c3041',1,'asl::Complex']]],
   ['magnitude2',['magnitude2',['../classasl_1_1_complex.html#a652693807481fd69ee6bc455fa733f54',1,'asl::Complex']]],
-  ['map',['Map',['../classasl_1_1_map.html',1,'Map&lt; K, T &gt;'],['../classasl_1_1_map.html#a34d2b2e3b342a958b7006fe8f38ae13a',1,'asl::Map::Map()'],['../classasl_1_1_array.html#a88b8561f01f01e0a481f9c2223e99037',1,'asl::Array::map()']]],
+  ['map',['Map',['../classasl_1_1_map.html',1,'Map&lt; K, T &gt;'],['../classasl_1_1_array.html#a88b8561f01f01e0a481f9c2223e99037',1,'asl::Array::map()'],['../classasl_1_1_map.html#a34d2b2e3b342a958b7006fe8f38ae13a',1,'asl::Map::Map()']]],
   ['map_3c_20string_2c_20t_20_3e',['Map&lt; String, T &gt;',['../classasl_1_1_map.html',1,'asl']]],
   ['matrix',['matrix',['../classasl_1_1_pose__.html#a8706289522e210e5673fe2b9584e4e4e',1,'asl::Pose_::matrix()'],['../classasl_1_1_quaternion__.html#a8706289522e210e5673fe2b9584e4e4e',1,'asl::Quaternion_::matrix()']]],
   ['matrix3_5f',['Matrix3_',['../classasl_1_1_matrix3__.html',1,'Matrix3_&lt; T &gt;'],['../classasl_1_1_matrix3__.html#ad6749f52252ef189ba2fffc52c247ab4',1,'asl::Matrix3_::Matrix3_()']]],
