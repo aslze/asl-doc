@@ -12,6 +12,10 @@ var group___math3_d =
     ] ],
     [ "Matrix4_", "classasl_1_1_matrix4__.html", [
       [ "Matrix4_", "classasl_1_1_matrix4__.html#aebe3b6073453fcd442f4c5f66c37d603", null ],
+      [ "Matrix4_", "classasl_1_1_matrix4__.html#aaef86101e66560bd8b952bd4d5769a87", null ],
+      [ "Matrix4_", "classasl_1_1_matrix4__.html#aea9dec24a8406f4b48c6c91ea1e4b689", null ],
+      [ "column", "classasl_1_1_matrix4__.html#a138199504cfb42235796d7027de7850c", null ],
+      [ "column3", "classasl_1_1_matrix4__.html#aeeae5a56f24fdf732f74d606921a9988", null ],
       [ "det", "classasl_1_1_matrix4__.html#a9f7456d70abd64fe4f99c07b23207043", null ],
       [ "inverse", "classasl_1_1_matrix4__.html#a1645e6386fe72dbab7753183dd23f2f1", null ],
       [ "operator *", "classasl_1_1_matrix4__.html#a14e334e66876720a079e2ec1bc97fac3", null ],

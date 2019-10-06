@@ -15,6 +15,6 @@ var searchData=
   ['foreach',['foreach',['../group___containers.html#gaf4fcfe5872c70e4998812a767e267925',1,'foreach1.h']]],
   ['foreach2',['foreach2',['../group___containers.html#gada2796cfee1961387a09942600ecf5cd',1,'foreach1.h']]],
   ['fract',['fract',['../group___global.html#ga7092e898a987d3fd7f760cac9c479fc7',1,'asl']]],
-  ['fromaxisangle',['fromAxisAngle',['../classasl_1_1_quaternion__.html#a7e8b9301896371ecb049aaaca170b7e8',1,'asl::Quaternion_']]],
+  ['fromaxisangle',['fromAxisAngle',['../classasl_1_1_quaternion__.html#a7e8b9301896371ecb049aaaca170b7e8',1,'asl::Quaternion_::fromAxisAngle(const Vec3_&lt; T &gt; &amp;axis, T angle)'],['../classasl_1_1_quaternion__.html#a6611229d97746637543d7d3b533cea8a',1,'asl::Quaternion_::fromAxisAngle(const Vec3_&lt; T &gt; &amp;v)']]],
   ['fromaxisangleu',['fromAxisAngleU',['../classasl_1_1_quaternion__.html#a8a785efd97af4778d31163fbc14f64d5',1,'asl::Quaternion_']]]
 ];

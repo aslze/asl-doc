@@ -15,6 +15,8 @@ var searchData=
   ['cmdargs',['CmdArgs',['../classasl_1_1_cmd_args.html#a52fdcf0b3871c989d2f060eb9df4b76f',1,'asl::CmdArgs::CmdArgs(const String &amp;spec=&quot;&quot;)'],['../classasl_1_1_cmd_args.html#ab6d6980ce3cba2eb4149e3c1c0b3f83a',1,'asl::CmdArgs::CmdArgs(int argc, char *argv[], const String &amp;spec=&quot;&quot;)']]],
   ['code',['code',['../classasl_1_1_http_response.html#a4aebcfaf2368eb240cf5111cc6fc140b',1,'asl::HttpResponse::code()'],['../classasl_1_1_web_socket.html#a4aebcfaf2368eb240cf5111cc6fc140b',1,'asl::WebSocket::code()']]],
   ['color',['color',['../classasl_1_1_console.html#a910705b2522c337f1db8660b61bfefcc',1,'asl::Console']]],
+  ['column',['column',['../classasl_1_1_matrix4__.html#a138199504cfb42235796d7027de7850c',1,'asl::Matrix4_']]],
+  ['column3',['column3',['../classasl_1_1_matrix4__.html#aeeae5a56f24fdf732f74d606921a9988',1,'asl::Matrix4_']]],
   ['columns',['columns',['../classasl_1_1_tabular_data_file.html#affe1c768af5b7494c634915df1832fb9',1,'asl::TabularDataFile::columns(const String &amp;cols)'],['../classasl_1_1_tabular_data_file.html#ab65b4d5642be16b4cd503beb3bfeffb5',1,'asl::TabularDataFile::columns(const Array&lt; String &gt; &amp;cols)'],['../classasl_1_1_tabular_data_file.html#ace85207e5d5b1d94a2470a3ca1760fa0',1,'asl::TabularDataFile::columns()']]],
   ['complex',['Complex',['../classasl_1_1_complex.html#a92d4b0d34786af7e0a45ddbfcd9c9ad1',1,'asl::Complex::Complex(T x)'],['../classasl_1_1_complex.html#a2fdb0f9565c8c3945a556740ffc88f1a',1,'asl::Complex::Complex(T r_, T i_)']]],
   ['concat',['concat',['../classasl_1_1_array.html#a81e91ddf1e762cd9a915507eb1aca3c2',1,'asl::Array']]],

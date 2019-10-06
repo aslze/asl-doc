@@ -112,6 +112,14 @@ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#aebe3b6073453fcd442f4c5f66c37d603">Matrix4_</a> (T a11, T a12, T a13, T a14, T a21, T a22, T a23, T a24, T a31, T a32, T a33, T a34, T a41=0, T a42=0, T a43=0, T a44=1)</td></tr>
 <tr class="memdesc:aebe3b6073453fcd442f4c5f66c37d603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a matrix with the given elements (by rows) with last row [0 0 0 1] by default. <br /></td></tr>
 <tr class="separator:aebe3b6073453fcd442f4c5f66c37d603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef86101e66560bd8b952bd4d5769a87"><td class="memItemLeft" align="right" valign="top"><a id="aaef86101e66560bd8b952bd4d5769a87"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#aaef86101e66560bd8b952bd4d5769a87">Matrix4_</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3</a> &amp;v1, const <a class="el" href="classasl_1_1_vec3__.html">Vec3</a> &amp;v2, const <a class="el" href="classasl_1_1_vec3__.html">Vec3</a> &amp;v3, const <a class="el" href="classasl_1_1_vec3__.html">Vec3</a> &amp;v4=<a class="el" href="classasl_1_1_vec3__.html">Vec3</a>(0, 0, 0))</td></tr>
+<tr class="memdesc:aaef86101e66560bd8b952bd4d5769a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a matrix from 4 3D vectors used as columns, setting the last row as [0 0 0 1]. <br /></td></tr>
+<tr class="separator:aaef86101e66560bd8b952bd4d5769a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9dec24a8406f4b48c6c91ea1e4b689"><td class="memItemLeft" align="right" valign="top"><a id="aea9dec24a8406f4b48c6c91ea1e4b689"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#aea9dec24a8406f4b48c6c91ea1e4b689">Matrix4_</a> (const <a class="el" href="classasl_1_1_vec4__.html">Vec4</a> &amp;v1, const <a class="el" href="classasl_1_1_vec4__.html">Vec4</a> &amp;v2, const <a class="el" href="classasl_1_1_vec4__.html">Vec4</a> &amp;v3, const <a class="el" href="classasl_1_1_vec4__.html">Vec4</a> &amp;v4)</td></tr>
+<tr class="memdesc:aea9dec24a8406f4b48c6c91ea1e4b689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a matrix from 4 4D vectors used as columns. <br /></td></tr>
+<tr class="separator:aea9dec24a8406f4b48c6c91ea1e4b689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d27947f1ccfcbac86a417dbed4cad3"><td class="memItemLeft" align="right" valign="top"><a id="ab3d27947f1ccfcbac86a417dbed4cad3"></a>
 <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#ab3d27947f1ccfcbac86a417dbed4cad3">t</a> () const</td></tr>
 <tr class="memdesc:ab3d27947f1ccfcbac86a417dbed4cad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this matrix transposed. <br /></td></tr>
@@ -156,6 +164,14 @@ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a40b7e9cd1f5fdc0e2ec081582879ed7d">rotation</a> () const</td></tr>
 <tr class="memdesc:a40b7e9cd1f5fdc0e2ec081582879ed7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>rotation</em> part of this matrix as a Quaternion. <br /></td></tr>
 <tr class="separator:a40b7e9cd1f5fdc0e2ec081582879ed7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeae5a56f24fdf732f74d606921a9988"><td class="memItemLeft" align="right" valign="top"><a id="aeeae5a56f24fdf732f74d606921a9988"></a>
+<a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#aeeae5a56f24fdf732f74d606921a9988">column3</a> (int i) const</td></tr>
+<tr class="memdesc:aeeae5a56f24fdf732f74d606921a9988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the i-th column's top 3 elements as a Vec3. <br /></td></tr>
+<tr class="separator:aeeae5a56f24fdf732f74d606921a9988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138199504cfb42235796d7027de7850c"><td class="memItemLeft" align="right" valign="top"><a id="a138199504cfb42235796d7027de7850c"></a>
+<a class="el" href="classasl_1_1_vec4__.html">Vec4_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a138199504cfb42235796d7027de7850c">column</a> (int i) const</td></tr>
+<tr class="memdesc:a138199504cfb42235796d7027de7850c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the i-th column as a Vec4. <br /></td></tr>
+<tr class="separator:a138199504cfb42235796d7027de7850c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ab7738cbaba3f04623ffce6d72b402"><td class="memItemLeft" align="right" valign="top"><a id="a31ab7738cbaba3f04623ffce6d72b402"></a>
 <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a31ab7738cbaba3f04623ffce6d72b402">translation</a> () const</td></tr>
 <tr class="memdesc:a31ab7738cbaba3f04623ffce6d72b402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>translation</em> part of this matrix (the last column) as a Vec3. <br /></td></tr>
