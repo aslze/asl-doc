@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_library.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classasl_1_1_library-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Library Class Reference</div>  </div>
+<div class="title">Library Class Reference<div class="ingroups"><a class="el" href="group___library.html">Dynamically loadable libraries</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('classasl_1_1_library.html','');});
 <p>Use <code>ASL_EXPORT_CLASS</code> to export classes from a library so that they can be easily imported in applications with <code>library.create("ClassName")</code>.</p>
 <p>Exporting and importing classes needs a public header:</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>Animal</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span> speak() {}</div><div class="line">};</div></div><!-- fragment --><p>One implementation built into dynamic library <code>cat.dll</code>:</p>
-<div class="fragment"><div class="line"><span class="keyword">class </span>Cat : <span class="keyword">public</span> Animal</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="keywordtype">void</span> speak() { printf(<span class="stringliteral">&quot;Miaow!\n&quot;</span>); }</div><div class="line">};</div><div class="line"></div><div class="line">ASL_EXPORT_CLASS(Cat)</div></div><!-- fragment --><p>Then another program at runtime can load the library and create an object of class <code>Cat</code>. It only needs the public base class header ("Animal.h"), not the <code>Cat</code> subclass.</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>Cat : <span class="keyword">public</span> Animal</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="keywordtype">void</span> speak() { printf(<span class="stringliteral">&quot;Miaow!\n&quot;</span>); }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="group___library.html#ga864c0dc3fca59aa6df0b2cf68998caec">ASL_EXPORT_CLASS</a>(Cat)</div></div><!-- fragment --><p>Then another program at runtime can load the library and create an object of class <code>Cat</code>. It only needs the public base class header ("Animal.h"), not the <code>Cat</code> subclass.</p>
 <div class="fragment"><div class="line">Library lib(<span class="stringliteral">&quot;plugins/cat&quot;</span>);</div><div class="line">Animal* cat = lib.create(<span class="stringliteral">&quot;Cat&quot;</span>);</div><div class="line">cat-&gt;speak();</div></div><!-- fragment --><p>The class can be exported with an alternative name, for example to have many plugins export classes with the same name so that clients don't need knowledge about what classes are exported.</p>
-<div class="fragment"><div class="line">ASL_EXPORT_CLASS_AS(Cat, Animal)</div><div class="line">Animal* cat = lib.create(<span class="stringliteral">&quot;Animal&quot;</span>);</div></div><!-- fragment --> </div>
+<div class="fragment"><div class="line"><a class="code" href="group___library.html#ga79b40333b2db24ad7ea849beb9baed61">ASL_EXPORT_CLASS_AS</a>(Cat, Animal)</div><div class="line">Animal* cat = lib.create(<span class="stringliteral">&quot;Animal&quot;</span>);</div></div><!-- fragment --> </div>
 <p><code>#include &lt;Library.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,10 +127,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_library.html#a026486294ee8238ccaacdcebc2ed6424">get</a> (const char *sym)</td></tr>
 <tr class="memdesc:a026486294ee8238ccaacdcebc2ed6424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the address of the given symbol name in the library. <br /></td></tr>
 <tr class="separator:a026486294ee8238ccaacdcebc2ed6424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a64bace6e4452a962de7d6fdb161372"><td class="memItemLeft" align="right" valign="top"><a id="a6a64bace6e4452a962de7d6fdb161372"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_library.html#a6a64bace6e4452a962de7d6fdb161372">create</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;obj)</td></tr>
-<tr class="memdesc:a6a64bace6e4452a962de7d6fdb161372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an object of class 'obj' exported in the library with the ASL_EXPORT_CLASS macro Returns a null pointer if that class is not exported. <br /></td></tr>
-<tr class="separator:a6a64bace6e4452a962de7d6fdb161372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b2bcdfeaa987374c34309ef19a7dd7"><td class="memItemLeft" align="right" valign="top"><a id="af8b2bcdfeaa987374c34309ef19a7dd7"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_library.html#af8b2bcdfeaa987374c34309ef19a7dd7">create</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;className)</td></tr>
+<tr class="memdesc:af8b2bcdfeaa987374c34309ef19a7dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an object of class 'className' exported in the library with the <code>ASL_EXPORT_CLASS</code> macro Returns a null pointer if that class is not exported. <br /></td></tr>
+<tr class="separator:af8b2bcdfeaa987374c34309ef19a7dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Library.h</li>

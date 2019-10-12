@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['factory_20class_20and_20macros',['Factory class and macros',['../group___factory.html',1,'']]]
+  ['dynamically_20loadable_20libraries',['Dynamically loadable libraries',['../group___library.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['global_20functions',['Global functions',['../group___global.html',1,'']]]
+  ['factory_20class_20and_20macros',['Factory class and macros',['../group___factory.html',1,'']]]
 ];

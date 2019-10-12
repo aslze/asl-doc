@@ -9,5 +9,6 @@ var modules =
     [ "Socket communication", "group___sockets.html", "group___sockets" ],
     [ "Reference-counted objects", "group___shared.html", null ],
     [ "3D Math", "group___math3_d.html", "group___math3_d" ],
-    [ "Binary data", "group___binary.html", "group___binary" ]
+    [ "Binary data", "group___binary.html", "group___binary" ],
+    [ "Dynamically loadable libraries", "group___library.html", "group___library" ]
 ];

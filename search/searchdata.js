@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "cls",
   5: "cors",
   6: "eo",
-  7: "3bcfgrstx",
+  7: "3bcdfgrstx",
   8: "ad"
 };
 

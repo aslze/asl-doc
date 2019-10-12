@@ -112,7 +112,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:gac5774b842c78f62ab84ac8ee01ef564e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a test named Name. <br /></td></tr>
 <tr class="separator:gac5774b842c78f62ab84ac8ee01ef564e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f2c851878c4f646003836416b72495b"><td class="memItemLeft" align="right" valign="top"><a id="ga1f2c851878c4f646003836416b72495b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___testing.html#ga1f2c851878c4f646003836416b72495b">ASL_ASSERT</a>(x)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___testing.html#ga1f2c851878c4f646003836416b72495b">ASL_ASSERT</a>(x)&#160;&#160;&#160;if(!(x)) { printf(&quot;\n%s: %i\n\n* Failed: '%s'\n\n&quot;, __FILE__, __LINE__, #x); testFailed = true;}</td></tr>
 <tr class="memdesc:ga1f2c851878c4f646003836416b72495b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the argument is true. <br /></td></tr>
 <tr class="separator:ga1f2c851878c4f646003836416b72495b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e93129c77854e8b426678f03455e695"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___testing.html#ga7e93129c77854e8b426678f03455e695">ASL_CHECK</a>(x,  op,  y)</td></tr>
