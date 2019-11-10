@@ -10,6 +10,6 @@ var classasl_1_1_serial_port =
     [ "setNewline", "classasl_1_1_serial_port.html#a6eb706689a6e502372aa1f40841d50ae", null ],
     [ "setTimeout", "classasl_1_1_serial_port.html#a530e83c9e93dfb79364ece48a76febf3", null ],
     [ "waitInput", "classasl_1_1_serial_port.html#a7a420f044d9049696e718d9ae33e0fb6", null ],
-    [ "write", "classasl_1_1_serial_port.html#acc8c816d015fab3d9db6d3258ead9b5a", null ],
-    [ "write", "classasl_1_1_serial_port.html#aa0a05a596526bd70fa93b1620f9d0b70", null ]
+    [ "write", "classasl_1_1_serial_port.html#aa0a05a596526bd70fa93b1620f9d0b70", null ],
+    [ "write", "classasl_1_1_serial_port.html#acc8c816d015fab3d9db6d3258ead9b5a", null ]
 ];

@@ -10,5 +10,6 @@ var modules =
     [ "Reference-counted objects", "group___shared.html", null ],
     [ "3D Math", "group___math3_d.html", "group___math3_d" ],
     [ "Binary data", "group___binary.html", "group___binary" ],
-    [ "Dynamically loadable libraries", "group___library.html", "group___library" ]
+    [ "Dynamically loadable libraries", "group___library.html", "group___library" ],
+    [ "Message logger", "group___logging.html", "group___logging" ]
 ];

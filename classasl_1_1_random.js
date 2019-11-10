@@ -1,8 +1,8 @@
 var classasl_1_1_random =
 [
     [ "get", "classasl_1_1_random.html#ae762b88620ae017967e8ff7c3cfabd05", null ],
-    [ "init", "classasl_1_1_random.html#a6d1c3737a68f8f0a66d439fb7548dcb9", null ],
     [ "init", "classasl_1_1_random.html#a1e55087f09d3a8bfb68e804694e9c729", null ],
+    [ "init", "classasl_1_1_random.html#a6d1c3737a68f8f0a66d439fb7548dcb9", null ],
     [ "normal", "classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033", null ],
     [ "normal", "classasl_1_1_random.html#ae2de995eec73d238d1a75ae07a8e95a8", null ],
     [ "operator()", "classasl_1_1_random.html#af1b6c173e7c698bec39d3333925a5298", null ],
