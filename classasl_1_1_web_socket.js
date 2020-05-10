@@ -10,5 +10,6 @@ var classasl_1_1_web_socket =
     [ "send", "classasl_1_1_web_socket.html#a326aa858d03d76beb81119aa64fd58b4", null ],
     [ "send", "classasl_1_1_web_socket.html#a5880ab8c687799f3bfeb587fb2cd9ac8", null ],
     [ "send", "classasl_1_1_web_socket.html#aa75eb785dcb9c813c2fbe764960bbbfd", null ],
-    [ "wait", "classasl_1_1_web_socket.html#aaa9f723e27ccec46f1592b602a867cc6", null ]
+    [ "wait", "classasl_1_1_web_socket.html#aebba325cceda5c1ff44738518bd298ba", null ],
+    [ "waitData", "classasl_1_1_web_socket.html#a5f5831e1d99408487b526e10ee60ad15", null ]
 ];

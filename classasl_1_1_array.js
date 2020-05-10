@@ -19,6 +19,7 @@ var classasl_1_1_array =
     [ "last", "classasl_1_1_array.html#aa966846ddd7f211ac23d71410578ad44", null ],
     [ "length", "classasl_1_1_array.html#a91213974fa3ac3959b1c355a9e588f8d", null ],
     [ "map", "classasl_1_1_array.html#a88b8561f01f01e0a481f9c2223e99037", null ],
+    [ "map_", "classasl_1_1_array.html#a873e7f13cd1c796bfdb7fe9559176738", null ],
     [ "operator const T *", "classasl_1_1_array.html#ac9ca720e14833f50c05bee6f3de9185c", null ],
     [ "operator T*", "classasl_1_1_array.html#adec4d6e4697fff19761dfb957ab203f2", null ],
     [ "operator,", "classasl_1_1_array.html#a2858252780a1e9c712ed6cd81b93976f", null ],
@@ -41,6 +42,6 @@ var classasl_1_1_array =
     [ "slice", "classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd", null ],
     [ "sort", "classasl_1_1_array.html#ad214197fe78bbc5c1dd12a697c6734e0", null ],
     [ "sort", "classasl_1_1_array.html#a449e41a9b2bc294476b9ccefd59eb652", null ],
-    [ "sortBy", "classasl_1_1_array.html#a7468471c4b0ffe45df14b0b8258da1e6", null ],
+    [ "sortBy", "classasl_1_1_array.html#aded6603d5115a01c411596957508b959", null ],
     [ "sslice", "classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c", null ]
 ];

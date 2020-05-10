@@ -16,6 +16,7 @@ var group___sockets =
       [ "connect", "classasl_1_1_socket.html#a835bceb441732a46f630d199bdd9c14a", null ],
       [ "connect", "classasl_1_1_socket.html#ae8d90dc9077858552aa2e4d297ba5657", null ],
       [ "disconnected", "classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72", null ],
+      [ "error", "classasl_1_1_socket.html#a9db0c25a0b1baac0e7e5cbf5a72d3cdc", null ],
       [ "listen", "classasl_1_1_socket.html#af4926e2e36a362c7b6f3926c5d25151d", null ],
       [ "localAddress", "classasl_1_1_socket.html#af96eba3cd573fb1481412ac66dfe75ef", null ],
       [ "operator<<", "classasl_1_1_socket.html#a72fcf5238f1f9a67b0d0c67a5adbf0fd", null ],
@@ -25,7 +26,8 @@ var group___sockets =
       [ "readLine", "classasl_1_1_socket.html#a79e7f2ee2b5e510148a290e49333c1e7", null ],
       [ "remoteAddress", "classasl_1_1_socket.html#a10e33d5f925b803ad2699ef4f1a0981e", null ],
       [ "skip", "classasl_1_1_socket.html#a22e04fd90a8da8fbaa968a171d19c6f8", null ],
-      [ "waitInput", "classasl_1_1_socket.html#a7a420f044d9049696e718d9ae33e0fb6", null ],
+      [ "waitData", "classasl_1_1_socket.html#a1369224aced95f8e426b57c32e31edb0", null ],
+      [ "waitInput", "classasl_1_1_socket.html#aefa1626300c3e236bc6cc39bb320f8ce", null ],
       [ "write", "classasl_1_1_socket.html#ac69387852b359a0c7490bb7133e77084", null ]
     ] ],
     [ "PacketSocket", "classasl_1_1_packet_socket.html", [
@@ -43,11 +45,12 @@ var group___sockets =
       [ "bindPath", "classasl_1_1_socket_server.html#a9a1d847b3c8fbd8769c850e275e7f21e", null ],
       [ "bindTLS", "classasl_1_1_socket_server.html#a02ee755ca44d92ba25f25b23562d4f4d", null ],
       [ "bindTLS", "classasl_1_1_socket_server.html#aaa0dc2a3c76cdebf846778d448848738", null ],
+      [ "running", "classasl_1_1_socket_server.html#a8e5a1b9ac06a913f1db10c386d6aa9c6", null ],
       [ "serve", "classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b", null ],
       [ "service", "classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a", null ],
       [ "setSequential", "classasl_1_1_socket_server.html#a3211a7836021248bdae20320974abc64", null ],
       [ "start", "classasl_1_1_socket_server.html#ae58264567927c6d6e295f3d574a44094", null ],
-      [ "stop", "classasl_1_1_socket_server.html#a8c528baf37154d347366083f0f816846", null ],
+      [ "stop", "classasl_1_1_socket_server.html#a607e3d8e04c5e58305e4892658436917", null ],
       [ "useCert", "classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5", null ]
     ] ],
     [ "TlsSocket", "classasl_1_1_tls_socket.html", [
