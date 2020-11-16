@@ -36,6 +36,8 @@ var hierarchy =
     [ "File", "classasl_1_1_file.html", [
       [ "TextFile", "classasl_1_1_text_file.html", null ]
     ] ],
+    [ "Function< R, T1, T2 >", "structasl_1_1_function.html", null ],
+    [ "Function< void, const HttpStatus & >", "structasl_1_1_function.html", null ],
     [ "HashMap< K, T >", "classasl_1_1_hash_map.html", null ],
     [ "HashMap< String, asl::String >", "classasl_1_1_hash_map.html", null ],
     [ "HashMap< String, T >", "classasl_1_1_hash_map.html", null ],

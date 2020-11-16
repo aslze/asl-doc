@@ -10,7 +10,7 @@ var group___global =
     [ "encodeHex", "group___global.html#ga84e6d57f34660f25f64e4192e0af14ba", null ],
     [ "encodeUrl", "group___global.html#ga37a551efdc9f842da850e5ad06f65fe5", null ],
     [ "fract", "group___global.html#ga7092e898a987d3fd7f760cac9c479fc7", null ],
-    [ "infinity", "group___global.html#gab4d190299eb4ca8933c1f9243fb383cf", null ],
+    [ "infinity", "group___global.html#gaefd615458d46c43a8f01738309bf4bb7", null ],
     [ "nan", "group___global.html#gab85ae34914b58515796d573c63357dea", null ],
     [ "now", "group___global.html#gaeee00efb34004ec2b57f90d5f729d499", null ],
     [ "rad2deg", "group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8", null ],

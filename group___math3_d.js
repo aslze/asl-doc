@@ -123,5 +123,6 @@ var group___math3_d =
       [ "xyz", "classasl_1_1_vec4__.html#a9e1fea602c3f630bfd0e42427d323cd3", null ],
       [ "operator*", "classasl_1_1_vec4__.html#a4908de90f34c0b2482551e9b80575547", null ],
       [ "x", "classasl_1_1_vec4__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d", null ]
-    ] ]
+    ] ],
+    [ "orthonormalize", "group___math3_d.html#ga99a52b78144a1fc854fe126c84dbd1f9", null ]
 ];

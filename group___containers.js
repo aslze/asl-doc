@@ -44,7 +44,8 @@ var group___containers =
       [ "sort", "classasl_1_1_array.html#ad214197fe78bbc5c1dd12a697c6734e0", null ],
       [ "sort", "classasl_1_1_array.html#a449e41a9b2bc294476b9ccefd59eb652", null ],
       [ "sortBy", "classasl_1_1_array.html#aded6603d5115a01c411596957508b959", null ],
-      [ "sslice", "classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c", null ]
+      [ "sslice", "classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c", null ],
+      [ "with", "classasl_1_1_array.html#a353ecf3c1409cc456e64418fc07a5d8c", null ]
     ] ],
     [ "Array_", "classasl_1_1_array__.html", [
       [ "contains", "classasl_1_1_array__.html#aae2d1504474002708583858f474c4d55", null ],

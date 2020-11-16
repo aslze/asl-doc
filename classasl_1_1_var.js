@@ -5,6 +5,7 @@ var classasl_1_1_var =
     [ "clear", "classasl_1_1_var.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
     [ "clone", "classasl_1_1_var.html#aeaeb20bb015c22f558b24180c4d43e9e", null ],
     [ "contains", "classasl_1_1_var.html#a8eb6dbab147c99d40f16dba7fefcec0c", null ],
+    [ "getp", "classasl_1_1_var.html#a1698302732ced88f3291d62467aa335b", null ],
     [ "has", "classasl_1_1_var.html#a427197e461dee5e23d21d7d03680d5e9", null ],
     [ "has", "classasl_1_1_var.html#ac7c949bded5e52775de6ad66550a4927", null ],
     [ "is", "classasl_1_1_var.html#a8cc7d9ec8379cc79d424700db13c28e8", null ],
@@ -25,7 +26,6 @@ var classasl_1_1_var =
     [ "operator[]", "classasl_1_1_var.html#a00492e0a99a383a00ebdd9dabb7e9a07", null ],
     [ "operator[]", "classasl_1_1_var.html#ad75fea465adcc0547872faf2ac18024d", null ],
     [ "operator|", "classasl_1_1_var.html#a99970c5f5d28d8ac82878a5622e57192", null ],
-    [ "read", "classasl_1_1_var.html#aeac522cb9d41470f4e3f9cd27f9e84c7", null ],
     [ "resize", "classasl_1_1_var.html#a578be9c59132b8633a67a98c39318777", null ],
     [ "string", "classasl_1_1_var.html#a55e6f88e6a91175a5afadec5e2fbd8f2", null ],
     [ "type", "classasl_1_1_var.html#adf4a6727c689e0038cf2cdd158d5ed2c", null ]
