@@ -11,6 +11,7 @@ var searchData=
   ['equals',['equals',['../classasl_1_1_path.html#a9826f57f70f9f055993464273e7cb272',1,'asl::Path']]],
   ['error',['error',['../classasl_1_1_serial_port.html#a91004c239942d94aa16e9d9dc0f45160',1,'asl::SerialPort::error()'],['../classasl_1_1_socket.html#a9db0c25a0b1baac0e7e5cbf5a72d3cdc',1,'asl::Socket::error()']]],
   ['errors',['errors',['../classasl_1_1_process.html#a2bb1bf434ba92b4f64d61b1c189cc64e',1,'asl::Process']]],
+  ['errorsavailable',['errorsAvailable',['../classasl_1_1_process.html#a6aa0b56e44dc637eb1414b6b834de0a1',1,'asl::Process']]],
   ['execute',['execute',['../classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f',1,'asl::Process']]],
   ['exists',['exists',['../classasl_1_1_directory.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::Directory::exists()'],['../classasl_1_1_file.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::File::exists()']]],
   ['exitstatus',['exitStatus',['../classasl_1_1_process.html#a674b88c61390cb2cd29f2eeddbe4a2a9',1,'asl::Process']]],

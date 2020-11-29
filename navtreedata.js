@@ -25,8 +25,8 @@ var NAVTREEINDEX =
 [
 ".html",
 "classasl_1_1_inet_address.html#a2c6cf8fb4b6ff28c3045a95ba0e5d8e0",
-"classasl_1_1_stream_buffer_reader.html#afccaacfee0e847a82d1020bbe70dd8f0",
-"classasl_1_1_xml.html#acaaf899d75ca347eb14093819cf907a8"
+"classasl_1_1_stream_buffer_reader.html#ab8b59b8d8776fde8418d6692453404c1",
+"classasl_1_1_xml.html#abac75603813a179b4d11347cda47769f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
