@@ -12,7 +12,7 @@ var hierarchy =
     ] ],
     [ "Array< asl::Thread >", "classasl_1_1_array.html", null ],
     [ "Array< asl::Var >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::WebSocket *>", "classasl_1_1_array.html", null ],
+    [ "Array< asl::WebSocket * >", "classasl_1_1_array.html", null ],
     [ "Array< asl::Xml >", "classasl_1_1_array.html", null ],
     [ "Array< byte >", "classasl_1_1_array.html", [
       [ "StreamBuffer", "classasl_1_1_stream_buffer.html", null ]
@@ -24,7 +24,6 @@ var hierarchy =
       [ "Stack< Context >", "classasl_1_1_stack.html", null ]
     ] ],
     [ "Array< KeyVal * >", "classasl_1_1_array.html", null ],
-    [ "Array< KeyVal *>", "classasl_1_1_array.html", null ],
     [ "Array< KeyVal >", "classasl_1_1_array.html", null ],
     [ "Array_< T, N >", "classasl_1_1_array__.html", null ],
     [ "Atomic< T >", "classasl_1_1_atomic.html", null ],
@@ -39,7 +38,7 @@ var hierarchy =
       [ "TextFile", "classasl_1_1_text_file.html", null ]
     ] ],
     [ "Function< R, T1, T2 >", "structasl_1_1_function.html", null ],
-    [ "Function< void, const HttpStatus &>", "structasl_1_1_function.html", null ],
+    [ "Function< void, const HttpStatus & >", "structasl_1_1_function.html", null ],
     [ "HashMap< K, T >", "classasl_1_1_hash_map.html", null ],
     [ "HashMap< String, asl::String >", "classasl_1_1_hash_map.html", null ],
     [ "HashMap< String, T >", "classasl_1_1_hash_map.html", null ],
@@ -53,14 +52,21 @@ var hierarchy =
     [ "Json", "structasl_1_1_json.html", null ],
     [ "Library", "classasl_1_1_library.html", null ],
     [ "Lock", "classasl_1_1_lock.html", null ],
-    [ "Map< K, T >", "classasl_1_1_map.html", [
-      [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ],
-      [ "Dic< asl::String >", "classasl_1_1_dic.html", null ],
-      [ "Dic< Section >", "classasl_1_1_dic.html", null ],
-      [ "Dic< T *(*)()>", "classasl_1_1_dic.html", null ]
+    [ "Map< K, T >", "classasl_1_1_map.html", null ],
+    [ "Map< String, asl::Array< asl::String > >", "classasl_1_1_map.html", [
+      [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ]
     ] ],
-    [ "Map< String, T >", "classasl_1_1_map.html", [
+    [ "Map< String, asl::String >", "classasl_1_1_map.html", [
+      [ "Dic< asl::String >", "classasl_1_1_dic.html", null ]
+    ] ],
+    [ "Map< String, Section >", "classasl_1_1_map.html", [
+      [ "Dic< Section >", "classasl_1_1_dic.html", null ]
+    ] ],
+    [ "Map< String, String >", "classasl_1_1_map.html", [
       [ "Dic< T >", "classasl_1_1_dic.html", null ]
+    ] ],
+    [ "Map< String, T * >", "classasl_1_1_map.html", [
+      [ "Dic< T *(*)()>", "classasl_1_1_dic.html", null ]
     ] ],
     [ "Matrix3_< T >", "classasl_1_1_matrix3__.html", null ],
     [ "Matrix4_< T >", "classasl_1_1_matrix4__.html", null ],
