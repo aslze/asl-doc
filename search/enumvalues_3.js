@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['server_5ferror_995',['SERVER_ERROR',['../classasl_1_1_http_response.html#a90549f45cfc442187c1d769596107d3ea5849612cb4b71af31eebaeaadea322c5',1,'asl::HttpResponse']]]
+  ['pretty_998',['PRETTY',['../structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e',1,'asl::Json']]]
 ];

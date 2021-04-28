@@ -113,8 +113,11 @@ $(document).ready(function(){initNavTree('structasl_1_1_json.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="memItemLeft" align="right" valign="top"><a id="a46c8a310cf4c094f8c80e1cb8dc1f911"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> </td></tr>
-<tr class="memdesc:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for <a class="el" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878" title="Encodes the given Var into a JSON-format representation.">Json::encode</a> and <a class="el" href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5" title="Writes a var to a file in JSON format.">Json::write</a>. <br /></td></tr>
+<tr class="memitem:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> { <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a> = 0, 
+<a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e">PRETTY</a> = 1, 
+<a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a1a6b6e9893ec9e5d9710335b4c74d3f6">SIMPLE</a> = 2
+ }</td></tr>
+<tr class="memdesc:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for <a class="el" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878" title="Encodes the given Var into a JSON-format representation.">Json::encode</a> and <a class="el" href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5" title="Writes a var to a file in JSON format.">Json::write</a>.  <a href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">More...</a><br /></td></tr>
 <tr class="separator:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -124,16 +127,41 @@ static <a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="m
 <tr class="memdesc:a09a8057a5f8500009e26dde50684ac5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and decodes data from a file in JSON format. <br /></td></tr>
 <tr class="separator:a09a8057a5f8500009e26dde50684ac5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7bd9fe9bcf8270d1e67c3a8cae37ea5"><td class="memItemLeft" align="right" valign="top"><a id="ab7bd9fe9bcf8270d1e67c3a8cae37ea5"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5">write</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;file, const <a class="el" href="classasl_1_1_var.html">Var</a> &amp;v, <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode=PRETTY)</td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5">write</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;file, const <a class="el" href="classasl_1_1_var.html">Var</a> &amp;v, <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode=<a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e">PRETTY</a>)</td></tr>
 <tr class="memdesc:ab7bd9fe9bcf8270d1e67c3a8cae37ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a var to a file in JSON format. <br /></td></tr>
 <tr class="separator:ab7bd9fe9bcf8270d1e67c3a8cae37ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44bc33e45833a9032a7619295499c8ec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#a44bc33e45833a9032a7619295499c8ec">decode</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;json)</td></tr>
 <tr class="memdesc:a44bc33e45833a9032a7619295499c8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes the JSON-encoded string into a <a class="el" href="classasl_1_1_var.html" title="A Var is a type that can hold a value of one of several types, similarly to a var in JavaScript.">Var</a> that will contain all the structure.  <a href="structasl_1_1_json.html#a44bc33e45833a9032a7619295499c8ec">More...</a><br /></td></tr>
 <tr class="separator:a44bc33e45833a9032a7619295499c8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eff6560da9671779b17635393c9f878"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">encode</a> (const <a class="el" href="classasl_1_1_var.html">Var</a> &amp;v, <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode=NONE)</td></tr>
+<tr class="memitem:a4eff6560da9671779b17635393c9f878"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">encode</a> (const <a class="el" href="classasl_1_1_var.html">Var</a> &amp;v, <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode=<a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>)</td></tr>
 <tr class="memdesc:a4eff6560da9671779b17635393c9f878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes the given <a class="el" href="classasl_1_1_var.html" title="A Var is a type that can hold a value of one of several types, similarly to a var in JavaScript.">Var</a> into a JSON-format representation.  <a href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">More...</a><br /></td></tr>
 <tr class="separator:a4eff6560da9671779b17635393c9f878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a46c8a310cf4c094f8c80e1cb8dc1f911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c8a310cf4c094f8c80e1cb8dc1f911">&#9670;&nbsp;</a></span>Mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Options for <a class="el" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878" title="Encodes the given Var into a JSON-format representation.">Json::encode</a> and <a class="el" href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5" title="Writes a var to a file in JSON format.">Json::write</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a46c8a310cf4c094f8c80e1cb8dc1f911ac157bdf0b85a40d2619cbc8bc1ae5fe2"></a>NONE&#160;</td><td class="fielddoc"><p>Compact format in a single line. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e"></a>PRETTY&#160;</td><td class="fielddoc"><p>Format with newlines and indentations. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c8a310cf4c094f8c80e1cb8dc1f911a1a6b6e9893ec9e5d9710335b4c74d3f6"></a>SIMPLE&#160;</td><td class="fielddoc"><p>Format real numbers with reduced precision. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a44bc33e45833a9032a7619295499c8ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44bc33e45833a9032a7619295499c8ec">&#9670;&nbsp;</a></span>decode()</h2>
@@ -183,7 +211,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a>&#160;</td>
-          <td class="paramname"><em>mode</em> = <code>NONE</code>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
