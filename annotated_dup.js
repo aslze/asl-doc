@@ -24,7 +24,7 @@ var annotated_dup =
       [ "HttpServer", "classasl_1_1_http_server.html", "classasl_1_1_http_server" ],
       [ "InetAddress", "classasl_1_1_inet_address.html", "classasl_1_1_inet_address" ],
       [ "IniFile", "classasl_1_1_ini_file.html", "classasl_1_1_ini_file" ],
-      [ "Json", "structasl_1_1_json.html", null ],
+      [ "Json", "structasl_1_1_json.html", "structasl_1_1_json" ],
       [ "Library", "classasl_1_1_library.html", "classasl_1_1_library" ],
       [ "Lock", "classasl_1_1_lock.html", null ],
       [ "Log", "classasl_1_1_log.html", "classasl_1_1_log" ],
