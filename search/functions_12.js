@@ -33,7 +33,7 @@ var searchData=
   ['settimeout_917',['setTimeout',['../classasl_1_1_serial_port.html#a530e83c9e93dfb79364ece48a76febf3',1,'asl::SerialPort']]],
   ['settranslation_918',['setTranslation',['../classasl_1_1_matrix4__.html#adc1cb70ec23476fcb72217bb5b739d9a',1,'asl::Matrix4_']]],
   ['sharedmem_919',['SharedMem',['../classasl_1_1_shared_mem.html#a42c68c4c6b8d496238ae78a59c1d289c',1,'asl::SharedMem']]],
-  ['shuffle_920',['shuffle',['../group___containers.html#gad627536642e7fedda5b4cad3f145ee39',1,'asl']]],
+  ['shuffle_920',['shuffle',['../group___containers.html#ga5a09041efcb78eeb52ca410b10346db0',1,'asl::shuffle(E &amp;a, Random &amp;rnd=random)'],['../group___containers.html#ga5e9a503d0bf64ea8e75d3e787f6f40b8',1,'asl::shuffle(T *a, int n, Random &amp;rnd=random)']]],
   ['signal_921',['signal',['../classasl_1_1_condition.html#a2a0f4bfac2f24aa0a07de86141381aec',1,'asl::Condition']]],
   ['size_922',['size',['../classasl_1_1_console.html#a9a4c32403766cd16ca4e3a5479f075bd',1,'asl::Console::size()'],['../classasl_1_1_file.html#aa7428f0eb50010cc1ccb5f00bb76dc8d',1,'asl::File::size()']]],
   ['skip_923',['skip',['../classasl_1_1_socket.html#a22e04fd90a8da8fbaa968a171d19c6f8',1,'asl::Socket::skip()'],['../classasl_1_1_stream_buffer_reader.html#a22e04fd90a8da8fbaa968a171d19c6f8',1,'asl::StreamBufferReader::skip()']]],

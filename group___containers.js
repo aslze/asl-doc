@@ -117,6 +117,7 @@ var group___containers =
     [ "foreach2", "group___containers.html#gada2796cfee1961387a09942600ecf5cd", null ],
     [ "array", "group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce", null ],
     [ "array_", "group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7", null ],
-    [ "shuffle", "group___containers.html#gad627536642e7fedda5b4cad3f145ee39", null ],
+    [ "shuffle", "group___containers.html#ga5a09041efcb78eeb52ca410b10346db0", null ],
+    [ "shuffle", "group___containers.html#ga5e9a503d0bf64ea8e75d3e787f6f40b8", null ],
     [ "split", "group___containers.html#ga42d368be19f431c99a509436048b734f", null ]
 ];

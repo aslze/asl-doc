@@ -106,9 +106,10 @@ $(document).ready(function(){initNavTree('classasl_1_1_var.html',''); initResiza
 <div class="line">pair[0] = 1;</div>
 <div class="line">pair[1] = -2;</div>
 </div><!-- fragment --><p>Arrays can also be created in one statement with one of these <b>pseudo-literal syntaxes</b>:</p>
-<div class="fragment"><div class="line">Var coords = array&lt;Var&gt;(10, 25, -1);     <span class="comment">// up to 6 elements</span></div>
-<div class="line">Var indices = (Var(), 1, 3, 0, 2, -1);   <span class="comment">// any number of elements (but is slower)</span></div>
-<div class="line">Var numbers = <a class="code" href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">Var::array</a>({1, 3, 9, -2}); <span class="comment">// on compilers supporting C++11 initializer lists</span></div>
+<div class="fragment"><div class="line">Var coords = array&lt;Var&gt;(10, 25, -1);       <span class="comment">// up to 6 elements</span></div>
+<div class="line">Var indices = (Var(), 1, 3, 0, 2, -1);     <span class="comment">// any number of elements (but is slower)</span></div>
+<div class="line">Var numbers = {1, 3, 9, -2};               <span class="comment">// on C++11 compilers, for all same type elements</span></div>
+<div class="line">Var items = <a class="code" href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">Var::array</a>({1, <span class="stringliteral">&quot;a&quot;</span>, 9.5, -2}); <span class="comment">// on C++11 compilers, for different types</span></div>
 </div><!-- fragment --><p>An <b>object</b> can be constructed from an existing Dic&lt;T&gt; or by adding elements to a <a class="el" href="classasl_1_1_var.html" title="A Var is a type that can hold a value of one of several types, similarly to a var in JavaScript.">Var</a> with <code>var["key"]</code>:</p>
 <div class="fragment"><div class="line">Var person;</div>
 <div class="line">person[<span class="stringliteral">&quot;name&quot;</span>] = <span class="stringliteral">&quot;John&quot;</span>;  <span class="comment">// person.type() = OBJ</span></div>
@@ -118,7 +119,15 @@ $(document).ready(function(){initNavTree('classasl_1_1_var.html',''); initResiza
 <div class="line">                  (<span class="stringliteral">&quot;x&quot;</span>, 15.0)</div>
 <div class="line">                  (<span class="stringliteral">&quot;y&quot;</span>, -1.25)</div>
 <div class="line">                  (<span class="stringliteral">&quot;visible&quot;</span>, <span class="keyword">true</span>)</div>
-<div class="line">                  (<span class="stringliteral">&quot;color&quot;</span>, <a class="code" href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">Var::array</a>({255, 0, 255}));</div>
+<div class="line">                  (<span class="stringliteral">&quot;color&quot;</span>, array&lt;Var&gt;(255, 0, 255));</div>
+</div><!-- fragment --><p>Or in C++11:</p>
+<div class="fragment"><div class="line">Var particle {</div>
+<div class="line">    { <span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;particle1&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;x&quot;</span>, 15.0 },</div>
+<div class="line">    { <span class="stringliteral">&quot;y&quot;</span>, -1.25 },</div>
+<div class="line">    { <span class="stringliteral">&quot;visible&quot;</span>, <span class="keyword">true</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;color&quot;</span>, {255, 0, 255} }</div>
+<div class="line">};</div>
 </div><!-- fragment --><p>Any combination of the above can be used to create complex structured vars.</p>
 <p>A var can be checked for its type with the <code><a class="el" href="classasl_1_1_var.html#acf336f5fd456cc1ebb02f7d8d7fe84fa" title="Checks if this var&#39;s type is t.">is()</a></code> function or whether it contains a given key (if it is a <a class="el" href="classasl_1_1_map.html" title="An associative container linking keys of type K with values of type T.">Map</a>), or if it contains a given item (if it is an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>):</p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span>(a.is(Var::NUMBER)) {...} <span class="comment">// INTs are NUMBERs too!</span></div>
@@ -322,7 +331,7 @@ static <a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="m
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup___containers_html_gada2796cfee1961387a09942600ecf5cd"><div class="ttname"><a href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a></div><div class="ttdeci">#define foreach2(key, variable, set)</div><div class="ttdoc">A for loop for associative containers resembling the foreach keyword of D.</div><div class="ttdef"><b>Definition:</b> foreach1.h:69</div></div>
-<div class="ttc" id="aclassasl_1_1_var_html_afd4ea9a14885012ec0ac816c7fefbdd3"><div class="ttname"><a href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">asl::Var::array</a></div><div class="ttdeci">Array&lt; Var &gt; array() const</div><div class="ttdoc">Returns the internal Array if this var is an array.</div><div class="ttdef"><b>Definition:</b> Var.h:288</div></div>
+<div class="ttc" id="aclassasl_1_1_var_html_afd4ea9a14885012ec0ac816c7fefbdd3"><div class="ttname"><a href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">asl::Var::array</a></div><div class="ttdeci">Array&lt; Var &gt; array() const</div><div class="ttdoc">Returns the internal Array if this var is an array.</div><div class="ttdef"><b>Definition:</b> Var.h:324</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

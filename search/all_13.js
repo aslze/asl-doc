@@ -37,7 +37,7 @@ var searchData=
   ['settimeout_405',['setTimeout',['../classasl_1_1_serial_port.html#a530e83c9e93dfb79364ece48a76febf3',1,'asl::SerialPort']]],
   ['settranslation_406',['setTranslation',['../classasl_1_1_matrix4__.html#adc1cb70ec23476fcb72217bb5b739d9a',1,'asl::Matrix4_']]],
   ['sharedmem_407',['SharedMem',['../classasl_1_1_shared_mem.html',1,'SharedMem'],['../classasl_1_1_shared_mem.html#a42c68c4c6b8d496238ae78a59c1d289c',1,'asl::SharedMem::SharedMem()']]],
-  ['shuffle_408',['shuffle',['../group___containers.html#gad627536642e7fedda5b4cad3f145ee39',1,'asl']]],
+  ['shuffle_408',['shuffle',['../group___containers.html#ga5a09041efcb78eeb52ca410b10346db0',1,'asl::shuffle(E &amp;a, Random &amp;rnd=random)'],['../group___containers.html#ga5e9a503d0bf64ea8e75d3e787f6f40b8',1,'asl::shuffle(T *a, int n, Random &amp;rnd=random)']]],
   ['signal_409',['signal',['../classasl_1_1_condition.html#a2a0f4bfac2f24aa0a07de86141381aec',1,'asl::Condition']]],
   ['simple_410',['SIMPLE',['../structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a1a6b6e9893ec9e5d9710335b4c74d3f6',1,'asl::Json']]],
   ['singleton_411',['Singleton',['../classasl_1_1_singleton.html',1,'asl']]],
