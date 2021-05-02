@@ -93,20 +93,20 @@ $(document).ready(function(){initNavTree('structasl_1_1_json.html',''); initResi
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to encode/decode data as JSON. </p>
 <p>These functions use class <a class="el" href="classasl_1_1_var.html" title="A Var is a type that can hold a value of one of several types, similarly to a var in JavaScript.">Var</a> to represent JSON values.</p>
-<div class="fragment"><div class="line">Var data = <a class="code" href="structasl_1_1_json.html#a44bc33e45833a9032a7619295499c8ec">Json::decode</a>(<span class="stringliteral">&quot;{\&quot;x\&quot;:\&quot;abc\&quot;, \&quot;y\&quot;:[1,true]}&quot;</span>); <span class="comment">// decode JSON from a string</span></div>
-<div class="line">data[<span class="stringliteral">&quot;z&quot;</span>] = 3.14;                                           <span class="comment">// add a property</span></div>
+<div class="fragment"><div class="line">Var data = <a class="code" href="structasl_1_1_json.html#a44bc33e45833a9032a7619295499c8ec">Json::decode</a>(<span class="stringliteral">&quot;{\&quot;a\&quot;:\&quot;abc\&quot;, \&quot;b\&quot;:[1.5, 3]}&quot;</span>); <span class="comment">// decode JSON from a string</span></div>
+<div class="line">data[<span class="stringliteral">&quot;c&quot;</span>] = <span class="keyword">true</span>;                                           <span class="comment">// add a property</span></div>
 <div class="line">String json = <a class="code" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">Json::encode</a>(data);                           <span class="comment">// encode to string</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5">Json::write</a>(<span class="stringliteral">&quot;data.json&quot;</span>, data);                             <span class="comment">// write to file</span></div>
 </div><!-- fragment --><p>The same <code>data</code> object can be built in one statement:</p>
-<div class="fragment"><div class="line">Var data = Var(<span class="stringliteral">&quot;x&quot;</span>, <span class="stringliteral">&quot;abc&quot;</span>)</div>
-<div class="line">              (<span class="stringliteral">&quot;y&quot;</span>, array&lt;Var&gt;(1, <span class="keyword">true</span>))</div>
-<div class="line">              (<span class="stringliteral">&quot;z&quot;</span>, 3.14);</div>
+<div class="fragment"><div class="line">Var data = Var(<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;abc&quot;</span>)</div>
+<div class="line">              (<span class="stringliteral">&quot;b&quot;</span>, array&lt;Var&gt;(1.5, 3.0))</div>
+<div class="line">              (<span class="stringliteral">&quot;c&quot;</span>, <span class="keyword">true</span>);</div>
 </div><!-- fragment --><p>Or in C++11 compilers, also like this:</p>
 <div class="fragment"><div class="line">Var data {</div>
-<div class="line">    {<span class="stringliteral">&quot;x&quot;</span>, <span class="stringliteral">&quot;abc&quot;</span>},</div>
-<div class="line">    {<span class="stringliteral">&quot;y&quot;</span>, <a class="code" href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">Var::array</a>({1, <span class="keyword">true</span>})},</div>
-<div class="line">    {<span class="stringliteral">&quot;z&quot;</span>, 3.14}</div>
+<div class="line">    {<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;abc&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;b&quot;</span>, {1.5, 3.0}},</div>
+<div class="line">    {<span class="stringliteral">&quot;c&quot;</span>, <span class="keyword">true</span>}</div>
 <div class="line">};</div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;JSON.h&gt;</code></p>
@@ -116,6 +116,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> { <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a> = 0, 
 <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e">PRETTY</a> = 1, 
 <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a1a6b6e9893ec9e5d9710335b4c74d3f6">SIMPLE</a> = 2
+, <a class="el" href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ab31411fab4fd2cab988d78995b9e888f">NICE</a> = 3
  }</td></tr>
 <tr class="memdesc:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for <a class="el" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878" title="Encodes the given Var into a JSON-format representation.">Json::encode</a> and <a class="el" href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5" title="Writes a var to a file in JSON format.">Json::write</a>.  <a href="structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911">More...</a><br /></td></tr>
 <tr class="separator:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +158,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="fieldname"><a id="a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e"></a>PRETTY&#160;</td><td class="fielddoc"><p>Format with newlines and indentations. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a46c8a310cf4c094f8c80e1cb8dc1f911a1a6b6e9893ec9e5d9710335b4c74d3f6"></a>SIMPLE&#160;</td><td class="fielddoc"><p>Format real numbers with reduced precision. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c8a310cf4c094f8c80e1cb8dc1f911ab31411fab4fd2cab988d78995b9e888f"></a>NICE&#160;</td><td class="fielddoc"><p>Same as PRETTY and SIMPLE. </p>
 </td></tr>
 </table>
 
@@ -237,7 +240,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructasl_1_1_json_html_ab7bd9fe9bcf8270d1e67c3a8cae37ea5"><div class="ttname"><a href="structasl_1_1_json.html#ab7bd9fe9bcf8270d1e67c3a8cae37ea5">asl::Json::write</a></div><div class="ttdeci">static bool write(const String &amp;file, const Var &amp;v, Mode mode=PRETTY)</div><div class="ttdoc">Writes a var to a file in JSON format.</div></div>
-<div class="ttc" id="aclassasl_1_1_var_html_afd4ea9a14885012ec0ac816c7fefbdd3"><div class="ttname"><a href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">asl::Var::array</a></div><div class="ttdeci">Array&lt; Var &gt; array() const</div><div class="ttdoc">Returns the internal Array if this var is an array.</div><div class="ttdef"><b>Definition:</b> Var.h:324</div></div>
 <div class="ttc" id="astructasl_1_1_json_html_a44bc33e45833a9032a7619295499c8ec"><div class="ttname"><a href="structasl_1_1_json.html#a44bc33e45833a9032a7619295499c8ec">asl::Json::decode</a></div><div class="ttdeci">static Var decode(const String &amp;json)</div><div class="ttdoc">Decodes the JSON-encoded string into a Var that will contain all the structure.</div></div>
 <div class="ttc" id="astructasl_1_1_json_html_a4eff6560da9671779b17635393c9f878"><div class="ttname"><a href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">asl::Json::encode</a></div><div class="ttdeci">static String encode(const Var &amp;v, Mode mode=NONE)</div><div class="ttdoc">Encodes the given Var into a JSON-format representation.</div></div>
 <!-- start footer part -->

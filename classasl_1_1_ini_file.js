@@ -9,5 +9,6 @@ var classasl_1_1_ini_file =
     [ "ok", "classasl_1_1_ini_file.html#a03cb7eaa663dc83af68bc28a596d09e6", null ],
     [ "operator()", "classasl_1_1_ini_file.html#acc7b882d05de30bd3e14062cf85b8b89", null ],
     [ "operator[]", "classasl_1_1_ini_file.html#a4497ea841a3b59eae25bb522d7524742", null ],
-    [ "section", "classasl_1_1_ini_file.html#aba64d5bde3196b601571021287854fd2", null ]
+    [ "section", "classasl_1_1_ini_file.html#aba64d5bde3196b601571021287854fd2", null ],
+    [ "write", "classasl_1_1_ini_file.html#a81615ee232f88bd646b229cd9e98152c", null ]
 ];
