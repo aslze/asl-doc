@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data_95',['data',['../classasl_1_1_http_message.html#a5537dc1c93b1a4ed16388f3c93a25810',1,'asl::HttpMessage::data()'],['../classasl_1_1_tabular_data_file.html#a02452f90cb63b5927e08691996000f9c',1,'asl::TabularDataFile::data()']]],
+  ['data_95',['data',['../classasl_1_1_array2.html#ad77e6bb84354180f7f15de2f5cff870d',1,'asl::Array2::data()'],['../classasl_1_1_http_message.html#a5537dc1c93b1a4ed16388f3c93a25810',1,'asl::HttpMessage::data()'],['../classasl_1_1_tabular_data_file.html#a02452f90cb63b5927e08691996000f9c',1,'asl::TabularDataFile::data()']]],
   ['date_96',['Date',['../classasl_1_1_date.html',1,'Date'],['../classasl_1_1_date.html#aed525ac5f614946bb9a3efc1d316bae4',1,'asl::Date::Date(const String &amp;s)'],['../classasl_1_1_date.html#a66cf036b329dbd1adc5f2b3de02b1c4c',1,'asl::Date::Date(const String &amp;s, const String &amp;fmt)'],['../classasl_1_1_date.html#ad4d51453868acfee2a80c62c4386983c',1,'asl::Date::Date(int y, int m, int d, int h=0, int mn=0, int s=0)'],['../classasl_1_1_date.html#aa63e468d72af0f58d15a6fc0f2756ca8',1,'asl::Date::Date(Zone z, int y, int m, int d, int h=0, int mn=0, int s=0)']]],
   ['datedata_97',['DateData',['../structasl_1_1_date_data.html',1,'asl']]],
   ['day_98',['day',['../classasl_1_1_date.html#a912344e9b0a67db916e2bac3c43337dc',1,'asl::Date']]],

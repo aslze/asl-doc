@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_http_server.html',''); in
 <div class="line">    RestServer()</div>
 <div class="line">    {</div>
 <div class="line">        <a class="code" href="classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7">setCrossDomain</a>(<span class="keyword">true</span>);</div>
-<div class="line">        setRoot(<span class="stringliteral">&quot;/www&quot;</span>);</div>
+<div class="line">        <a class="code" href="classasl_1_1_http_server.html#aca9748a3512cc787bb1b1e012fbc2354">setRoot</a>(<span class="stringliteral">&quot;/www&quot;</span>);</div>
 <div class="line">        <a class="code" href="classasl_1_1_socket_server.html#a0a8d8c142273a22d37673b7e3a651a7f">bind</a>(8000);</div>
 <div class="line">        <a class="code" href="classasl_1_1_socket_server.html#a02ee755ca44d92ba25f25b23562d4f4d">bindTLS</a>(443);        <span class="comment">// this for TLS</span></div>
 <div class="line">        <a class="code" href="classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5">useCert</a>(cert, key);  <span class="comment">//</span></div>
@@ -132,6 +132,14 @@ $(document).ready(function(){initNavTree('classasl_1_1_http_server.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aca9748a3512cc787bb1b1e012fbc2354"><td class="memItemLeft" align="right" valign="top"><a id="aca9748a3512cc787bb1b1e012fbc2354"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_server.html#aca9748a3512cc787bb1b1e012fbc2354">setRoot</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;root)</td></tr>
+<tr class="memdesc:aca9748a3512cc787bb1b1e012fbc2354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the root directory from where files will be served by default. <br /></td></tr>
+<tr class="separator:aca9748a3512cc787bb1b1e012fbc2354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36d41796b5841e5d8ae3661218b92e4"><td class="memItemLeft" align="right" valign="top"><a id="ab36d41796b5841e5d8ae3661218b92e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_server.html#ab36d41796b5841e5d8ae3661218b92e4">addMimeType</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;ext, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;type)</td></tr>
+<tr class="memdesc:ab36d41796b5841e5d8ae3661218b92e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a mime type for a given extension for files served. <br /></td></tr>
+<tr class="separator:ab36d41796b5841e5d8ae3661218b92e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b16fecfe08b1deb60f9f5faa4370161"><td class="memItemLeft" align="right" valign="top"><a id="a0b16fecfe08b1deb60f9f5faa4370161"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161">serve</a> (<a class="el" href="classasl_1_1_http_request.html">HttpRequest</a> &amp;request, <a class="el" href="classasl_1_1_http_response.html">HttpResponse</a> &amp;response)</td></tr>
 <tr class="memdesc:a0b16fecfe08b1deb60f9f5faa4370161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this function in a subclass to create the server behavior. <br /></td></tr>
@@ -244,11 +252,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassasl_1_1_http_server_html_a0b16fecfe08b1deb60f9f5faa4370161"><div class="ttname"><a href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161">asl::HttpServer::serve</a></div><div class="ttdeci">virtual void serve(HttpRequest &amp;request, HttpResponse &amp;response)</div><div class="ttdoc">Implement this function in a subclass to create the server behavior.</div><div class="ttdef"><b>Definition:</b> HttpServer.h:74</div></div>
+<div class="ttc" id="aclassasl_1_1_http_server_html_a0b16fecfe08b1deb60f9f5faa4370161"><div class="ttname"><a href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161">asl::HttpServer::serve</a></div><div class="ttdeci">virtual void serve(HttpRequest &amp;request, HttpResponse &amp;response)</div><div class="ttdoc">Implement this function in a subclass to create the server behavior.</div><div class="ttdef"><b>Definition:</b> HttpServer.h:81</div></div>
 <div class="ttc" id="aclassasl_1_1_socket_server_html_a0a8d8c142273a22d37673b7e3a651a7f"><div class="ttname"><a href="classasl_1_1_socket_server.html#a0a8d8c142273a22d37673b7e3a651a7f">asl::SocketServer::bind</a></div><div class="ttdeci">bool bind(int port)</div><div class="ttdoc">Assigns a TCP port to listen to.</div><div class="ttdef"><b>Definition:</b> SocketServer.h:84</div></div>
 <div class="ttc" id="aclassasl_1_1_socket_server_html_aaaebefbfcc96c42836641f3ec8dacee5"><div class="ttname"><a href="classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5">asl::SocketServer::useCert</a></div><div class="ttdeci">void useCert(const String &amp;cert, const String &amp;key)</div><div class="ttdoc">Sets the certificate and private key for the TLS server in PEM format.</div></div>
 <div class="ttc" id="aclassasl_1_1_socket_server_html_a02ee755ca44d92ba25f25b23562d4f4d"><div class="ttname"><a href="classasl_1_1_socket_server.html#a02ee755ca44d92ba25f25b23562d4f4d">asl::SocketServer::bindTLS</a></div><div class="ttdeci">bool bindTLS(const String &amp;ip, int port)</div><div class="ttdoc">Assigns an interface IP address and TCP port to listen for TLS connections.</div></div>
-<div class="ttc" id="aclassasl_1_1_http_server_html_ad8771be7e25d1b20d0b7e071f32419c7"><div class="ttname"><a href="classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7">asl::HttpServer::setCrossDomain</a></div><div class="ttdeci">void setCrossDomain(bool on)</div><div class="ttdoc">Enbles or disables cross-domain (CORS) support.</div><div class="ttdef"><b>Definition:</b> HttpServer.h:86</div></div>
+<div class="ttc" id="aclassasl_1_1_http_server_html_ad8771be7e25d1b20d0b7e071f32419c7"><div class="ttname"><a href="classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7">asl::HttpServer::setCrossDomain</a></div><div class="ttdeci">void setCrossDomain(bool on)</div><div class="ttdoc">Enbles or disables cross-domain (CORS) support.</div><div class="ttdef"><b>Definition:</b> HttpServer.h:93</div></div>
+<div class="ttc" id="aclassasl_1_1_http_server_html_aca9748a3512cc787bb1b1e012fbc2354"><div class="ttname"><a href="classasl_1_1_http_server.html#aca9748a3512cc787bb1b1e012fbc2354">asl::HttpServer::setRoot</a></div><div class="ttdeci">void setRoot(const String &amp;root)</div><div class="ttdoc">Sets the root directory from where files will be served by default.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

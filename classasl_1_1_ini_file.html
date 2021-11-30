@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_ini_file.html',''); initR
 <div class="line"><span class="keywordflow">if</span>(config.has(<span class="stringliteral">&quot;network/num_retries&quot;</span>))</div>
 <div class="line">    num_retries = config[<span class="stringliteral">&quot;network/num_retries&quot;</span>];</div>
 </div><!-- fragment --><p>That last part can also be written as:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> num_retries = config(<span class="stringliteral">&quot;network/num_retries&quot;</span>, 5);</div>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> num_retries = config[<span class="stringliteral">&quot;network/num_retries&quot;</span>] | 5;</div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;IniFile.h&gt;</code></p>
 <table class="memberdecls">
@@ -139,10 +139,10 @@ const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><
 <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a4497ea841a3b59eae25bb522d7524742">operator[]</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name)</td></tr>
 <tr class="memdesc:a4497ea841a3b59eae25bb522d7524742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with the key <code>name</code> in the current section if the name is like <code>section/name</code> then the given section is used. <br /></td></tr>
 <tr class="separator:a4497ea841a3b59eae25bb522d7524742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc7b882d05de30bd3e14062cf85b8b89"><td class="memItemLeft" align="right" valign="top"><a id="acc7b882d05de30bd3e14062cf85b8b89"></a>
-<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#acc7b882d05de30bd3e14062cf85b8b89">operator()</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;defaultVal)</td></tr>
-<tr class="memdesc:acc7b882d05de30bd3e14062cf85b8b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with the key <code>name</code> or <code>defaultVal</code> if it was not found. <br /></td></tr>
-<tr class="separator:acc7b882d05de30bd3e14062cf85b8b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad444386b9e5874deed980590a6c0912d"><td class="memItemLeft" align="right" valign="top"><a id="ad444386b9e5874deed980590a6c0912d"></a>
+const <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#ad444386b9e5874deed980590a6c0912d">operator()</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;defaultVal) const</td></tr>
+<tr class="memdesc:ad444386b9e5874deed980590a6c0912d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with the key <code>name</code> or <code>defaultVal</code> if it was not found. <br /></td></tr>
+<tr class="separator:ad444386b9e5874deed980590a6c0912d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81615ee232f88bd646b229cd9e98152c"><td class="memItemLeft" align="right" valign="top"><a id="a81615ee232f88bd646b229cd9e98152c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a81615ee232f88bd646b229cd9e98152c">write</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;fname=&quot;&quot;)</td></tr>
 <tr class="memdesc:a81615ee232f88bd646b229cd9e98152c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the file with its modifications; this is done automatically on destruction, just call this if you need the file written before the object is detroyed. <br /></td></tr>
@@ -154,14 +154,14 @@ Section &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memitem:a8ebd85cd4ea3e2530bf36de0ca752bb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a8ebd85cd4ea3e2530bf36de0ca752bb0">has</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name) const</td></tr>
 <tr class="memdesc:a8ebd85cd4ea3e2530bf36de0ca752bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the file contains a key named <code>name</code>.  <a href="classasl_1_1_ini_file.html#a8ebd85cd4ea3e2530bf36de0ca752bb0">More...</a><br /></td></tr>
 <tr class="separator:a8ebd85cd4ea3e2530bf36de0ca752bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33b5f8eaec0698a767ddf40c02cda8f"><td class="memItemLeft" align="right" valign="top"><a id="aa33b5f8eaec0698a767ddf40c02cda8f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#aa33b5f8eaec0698a767ddf40c02cda8f">arraysize</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name)</td></tr>
-<tr class="memdesc:aa33b5f8eaec0698a767ddf40c02cda8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of an "array" named <code>name</code> as written by the Qt library and enables reading its values. <br /></td></tr>
-<tr class="separator:aa33b5f8eaec0698a767ddf40c02cda8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6299b5fee3a812ce5f093dc127ff77d9"><td class="memItemLeft" align="right" valign="top"><a id="a6299b5fee3a812ce5f093dc127ff77d9"></a>
-<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a6299b5fee3a812ce5f093dc127ff77d9">array</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name, int index)</td></tr>
-<tr class="memdesc:a6299b5fee3a812ce5f093dc127ff77d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with field <code>name</code> at the array position <code>index</code> of the array last specified with <code><a class="el" href="classasl_1_1_ini_file.html#aa33b5f8eaec0698a767ddf40c02cda8f" title="Returns the length of an &quot;array&quot; named name as written by the Qt library and enables reading its valu...">arraysize()</a></code>. <br /></td></tr>
-<tr class="separator:a6299b5fee3a812ce5f093dc127ff77d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad30fb0d1f6d7bf21a90b4a2bbefd391"><td class="memItemLeft" align="right" valign="top"><a id="aad30fb0d1f6d7bf21a90b4a2bbefd391"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#aad30fb0d1f6d7bf21a90b4a2bbefd391">arraysize</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name) const</td></tr>
+<tr class="memdesc:aad30fb0d1f6d7bf21a90b4a2bbefd391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of an "array" named <code>name</code> as written by the Qt library and enables reading its values. <br /></td></tr>
+<tr class="separator:aad30fb0d1f6d7bf21a90b4a2bbefd391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84fc8abcd7a0c144fafd8fc7cb36cb2"><td class="memItemLeft" align="right" valign="top"><a id="ad84fc8abcd7a0c144fafd8fc7cb36cb2"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#ad84fc8abcd7a0c144fafd8fc7cb36cb2">array</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name, int index) const</td></tr>
+<tr class="memdesc:ad84fc8abcd7a0c144fafd8fc7cb36cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with field <code>name</code> at the array position <code>index</code> of the array last specified with <code><a class="el" href="classasl_1_1_ini_file.html#aad30fb0d1f6d7bf21a90b4a2bbefd391" title="Returns the length of an &quot;array&quot; named name as written by the Qt library and enables reading its valu...">arraysize()</a></code>. <br /></td></tr>
+<tr class="separator:ad84fc8abcd7a0c144fafd8fc7cb36cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8ebd85cd4ea3e2530bf36de0ca752bb0"></a>

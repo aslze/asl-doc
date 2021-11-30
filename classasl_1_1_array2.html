@@ -93,8 +93,16 @@ $(document).ready(function(){initNavTree('classasl_1_1_array2.html',''); initRes
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class asl::Array2&lt; T &gt;</h3>
 
-<p>A simple 2-dimensional array or matrix. </p>
-</div>
+<p>A simple 2-dimensional dynamic array or matrix. </p>
+<div class="fragment"><div class="line">Array2&lt;int&gt; a(3, 3);</div>
+<div class="line"> </div>
+<div class="line">Array2&lt;float&gt; b = {</div>
+<div class="line">    { 1, 2, 3 },</div>
+<div class="line">    { 3, -1.5f, 0 }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">b(1, 1) = 7.25f;</div>
+</div><!-- fragment --> </div>
 <p><code>#include &lt;Array2.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -107,13 +115,50 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a7217dcb60ea032ae3d075ed84acb2507">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>)</td></tr>
 <tr class="memdesc:a7217dcb60ea032ae3d075ed84acb2507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols. <br /></td></tr>
 <tr class="separator:a7217dcb60ea032ae3d075ed84acb2507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758a411bd1b9c7c560810eaf788f702a"><td class="memItemLeft" align="right" valign="top"><a id="a758a411bd1b9c7c560810eaf788f702a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a758a411bd1b9c7c560810eaf788f702a">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T &amp;value)</td></tr>
+<tr class="memdesc:a758a411bd1b9c7c560810eaf788f702a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols and initializes all items with value. <br /></td></tr>
+<tr class="separator:a758a411bd1b9c7c560810eaf788f702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6262666d1f6beee592d510cc1729333"><td class="memItemLeft" align="right" valign="top"><a id="aa6262666d1f6beee592d510cc1729333"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#aa6262666d1f6beee592d510cc1729333">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T *p)</td></tr>
+<tr class="memdesc:aa6262666d1f6beee592d510cc1729333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array of rows x cols elements and copies them from the pointer p (row-wise) <br /></td></tr>
+<tr class="separator:aa6262666d1f6beee592d510cc1729333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5c04dedb80b3e16c19813a9f10be23"><td class="memItemLeft" align="right" valign="top"><a id="adf5c04dedb80b3e16c19813a9f10be23"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#adf5c04dedb80b3e16c19813a9f10be23">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, std::initializer_list&lt; T &gt; a)</td></tr>
+<tr class="memdesc:adf5c04dedb80b3e16c19813a9f10be23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols and the given elements. <br /></td></tr>
+<tr class="separator:adf5c04dedb80b3e16c19813a9f10be23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc1920b4395bd63c34289df424d6c3a"><td class="memItemLeft" align="right" valign="top"><a id="a8fc1920b4395bd63c34289df424d6c3a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a8fc1920b4395bd63c34289df424d6c3a">Array2</a> (std::initializer_list&lt; std::initializer_list&lt; T &gt; &gt; a)</td></tr>
+<tr class="memdesc:a8fc1920b4395bd63c34289df424d6c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with given list of lists of elements. <br /></td></tr>
+<tr class="separator:a8fc1920b4395bd63c34289df424d6c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7975fcf0603f399344c8d693a043d5fe"><td class="memTemplParams" colspan="2"><a id="a7975fcf0603f399344c8d693a043d5fe"></a>
+template&lt;class K &gt; </td></tr>
+<tr class="memitem:a7975fcf0603f399344c8d693a043d5fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array2.html">Array2</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a7975fcf0603f399344c8d693a043d5fe">with</a> () const</td></tr>
+<tr class="memdesc:a7975fcf0603f399344c8d693a043d5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of this array with items converted to type K. <br /></td></tr>
+<tr class="separator:a7975fcf0603f399344c8d693a043d5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77e6bb84354180f7f15de2f5cff870d"><td class="memItemLeft" align="right" valign="top"><a id="ad77e6bb84354180f7f15de2f5cff870d"></a>
+const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#ad77e6bb84354180f7f15de2f5cff870d">data</a> () const</td></tr>
+<tr class="memdesc:ad77e6bb84354180f7f15de2f5cff870d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal array holding all values (row-major) <br /></td></tr>
+<tr class="separator:ad77e6bb84354180f7f15de2f5cff870d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e96d2256666bcf83f53d3ce6e87111"><td class="memItemLeft" align="right" valign="top"><a id="a65e96d2256666bcf83f53d3ce6e87111"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a65e96d2256666bcf83f53d3ce6e87111">operator==</a> (const <a class="el" href="classasl_1_1_array2.html">Array2</a> &amp;b) const</td></tr>
+<tr class="memdesc:a65e96d2256666bcf83f53d3ce6e87111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if both arrays are equal. <br /></td></tr>
+<tr class="separator:a65e96d2256666bcf83f53d3ce6e87111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f2da1ececdbb08e9d66b8b7cfad34c"><td class="memItemLeft" align="right" valign="top"><a id="af1f2da1ececdbb08e9d66b8b7cfad34c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#af1f2da1ececdbb08e9d66b8b7cfad34c">operator!=</a> (const <a class="el" href="classasl_1_1_array2.html">Array2</a> &amp;b) const</td></tr>
+<tr class="memdesc:af1f2da1ececdbb08e9d66b8b7cfad34c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if both arrays are not equal. <br /></td></tr>
+<tr class="separator:af1f2da1ececdbb08e9d66b8b7cfad34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a922d651beb6ec8f8c1fe642f78a10c41"><td class="memItemLeft" align="right" valign="top"><a id="a922d651beb6ec8f8c1fe642f78a10c41"></a>
 <a class="el" href="classasl_1_1_array2.html">Array2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a922d651beb6ec8f8c1fe642f78a10c41">clone</a> () const</td></tr>
 <tr class="memdesc:a922d651beb6ec8f8c1fe642f78a10c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an independent copy of this array. <br /></td></tr>
 <tr class="separator:a922d651beb6ec8f8c1fe642f78a10c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79784e1dc108a49e45bec777b1225a2"><td class="memItemLeft" align="right" valign="top"><a id="aa79784e1dc108a49e45bec777b1225a2"></a>
+<a class="el" href="classasl_1_1_array2.html">Array2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#aa79784e1dc108a49e45bec777b1225a2">slice</a> (int i1, int i2, int j1, int j2) const</td></tr>
+<tr class="memdesc:aa79784e1dc108a49e45bec777b1225a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sub-array consisting of a rows [i1, i2) and columns [j1, j2) <br /></td></tr>
+<tr class="separator:aa79784e1dc108a49e45bec777b1225a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105c8ffb14e2ad6574fe7cc1d616cef9"><td class="memItemLeft" align="right" valign="top"><a id="a105c8ffb14e2ad6574fe7cc1d616cef9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a105c8ffb14e2ad6574fe7cc1d616cef9">resize</a> (int r, int c)</td></tr>
-<tr class="memdesc:a105c8ffb14e2ad6574fe7cc1d616cef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the matrix to the r x c. <br /></td></tr>
+<tr class="memdesc:a105c8ffb14e2ad6574fe7cc1d616cef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the matrix to r x c. <br /></td></tr>
 <tr class="separator:a105c8ffb14e2ad6574fe7cc1d616cef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad107abcacb84cbabb41b87ba81360f91"><td class="memItemLeft" align="right" valign="top"><a id="ad107abcacb84cbabb41b87ba81360f91"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a> () const</td></tr>
@@ -127,6 +172,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a8c8ceabc696d63c5c1949706e5f949af">operator()</a> (int i, int j)</td></tr>
 <tr class="memdesc:a8c8ceabc696d63c5c1949706e5f949af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the item at row i, column j. <br /></td></tr>
 <tr class="separator:a8c8ceabc696d63c5c1949706e5f949af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a450a5967a4893684151f401233350"><td class="memItemLeft" align="right" valign="top"><a id="a86a450a5967a4893684151f401233350"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a86a450a5967a4893684151f401233350">set</a> (const T &amp;x)</td></tr>
+<tr class="memdesc:a86a450a5967a4893684151f401233350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all array items to value x. <br /></td></tr>
+<tr class="separator:a86a450a5967a4893684151f401233350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Array2.h</li>

@@ -14,7 +14,7 @@ var group___global =
     [ "nan", "group___global.html#gab85ae34914b58515796d573c63357dea", null ],
     [ "now", "group___global.html#gaeee00efb34004ec2b57f90d5f729d499", null ],
     [ "rad2deg", "group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8", null ],
-    [ "sleep", "group___global.html#ga260867c1920d22c6dba6f64cdc1db7f9", null ],
+    [ "sleep", "group___global.html#ga13c156e932a3d107fb2d6dd9dd2ba5b5", null ],
     [ "sqr", "group___global.html#gae4bfeae0f82d926c7875ced8c4a8e3df", null ],
-    [ "usleep", "group___global.html#gaa85b7b1a3abd2e77e87c5f282f9003e4", null ]
+    [ "usleep", "group___global.html#gac159ef468cb229b5ece0bb8d37762856", null ]
 ];

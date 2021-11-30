@@ -221,12 +221,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3889e6cd2999a867b0319cda2b089893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b76affb3b5d35fa419ac234144038b"><td class="memItemLeft" align="right" valign="top"><a id="a67b76affb3b5d35fa419ac234144038b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a67b76affb3b5d35fa419ac234144038b">operator bool</a> () const</td></tr>
-<tr class="memdesc:a67b76affb3b5d35fa419ac234144038b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string is not empty. <br /></td></tr>
+<tr class="memdesc:a67b76affb3b5d35fa419ac234144038b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string is not empty (warning: this might change in the future to mean <a class="el" href="classasl_1_1_string.html#af86ff7fcda2d789fc75b7750e6acfb82" title="Returns true if this string represents a non-false value (e.g.">isTrue()</a>, use <code><a class="el" href="classasl_1_1_string.html#a03cb7eaa663dc83af68bc28a596d09e6" title="Returns true if this string is not empty.">ok()</a></code>) <br /></td></tr>
 <tr class="separator:a67b76affb3b5d35fa419ac234144038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61efd4196a96540ee018fee8791f3f10"><td class="memItemLeft" align="right" valign="top"><a id="a61efd4196a96540ee018fee8791f3f10"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a61efd4196a96540ee018fee8791f3f10">operator!</a> () const</td></tr>
-<tr class="memdesc:a61efd4196a96540ee018fee8791f3f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string is empty. <br /></td></tr>
+<tr class="memdesc:a61efd4196a96540ee018fee8791f3f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string is empty (warning: this might change in the future to mean !isTrue(), use <code>!ok()</code>) <br /></td></tr>
 <tr class="separator:a61efd4196a96540ee018fee8791f3f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cb7eaa663dc83af68bc28a596d09e6"><td class="memItemLeft" align="right" valign="top"><a id="a03cb7eaa663dc83af68bc28a596d09e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a03cb7eaa663dc83af68bc28a596d09e6">ok</a> () const</td></tr>
+<tr class="memdesc:a03cb7eaa663dc83af68bc28a596d09e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string is not empty. <br /></td></tr>
+<tr class="separator:a03cb7eaa663dc83af68bc28a596d09e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e65277e4f9ecbe4f7cd87ab63be71e"><td class="memItemLeft" align="right" valign="top"><a id="af4e65277e4f9ecbe4f7cd87ab63be71e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#af4e65277e4f9ecbe4f7cd87ab63be71e">operator const char *</a> () const</td></tr>
 <tr class="memdesc:af4e65277e4f9ecbe4f7cd87ab63be71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
@@ -268,8 +272,13 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="separator:a5e19e3c3799b73edb06c12e438ec59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2a1049c0eaa605d6256924b3c28394"><td class="memItemLeft" align="right" valign="top"><a id="ace2a1049c0eaa605d6256924b3c28394"></a>
 const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#ace2a1049c0eaa605d6256924b3c28394">operator|</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s) const</td></tr>
-<tr class="memdesc:ace2a1049c0eaa605d6256924b3c28394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this string or s if this string is empty. <br /></td></tr>
+<tr class="memdesc:ace2a1049c0eaa605d6256924b3c28394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the left string if it is not empty, or the right otherwise. <br /></td></tr>
 <tr class="separator:ace2a1049c0eaa605d6256924b3c28394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cad00c332e5dafdf10b94b9060ed2de"><td class="memTemplParams" colspan="2"><a id="a9cad00c332e5dafdf10b94b9060ed2de"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9cad00c332e5dafdf10b94b9060ed2de"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a9cad00c332e5dafdf10b94b9060ed2de">operator|</a> (const T &amp;s) const</td></tr>
+<tr class="memdesc:a9cad00c332e5dafdf10b94b9060ed2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the left string if it is not empty, or the right otherwise. <br /></td></tr>
+<tr class="separator:a9cad00c332e5dafdf10b94b9060ed2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5cc964b1ed462dc22de4dff8e024466"><td class="memItemLeft" align="right" valign="top"><a id="ab5cc964b1ed462dc22de4dff8e024466"></a>
 char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#ab5cc964b1ed462dc22de4dff8e024466">operator[]</a> (int i)</td></tr>
 <tr class="memdesc:ab5cc964b1ed462dc22de4dff8e024466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the <code>i</code>-th character in this string (byte-based) <br /></td></tr>
@@ -571,7 +580,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassasl_1_1_string_html_a8db865e64c3c3f65ec6a0b6fd8c09a94"><div class="ttname"><a href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">asl::String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Constructs an empty string.</div><div class="ttdef"><b>Definition:</b> String.h:130</div></div>
-<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:762</div></div>
+<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:748</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

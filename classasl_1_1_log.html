@@ -142,6 +142,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_log.html#a2d3a00327fdbc63ae4b0dc00e6837114">setMaxLevel</a> (int level)</td></tr>
 <tr class="memdesc:a2d3a00327fdbc63ae4b0dc00e6837114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum level of messages to be logged; By default this is 3, so messages up to <em>level DEBUG</em> are logged. <br /></td></tr>
 <tr class="separator:a2d3a00327fdbc63ae4b0dc00e6837114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5903023ca2f08634ab0db93300f7dc"><td class="memItemLeft" align="right" valign="top"><a id="a1d5903023ca2f08634ab0db93300f7dc"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_log.html#a1d5903023ca2f08634ab0db93300f7dc">maxLevel</a> ()</td></tr>
+<tr class="memdesc:a1d5903023ca2f08634ab0db93300f7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current maximum log level. <br /></td></tr>
+<tr class="separator:a1d5903023ca2f08634ab0db93300f7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classasl_1_1_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classasl_1_1_singleton')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classasl_1_1_singleton.html">Singleton&lt; Log &gt;</a></td></tr>
 <tr class="memitem:ade6193af70013295b23e0318cbb276bd inherit pub_static_methods_classasl_1_1_singleton"><td class="memItemLeft" align="right" valign="top"><a id="ade6193af70013295b23e0318cbb276bd"></a>
 static <a class="el" href="classasl_1_1_log.html">Log</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_singleton.html#ade6193af70013295b23e0318cbb276bd">instance</a> ()</td></tr>
@@ -153,9 +157,9 @@ static <a class="el" href="classasl_1_1_log.html">Log</a> *&#160;</td><td class=
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup___logging_html_gae9769f4136f2963d00b1d5501316ce94"><div class="ttname"><a href="group___logging.html#gae9769f4136f2963d00b1d5501316ce94">ASL_LOG_W</a></div><div class="ttdeci">#define ASL_LOG_W(...)</div><div class="ttdoc">Log a formatted message with the WARNING level.</div><div class="ttdef"><b>Definition:</b> Log.h:118</div></div>
+<div class="ttc" id="agroup___logging_html_gae9769f4136f2963d00b1d5501316ce94"><div class="ttname"><a href="group___logging.html#gae9769f4136f2963d00b1d5501316ce94">ASL_LOG_W</a></div><div class="ttdeci">#define ASL_LOG_W(...)</div><div class="ttdoc">Log a formatted message with the WARNING level.</div><div class="ttdef"><b>Definition:</b> Log.h:122</div></div>
 <div class="ttc" id="aclassasl_1_1_log_html_ae4ee8d8423cdbfef136a878593adf1a3"><div class="ttname"><a href="classasl_1_1_log.html#ae4ee8d8423cdbfef136a878593adf1a3">asl::Log::useConsole</a></div><div class="ttdeci">static void useConsole(bool on)</div><div class="ttdoc">Enables or disables writing messages to the console.</div></div>
-<div class="ttc" id="agroup___logging_html_ga6f87f5e6abc94f75bdc6fe78feeb9b28"><div class="ttname"><a href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a></div><div class="ttdeci">#define ASL_LOG_(LEVEL,...)</div><div class="ttdoc">Log a formatted message with the given level (ERR, WARNING, INFO, DEBUG or VERBOSE)</div><div class="ttdef"><b>Definition:</b> Log.h:105</div></div>
+<div class="ttc" id="agroup___logging_html_ga6f87f5e6abc94f75bdc6fe78feeb9b28"><div class="ttname"><a href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a></div><div class="ttdeci">#define ASL_LOG_(LEVEL,...)</div><div class="ttdoc">Log a formatted message with the given level (ERR, WARNING, INFO, DEBUG or VERBOSE)</div><div class="ttdef"><b>Definition:</b> Log.h:109</div></div>
 <div class="ttc" id="aclassasl_1_1_log_html_ae7a334da07117d5f8da3b8907031da6d"><div class="ttname"><a href="classasl_1_1_log.html#ae7a334da07117d5f8da3b8907031da6d">asl::Log::setFile</a></div><div class="ttdeci">static void setFile(const String &amp;file)</div><div class="ttdoc">Sets the name of the file to write messages to.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

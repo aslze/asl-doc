@@ -1,6 +1,7 @@
 var classasl_1_1_matrix3__ =
 [
     [ "Matrix3_", "classasl_1_1_matrix3__.html#ad6749f52252ef189ba2fffc52c247ab4", null ],
+    [ "Matrix3_", "classasl_1_1_matrix3__.html#a7f33fdb8f228e411e71fbcd24df46150", null ],
     [ "inverse", "classasl_1_1_matrix3__.html#af6746bc3789937e2b91bc1ff686bd363", null ],
     [ "operator()", "classasl_1_1_matrix3__.html#a8c8ceabc696d63c5c1949706e5f949af", null ],
     [ "operator*", "classasl_1_1_matrix3__.html#a69cc126f718655b1c935212ab0fd2c60", null ],

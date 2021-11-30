@@ -2,6 +2,7 @@ var group___math3_d =
 [
     [ "Matrix3_", "classasl_1_1_matrix3__.html", [
       [ "Matrix3_", "classasl_1_1_matrix3__.html#ad6749f52252ef189ba2fffc52c247ab4", null ],
+      [ "Matrix3_", "classasl_1_1_matrix3__.html#a7f33fdb8f228e411e71fbcd24df46150", null ],
       [ "inverse", "classasl_1_1_matrix3__.html#af6746bc3789937e2b91bc1ff686bd363", null ],
       [ "operator()", "classasl_1_1_matrix3__.html#a8c8ceabc696d63c5c1949706e5f949af", null ],
       [ "operator*", "classasl_1_1_matrix3__.html#a69cc126f718655b1c935212ab0fd2c60", null ],
@@ -14,6 +15,7 @@ var group___math3_d =
       [ "Matrix4_", "classasl_1_1_matrix4__.html#aebe3b6073453fcd442f4c5f66c37d603", null ],
       [ "Matrix4_", "classasl_1_1_matrix4__.html#aaef86101e66560bd8b952bd4d5769a87", null ],
       [ "Matrix4_", "classasl_1_1_matrix4__.html#aea9dec24a8406f4b48c6c91ea1e4b689", null ],
+      [ "Matrix4_", "classasl_1_1_matrix4__.html#a603b1c0ad8b0430ca125c114bcf3670c", null ],
       [ "column", "classasl_1_1_matrix4__.html#a138199504cfb42235796d7027de7850c", null ],
       [ "column3", "classasl_1_1_matrix4__.html#aeeae5a56f24fdf732f74d606921a9988", null ],
       [ "det", "classasl_1_1_matrix4__.html#a9f7456d70abd64fe4f99c07b23207043", null ],

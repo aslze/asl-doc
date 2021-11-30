@@ -10,6 +10,8 @@ var classasl_1_1_var =
     [ "has", "classasl_1_1_var.html#ac7c949bded5e52775de6ad66550a4927", null ],
     [ "is", "classasl_1_1_var.html#a8cc7d9ec8379cc79d424700db13c28e8", null ],
     [ "is", "classasl_1_1_var.html#acf336f5fd456cc1ebb02f7d8d7fe84fa", null ],
+    [ "isArrayOf", "classasl_1_1_var.html#ade181d1e944e2690d0aafbbf6cd993c0", null ],
+    [ "isArrayOf", "classasl_1_1_var.html#af12b04a0cd3dd507a992ed73a7f910d1", null ],
     [ "isTrue", "classasl_1_1_var.html#af86ff7fcda2d789fc75b7750e6acfb82", null ],
     [ "length", "classasl_1_1_var.html#a91213974fa3ac3959b1c355a9e588f8d", null ],
     [ "object", "classasl_1_1_var.html#a31df29740b6fac7bf700c060bd330bbb", null ],

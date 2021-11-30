@@ -11,14 +11,13 @@ var hierarchy =
       [ "Stack< asl::String >", "classasl_1_1_stack.html", null ]
     ] ],
     [ "Array< asl::Thread >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::Var >", "classasl_1_1_array.html", null ],
+    [ "Array< asl::Var >", "classasl_1_1_array.html", [
+      [ "Stack< asl::Var >", "classasl_1_1_stack.html", null ]
+    ] ],
     [ "Array< asl::WebSocket * >", "classasl_1_1_array.html", null ],
     [ "Array< asl::Xml >", "classasl_1_1_array.html", null ],
     [ "Array< byte >", "classasl_1_1_array.html", [
       [ "StreamBuffer", "classasl_1_1_stream_buffer.html", null ]
-    ] ],
-    [ "Array< Container >", "classasl_1_1_array.html", [
-      [ "Stack< Container >", "classasl_1_1_stack.html", null ]
     ] ],
     [ "Array< Context >", "classasl_1_1_array.html", [
       [ "Stack< Context >", "classasl_1_1_stack.html", null ]
