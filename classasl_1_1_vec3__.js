@@ -22,6 +22,7 @@ var classasl_1_1_vec3__ =
     [ "operator==", "classasl_1_1_vec3__.html#a0b66e80705c5bb9c582ded3ceda4391a", null ],
     [ "operator^", "classasl_1_1_vec3__.html#aa0427eed079ad5e26b9546f86d8b78ce", null ],
     [ "xy", "classasl_1_1_vec3__.html#a40e11d62bd73097ba0ea066639251fa5", null ],
+    [ "zyx", "classasl_1_1_vec3__.html#a8034f97bb0078478aac687f9be9fd4a4", null ],
     [ "operator*", "classasl_1_1_vec3__.html#aebb5c221ce6016697cdcc605f23d0b6b", null ],
     [ "x", "classasl_1_1_vec3__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d", null ]
 ];
