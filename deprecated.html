@@ -87,9 +87,9 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt>Member <a class="el" href="classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c">Array&lt; T &gt;::sslice</a>  (int i1, int i2=0) const</dt>
+<dt>Member <a class="el" href="classasl_1_1_array.html#a799d86dcf709cbdc922e9d7cd8831117">Array&lt; T &gt;::ASL_DEPRECATED</a>  (<a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a> sslice(int i1, int i2=0) const, "Use slice()")</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>  </dd>
-<dt>Member <a class="el" href="classasl_1_1_http_message.html#a5537dc1c93b1a4ed16388f3c93a25810">HttpMessage::data</a>  () const</dt>
+<dt>Member <a class="el" href="classasl_1_1_http_message.html#a3cd6f0cf39c7111ea6dc40f220f12936">HttpMessage::ASL_DEPRECATED</a>  (<a class="el" href="classasl_1_1_var.html" title="A Var is a type that can hold a value of one of several types, similarly to a var in JavaScript.">Var</a> data() const, "Use json()")</dt>
 <dd><a class="anchor" id="_deprecated000002"></a>Use <a class="el" href="classasl_1_1_http_message.html#abdeca9d6e6ecf38c70a45ceb37bdf678" title="Returns the message body interpreted as JSON.">json()</a>  </dd>
 <dt>Member <a class="el" href="classasl_1_1_http_server.html#a2448350909b9f3b86cf4369c57146bce">HttpServer::handle</a>  (<a class="el" href="classasl_1_1_http_request.html" title="An HTTP request that servers can read from.">HttpRequest</a> &amp;request, <a class="el" href="classasl_1_1_http_response.html" title="An HTTP response that clients can read and servers write.">HttpResponse</a> &amp;response)</dt>
 <dd><a class="anchor" id="_deprecated000003"></a>Use <a class="el" href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161" title="Implement this function in a subclass to create the server behavior.">serve()</a>  </dd>
@@ -97,8 +97,10 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000004"></a>Use <a class="el" href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b" title="This function is called in a new thread with each new incoming client connection.">serve()</a>  </dd>
 <dt>Member <a class="el" href="classasl_1_1_string.html#acb67799ac982ceafda8eaca69c3db31d">String::String</a>  (char c, int n)</dt>
 <dd><a class="anchor" id="_deprecated000005"></a>Use <code><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3" title="Constructs a string consisting of character c repeated n times.">repeat()</a></code> instead.  </dd>
-<dt>Member <a class="el" href="classasl_1_1_var.html#af86ff7fcda2d789fc75b7750e6acfb82">Var::isTrue</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000006"></a>Use <code>bool</code> conversion </dd>
+<dt>Member <a class="el" href="classasl_1_1_var.html#a0a2f51e6268e5e77f23934618a521509">Var::ASL_DEPRECATED</a>  (bool isTrue() const, "Use bool conversion")</dt>
+<dd><a class="anchor" id="_deprecated000006"></a>Use <code>bool</code> conversion  </dd>
+<dt>Member <a class="el" href="classasl_1_1_xml.html#acfa66cd2902845b09f996ff1b8974e3b">Xml::write</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;file, const <a class="el" href="classasl_1_1_xml.html" title="This class represents an XML element and can be used to manipulate a document DOM tree.">Xml</a> &amp;e)</dt>
+<dd><a class="anchor" id="_deprecated000007"></a>Use write(xml, file) </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

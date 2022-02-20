@@ -7,6 +7,7 @@ var group___containers =
       [ "Array", "classasl_1_1_array.html#ae990240872f862a0e9b65daee4de9aed", null ],
       [ "append", "classasl_1_1_array.html#a0d1359cc28c154ce626fcbac7dc11eeb", null ],
       [ "append", "classasl_1_1_array.html#a16f111cec3a82bdde4b0bbc9a909ff09", null ],
+      [ "ASL_DEPRECATED", "classasl_1_1_array.html#a799d86dcf709cbdc922e9d7cd8831117", null ],
       [ "clear", "classasl_1_1_array.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
       [ "clone", "classasl_1_1_array.html#aa17008b6aa6c82298085dc9552f775a4", null ],
       [ "concat", "classasl_1_1_array.html#a81e91ddf1e762cd9a915507eb1aca3c2", null ],
@@ -44,7 +45,6 @@ var group___containers =
       [ "sort", "classasl_1_1_array.html#ad214197fe78bbc5c1dd12a697c6734e0", null ],
       [ "sort", "classasl_1_1_array.html#a449e41a9b2bc294476b9ccefd59eb652", null ],
       [ "sortBy", "classasl_1_1_array.html#aded6603d5115a01c411596957508b959", null ],
-      [ "sslice", "classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c", null ],
       [ "with", "classasl_1_1_array.html#a353ecf3c1409cc456e64418fc07a5d8c", null ]
     ] ],
     [ "Array_", "classasl_1_1_array__.html", [

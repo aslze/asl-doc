@@ -94,14 +94,14 @@ $(document).ready(function(){initNavTree('classasl_1_1_log.html',''); initResiza
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classasl_1_1_log.html" title="Log is a utility to log messages to either the console, a file or both.">Log</a> is a utility to log messages to either the console, a file or both. </p>
 <p>Messages have a <em>category</em> (usuarlly a module or area identifier) and a <em>level</em> (to distinguish errors, warnings, information and debug messages), and are written together with the current date and time. By default messages are written to a file named "log.txt" and to the console (with errors and warnings colored). These as well as the maximum level of messages logged can be configured.</p>
-<div class="fragment"><div class="line"><a class="code" href="classasl_1_1_log.html#ae7a334da07117d5f8da3b8907031da6d">Log::setFile</a>(<span class="stringliteral">&quot;app.log&quot;</span>); <span class="comment">// write to this file (default is &quot;log.txt&quot;)</span></div>
+<div class="fragment"><div class="line"><a class="code" href="classasl_1_1_log.html#ae7a334da07117d5f8da3b8907031da6d">Log::setFile</a>(<span class="stringliteral">&quot;app.log&quot;</span>); <span class="comment">// write to this file (default is &quot;log.log&quot;)</span></div>
 <div class="line"><a class="code" href="classasl_1_1_log.html#ae4ee8d8423cdbfef136a878593adf1a3">Log::useConsole</a>(<span class="keyword">false</span>);  <span class="comment">// do not write to the console</span></div>
 </div><!-- fragment --><p>The easiest way to write messages is with the provided macro ASL_LOG_ similar to a <code>printf</code> call. It uses the current source file as <em>category</em>.</p>
 <div class="fragment"><div class="line"><a class="code" href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a>(WARNING, <span class="stringliteral">&quot;Ignored unknown mode %i&quot;</span>, mode);</div>
 </div><!-- fragment --><p>That is equivalent to:</p>
 <div class="fragment"><div class="line"><a class="code" href="group___logging.html#gae9769f4136f2963d00b1d5501316ce94">ASL_LOG_W</a>(<span class="stringliteral">&quot;Ignored unknown mode %i&quot;</span>, mode);</div>
 </div><!-- fragment --><p>On Android this class uses the system logger.</p>
-<p><a class="el" href="classasl_1_1_log.html" title="Log is a utility to log messages to either the console, a file or both.">Log</a> files do not grow indefinitely. When reaching about 1 MB, they will be moved to a file with "-1" appended to its name (like "log-1.txt"), and a new empty file will be started. Any logs older than that will be lost. </p>
+<p><a class="el" href="classasl_1_1_log.html" title="Log is a utility to log messages to either the console, a file or both.">Log</a> files do not grow indefinitely. When reaching about 1 MB, they will be moved to a file with "-1" appended to its name (like "log-1.log"), and a new empty file will be started. Any logs older than that will be lost. </p>
 </div>
 <p><code>#include &lt;Log.h&gt;</code></p>
 

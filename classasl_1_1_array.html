@@ -245,9 +245,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classasl_1_1_array.html">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd">slice</a> (int i1, int i2=0) const</td></tr>
 <tr class="memdesc:a04251d5d49cadb1a5e06827db1eae4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a section of the array, from element i1 up to but not including element i2; If i2 is omitted the subarray will take elements up te the last. <br /></td></tr>
 <tr class="separator:a04251d5d49cadb1a5e06827db1eae4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8382ee2e4a41ce89feebcb2dec1a053c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c">sslice</a> (int i1, int i2=0) const</td></tr>
-<tr class="memdesc:a8382ee2e4a41ce89feebcb2dec1a053c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd" title="Returns a section of the array, from element i1 up to but not including element i2; If i2 is omitted ...">slice()</a>  <a href="classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c">More...</a><br /></td></tr>
-<tr class="separator:a8382ee2e4a41ce89feebcb2dec1a053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799d86dcf709cbdc922e9d7cd8831117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a799d86dcf709cbdc922e9d7cd8831117">ASL_DEPRECATED</a> (<a class="el" href="classasl_1_1_array.html">Array</a> sslice(int i1, int i2=0) const, &quot;Use <a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd">slice</a>()&quot;)</td></tr>
+<tr class="memdesc:a799d86dcf709cbdc922e9d7cd8831117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd" title="Returns a section of the array, from element i1 up to but not including element i2; If i2 is omitted ...">slice()</a>  <a href="classasl_1_1_array.html#a799d86dcf709cbdc922e9d7cd8831117">More...</a><br /></td></tr>
+<tr class="separator:a799d86dcf709cbdc922e9d7cd8831117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1359cc28c154ce626fcbac7dc11eeb"><td class="memItemLeft" align="right" valign="top"><a id="a0d1359cc28c154ce626fcbac7dc11eeb"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a0d1359cc28c154ce626fcbac7dc11eeb">append</a> (const <a class="el" href="classasl_1_1_array.html">Array</a> &amp;b)</td></tr>
 <tr class="memdesc:a0d1359cc28c154ce626fcbac7dc11eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all elements from array b at the end of the array. <br /></td></tr>
@@ -279,7 +279,7 @@ template&lt;class F &gt; </td></tr>
 <tr class="memdesc:aded6603d5115a01c411596957508b959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the array by the elements' f comparable property (in ascending order by default) <br /></td></tr>
 <tr class="separator:aded6603d5115a01c411596957508b959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9566171d17edfd2d53be33e9d608aad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#ab9566171d17edfd2d53be33e9d608aad">join</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;sep) const</td></tr>
-<tr class="memdesc:ab9566171d17edfd2d53be33e9d608aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the array, formed by joining its elements with commas.  <a href="classasl_1_1_array.html#ab9566171d17edfd2d53be33e9d608aad">More...</a><br /></td></tr>
+<tr class="memdesc:ab9566171d17edfd2d53be33e9d608aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator String() const;  <a href="classasl_1_1_array.html#ab9566171d17edfd2d53be33e9d608aad">More...</a><br /></td></tr>
 <tr class="separator:ab9566171d17edfd2d53be33e9d608aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b8561f01f01e0a481f9c2223e99037"><td class="memTemplParams" colspan="2"><a id="a88b8561f01f01e0a481f9c2223e99037"></a>
 template&lt;class F &gt; </td></tr>
@@ -302,6 +302,45 @@ template&lt;class F &gt; </td></tr>
 <tr class="separator:a8dd6e04a348bf2609d909c28192bab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a799d86dcf709cbdc922e9d7cd8831117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799d86dcf709cbdc922e9d7cd8831117">&#9670;&nbsp;</a></span>ASL_DEPRECATED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ASL_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">Array</a>&lt; T &gt; sslice(int i1, int i2=0) const&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Use <a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd">slice</a>()&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd" title="Returns a section of the array, from element i1 up to but not including element i2; If i2 is omitted ...">slice()</a> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="ab9566171d17edfd2d53be33e9d608aad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9566171d17edfd2d53be33e9d608aad">&#9670;&nbsp;</a></span>join()</h2>
 
@@ -318,47 +357,8 @@ template&lt;class F &gt; </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a string representation of the array, formed by joining its elements with commas. </p>
-<p>The elements need to be convertible to <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> operator String() const; Returns a string representation of the array, formed by joining its elements with the given separator string sep; The elements need to be convertible to <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> </p>
-
-</div>
-</div>
-<a id="a8382ee2e4a41ce89feebcb2dec1a053c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8382ee2e4a41ce89feebcb2dec1a053c">&#9670;&nbsp;</a></span>sslice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_array.html">Array</a> sslice </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i2</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Same as <a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd" title="Returns a section of the array, from element i1 up to but not including element i2; If i2 is omitted ...">slice()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
+<p>operator String() const; </p>
+<p>Returns a string representation of the array, formed by joining its elements with the given separator string sep; The elements need to be convertible to <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> </p>
 
 </div>
 </div>
