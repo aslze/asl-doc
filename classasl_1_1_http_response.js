@@ -10,5 +10,6 @@ var classasl_1_1_http_response =
     [ "is", "classasl_1_1_http_response.html#ae12d3694c3d4573824f39d7e1fc80304", null ],
     [ "ok", "classasl_1_1_http_response.html#a03cb7eaa663dc83af68bc28a596d09e6", null ],
     [ "proto", "classasl_1_1_http_response.html#a7203680d0a1812e386c2d4bc201ce9ad", null ],
-    [ "setProto", "classasl_1_1_http_response.html#aec71fd305217502019a43aaed41ea9a1", null ]
+    [ "setProto", "classasl_1_1_http_response.html#aec71fd305217502019a43aaed41ea9a1", null ],
+    [ "socketError", "classasl_1_1_http_response.html#a6472e1840f01540573c2b7c8d616cf0e", null ]
 ];

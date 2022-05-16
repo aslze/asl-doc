@@ -4,7 +4,9 @@ var hierarchy =
       [ "Queue< T >", "classasl_1_1_queue.html", null ],
       [ "Stack< T >", "classasl_1_1_stack.html", null ]
     ] ],
-    [ "Array2< T >", "classasl_1_1_array2.html", null ],
+    [ "Array2< T >", "classasl_1_1_array2.html", [
+      [ "Matrix_< T >", "classasl_1_1_matrix__.html", null ]
+    ] ],
     [ "Array< asl::File >", "classasl_1_1_array.html", null ],
     [ "Array< asl::Socket >", "classasl_1_1_array.html", null ],
     [ "Array< asl::String >", "classasl_1_1_array.html", [

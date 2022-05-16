@@ -152,16 +152,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#aaa0dc2a3c76cdebf846778d448848738">bindTLS</a> (int port)</td></tr>
 <tr class="memdesc:aaa0dc2a3c76cdebf846778d448848738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a TCP port for TLS connections. <br /></td></tr>
 <tr class="separator:aaa0dc2a3c76cdebf846778d448848738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaebefbfcc96c42836641f3ec8dacee5"><td class="memItemLeft" align="right" valign="top"><a id="aaaebefbfcc96c42836641f3ec8dacee5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5">useCert</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;cert, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;key)</td></tr>
-<tr class="memdesc:aaaebefbfcc96c42836641f3ec8dacee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the certificate and private key for the TLS server in PEM format. <br /></td></tr>
-<tr class="separator:aaaebefbfcc96c42836641f3ec8dacee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad5c2153950961ffb2606abb35d5967"><td class="memItemLeft" align="right" valign="top"><a id="a6ad5c2153950961ffb2606abb35d5967"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a6ad5c2153950961ffb2606abb35d5967">useCert</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;cert, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;key)</td></tr>
+<tr class="memdesc:a6ad5c2153950961ffb2606abb35d5967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the certificate and private key for the TLS server in PEM format. <br /></td></tr>
+<tr class="separator:a6ad5c2153950961ffb2606abb35d5967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51fc8458f0ba8cb6baa6238051bdfd1b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b">serve</a> (<a class="el" href="classasl_1_1_socket.html">Socket</a> client)</td></tr>
 <tr class="memdesc:a51fc8458f0ba8cb6baa6238051bdfd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called in a new thread with each new incoming client connection.  <a href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b">More...</a><br /></td></tr>
 <tr class="separator:a51fc8458f0ba8cb6baa6238051bdfd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c03872f1b043658f364778d9d91211a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a">service</a> (<a class="el" href="classasl_1_1_socket.html">Socket</a> client)</td></tr>
-<tr class="memdesc:a0c03872f1b043658f364778d9d91211a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old service function.  <a href="classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a">More...</a><br /></td></tr>
-<tr class="separator:a0c03872f1b043658f364778d9d91211a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a607e3d8e04c5e58305e4892658436917"><td class="memItemLeft" align="right" valign="top"><a id="a607e3d8e04c5e58305e4892658436917"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a607e3d8e04c5e58305e4892658436917">stop</a> (bool sync=false)</td></tr>
 <tr class="memdesc:a607e3d8e04c5e58305e4892658436917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the server to stop receiving connections, and waits for all clients to exit if sync is true. <br /></td></tr>
@@ -174,6 +171,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a8e5a1b9ac06a913f1db10c386d6aa9c6">running</a> () const</td></tr>
 <tr class="memdesc:a8e5a1b9ac06a913f1db10c386d6aa9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this server started and has not yet stopped or still has clients running. <br /></td></tr>
 <tr class="separator:a8e5a1b9ac06a913f1db10c386d6aa9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6472e1840f01540573c2b7c8d616cf0e"><td class="memItemLeft" align="right" valign="top"><a id="a6472e1840f01540573c2b7c8d616cf0e"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a6472e1840f01540573c2b7c8d616cf0e">socketError</a> () const</td></tr>
+<tr class="memdesc:a6472e1840f01540573c2b7c8d616cf0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the last socket error (after a failed bind or use cert...) <br /></td></tr>
+<tr class="separator:a6472e1840f01540573c2b7c8d616cf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a51fc8458f0ba8cb6baa6238051bdfd1b"></a>
@@ -205,35 +206,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a0c03872f1b043658f364778d9d91211a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c03872f1b043658f364778d9d91211a">&#9670;&nbsp;</a></span>service()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void service </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classasl_1_1_socket.html">Socket</a>&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Old service function. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b" title="This function is called in a new thread with each new incoming client connection.">serve()</a> </dd></dl>
-
-</div>
-</div>
 <a id="ae58264567927c6d6e295f3d574a44094"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae58264567927c6d6e295f3d574a44094">&#9670;&nbsp;</a></span>start()</h2>
 
@@ -260,7 +232,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassasl_1_1_socket_server_html_a51fc8458f0ba8cb6baa6238051bdfd1b"><div class="ttname"><a href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b">asl::SocketServer::serve</a></div><div class="ttdeci">virtual void serve(Socket client)</div><div class="ttdoc">This function is called in a new thread with each new incoming client connection.</div><div class="ttdef"><b>Definition:</b> SocketServer.h:103</div></div>
+<div class="ttc" id="aclassasl_1_1_socket_server_html_a51fc8458f0ba8cb6baa6238051bdfd1b"><div class="ttname"><a href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b">asl::SocketServer::serve</a></div><div class="ttdeci">virtual void serve(Socket client)</div><div class="ttdoc">This function is called in a new thread with each new incoming client connection.</div><div class="ttdef"><b>Definition:</b> SocketServer.h:106</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

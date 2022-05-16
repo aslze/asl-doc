@@ -103,6 +103,18 @@ class asl::Matrix3_&lt; T &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad107abcacb84cbabb41b87ba81360f91"><td class="memItemLeft" align="right" valign="top"><a id="ad107abcacb84cbabb41b87ba81360f91"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#ad107abcacb84cbabb41b87ba81360f91">rows</a> () const</td></tr>
+<tr class="memdesc:ad107abcacb84cbabb41b87ba81360f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the nubmer of rows of this matrix (3) <br /></td></tr>
+<tr class="separator:ad107abcacb84cbabb41b87ba81360f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8509d6f7951179378f848f5f4cc37720"><td class="memItemLeft" align="right" valign="top"><a id="a8509d6f7951179378f848f5f4cc37720"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a8509d6f7951179378f848f5f4cc37720">cols</a> () const</td></tr>
+<tr class="memdesc:a8509d6f7951179378f848f5f4cc37720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the nubmer of columns of this matrix (3) <br /></td></tr>
+<tr class="separator:a8509d6f7951179378f848f5f4cc37720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7244be79e2fc3ebe040509296120dcbf"><td class="memItemLeft" align="right" valign="top"><a id="a7244be79e2fc3ebe040509296120dcbf"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a7244be79e2fc3ebe040509296120dcbf">trace</a> () const</td></tr>
+<tr class="memdesc:a7244be79e2fc3ebe040509296120dcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the trace of this matrix. <br /></td></tr>
+<tr class="separator:a7244be79e2fc3ebe040509296120dcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6749f52252ef189ba2fffc52c247ab4"><td class="memItemLeft" align="right" valign="top"><a id="ad6749f52252ef189ba2fffc52c247ab4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#ad6749f52252ef189ba2fffc52c247ab4">Matrix3_</a> (T a00, T a01, T a02, T a10, T a11, T a12, T a20=0, T a21=0, T a22=1)</td></tr>
 <tr class="memdesc:ad6749f52252ef189ba2fffc52c247ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a 3x3 matrix given its elements (by rows). <br /></td></tr>
@@ -139,6 +151,10 @@ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#af6746bc3789937e2b91bc1ff686bd363">inverse</a> () const</td></tr>
 <tr class="memdesc:af6746bc3789937e2b91bc1ff686bd363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inverse of this matrix. <br /></td></tr>
 <tr class="separator:af6746bc3789937e2b91bc1ff686bd363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7456d70abd64fe4f99c07b23207043"><td class="memItemLeft" align="right" valign="top"><a id="a9f7456d70abd64fe4f99c07b23207043"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a9f7456d70abd64fe4f99c07b23207043">det</a> () const</td></tr>
+<tr class="memdesc:a9f7456d70abd64fe4f99c07b23207043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>determinant</em> of this matrix. <br /></td></tr>
+<tr class="separator:a9f7456d70abd64fe4f99c07b23207043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -164,9 +180,9 @@ static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassasl_1_1_matrix3___html_a99a7b1f62ac0a7ab91eec81d59b3075c"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c">asl::Matrix3_::scale</a></div><div class="ttdeci">static Matrix3_ scale(T t)</div><div class="ttdoc">Returns a 2D scale matrix for factor t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:173</div></div>
-<div class="ttc" id="aclassasl_1_1_matrix3___html_acc503c4baac3ad49a26d40f1d30bd561"><div class="ttname"><a href="classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561">asl::Matrix3_::translate</a></div><div class="ttdeci">static Matrix3_ translate(const Vec2_&lt; T &gt; &amp;t)</div><div class="ttdoc">Returns a 2D translation matrix for vector t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:160</div></div>
-<div class="ttc" id="aclassasl_1_1_matrix3___html_a21ac382502142c5ccbf18bd65cdd2a6d"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d">asl::Matrix3_::rotate</a></div><div class="ttdeci">static Matrix3_ rotate(T t)</div><div class="ttdoc">Returns a 2D rotation matrix for angle t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:151</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_a99a7b1f62ac0a7ab91eec81d59b3075c"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c">asl::Matrix3_::scale</a></div><div class="ttdeci">static Matrix3_ scale(T t)</div><div class="ttdoc">Returns a 2D scale matrix for factor t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:188</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_acc503c4baac3ad49a26d40f1d30bd561"><div class="ttname"><a href="classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561">asl::Matrix3_::translate</a></div><div class="ttdeci">static Matrix3_ translate(const Vec2_&lt; T &gt; &amp;t)</div><div class="ttdoc">Returns a 2D translation matrix for vector t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:175</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_a21ac382502142c5ccbf18bd65cdd2a6d"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d">asl::Matrix3_::rotate</a></div><div class="ttdeci">static Matrix3_ rotate(T t)</div><div class="ttdoc">Returns a 2D rotation matrix for angle t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:166</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

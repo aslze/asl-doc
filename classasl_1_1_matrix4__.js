@@ -4,12 +4,15 @@ var classasl_1_1_matrix4__ =
     [ "Matrix4_", "classasl_1_1_matrix4__.html#aaef86101e66560bd8b952bd4d5769a87", null ],
     [ "Matrix4_", "classasl_1_1_matrix4__.html#aea9dec24a8406f4b48c6c91ea1e4b689", null ],
     [ "Matrix4_", "classasl_1_1_matrix4__.html#a603b1c0ad8b0430ca125c114bcf3670c", null ],
+    [ "cols", "classasl_1_1_matrix4__.html#a8509d6f7951179378f848f5f4cc37720", null ],
     [ "column", "classasl_1_1_matrix4__.html#a138199504cfb42235796d7027de7850c", null ],
     [ "column3", "classasl_1_1_matrix4__.html#aeeae5a56f24fdf732f74d606921a9988", null ],
     [ "det", "classasl_1_1_matrix4__.html#a9f7456d70abd64fe4f99c07b23207043", null ],
     [ "eulerAngles", "classasl_1_1_matrix4__.html#a2862aa5892d5718b9de7ef10de16c621", null ],
     [ "eulerAngles", "classasl_1_1_matrix4__.html#af61b91b36ee3ae366fb89ef018ba7cf4", null ],
     [ "inverse", "classasl_1_1_matrix4__.html#a2657c478839eb8a17d03273c798ae166", null ],
+    [ "norm", "classasl_1_1_matrix4__.html#aaeb888c96528e67e9d5f2efb6fd8151e", null ],
+    [ "normSq", "classasl_1_1_matrix4__.html#a2513085c733ed35edc0c61bbf9453196", null ],
     [ "operator%", "classasl_1_1_matrix4__.html#a8a035597777f60c50833e6dc784d44ed", null ],
     [ "operator()", "classasl_1_1_matrix4__.html#a8c8ceabc696d63c5c1949706e5f949af", null ],
     [ "operator*", "classasl_1_1_matrix4__.html#acf55c08c75e43cdc5b962bcadb0e2dbd", null ],
@@ -21,7 +24,10 @@ var classasl_1_1_matrix4__ =
     [ "operator+", "classasl_1_1_matrix4__.html#a7befb4ac2a0424df6b91a3b87d3de977", null ],
     [ "operator-", "classasl_1_1_matrix4__.html#a2c13b3271cf970da2828d0fa3b5316ea", null ],
     [ "rotation", "classasl_1_1_matrix4__.html#a989d82725dedae9fa09dae58064a1e15", null ],
+    [ "rows", "classasl_1_1_matrix4__.html#ad107abcacb84cbabb41b87ba81360f91", null ],
     [ "setTranslation", "classasl_1_1_matrix4__.html#adc1cb70ec23476fcb72217bb5b739d9a", null ],
     [ "t", "classasl_1_1_matrix4__.html#ab3d27947f1ccfcbac86a417dbed4cad3", null ],
-    [ "translation", "classasl_1_1_matrix4__.html#a31ab7738cbaba3f04623ffce6d72b402", null ]
+    [ "trace", "classasl_1_1_matrix4__.html#a7244be79e2fc3ebe040509296120dcbf", null ],
+    [ "translation", "classasl_1_1_matrix4__.html#a31ab7738cbaba3f04623ffce6d72b402", null ],
+    [ "with", "classasl_1_1_matrix4__.html#a1682a31f15bf2045b83b5576f0e959fa", null ]
 ];

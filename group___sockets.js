@@ -16,7 +16,8 @@ var group___sockets =
       [ "connect", "classasl_1_1_socket.html#a835bceb441732a46f630d199bdd9c14a", null ],
       [ "connect", "classasl_1_1_socket.html#ae8d90dc9077858552aa2e4d297ba5657", null ],
       [ "disconnected", "classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72", null ],
-      [ "error", "classasl_1_1_socket.html#a9db0c25a0b1baac0e7e5cbf5a72d3cdc", null ],
+      [ "error", "classasl_1_1_socket.html#a1df37e13c22d2b00843cb04a70d92ae5", null ],
+      [ "errorMsg", "classasl_1_1_socket.html#a03a8eea67c86b21778c2a2daa376df46", null ],
       [ "listen", "classasl_1_1_socket.html#af4926e2e36a362c7b6f3926c5d25151d", null ],
       [ "localAddress", "classasl_1_1_socket.html#af96eba3cd573fb1481412ac66dfe75ef", null ],
       [ "operator<<", "classasl_1_1_socket.html#a72fcf5238f1f9a67b0d0c67a5adbf0fd", null ],
@@ -47,11 +48,11 @@ var group___sockets =
       [ "bindTLS", "classasl_1_1_socket_server.html#aaa0dc2a3c76cdebf846778d448848738", null ],
       [ "running", "classasl_1_1_socket_server.html#a8e5a1b9ac06a913f1db10c386d6aa9c6", null ],
       [ "serve", "classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b", null ],
-      [ "service", "classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a", null ],
       [ "setSequential", "classasl_1_1_socket_server.html#a3211a7836021248bdae20320974abc64", null ],
+      [ "socketError", "classasl_1_1_socket_server.html#a6472e1840f01540573c2b7c8d616cf0e", null ],
       [ "start", "classasl_1_1_socket_server.html#ae58264567927c6d6e295f3d574a44094", null ],
       [ "stop", "classasl_1_1_socket_server.html#a607e3d8e04c5e58305e4892658436917", null ],
-      [ "useCert", "classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5", null ]
+      [ "useCert", "classasl_1_1_socket_server.html#a6ad5c2153950961ffb2606abb35d5967", null ]
     ] ],
     [ "TlsSocket", "classasl_1_1_tls_socket.html", [
       [ "useCert", "classasl_1_1_tls_socket.html#a78fda9218d1672ea047ddea4a21830f2", null ],

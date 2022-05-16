@@ -99,7 +99,19 @@ $(document).ready(function(){initNavTree('classasl_1_1_console.html',''); initRe
 <div class="line">console.<a class="code" href="classasl_1_1_console.html#a1bb44a4bc6863c6d8152e0c05397241a">bgcolor</a>(Console::GREEN);</div>
 <div class="line">cout &lt;&lt; <span class="stringliteral">&quot;Warning: &quot;</span> &lt;&lt; warn_message &lt;&lt; endl;</div>
 <div class="line">console.<a class="code" href="classasl_1_1_console.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
-</div><!-- fragment --> </div>
+</div><!-- fragment --><p>In modern consoles, color can be set as RGB components:</p>
+<div class="fragment"><div class="line">console.<a class="code" href="classasl_1_1_console.html#ae824443b3f661414ba1f2718e17fe97d">gotoxy</a>(10, 5);</div>
+<div class="line">console.<a class="code" href="classasl_1_1_console.html#a1bb44a4bc6863c6d8152e0c05397241a">bgcolor</a>(255, 10, 10);</div>
+<div class="line">cout &lt;&lt; <span class="stringliteral">&quot;Text on red&quot;</span>;</div>
+</div><!-- fragment --><p>If many different colors are to be printed in sequence, better performance is achieved by forming a string with all color-changing terminal codes followed by the text, and then printing this string.</p>
+<div class="fragment"><div class="line">console.<a class="code" href="classasl_1_1_console.html#ad70b5b8a64176f5621d49d1647da61e9">setColorMode</a>(2); <span class="comment">// use mode 1 for older consoles not supporting full color</span></div>
+<div class="line">console.<a class="code" href="classasl_1_1_console.html#ae824443b3f661414ba1f2718e17fe97d">gotoxy</a>(10, 5);</div>
+<div class="line">String s;</div>
+<div class="line">s &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">bg</a>() &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603">rgb</a>(255, 10, 10) &lt;&lt; <span class="stringliteral">&quot;Red &quot;</span>;</div>
+<div class="line">s &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">bg</a>() &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603">rgb</a>(10, 50, 215) &lt;&lt; <span class="stringliteral">&quot;blue.&quot;</span>;</div>
+<div class="line">printf(<span class="stringliteral">&quot;%s\n&quot;</span>, *s);</div>
+</div><!-- fragment --><p>_(This is still work in progress)_ </p>
+</div>
 <p><code>#include &lt;Console.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -118,6 +130,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
 <tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the console. <br /></td></tr>
 <tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70b5b8a64176f5621d49d1647da61e9"><td class="memItemLeft" align="right" valign="top"><a id="ad70b5b8a64176f5621d49d1647da61e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#ad70b5b8a64176f5621d49d1647da61e9">setColorMode</a> (int mode)</td></tr>
+<tr class="memdesc:ad70b5b8a64176f5621d49d1647da61e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets color mode: 1=256 colors (RGB 6x6x6), 2=true color (RGB 24bit) for RGB color setting functions (only for relatively modern consoles) <br /></td></tr>
+<tr class="separator:ad70b5b8a64176f5621d49d1647da61e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a910705b2522c337f1db8660b61bfefcc"><td class="memItemLeft" align="right" valign="top"><a id="a910705b2522c337f1db8660b61bfefcc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#a910705b2522c337f1db8660b61bfefcc">color</a> (<a class="el" href="classasl_1_1_console.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> color=DEFAULT)</td></tr>
 <tr class="memdesc:a910705b2522c337f1db8660b61bfefcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current text output color, or if no argument is given, the color will be the default terminal text color. <br /></td></tr>
@@ -126,6 +142,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#a1bb44a4bc6863c6d8152e0c05397241a">bgcolor</a> (<a class="el" href="classasl_1_1_console.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> <a class="el" href="classasl_1_1_console.html#a910705b2522c337f1db8660b61bfefcc">color</a>=DEFAULT)</td></tr>
 <tr class="memdesc:a1bb44a4bc6863c6d8152e0c05397241a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current output background color. <br /></td></tr>
 <tr class="separator:a1bb44a4bc6863c6d8152e0c05397241a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cea4a9f1e1efb56038aee7d4d68e7c"><td class="memItemLeft" align="right" valign="top"><a id="ad4cea4a9f1e1efb56038aee7d4d68e7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#ad4cea4a9f1e1efb56038aee7d4d68e7c">color</a> (int r, int g, int b)</td></tr>
+<tr class="memdesc:ad4cea4a9f1e1efb56038aee7d4d68e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets current text color as RGB (if supported) <br /></td></tr>
+<tr class="separator:ad4cea4a9f1e1efb56038aee7d4d68e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41033569e1dd2785c9f81ac0aea14268"><td class="memItemLeft" align="right" valign="top"><a id="a41033569e1dd2785c9f81ac0aea14268"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#a41033569e1dd2785c9f81ac0aea14268">bgcolor</a> (int r, int g, int b)</td></tr>
+<tr class="memdesc:a41033569e1dd2785c9f81ac0aea14268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets current text color as RGB (if supported) <br /></td></tr>
+<tr class="separator:a41033569e1dd2785c9f81ac0aea14268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e28b2760f3ea114cf5700727a343159"><td class="memItemLeft" align="right" valign="top"><a id="a0e28b2760f3ea114cf5700727a343159"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">bg</a> () const</td></tr>
+<tr class="memdesc:a0e28b2760f3ea114cf5700727a343159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the prefix code to set a background color. <br /></td></tr>
+<tr class="separator:a0e28b2760f3ea114cf5700727a343159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8fd8e5e7b6d9a4346094f5357a8f065"><td class="memItemLeft" align="right" valign="top"><a id="aa8fd8e5e7b6d9a4346094f5357a8f065"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#aa8fd8e5e7b6d9a4346094f5357a8f065">fg</a> () const</td></tr>
+<tr class="memdesc:aa8fd8e5e7b6d9a4346094f5357a8f065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the prefix code to set a foreground color. <br /></td></tr>
+<tr class="separator:aa8fd8e5e7b6d9a4346094f5357a8f065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3884bd84170ffb9c7b7ae4e37994603"><td class="memItemLeft" align="right" valign="top"><a id="af3884bd84170ffb9c7b7ae4e37994603"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603">rgb</a> (int r, int g, int b) const</td></tr>
+<tr class="memdesc:af3884bd84170ffb9c7b7ae4e37994603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns terminal code to set an RGB color (or the closest if full RGB is not supported) <br /></td></tr>
+<tr class="separator:af3884bd84170ffb9c7b7ae4e37994603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa333530527e5b1b6ed041089785bd6b9"><td class="memItemLeft" align="right" valign="top"><a id="aa333530527e5b1b6ed041089785bd6b9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#aa333530527e5b1b6ed041089785bd6b9">inverse</a> (bool on=true)</td></tr>
 <tr class="memdesc:aa333530527e5b1b6ed041089785bd6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses text and background colors. <br /></td></tr>
@@ -136,7 +172,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a4c32403766cd16ca4e3a5479f075bd"><td class="memItemLeft" align="right" valign="top"><a id="a9a4c32403766cd16ca4e3a5479f075bd"></a>
 Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#a9a4c32403766cd16ca4e3a5479f075bd">size</a> ()</td></tr>
-<tr class="memdesc:a9a4c32403766cd16ca4e3a5479f075bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the console window in characters. <br /></td></tr>
+<tr class="memdesc:a9a4c32403766cd16ca4e3a5479f075bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the console window in characters {width, height}. <br /></td></tr>
 <tr class="separator:a9a4c32403766cd16ca4e3a5479f075bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -145,9 +181,12 @@ Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassasl_1_1_console_html_a1bb44a4bc6863c6d8152e0c05397241a"><div class="ttname"><a href="classasl_1_1_console.html#a1bb44a4bc6863c6d8152e0c05397241a">asl::Console::bgcolor</a></div><div class="ttdeci">void bgcolor(Color color=DEFAULT)</div><div class="ttdoc">Sets the current output background color.</div></div>
+<div class="ttc" id="aclassasl_1_1_console_html_ad70b5b8a64176f5621d49d1647da61e9"><div class="ttname"><a href="classasl_1_1_console.html#ad70b5b8a64176f5621d49d1647da61e9">asl::Console::setColorMode</a></div><div class="ttdeci">void setColorMode(int mode)</div><div class="ttdoc">Sets color mode: 1=256 colors (RGB 6x6x6), 2=true color (RGB 24bit) for RGB color setting functions (...</div><div class="ttdef"><b>Definition:</b> Console.h:90</div></div>
 <div class="ttc" id="aclassasl_1_1_console_html_ae824443b3f661414ba1f2718e17fe97d"><div class="ttname"><a href="classasl_1_1_console.html#ae824443b3f661414ba1f2718e17fe97d">asl::Console::gotoxy</a></div><div class="ttdeci">void gotoxy(int x, int y)</div><div class="ttdoc">Sets the cursor position to coordinates x, y</div></div>
 <div class="ttc" id="aclassasl_1_1_console_html_ad20897c5c8bd47f5d4005989bead0e55"><div class="ttname"><a href="classasl_1_1_console.html#ad20897c5c8bd47f5d4005989bead0e55">asl::Console::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Resets attributes to defaults.</div></div>
+<div class="ttc" id="aclassasl_1_1_console_html_a0e28b2760f3ea114cf5700727a343159"><div class="ttname"><a href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">asl::Console::bg</a></div><div class="ttdeci">String bg() const</div><div class="ttdoc">Returns the prefix code to set a background color.</div><div class="ttdef"><b>Definition:</b> Console.h:116</div></div>
 <div class="ttc" id="aclassasl_1_1_console_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="classasl_1_1_console.html#ac8bb3912a3ce86b15842e79d0b421204">asl::Console::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the console.</div></div>
+<div class="ttc" id="aclassasl_1_1_console_html_af3884bd84170ffb9c7b7ae4e37994603"><div class="ttname"><a href="classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603">asl::Console::rgb</a></div><div class="ttdeci">String rgb(int r, int g, int b) const</div><div class="ttdoc">Returns terminal code to set an RGB color (or the closest if full RGB is not supported)</div></div>
 <div class="ttc" id="aclassasl_1_1_console_html_a910705b2522c337f1db8660b61bfefcc"><div class="ttname"><a href="classasl_1_1_console.html#a910705b2522c337f1db8660b61bfefcc">asl::Console::color</a></div><div class="ttdeci">void color(Color color=DEFAULT)</div><div class="ttdoc">Sets the current text output color, or if no argument is given, the color will be the default termina...</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

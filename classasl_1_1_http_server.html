@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_http_server.html',''); in
 <div class="line">        <a class="code" href="classasl_1_1_http_server.html#aca9748a3512cc787bb1b1e012fbc2354">setRoot</a>(<span class="stringliteral">&quot;/www&quot;</span>);</div>
 <div class="line">        <a class="code" href="classasl_1_1_socket_server.html#a0a8d8c142273a22d37673b7e3a651a7f">bind</a>(8000);</div>
 <div class="line">        <a class="code" href="classasl_1_1_socket_server.html#a02ee755ca44d92ba25f25b23562d4f4d">bindTLS</a>(443);        <span class="comment">// this for TLS</span></div>
-<div class="line">        <a class="code" href="classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5">useCert</a>(cert, key);  <span class="comment">//</span></div>
+<div class="line">        <a class="code" href="classasl_1_1_socket_server.html#a6ad5c2153950961ffb2606abb35d5967">useCert</a>(cert, key);  <span class="comment">//</span></div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161">serve</a>(HttpRequest&amp; request, HttpResponse&amp; response)</div>
 <div class="line">    {</div>
@@ -144,9 +144,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161">serve</a> (<a class="el" href="classasl_1_1_http_request.html">HttpRequest</a> &amp;request, <a class="el" href="classasl_1_1_http_response.html">HttpResponse</a> &amp;response)</td></tr>
 <tr class="memdesc:a0b16fecfe08b1deb60f9f5faa4370161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this function in a subclass to create the server behavior. <br /></td></tr>
 <tr class="separator:a0b16fecfe08b1deb60f9f5faa4370161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2448350909b9f3b86cf4369c57146bce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_server.html#a2448350909b9f3b86cf4369c57146bce">handle</a> (<a class="el" href="classasl_1_1_http_request.html">HttpRequest</a> &amp;request, <a class="el" href="classasl_1_1_http_response.html">HttpResponse</a> &amp;response)</td></tr>
-<tr class="memdesc:a2448350909b9f3b86cf4369c57146bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old service function.  <a href="classasl_1_1_http_server.html#a2448350909b9f3b86cf4369c57146bce">More...</a><br /></td></tr>
-<tr class="separator:a2448350909b9f3b86cf4369c57146bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a902cb16ae88353059ea9d8d262a09f00"><td class="memItemLeft" align="right" valign="top"><a id="a902cb16ae88353059ea9d8d262a09f00"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_http_server.html#a902cb16ae88353059ea9d8d262a09f00">addMethod</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;verb)</td></tr>
 <tr class="memdesc:a902cb16ae88353059ea9d8d262a09f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a method to the list of allowed methods. <br /></td></tr>
@@ -187,13 +184,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#aaa0dc2a3c76cdebf846778d448848738">bindTLS</a> (int port)</td></tr>
 <tr class="memdesc:aaa0dc2a3c76cdebf846778d448848738 inherit pub_methods_classasl_1_1_socket_server"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a TCP port for TLS connections. <br /></td></tr>
 <tr class="separator:aaa0dc2a3c76cdebf846778d448848738 inherit pub_methods_classasl_1_1_socket_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaebefbfcc96c42836641f3ec8dacee5 inherit pub_methods_classasl_1_1_socket_server"><td class="memItemLeft" align="right" valign="top"><a id="aaaebefbfcc96c42836641f3ec8dacee5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5">useCert</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;cert, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;key)</td></tr>
-<tr class="memdesc:aaaebefbfcc96c42836641f3ec8dacee5 inherit pub_methods_classasl_1_1_socket_server"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the certificate and private key for the TLS server in PEM format. <br /></td></tr>
-<tr class="separator:aaaebefbfcc96c42836641f3ec8dacee5 inherit pub_methods_classasl_1_1_socket_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c03872f1b043658f364778d9d91211a inherit pub_methods_classasl_1_1_socket_server"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a">service</a> (<a class="el" href="classasl_1_1_socket.html">Socket</a> client)</td></tr>
-<tr class="memdesc:a0c03872f1b043658f364778d9d91211a inherit pub_methods_classasl_1_1_socket_server"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old service function.  <a href="classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a">More...</a><br /></td></tr>
-<tr class="separator:a0c03872f1b043658f364778d9d91211a inherit pub_methods_classasl_1_1_socket_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad5c2153950961ffb2606abb35d5967 inherit pub_methods_classasl_1_1_socket_server"><td class="memItemLeft" align="right" valign="top"><a id="a6ad5c2153950961ffb2606abb35d5967"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a6ad5c2153950961ffb2606abb35d5967">useCert</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;cert, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;key)</td></tr>
+<tr class="memdesc:a6ad5c2153950961ffb2606abb35d5967 inherit pub_methods_classasl_1_1_socket_server"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the certificate and private key for the TLS server in PEM format. <br /></td></tr>
+<tr class="separator:a6ad5c2153950961ffb2606abb35d5967 inherit pub_methods_classasl_1_1_socket_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a607e3d8e04c5e58305e4892658436917 inherit pub_methods_classasl_1_1_socket_server"><td class="memItemLeft" align="right" valign="top"><a id="a607e3d8e04c5e58305e4892658436917"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a607e3d8e04c5e58305e4892658436917">stop</a> (bool sync=false)</td></tr>
 <tr class="memdesc:a607e3d8e04c5e58305e4892658436917 inherit pub_methods_classasl_1_1_socket_server"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the server to stop receiving connections, and waits for all clients to exit if sync is true. <br /></td></tr>
@@ -206,58 +200,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a8e5a1b9ac06a913f1db10c386d6aa9c6">running</a> () const</td></tr>
 <tr class="memdesc:a8e5a1b9ac06a913f1db10c386d6aa9c6 inherit pub_methods_classasl_1_1_socket_server"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this server started and has not yet stopped or still has clients running. <br /></td></tr>
 <tr class="separator:a8e5a1b9ac06a913f1db10c386d6aa9c6 inherit pub_methods_classasl_1_1_socket_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6472e1840f01540573c2b7c8d616cf0e inherit pub_methods_classasl_1_1_socket_server"><td class="memItemLeft" align="right" valign="top"><a id="a6472e1840f01540573c2b7c8d616cf0e"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a6472e1840f01540573c2b7c8d616cf0e">socketError</a> () const</td></tr>
+<tr class="memdesc:a6472e1840f01540573c2b7c8d616cf0e inherit pub_methods_classasl_1_1_socket_server"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the last socket error (after a failed bind or use cert...) <br /></td></tr>
+<tr class="separator:a6472e1840f01540573c2b7c8d616cf0e inherit pub_methods_classasl_1_1_socket_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2448350909b9f3b86cf4369c57146bce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2448350909b9f3b86cf4369c57146bce">&#9670;&nbsp;</a></span>handle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void handle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classasl_1_1_http_request.html">HttpRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>request</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classasl_1_1_http_response.html">HttpResponse</a> &amp;&#160;</td>
-          <td class="paramname"><em>response</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Old service function. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161" title="Implement this function in a subclass to create the server behavior.">serve()</a> </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>HttpServer.h</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassasl_1_1_http_server_html_a0b16fecfe08b1deb60f9f5faa4370161"><div class="ttname"><a href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161">asl::HttpServer::serve</a></div><div class="ttdeci">virtual void serve(HttpRequest &amp;request, HttpResponse &amp;response)</div><div class="ttdoc">Implement this function in a subclass to create the server behavior.</div><div class="ttdef"><b>Definition:</b> HttpServer.h:81</div></div>
-<div class="ttc" id="aclassasl_1_1_socket_server_html_a0a8d8c142273a22d37673b7e3a651a7f"><div class="ttname"><a href="classasl_1_1_socket_server.html#a0a8d8c142273a22d37673b7e3a651a7f">asl::SocketServer::bind</a></div><div class="ttdeci">bool bind(int port)</div><div class="ttdoc">Assigns a TCP port to listen to.</div><div class="ttdef"><b>Definition:</b> SocketServer.h:84</div></div>
-<div class="ttc" id="aclassasl_1_1_socket_server_html_aaaebefbfcc96c42836641f3ec8dacee5"><div class="ttname"><a href="classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5">asl::SocketServer::useCert</a></div><div class="ttdeci">void useCert(const String &amp;cert, const String &amp;key)</div><div class="ttdoc">Sets the certificate and private key for the TLS server in PEM format.</div></div>
+<div class="ttc" id="aclassasl_1_1_http_server_html_a0b16fecfe08b1deb60f9f5faa4370161"><div class="ttname"><a href="classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161">asl::HttpServer::serve</a></div><div class="ttdeci">virtual void serve(HttpRequest &amp;request, HttpResponse &amp;response)</div><div class="ttdoc">Implement this function in a subclass to create the server behavior.</div></div>
+<div class="ttc" id="aclassasl_1_1_socket_server_html_a0a8d8c142273a22d37673b7e3a651a7f"><div class="ttname"><a href="classasl_1_1_socket_server.html#a0a8d8c142273a22d37673b7e3a651a7f">asl::SocketServer::bind</a></div><div class="ttdeci">bool bind(int port)</div><div class="ttdoc">Assigns a TCP port to listen to.</div><div class="ttdef"><b>Definition:</b> SocketServer.h:85</div></div>
 <div class="ttc" id="aclassasl_1_1_socket_server_html_a02ee755ca44d92ba25f25b23562d4f4d"><div class="ttname"><a href="classasl_1_1_socket_server.html#a02ee755ca44d92ba25f25b23562d4f4d">asl::SocketServer::bindTLS</a></div><div class="ttdeci">bool bindTLS(const String &amp;ip, int port)</div><div class="ttdoc">Assigns an interface IP address and TCP port to listen for TLS connections.</div></div>
-<div class="ttc" id="aclassasl_1_1_http_server_html_ad8771be7e25d1b20d0b7e071f32419c7"><div class="ttname"><a href="classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7">asl::HttpServer::setCrossDomain</a></div><div class="ttdeci">void setCrossDomain(bool on)</div><div class="ttdoc">Enbles or disables cross-domain (CORS) support.</div><div class="ttdef"><b>Definition:</b> HttpServer.h:93</div></div>
+<div class="ttc" id="aclassasl_1_1_http_server_html_ad8771be7e25d1b20d0b7e071f32419c7"><div class="ttname"><a href="classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7">asl::HttpServer::setCrossDomain</a></div><div class="ttdeci">void setCrossDomain(bool on)</div><div class="ttdoc">Enbles or disables cross-domain (CORS) support.</div><div class="ttdef"><b>Definition:</b> HttpServer.h:91</div></div>
 <div class="ttc" id="aclassasl_1_1_http_server_html_aca9748a3512cc787bb1b1e012fbc2354"><div class="ttname"><a href="classasl_1_1_http_server.html#aca9748a3512cc787bb1b1e012fbc2354">asl::HttpServer::setRoot</a></div><div class="ttdeci">void setRoot(const String &amp;root)</div><div class="ttdoc">Sets the root directory from where files will be served by default.</div></div>
+<div class="ttc" id="aclassasl_1_1_socket_server_html_a6ad5c2153950961ffb2606abb35d5967"><div class="ttname"><a href="classasl_1_1_socket_server.html#a6ad5c2153950961ffb2606abb35d5967">asl::SocketServer::useCert</a></div><div class="ttdeci">bool useCert(const String &amp;cert, const String &amp;key)</div><div class="ttdoc">Sets the certificate and private key for the TLS server in PEM format.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -105,6 +105,18 @@ class asl::Matrix4_&lt; T &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad107abcacb84cbabb41b87ba81360f91"><td class="memItemLeft" align="right" valign="top"><a id="ad107abcacb84cbabb41b87ba81360f91"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#ad107abcacb84cbabb41b87ba81360f91">rows</a> () const</td></tr>
+<tr class="memdesc:ad107abcacb84cbabb41b87ba81360f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the nubmer of rows of this matrix (4) <br /></td></tr>
+<tr class="separator:ad107abcacb84cbabb41b87ba81360f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8509d6f7951179378f848f5f4cc37720"><td class="memItemLeft" align="right" valign="top"><a id="a8509d6f7951179378f848f5f4cc37720"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a8509d6f7951179378f848f5f4cc37720">cols</a> () const</td></tr>
+<tr class="memdesc:a8509d6f7951179378f848f5f4cc37720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the nubmer of columns of this matrix (4) <br /></td></tr>
+<tr class="separator:a8509d6f7951179378f848f5f4cc37720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7244be79e2fc3ebe040509296120dcbf"><td class="memItemLeft" align="right" valign="top"><a id="a7244be79e2fc3ebe040509296120dcbf"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a7244be79e2fc3ebe040509296120dcbf">trace</a> () const</td></tr>
+<tr class="memdesc:a7244be79e2fc3ebe040509296120dcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the trace of this matrix. <br /></td></tr>
+<tr class="separator:a7244be79e2fc3ebe040509296120dcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8ceabc696d63c5c1949706e5f949af"><td class="memItemLeft" align="right" valign="top"><a id="a8c8ceabc696d63c5c1949706e5f949af"></a>
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a8c8ceabc696d63c5c1949706e5f949af">operator()</a> (int i, int j)</td></tr>
 <tr class="memdesc:a8c8ceabc696d63c5c1949706e5f949af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the element at row <code>i</code>, column <code>j</code>. <br /></td></tr>
@@ -125,6 +137,11 @@ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a603b1c0ad8b0430ca125c114bcf3670c">Matrix4_</a> (const T *m, bool colmajor=false)</td></tr>
 <tr class="memdesc:a603b1c0ad8b0430ca125c114bcf3670c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a matrix from elements pointed by m, row-major (default) or column-major. <br /></td></tr>
 <tr class="separator:a603b1c0ad8b0430ca125c114bcf3670c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1682a31f15bf2045b83b5576f0e959fa"><td class="memTemplParams" colspan="2"><a id="a1682a31f15bf2045b83b5576f0e959fa"></a>
+template&lt;class T2 &gt; </td></tr>
+<tr class="memitem:a1682a31f15bf2045b83b5576f0e959fa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&lt; T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a1682a31f15bf2045b83b5576f0e959fa">with</a> () const</td></tr>
+<tr class="memdesc:a1682a31f15bf2045b83b5576f0e959fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of this matrix with elements converted to the given type. <br /></td></tr>
+<tr class="separator:a1682a31f15bf2045b83b5576f0e959fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d27947f1ccfcbac86a417dbed4cad3"><td class="memItemLeft" align="right" valign="top"><a id="ab3d27947f1ccfcbac86a417dbed4cad3"></a>
 <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#ab3d27947f1ccfcbac86a417dbed4cad3">t</a> () const</td></tr>
 <tr class="memdesc:ab3d27947f1ccfcbac86a417dbed4cad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this matrix transposed. <br /></td></tr>
@@ -201,6 +218,14 @@ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a9f7456d70abd64fe4f99c07b23207043">det</a> () const</td></tr>
 <tr class="memdesc:a9f7456d70abd64fe4f99c07b23207043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>determinant</em> of this matrix. <br /></td></tr>
 <tr class="separator:a9f7456d70abd64fe4f99c07b23207043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2513085c733ed35edc0c61bbf9453196"><td class="memItemLeft" align="right" valign="top"><a id="a2513085c733ed35edc0c61bbf9453196"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a2513085c733ed35edc0c61bbf9453196">normSq</a> () const</td></tr>
+<tr class="memdesc:a2513085c733ed35edc0c61bbf9453196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the matrix Frobenius norm squared. <br /></td></tr>
+<tr class="separator:a2513085c733ed35edc0c61bbf9453196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb888c96528e67e9d5f2efb6fd8151e"><td class="memItemLeft" align="right" valign="top"><a id="aaeb888c96528e67e9d5f2efb6fd8151e"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#aaeb888c96528e67e9d5f2efb6fd8151e">norm</a> () const</td></tr>
+<tr class="memdesc:aaeb888c96528e67e9d5f2efb6fd8151e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the matrix Frobenius norm. <br /></td></tr>
+<tr class="separator:aaeb888c96528e67e9d5f2efb6fd8151e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>

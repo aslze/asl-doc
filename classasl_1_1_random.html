@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_random.html',''); initRes
 <div class="textblock"><p>A random number generator. </p>
 <p>Generates uniformly distributed pseudo-random numbers, except in the <code><a class="el" href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033" title="Returns a floating point random number with standard normal distribution.">normal()</a></code> functions.</p>
 <div class="fragment"><div class="line">Random random;</div>
-<div class="line"><span class="keywordtype">int</span> n = random(256);                <span class="comment">// get an integer between 0 and 255</span></div>
+<div class="line"><span class="keywordtype">int</span> n = random(255);                <span class="comment">// get an integer between 0 and 255</span></div>
 <div class="line"><span class="keywordtype">double</span> x = random(-1.5, 1.5);       <span class="comment">// get a number between -1.5 and +1.5</span></div>
 <div class="line"><span class="keywordtype">double</span> y = random.<a class="code" href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033">normal</a>(10, 0.75); <span class="comment">// get a number from a normal distribution</span></div>
 </div><!-- fragment --><p>The generator initially is seeded pseudorandomly. If you need a constant sequence you can create with a false argument, to prevent this or call <a class="el" href="classasl_1_1_random.html#a69ddd6268c47df2054a9ba803e634b71" title="Initializes the seed for the random functions.">seed()</a>.</p>
@@ -142,6 +142,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#ae2de995eec73d238d1a75ae07a8e95a8">normal</a> (double m, double s2)</td></tr>
 <tr class="memdesc:ae2de995eec73d238d1a75ae07a8e95a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a floating point random number with normal distribution with given mean and variance. <br /></td></tr>
 <tr class="separator:ae2de995eec73d238d1a75ae07a8e95a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07bb094068bb5f56b1e83ab38bd3e9d0"><td class="memItemLeft" align="right" valign="top"><a id="a07bb094068bb5f56b1e83ab38bd3e9d0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#a07bb094068bb5f56b1e83ab38bd3e9d0">normal</a> (float m, float s2)</td></tr>
+<tr class="memdesc:a07bb094068bb5f56b1e83ab38bd3e9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a floating point random number with normal distribution with given mean and variance. <br /></td></tr>
+<tr class="separator:a07bb094068bb5f56b1e83ab38bd3e9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc749798d6a88d2041493a3726dec1bf"><td class="memItemLeft" align="right" valign="top"><a id="afc749798d6a88d2041493a3726dec1bf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#afc749798d6a88d2041493a3726dec1bf">coin</a> (double p=0.5)</td></tr>
 <tr class="memdesc:afc749798d6a88d2041493a3726dec1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true or false given a probability (by default it is 0.5, like flipping a coin) <br /></td></tr>
@@ -167,7 +171,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassasl_1_1_random_html_aa0706c04d7c5b32dd0f7596fba6fc033"><div class="ttname"><a href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033">asl::Random::normal</a></div><div class="ttdeci">double normal()</div><div class="ttdoc">Returns a floating point random number with standard normal distribution.</div><div class="ttdef"><b>Definition:</b> defs.h:245</div></div>
+<div class="ttc" id="aclassasl_1_1_random_html_aa0706c04d7c5b32dd0f7596fba6fc033"><div class="ttname"><a href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033">asl::Random::normal</a></div><div class="ttdeci">double normal()</div><div class="ttdoc">Returns a floating point random number with standard normal distribution.</div><div class="ttdef"><b>Definition:</b> defs.h:256</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -7,9 +7,9 @@ var classasl_1_1_socket_server =
     [ "bindTLS", "classasl_1_1_socket_server.html#aaa0dc2a3c76cdebf846778d448848738", null ],
     [ "running", "classasl_1_1_socket_server.html#a8e5a1b9ac06a913f1db10c386d6aa9c6", null ],
     [ "serve", "classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b", null ],
-    [ "service", "classasl_1_1_socket_server.html#a0c03872f1b043658f364778d9d91211a", null ],
     [ "setSequential", "classasl_1_1_socket_server.html#a3211a7836021248bdae20320974abc64", null ],
+    [ "socketError", "classasl_1_1_socket_server.html#a6472e1840f01540573c2b7c8d616cf0e", null ],
     [ "start", "classasl_1_1_socket_server.html#ae58264567927c6d6e295f3d574a44094", null ],
     [ "stop", "classasl_1_1_socket_server.html#a607e3d8e04c5e58305e4892658436917", null ],
-    [ "useCert", "classasl_1_1_socket_server.html#aaaebefbfcc96c42836641f3ec8dacee5", null ]
+    [ "useCert", "classasl_1_1_socket_server.html#a6ad5c2153950961ffb2606abb35d5967", null ]
 ];

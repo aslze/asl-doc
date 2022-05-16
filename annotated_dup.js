@@ -31,6 +31,7 @@ var annotated_dup =
       [ "Map", "classasl_1_1_map.html", "classasl_1_1_map" ],
       [ "Matrix3_", "classasl_1_1_matrix3__.html", "classasl_1_1_matrix3__" ],
       [ "Matrix4_", "classasl_1_1_matrix4__.html", "classasl_1_1_matrix4__" ],
+      [ "Matrix_", "classasl_1_1_matrix__.html", "classasl_1_1_matrix__" ],
       [ "MulticastSocket", "classasl_1_1_multicast_socket.html", "classasl_1_1_multicast_socket" ],
       [ "Mutex", "classasl_1_1_mutex.html", "classasl_1_1_mutex" ],
       [ "PacketSocket", "classasl_1_1_packet_socket.html", "classasl_1_1_packet_socket" ],

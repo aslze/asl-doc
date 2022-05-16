@@ -94,9 +94,9 @@ $(document).ready(function(){initNavTree('classasl_1_1_directory.html',''); init
 <div class="textblock"><p>This class allows enumerating the contents of a directory: its files and subdirectories. </p>
 <p>This example lists the files of the c:/windows directory modified in the last 10 days:</p>
 <div class="fragment"><div class="line">Directory dir(<span class="stringliteral">&quot;c:/windows&quot;</span>);</div>
-<div class="line"><span class="keywordflow">foreach</span>(File&amp; file, dir.files(<span class="stringliteral">&quot;*.dll&quot;</span>))</div>
+<div class="line"><span class="keywordflow">for</span> (File&amp; file : dir.files(<span class="stringliteral">&quot;*.dll&quot;</span>))</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">if</span>(file.lastModified() &gt; <a class="code" href="classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58">Date::now</a>() - 10*Date::DAY)</div>
+<div class="line">    <span class="keywordflow">if</span> (file.lastModified() &gt; <a class="code" href="classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58">Date::now</a>() - 10*Date::DAY)</div>
 <div class="line">        cout &lt;&lt; *file.name() &lt;&lt; <span class="stringliteral">&quot; size: &quot;</span> file.size() &lt;&lt; endl;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>In a <a class="el" href="classasl_1_1_directory.html" title="This class allows enumerating the contents of a directory: its files and subdirectories.">Directory</a> object, <code><a class="el" href="classasl_1_1_directory.html#accee1f49d15d513265683e2012a6be07" title="Returns the files in a directory.">files()</a></code> enumerates files, <code><a class="el" href="classasl_1_1_directory.html#ab18a41cb07e1cfc24b44dc0c914e68df" title="Returns the subdirectories of a directory.">subdirs()</a></code> enumerates subdirectories, and <code><a class="el" href="classasl_1_1_directory.html#a0f94aa128ff72efcebf5e387e95f2bc5" title="Returns the contents of a directory.">items()</a></code> enumerates both. In all three a wildcard can be given as argument to filter the search.</p>
