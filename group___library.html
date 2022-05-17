@@ -96,11 +96,11 @@ $(document).ready(function(){initNavTree('group___library.html',''); initResizab
 <div class="fragment"><div class="line"><span class="keyword">class </span>Cat : <span class="keyword">public</span> Animal {...}; <span class="comment">// implements virtual functions from class Animal</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="group___library.html#ga79b40333b2db24ad7ea849beb9baed61">ASL_EXPORT_CLASS_AS</a>(Cat, Animal)</div>
-</div><!-- fragment --><p>And a program can load it at runtime and intantiate the exported class <code>Cat</code>, with the name <code>Animal</code>.</p>
+</div><!-- fragment --><p>And a program can load it at runtime and instantiate the exported class <code>Cat</code>, with the name <code>"Animal"</code>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Animal.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line">Library lib(<span class="stringliteral">&quot;plugins/cat&quot;</span>); <span class="comment">// Loads &quot;cat.dll&quot; on Widows or &quot;libcat.so&quot; on Linux</span></div>
-<div class="line">Animal* cat = lib.create(<span class="stringliteral">&quot;Animal&quot;</span>);</div>
+<div class="line">Animal* cat = (Animal*) lib.create(<span class="stringliteral">&quot;Animal&quot;</span>);</div>
 <div class="line">cat-&gt;speak();</div>
 </div><!-- fragment --><p>The program does not need the declaration of class <code>Cat</code>, only that of the base class <code>Animal</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classasl_1_1_factory.html" title="A Factory allows creating objects given a class name as a String.">Factory</a> </dd></dl>

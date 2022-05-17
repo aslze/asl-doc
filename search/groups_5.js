@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['global_20functions_1049',['Global functions',['../group___global.html',1,'']]]
+  ['message_20logger_1053',['Message logger',['../group___logging.html',1,'']]],
+  ['math_1054',['Math',['../group___math3_d.html',1,'']]]
 ];

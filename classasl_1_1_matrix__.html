@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_matrix__.html',''); initR
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_matrix__-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Matrix_&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">Matrix_&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___math3_d.html">Math</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -105,7 +105,7 @@ class asl::Matrix_&lt; T &gt;</h3>
 </div><!-- fragment --><p>You can operate with matrices:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> C = A.inverse() * A + b * b.transposed();</div>
 </div><!-- fragment --><p>And you can solve linear systems:</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> x = solve(A, b); <span class="comment">// solution to linear system A * x = b</span></div>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> x = <a class="code" href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1">solve</a>(A, b); <span class="comment">// solution to linear system A * x = b</span></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Matrix.h&gt;</code></p>
 
@@ -113,22 +113,22 @@ class asl::Matrix_&lt; T &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a58df5fadd1bf6a0687629b5d0f8278cb"><td class="memItemLeft" align="right" valign="top"><a id="a58df5fadd1bf6a0687629b5d0f8278cb"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#a58df5fadd1bf6a0687629b5d0f8278cb">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>=1)</td></tr>
-<tr class="memdesc:a58df5fadd1bf6a0687629b5d0f8278cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with size rows x cols. <br /></td></tr>
-<tr class="separator:a58df5fadd1bf6a0687629b5d0f8278cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af728dc76e10abde196830675493afba8"><td class="memItemLeft" align="right" valign="top"><a id="af728dc76e10abde196830675493afba8"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#af728dc76e10abde196830675493afba8">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T &amp;value)</td></tr>
-<tr class="memdesc:af728dc76e10abde196830675493afba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with size rows x cols and initializes all items with value. <br /></td></tr>
-<tr class="separator:af728dc76e10abde196830675493afba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3bae725a6f1761cea6e511d1cd06e3"><td class="memItemLeft" align="right" valign="top"><a id="a4c3bae725a6f1761cea6e511d1cd06e3"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#a4c3bae725a6f1761cea6e511d1cd06e3">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T *p)</td></tr>
-<tr class="memdesc:a4c3bae725a6f1761cea6e511d1cd06e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix of rows x cols elements and copies them from the pointer p (row-wise) <br /></td></tr>
-<tr class="separator:a4c3bae725a6f1761cea6e511d1cd06e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8bed1ddff8434d8e5c35ee99ca963e"><td class="memItemLeft" align="right" valign="top"><a id="a6d8bed1ddff8434d8e5c35ee99ca963e"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#a6d8bed1ddff8434d8e5c35ee99ca963e">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, std::initializer_list&lt; T &gt; a)</td></tr>
-<tr class="memdesc:a6d8bed1ddff8434d8e5c35ee99ca963e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with size rows x cols and the given elements. <br /></td></tr>
-<tr class="separator:a6d8bed1ddff8434d8e5c35ee99ca963e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a9f97031be4dc612d37002d4f0be16"><td class="memItemLeft" align="right" valign="top"><a id="a28a9f97031be4dc612d37002d4f0be16"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#a28a9f97031be4dc612d37002d4f0be16">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>=1)</td></tr>
+<tr class="memdesc:a28a9f97031be4dc612d37002d4f0be16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with size rows x cols. <br /></td></tr>
+<tr class="separator:a28a9f97031be4dc612d37002d4f0be16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e75be8a377dbad4cf8963aa14b778d1"><td class="memItemLeft" align="right" valign="top"><a id="a9e75be8a377dbad4cf8963aa14b778d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#a9e75be8a377dbad4cf8963aa14b778d1">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T &amp;value)</td></tr>
+<tr class="memdesc:a9e75be8a377dbad4cf8963aa14b778d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with size rows x cols and initializes all items with value. <br /></td></tr>
+<tr class="separator:a9e75be8a377dbad4cf8963aa14b778d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6781b31ebf0d11e2e6b50c0c0a22e3"><td class="memItemLeft" align="right" valign="top"><a id="a2e6781b31ebf0d11e2e6b50c0c0a22e3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#a2e6781b31ebf0d11e2e6b50c0c0a22e3">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T *p)</td></tr>
+<tr class="memdesc:a2e6781b31ebf0d11e2e6b50c0c0a22e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix of rows x cols elements and copies them from the pointer p (row-wise) <br /></td></tr>
+<tr class="separator:a2e6781b31ebf0d11e2e6b50c0c0a22e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa622428cf9c3663e8a51df78084ab977"><td class="memItemLeft" align="right" valign="top"><a id="aa622428cf9c3663e8a51df78084ab977"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#aa622428cf9c3663e8a51df78084ab977">Matrix_</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, std::initializer_list&lt; T &gt; a)</td></tr>
+<tr class="memdesc:aa622428cf9c3663e8a51df78084ab977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with size rows x cols and the given elements. <br /></td></tr>
+<tr class="separator:aa622428cf9c3663e8a51df78084ab977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a924cd77468a71382b43fe29826e0dce1"><td class="memItemLeft" align="right" valign="top"><a id="a924cd77468a71382b43fe29826e0dce1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html#a924cd77468a71382b43fe29826e0dce1">Matrix_</a> (std::initializer_list&lt; std::initializer_list&lt; T &gt; &gt; a)</td></tr>
 <tr class="memdesc:a924cd77468a71382b43fe29826e0dce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with given list of lists of elements. <br /></td></tr>
@@ -219,22 +219,22 @@ T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classas
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#af9388eb15d08fb41d1dba0a34b565d30">Array2</a> ()</td></tr>
 <tr class="memdesc:af9388eb15d08fb41d1dba0a34b565d30 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty array. <br /></td></tr>
 <tr class="separator:af9388eb15d08fb41d1dba0a34b565d30 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16fd10f95b31a18932b845c66e150cd3 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="a16fd10f95b31a18932b845c66e150cd3"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a16fd10f95b31a18932b845c66e150cd3">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>)</td></tr>
-<tr class="memdesc:a16fd10f95b31a18932b845c66e150cd3 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols. <br /></td></tr>
-<tr class="separator:a16fd10f95b31a18932b845c66e150cd3 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa785cd756c5ed2a666599142d2ee95f6 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="aa785cd756c5ed2a666599142d2ee95f6"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#aa785cd756c5ed2a666599142d2ee95f6">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T &amp;value)</td></tr>
-<tr class="memdesc:aa785cd756c5ed2a666599142d2ee95f6 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols and initializes all items with value. <br /></td></tr>
-<tr class="separator:aa785cd756c5ed2a666599142d2ee95f6 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55582ecc7662e7fd96fb251c250b5ed2 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="a55582ecc7662e7fd96fb251c250b5ed2"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a55582ecc7662e7fd96fb251c250b5ed2">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T *p)</td></tr>
-<tr class="memdesc:a55582ecc7662e7fd96fb251c250b5ed2 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array of rows x cols elements and copies them from the pointer p (row-wise) <br /></td></tr>
-<tr class="separator:a55582ecc7662e7fd96fb251c250b5ed2 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad578381486232061aca3f864bf1da603 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="ad578381486232061aca3f864bf1da603"></a>
-ASL_EXPLICIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#ad578381486232061aca3f864bf1da603">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, std::initializer_list&lt; T &gt; a)</td></tr>
-<tr class="memdesc:ad578381486232061aca3f864bf1da603 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols and the given elements. <br /></td></tr>
-<tr class="separator:ad578381486232061aca3f864bf1da603 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7217dcb60ea032ae3d075ed84acb2507 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="a7217dcb60ea032ae3d075ed84acb2507"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a7217dcb60ea032ae3d075ed84acb2507">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>)</td></tr>
+<tr class="memdesc:a7217dcb60ea032ae3d075ed84acb2507 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols. <br /></td></tr>
+<tr class="separator:a7217dcb60ea032ae3d075ed84acb2507 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758a411bd1b9c7c560810eaf788f702a inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="a758a411bd1b9c7c560810eaf788f702a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a758a411bd1b9c7c560810eaf788f702a">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T &amp;value)</td></tr>
+<tr class="memdesc:a758a411bd1b9c7c560810eaf788f702a inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols and initializes all items with value. <br /></td></tr>
+<tr class="separator:a758a411bd1b9c7c560810eaf788f702a inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6262666d1f6beee592d510cc1729333 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="aa6262666d1f6beee592d510cc1729333"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#aa6262666d1f6beee592d510cc1729333">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, const T *p)</td></tr>
+<tr class="memdesc:aa6262666d1f6beee592d510cc1729333 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array of rows x cols elements and copies them from the pointer p (row-wise) <br /></td></tr>
+<tr class="separator:aa6262666d1f6beee592d510cc1729333 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5c04dedb80b3e16c19813a9f10be23 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="adf5c04dedb80b3e16c19813a9f10be23"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#adf5c04dedb80b3e16c19813a9f10be23">Array2</a> (int <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, int <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>, std::initializer_list&lt; T &gt; a)</td></tr>
+<tr class="memdesc:adf5c04dedb80b3e16c19813a9f10be23 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with size rows x cols and the given elements. <br /></td></tr>
+<tr class="separator:adf5c04dedb80b3e16c19813a9f10be23 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fc1920b4395bd63c34289df424d6c3a inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="a8fc1920b4395bd63c34289df424d6c3a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a8fc1920b4395bd63c34289df424d6c3a">Array2</a> (std::initializer_list&lt; std::initializer_list&lt; T &gt; &gt; a)</td></tr>
 <tr class="memdesc:a8fc1920b4395bd63c34289df424d6c3a inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an array with given list of lists of elements. <br /></td></tr>
@@ -297,6 +297,7 @@ static <a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&#160;</td><td
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="agroup___math3_d_html_ga845743284803d4bd9b9c67925ad858a1"><div class="ttname"><a href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1">asl::solve</a></div><div class="ttdeci">Matrix_&lt; T &gt; solve(const Matrix_&lt; T &gt; &amp;A, const Matrix_&lt; T &gt; &amp;b)</div><div class="ttdoc">Solves the matrix equation A*x=b and returns x; if b is a matrix (not a column) then the equation is ...</div><div class="ttdef"><b>Definition:</b> Matrix.h:350</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

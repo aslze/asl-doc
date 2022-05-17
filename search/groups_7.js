@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reference_2dcounted_20objects_1051',['Reference-counted objects',['../group___shared.html',1,'']]]
+  ['socket_20communication_1056',['Socket communication',['../group___sockets.html',1,'']]]
 ];

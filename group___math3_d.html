@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASL: 3D Math</title>
+<title>ASL: Math</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,11 +86,11 @@ $(document).ready(function(){initNavTree('group___math3_d.html',''); initResizab
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">3D Math</div>  </div>
+<div class="title">Math</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Types useful in 2D/3D geometric computations and graphics. </p>
+<p>Classes and functions for math, including types useful in 2D/3D geometric computations and graphics. </p>
 <p>These classes are templates that can be used with elements of any numeric type.</p>
 <div class="fragment"><div class="line">Vec3_&lt;int&gt; ivec(1, 2, 3);</div>
 <div class="line">Matrix4_&lt;float&gt; m;</div>
@@ -99,9 +99,13 @@ $(document).ready(function(){initNavTree('group___math3_d.html',''); initResizab
 <div class="line">Matrix4;  <span class="comment">// Matrix4_&lt;float&gt;</span></div>
 <div class="line">Vec3d v;  <span class="comment">// Vec3_&lt;double&gt;</span></div>
 <div class="line">Matrix3d; <span class="comment">// Matrix3_&lt;double&gt;</span></div>
+<div class="line">Matrixd;  <span class="comment">// Matrix_&lt;double&gt;</span></div>
 </div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix__.html">Matrix_&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A matrix supporting basic arithmetic operations.  <a href="classasl_1_1_matrix__.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html">Matrix3_&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Matrix3 is a 3x3 matrix useful for representing affine transformations in 2D space.  <a href="classasl_1_1_matrix3__.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,14 +127,68 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga845743284803d4bd9b9c67925ad858a1"><td class="memTemplParams" colspan="2"><a id="ga845743284803d4bd9b9c67925ad858a1"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga845743284803d4bd9b9c67925ad858a1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1">solve</a> (const <a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&lt; T &gt; &amp;A, const <a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:ga845743284803d4bd9b9c67925ad858a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the matrix equation A*x=b and returns x; if b is a matrix (not a column) then the equation is solved for each of b's columns and solutions returned as the columns of the returned matrix. <br /></td></tr>
+<tr class="separator:ga845743284803d4bd9b9c67925ad858a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1eb27b0295b0142e61ecfdf1d4ecd70a"><td class="memTemplParams" colspan="2">template&lt;class T , class F &gt; </td></tr>
+<tr class="memitem:ga1eb27b0295b0142e61ecfdf1d4ecd70a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___math3_d.html#ga1eb27b0295b0142e61ecfdf1d4ecd70a">solveZero</a> (F f, const <a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&lt; T &gt; &amp;x0)</td></tr>
+<tr class="memdesc:ga1eb27b0295b0142e61ecfdf1d4ecd70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves a system of equations F(x)=[0], given by functor f, which returns a vector of function values for an input vector x; and using x0 as initial guess.  <a href="group___math3_d.html#ga1eb27b0295b0142e61ecfdf1d4ecd70a">More...</a><br /></td></tr>
+<tr class="separator:ga1eb27b0295b0142e61ecfdf1d4ecd70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99a52b78144a1fc854fe126c84dbd1f9"><td class="memTemplParams" colspan="2"><a id="ga99a52b78144a1fc854fe126c84dbd1f9"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:ga99a52b78144a1fc854fe126c84dbd1f9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_matrix4__.html">asl::Matrix4_</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___math3_d.html#ga99a52b78144a1fc854fe126c84dbd1f9">orthonormalize</a> (const <a class="el" href="classasl_1_1_matrix4__.html">asl::Matrix4_</a>&lt; T &gt; &amp;m)</td></tr>
 <tr class="memdesc:ga99a52b78144a1fc854fe126c84dbd1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an orthonormal approximation of this transform matrix. <br /></td></tr>
 <tr class="separator:ga99a52b78144a1fc854fe126c84dbd1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga1eb27b0295b0142e61ecfdf1d4ecd70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1eb27b0295b0142e61ecfdf1d4ecd70a">&#9670;&nbsp;</a></span>solveZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&lt;T&gt; asl::solveZero </td>
+          <td>(</td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x0</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Solves a system of equations F(x)=[0], given by functor f, which returns a vector of function values for an input vector x; and using x0 as initial guess. </p>
+<p>If there are more equations than unknowns (f larger than x0) then a least-squares solution is attempted.</p>
+<p>Example:</p>
+<p>Solve for (x, y) in:</p><ul>
+<li>(x-1)<sup>2</sup> + (y-1)<sup>2</sup> - 1 = 0</li>
+<li>sin(x) + sin(y) - x = 0</li>
+</ul>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> x = <a class="code" href="group___math3_d.html#ga1eb27b0295b0142e61ecfdf1d4ecd70a">solveZero</a>([](<span class="keyword">const</span> Matrixd&amp; x) {  <span class="comment">// unknowns are x[0], x[1]</span></div>
+<div class="line">    <span class="keywordflow">return</span> Matrixd{</div>
+<div class="line">        <a class="code" href="group___global.html#gae4bfeae0f82d926c7875ced8c4a8e3df">sqr</a>(x[0] - 1) + <a class="code" href="group___global.html#gae4bfeae0f82d926c7875ced8c4a8e3df">sqr</a>(x[1] - 1) - 1,</div>
+<div class="line">        sin(x[0]) + sin(x[1]) - x[0]</div>
+<div class="line">    };</div>
+<div class="line">}, { 0.0, 0.0 });  <span class="comment">// initial estimation</span></div>
+</div><!-- fragment --> 
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="agroup___math3_d_html_ga1eb27b0295b0142e61ecfdf1d4ecd70a"><div class="ttname"><a href="group___math3_d.html#ga1eb27b0295b0142e61ecfdf1d4ecd70a">asl::solveZero</a></div><div class="ttdeci">Matrix_&lt; T &gt; solveZero(F f, const Matrix_&lt; T &gt; &amp;x0)</div><div class="ttdoc">Solves a system of equations F(x)=[0], given by functor f, which returns a vector of function values ...</div><div class="ttdef"><b>Definition:</b> Matrix.h:437</div></div>
+<div class="ttc" id="agroup___global_html_gae4bfeae0f82d926c7875ced8c4a8e3df"><div class="ttname"><a href="group___global.html#gae4bfeae0f82d926c7875ced8c4a8e3df">asl::sqr</a></div><div class="ttdeci">T sqr(T x)</div><div class="ttdoc">Returns x squared.</div><div class="ttdef"><b>Definition:</b> defs.h:172</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

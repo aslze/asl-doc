@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('group___binary.html',''); initResizabl
 <div class="fragment"><div class="line">StreamBuffer buffer(ENDIAN_BIG);</div>
 <div class="line">buffer &lt;&lt; 3 &lt;&lt; 0.5;                                <span class="comment">// fill binary buffer</span></div>
 <div class="line">socket &lt;&lt; *buffer;                                 <span class="comment">// send it all at once</span></div>
-</div><!-- fragment --><div class="fragment"><div class="line">Array&lt;byte&gt; data(12);</div>
+</div><!-- fragment --><div class="fragment"><div class="line">ByteArray data(12);</div>
 <div class="line">socket.read(data.ptr(), 12);                       <span class="comment">// read 12 bytes into a buffer</span></div>
 <div class="line">StreamBufferReader reader(ENDIAN_BIG);</div>
 <div class="line">int32_t x, y;</div>
