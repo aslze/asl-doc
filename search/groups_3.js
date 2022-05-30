@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['factory_20class_20and_20macros_1051',['Factory class and macros',['../group___factory.html',1,'']]]
+  ['factory_20class_20and_20macros_1053',['Factory class and macros',['../group___factory.html',1,'']]]
 ];

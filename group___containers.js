@@ -16,6 +16,7 @@ var group___containers =
       [ "contains", "classasl_1_1_array.html#aae2d1504474002708583858f474c4d55", null ],
       [ "copy", "classasl_1_1_array.html#a3dda7d295b3df68e6c694369584ee25d", null ],
       [ "dup", "classasl_1_1_array.html#a7fb526528704e69afadc4522367c19ed", null ],
+      [ "filter", "classasl_1_1_array.html#af978710d306340e2d6c9e19ced23c924", null ],
       [ "indexOf", "classasl_1_1_array.html#af1936a9913aa2ef21cf90205321981d2", null ],
       [ "insert", "classasl_1_1_array.html#a192f8d9aee501d7bea13caba415164b8", null ],
       [ "join", "classasl_1_1_array.html#ab9566171d17edfd2d53be33e9d608aad", null ],

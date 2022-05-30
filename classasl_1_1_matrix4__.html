@@ -198,6 +198,10 @@ template&lt;class T2 &gt; </td></tr>
 <a class="el" href="classasl_1_1_quaternion__.html">Quaternion_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a989d82725dedae9fa09dae58064a1e15">rotation</a> () const</td></tr>
 <tr class="memdesc:a989d82725dedae9fa09dae58064a1e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>rotation</em> part of this matrix as a Quaternion. <br /></td></tr>
 <tr class="separator:a989d82725dedae9fa09dae58064a1e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae310084d484e6085740c5f2625c81cd5"><td class="memItemLeft" align="right" valign="top"><a id="ae310084d484e6085740c5f2625c81cd5"></a>
+<a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#ae310084d484e6085740c5f2625c81cd5">axisAngle</a> () const</td></tr>
+<tr class="memdesc:ae310084d484e6085740c5f2625c81cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>rotation</em> part of this matrix as a rotation vector (axis-angle representation) <br /></td></tr>
+<tr class="separator:ae310084d484e6085740c5f2625c81cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeae5a56f24fdf732f74d606921a9988"><td class="memItemLeft" align="right" valign="top"><a id="aeeae5a56f24fdf732f74d606921a9988"></a>
 <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#aeeae5a56f24fdf732f74d606921a9988">column3</a> (int i) const</td></tr>
 <tr class="memdesc:aeeae5a56f24fdf732f74d606921a9988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the i-th column's top 3 elements as a Vec3. <br /></td></tr>
@@ -262,7 +266,7 @@ static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><
 <tr class="memdesc:acafbf106f816e950062ca6d89495580d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix of an angle in radians around a given axis. <br /></td></tr>
 <tr class="separator:acafbf106f816e950062ca6d89495580d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30500e2d8208460dc946286e79695d61"><td class="memItemLeft" align="right" valign="top"><a id="a30500e2d8208460dc946286e79695d61"></a>
-static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a30500e2d8208460dc946286e79695d61">rotate</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;axisAngle)</td></tr>
+static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a30500e2d8208460dc946286e79695d61">rotate</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;<a class="el" href="classasl_1_1_matrix4__.html#ae310084d484e6085740c5f2625c81cd5">axisAngle</a>)</td></tr>
 <tr class="memdesc:a30500e2d8208460dc946286e79695d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix from a rotation vector (aligned with the axis and with the rotation angle as magnitude) <br /></td></tr>
 <tr class="separator:a30500e2d8208460dc946286e79695d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a063cafe75c73cd402238fd613edbb357"><td class="memItemLeft" align="right" valign="top"><a id="a063cafe75c73cd402238fd613edbb357"></a>

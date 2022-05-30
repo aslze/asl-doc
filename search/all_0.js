@@ -48,6 +48,6 @@ var searchData=
   ['attribs_45',['attribs',['../classasl_1_1_xml.html#a014e579a1ae87a2529d7a44d72e581cb',1,'asl::Xml']]],
   ['available_46',['available',['../classasl_1_1_serial_port.html#a4549a76725f2e4c013e4d57018366109',1,'asl::SerialPort::available()'],['../classasl_1_1_socket.html#a4549a76725f2e4c013e4d57018366109',1,'asl::Socket::available()']]],
   ['axis_47',['axis',['../classasl_1_1_quaternion__.html#a6b365d4d62dd5c060e02dc0bc2d7cfd6',1,'asl::Quaternion_']]],
-  ['axisangle_48',['axisAngle',['../classasl_1_1_quaternion__.html#ae310084d484e6085740c5f2625c81cd5',1,'asl::Quaternion_']]],
+  ['axisangle_48',['axisAngle',['../classasl_1_1_matrix4__.html#ae310084d484e6085740c5f2625c81cd5',1,'asl::Matrix4_::axisAngle()'],['../classasl_1_1_quaternion__.html#ae310084d484e6085740c5f2625c81cd5',1,'asl::Quaternion_::axisAngle()']]],
   ['asl_20_2d_20all_2dpurpose_20simple_20_25library_49',['ASL - All-purpose Simple %Library',['../index.html',1,'']]]
 ];
