@@ -18,6 +18,6 @@ var searchData=
   ['isnull_760',['isNull',['../classasl_1_1_vec3__.html#a58c538360b05cb0f2d641206c5e7be0c',1,'asl::Vec3_']]],
   ['isparalleltovector_761',['isParallelToVector',['../classasl_1_1_vec3__.html#a44edadab6201fd717f9584bafbe68a49',1,'asl::Vec3_']]],
   ['istext_762',['isText',['../classasl_1_1_xml.html#afaeea5fbf102b814a0098d57875b7846',1,'asl::Xml']]],
-  ['istrue_763',['isTrue',['../classasl_1_1_string.html#af86ff7fcda2d789fc75b7750e6acfb82',1,'asl::String']]],
+  ['istrue_763',['isTrue',['../classasl_1_1_string.html#af86ff7fcda2d789fc75b7750e6acfb82',1,'asl::String::isTrue()'],['../classasl_1_1_var.html#af86ff7fcda2d789fc75b7750e6acfb82',1,'asl::Var::isTrue()']]],
   ['items_764',['items',['../classasl_1_1_directory.html#a0f94aa128ff72efcebf5e387e95f2bc5',1,'asl::Directory']]]
 ];
