@@ -4,6 +4,7 @@ var group___global =
     [ "decodeBase64", "group___global.html#ga764968a708bc825f26560aa66b4a884e", null ],
     [ "decodeHex", "group___global.html#ga1d466d4f7c75e527051d8a65bbd8be8a", null ],
     [ "decodeUrl", "group___global.html#ga71ba7a6069b38abd696c67de291ce545", null ],
+    [ "deg2rad", "group___global.html#ga1d08d28e7833fce61a53faba92b23e8e", null ],
     [ "deg2rad", "group___global.html#gae31a393e2b4883a94de7c023808f3f8d", null ],
     [ "encodeBase64", "group___global.html#ga47687865c2314d8e644e941947c9ab82", null ],
     [ "encodeBase64", "group___global.html#ga6bae29174d19311edeb57f5570370c8b", null ],

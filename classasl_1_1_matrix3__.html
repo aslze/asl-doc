@@ -123,6 +123,15 @@ T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classas
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a7f33fdb8f228e411e71fbcd24df46150">Matrix3_</a> (const T *m, bool colmajor=false)</td></tr>
 <tr class="memdesc:a7f33fdb8f228e411e71fbcd24df46150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a matrix from elements pointed by m, row-major (default) or column-major. <br /></td></tr>
 <tr class="separator:a7f33fdb8f228e411e71fbcd24df46150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac454c2f5fc1c2e0fa0b12c26122cbe34"><td class="memTemplParams" colspan="2"><a id="ac454c2f5fc1c2e0fa0b12c26122cbe34"></a>
+template&lt;class T2 &gt; </td></tr>
+<tr class="memitem:ac454c2f5fc1c2e0fa0b12c26122cbe34"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&lt; T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#ac454c2f5fc1c2e0fa0b12c26122cbe34">with</a> () const</td></tr>
+<tr class="memdesc:ac454c2f5fc1c2e0fa0b12c26122cbe34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of this matrix with elements converted to the given type. <br /></td></tr>
+<tr class="separator:ac454c2f5fc1c2e0fa0b12c26122cbe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c55ccc437fc1e0acb20282cd34650c"><td class="memItemLeft" align="right" valign="top"><a id="ad5c55ccc437fc1e0acb20282cd34650c"></a>
+<a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#ad5c55ccc437fc1e0acb20282cd34650c">t</a> () const</td></tr>
+<tr class="memdesc:ad5c55ccc437fc1e0acb20282cd34650c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this matrix transposed. <br /></td></tr>
+<tr class="separator:ad5c55ccc437fc1e0acb20282cd34650c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8ceabc696d63c5c1949706e5f949af"><td class="memItemLeft" align="right" valign="top"><a id="a8c8ceabc696d63c5c1949706e5f949af"></a>
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a8c8ceabc696d63c5c1949706e5f949af">operator()</a> (int i, int j)</td></tr>
 <tr class="memdesc:a8c8ceabc696d63c5c1949706e5f949af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the element at row <code>i</code>, column <code>j</code>. <br /></td></tr>
@@ -136,7 +145,7 @@ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memdesc:a89a1cc28932e019db7ad9b31bff097e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns vector <code>v</code> left-multiplied by this matrix. <br /></td></tr>
 <tr class="separator:a89a1cc28932e019db7ad9b31bff097e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac957c9e318802435ef31691e8d5d90b7"><td class="memItemLeft" align="right" valign="top"><a id="ac957c9e318802435ef31691e8d5d90b7"></a>
-<a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#ac957c9e318802435ef31691e8d5d90b7">operator*</a> (T t) const</td></tr>
+<a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#ac957c9e318802435ef31691e8d5d90b7">operator*</a> (T <a class="el" href="classasl_1_1_matrix3__.html#ad5c55ccc437fc1e0acb20282cd34650c">t</a>) const</td></tr>
 <tr class="memdesc:ac957c9e318802435ef31691e8d5d90b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this matrix multiplied by scalar t. <br /></td></tr>
 <tr class="separator:ac957c9e318802435ef31691e8d5d90b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8b9832ecd06cf41ae7ec6d13993584"><td class="memItemLeft" align="right" valign="top"><a id="a2b8b9832ecd06cf41ae7ec6d13993584"></a>
@@ -163,15 +172,15 @@ static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><
 <tr class="memdesc:aed4041c43c0296721f4f417a2652eeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 3x3 identity matrix. <br /></td></tr>
 <tr class="separator:aed4041c43c0296721f4f417a2652eeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ac382502142c5ccbf18bd65cdd2a6d"><td class="memItemLeft" align="right" valign="top"><a id="a21ac382502142c5ccbf18bd65cdd2a6d"></a>
-static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d">rotate</a> (T t)</td></tr>
+static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d">rotate</a> (T <a class="el" href="classasl_1_1_matrix3__.html#ad5c55ccc437fc1e0acb20282cd34650c">t</a>)</td></tr>
 <tr class="memdesc:a21ac382502142c5ccbf18bd65cdd2a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 2D rotation matrix for angle t. <br /></td></tr>
 <tr class="separator:a21ac382502142c5ccbf18bd65cdd2a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc503c4baac3ad49a26d40f1d30bd561"><td class="memItemLeft" align="right" valign="top"><a id="acc503c4baac3ad49a26d40f1d30bd561"></a>
-static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561">translate</a> (const <a class="el" href="classasl_1_1_vec2__.html">Vec2_</a>&lt; T &gt; &amp;t)</td></tr>
+static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561">translate</a> (const <a class="el" href="classasl_1_1_vec2__.html">Vec2_</a>&lt; T &gt; &amp;<a class="el" href="classasl_1_1_matrix3__.html#ad5c55ccc437fc1e0acb20282cd34650c">t</a>)</td></tr>
 <tr class="memdesc:acc503c4baac3ad49a26d40f1d30bd561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 2D translation matrix for vector t. <br /></td></tr>
 <tr class="separator:acc503c4baac3ad49a26d40f1d30bd561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a7b1f62ac0a7ab91eec81d59b3075c"><td class="memItemLeft" align="right" valign="top"><a id="a99a7b1f62ac0a7ab91eec81d59b3075c"></a>
-static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c">scale</a> (T t)</td></tr>
+static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c">scale</a> (T <a class="el" href="classasl_1_1_matrix3__.html#ad5c55ccc437fc1e0acb20282cd34650c">t</a>)</td></tr>
 <tr class="memdesc:a99a7b1f62ac0a7ab91eec81d59b3075c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 2D scale matrix for factor t. <br /></td></tr>
 <tr class="separator:a99a7b1f62ac0a7ab91eec81d59b3075c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -180,9 +189,9 @@ static <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassasl_1_1_matrix3___html_a99a7b1f62ac0a7ab91eec81d59b3075c"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c">asl::Matrix3_::scale</a></div><div class="ttdeci">static Matrix3_ scale(T t)</div><div class="ttdoc">Returns a 2D scale matrix for factor t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:188</div></div>
-<div class="ttc" id="aclassasl_1_1_matrix3___html_acc503c4baac3ad49a26d40f1d30bd561"><div class="ttname"><a href="classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561">asl::Matrix3_::translate</a></div><div class="ttdeci">static Matrix3_ translate(const Vec2_&lt; T &gt; &amp;t)</div><div class="ttdoc">Returns a 2D translation matrix for vector t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:175</div></div>
-<div class="ttc" id="aclassasl_1_1_matrix3___html_a21ac382502142c5ccbf18bd65cdd2a6d"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d">asl::Matrix3_::rotate</a></div><div class="ttdeci">static Matrix3_ rotate(T t)</div><div class="ttdoc">Returns a 2D rotation matrix for angle t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:166</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_a99a7b1f62ac0a7ab91eec81d59b3075c"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a99a7b1f62ac0a7ab91eec81d59b3075c">asl::Matrix3_::scale</a></div><div class="ttdeci">static Matrix3_ scale(T t)</div><div class="ttdoc">Returns a 2D scale matrix for factor t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:215</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_acc503c4baac3ad49a26d40f1d30bd561"><div class="ttname"><a href="classasl_1_1_matrix3__.html#acc503c4baac3ad49a26d40f1d30bd561">asl::Matrix3_::translate</a></div><div class="ttdeci">static Matrix3_ translate(const Vec2_&lt; T &gt; &amp;t)</div><div class="ttdoc">Returns a 2D translation matrix for vector t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:202</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_a21ac382502142c5ccbf18bd65cdd2a6d"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a21ac382502142c5ccbf18bd65cdd2a6d">asl::Matrix3_::rotate</a></div><div class="ttdeci">static Matrix3_ rotate(T t)</div><div class="ttdoc">Returns a 2D rotation matrix for angle t.</div><div class="ttdef"><b>Definition:</b> Matrix3.h:193</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

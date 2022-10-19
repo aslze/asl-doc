@@ -12,5 +12,7 @@ var classasl_1_1_matrix3__ =
     [ "operator*", "classasl_1_1_matrix3__.html#ac957c9e318802435ef31691e8d5d90b7", null ],
     [ "operator+", "classasl_1_1_matrix3__.html#a2b8b9832ecd06cf41ae7ec6d13993584", null ],
     [ "rows", "classasl_1_1_matrix3__.html#ad107abcacb84cbabb41b87ba81360f91", null ],
-    [ "trace", "classasl_1_1_matrix3__.html#a7244be79e2fc3ebe040509296120dcbf", null ]
+    [ "t", "classasl_1_1_matrix3__.html#ad5c55ccc437fc1e0acb20282cd34650c", null ],
+    [ "trace", "classasl_1_1_matrix3__.html#a7244be79e2fc3ebe040509296120dcbf", null ],
+    [ "with", "classasl_1_1_matrix3__.html#ac454c2f5fc1c2e0fa0b12c26122cbe34", null ]
 ];

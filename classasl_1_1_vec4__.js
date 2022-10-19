@@ -7,6 +7,7 @@ var classasl_1_1_vec4__ =
     [ "operator!", "classasl_1_1_vec4__.html#a7b164ea42c7c29a5876f7aec20a45544", null ],
     [ "operator!=", "classasl_1_1_vec4__.html#a709088dc914942baea09b61c3735dd3f", null ],
     [ "operator%", "classasl_1_1_vec4__.html#a618cd599573e80baa1c5fc03c756ecbd", null ],
+    [ "operator%=", "classasl_1_1_vec4__.html#aa75bcf429daedaef6fc1123d713f4648", null ],
     [ "operator*", "classasl_1_1_vec4__.html#ad447323c08915147fea3877761c4775d", null ],
     [ "operator*", "classasl_1_1_vec4__.html#a099eab508e451d3dd02bd87ebfe71ea9", null ],
     [ "operator*=", "classasl_1_1_vec4__.html#a14ada57b0625fbd2689c9ad70bc634b8", null ],

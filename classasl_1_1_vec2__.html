@@ -99,8 +99,8 @@ class asl::Vec2_&lt; T &gt;</h3>
 <p>This class allows operating with vectors as with primitive types via operators.</p>
 <div class="fragment"><div class="line">Vec2 a (10, 10);</div>
 <div class="line">Vec2 b (-5, 1.5);</div>
-<div class="line">Vec2 c = -a.rotate(PI/4) + 2.0 * (b - a).<a class="code" href="classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261">normalized</a>();</div>
-</div><!-- fragment --><p>The angle between two vectors can be computed with: </p><div class="fragment"><div class="line">T <a class="code" href="classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9">angle</a> = acos(a/!a * b/!b);</div>
+<div class="line">Vec2 c = -a.rotate(PI/4) + 2.0f * (b - a).<a class="code" href="classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261">normalized</a>();</div>
+</div><!-- fragment --><p>The angle between two vectors can be computed with: </p><div class="fragment"><div class="line">T <a class="code" href="classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9">angle</a> = acos(a.normalized() * b.normalized());</div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Vec2.h&gt;</code></p>
 <table class="memberdecls">
@@ -194,6 +194,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_vec2__.html#a3b602a34c02c0c66e1680723072f5042">operator/=</a> (T r)</td></tr>
 <tr class="memdesc:a3b602a34c02c0c66e1680723072f5042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides this vector by scalar <code>r</code> <br /></td></tr>
 <tr class="separator:a3b602a34c02c0c66e1680723072f5042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119e6514215e9d41bc4edffe130c366b"><td class="memItemLeft" align="right" valign="top"><a id="a119e6514215e9d41bc4edffe130c366b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_vec2__.html#a119e6514215e9d41bc4edffe130c366b">operator%=</a> (const <a class="el" href="classasl_1_1_vec2__.html">Vec2_</a> &amp;b)</td></tr>
+<tr class="memdesc:a119e6514215e9d41bc4edffe130c366b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies this vector by another, component-wise. <br /></td></tr>
+<tr class="separator:a119e6514215e9d41bc4edffe130c366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab061dd57db253bf9b3ea84712d65058b"><td class="memItemLeft" align="right" valign="top"><a id="ab061dd57db253bf9b3ea84712d65058b"></a>
 <a class="el" href="classasl_1_1_vec2__.html">Vec2_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_vec2__.html#ab061dd57db253bf9b3ea84712d65058b">operator-</a> () const</td></tr>
 <tr class="memdesc:ab061dd57db253bf9b3ea84712d65058b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this vector negated. <br /></td></tr>
@@ -218,8 +222,8 @@ Friends</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassasl_1_1_vec2___html_ade64e656c54a2638ed70a4c624890261"><div class="ttname"><a href="classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261">asl::Vec2_::normalized</a></div><div class="ttdeci">Vec2_ normalized() const</div><div class="ttdoc">Returns this vector normalized.</div><div class="ttdef"><b>Definition:</b> Vec2.h:50</div></div>
-<div class="ttc" id="aclassasl_1_1_vec2___html_a0c14f664b5a14473eadf565b05ce54d9"><div class="ttname"><a href="classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9">asl::Vec2_::angle</a></div><div class="ttdeci">T angle() const</div><div class="ttdoc">Returns the angle between this vector and the +X axis in the [-PI, PI] range.</div><div class="ttdef"><b>Definition:</b> Vec2.h:52</div></div>
+<div class="ttc" id="aclassasl_1_1_vec2___html_ade64e656c54a2638ed70a4c624890261"><div class="ttname"><a href="classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261">asl::Vec2_::normalized</a></div><div class="ttdeci">Vec2_ normalized() const</div><div class="ttdoc">Returns this vector normalized.</div><div class="ttdef"><b>Definition:</b> Vec2.h:51</div></div>
+<div class="ttc" id="aclassasl_1_1_vec2___html_a0c14f664b5a14473eadf565b05ce54d9"><div class="ttname"><a href="classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9">asl::Vec2_::angle</a></div><div class="ttdeci">T angle() const</div><div class="ttdoc">Returns the angle between this vector and the +X axis in the [-PI, PI] range.</div><div class="ttdef"><b>Definition:</b> Vec2.h:53</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
