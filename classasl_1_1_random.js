@@ -12,5 +12,7 @@ var classasl_1_1_random =
     [ "operator()", "classasl_1_1_random.html#a6c359d727b1bec6a6084d66a490313ab", null ],
     [ "operator()", "classasl_1_1_random.html#a2d9a6d56307d01689be519719cf364aa", null ],
     [ "operator()", "classasl_1_1_random.html#a89bedcf8a7e6f1b4249f98ba0eaa84c9", null ],
-    [ "seed", "classasl_1_1_random.html#a69ddd6268c47df2054a9ba803e634b71", null ]
+    [ "seed", "classasl_1_1_random.html#a69ddd6268c47df2054a9ba803e634b71", null ],
+    [ "shuffle", "classasl_1_1_random.html#afe853ded772fd1966671641ec849bb81", null ],
+    [ "shuffle", "classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b", null ]
 ];

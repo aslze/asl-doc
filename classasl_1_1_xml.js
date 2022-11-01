@@ -8,6 +8,7 @@ var classasl_1_1_xml =
     [ "child", "classasl_1_1_xml.html#ad80f32bb5fc61e703f5c33d5f8e540bc", null ],
     [ "children", "classasl_1_1_xml.html#a0d2a6089cbc5cdf630fa006b69f6f0d8", null ],
     [ "children", "classasl_1_1_xml.html#a58fbcdff59808056fa63184458f78f60", null ],
+    [ "clear", "classasl_1_1_xml.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
     [ "clone", "classasl_1_1_xml.html#a0d71aaa4e58646784f6ce4abaae082b6", null ],
     [ "count", "classasl_1_1_xml.html#a3b89009ea7382e11a14819adddddd211", null ],
     [ "find", "classasl_1_1_xml.html#a3369ef9bea53053e8f9dea52e049e5f4", null ],

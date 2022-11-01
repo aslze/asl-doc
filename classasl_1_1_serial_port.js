@@ -2,7 +2,7 @@ var classasl_1_1_serial_port =
 [
     [ "available", "classasl_1_1_serial_port.html#a4549a76725f2e4c013e4d57018366109", null ],
     [ "close", "classasl_1_1_serial_port.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
-    [ "config", "classasl_1_1_serial_port.html#abff5748c5ef9df1246614c6149545aa8", null ],
+    [ "config", "classasl_1_1_serial_port.html#a6ad2e23073ca61ca8dd50e0208f61431", null ],
     [ "error", "classasl_1_1_serial_port.html#a91004c239942d94aa16e9d9dc0f45160", null ],
     [ "open", "classasl_1_1_serial_port.html#ae3f42cb45eaa1684a4c295ff6b5dbf08", null ],
     [ "read", "classasl_1_1_serial_port.html#a7e5525948a27e6be0cd7e74552908339", null ],

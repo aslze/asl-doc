@@ -5,6 +5,7 @@ var group___x_d_l =
         [ "NONE", "structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ac157bdf0b85a40d2619cbc8bc1ae5fe2", null ],
         [ "PRETTY", "structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e", null ],
         [ "SIMPLE", "structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a1a6b6e9893ec9e5d9710335b4c74d3f6", null ],
+        [ "SHORTF", "structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a70187d7108a1e6b27a0f33b508e63a29", null ],
         [ "NICE", "structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ab31411fab4fd2cab988d78995b9e888f", null ]
       ] ]
     ] ],
@@ -18,6 +19,7 @@ var group___x_d_l =
       [ "child", "classasl_1_1_xml.html#ad80f32bb5fc61e703f5c33d5f8e540bc", null ],
       [ "children", "classasl_1_1_xml.html#a0d2a6089cbc5cdf630fa006b69f6f0d8", null ],
       [ "children", "classasl_1_1_xml.html#a58fbcdff59808056fa63184458f78f60", null ],
+      [ "clear", "classasl_1_1_xml.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
       [ "clone", "classasl_1_1_xml.html#a0d71aaa4e58646784f6ce4abaae082b6", null ],
       [ "count", "classasl_1_1_xml.html#a3b89009ea7382e11a14819adddddd211", null ],
       [ "find", "classasl_1_1_xml.html#a3369ef9bea53053e8f9dea52e049e5f4", null ],

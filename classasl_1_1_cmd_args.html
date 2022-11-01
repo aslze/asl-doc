@@ -92,15 +92,15 @@ $(document).ready(function(){initNavTree('classasl_1_1_cmd_args.html',''); initR
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classasl_1_1_cmd_args.html" title="CmdArgs is a utility to read command line arguments with options, similar to getopt() but simpler.">CmdArgs</a> is a utility to read command line arguments with options, similar to <code>getopt()</code> but simpler. </p>
 <p>It allows to read named options (starting with a <code>-</code>), optionally followed by a value, and the rest of arguments after the last option. Options without value are flags and should end with a '!'.</p>
-<p>If an option is given more than once its value is the last one, but all its values are accessible with the () operator. The arguments given by this object with the <code><a class="el" href="classasl_1_1_cmd_args.html#a91213974fa3ac3959b1c355a9e588f8d" title="Returns the number of rest arguments, those after the options.">length()</a></code> property and the <code>[int]</code> operator are the rest arguments, not counting options or the program name. The whole array of arguments received at <code>main()</code> can be obtained with the <code><a class="el" href="classasl_1_1_cmd_args.html#a5bab4879700b463210e8c4e072516217" title="Returns all the arguments, as received at main()">all()</a></code> function.</p>
+<p>If an option is given more than once its value is the last one, but all its values are accessible with the () operator. The arguments given by this object with the <code><a class="el" href="classasl_1_1_cmd_args.html#a91213974fa3ac3959b1c355a9e588f8d" title="Returns the number of free arguments, those excluding options.">length()</a></code> property and the <code>[int]</code> operator are the free arguments, not counting options or the program name. The whole array of arguments received at <code>main()</code> can be obtained with the <code><a class="el" href="classasl_1_1_cmd_args.html#a5bab4879700b463210e8c4e072516217" title="Returns all the arguments, as received at main()">all()</a></code> function.</p>
 <p>For example:</p>
 <div class="fragment"><div class="line">convert -format jpeg -fast! -q 85 image1.png image2.bmp</div>
-</div><!-- fragment --><p>Has the option <code>format</code> with value <code>jpeg</code>, the flag <code>fast</code>, the option <code>q</code> with value 85 and 2 rest arguments.</p>
+</div><!-- fragment --><p>Has the option <code>format</code> with value <code>jpeg</code>, the flag <code>fast</code>, the option <code>q</code> with value 85 and 2 free arguments.</p>
 <p>That can be read with:</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_cmd_args.html#a52fdcf0b3871c989d2f060eb9df4b76f">CmdArgs</a> args(argc, argv);</div>
 <div class="line"> </div>
 <div class="line">String format = args[<span class="stringliteral">&quot;format&quot;</span>];</div>
-<div class="line"><span class="keywordtype">int</span> quality = args(<span class="stringliteral">&quot;q&quot;</span>, 90);             <span class="comment">// use value 90 if the option is not given</span></div>
+<div class="line"><span class="keywordtype">int</span> quality = args[<span class="stringliteral">&quot;q&quot;</span>] | 90;             <span class="comment">// use value 90 if the option is not given</span></div>
 <div class="line"><span class="keywordtype">bool</span> fast = args.is(<span class="stringliteral">&quot;fast&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> i=0; i &lt; args.length(); i++)</div>
@@ -132,17 +132,17 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#a52fdcf0b3871c989d2f060eb9df4b76f">CmdArgs</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;spec=&quot;&quot;)</td></tr>
 <tr class="memdesc:a52fdcf0b3871c989d2f060eb9df4b76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classasl_1_1_cmd_args.html" title="CmdArgs is a utility to read command line arguments with options, similar to getopt() but simpler.">CmdArgs</a> object with the arguments of the current process (only on Windows and Linux). <br /></td></tr>
 <tr class="separator:a52fdcf0b3871c989d2f060eb9df4b76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d6980ce3cba2eb4149e3c1c0b3f83a"><td class="memItemLeft" align="right" valign="top"><a id="ab6d6980ce3cba2eb4149e3c1c0b3f83a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#ab6d6980ce3cba2eb4149e3c1c0b3f83a">CmdArgs</a> (int argc, char *argv[], const <a class="el" href="classasl_1_1_string.html">String</a> &amp;spec=&quot;&quot;)</td></tr>
-<tr class="memdesc:ab6d6980ce3cba2eb4149e3c1c0b3f83a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classasl_1_1_cmd_args.html" title="CmdArgs is a utility to read command line arguments with options, similar to getopt() but simpler.">CmdArgs</a> object from the arguments to main() and an optional specification. <br /></td></tr>
-<tr class="separator:ab6d6980ce3cba2eb4149e3c1c0b3f83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eeb7a7b34bd2a1d78022c86cb6caf64"><td class="memItemLeft" align="right" valign="top"><a id="a2eeb7a7b34bd2a1d78022c86cb6caf64"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#a2eeb7a7b34bd2a1d78022c86cb6caf64">CmdArgs</a> (int argc, char **argv, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;spec=&quot;&quot;)</td></tr>
+<tr class="memdesc:a2eeb7a7b34bd2a1d78022c86cb6caf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classasl_1_1_cmd_args.html" title="CmdArgs is a utility to read command line arguments with options, similar to getopt() but simpler.">CmdArgs</a> object from the arguments to main() and an optional specification. <br /></td></tr>
+<tr class="separator:a2eeb7a7b34bd2a1d78022c86cb6caf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a4b49b9d3fecea6f561adea75e86118"><td class="memItemLeft" align="right" valign="top"><a id="a5a4b49b9d3fecea6f561adea75e86118"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#a5a4b49b9d3fecea6f561adea75e86118">has</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;opt) const</td></tr>
 <tr class="memdesc:a5a4b49b9d3fecea6f561adea75e86118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the given option exists. <br /></td></tr>
 <tr class="separator:a5a4b49b9d3fecea6f561adea75e86118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa48f87e5e748bdfa685955b56f15488"><td class="memItemLeft" align="right" valign="top"><a id="afa48f87e5e748bdfa685955b56f15488"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#afa48f87e5e748bdfa685955b56f15488">is</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;opt) const</td></tr>
-<tr class="memdesc:afa48f87e5e748bdfa685955b56f15488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a flag option (if it exists with no value or has a value 1, true, yes or on) <br /></td></tr>
+<tr class="memdesc:afa48f87e5e748bdfa685955b56f15488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a flag option (if it exists with no value or has a value 1, true or yes) <br /></td></tr>
 <tr class="separator:afa48f87e5e748bdfa685955b56f15488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8261441b557a9ff5b53ab2f5f6c85011"><td class="memItemLeft" align="right" valign="top"><a id="a8261441b557a9ff5b53ab2f5f6c85011"></a>
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#a8261441b557a9ff5b53ab2f5f6c85011">operator[]</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;opt) const</td></tr>
@@ -162,7 +162,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a02072bfb60cf5f20f823708877e72117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea0ac04884773e17580d98db2dbe871"><td class="memItemLeft" align="right" valign="top"><a id="afea0ac04884773e17580d98db2dbe871"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#afea0ac04884773e17580d98db2dbe871">rest</a> () const</td></tr>
-<tr class="memdesc:afea0ac04884773e17580d98db2dbe871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rest of arguments after the last option. <br /></td></tr>
+<tr class="memdesc:afea0ac04884773e17580d98db2dbe871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the free arguments, arguments excluding options. <br /></td></tr>
 <tr class="separator:afea0ac04884773e17580d98db2dbe871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bab4879700b463210e8c4e072516217"><td class="memItemLeft" align="right" valign="top"><a id="a5bab4879700b463210e8c4e072516217"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#a5bab4879700b463210e8c4e072516217">all</a> () const</td></tr>
@@ -170,7 +170,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a5bab4879700b463210e8c4e072516217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91213974fa3ac3959b1c355a9e588f8d"><td class="memItemLeft" align="right" valign="top"><a id="a91213974fa3ac3959b1c355a9e588f8d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#a91213974fa3ac3959b1c355a9e588f8d">length</a> () const</td></tr>
-<tr class="memdesc:a91213974fa3ac3959b1c355a9e588f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of rest arguments, those after the options. <br /></td></tr>
+<tr class="memdesc:a91213974fa3ac3959b1c355a9e588f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of free arguments, those excluding options. <br /></td></tr>
 <tr class="separator:a91213974fa3ac3959b1c355a9e588f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc8dd326dedcb6f9b7e04d8b55dd3454"><td class="memItemLeft" align="right" valign="top"><a id="adc8dd326dedcb6f9b7e04d8b55dd3454"></a>
 const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#adc8dd326dedcb6f9b7e04d8b55dd3454">untested</a> () const</td></tr>

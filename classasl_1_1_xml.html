@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_xml.html',''); initResiza
 <div class="fragment"><div class="line">String xml = <a class="code" href="classasl_1_1_xml.html#ad31e4f810cefd0e840fdaeb0b5859f31">Xml::encode</a>(html);</div>
 </div><!-- fragment --><p>The content can be accessed easily with as <b>shorthand syntax</b> using operators <code>()</code> for tags and <code>[]</code> for attributes. For example, the charset attribute in the <code>&lt;meta&gt;</code> element can be read with:</p>
 <div class="fragment"><div class="line">String charset = html(<span class="stringliteral">&quot;head&quot;</span>)(<span class="stringliteral">&quot;meta&quot;</span>)[<span class="stringliteral">&quot;charset&quot;</span>];  <span class="comment">// -&gt; &quot;utf8&quot;</span></div>
-</div><!-- fragment --><p>That is, <code>element("tag")</code> returns the first child of <code>element</code> that has the given tag (<code>element("tag", 3)</code> would return the 3rd child with that tag). And <code>element["attr"]</code> returns the value of the attribute <code>attr</code>.</p>
+</div><!-- fragment --><p>That is, <code>element("tag")</code> returns the first child of <code>element</code> that has the given tag (<code>element("tag", 3)</code> would return the 4th child with that tag). And <code>element["attr"]</code> returns the value of the attribute <code>attr</code>.</p>
 <p>The text content of the <code>&lt;h1&gt;</code> element would be retrieved like this:</p>
 <div class="fragment"><div class="line">String <a class="code" href="classasl_1_1_xml.html#ab2a80c607cbfd339aa004f3c32150a36">text</a> = html(<span class="stringliteral">&quot;body&quot;</span>)(<span class="stringliteral">&quot;h1&quot;</span>).<a class="code" href="classasl_1_1_xml.html#ab2a80c607cbfd339aa004f3c32150a36">text</a>();  <span class="comment">// -&gt; &quot;Hello&quot;</span></div>
 </div><!-- fragment --><p>That content can be written with:</p>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_xml.html',''); initResiza
 </div><!-- fragment --><p>We can iterate the children of the <code>&lt;body&gt;</code> element like this:</p>
 <div class="fragment"><div class="line">Xml body = html(<span class="stringliteral">&quot;body&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">foreach</span>(<span class="keyword">auto</span>&amp; e, body.children())</div>
+<div class="line"><span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; e : body.children())</div>
 <div class="line">{</div>
 <div class="line">    e.setAttr(<span class="stringliteral">&quot;tag&quot;</span>, e.tag());     <span class="comment">// add an attribute with the tag name</span></div>
 <div class="line">}</div>
@@ -267,6 +267,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a8f8ee0e24ca48f20bc757e7da882aa53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_xml.html">Xml</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_xml.html#a8f8ee0e24ca48f20bc757e7da882aa53">set</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;val)</td></tr>
 <tr class="memdesc:a8f8ee0e24ca48f20bc757e7da882aa53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the content of a named subelement creating it if it does not exist.  <a href="classasl_1_1_xml.html#a8f8ee0e24ca48f20bc757e7da882aa53">More...</a><br /></td></tr>
 <tr class="separator:a8f8ee0e24ca48f20bc757e7da882aa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top"><a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_xml.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all children. <br /></td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab74b9e665d294989eeec0f7bdea59f4a"><td class="memItemLeft" align="right" valign="top"><a id="ab74b9e665d294989eeec0f7bdea59f4a"></a>
 <a class="el" href="classasl_1_1_xml.html">Xml</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_xml.html#ab74b9e665d294989eeec0f7bdea59f4a">operator&lt;&lt;</a> (const <a class="el" href="classasl_1_1_xml.html">Xml</a> &amp;e)</td></tr>
 <tr class="memdesc:ab74b9e665d294989eeec0f7bdea59f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends an element as a child. <br /></td></tr>
@@ -350,7 +354,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Sets the content of a named subelement creating it if it does not exist. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Use put(), set will probably set an attribute in the future </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Use put(), set will probably set an attribute in the future </dd></dl>
 
 </div>
 </div>
@@ -371,7 +375,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Sets the content of this element to the given text value. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use put() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Use put() </dd></dl>
 
 </div>
 </div>
@@ -410,7 +414,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Writes an XML document to a file. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Use write(xml, file) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Use write(xml, file) </dd></dl>
 
 </div>
 </div>
@@ -421,9 +425,9 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><!-- doc-content -->
 <div class="ttc" id="aclassasl_1_1_xml_html_aa124c1d2a7c4ba099cda66817bf87e88"><div class="ttname"><a href="classasl_1_1_xml.html#aa124c1d2a7c4ba099cda66817bf87e88">asl::Xml::read</a></div><div class="ttdeci">static Xml read(const String &amp;file)</div><div class="ttdoc">Reads and decodes a file as XML and returns its root element.</div></div>
 <div class="ttc" id="aclassasl_1_1_xml_html_ad31e4f810cefd0e840fdaeb0b5859f31"><div class="ttname"><a href="classasl_1_1_xml.html#ad31e4f810cefd0e840fdaeb0b5859f31">asl::Xml::encode</a></div><div class="ttdeci">static String encode(const Xml &amp;e, bool formatted=true)</div><div class="ttdoc">Encodes the given XML document as XML, with or without formatting.</div></div>
-<div class="ttc" id="aclassasl_1_1_xml_html_ab2a80c607cbfd339aa004f3c32150a36"><div class="ttname"><a href="classasl_1_1_xml.html#ab2a80c607cbfd339aa004f3c32150a36">asl::Xml::text</a></div><div class="ttdeci">const String &amp; text() const</div><div class="ttdoc">Returns the text content of this element (the first child text element).</div><div class="ttdef"><b>Definition:</b> Xml.h:613</div></div>
+<div class="ttc" id="aclassasl_1_1_xml_html_ab2a80c607cbfd339aa004f3c32150a36"><div class="ttname"><a href="classasl_1_1_xml.html#ab2a80c607cbfd339aa004f3c32150a36">asl::Xml::text</a></div><div class="ttdeci">const String &amp; text() const</div><div class="ttdoc">Returns the text content of this element (the first child text element).</div><div class="ttdef"><b>Definition:</b> Xml.h:618</div></div>
 <div class="ttc" id="aclassasl_1_1_xml_html_a0f3e7b8e1fd7c30b928d9cd99f6b0286"><div class="ttname"><a href="classasl_1_1_xml.html#a0f3e7b8e1fd7c30b928d9cd99f6b0286">asl::Xml::decode</a></div><div class="ttdeci">static Xml decode(const String &amp;xml)</div><div class="ttdoc">Parses the given string as XML and returns the equivalent DOM tree.</div></div>
-<div class="ttc" id="aclassasl_1_1_xml_html_a0d2a6089cbc5cdf630fa006b69f6f0d8"><div class="ttname"><a href="classasl_1_1_xml.html#a0d2a6089cbc5cdf630fa006b69f6f0d8">asl::Xml::children</a></div><div class="ttdeci">const Array&lt; Xml &gt; &amp; children() const</div><div class="ttdoc">Returns this element's children elements.</div><div class="ttdef"><b>Definition:</b> Xml.h:546</div></div>
+<div class="ttc" id="aclassasl_1_1_xml_html_a0d2a6089cbc5cdf630fa006b69f6f0d8"><div class="ttname"><a href="classasl_1_1_xml.html#a0d2a6089cbc5cdf630fa006b69f6f0d8">asl::Xml::children</a></div><div class="ttdeci">const Array&lt; Xml &gt; &amp; children() const</div><div class="ttdoc">Returns this element's children elements.</div><div class="ttdef"><b>Definition:</b> Xml.h:551</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
