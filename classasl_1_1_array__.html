@@ -97,7 +97,7 @@ class asl::Array_&lt; T, N &gt;</h3>
 <p>It is similar to <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a> but the array length is fixed and must be known at compile time. It is much faster to create and copy than a dynamic <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>.</p>
 <div class="fragment"><div class="line">Array_&lt;int,2&gt; getMinMax()</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code" href="group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7">array_</a>(min, max);</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7">array_</a>(min, max); <span class="comment">// or C++11: return {min, max};</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Array_.h&gt;</code></p>
@@ -108,9 +108,6 @@ Public Member Functions</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array__.html#a91213974fa3ac3959b1c355a9e588f8d">length</a> () const</td></tr>
 <tr class="memdesc:a91213974fa3ac3959b1c355a9e588f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the array. <br /></td></tr>
 <tr class="separator:a91213974fa3ac3959b1c355a9e588f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a80b6032f86a56bec74609034b3246f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array__.html#a3a80b6032f86a56bec74609034b3246f">destroy</a> ()</td></tr>
-<tr class="memdesc:a3a80b6032f86a56bec74609034b3246f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees all elements (with delete).  <a href="classasl_1_1_array__.html#a3a80b6032f86a56bec74609034b3246f">More...</a><br /></td></tr>
-<tr class="separator:a3a80b6032f86a56bec74609034b3246f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ca720e14833f50c05bee6f3de9185c"><td class="memItemLeft" align="right" valign="top"><a id="ac9ca720e14833f50c05bee6f3de9185c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array__.html#ac9ca720e14833f50c05bee6f3de9185c">operator const T *</a> () const</td></tr>
 <tr class="memdesc:ac9ca720e14833f50c05bee6f3de9185c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the base of the array. <br /></td></tr>
@@ -163,34 +160,6 @@ template&lt;class Less &gt; </td></tr>
 <tr class="separator:ab9566171d17edfd2d53be33e9d608aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3a80b6032f86a56bec74609034b3246f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a80b6032f86a56bec74609034b3246f">&#9670;&nbsp;</a></span>destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void destroy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Frees all elements (with delete). </p>
-<p>Elements must be pointers </p>
-
-</div>
-</div>
 <a id="af1936a9913aa2ef21cf90205321981d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1936a9913aa2ef21cf90205321981d2">&#9670;&nbsp;</a></span>indexOf()</h2>
 
@@ -274,7 +243,7 @@ template&lt;class Less &gt; </td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup___containers_html_ga71024447df9e2d9fd615bdb9c940a0a7"><div class="ttname"><a href="group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7">asl::array_</a></div><div class="ttdeci">Array_&lt; T, 2 &gt; array_(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array_.h:234</div></div>
+<div class="ttc" id="agroup___containers_html_ga71024447df9e2d9fd615bdb9c940a0a7"><div class="ttname"><a href="group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7">asl::array_</a></div><div class="ttdeci">Array_&lt; T, 2 &gt; array_(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array_.h:241</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

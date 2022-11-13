@@ -11,6 +11,7 @@ var classasl_1_1_array =
     [ "concat", "classasl_1_1_array.html#a81e91ddf1e762cd9a915507eb1aca3c2", null ],
     [ "contains", "classasl_1_1_array.html#aae2d1504474002708583858f474c4d55", null ],
     [ "copy", "classasl_1_1_array.html#a3dda7d295b3df68e6c694369584ee25d", null ],
+    [ "copy", "classasl_1_1_array.html#a72ba05bab3a3081f5bf1110cb08fd2ff", null ],
     [ "dup", "classasl_1_1_array.html#a7fb526528704e69afadc4522367c19ed", null ],
     [ "filter", "classasl_1_1_array.html#af978710d306340e2d6c9e19ced23c924", null ],
     [ "indexOf", "classasl_1_1_array.html#af1936a9913aa2ef21cf90205321981d2", null ],

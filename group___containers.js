@@ -12,6 +12,7 @@ var group___containers =
       [ "concat", "classasl_1_1_array.html#a81e91ddf1e762cd9a915507eb1aca3c2", null ],
       [ "contains", "classasl_1_1_array.html#aae2d1504474002708583858f474c4d55", null ],
       [ "copy", "classasl_1_1_array.html#a3dda7d295b3df68e6c694369584ee25d", null ],
+      [ "copy", "classasl_1_1_array.html#a72ba05bab3a3081f5bf1110cb08fd2ff", null ],
       [ "dup", "classasl_1_1_array.html#a7fb526528704e69afadc4522367c19ed", null ],
       [ "filter", "classasl_1_1_array.html#af978710d306340e2d6c9e19ced23c924", null ],
       [ "indexOf", "classasl_1_1_array.html#af1936a9913aa2ef21cf90205321981d2", null ],
@@ -50,7 +51,6 @@ var group___containers =
     ] ],
     [ "Array_", "classasl_1_1_array__.html", [
       [ "contains", "classasl_1_1_array__.html#aae2d1504474002708583858f474c4d55", null ],
-      [ "destroy", "classasl_1_1_array__.html#a3a80b6032f86a56bec74609034b3246f", null ],
       [ "indexOf", "classasl_1_1_array__.html#af1936a9913aa2ef21cf90205321981d2", null ],
       [ "join", "classasl_1_1_array__.html#ab9566171d17edfd2d53be33e9d608aad", null ],
       [ "last", "classasl_1_1_array__.html#a8af3592c894b63653a2c8369e00fc4cb", null ],
@@ -110,9 +110,11 @@ var group___containers =
     ] ],
     [ "Stack", "classasl_1_1_stack.html", [
       [ "pop", "classasl_1_1_stack.html#a312e7f6c761a199c1369fbe651e084f0", null ],
+      [ "pop", "classasl_1_1_stack.html#a5aa114a5939c7fd6b1b19d9f674cc8a6", null ],
       [ "popget", "classasl_1_1_stack.html#a5dc07e7c55711e0d97634af6bd9f753c", null ],
       [ "push", "classasl_1_1_stack.html#a7f08c0c541501ebe00b2016232d291af", null ],
-      [ "top", "classasl_1_1_stack.html#a5cb70e1e664df97ef7bfaa8cb5d6b6a9", null ]
+      [ "top", "classasl_1_1_stack.html#a3cf7365af88634dc340669ed5e0193b4", null ],
+      [ "top", "classasl_1_1_stack.html#a09f343ab087aa8fcb75375fcb2f0126f", null ]
     ] ],
     [ "foreach", "group___containers.html#gaf4fcfe5872c70e4998812a767e267925", null ],
     [ "foreach2", "group___containers.html#gada2796cfee1961387a09942600ecf5cd", null ],

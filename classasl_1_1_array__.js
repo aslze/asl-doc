@@ -1,7 +1,6 @@
 var classasl_1_1_array__ =
 [
     [ "contains", "classasl_1_1_array__.html#aae2d1504474002708583858f474c4d55", null ],
-    [ "destroy", "classasl_1_1_array__.html#a3a80b6032f86a56bec74609034b3246f", null ],
     [ "indexOf", "classasl_1_1_array__.html#af1936a9913aa2ef21cf90205321981d2", null ],
     [ "join", "classasl_1_1_array__.html#ab9566171d17edfd2d53be33e9d608aad", null ],
     [ "last", "classasl_1_1_array__.html#a8af3592c894b63653a2c8369e00fc4cb", null ],
