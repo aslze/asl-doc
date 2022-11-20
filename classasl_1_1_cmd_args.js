@@ -10,6 +10,7 @@ var classasl_1_1_cmd_args =
     [ "operator()", "classasl_1_1_cmd_args.html#a16d464d2556adb491a776c668c547fb9", null ],
     [ "operator[]", "classasl_1_1_cmd_args.html#a8261441b557a9ff5b53ab2f5f6c85011", null ],
     [ "operator[]", "classasl_1_1_cmd_args.html#aa0d4ec82a85b94f9b2d982151e3ad34a", null ],
+    [ "options", "classasl_1_1_cmd_args.html#a0c7647303d39a78f389938b92ef8ad60", null ],
     [ "rest", "classasl_1_1_cmd_args.html#afea0ac04884773e17580d98db2dbe871", null ],
     [ "untested", "classasl_1_1_cmd_args.html#adc8dd326dedcb6f9b7e04d8b55dd3454", null ]
 ];

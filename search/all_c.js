@@ -3,7 +3,7 @@ var searchData=
   ['message_20logger_228',['Message logger',['../group___logging.html',1,'']]],
   ['magnitude_229',['magnitude',['../classasl_1_1_complex.html#a72ececb75ae72a493f34b27c064c3041',1,'asl::Complex']]],
   ['magnitude2_230',['magnitude2',['../classasl_1_1_complex.html#a652693807481fd69ee6bc455fa733f54',1,'asl::Complex']]],
-  ['map_231',['Map',['../classasl_1_1_map.html',1,'Map&lt; K, T &gt;'],['../classasl_1_1_array.html#a88b8561f01f01e0a481f9c2223e99037',1,'asl::Array::map()'],['../classasl_1_1_map.html#a34d2b2e3b342a958b7006fe8f38ae13a',1,'asl::Map::Map()']]],
+  ['map_231',['Map',['../classasl_1_1_map.html',1,'Map&lt; K, T &gt;'],['../classasl_1_1_map.html#a34d2b2e3b342a958b7006fe8f38ae13a',1,'asl::Map::Map()'],['../classasl_1_1_array.html#a88b8561f01f01e0a481f9c2223e99037',1,'asl::Array::map()']]],
   ['map_3c_20string_2c_20asl_3a_3aarray_3c_20asl_3a_3astring_20_3e_20_3e_232',['Map&lt; String, asl::Array&lt; asl::String &gt; &gt;',['../classasl_1_1_map.html',1,'asl']]],
   ['map_3c_20string_2c_20asl_3a_3astring_20_3e_233',['Map&lt; String, asl::String &gt;',['../classasl_1_1_map.html',1,'asl']]],
   ['map_3c_20string_2c_20section_20_3e_234',['Map&lt; String, Section &gt;',['../classasl_1_1_map.html',1,'asl']]],

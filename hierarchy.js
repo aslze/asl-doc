@@ -24,8 +24,8 @@ var hierarchy =
     [ "Array< Context >", "classasl_1_1_array.html", [
       [ "Stack< Context >", "classasl_1_1_stack.html", null ]
     ] ],
-    [ "Array< KeyVal * >", "classasl_1_1_array.html", null ],
     [ "Array< KeyVal >", "classasl_1_1_array.html", null ],
+    [ "Array< KeyValN * >", "classasl_1_1_array.html", null ],
     [ "Array_< T, N >", "classasl_1_1_array__.html", null ],
     [ "Atomic< T >", "classasl_1_1_atomic.html", null ],
     [ "CmdArgs", "classasl_1_1_cmd_args.html", null ],

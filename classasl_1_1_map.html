@@ -101,8 +101,10 @@ class asl::Map&lt; K, T &gt;</h3>
 <div class="line">morse[<span class="charliteral">&#39;S&#39;</span>] = <span class="stringliteral">&quot;---&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">String sos = morse[<span class="charliteral">&#39;S&#39;</span>] + morse[<span class="charliteral">&#39;O&#39;</span>] + morse[<span class="charliteral">&#39;S&#39;</span>];</div>
-</div><!-- fragment --><p>Maps can be initialized with short hand syntax (this is useful in <a class="el" href="classasl_1_1_http.html#ad721a81acd4fdd7a3372ceed1cb89427" title="Sends an HTTP GET request for the given url and returns the response.">Http::get()</a> to specify HTTP request headers):</p>
+</div><!-- fragment --><p>Maps can be initialized with shorthand syntax (this is useful in <a class="el" href="classasl_1_1_http.html#ad721a81acd4fdd7a3372ceed1cb89427" title="Sends an HTTP GET request for the given url and returns the response.">Http::get()</a> to specify HTTP request headers):</p>
 <div class="fragment"><div class="line">Map&lt;&gt; headers = Map&lt;&gt;(<span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;text/html&quot;</span>)(<span class="stringliteral">&quot;Content-Lenth&quot;</span>, <a class="code" href="classasl_1_1_map.html#a91213974fa3ac3959b1c355a9e588f8d">length</a>);</div>
+</div><!-- fragment --><p>of with braces, in C++11:</p>
+<div class="fragment"><div class="line">Map&lt;&gt; headers = {{ <span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;text/html&quot;</span> }, { <span class="stringliteral">&quot;Content-Lenth&quot;</span>, <a class="code" href="classasl_1_1_map.html#a91213974fa3ac3959b1c355a9e588f8d">length</a> }};</div>
 </div><!-- fragment --><p>And iterated with the <code>foreach2</code> macro:</p>
 <div class="fragment"><div class="line"><a class="code" href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a>(<span class="keyword">auto</span>&amp; name, <span class="keyword">auto</span>&amp; value, headers);</div>
 <div class="line">{</div>
@@ -155,10 +157,10 @@ const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; K &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#a4ce4d136efe29bd7799bb7c7f9f8709e">keys</a> () const</td></tr>
 <tr class="memdesc:a4ce4d136efe29bd7799bb7c7f9f8709e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array containing all keys of this map. <br /></td></tr>
 <tr class="separator:a4ce4d136efe29bd7799bb7c7f9f8709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750e6a11b659f06d73dc2dd39fa0167a"><td class="memItemLeft" align="right" valign="top"><a id="a750e6a11b659f06d73dc2dd39fa0167a"></a>
-T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#a750e6a11b659f06d73dc2dd39fa0167a">operator[]</a> (const K &amp;key) const</td></tr>
-<tr class="memdesc:a750e6a11b659f06d73dc2dd39fa0167a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the element with key key. <br /></td></tr>
-<tr class="separator:a750e6a11b659f06d73dc2dd39fa0167a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6d81b3078351058d0c04810d7fe317"><td class="memItemLeft" align="right" valign="top"><a id="acf6d81b3078351058d0c04810d7fe317"></a>
+const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#acf6d81b3078351058d0c04810d7fe317">operator[]</a> (const K &amp;key) const</td></tr>
+<tr class="memdesc:acf6d81b3078351058d0c04810d7fe317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the element with key key, or a static default constructed item if not found. <br /></td></tr>
+<tr class="separator:acf6d81b3078351058d0c04810d7fe317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ec905121b18af11dfd2dec7ea7e9e95"><td class="memItemLeft" align="right" valign="top"><a id="a0ec905121b18af11dfd2dec7ea7e9e95"></a>
 const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#a0ec905121b18af11dfd2dec7ea7e9e95">get</a> (const K &amp;key, const T &amp;def) const</td></tr>
 <tr class="memdesc:a0ec905121b18af11dfd2dec7ea7e9e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the element with key <code>key</code> or the value <code>def</code> if key is not found. <br /></td></tr>
@@ -175,10 +177,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#a0d11fea66c7c93234518038f55cd241d">add</a> (const <a class="el" href="classasl_1_1_map.html">Map</a> &amp;d)</td></tr>
 <tr class="memdesc:a0d11fea66c7c93234518038f55cd241d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all elements from dictionary d to this. <br /></td></tr>
 <tr class="separator:a0d11fea66c7c93234518038f55cd241d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a7c1b1e72b9f3dedca750904604630"><td class="memItemLeft" align="right" valign="top"><a id="a80a7c1b1e72b9f3dedca750904604630"></a>
-Enumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#a80a7c1b1e72b9f3dedca750904604630">all</a> ()</td></tr>
-<tr class="memdesc:a80a7c1b1e72b9f3dedca750904604630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an enumerator for this map. <br /></td></tr>
-<tr class="separator:a80a7c1b1e72b9f3dedca750904604630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d60a7b593741f4a5cbf7e1f61160cf"><td class="memItemLeft" align="right" valign="top"><a id="a44d60a7b593741f4a5cbf7e1f61160cf"></a>
+Enumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#a44d60a7b593741f4a5cbf7e1f61160cf">all</a> () const</td></tr>
+<tr class="memdesc:a44d60a7b593741f4a5cbf7e1f61160cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an enumerator for this map. <br /></td></tr>
+<tr class="separator:a44d60a7b593741f4a5cbf7e1f61160cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2992e098234b8ecf1739bb60d992ee0"><td class="memItemLeft" align="right" valign="top"><a id="ad2992e098234b8ecf1739bb60d992ee0"></a>
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_map.html#ad2992e098234b8ecf1739bb60d992ee0">join</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s1, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s2) const</td></tr>
 <tr class="memdesc:ad2992e098234b8ecf1739bb60d992ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joins the contents of a Dic&lt;&gt; into a string, using <code>s1</code> as element separator (often a comma) and <code>s2</code> as key-value separator (usually an '='). <br /></td></tr>
@@ -220,7 +222,7 @@ Enumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup___containers_html_gada2796cfee1961387a09942600ecf5cd"><div class="ttname"><a href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a></div><div class="ttdeci">#define foreach2(key, variable, set)</div><div class="ttdoc">A for loop for associative containers resembling the foreach keyword of D.</div><div class="ttdef"><b>Definition:</b> foreach1.h:69</div></div>
-<div class="ttc" id="aclassasl_1_1_map_html_a91213974fa3ac3959b1c355a9e588f8d"><div class="ttname"><a href="classasl_1_1_map.html#a91213974fa3ac3959b1c355a9e588f8d">asl::Map::length</a></div><div class="ttdeci">int length() const</div><div class="ttdoc">Returns the number of elements in this map.</div><div class="ttdef"><b>Definition:</b> Map.h:136</div></div>
+<div class="ttc" id="aclassasl_1_1_map_html_a91213974fa3ac3959b1c355a9e588f8d"><div class="ttname"><a href="classasl_1_1_map.html#a91213974fa3ac3959b1c355a9e588f8d">asl::Map::length</a></div><div class="ttdeci">int length() const</div><div class="ttdoc">Returns the number of elements in this map.</div><div class="ttdef"><b>Definition:</b> Map.h:139</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

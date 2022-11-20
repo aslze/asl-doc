@@ -123,7 +123,6 @@ var group___math3_d =
       [ "operator-=", "classasl_1_1_vec2__.html#aeb97a578b7170b8b4b1ad5efe56ce0eb", null ],
       [ "operator/", "classasl_1_1_vec2__.html#ab0818341ed7ecfda3a9c91027b16203a", null ],
       [ "operator/=", "classasl_1_1_vec2__.html#a3b602a34c02c0c66e1680723072f5042", null ],
-      [ "operator=", "classasl_1_1_vec2__.html#a9f996d2cafeecc0e07bfc20798f3c26a", null ],
       [ "operator==", "classasl_1_1_vec2__.html#a98bc70e9ea55f8c75efb39c20048b942", null ],
       [ "operator^", "classasl_1_1_vec2__.html#a075967b3176dc9374286f1ff37b8a540", null ],
       [ "perpend", "classasl_1_1_vec2__.html#a4e01e6bb88879b42dcaf1de62e7a0f60", null ],
