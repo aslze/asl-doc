@@ -120,6 +120,7 @@ var group___containers =
     ] ],
     [ "foreach", "group___containers.html#gaf4fcfe5872c70e4998812a767e267925", null ],
     [ "foreach2", "group___containers.html#gada2796cfee1961387a09942600ecf5cd", null ],
+    [ "ByteArray", "group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982", null ],
     [ "array", "group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce", null ],
     [ "array_", "group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7", null ],
     [ "shuffle", "group___containers.html#ga5a09041efcb78eeb52ca410b10346db0", null ],
