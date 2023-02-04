@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_string.html',''); initRes
 <p>Strings are byte-based using UTF-8 (or Local 8-bit if ASL_ANSI is defined). In order to use string literals with non-ASCII characters, source code must be encoded in UTF-8. Indices and substrings operate on code-units.</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> firstName = <span class="stringliteral">&quot;John&quot;</span>, lastName = <span class="stringliteral">&quot;Doe&quot;</span>;</div>
 <div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> name = firstName + <span class="stringliteral">&quot; &quot;</span> + lastName;       <span class="comment">// use += when possible, it&#39;s faster</span></div>
-<div class="ttc" id="aclassasl_1_1_string_html_a8db865e64c3c3f65ec6a0b6fd8c09a94"><div class="ttname"><a href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">asl::String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Constructs an empty string.</div><div class="ttdef"><b>Definition:</b> String.h:140</div></div>
+<div class="ttc" id="aclassasl_1_1_string_html_a8db865e64c3c3f65ec6a0b6fd8c09a94"><div class="ttname"><a href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">asl::String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Constructs an empty string.</div><div class="ttdef"><b>Definition:</b> String.h:141</div></div>
 </div><!-- fragment --><p>Unicode (UTF-8) case conversions and case-insensitive comparisons are supported.</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> babel = <span class="stringliteral">&quot;Ñandú εξέλιξη жизни&quot;</span>; <span class="comment">// UTF-8 string with Latin, Greek and Cyrilic text</span></div>
 <div class="line">babel.toUpperCase() -&gt; <span class="stringliteral">&quot;ÑANDÚ ΕΞΈΛΙΞΗ ЖИЗНИ&quot;</span></div>
@@ -237,10 +237,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#af4e65277e4f9ecbe4f7cd87ab63be71e">operator const char *</a> () const</td></tr>
 <tr class="memdesc:af4e65277e4f9ecbe4f7cd87ab63be71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
 <tr class="separator:af4e65277e4f9ecbe4f7cd87ab63be71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e2871ecd5e299575a4011eb94cca6d5"><td class="memItemLeft" align="right" valign="top"><a id="a7e2871ecd5e299575a4011eb94cca6d5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a7e2871ecd5e299575a4011eb94cca6d5">operator char *</a> () const</td></tr>
-<tr class="memdesc:a7e2871ecd5e299575a4011eb94cca6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
-<tr class="separator:a7e2871ecd5e299575a4011eb94cca6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2bebb89803c6d54e0fe24f41f24924"><td class="memItemLeft" align="right" valign="top"><a id="a2c2bebb89803c6d54e0fe24f41f24924"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a2c2bebb89803c6d54e0fe24f41f24924">operator char *</a> ()</td></tr>
+<tr class="memdesc:a2c2bebb89803c6d54e0fe24f41f24924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
+<tr class="separator:a2c2bebb89803c6d54e0fe24f41f24924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa908f94f43015f22c4f756a118a96f"><td class="memItemLeft" align="right" valign="top"><a id="a2aa908f94f43015f22c4f756a118a96f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a2aa908f94f43015f22c4f756a118a96f">operator const wchar_t *</a> () const</td></tr>
 <tr class="memdesc:a2aa908f94f43015f22c4f756a118a96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to a Unicode UCS2 representation of this string by expanding from the internal byte representation (suitable for functions requiring C-style wide strings (LPWSTR)) <br /></td></tr>

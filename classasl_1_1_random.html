@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_random.html',''); initRes
 <div class="line"><span class="keywordtype">int</span> n = random(255);                <span class="comment">// get an integer between 0 and 255</span></div>
 <div class="line"><span class="keywordtype">double</span> x = random(-1.5, 1.5);       <span class="comment">// get a number between -1.5 and +1.5</span></div>
 <div class="line"><span class="keywordtype">double</span> y = random.<a class="code" href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033">normal</a>(10, 0.75); <span class="comment">// get a number from a normal distribution</span></div>
-<div class="ttc" id="aclassasl_1_1_random_html_aa0706c04d7c5b32dd0f7596fba6fc033"><div class="ttname"><a href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033">asl::Random::normal</a></div><div class="ttdeci">double normal()</div><div class="ttdoc">Returns a floating point random number with standard normal distribution.</div><div class="ttdef"><b>Definition:</b> defs.h:280</div></div>
+<div class="ttc" id="aclassasl_1_1_random_html_aa0706c04d7c5b32dd0f7596fba6fc033"><div class="ttname"><a href="classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033">asl::Random::normal</a></div><div class="ttdeci">double normal()</div><div class="ttdoc">Returns a floating point random number with standard normal distribution.</div><div class="ttdef"><b>Definition:</b> defs.h:283</div></div>
 </div><!-- fragment --><p>The generator initially is seeded pseudorandomly. If you need a constant sequence you can create with a false argument, to prevent this or call <a class="el" href="classasl_1_1_random.html#a69ddd6268c47df2054a9ba803e634b71" title="Initializes the seed for the random functions.">seed()</a>.</p>
 <p>For compatibility with older code, there is a global <code>asl::random</code> object already random initialized ready for use. But it is recommended to use new <a class="el" href="classasl_1_1_random.html" title="A random number generator.">Random</a> objects when separate sequences or multithreading are needed. </p>
 </div>
@@ -169,11 +169,6 @@ template&lt;typename E &gt; </td></tr>
 <tr class="memitem:afe853ded772fd1966671641ec849bb81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#afe853ded772fd1966671641ec849bb81">shuffle</a> (E &amp;a)</td></tr>
 <tr class="memdesc:afe853ded772fd1966671641ec849bb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles an array of elements in place. <br /></td></tr>
 <tr class="separator:afe853ded772fd1966671641ec849bb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a569ec1f996b980408f5586f65cd09af5"><td class="memTemplParams" colspan="2"><a id="a569ec1f996b980408f5586f65cd09af5"></a>
-template&lt;typename E &gt; </td></tr>
-<tr class="memitem:a569ec1f996b980408f5586f65cd09af5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_random.html#a569ec1f996b980408f5586f65cd09af5">shuffle</a> (const E &amp;a)</td></tr>
-<tr class="memdesc:a569ec1f996b980408f5586f65cd09af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles an array of elements in place. <br /></td></tr>
-<tr class="separator:a569ec1f996b980408f5586f65cd09af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>

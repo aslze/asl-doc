@@ -36,7 +36,7 @@ var classasl_1_1_string =
     [ "length", "classasl_1_1_string.html#a91213974fa3ac3959b1c355a9e588f8d", null ],
     [ "ok", "classasl_1_1_string.html#a03cb7eaa663dc83af68bc28a596d09e6", null ],
     [ "operator bool", "classasl_1_1_string.html#a67b76affb3b5d35fa419ac234144038b", null ],
-    [ "operator char *", "classasl_1_1_string.html#a7e2871ecd5e299575a4011eb94cca6d5", null ],
+    [ "operator char *", "classasl_1_1_string.html#a2c2bebb89803c6d54e0fe24f41f24924", null ],
     [ "operator const char *", "classasl_1_1_string.html#af4e65277e4f9ecbe4f7cd87ab63be71e", null ],
     [ "operator const wchar_t *", "classasl_1_1_string.html#a2aa908f94f43015f22c4f756a118a96f", null ],
     [ "operator double", "classasl_1_1_string.html#a3c5a46ebe31a3699f441668931f2978e", null ],
