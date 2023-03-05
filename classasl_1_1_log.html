@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_log.html',''); initResiza
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_log-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Log Class Reference<div class="ingroups"><a class="el" href="group___logging.html">Message logger</a></div></div>  </div>
+<div class="title">Log Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -99,11 +99,9 @@ $(document).ready(function(){initNavTree('classasl_1_1_log.html',''); initResiza
 <div class="ttc" id="aclassasl_1_1_log_html_ae4ee8d8423cdbfef136a878593adf1a3"><div class="ttname"><a href="classasl_1_1_log.html#ae4ee8d8423cdbfef136a878593adf1a3">asl::Log::useConsole</a></div><div class="ttdeci">static void useConsole(bool on)</div><div class="ttdoc">Enables or disables writing messages to the console.</div></div>
 <div class="ttc" id="aclassasl_1_1_log_html_ae7a334da07117d5f8da3b8907031da6d"><div class="ttname"><a href="classasl_1_1_log.html#ae7a334da07117d5f8da3b8907031da6d">asl::Log::setFile</a></div><div class="ttdeci">static void setFile(const String &amp;file)</div><div class="ttdoc">Sets the name of the file to write messages to.</div></div>
 </div><!-- fragment --><p>The easiest way to write messages is with the provided macro ASL_LOG_ similar to a <code>printf</code> call. It uses the current source file as <em>category</em>.</p>
-<div class="fragment"><div class="line"><a class="code" href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a>(WARNING, <span class="stringliteral">&quot;Ignored unknown mode %i&quot;</span>, mode);</div>
-<div class="ttc" id="agroup___logging_html_ga6f87f5e6abc94f75bdc6fe78feeb9b28"><div class="ttname"><a href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a></div><div class="ttdeci">#define ASL_LOG_(LEVEL,...)</div><div class="ttdoc">Log a formatted message with the given level (ERR, WARNING, INFO, DEBUG or VERBOSE)</div><div class="ttdef"><b>Definition:</b> Log.h:111</div></div>
+<div class="fragment"><div class="line">ASL_LOG_(WARNING, <span class="stringliteral">&quot;Ignored unknown mode %i&quot;</span>, mode);</div>
 </div><!-- fragment --><p>That is equivalent to:</p>
-<div class="fragment"><div class="line"><a class="code" href="group___logging.html#gae9769f4136f2963d00b1d5501316ce94">ASL_LOG_W</a>(<span class="stringliteral">&quot;Ignored unknown mode %i&quot;</span>, mode);</div>
-<div class="ttc" id="agroup___logging_html_gae9769f4136f2963d00b1d5501316ce94"><div class="ttname"><a href="group___logging.html#gae9769f4136f2963d00b1d5501316ce94">ASL_LOG_W</a></div><div class="ttdeci">#define ASL_LOG_W(...)</div><div class="ttdoc">Log a formatted message with the WARNING level.</div><div class="ttdef"><b>Definition:</b> Log.h:124</div></div>
+<div class="fragment"><div class="line">ASL_LOG_W(<span class="stringliteral">&quot;Ignored unknown mode %i&quot;</span>, mode);</div>
 </div><!-- fragment --><p>On Android this class uses the system logger.</p>
 <p><a class="el" href="classasl_1_1_log.html" title="Log is a utility to log messages to either the console, a file or both.">Log</a> files do not grow indefinitely. When reaching about 1 MB, they will be moved to a file with "-1" appended to its name (like "log-1.log"), and a new empty file will be started. Any logs older than that will be lost. </p>
 </div>

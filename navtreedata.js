@@ -25,11 +25,6 @@
 var NAVTREE =
 [
   [ "ASL", "index.html", [
-    [ "ASL - All-purpose Simple Library", "index.html", [
-      [ "Compilation and use", "index.html#autotoc_md0", [
-        [ "SSL/TLS sockets and HTTPS support", "index.html#autotoc_md1", null ]
-      ] ]
-    ] ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
@@ -53,8 +48,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classasl_1_1_http_response.html",
-"classasl_1_1_serial_port.html#a91004c239942d94aa16e9d9dc0f45160",
-"classasl_1_1_vec2__.html#ae096299983e1a35bdc94118b86ae3a0b"
+"classasl_1_1_serial_port.html#a7e5525948a27e6be0cd7e74552908339",
+"classasl_1_1_vec2__.html#ad703c358a1a44bc50baa96390a76be77"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

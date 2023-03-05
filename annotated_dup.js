@@ -35,6 +35,7 @@ var annotated_dup =
       [ "Lock", "classasl_1_1_lock.html", null ],
       [ "Atomic", "classasl_1_1_atomic.html", "classasl_1_1_atomic" ],
       [ "Path", "classasl_1_1_path.html", "classasl_1_1_path" ],
+      [ "Pointer", "classasl_1_1_pointer.html", null ],
       [ "Pose_", "classasl_1_1_pose__.html", "classasl_1_1_pose__" ],
       [ "Process", "classasl_1_1_process.html", "classasl_1_1_process" ],
       [ "Queue", "classasl_1_1_queue.html", "classasl_1_1_queue" ],

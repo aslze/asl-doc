@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_string.html',''); initRes
 <div class="line"><span class="keywordflow">if</span>( !email.contains(<span class="charliteral">&#39;@&#39;</span>) ) {}</div>
 <div class="line"> </div>
 <div class="line">Array&lt;String&gt; parts = path.split(<span class="stringliteral">&quot;/&quot;</span>); <span class="comment">// cut a path into its parts</span></div>
-</div><!-- fragment --><p>Remember in UTF-8 characters can have different byte-length. Use the <a class="el" href="classasl_1_1_string.html#a91213974fa3ac3959b1c355a9e588f8d" title="Returns the length of this string in bytes.">length()</a> method to get the number of bytes (i.e. code units) and <a class="el" href="classasl_1_1_string.html#a0e2c15c517007b91c37b2aa68bf2484a" title="Returns the number of full characters in the string (may be different from length() )">count()</a> to get the number of code points (i.e. actual characters). To get the individual wide characters you can use the <a class="el" href="classasl_1_1_string.html#a5e19e3c3799b73edb06c12e438ec59e1" title="Returns a list of Unicode characters (code points) in this string.">chars()</a> method which returns an array of code points or iterate the string with a <code>foreach</code> loop.</p>
+</div><!-- fragment --><p>Remember in UTF-8 characters can have different byte-length. Use the <a class="el" href="classasl_1_1_string.html#a91213974fa3ac3959b1c355a9e588f8d" title="Returns the length of this string in bytes.">length()</a> method to get the number of bytes (i.e. code units) and <a class="el" href="classasl_1_1_string.html#a0e2c15c517007b91c37b2aa68bf2484a" title="Returns the number of full characters (code points) in the string (may be different from length() )">count()</a> to get the number of code points (i.e. actual characters). To get the individual wide characters you can use the <a class="el" href="classasl_1_1_string.html#a5e19e3c3799b73edb06c12e438ec59e1" title="Returns a list of Unicode characters (code points) in this string.">chars()</a> method which returns an array of code points or iterate the string with a <code>foreach</code> loop.</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> euros = <span class="stringliteral">&quot;3€&quot;</span>;</div>
 <div class="line">euros.length() <span class="comment">// returns 4 (bytes)</span></div>
 <div class="line">euros.count()  <span class="comment">// returns 2 (characters)</span></div>
@@ -118,14 +118,14 @@ $(document).ready(function(){initNavTree('classasl_1_1_string.html',''); initRes
 <div class="line">    printf(<span class="stringliteral">&quot;%i &quot;</span>, c); <span class="comment">// prints &quot;51 8364&quot;</span></div>
 </div><!-- fragment --><p>A <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> automatically converts to <code>char*</code> or <code>wchar_t*</code> when needed. When converting to <code>wchar_t*</code> the UTF-8 string will be expanded to wide characters in a temporary buffer. This way you can call functions that require wide characters transparently.</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> dirName = <span class="stringliteral">&quot;Mis imágenes&quot;</span>  <span class="comment">// this is UTF-8</span></div>
-<div class="line">CreateDirectoryW( dirName );     <span class="comment">// this gets converted to UTF-16 LPWSTRING</span></div>
+<div class="line">CreateDirectoryW( dirName );     <span class="comment">// this gets converted to UTF-16 LPCWSTR</span></div>
 </div><!-- fragment --><p>There are automatic conversions to/from many basic types, but please use with care!</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> number = 14;            <span class="comment">//                  int to string</span></div>
 <div class="line">Array&lt;double&gt; a(20);</div>
 <div class="line">a[number] = number + <span class="stringliteral">&quot;.5&quot;</span>;     <span class="comment">// -&gt; a[14] = 14.5  string to double</span></div>
 <div class="line">fopen(number + <span class="stringliteral">&quot;.txt&quot;</span>, <span class="stringliteral">&quot;r&quot;</span>);   <span class="comment">// -&gt; &quot;14.txt&quot;      string to const char*</span></div>
 <div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> items = <a class="code" href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">array</a>(1, 2, 3); <span class="comment">// -&gt; &quot;[1,2,3]&quot;     array of ints to string</span></div>
-<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:752</div></div>
+<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:755</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;String.h&gt;</code></p>
 <table class="memberdecls">
@@ -237,14 +237,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#af4e65277e4f9ecbe4f7cd87ab63be71e">operator const char *</a> () const</td></tr>
 <tr class="memdesc:af4e65277e4f9ecbe4f7cd87ab63be71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
 <tr class="separator:af4e65277e4f9ecbe4f7cd87ab63be71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2bebb89803c6d54e0fe24f41f24924"><td class="memItemLeft" align="right" valign="top"><a id="a2c2bebb89803c6d54e0fe24f41f24924"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a2c2bebb89803c6d54e0fe24f41f24924">operator char *</a> ()</td></tr>
-<tr class="memdesc:a2c2bebb89803c6d54e0fe24f41f24924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
-<tr class="separator:a2c2bebb89803c6d54e0fe24f41f24924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9546b93cd8f1ef10d06926b89df1a8fe"><td class="memItemLeft" align="right" valign="top"><a id="a9546b93cd8f1ef10d06926b89df1a8fe"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a9546b93cd8f1ef10d06926b89df1a8fe">data</a> ()</td></tr>
+<tr class="memdesc:a9546b93cd8f1ef10d06926b89df1a8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
+<tr class="separator:a9546b93cd8f1ef10d06926b89df1a8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa908f94f43015f22c4f756a118a96f"><td class="memItemLeft" align="right" valign="top"><a id="a2aa908f94f43015f22c4f756a118a96f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a2aa908f94f43015f22c4f756a118a96f">operator const wchar_t *</a> () const</td></tr>
-<tr class="memdesc:a2aa908f94f43015f22c4f756a118a96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to a Unicode UCS2 representation of this string by expanding from the internal byte representation (suitable for functions requiring C-style wide strings (LPWSTR)) <br /></td></tr>
+<tr class="memdesc:a2aa908f94f43015f22c4f756a118a96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to a Unicode UTF16 representation of this string by expanding from the internal byte representation (suitable for functions requiring C-style wide strings (LPCWSTR)) <br /></td></tr>
 <tr class="separator:a2aa908f94f43015f22c4f756a118a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ae06cffc453ed3cb8a9c5afb440903"><td class="memItemLeft" align="right" valign="top"><a id="a32ae06cffc453ed3cb8a9c5afb440903"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a32ae06cffc453ed3cb8a9c5afb440903">dataw</a> ()</td></tr>
+<tr class="memdesc:a32ae06cffc453ed3cb8a9c5afb440903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a Unicode UTF16 representation of this string by expanding from the internal byte representation (suitable for functions requiring C-style wide strings (LPWSTR)) <br /></td></tr>
+<tr class="separator:a32ae06cffc453ed3cb8a9c5afb440903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c1512d6a15dbd1d98697c97cf5744b"><td class="memItemLeft" align="right" valign="top"><a id="a22c1512d6a15dbd1d98697c97cf5744b"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a22c1512d6a15dbd1d98697c97cf5744b">operator*</a> () const</td></tr>
 <tr class="memdesc:a22c1512d6a15dbd1d98697c97cf5744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to the beginning of the character data (suitable for functions for functions requiring C-style strings) <br /></td></tr>
@@ -315,7 +319,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a91213974fa3ac3959b1c355a9e588f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2c15c517007b91c37b2aa68bf2484a"><td class="memItemLeft" align="right" valign="top"><a id="a0e2c15c517007b91c37b2aa68bf2484a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a0e2c15c517007b91c37b2aa68bf2484a">count</a> () const</td></tr>
-<tr class="memdesc:a0e2c15c517007b91c37b2aa68bf2484a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of full characters in the string (may be different from <code><a class="el" href="classasl_1_1_string.html#a91213974fa3ac3959b1c355a9e588f8d" title="Returns the length of this string in bytes.">length()</a></code> ) <br /></td></tr>
+<tr class="memdesc:a0e2c15c517007b91c37b2aa68bf2484a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of full characters (code points) in the string (may be different from <code><a class="el" href="classasl_1_1_string.html#a91213974fa3ac3959b1c355a9e588f8d" title="Returns the length of this string in bytes.">length()</a></code> ) <br /></td></tr>
 <tr class="separator:a0e2c15c517007b91c37b2aa68bf2484a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40211e738a8f36e521871d8dcd2a52d6"><td class="memItemLeft" align="right" valign="top"><a id="a40211e738a8f36e521871d8dcd2a52d6"></a>
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a40211e738a8f36e521871d8dcd2a52d6">substring</a> (int i, int j) const</td></tr>
@@ -434,7 +438,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Constructs a string consisting of character <code>c</code> repeated <code>n</code> times. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Use <code><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3" title="Constructs a string consisting of character c repeated n times.">repeat()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use <code><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3" title="Constructs a string consisting of character c repeated n times.">String::repeat()</a></code> instead. </dd></dl>
 
 </div>
 </div>

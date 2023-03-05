@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_matrix__.html',''); initR
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_matrix__-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Matrix_&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___math3_d.html">Math</a></div></div>  </div>
+<div class="title">Matrix_&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -105,8 +105,7 @@ class asl::Matrix_&lt; T &gt;</h3>
 </div><!-- fragment --><p>You can operate with matrices:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> C = A.inverse() * A + b * b.transposed();</div>
 </div><!-- fragment --><p>And you can solve linear systems:</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> x = <a class="code" href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1">solve</a>(A, b); <span class="comment">// solution to linear system A * x = b</span></div>
-<div class="ttc" id="agroup___math3_d_html_ga845743284803d4bd9b9c67925ad858a1"><div class="ttname"><a href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1">asl::solve</a></div><div class="ttdeci">Matrix_&lt; T &gt; solve(const Matrix_&lt; T &gt; &amp;A, const Matrix_&lt; T &gt; &amp;b)</div><div class="ttdoc">Solves the matrix equation A*x=b and returns x; if b is a matrix (not a column) then the equation is ...</div><div class="ttdef"><b>Definition:</b> Matrix.h:350</div></div>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> x = solve(A, b); <span class="comment">// solution to linear system A * x = b</span></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Matrix.h&gt;</code></p>
 <div class="dynheader">
@@ -272,10 +271,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classasl_1_1_array2.html">Array2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#aa79784e1dc108a49e45bec777b1225a2">slice</a> (int i1, int i2, int j1, int j2) const</td></tr>
 <tr class="memdesc:aa79784e1dc108a49e45bec777b1225a2 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sub-array consisting of a rows [i1, i2) and columns [j1, j2) <br /></td></tr>
 <tr class="separator:aa79784e1dc108a49e45bec777b1225a2 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105c8ffb14e2ad6574fe7cc1d616cef9 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="a105c8ffb14e2ad6574fe7cc1d616cef9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#a105c8ffb14e2ad6574fe7cc1d616cef9">resize</a> (int r, int c)</td></tr>
-<tr class="memdesc:a105c8ffb14e2ad6574fe7cc1d616cef9 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the matrix to r x c. <br /></td></tr>
-<tr class="separator:a105c8ffb14e2ad6574fe7cc1d616cef9 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5841a5688258b211cb48fe9322a0e27 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="af5841a5688258b211cb48fe9322a0e27"></a>
+<a class="el" href="classasl_1_1_array2.html">Array2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#af5841a5688258b211cb48fe9322a0e27">resize</a> (int r, int c)</td></tr>
+<tr class="memdesc:af5841a5688258b211cb48fe9322a0e27 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the matrix to r x c. <br /></td></tr>
+<tr class="separator:af5841a5688258b211cb48fe9322a0e27 inherit pub_methods_classasl_1_1_array2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad107abcacb84cbabb41b87ba81360f91 inherit pub_methods_classasl_1_1_array2"><td class="memItemLeft" align="right" valign="top"><a id="ad107abcacb84cbabb41b87ba81360f91"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a> () const</td></tr>
 <tr class="memdesc:ad107abcacb84cbabb41b87ba81360f91 inherit pub_methods_classasl_1_1_array2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of rows. <br /></td></tr>

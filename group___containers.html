@@ -92,43 +92,7 @@ $(document).ready(function(){initNavTree('group___containers.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>There are several container classes that can hold elements of any type (<a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>, <a class="el" href="classasl_1_1_map.html" title="An associative container linking keys of type K with values of type T.">Map</a>, <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, <a class="el" href="classasl_1_1_stack.html" title="This class represents a stack of elements of any type.">Stack</a>, <a class="el" href="classasl_1_1_hash_map.html" title="This class implements a hash map, an unordered map of keys to values.">HashMap</a>). </p>
-<p>These classes are reference-counted, so they are copied by reference. If a separate copy is required, use the <code>clone()</code> method:</p>
-<div class="fragment"><div class="line">Array&lt;int&gt; a = <a class="code" href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">array</a>(1, 2, 3);</div>
-<div class="line">Array&lt;int&gt; b = a;               <span class="comment">// b is the same as a</span></div>
-<div class="line">Array&lt;int&gt; c = a.clone();       <span class="comment">// c is a separate copy of a</span></div>
-<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:752</div></div>
-</div><!-- fragment --><p>In order to support iterating the elements contained, they implement an <em>Enumerator</em>. These are similar to <em>iterators</em> but don't have to come in pairs (<em>begin</em> and <em>end</em>). Just one Enumerator knows how to go to the next element and when to stop iterating.</p>
-<p>All containers have an <code>all()</code> enumerator that represents all its elements. All enumerators must implement operator <code>*</code> to dereference the currently pointed element, and may implement operator <code>~</code> to get their associated <em>key</em>, if any. For example, in an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>, they key is the integer index associated to each element. And in a <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, the key is the element's name, a string.</p>
-<p>This way, enumerating is done like this: (the keyword <code>auto</code> is useful if your compiler supports it)</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span>(Array&lt;T&gt;::Enumerator e = container.all(); e; ++e)</div>
-<div class="line">{</div>
-<div class="line">    cout &lt;&lt; ~e &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; *e &lt;&lt; endl;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>That way, if container was a <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, it would be printing the names and values of all elements.</p>
-<p>In C++11 compilers you can also use <em>range-based for</em> loops:</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">float</span> x: numbers)</div>
-<div class="line">{</div>
-<div class="line">    sum += x;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>And for older compilers there is a shorthand notation for iterating, <code>foreach</code> and <code>foreach2</code> loops. The first iterates on the values of elements. And the second on both the keys and values of elements.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">float</span> sum = 0;</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordflow">foreach</span>(<span class="keywordtype">float</span> x, numbers)</div>
-<div class="line">{</div>
-<div class="line">    sum += x;</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line">Dic&lt;int&gt; ages;</div>
-<div class="line">ages[<span class="stringliteral">&quot;John&quot;</span>] = 23;</div>
-<div class="line">ages[<span class="stringliteral">&quot;Bob&quot;</span>] = 55;</div>
-<div class="line"> </div>
-<div class="line"><a class="code" href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a>(String&amp; name, <span class="keywordtype">int</span> age, ages)</div>
-<div class="line">{</div>
-<div class="line">    cout &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; is &quot;</span> &lt;&lt; age &lt;&lt; <span class="stringliteral">&quot; years old&quot;</span> &lt;&lt; endl;</div>
-<div class="line">}</div>
-<div class="ttc" id="agroup___containers_html_gada2796cfee1961387a09942600ecf5cd"><div class="ttname"><a href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a></div><div class="ttdeci">#define foreach2(key, variable, set)</div><div class="ttdoc">A for loop for associative containers resembling the foreach keyword of D.</div><div class="ttdef"><b>Definition:</b> foreach1.h:69</div></div>
-</div><!-- fragment --> <table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html">Array&lt; T &gt;</a></td></tr>
@@ -156,16 +120,16 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gaf4fcfe5872c70e4998812a767e267925"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___containers.html#gaf4fcfe5872c70e4998812a767e267925">foreach</a>(variable,  set)</td></tr>
-<tr class="memdesc:gaf4fcfe5872c70e4998812a767e267925"><td class="mdescLeft">&#160;</td><td class="mdescRight">A for loop for containers resembling the <code>foreach</code> keyword of D.  <a href="group___containers.html#gaf4fcfe5872c70e4998812a767e267925">More...</a><br /></td></tr>
+<tr class="memdesc:gaf4fcfe5872c70e4998812a767e267925"><td class="mdescLeft">&#160;</td><td class="mdescRight">A for loop for containers resembling C++11 range-based <code>for</code> supporting old compilers.  <a href="group___containers.html#gaf4fcfe5872c70e4998812a767e267925">More...</a><br /></td></tr>
 <tr class="separator:gaf4fcfe5872c70e4998812a767e267925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada2796cfee1961387a09942600ecf5cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a>(key,  variable,  set)</td></tr>
-<tr class="memdesc:gada2796cfee1961387a09942600ecf5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A for loop for associative containers resembling the <code>foreach</code> keyword of D.  <a href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">More...</a><br /></td></tr>
+<tr class="memdesc:gada2796cfee1961387a09942600ecf5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A for loop for associative containers resembling C++17 range-based <code>for</code> with structured binding.  <a href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">More...</a><br /></td></tr>
 <tr class="separator:gada2796cfee1961387a09942600ecf5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga83ec16f5e316b5d33c0feed881d2c982"><td class="memItemLeft" align="right" valign="top"><a id="ga83ec16f5e316b5d33c0feed881d2c982"></a>
-typedef <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a></td></tr>
+typedef <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a></td></tr>
 <tr class="memdesc:ga83ec16f5e316b5d33c0feed881d2c982"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alias for <a class="el" href="classasl_1_1_array.html">Array&lt;byte&gt;</a> <br /></td></tr>
 <tr class="separator:ga83ec16f5e316b5d33c0feed881d2c982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -220,10 +184,11 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A for loop for containers resembling the <code>foreach</code> keyword of D. </p>
+<p>A for loop for containers resembling C++11 range-based <code>for</code> supporting old compilers. </p>
 <p>In each iteration, <code>variable</code> takes the value of <em>each</em> element in <code>set</code>. Variable can have a type declaration (equaling the type of elements of <code>set</code>) and an even be a reference. In newer compilers just use <code>for(auto&amp; x : a)</code></p>
 <div class="fragment"><div class="line"><span class="keywordflow">foreach</span>(<span class="keywordtype">int</span>&amp; x, <a class="code" href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">array</a>)</div>
 <div class="line">    x *= 2;              <span class="comment">// multiplies each element of the array times 2</span></div>
+<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:755</div></div>
 </div><!-- fragment --><p>This will not work for temporary containers (i.e. returned by functions). </p>
 
 </div>
@@ -260,11 +225,12 @@ template&lt;class T &gt; </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A for loop for associative containers resembling the <code>foreach</code> keyword of D. </p>
+<p>A for loop for associative containers resembling C++17 range-based <code>for</code> with structured binding. </p>
 <p>Similar to <code>foreach</code> but using two variables: the first will take the value of each <em>key</em> and the second will take its associated value. In newer compilers just use <code>for(auto&amp; x : a)</code>, or <code>for(auto&amp; [name, value] : a)</code> [C++17] </p><div class="fragment"><div class="line"><a class="code" href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a>(String&amp; name, <span class="keywordtype">float</span> value, variables)</div>
 <div class="line">{</div>
 <div class="line">    cout &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; has the value &quot;</span> value &lt;&lt; endl;</div>
 <div class="line">}</div>
+<div class="ttc" id="agroup___containers_html_gada2796cfee1961387a09942600ecf5cd"><div class="ttname"><a href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a></div><div class="ttdeci">#define foreach2(key, variable, set)</div><div class="ttdoc">A for loop for associative containers resembling C++17 range-based for with structured binding.</div><div class="ttdef"><b>Definition:</b> foreach1.h:72</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -296,7 +262,7 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Shuffles an array of elements in place. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
 
 </div>
 </div>
@@ -333,7 +299,7 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Shuffles an array of elements in place (n items starting at a). </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
 
 </div>
 </div>
@@ -378,7 +344,7 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Parses a string and creates a <code><a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a></code> using <code>sep1</code> as pair separator, and <code>sep2</code> as key/value separator. </p>
-<p>It is the opposite of <code>join()</code>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use String::split(s1, s2) </dd></dl>
+<p>It is the opposite of <code>join()</code>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Use String::split(s1, s2) </dd></dl>
 
 </div>
 </div>

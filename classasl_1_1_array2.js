@@ -12,7 +12,7 @@ var classasl_1_1_array2 =
     [ "operator!=", "classasl_1_1_array2.html#af1f2da1ececdbb08e9d66b8b7cfad34c", null ],
     [ "operator()", "classasl_1_1_array2.html#a8c8ceabc696d63c5c1949706e5f949af", null ],
     [ "operator==", "classasl_1_1_array2.html#a65e96d2256666bcf83f53d3ce6e87111", null ],
-    [ "resize", "classasl_1_1_array2.html#a105c8ffb14e2ad6574fe7cc1d616cef9", null ],
+    [ "resize", "classasl_1_1_array2.html#af5841a5688258b211cb48fe9322a0e27", null ],
     [ "rows", "classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91", null ],
     [ "set", "classasl_1_1_array2.html#a86a450a5967a4893684151f401233350", null ],
     [ "slice", "classasl_1_1_array2.html#aa79784e1dc108a49e45bec777b1225a2", null ],

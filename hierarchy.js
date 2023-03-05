@@ -71,6 +71,7 @@ var hierarchy =
     [ "Matrix4_< T >", "classasl_1_1_matrix4__.html", null ],
     [ "Mutex", "classasl_1_1_mutex.html", null ],
     [ "Path", "classasl_1_1_path.html", null ],
+    [ "Pointer< T >", "classasl_1_1_pointer.html", null ],
     [ "Pose_< T >", "classasl_1_1_pose__.html", null ],
     [ "Process", "classasl_1_1_process.html", null ],
     [ "Quaternion_< T >", "classasl_1_1_quaternion__.html", null ],

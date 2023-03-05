@@ -90,30 +90,7 @@ $(document).ready(function(){initNavTree('group___testing.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Tiny testing functionality. </p>
-<p>The <code><a class="el" href="group___testing.html#gae53f514c21bff75a87682f7975df897c" title="Add support for testing in this executable and create a function main() that runs all tests.">ASL_TEST_ENABLE_MAIN()</a></code> macro adds testing functionality and creates a main function that runs all defined tests. Use the <code><a class="el" href="group___testing.html#ga30cd7128004a0a458072ac4e20b6cc17" title="Add support for testing in this executable (use only once in the sources for one executable).">ASL_TEST_ENABLE()</a></code> macro if you will provide your own main function.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;asl/testing.h&gt;</span></div>
-<div class="line"> </div>
-<div class="line"><a class="code" href="group___testing.html#gae53f514c21bff75a87682f7975df897c">ASL_TEST_ENABLE_MAIN</a>();</div>
-<div class="line"> </div>
-<div class="line"><a class="code" href="group___testing.html#gac5774b842c78f62ab84ac8ee01ef564e">ASL_TEST</a>(Car)</div>
-<div class="line">{</div>
-<div class="line">    Car car;</div>
-<div class="line">    <a class="code" href="group___testing.html#ga1f2c851878c4f646003836416b72495b">ASL_ASSERT</a>(car.isStopped());</div>
-<div class="line">    <a class="code" href="group___testing.html#ga7e93129c77854e8b426678f03455e695">ASL_CHECK</a>(car.numWheels(), &gt;, 2);</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line"><a class="code" href="group___testing.html#gac5774b842c78f62ab84ac8ee01ef564e">ASL_TEST</a>(Volume)</div>
-<div class="line">{</div>
-<div class="line">    Sphere sphere(1.0);</div>
-<div class="line">    <a class="code" href="group___testing.html#ga2edf56724877b69c5c4fc0b18f9fb961">ASL_APPROX</a>(sphere.volume(), 4.1888, 1e-3);</div>
-<div class="line">}</div>
-<div class="ttc" id="agroup___testing_html_ga1f2c851878c4f646003836416b72495b"><div class="ttname"><a href="group___testing.html#ga1f2c851878c4f646003836416b72495b">ASL_ASSERT</a></div><div class="ttdeci">#define ASL_ASSERT(x)</div><div class="ttdoc">Check that the argument is true.</div><div class="ttdef"><b>Definition:</b> testing.h:162</div></div>
-<div class="ttc" id="agroup___testing_html_ga2edf56724877b69c5c4fc0b18f9fb961"><div class="ttname"><a href="group___testing.html#ga2edf56724877b69c5c4fc0b18f9fb961">ASL_APPROX</a></div><div class="ttdeci">#define ASL_APPROX(x, y, d)</div><div class="ttdoc">Check that x and y are approximately equal (within distance d).</div><div class="ttdef"><b>Definition:</b> testing.h:178</div></div>
-<div class="ttc" id="agroup___testing_html_ga7e93129c77854e8b426678f03455e695"><div class="ttname"><a href="group___testing.html#ga7e93129c77854e8b426678f03455e695">ASL_CHECK</a></div><div class="ttdeci">#define ASL_CHECK(x, op, y)</div><div class="ttdoc">Check a condition with the given operator and operands.</div><div class="ttdef"><b>Definition:</b> testing.h:171</div></div>
-<div class="ttc" id="agroup___testing_html_gac5774b842c78f62ab84ac8ee01ef564e"><div class="ttname"><a href="group___testing.html#gac5774b842c78f62ab84ac8ee01ef564e">ASL_TEST</a></div><div class="ttdeci">#define ASL_TEST(Name)</div><div class="ttdoc">Create a test named Name.</div><div class="ttdef"><b>Definition:</b> testing.h:105</div></div>
-<div class="ttc" id="agroup___testing_html_gae53f514c21bff75a87682f7975df897c"><div class="ttname"><a href="group___testing.html#gae53f514c21bff75a87682f7975df897c">ASL_TEST_ENABLE_MAIN</a></div><div class="ttdeci">#define ASL_TEST_ENABLE_MAIN()</div><div class="ttdoc">Add support for testing in this executable and create a function main() that runs all tests.</div><div class="ttdef"><b>Definition:</b> testing.h:97</div></div>
-</div><!-- fragment --> <table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga30cd7128004a0a458072ac4e20b6cc17"><td class="memItemLeft" align="right" valign="top"><a id="ga30cd7128004a0a458072ac4e20b6cc17"></a>
@@ -186,6 +163,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Check a condition with the given operator and operands. </p>
 <div class="fragment"><div class="line"><a class="code" href="group___testing.html#ga7e93129c77854e8b426678f03455e695">ASL_CHECK</a>(sqrt(x), &gt;=, 0);</div>
+<div class="ttc" id="agroup___testing_html_ga7e93129c77854e8b426678f03455e695"><div class="ttname"><a href="group___testing.html#ga7e93129c77854e8b426678f03455e695">ASL_CHECK</a></div><div class="ttdeci">#define ASL_CHECK(x, op, y)</div><div class="ttdoc">Check a condition with the given operator and operands.</div><div class="ttdef"><b>Definition:</b> testing.h:171</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

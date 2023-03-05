@@ -83,30 +83,20 @@ $(document).ready(function(){initNavTree('group___global.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Global functions</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>These utilities allow simple code like: </p>
-<p>Measuring time and sleeping for some time:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> t1 = <a class="code" href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">now</a>();</div>
-<div class="line">sleep(0.5);         <span class="comment">// sleep for 500 ms</span></div>
-<div class="line"><span class="keywordtype">double</span> t2 = <a class="code" href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">now</a>();</div>
-<div class="line"><span class="keywordtype">double</span> elapsed = t2 - t1;  <span class="comment">// -&gt; around 0.5</span></div>
-<div class="ttc" id="agroup___global_html_ga8a5d089416f7e5f28d51a3abefd6bd0f"><div class="ttname"><a href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">asl::now</a></div><div class="ttdeci">double now()</div><div class="ttdoc">Returns the current time as a real number in seconds since a fixed epoch (precision is platform-depen...</div></div>
-</div><!-- fragment --><p>Convert radians to degrees and limit to 0-360 deg interval:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> degrees = <a class="code" href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">clamp</a>(<a class="code" href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">rad2deg</a>(angle), 0, 360);</div>
-<div class="ttc" id="agroup___global_html_ga1158c41b115d2e2bae4c3020a427127c"><div class="ttname"><a href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">asl::clamp</a></div><div class="ttdeci">T clamp(T x, C a, C b)</div><div class="ttdoc">Clamps the value of x to make it lie inside the [a,b] interval.</div><div class="ttdef"><b>Definition:</b> defs.h:185</div></div>
-<div class="ttc" id="agroup___global_html_ga4cc2d428b391ef9e5bf5097fd7e000a8"><div class="ttname"><a href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">asl::rad2deg</a></div><div class="ttdeci">T rad2deg(T x)</div><div class="ttdoc">Returns x radians converted to degrees.</div><div class="ttdef"><b>Definition:</b> defs.h:196</div></div>
-</div><!-- fragment --><p>Get random numbers in an interval:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> x = random(-1.0, 1.0);</div>
-<div class="line"> </div>
-<div class="line">String item = names[ random( names.length() ) ];  <span class="comment">// pick random array item</span></div>
-</div><!-- fragment --><p>Turn a file into a base64 representation:</p>
-<div class="fragment"><div class="line">TextFile(<span class="stringliteral">&quot;image.jpg.b64&quot;</span>).put( encodeBase64(File(<span class="stringliteral">&quot;image.jpg&quot;</span>).content()) );</div>
-</div><!-- fragment --> <table class="memberdecls">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
+<tr class="memdesc:ga0c8186d9b9b7880309c27230bbb5e69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An unsigned byte.  <a href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">More...</a><br /></td></tr>
+<tr class="separator:ga0c8186d9b9b7880309c27230bbb5e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaefd615458d46c43a8f01738309bf4bb7"><td class="memItemLeft" align="right" valign="top"><a id="gaefd615458d46c43a8f01738309bf4bb7"></a>
@@ -167,11 +157,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memdesc:gaa85b7b1a3abd2e77e87c5f282f9003e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the current thread sleep for the given time in microseconds. <br /></td></tr>
 <tr class="separator:gaa85b7b1a3abd2e77e87c5f282f9003e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga764968a708bc825f26560aa66b4a884e"><td class="memItemLeft" align="right" valign="top"><a id="ga764968a708bc825f26560aa66b4a884e"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga764968a708bc825f26560aa66b4a884e">decodeBase64</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
+<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga764968a708bc825f26560aa66b4a884e">decodeBase64</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
 <tr class="memdesc:ga764968a708bc825f26560aa66b4a884e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a base64 encoded string into a byte array; the string can contain whitespace. <br /></td></tr>
 <tr class="separator:ga764968a708bc825f26560aa66b4a884e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47687865c2314d8e644e941947c9ab82"><td class="memItemLeft" align="right" valign="top"><a id="ga47687865c2314d8e644e941947c9ab82"></a>
-<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga47687865c2314d8e644e941947c9ab82">encodeBase64</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt; &amp;s)</td></tr>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga47687865c2314d8e644e941947c9ab82">encodeBase64</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;s)</td></tr>
 <tr class="memdesc:ga47687865c2314d8e644e941947c9ab82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a byte array as a string using base64 encoding. <br /></td></tr>
 <tr class="separator:ga47687865c2314d8e644e941947c9ab82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6bae29174d19311edeb57f5570370c8b"><td class="memItemLeft" align="right" valign="top"><a id="ga6bae29174d19311edeb57f5570370c8b"></a>
@@ -179,14 +169,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memdesc:ga6bae29174d19311edeb57f5570370c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a string as a string using base64 encoding. <br /></td></tr>
 <tr class="separator:ga6bae29174d19311edeb57f5570370c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84e6d57f34660f25f64e4192e0af14ba"><td class="memItemLeft" align="right" valign="top"><a id="ga84e6d57f34660f25f64e4192e0af14ba"></a>
-<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga84e6d57f34660f25f64e4192e0af14ba">encodeHex</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt; &amp;src)</td></tr>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga84e6d57f34660f25f64e4192e0af14ba">encodeHex</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;src)</td></tr>
 <tr class="memdesc:ga84e6d57f34660f25f64e4192e0af14ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a byte array as a string using hexadecimal. <br /></td></tr>
 <tr class="separator:ga84e6d57f34660f25f64e4192e0af14ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d466d4f7c75e527051d8a65bbd8be8a"><td class="memItemLeft" align="right" valign="top"><a id="ga1d466d4f7c75e527051d8a65bbd8be8a"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a>&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga1d466d4f7c75e527051d8a65bbd8be8a">decodeHex</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;src)</td></tr>
+<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga1d466d4f7c75e527051d8a65bbd8be8a">decodeHex</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;src)</td></tr>
 <tr class="memdesc:ga1d466d4f7c75e527051d8a65bbd8be8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a hexadecimal encoded string into a byte array. <br /></td></tr>
 <tr class="separator:ga1d466d4f7c75e527051d8a65bbd8be8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga0c8186d9b9b7880309c27230bbb5e69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c8186d9b9b7880309c27230bbb5e69d">&#9670;&nbsp;</a></span>byte</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An unsigned byte. </p>
+<p>This is also included in the global scope (<code>using asl::byte;</code>) for compatibility with old code, unless <code>ASL_NO_GLOBAL_BYTE</code> is defined.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This type will not be added to the global scope anymore; code should use <code>asl::byte</code> </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

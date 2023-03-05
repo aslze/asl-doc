@@ -1,5 +1,6 @@
 var group___global =
 [
+    [ "byte", "group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d", null ],
     [ "clamp", "group___global.html#ga1158c41b115d2e2bae4c3020a427127c", null ],
     [ "decodeBase64", "group___global.html#ga764968a708bc825f26560aa66b4a884e", null ],
     [ "decodeHex", "group___global.html#ga1d466d4f7c75e527051d8a65bbd8be8a", null ],
