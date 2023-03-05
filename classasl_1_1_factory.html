@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_factory.html',''); initRe
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Factory&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">Factory&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___factory.html">Factory class and macros</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -94,13 +94,14 @@ $(document).ready(function(){initNavTree('classasl_1_1_factory.html',''); initRe
 class asl::Factory&lt; T &gt;</h3>
 
 <p>A <a class="el" href="classasl_1_1_factory.html" title="A Factory allows creating objects given a class name as a String.">Factory</a> allows creating objects given a class name as a <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a>. </p>
-<p>They are used through pointers to their base class and through virtual functions. A <a class="el" href="classasl_1_1_factory.html" title="A Factory allows creating objects given a class name as a String.">Factory</a> is created for a given base class, and subclasses must be registered with <code>ASL_FACTORY_REGISTER()</code> before use.</p>
+<p>They are used through pointers to their base class and through virtual functions. A <a class="el" href="classasl_1_1_factory.html" title="A Factory allows creating objects given a class name as a String.">Factory</a> is created for a given base class, and subclasses must be registered with <code><a class="el" href="group___factory.html#ga7a2fb5df10e8d7961461170143e8f9b1" title="Registers class Class in the factory for class Base for instantiation by name (Class must be a subcla...">ASL_FACTORY_REGISTER()</a></code> before use.</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>Dog : <span class="keyword">public</span> Animal {...};</div>
 <div class="line"> </div>
-<div class="line">ASL_FACTORY_REGISTER( Animal, Dog )</div>
+<div class="line"><a class="code" href="group___factory.html#ga7a2fb5df10e8d7961461170143e8f9b1">ASL_FACTORY_REGISTER</a>( Animal, Dog )</div>
 <div class="line">...</div>
 <div class="line">Animal* animal = <a class="code" href="classasl_1_1_factory.html#ad044b4b850cd57ac77d2cbfc517161e0">Factory&lt;Animal&gt;::create</a>(<span class="stringliteral">&quot;Dog&quot;</span>);</div>
 <div class="ttc" id="aclassasl_1_1_factory_html_ad044b4b850cd57ac77d2cbfc517161e0"><div class="ttname"><a href="classasl_1_1_factory.html#ad044b4b850cd57ac77d2cbfc517161e0">asl::Factory::create</a></div><div class="ttdeci">static T * create(const String &amp;name)</div><div class="ttdoc">Constructs an object given a class name previously registered.</div><div class="ttdef"><b>Definition:</b> Factory.h:39</div></div>
+<div class="ttc" id="agroup___factory_html_ga7a2fb5df10e8d7961461170143e8f9b1"><div class="ttname"><a href="group___factory.html#ga7a2fb5df10e8d7961461170143e8f9b1">ASL_FACTORY_REGISTER</a></div><div class="ttdeci">#define ASL_FACTORY_REGISTER(Base, Class)</div><div class="ttdoc">Registers class Class in the factory for class Base for instantiation by name (Class must be a subcla...</div><div class="ttdef"><b>Definition:</b> Factory.h:100</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Factory.h&gt;</code></p>
 <div class="dynheader">

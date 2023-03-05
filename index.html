@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASL: Main Page</title>
+<title>ASL: ASL - All-purpose Simple Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,11 +81,75 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">ASL Documentation</div>  </div>
+<div class="title">ASL - All-purpose Simple Library </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p>ASL is a collection of general purpose classes and utilities intended to be easy to use. It is mostly compatible with <b>Windows</b>, <b>Linux</b>, <b>macOS</b> and <b>Android</b>, 32 and 64 bits.</p>
+<p><b>Operating system functionalities</b>:</p>
+<ul>
+<li>Threads, mutexes and semaphores</li>
+<li>Processes (run programs and read their output)</li>
+<li>Binary and text files</li>
+<li>Directory enumeration and file system operations (copy, move, delete)</li>
+<li>Sockets TCP, UDP, Unix and SSL/TLS encrypted sockets, IPv4/IPv6</li>
+<li>Runtime dynamically loadable libraries (DLLs/shared libraries)</li>
+<li>Console attributes: text color and cursor position</li>
+<li>Serial ports</li>
+<li>Shared memory</li>
+</ul>
+<p><b>Utilities</b>:</p>
+<ul>
+<li>JSON, XML and XDL parsing/encoding</li>
+<li>HTTP/HTTPS 1.1 server and client</li>
+<li>WebSocket server and client</li>
+<li>Configuration INI files reading/writing</li>
+<li>CSV file reading/writing, ARFF write</li>
+<li>Log messages to console and/or files (with limited growth)</li>
+<li>Command line arguments and options parsing</li>
+<li>Singletons and Factories</li>
+<li>Base64, hex encoding/decoding</li>
+<li>Binary buffer endian-aware reading/writing</li>
+<li>Random number generator</li>
+<li>Simple testing functionality</li>
+<li>Linear and non-linear systems solving (with the Matrix class)</li>
+</ul>
+<p><b>Basic data types</b>:</p>
+<ul>
+<li>Strings with UTF8 support</li>
+<li>Dynamic and static arrays, including 2D arrays</li>
+<li>Maps and hashmaps</li>
+<li>Date/time</li>
+<li>2D, 3D, 4D vectors, 3x3, 4x4, NxM matrices and quaternions</li>
+<li>Variants (similar to JavaScript vars)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Compilation and use</h1>
+<p>ASL can be used as a static or as a dynamic/shared library. The easiest way to build and use it is via <em>CMake</em> (2.8.12 or later). By default both the dynamic and static libraries will be built. You can enable the <code>ASL_USE_LOCAL8BIT</code> option to disable interpretation of strings as UTF-8 and treat them as local 8- bit strings.</p>
+<p>Just compile the library with whatever compilers and architecturs (32/64bit) you need. There is no need to <em>install</em>.</p>
+<p>In order to use the library in another project just find the ASL package and link against one of the imported targets, <code>asl</code> for the dynamic version or <code>asls</code> for the static version. The static library is recommended as you don't need to copy or distribute a DLL at runtime.</p>
+<div class="fragment"><div class="line">find_package( ASL REQUIRED )</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries( my_application asls ) <span class="preprocessor"># for the static version (recommended), or</span></div>
+<div class="line"> </div>
+<div class="line">target_link_libraries( my_application asl ) <span class="preprocessor"># for the dynamic library</span></div>
+</div><!-- fragment --><p>There is no need to provide the library directory or set <em>include_directories</em>. <code>find_package</code> will find the library compatible with the current project among the versions compiled.</p>
+<p>With CMmake 3.14+, instead of using <code>find_package()</code>, you can download and build the library automatically as a subproject (and then link with it as before):</p>
+<div class="fragment"><div class="line">include(FetchContent)</div>
+<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.6.zip)</span></div>
+<div class="line">FetchContent_MakeAvailable(asl)</div>
+</div><!-- fragment --><p>Remember that all header files have the <code>asl/</code> prefix directory and are named like the class they define (case-sensitively), and that all symbols are in the <code>asl</code> namespace. So, for example, to use the <a class="el" href="classasl_1_1_directory.html" title="This class allows enumerating the contents of a directory: its files and subdirectories.">Directory</a> class:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;asl/Directory.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="classasl_1_1_directory.html">asl::Directory</a> dir;</div>
+<div class="ttc" id="aclassasl_1_1_directory_html"><div class="ttname"><a href="classasl_1_1_directory.html">asl::Directory</a></div><div class="ttdoc">This class allows enumerating the contents of a directory: its files and subdirectories.</div><div class="ttdef"><b>Definition:</b> Directory.h:44</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md1"></a>
+SSL/TLS sockets and HTTPS support</h2>
+<p>This requires the <em>mbedTLS</em> library ( <a href="https://tls.mbed.org">https://tls.mbed.org</a> ). Download and compile the library, enable <code>ASL_TLS</code> in CMake and provide the <em>mbedTLS</em> install directory (and library locations, which should normally be automatically found).</p>
+<p>In Ubuntu Linux you can just install package <b>libmbedtls-dev</b> with:</p>
+<div class="fragment"><div class="line">sudo apt-get install libmbedtls-dev</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

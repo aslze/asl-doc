@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xml_2c_20xdl_2c_20and_20json_1065',['XML, XDL, and JSON',['../group___x_d_l.html',1,'']]]
+  ['factory_20class_20and_20macros_1092',['Factory class and macros',['../group___factory.html',1,'']]]
 ];

@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_matrix__.html',''); initR
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_matrix__-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Matrix_&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">Matrix_&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___math3_d.html">Math</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -105,7 +105,8 @@ class asl::Matrix_&lt; T &gt;</h3>
 </div><!-- fragment --><p>You can operate with matrices:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> C = A.inverse() * A + b * b.transposed();</div>
 </div><!-- fragment --><p>And you can solve linear systems:</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> x = solve(A, b); <span class="comment">// solution to linear system A * x = b</span></div>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> x = <a class="code" href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1">solve</a>(A, b); <span class="comment">// solution to linear system A * x = b</span></div>
+<div class="ttc" id="agroup___math3_d_html_ga845743284803d4bd9b9c67925ad858a1"><div class="ttname"><a href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1">asl::solve</a></div><div class="ttdeci">Matrix_&lt; T &gt; solve(const Matrix_&lt; T &gt; &amp;A, const Matrix_&lt; T &gt; &amp;b)</div><div class="ttdoc">Solves the matrix equation A*x=b and returns x; if b is a matrix (not a column) then the equation is ...</div><div class="ttdef"><b>Definition:</b> Matrix.h:350</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Matrix.h&gt;</code></p>
 <div class="dynheader">

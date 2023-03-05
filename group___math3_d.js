@@ -53,8 +53,8 @@ var group___math3_d =
     ] ],
     [ "Matrix4_", "classasl_1_1_matrix4__.html", [
       [ "Matrix4_", "classasl_1_1_matrix4__.html#aebe3b6073453fcd442f4c5f66c37d603", null ],
-      [ "Matrix4_", "classasl_1_1_matrix4__.html#aaef86101e66560bd8b952bd4d5769a87", null ],
-      [ "Matrix4_", "classasl_1_1_matrix4__.html#aea9dec24a8406f4b48c6c91ea1e4b689", null ],
+      [ "Matrix4_", "classasl_1_1_matrix4__.html#ad2762e7753b406b1af8b6d23e5a246e6", null ],
+      [ "Matrix4_", "classasl_1_1_matrix4__.html#a9f706cd7da9532a6577b19757094f1aa", null ],
       [ "Matrix4_", "classasl_1_1_matrix4__.html#a603b1c0ad8b0430ca125c114bcf3670c", null ],
       [ "axisAngle", "classasl_1_1_matrix4__.html#ae310084d484e6085740c5f2625c81cd5", null ],
       [ "cols", "classasl_1_1_matrix4__.html#a8509d6f7951179378f848f5f4cc37720", null ],

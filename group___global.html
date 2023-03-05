@@ -90,7 +90,24 @@ $(document).ready(function(){initNavTree('group___global.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<table class="memberdecls">
+<p>These utilities allow simple code like: </p>
+<p>Measuring time and sleeping for some time:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> t1 = <a class="code" href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">now</a>();</div>
+<div class="line">sleep(0.5);         <span class="comment">// sleep for 500 ms</span></div>
+<div class="line"><span class="keywordtype">double</span> t2 = <a class="code" href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">now</a>();</div>
+<div class="line"><span class="keywordtype">double</span> elapsed = t2 - t1;  <span class="comment">// -&gt; around 0.5</span></div>
+<div class="ttc" id="agroup___global_html_ga8a5d089416f7e5f28d51a3abefd6bd0f"><div class="ttname"><a href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">asl::now</a></div><div class="ttdeci">double now()</div><div class="ttdoc">Returns the current time as a real number in seconds since a fixed epoch (precision is platform-depen...</div></div>
+</div><!-- fragment --><p>Convert radians to degrees and limit to 0-360 deg interval:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> degrees = <a class="code" href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">clamp</a>(<a class="code" href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">rad2deg</a>(angle), 0, 360);</div>
+<div class="ttc" id="agroup___global_html_ga1158c41b115d2e2bae4c3020a427127c"><div class="ttname"><a href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">asl::clamp</a></div><div class="ttdeci">T clamp(T x, C a, C b)</div><div class="ttdoc">Clamps the value of x to make it lie inside the [a,b] interval.</div><div class="ttdef"><b>Definition:</b> defs.h:190</div></div>
+<div class="ttc" id="agroup___global_html_ga4cc2d428b391ef9e5bf5097fd7e000a8"><div class="ttname"><a href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">asl::rad2deg</a></div><div class="ttdeci">T rad2deg(T x)</div><div class="ttdoc">Returns x radians converted to degrees.</div><div class="ttdef"><b>Definition:</b> defs.h:201</div></div>
+</div><!-- fragment --><p>Get random numbers in an interval:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> x = random(-1.0, 1.0);</div>
+<div class="line"> </div>
+<div class="line">String item = names[ random( names.length() ) ];  <span class="comment">// pick random array item</span></div>
+</div><!-- fragment --><p>Turn a file into a base64 representation:</p>
+<div class="fragment"><div class="line">TextFile(<span class="stringliteral">&quot;image.jpg.b64&quot;</span>).put( encodeBase64(File(<span class="stringliteral">&quot;image.jpg&quot;</span>).content()) );</div>
+</div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
