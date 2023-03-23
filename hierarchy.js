@@ -103,6 +103,7 @@ var hierarchy =
     [ "TabularDataFile", "classasl_1_1_tabular_data_file.html", null ],
     [ "Thread", "classasl_1_1_thread.html", null ],
     [ "ThreadGroup< Thread >", "classasl_1_1_thread_group.html", null ],
+    [ "Url", "structasl_1_1_url.html", null ],
     [ "Uuid", "classasl_1_1_uuid.html", null ],
     [ "Var", "classasl_1_1_var.html", null ],
     [ "Vec2_< T >", "classasl_1_1_vec2__.html", null ],

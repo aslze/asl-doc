@@ -14,6 +14,7 @@ var annotated_dup =
       [ "Factory", "classasl_1_1_factory.html", null ],
       [ "File", "classasl_1_1_file.html", "classasl_1_1_file" ],
       [ "HashMap", "classasl_1_1_hash_map.html", "classasl_1_1_hash_map" ],
+      [ "Url", "structasl_1_1_url.html", null ],
       [ "HttpMessage", "classasl_1_1_http_message.html", "classasl_1_1_http_message" ],
       [ "HttpRequest", "classasl_1_1_http_request.html", "classasl_1_1_http_request" ],
       [ "HttpResponse", "classasl_1_1_http_response.html", "classasl_1_1_http_response" ],

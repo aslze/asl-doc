@@ -129,13 +129,13 @@ Compilation and use</h1>
 <p>ASL can be used as a static or as a dynamic/shared library. The easiest way to build and use it is via <em>CMake</em> (2.8.12 or later). By default both the dynamic and static libraries will be built. You can enable the <code>ASL_USE_LOCAL8BIT</code> option to disable interpretation of strings as UTF-8 and treat them as local 8- bit strings.</p>
 <p>Just compile the library with whatever compilers and architecturs (32/64bit) you need. There is no need to <em>install</em>.</p>
 <p>In order to use the library in another project just find the ASL package and link against one of the imported targets, <code>asl</code> for the dynamic version or <code>asls</code> for the static version. The static library is recommended as you don't need to copy or distribute a DLL at runtime.</p>
-<div class="fragment"><div class="line">find_package( ASL REQUIRED )</div>
+<div class="fragment"><div class="line">find_package(ASL REQUIRED)</div>
 <div class="line"> </div>
-<div class="line">target_link_libraries( my_application asls ) <span class="preprocessor"># for the static version (recommended), or</span></div>
+<div class="line">target_link_libraries(my_application asls) <span class="preprocessor"># for the static version (recommended), or</span></div>
 <div class="line"> </div>
-<div class="line">target_link_libraries( my_application asl ) <span class="preprocessor"># for the dynamic library</span></div>
+<div class="line">target_link_libraries(my_application asl) <span class="preprocessor"># for the dynamic library</span></div>
 </div><!-- fragment --><p>There is no need to provide the library directory or set <em>include_directories</em>. <code>find_package</code> will find the library compatible with the current project among the versions compiled.</p>
-<p>With CMmake 3.14+, instead of using <code>find_package()</code>, you can download and build the library automatically as a subproject (and then link with it as before):</p>
+<p>With CMake 3.14+, instead of using <code>find_package()</code>, you can download and build the library automatically as a subproject (and then link with it as before):</p>
 <div class="fragment"><div class="line">include(FetchContent)</div>
 <div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.6.zip)</span></div>
 <div class="line">FetchContent_MakeAvailable(asl)</div>
