@@ -94,10 +94,11 @@ $(document).ready(function(){initNavTree('classasl_1_1_file.html',''); initResiz
 <div class="textblock"><p>Class <a class="el" href="classasl_1_1_file.html" title="Class File represents a file in the filesystem.">File</a> represents a file in the filesystem. </p>
 <p>It can be used to get information about a file (its size, its modification date, whether it exists), to read or write in it in one step, without explicitly opening it, or to read and write in a more conventional way. The file is automatically closed on object destruction. For text files you should use class <a class="el" href="classasl_1_1_text_file.html" title="Class TextFile represents a text file in the filesystem.">TextFile</a>.</p>
 <div class="fragment"><div class="line">Date lasttime = <a class="code" href="classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b">File</a>(<span class="stringliteral">&quot;access.log&quot;</span>).lastModified();</div>
-<div class="line">Array&lt;byte&gt; data = <a class="code" href="classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b">File</a>(<span class="stringliteral">&quot;data.bin&quot;</span>).content();</div>
+<div class="line"><a class="code" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> data = <a class="code" href="classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b">File</a>(<span class="stringliteral">&quot;data.bin&quot;</span>).content();</div>
 <div class="line"><span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="classasl_1_1_file.html#aa7428f0eb50010cc1ccb5f00bb76dc8d">size</a> = <a class="code" href="classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b">File</a>(<span class="stringliteral">&quot;video.mp4&quot;</span>).size();</div>
 <div class="ttc" id="aclassasl_1_1_file_html_aa2399b233765f85aead662a2f1e67c4b"><div class="ttname"><a href="classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b">asl::File::File</a></div><div class="ttdeci">File()</div><div class="ttdoc">Constructs a File object with no associated file.</div><div class="ttdef"><b>Definition:</b> File.h:63</div></div>
 <div class="ttc" id="aclassasl_1_1_file_html_aa7428f0eb50010cc1ccb5f00bb76dc8d"><div class="ttname"><a href="classasl_1_1_file.html#aa7428f0eb50010cc1ccb5f00bb76dc8d">asl::File::size</a></div><div class="ttdeci">Long size() const</div><div class="ttdoc">Returns the file size.</div></div>
+<div class="ttc" id="agroup___containers_html_ga83ec16f5e316b5d33c0feed881d2c982"><div class="ttname"><a href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">asl::ByteArray</a></div><div class="ttdeci">Array&lt; byte &gt; ByteArray</div><div class="ttdoc">An alias for Array&lt;byte&gt;</div><div class="ttdef"><b>Definition:</b> Array.h:616</div></div>
 </div><!-- fragment --><p>There are also conventional functions to explicitly open a file for reading or writing:</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b">File</a> file(<span class="stringliteral">&quot;data.bin&quot;</span>, File::WRITE);   <span class="comment">// opened in constructor</span></div>
 <div class="line">file.seek(16);</div>
@@ -191,17 +192,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#a1f9c4a4bd47b7cd9beb431504c5ae46c">remove</a> ()</td></tr>
 <tr class="memdesc:a1f9c4a4bd47b7cd9beb431504c5ae46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the file. <br /></td></tr>
 <tr class="separator:a1f9c4a4bd47b7cd9beb431504c5ae46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ffffa307f30e38668ec47f8f8c7b83"><td class="memItemLeft" align="right" valign="top"><a id="a12ffffa307f30e38668ec47f8f8c7b83"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#a12ffffa307f30e38668ec47f8f8c7b83">firstBytes</a> (int n)</td></tr>
-<tr class="memdesc:a12ffffa307f30e38668ec47f8f8c7b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first n bytes in the file. <br /></td></tr>
-<tr class="separator:a12ffffa307f30e38668ec47f8f8c7b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa5299ebb784615745cdb59333f71b53"><td class="memItemLeft" align="right" valign="top"><a id="aaa5299ebb784615745cdb59333f71b53"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#aaa5299ebb784615745cdb59333f71b53">content</a> ()</td></tr>
-<tr class="memdesc:aaa5299ebb784615745cdb59333f71b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binary content of the file as an array of bytes. <br /></td></tr>
-<tr class="separator:aaa5299ebb784615745cdb59333f71b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f3ae63cd1e2cb1743923b39ba22795"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#af8f3ae63cd1e2cb1743923b39ba22795">put</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;data)</td></tr>
-<tr class="memdesc:af8f3ae63cd1e2cb1743923b39ba22795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the binary content of the file from an array of bytes.  <a href="classasl_1_1_file.html#af8f3ae63cd1e2cb1743923b39ba22795">More...</a><br /></td></tr>
-<tr class="separator:af8f3ae63cd1e2cb1743923b39ba22795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219d89d533372e594c96625fd73b31ec"><td class="memItemLeft" align="right" valign="top"><a id="a219d89d533372e594c96625fd73b31ec"></a>
+<a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#a219d89d533372e594c96625fd73b31ec">firstBytes</a> (int n)</td></tr>
+<tr class="memdesc:a219d89d533372e594c96625fd73b31ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first n bytes in the file. <br /></td></tr>
+<tr class="separator:a219d89d533372e594c96625fd73b31ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c278aaf9abda301edda81159a171c63"><td class="memItemLeft" align="right" valign="top"><a id="a8c278aaf9abda301edda81159a171c63"></a>
+<a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#a8c278aaf9abda301edda81159a171c63">content</a> ()</td></tr>
+<tr class="memdesc:a8c278aaf9abda301edda81159a171c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binary content of the file as an array of bytes. <br /></td></tr>
+<tr class="separator:a8c278aaf9abda301edda81159a171c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9255f1a0261cbe2a7728f41d0900166"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#aa9255f1a0261cbe2a7728f41d0900166">put</a> (const <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;data)</td></tr>
+<tr class="memdesc:aa9255f1a0261cbe2a7728f41d0900166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the binary content of the file from an array of bytes.  <a href="classasl_1_1_file.html#aa9255f1a0261cbe2a7728f41d0900166">More...</a><br /></td></tr>
+<tr class="separator:aa9255f1a0261cbe2a7728f41d0900166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a029db2c25b8b8e140f7b2a6507ae0433"><td class="memItemLeft" align="right" valign="top"><a id="a029db2c25b8b8e140f7b2a6507ae0433"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#a029db2c25b8b8e140f7b2a6507ae0433">open</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_file.html#a554c3e7ca3ebc1c1b358b92f5b5980c2">name</a>, OpenMode mode=READ)</td></tr>
 <tr class="memdesc:a029db2c25b8b8e140f7b2a6507ae0433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the file with the specified access mode. <br /></td></tr>
@@ -302,8 +303,8 @@ static <a class="el" href="classasl_1_1_file.html">File</a>&#160;</td><td class=
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af8f3ae63cd1e2cb1743923b39ba22795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8f3ae63cd1e2cb1743923b39ba22795">&#9670;&nbsp;</a></span>put()</h2>
+<a id="aa9255f1a0261cbe2a7728f41d0900166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9255f1a0261cbe2a7728f41d0900166">&#9670;&nbsp;</a></span>put()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +312,7 @@ static <a class="el" href="classasl_1_1_file.html">File</a>&#160;</td><td class=
         <tr>
           <td class="memname">bool put </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>

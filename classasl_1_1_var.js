@@ -30,6 +30,8 @@ var classasl_1_1_var =
     [ "operator[]", "classasl_1_1_var.html#a00492e0a99a383a00ebdd9dabb7e9a07", null ],
     [ "operator[]", "classasl_1_1_var.html#ad75fea465adcc0547872faf2ac18024d", null ],
     [ "operator|", "classasl_1_1_var.html#a1069a007f89d9946c53b59a2fa8ac543", null ],
+    [ "remove", "classasl_1_1_var.html#abf841651c80a716f58dfd1ea1e1a9010", null ],
+    [ "removeAt", "classasl_1_1_var.html#add9e5ee49cf882bff5efb338a145b88b", null ],
     [ "resize", "classasl_1_1_var.html#a578be9c59132b8633a67a98c39318777", null ],
     [ "string", "classasl_1_1_var.html#a55e6f88e6a91175a5afadec5e2fbd8f2", null ],
     [ "type", "classasl_1_1_var.html#adf4a6727c689e0038cf2cdd158d5ed2c", null ]

@@ -92,26 +92,28 @@ $(document).ready(function(){initNavTree('group___containers.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>There are several container classes that can hold elements of any type (<a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>, <a class="el" href="classasl_1_1_map.html" title="An associative container linking keys of type K with values of type T.">Map</a>, <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, <a class="el" href="classasl_1_1_stack.html" title="This class represents a stack of elements of any type.">Stack</a>, <a class="el" href="classasl_1_1_hash_map.html" title="This class implements a hash map, an unordered map of keys to values.">HashMap</a>). </p>
+<p>There are several container classes that can hold elements of any type (<a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>, <a class="el" href="classasl_1_1_array__.html" title="This class represents a fixed-length array.">Array_</a>, <a class="el" href="classasl_1_1_array2.html" title="A simple 2-dimensional dynamic array or matrix.">Array2</a>, <a class="el" href="classasl_1_1_map.html" title="An associative container linking keys of type K with values of type T.">Map</a>, <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, <a class="el" href="classasl_1_1_stack.html" title="This class represents a stack of elements of any type.">Stack</a>, <a class="el" href="classasl_1_1_hash_map.html" title="This class implements a hash map, an unordered map of keys to values.">HashMap</a>). </p>
 <p>These classes are reference-counted, so they are copied by reference. If a separate copy is required, use the <code>clone()</code> method:</p>
 <div class="fragment"><div class="line">Array&lt;int&gt; a = <a class="code" href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">array</a>(1, 2, 3);</div>
 <div class="line">Array&lt;int&gt; b = a;               <span class="comment">// b is the same as a</span></div>
 <div class="line">Array&lt;int&gt; c = a.clone();       <span class="comment">// c is a separate copy of a</span></div>
 <div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:755</div></div>
-</div><!-- fragment --><p>In order to support iterating the elements contained, they implement an <em>Enumerator</em>. These are similar to <em>iterators</em> but don't have to come in pairs (<em>begin</em> and <em>end</em>). Just one Enumerator knows how to go to the next element and when to stop iterating.</p>
-<p>All containers have an <code>all()</code> enumerator that represents all its elements. All enumerators must implement operator <code>*</code> to dereference the currently pointed element, and may implement operator <code>~</code> to get their associated <em>key</em>, if any. For example, in an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>, they key is the integer index associated to each element. And in a <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, the key is the element's name, a string.</p>
-<p>This way, enumerating is done like this: (the keyword <code>auto</code> is useful if your compiler supports it)</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span>(Array&lt;T&gt;::Enumerator e = container.all(); e; ++e)</div>
-<div class="line">{</div>
-<div class="line">    cout &lt;&lt; ~e &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; *e &lt;&lt; endl;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>That way, if container was a <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, it would be printing the names and values of all elements.</p>
-<p>In C++11 compilers you can also use <em>range-based for</em> loops:</p>
+</div><!-- fragment --><p>In C++11 compilers you can use <em>range-based for</em> loops to iterate over their items:</p>
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">float</span> x: numbers)</div>
 <div class="line">{</div>
 <div class="line">    sum += x;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>And for older compilers there is a shorthand notation for iterating, <code>foreach</code> and <code>foreach2</code> loops. The first iterates on the values of elements. And the second on both the keys and values of elements.</p>
+</div><!-- fragment --><p>Maps (<a class="el" href="classasl_1_1_map.html" title="An associative container linking keys of type K with values of type T.">Map</a>, <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, <a class="el" href="classasl_1_1_hash_map.html" title="This class implements a hash map, an unordered map of keys to values.">HashMap</a>), can be iterated like this in C++11:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; e : constants)</div>
+<div class="line">{</div>
+<div class="line">    file &lt;&lt; e.key &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> e.value &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Or this way in C++17:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [name, value] : constants)</div>
+<div class="line">{</div>
+<div class="line">    file &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> value &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>For older compilers there are special macros for iterating, <code>foreach</code> and <code>foreach2</code> loops. The first iterates on the values of elements. And the second on both the keys and values of elements.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">float</span> sum = 0;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">foreach</span>(<span class="keywordtype">float</span> x, numbers)</div>
@@ -128,11 +130,22 @@ $(document).ready(function(){initNavTree('group___containers.html',''); initResi
 <div class="line">    cout &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; is &quot;</span> &lt;&lt; age &lt;&lt; <span class="stringliteral">&quot; years old&quot;</span> &lt;&lt; endl;</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup___containers_html_gada2796cfee1961387a09942600ecf5cd"><div class="ttname"><a href="group___containers.html#gada2796cfee1961387a09942600ecf5cd">foreach2</a></div><div class="ttdeci">#define foreach2(key, variable, set)</div><div class="ttdoc">A for loop for associative containers resembling C++17 range-based for with structured binding.</div><div class="ttdef"><b>Definition:</b> foreach1.h:72</div></div>
-</div><!-- fragment --> <table class="memberdecls">
+</div><!-- fragment --><p>In order to support iterating the elements contained, these classes implement an <em>Enumerator</em>. These are similar to <em>iterators</em> but don't have to come in pairs (<em>begin</em> and <em>end</em>). Just one Enumerator knows how to go to the next element and when to stop iterating.</p>
+<p>All containers have an <code>all()</code> enumerator that represents all its elements. All enumerators must implement operator <code>*</code> to dereference the currently pointed element, and may implement operator <code>~</code> to get their associated <em>key</em>, if any. For example, in an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>, they key is the integer index associated to each element. And in a <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, the key is the element's name, a string.</p>
+<p>This way, enumerating is done like this: (the keyword <code>auto</code> is useful if your compiler supports it)</p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span>(Array&lt;T&gt;::Enumerator e = container.all(); e; ++e)</div>
+<div class="line">{</div>
+<div class="line">    cout &lt;&lt; ~e &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; *e &lt;&lt; endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>That way, if container was a <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, it would be printing the names and values of all elements. </p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html">Array&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a> is a contiguous and resizable array of any type of elements.  <a href="classasl_1_1_array.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array2.html">Array2&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple 2-dimensional dynamic array or matrix.  <a href="classasl_1_1_array2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array__.html">Array_&lt; T, N &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a fixed-length array.  <a href="classasl_1_1_array__.html#details">More...</a><br /></td></tr>
