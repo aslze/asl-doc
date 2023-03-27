@@ -97,12 +97,12 @@ $(document).ready(function(){initNavTree('classasl_1_1_multicast_socket.html',''
 <div class="fragment"><div class="line">MulticastSocket socket;</div>
 <div class="line">socket.join(group);</div>
 <div class="line">InetAddress sender;</div>
-<div class="line">socket.readFrom(sender, data, <span class="keyword">sizeof</span>(data));</div>
+<div class="line">socket.readFrom(sender, data);</div>
 <div class="line">socket.leave(group);</div>
 </div><!-- fragment --><p>And a sending side would start a multicast session to the same group and send packets to it:</p>
 <div class="fragment"><div class="line">MulticastSocket socket;</div>
 <div class="line">socket.multicast(group);</div>
-<div class="line">socket.write(data, <span class="keyword">sizeof</span>(data));</div>
+<div class="line">socket.write(data);</div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Socket.h&gt;</code></p>
 <div class="dynheader">
@@ -129,14 +129,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a074815527f71a4ed6a8f70114f041dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a multicast session for group address <code>a</code>.  <a href="classasl_1_1_multicast_socket.html#a074815527f71a4ed6a8f70114f041dfc">More...</a><br /></td></tr>
 <tr class="separator:a074815527f71a4ed6a8f70114f041dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasl_1_1_packet_socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasl_1_1_packet_socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasl_1_1_packet_socket.html">PacketSocket</a></td></tr>
-<tr class="memitem:a383f707b32449ef0a41fd9559a3d56b6 inherit pub_methods_classasl_1_1_packet_socket"><td class="memItemLeft" align="right" valign="top"><a id="a383f707b32449ef0a41fd9559a3d56b6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_packet_socket.html#a383f707b32449ef0a41fd9559a3d56b6">sendTo</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;addr, const void *data, int n)</td></tr>
-<tr class="memdesc:a383f707b32449ef0a41fd9559a3d56b6 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>n</code> bytes from <code>data</code> as a packet to the address <code>addr</code>. <br /></td></tr>
-<tr class="separator:a383f707b32449ef0a41fd9559a3d56b6 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57efdc235b0492159983ac2f030a950 inherit pub_methods_classasl_1_1_packet_socket"><td class="memItemLeft" align="right" valign="top"><a id="aa57efdc235b0492159983ac2f030a950"></a>
+<a class="el" href="classasl_1_1_string.html">String</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950">sendTo</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;addr, const void *data, int n)</td></tr>
+<tr class="memdesc:aa57efdc235b0492159983ac2f030a950 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>n</code> bytes from <code>data</code> as a packet to the address <code>addr</code>. <br /></td></tr>
+<tr class="separator:aa57efdc235b0492159983ac2f030a950 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f07761e631847bb2c1656c46715eae inherit pub_methods_classasl_1_1_packet_socket"><td class="memItemLeft" align="right" valign="top"><a id="aa6f07761e631847bb2c1656c46715eae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_packet_socket.html#aa6f07761e631847bb2c1656c46715eae">sendTo</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;addr, const <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;data)</td></tr>
+<tr class="memdesc:aa6f07761e631847bb2c1656c46715eae inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a data packet to the address <code>addr</code>. <br /></td></tr>
+<tr class="separator:aa6f07761e631847bb2c1656c46715eae inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d7129b0e26a2f291ba37b2dee373297 inherit pub_methods_classasl_1_1_packet_socket"><td class="memItemLeft" align="right" valign="top"><a id="a7d7129b0e26a2f291ba37b2dee373297"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297">readFrom</a> (<a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;addr, void *data, int n)</td></tr>
 <tr class="memdesc:a7d7129b0e26a2f291ba37b2dee373297 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an incoming packet into the buffer <code>data</code> of size <code>n</code>, writes the address of the sending peer and returns the actual packet size. <br /></td></tr>
 <tr class="separator:a7d7129b0e26a2f291ba37b2dee373297 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5098a943159fbafb0b1ef6006759ad59 inherit pub_methods_classasl_1_1_packet_socket"><td class="memItemLeft" align="right" valign="top"><a id="a5098a943159fbafb0b1ef6006759ad59"></a>
+<a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_packet_socket.html#a5098a943159fbafb0b1ef6006759ad59">readFrom</a> (<a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;addr, int n=1000)</td></tr>
+<tr class="memdesc:a5098a943159fbafb0b1ef6006759ad59 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an incoming packet of at most n bytes and returns it, and gets the address of the sending peer. <br /></td></tr>
+<tr class="separator:a5098a943159fbafb0b1ef6006759ad59 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasl_1_1_socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasl_1_1_socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasl_1_1_socket.html">Socket</a></td></tr>
 <tr class="memitem:a7e04ee0f03fdea43f0956ab37a7c2c72 inherit pub_methods_classasl_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a id="a7e04ee0f03fdea43f0956ab37a7c2c72"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72">disconnected</a> ()</td></tr>
@@ -192,8 +200,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a494f625565a99b19813e03c618e82daf inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac69387852b359a0c7490bb7133e77084 inherit pub_methods_classasl_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a id="ac69387852b359a0c7490bb7133e77084"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#ac69387852b359a0c7490bb7133e77084">write</a> (const void *data, int n)</td></tr>
-<tr class="memdesc:ac69387852b359a0c7490bb7133e77084 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <code>size</code> bytes from the bufffer pointed to by <code>data</code> to the socket. <br /></td></tr>
+<tr class="memdesc:ac69387852b359a0c7490bb7133e77084 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <code>n</code> bytes from the bufffer pointed to by <code>data</code> to the socket. <br /></td></tr>
 <tr class="separator:ac69387852b359a0c7490bb7133e77084 inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be330db11d7ccaf30e85a48098f5739 inherit pub_methods_classasl_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a id="a3be330db11d7ccaf30e85a48098f5739"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a3be330db11d7ccaf30e85a48098f5739">write</a> (const <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;data)</td></tr>
+<tr class="memdesc:a3be330db11d7ccaf30e85a48098f5739 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the byte array to the socket and returns the number of bytes actually sent. <br /></td></tr>
+<tr class="separator:a3be330db11d7ccaf30e85a48098f5739 inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c6ae5ceb5a015e1f11090189c210386 inherit pub_methods_classasl_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a id="a7c6ae5ceb5a015e1f11090189c210386"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a7c6ae5ceb5a015e1f11090189c210386">read</a> (int n=-1)</td></tr>
 <tr class="memdesc:a7c6ae5ceb5a015e1f11090189c210386 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n bytes and returns them as an array of bytes, or reads all available bytes if no argument is given. <br /></td></tr>

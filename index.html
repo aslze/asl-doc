@@ -137,7 +137,7 @@ Compilation and use</h1>
 </div><!-- fragment --><p>There is no need to provide the library directory or set <em>include_directories</em>. <code>find_package</code> will find the library compatible with the current project among the versions compiled.</p>
 <p>With CMake 3.14+, instead of using <code>find_package()</code>, you can download and build the library automatically as a subproject (and then link with it as before):</p>
 <div class="fragment"><div class="line">include(FetchContent)</div>
-<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.6.zip)</span></div>
+<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.7.zip)</span></div>
 <div class="line">FetchContent_MakeAvailable(asl)</div>
 </div><!-- fragment --><p>Remember that all header files have the <code>asl/</code> prefix directory and are named like the class they define (case-sensitively), and that all symbols are in the <code>asl</code> namespace. So, for example, to use the <a class="el" href="classasl_1_1_directory.html" title="This class allows enumerating the contents of a directory: its files and subdirectories.">Directory</a> class:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;asl/Directory.h&gt;</span></div>

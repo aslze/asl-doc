@@ -29,11 +29,14 @@ var group___sockets =
       [ "skip", "classasl_1_1_socket.html#a22e04fd90a8da8fbaa968a171d19c6f8", null ],
       [ "waitData", "classasl_1_1_socket.html#a1369224aced95f8e426b57c32e31edb0", null ],
       [ "waitInput", "classasl_1_1_socket.html#aefa1626300c3e236bc6cc39bb320f8ce", null ],
+      [ "write", "classasl_1_1_socket.html#a3be330db11d7ccaf30e85a48098f5739", null ],
       [ "write", "classasl_1_1_socket.html#ac69387852b359a0c7490bb7133e77084", null ]
     ] ],
     [ "PacketSocket", "classasl_1_1_packet_socket.html", [
+      [ "readFrom", "classasl_1_1_packet_socket.html#a5098a943159fbafb0b1ef6006759ad59", null ],
       [ "readFrom", "classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297", null ],
-      [ "sendTo", "classasl_1_1_packet_socket.html#a383f707b32449ef0a41fd9559a3d56b6", null ]
+      [ "sendTo", "classasl_1_1_packet_socket.html#aa6f07761e631847bb2c1656c46715eae", null ],
+      [ "sendTo", "classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950", null ]
     ] ],
     [ "MulticastSocket", "classasl_1_1_multicast_socket.html", [
       [ "join", "classasl_1_1_multicast_socket.html#a728eddb6e3481c922cf68dee83f3cb33", null ],

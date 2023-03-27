@@ -11,7 +11,7 @@ var searchData=
   ['send_417',['send',['../classasl_1_1_web_socket.html#aa75eb785dcb9c813c2fbe764960bbbfd',1,'asl::WebSocket::send(const Var &amp;v)'],['../classasl_1_1_web_socket.html#a5880ab8c687799f3bfeb587fb2cd9ac8',1,'asl::WebSocket::send(const String &amp;m)'],['../classasl_1_1_web_socket.html#a326aa858d03d76beb81119aa64fd58b4',1,'asl::WebSocket::send(const Array&lt; byte &gt; &amp;m)']]],
   ['sender_418',['sender',['../classasl_1_1_http_request.html#a45dbb6b6c60a7633275f7016a34a5b2d',1,'asl::HttpRequest']]],
   ['sendheaders_419',['sendHeaders',['../classasl_1_1_http_message.html#ac84497f55b0206c1b4cd2b9d034c6957',1,'asl::HttpMessage']]],
-  ['sendto_420',['sendTo',['../classasl_1_1_packet_socket.html#a383f707b32449ef0a41fd9559a3d56b6',1,'asl::PacketSocket']]],
+  ['sendto_420',['sendTo',['../classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950',1,'asl::PacketSocket::sendTo(const InetAddress &amp;addr, const void *data, int n)'],['../classasl_1_1_packet_socket.html#aa6f07761e631847bb2c1656c46715eae',1,'asl::PacketSocket::sendTo(const InetAddress &amp;addr, const ByteArray &amp;data)']]],
   ['serialport_421',['SerialPort',['../classasl_1_1_serial_port.html',1,'asl']]],
   ['serve_422',['serve',['../classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161',1,'asl::HttpServer::serve()'],['../classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b',1,'asl::SocketServer::serve()'],['../classasl_1_1_web_socket_server.html#ac7624414722fee9512043e8544da38d2',1,'asl::WebSocketServer::serve()']]],
   ['servefile_423',['serveFile',['../classasl_1_1_http_server.html#a84b30a79171ee83b75738431c80eb507',1,'asl::HttpServer']]],

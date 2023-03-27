@@ -21,5 +21,6 @@ var classasl_1_1_socket =
     [ "skip", "classasl_1_1_socket.html#a22e04fd90a8da8fbaa968a171d19c6f8", null ],
     [ "waitData", "classasl_1_1_socket.html#a1369224aced95f8e426b57c32e31edb0", null ],
     [ "waitInput", "classasl_1_1_socket.html#aefa1626300c3e236bc6cc39bb320f8ce", null ],
+    [ "write", "classasl_1_1_socket.html#a3be330db11d7ccaf30e85a48098f5739", null ],
     [ "write", "classasl_1_1_socket.html#ac69387852b359a0c7490bb7133e77084", null ]
 ];
