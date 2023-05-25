@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['level_1082',['Level',['../classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5',1,'asl::Log']]]
+  ['format_0',['Format',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58',1,'asl::Date']]]
 ];

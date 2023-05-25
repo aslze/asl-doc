@@ -17,12 +17,12 @@ var group___threading =
       [ "wait", "classasl_1_1_condition.html#a3be50c5fde5c5a2edee4efe73a92f05b", null ]
     ] ],
     [ "Lock", "classasl_1_1_lock.html", null ],
-    [ "Atomic", "classasl_1_1_atomic.html", [
-      [ "locked", "classasl_1_1_atomic.html#a199b23876d21194b0407ad56c8b6fe2a", null ],
-      [ "mutex", "classasl_1_1_atomic.html#ac904e42293f33414e08f376895175fe2", null ],
+    [ "Atomic< T >", "classasl_1_1_atomic.html", [
+      [ "locked", "classasl_1_1_atomic.html#ad519fa28b974579a2a10e64dc2990ee7", null ],
+      [ "mutex", "classasl_1_1_atomic.html#a4b71bb3f4acfb0d771b8280af8cbf259", null ],
       [ "operator T", "classasl_1_1_atomic.html#a54724b9dd792a6022b918eae2f393734", null ],
-      [ "operator*", "classasl_1_1_atomic.html#af7f8c6b921dca2b94f6e7ee14e762770", null ],
-      [ "operator->", "classasl_1_1_atomic.html#a76f6e017dd2e3905e52f6e8c08742128", null ],
+      [ "operator*", "classasl_1_1_atomic.html#a3f534efce0b043d603eb8f5653268e7d", null ],
+      [ "operator->", "classasl_1_1_atomic.html#a842d175d1b5d4a6159bda1f5606c95bf", null ],
       [ "operator~", "classasl_1_1_atomic.html#a717677c3a678e78bca61ea73763b6f8b", null ]
     ] ],
     [ "Thread", "classasl_1_1_thread.html", [

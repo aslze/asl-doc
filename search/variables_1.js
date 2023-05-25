@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x',['x',['../classasl_1_1_vec3__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d',1,'asl::Vec3_::x()'],['../classasl_1_1_vec4__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d',1,'asl::Vec4_::x()']]]
+  ['maxerr_0',['maxerr',['../structasl_1_1_solve_params.html#a5f25357e657e9c76ec6a1c0c804e427f',1,'asl::SolveParams']]],
+  ['maxiter_1',['maxiter',['../structasl_1_1_solve_params.html#a274519264a28477940f161ddb4b61feb',1,'asl::SolveParams']]]
 ];

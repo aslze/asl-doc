@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_1077',['x',['../classasl_1_1_vec3__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d',1,'asl::Vec3_::x()'],['../classasl_1_1_vec4__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d',1,'asl::Vec4_::x()']]]
+  ['delta_0',['delta',['../structasl_1_1_solve_params.html#a9ea1a8f5ef3e6d20b362385e1288c72c',1,'asl::SolveParams']]]
 ];

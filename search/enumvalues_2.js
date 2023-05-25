@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ok_1088',['OK',['../classasl_1_1_http_response.html#a90549f45cfc442187c1d769596107d3ea2bc49ec37d6a5715dd23e85f1ff5bb59',1,'asl::HttpResponse']]]
+  ['full_0',['FULL',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58ad08f8ac0aa8dfb59589824359772459e',1,'asl::Date']]]
 ];

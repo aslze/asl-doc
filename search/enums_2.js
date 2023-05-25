@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mode_1083',['Mode',['../structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911',1,'asl::Json']]]
+  ['level_0',['Level',['../classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5',1,'asl::Log']]]
 ];

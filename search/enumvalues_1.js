@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['nice_1086',['NICE',['../structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ab31411fab4fd2cab988d78995b9e888f',1,'asl::Json']]],
-  ['none_1087',['NONE',['../structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911ac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'asl::Json']]]
+  ['date_5fonly_0',['DATE_ONLY',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58a282b0f3108fea36b6e174b42db19b411',1,'asl::Date']]]
 ];

@@ -24,5 +24,6 @@ var classasl_1_1_matrix__ =
     [ "slice", "classasl_1_1_matrix__.html#ae9b8e77240745684c997e16f7edfdb33", null ],
     [ "trace", "classasl_1_1_matrix__.html#a7244be79e2fc3ebe040509296120dcbf", null ],
     [ "transposed", "classasl_1_1_matrix__.html#a860ac0d768c257983828633bb53eeda1", null ],
-    [ "with", "classasl_1_1_matrix__.html#a259c4d02ab0eb4d708eeb8ee22353c58", null ]
+    [ "transposed", "classasl_1_1_matrix__.html#a608452fc8d3cfed85ddcdeb874d6a103", null ],
+    [ "with", "classasl_1_1_matrix__.html#a8257fa9ee4d96734e338f5ca99f45387", null ]
 ];
