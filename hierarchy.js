@@ -18,14 +18,12 @@ var hierarchy =
     [ "Array< asl::WebSocket * >", "classasl_1_1_array.html", null ],
     [ "Array< asl::Xml >", "classasl_1_1_array.html", null ],
     [ "Array< byte >", "classasl_1_1_array.html", [
-      [ "StreamBuffer", "classasl_1_1_stream_buffer.html", null ],
       [ "StreamBuffer", "classasl_1_1_stream_buffer.html", null ]
     ] ],
     [ "Array< char >", "classasl_1_1_array.html", null ],
     [ "Array< Context >", "classasl_1_1_array.html", null ],
     [ "Array< KeyVal >", "classasl_1_1_array.html", null ],
     [ "Array< KeyValN * >", "classasl_1_1_array.html", null ],
-    [ "Array< StaticSpace< T > >", "classasl_1_1_array.html", null ],
     [ "Array_< T, N >", "classasl_1_1_array__.html", null ],
     [ "Atomic< T >", "classasl_1_1_atomic.html", null ],
     [ "CmdArgs", "classasl_1_1_cmd_args.html", null ],

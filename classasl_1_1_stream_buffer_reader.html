@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_stream_buffer_reader.html
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition:</b> Array.h:82</div></div>
 <div class="ttc" id="aclassasl_1_1_file_html"><div class="ttname"><a href="classasl_1_1_file.html">asl::File</a></div><div class="ttdoc">Class File represents a file in the filesystem.</div><div class="ttdef"><b>Definition:</b> File.h:49</div></div>
 <div class="ttc" id="aclassasl_1_1_file_html_a8c278aaf9abda301edda81159a171c63"><div class="ttname"><a href="classasl_1_1_file.html#a8c278aaf9abda301edda81159a171c63">asl::File::content</a></div><div class="ttdeci">ByteArray content()</div><div class="ttdoc">Returns the binary content of the file as an array of bytes.</div></div>
-<div class="ttc" id="aclassasl_1_1_stream_buffer_reader_html"><div class="ttname"><a href="classasl_1_1_stream_buffer_reader.html">asl::StreamBufferReader</a></div><div class="ttdoc">This class allows reading a memory buffer as a binary stream.</div><div class="ttdef"><b>Definition:</b> StreamBuffer - copia.h:53</div></div>
+<div class="ttc" id="aclassasl_1_1_stream_buffer_reader_html"><div class="ttname"><a href="classasl_1_1_stream_buffer_reader.html">asl::StreamBufferReader</a></div><div class="ttdoc">This class allows reading a memory buffer as a binary stream.</div><div class="ttdef"><b>Definition:</b> StreamBuffer.h:53</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;StreamBuffer.h&gt;</code></p>
 <table class="memberdecls">
@@ -178,74 +178,8 @@ template&lt;class T &gt; </td></tr>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (int n=-1)</td></tr>
 <tr class="memdesc:a3b1f385d1823b774dd5cc5a5a09500ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n bytes into an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a> (or all remaining bytes by default) <br /></td></tr>
 <tr class="separator:a3b1f385d1823b774dd5cc5a5a09500ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab10dce9a7e47723e9731f92e822e3e62"><td class="memItemLeft" align="right" valign="top"><a id="ab10dce9a7e47723e9731f92e822e3e62" name="ab10dce9a7e47723e9731f92e822e3e62"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StreamBufferReader</b> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;data, Endian e=ENDIAN_LITTLE)</td></tr>
-<tr class="memdesc:ab10dce9a7e47723e9731f92e822e3e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a buffer reader from a byte array. <br /></td></tr>
-<tr class="separator:ab10dce9a7e47723e9731f92e822e3e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f10dc05a144b1980abf1bb7c5accd98"><td class="memItemLeft" align="right" valign="top"><a id="a9f10dc05a144b1980abf1bb7c5accd98" name="a9f10dc05a144b1980abf1bb7c5accd98"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StreamBufferReader</b> (const <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> *data, int n, Endian e=ENDIAN_LITTLE)</td></tr>
-<tr class="memdesc:a9f10dc05a144b1980abf1bb7c5accd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a buffer reader from a raw byte array. <br /></td></tr>
-<tr class="separator:a9f10dc05a144b1980abf1bb7c5accd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b59b8d8776fde8418d6692453404c1"><td class="memItemLeft" align="right" valign="top"><a id="ab8b59b8d8776fde8418d6692453404c1" name="ab8b59b8d8776fde8418d6692453404c1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEndian</b> (Endian e)</td></tr>
-<tr class="memdesc:ab8b59b8d8776fde8418d6692453404c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the endianness for reading (can be changed on the fly) <br /></td></tr>
-<tr class="separator:ab8b59b8d8776fde8418d6692453404c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a799d8a862f17ae23a8c3950e27dd693f"><td class="memItemLeft" align="right" valign="top"><a id="a799d8a862f17ae23a8c3950e27dd693f" name="a799d8a862f17ae23a8c3950e27dd693f"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>skip</b> (int n)</td></tr>
-<tr class="memdesc:a799d8a862f17ae23a8c3950e27dd693f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips a number of bytes. <br /></td></tr>
-<tr class="separator:a799d8a862f17ae23a8c3950e27dd693f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42f0ba2ea99ff4e6c56ee79b8a6f31de"><td class="memItemLeft" align="right" valign="top"><a id="a42f0ba2ea99ff4e6c56ee79b8a6f31de" name="a42f0ba2ea99ff4e6c56ee79b8a6f31de"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (char &amp;x)</td></tr>
-<tr class="memdesc:a42f0ba2ea99ff4e6c56ee79b8a6f31de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:a42f0ba2ea99ff4e6c56ee79b8a6f31de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7765cfde000dd9336f000ca9f769d9ae"><td class="memItemLeft" align="right" valign="top"><a id="a7765cfde000dd9336f000ca9f769d9ae" name="a7765cfde000dd9336f000ca9f769d9ae"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (<a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &amp;x)</td></tr>
-<tr class="memdesc:a7765cfde000dd9336f000ca9f769d9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:a7765cfde000dd9336f000ca9f769d9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ca8de2d8bd107c8ed41f3331ca36819"><td class="memItemLeft" align="right" valign="top"><a id="a3ca8de2d8bd107c8ed41f3331ca36819" name="a3ca8de2d8bd107c8ed41f3331ca36819"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (short &amp;x)</td></tr>
-<tr class="memdesc:a3ca8de2d8bd107c8ed41f3331ca36819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:a3ca8de2d8bd107c8ed41f3331ca36819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1375858f8addfbbcf584946e879ea9be"><td class="memItemLeft" align="right" valign="top"><a id="a1375858f8addfbbcf584946e879ea9be" name="a1375858f8addfbbcf584946e879ea9be"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (unsigned short &amp;x)</td></tr>
-<tr class="memdesc:a1375858f8addfbbcf584946e879ea9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:a1375858f8addfbbcf584946e879ea9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53a0c7f1ae236b25b4fa9fb985b4401e"><td class="memItemLeft" align="right" valign="top"><a id="a53a0c7f1ae236b25b4fa9fb985b4401e" name="a53a0c7f1ae236b25b4fa9fb985b4401e"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (int &amp;x)</td></tr>
-<tr class="memdesc:a53a0c7f1ae236b25b4fa9fb985b4401e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:a53a0c7f1ae236b25b4fa9fb985b4401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8a832dff294aeec0530819b9d6b0b1"><td class="memItemLeft" align="right" valign="top"><a id="ace8a832dff294aeec0530819b9d6b0b1" name="ace8a832dff294aeec0530819b9d6b0b1"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (unsigned &amp;x)</td></tr>
-<tr class="memdesc:ace8a832dff294aeec0530819b9d6b0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:ace8a832dff294aeec0530819b9d6b0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38381c732c911cc404f21cf501628cd2"><td class="memItemLeft" align="right" valign="top"><a id="a38381c732c911cc404f21cf501628cd2" name="a38381c732c911cc404f21cf501628cd2"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (float &amp;x)</td></tr>
-<tr class="memdesc:a38381c732c911cc404f21cf501628cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:a38381c732c911cc404f21cf501628cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82ccef4c008f89022fc8962cebd49b8"><td class="memItemLeft" align="right" valign="top"><a id="ab82ccef4c008f89022fc8962cebd49b8" name="ab82ccef4c008f89022fc8962cebd49b8"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Long &amp;x)</td></tr>
-<tr class="memdesc:ab82ccef4c008f89022fc8962cebd49b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:ab82ccef4c008f89022fc8962cebd49b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb4737f5e8367d1b5941e702de6233c"><td class="memItemLeft" align="right" valign="top"><a id="a5fb4737f5e8367d1b5941e702de6233c" name="a5fb4737f5e8367d1b5941e702de6233c"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (ULong &amp;x)</td></tr>
-<tr class="memdesc:a5fb4737f5e8367d1b5941e702de6233c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:a5fb4737f5e8367d1b5941e702de6233c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc2ae10d422e21635c485de2b4bfe9e0"><td class="memItemLeft" align="right" valign="top"><a id="afc2ae10d422e21635c485de2b4bfe9e0" name="afc2ae10d422e21635c485de2b4bfe9e0"></a>
-<a class="el" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (double &amp;x)</td></tr>
-<tr class="memdesc:afc2ae10d422e21635c485de2b4bfe9e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer. <br /></td></tr>
-<tr class="separator:afc2ae10d422e21635c485de2b4bfe9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16b887199560a8c482c1662eadaeadbe"><td class="memTemplParams" colspan="2"><a id="a16b887199560a8c482c1662eadaeadbe" name="a16b887199560a8c482c1662eadaeadbe"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a16b887199560a8c482c1662eadaeadbe"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> ()</td></tr>
-<tr class="memdesc:a16b887199560a8c482c1662eadaeadbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer: <code>float x = buffer.read&lt;float&gt;()</code> <br /></td></tr>
-<tr class="separator:a16b887199560a8c482c1662eadaeadbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1f385d1823b774dd5cc5a5a09500ce"><td class="memItemLeft" align="right" valign="top"><a id="a3b1f385d1823b774dd5cc5a5a09500ce" name="a3b1f385d1823b774dd5cc5a5a09500ce"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (int n=-1)</td></tr>
-<tr class="memdesc:a3b1f385d1823b774dd5cc5a5a09500ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n bytes into an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a> (or all remaining bytes by default) <br /></td></tr>
-<tr class="separator:a3b1f385d1823b774dd5cc5a5a09500ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>StreamBuffer - copia.h</li>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>StreamBuffer.h</li>
 </ul>
 </div><!-- contents -->
