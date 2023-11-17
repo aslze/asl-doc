@@ -118,13 +118,13 @@ Inheritance diagram for MulticastSocket:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a728eddb6e3481c922cf68dee83f3cb33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_multicast_socket.html#a728eddb6e3481c922cf68dee83f3cb33">join</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;a)</td></tr>
-<tr class="memdesc:a728eddb6e3481c922cf68dee83f3cb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joins a multicast group.  <a href="classasl_1_1_multicast_socket.html#a728eddb6e3481c922cf68dee83f3cb33">More...</a><br /></td></tr>
-<tr class="separator:a728eddb6e3481c922cf68dee83f3cb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8c5d504f6f5a6dcfeb78336c8ae3ab"><td class="memItemLeft" align="right" valign="top"><a id="abb8c5d504f6f5a6dcfeb78336c8ae3ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_multicast_socket.html#abb8c5d504f6f5a6dcfeb78336c8ae3ab">leave</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;a)</td></tr>
-<tr class="memdesc:abb8c5d504f6f5a6dcfeb78336c8ae3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leaves a multicast group and stops receiving packets from it. <br /></td></tr>
-<tr class="separator:abb8c5d504f6f5a6dcfeb78336c8ae3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7497558088cb0a1f38746a8640582ddd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_multicast_socket.html#a7497558088cb0a1f38746a8640582ddd">join</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;a)</td></tr>
+<tr class="memdesc:a7497558088cb0a1f38746a8640582ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joins a multicast group.  <a href="classasl_1_1_multicast_socket.html#a7497558088cb0a1f38746a8640582ddd">More...</a><br /></td></tr>
+<tr class="separator:a7497558088cb0a1f38746a8640582ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3a4d2ef4c7cc57b94ac02ec905f59e"><td class="memItemLeft" align="right" valign="top"><a id="a4c3a4d2ef4c7cc57b94ac02ec905f59e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_multicast_socket.html#a4c3a4d2ef4c7cc57b94ac02ec905f59e">leave</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;a)</td></tr>
+<tr class="memdesc:a4c3a4d2ef4c7cc57b94ac02ec905f59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leaves a multicast group and stops receiving packets from it. <br /></td></tr>
+<tr class="separator:a4c3a4d2ef4c7cc57b94ac02ec905f59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074815527f71a4ed6a8f70114f041dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_multicast_socket.html#a074815527f71a4ed6a8f70114f041dfc">multicast</a> (const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;a, int ttl=2)</td></tr>
 <tr class="memdesc:a074815527f71a4ed6a8f70114f041dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a multicast session for group address <code>a</code>.  <a href="classasl_1_1_multicast_socket.html#a074815527f71a4ed6a8f70114f041dfc">More...</a><br /></td></tr>
 <tr class="separator:a074815527f71a4ed6a8f70114f041dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,8 +246,8 @@ template&lt;class T &gt; </td></tr>
 <tr class="separator:a4ba95b2d1b16f84aa225ad9cfbb85b20 inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a728eddb6e3481c922cf68dee83f3cb33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a728eddb6e3481c922cf68dee83f3cb33">&#9670;&nbsp;</a></span>join()</h2>
+<a id="a7497558088cb0a1f38746a8640582ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7497558088cb0a1f38746a8640582ddd">&#9670;&nbsp;</a></span>join()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +256,7 @@ template&lt;class T &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void join </td>
+          <td class="memname">bool join </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
@@ -310,7 +310,7 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Starts a multicast session for group address <code>a</code>. </p>
-<p>Packers sent will be received by all sockets that join the group. </p>
+<p>Packets sent will be received by all sockets that join the group. </p>
 
 </div>
 </div>

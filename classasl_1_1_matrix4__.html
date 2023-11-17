@@ -95,14 +95,15 @@ $(document).ready(function(){initNavTree('classasl_1_1_matrix4__.html',''); init
 class asl::Matrix4_&lt; T &gt;</h3>
 
 <p>A Matrix4 is a 4x4 matrix useful for representing affine transformations in 3D space. </p>
+<p>Warning: the <a class="el" href="classasl_1_1_matrix4__.html#a2657c478839eb8a17d03273c798ae166" title="Returns the inverse of this matrix.">inverse()</a> method assumes the bottom row is [0, 0, 0, 1] as in affine transform matrices, so it is not a general 4x4 matrix inverse.</p>
 <div class="fragment"><div class="line">Matrix4 a = <a class="code" href="classasl_1_1_matrix4__.html#a6ea3b33218fe35294646e68adb47ec81">Matrix4::translate</a>(10, 4, 0) * <a class="code" href="classasl_1_1_matrix4__.html#a6492eccce332304ec62d3ba5621dcd83">Matrix4::rotateX</a>(PI/2);</div>
 <div class="line">Vec3 v = a.inverse().transposed() * Vec3(1, 0, 0);</div>
 <div class="line"> </div>
-<div class="line">Matrix4 r = <a class="code" href="classasl_1_1_matrix4__.html#a063cafe75c73cd402238fd613edbb357">Matrix4::fromEuler</a>(Vec3(alpha, beta, gamma), <span class="stringliteral">&quot;XYZ*&quot;</span>);</div>
+<div class="line">Matrix4 r = <a class="code" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62">Matrix4::rotateE</a>(Vec3(alpha, beta, gamma), <span class="stringliteral">&quot;XYZ*&quot;</span>);</div>
 <div class="line">Vec3 angles = r.eulerAngles(<span class="stringliteral">&quot;ZYX&quot;</span>);</div>
-<div class="ttc" id="aclassasl_1_1_matrix4___html_a063cafe75c73cd402238fd613edbb357"><div class="ttname"><a href="classasl_1_1_matrix4__.html#a063cafe75c73cd402238fd613edbb357">asl::Matrix4_::fromEuler</a></div><div class="ttdeci">static Matrix4_ fromEuler(const Vec3_&lt; T &gt; &amp;r, int a0, int a1, int a2)</div><div class="ttdoc">Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...</div></div>
 <div class="ttc" id="aclassasl_1_1_matrix4___html_a6492eccce332304ec62d3ba5621dcd83"><div class="ttname"><a href="classasl_1_1_matrix4__.html#a6492eccce332304ec62d3ba5621dcd83">asl::Matrix4_::rotateX</a></div><div class="ttdeci">static Matrix4_ rotateX(T angle)</div><div class="ttdoc">Returns a rotation matrix of the given angle in radians around the x axis.</div></div>
 <div class="ttc" id="aclassasl_1_1_matrix4___html_a6ea3b33218fe35294646e68adb47ec81"><div class="ttname"><a href="classasl_1_1_matrix4__.html#a6ea3b33218fe35294646e68adb47ec81">asl::Matrix4_::translate</a></div><div class="ttdeci">static Matrix4_ translate(const Vec3_&lt; T &gt; &amp;)</div><div class="ttdoc">Returns a translation matrix for the given vector.</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix4___html_ace1a8705cb25bb114b47d0090b935c62"><div class="ttname"><a href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62">asl::Matrix4_::rotateE</a></div><div class="ttdeci">static Matrix4_ rotateE(const Vec3_&lt; T &gt; &amp;r, int a0, int a1, int a2)</div><div class="ttdoc">Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Matrix4.h&gt;</code></p>
 <table class="memberdecls">
@@ -276,19 +277,116 @@ static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><
 static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a30500e2d8208460dc946286e79695d61">rotate</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;<a class="el" href="classasl_1_1_matrix4__.html#ae310084d484e6085740c5f2625c81cd5">axisAngle</a>)</td></tr>
 <tr class="memdesc:a30500e2d8208460dc946286e79695d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix from a rotation vector (aligned with the axis and with the rotation angle as magnitude) <br /></td></tr>
 <tr class="separator:a30500e2d8208460dc946286e79695d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063cafe75c73cd402238fd613edbb357"><td class="memItemLeft" align="right" valign="top"><a id="a063cafe75c73cd402238fd613edbb357"></a>
-static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a063cafe75c73cd402238fd613edbb357">fromEuler</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;r, int a0, int a1, int a2)</td></tr>
-<tr class="memdesc:a063cafe75c73cd402238fd613edbb357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix created from Euler angles rotating the components of r in axes a0, a1, a2 (each one of 0, 1 or 2), the result is R<a href="r.x">a0</a> * R<a href="r.y">a1</a> * R<a href="r.z">a2</a> <br /></td></tr>
+<tr class="memitem:ace1a8705cb25bb114b47d0090b935c62"><td class="memItemLeft" align="right" valign="top"><a id="ace1a8705cb25bb114b47d0090b935c62"></a>
+static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62">rotateE</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;r, int a0, int a1, int a2)</td></tr>
+<tr class="memdesc:ace1a8705cb25bb114b47d0090b935c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix created from Euler angles rotating the components of r in axes a0, a1, a2 (each one of 0, 1 or 2), the result is R<a href="r.x">a0</a> * R<a href="r.y">a1</a> * R<a href="r.z">a2</a> <br /></td></tr>
+<tr class="separator:ace1a8705cb25bb114b47d0090b935c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063cafe75c73cd402238fd613edbb357"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a063cafe75c73cd402238fd613edbb357">fromEuler</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;r, int a0, int a1, int a2)</td></tr>
+<tr class="memdesc:a063cafe75c73cd402238fd613edbb357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a>  <a href="classasl_1_1_matrix4__.html#a063cafe75c73cd402238fd613edbb357">More...</a><br /></td></tr>
 <tr class="separator:a063cafe75c73cd402238fd613edbb357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194c4d34f3f0604391fdfbbd4a427cbe"><td class="memItemLeft" align="right" valign="top"><a id="a194c4d34f3f0604391fdfbbd4a427cbe"></a>
-static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a194c4d34f3f0604391fdfbbd4a427cbe">fromEuler</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;r, const char *a)</td></tr>
-<tr class="memdesc:a194c4d34f3f0604391fdfbbd4a427cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix created from Euler angles rotating the components of r in axes given as a string, such as "XYZ", if an '*' is appended then the result is equivalent to rotations on fixed axes, while by default it is equivalent to rotations on moving axes. <br /></td></tr>
+<tr class="memitem:a5315d84f233bd3a38f4f9117117cee92"><td class="memItemLeft" align="right" valign="top"><a id="a5315d84f233bd3a38f4f9117117cee92"></a>
+static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a5315d84f233bd3a38f4f9117117cee92">rotateE</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;r, const char *a)</td></tr>
+<tr class="memdesc:a5315d84f233bd3a38f4f9117117cee92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix created from Euler angles rotating the components of r in axes given as a string, such as "XYZ", if an '*' is appended then the result is equivalent to rotations on fixed axes, while by default it is equivalent to rotations on moving axes. <br /></td></tr>
+<tr class="separator:a5315d84f233bd3a38f4f9117117cee92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194c4d34f3f0604391fdfbbd4a427cbe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a194c4d34f3f0604391fdfbbd4a427cbe">fromEuler</a> (const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;r, const char *a)</td></tr>
+<tr class="memdesc:a194c4d34f3f0604391fdfbbd4a427cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a rotation matrix created from Euler angles rotating the components of r in axes given as a string, such as "XYZ", if an '*' is appended then the result is equivalent to rotations on fixed axes, while by default it is equivalent to rotations on moving axes.  <a href="classasl_1_1_matrix4__.html#a194c4d34f3f0604391fdfbbd4a427cbe">More...</a><br /></td></tr>
 <tr class="separator:a194c4d34f3f0604391fdfbbd4a427cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9704fb00dd1ec25784c905afe0d7bb"><td class="memItemLeft" align="right" valign="top"><a id="a3e9704fb00dd1ec25784c905afe0d7bb"></a>
 static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a3e9704fb00dd1ec25784c905afe0d7bb">identity</a> ()</td></tr>
 <tr class="memdesc:a3e9704fb00dd1ec25784c905afe0d7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an identity matrix. <br /></td></tr>
 <tr class="separator:a3e9704fb00dd1ec25784c905afe0d7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a194c4d34f3f0604391fdfbbd4a427cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194c4d34f3f0604391fdfbbd4a427cbe">&#9670;&nbsp;</a></span>fromEuler() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a> fromEuler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a rotation matrix created from Euler angles rotating the components of r in axes given as a string, such as "XYZ", if an '*' is appended then the result is equivalent to rotations on fixed axes, while by default it is equivalent to rotations on moving axes. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a063cafe75c73cd402238fd613edbb357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063cafe75c73cd402238fd613edbb357">&#9670;&nbsp;</a></span>fromEuler() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a> fromEuler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Matrix4.h</li>
 </ul>

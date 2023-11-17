@@ -90,19 +90,44 @@ $(document).ready(function(){initNavTree('group___math3_d.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Classes and functions for math, including vector and matrix types useful in 2D/3D geometric computations and graphics. </p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Vectors and matrices for 2D/3D geometry</h2>
+<p>Classes and functions for math, including vector and matrix types useful in 2D/3D geometric computations and graphics.</p>
 <p>These classes are templates that can be used with elements of any numeric type, but some functions oly make sense with floating point types.</p>
 <div class="fragment"><div class="line">Vec3_&lt;int&gt; ivec(1, 2, 3);</div>
 <div class="line">Matrix4_&lt;float&gt; m;</div>
 </div><!-- fragment --><p>They all have two predefined specializations, for <code>float</code> and <code>double</code> elements. The type for double has a <code>d</code> suffix, and the type for float has no suffix:</p>
-<div class="fragment"><div class="line">Vec3 v;   <span class="comment">// -&gt; Vec3_&lt;float&gt;</span></div>
-<div class="line">Vec3d w;  <span class="comment">// -&gt; Vec3_&lt;double&gt;</span></div>
+<div class="fragment"><div class="line">Vec3 v;   <span class="comment">// = Vec3_&lt;float&gt;</span></div>
+<div class="line">Vec3d w;  <span class="comment">// = Vec3_&lt;double&gt;</span></div>
 </div><!-- fragment --><p>Classes <a class="el" href="classasl_1_1_vec2__.html" title="A Vec2 represents a vector in 2D space.">Vec2_</a>, <a class="el" href="classasl_1_1_vec3__.html" title="A Vec3_ represents a vector in 3D space.">Vec3_</a> and <a class="el" href="classasl_1_1_vec4__.html" title="A Vec4 is a 4-dimensional vector usually representing homogenous coordinates.">Vec4_</a> represent 2D, 3D and 4D vectors. Classes <a class="el" href="classasl_1_1_matrix3__.html" title="A Matrix3 is a 3x3 matrix useful for representing affine transformations in 2D space.">Matrix3_</a> and <a class="el" href="classasl_1_1_matrix4__.html" title="A Matrix4 is a 4x4 matrix useful for representing affine transformations in 3D space.">Matrix4_</a> represent 3x3 and 4x4 matrices, useful to work with spatial transformations. A <a class="el" href="classasl_1_1_matrix4__.html" title="A Matrix4 is a 4x4 matrix useful for representing affine transformations in 3D space.">Matrix4_</a> can multiply a 3D vector to apply an affine transform (the vector will be assumed to have a 4th component with value 1). Additionally, class <a class="el" href="classasl_1_1_quaternion__.html" title="A Quaternion representing an orientation or rotation in 3D space.">Quaternion_</a> represent a quaternion and is useful to work with rotations in 3D.</p>
 <div class="fragment"><div class="line">Matrix4 transform = <a class="code" href="classasl_1_1_matrix4__.html#a6ea3b33218fe35294646e68adb47ec81">Matrix4::translate</a>(position) * <a class="code" href="classasl_1_1_matrix4__.html#a6492eccce332304ec62d3ba5621dcd83">Matrix4::rotateX</a>(angleX);</div>
 <div class="line">Vec3 worldPos = transform * position;</div>
 <div class="ttc" id="aclassasl_1_1_matrix4___html_a6492eccce332304ec62d3ba5621dcd83"><div class="ttname"><a href="classasl_1_1_matrix4__.html#a6492eccce332304ec62d3ba5621dcd83">asl::Matrix4_::rotateX</a></div><div class="ttdeci">static Matrix4_ rotateX(T angle)</div><div class="ttdoc">Returns a rotation matrix of the given angle in radians around the x axis.</div></div>
 <div class="ttc" id="aclassasl_1_1_matrix4___html_a6ea3b33218fe35294646e68adb47ec81"><div class="ttname"><a href="classasl_1_1_matrix4__.html#a6ea3b33218fe35294646e68adb47ec81">asl::Matrix4_::translate</a></div><div class="ttdeci">static Matrix4_ translate(const Vec3_&lt; T &gt; &amp;)</div><div class="ttdoc">Returns a translation matrix for the given vector.</div></div>
-</div><!-- fragment --><p>Class <a class="el" href="classasl_1_1_matrix__.html" title="A matrix supporting basic arithmetic operations.">Matrix_</a> represents a matrix of any size. It uses dynamic memory and is less efficient than the fixed size types above. <a class="el" href="classasl_1_1_matrix__.html" title="A matrix supporting basic arithmetic operations.">Matrix_</a> can be used to represent systems of linear equations or arbitrary vectors.</p>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3"></a>
+Representation of 3D rotations</h2>
+<p>Rotations in 3D space can be represented in different ways and they can be converted to one another (via a Matrix4).</p>
+<p>A rotation matrix can be constructed these ways:</p>
+<div class="fragment"><div class="line">m = <a class="code" href="classasl_1_1_matrix4__.html#a6492eccce332304ec62d3ba5621dcd83">Matrix4::rotateX</a>(alpha); <span class="comment">// a rotation angle around the X axis (or Y or Z)</span></div>
+<div class="line"> </div>
+<div class="line">m = <a class="code" href="classasl_1_1_matrix4__.html#acafbf106f816e950062ca6d89495580d">Matrix4::rotate</a>(axis, angle); <span class="comment">// rotation angle around an arbitrary axis</span></div>
+<div class="line"> </div>
+<div class="line">m = <a class="code" href="classasl_1_1_matrix4__.html#acafbf106f816e950062ca6d89495580d">Matrix4::rotate</a>(axisAngle); <span class="comment">// axis-angle: the axis vector with magnitude equal to the rotation angle</span></div>
+<div class="line"> </div>
+<div class="line">m = <a class="code" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62">Matrix4::rotateE</a>({ alpha, beta, gamma }, <span class="stringliteral">&quot;XYZ*&quot;</span>); <span class="comment">// Euler angles with an arbitrary axis sequence</span></div>
+<div class="line"> </div>
+<div class="line">m = quaternion.matrix(); <span class="comment">// a quaternion</span></div>
+<div class="ttc" id="aclassasl_1_1_matrix4___html_acafbf106f816e950062ca6d89495580d"><div class="ttname"><a href="classasl_1_1_matrix4__.html#acafbf106f816e950062ca6d89495580d">asl::Matrix4_::rotate</a></div><div class="ttdeci">static Matrix4_ rotate(const Vec3_&lt; T &gt; &amp;axis, T angle)</div><div class="ttdoc">Returns a rotation matrix of an angle in radians around a given axis.</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix4___html_ace1a8705cb25bb114b47d0090b935c62"><div class="ttname"><a href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62">asl::Matrix4_::rotateE</a></div><div class="ttdeci">static Matrix4_ rotateE(const Vec3_&lt; T &gt; &amp;r, int a0, int a1, int a2)</div><div class="ttdoc">Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...</div></div>
+</div><!-- fragment --><p>The matrix can then be converted to other rotation representations:</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> angles = m.eulerAngles(<span class="stringliteral">&quot;XYZ*&quot;</span>); <span class="comment">// to Euler angles</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> aa = m.axisAngle(); <span class="comment">// to axis-angle</span></div>
+<div class="line"> </div>
+<div class="line">Quaternion q = m.rotation(); <span class="comment">// to a quaternion</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
+Vectors and matrices of any size</h2>
+<p>Class <a class="el" href="classasl_1_1_matrix__.html" title="A matrix supporting basic arithmetic operations.">Matrix_</a> represents a matrix of any size (predefined <code>Matrix</code> and <code>Matrixd</code> for <code>float</code>/<code>double</code>). It uses dynamic memory and is less efficient than the fixed size types above. <a class="el" href="classasl_1_1_matrix__.html" title="A matrix supporting basic arithmetic operations.">Matrix_</a> can be used to represent systems of linear equations or arbitrary vectors.</p>
 <p>Functions <a class="el" href="group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1" title="Solves the matrix equation A*x=b and returns x; if b is a matrix (not a column) then the equation is ...">solve()</a> and <a class="el" href="group___math3_d.html#gafe779ed2205a78ace6d591e4ffebfbbb" title="Solves a system of equations F(x)=[0], given by functor f, which returns a vector of function values ...">solveZero()</a> can be used to solve linear or non-linear systems with equal number of equations and unknowns, or more equations (least-squares). </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
