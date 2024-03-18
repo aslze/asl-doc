@@ -109,6 +109,7 @@ var group___math3_d =
     [ "Vec2_", "classasl_1_1_vec2__.html", [
       [ "Vec2_", "classasl_1_1_vec2__.html#a380088133c0a2ce2576ff95037cb8f66", null ],
       [ "angle", "classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9", null ],
+      [ "angle", "classasl_1_1_vec2__.html#ab9f5fac6baccb72afe87ed680fcdfaf5", null ],
       [ "length", "classasl_1_1_vec2__.html#a319b1046f6f739132918623ea8aa25d8", null ],
       [ "length2", "classasl_1_1_vec2__.html#afa9fffbf60ee884d989d5e337db4c3ca", null ],
       [ "normalized", "classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261", null ],

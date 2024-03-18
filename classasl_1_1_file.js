@@ -15,6 +15,7 @@ var classasl_1_1_file =
     [ "flush", "classasl_1_1_file.html#adac116554b543b7c4228c018a85882f5", null ],
     [ "hasExtension", "classasl_1_1_file.html#a2c96b65f63eb2a2442dac8f5559b533c", null ],
     [ "isDirectory", "classasl_1_1_file.html#aa202a4bc61612fc6a7fcf7682449c419", null ],
+    [ "isFile", "classasl_1_1_file.html#a4b3c94c2c4f638023958171569285076", null ],
     [ "lastModified", "classasl_1_1_file.html#adc60f194f61da93f4047c8637925fc8d", null ],
     [ "move", "classasl_1_1_file.html#a6dbafe03f681bf791f84240226a536bc", null ],
     [ "name", "classasl_1_1_file.html#a554c3e7ca3ebc1c1b358b92f5b5980c2", null ],

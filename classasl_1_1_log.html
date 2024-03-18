@@ -84,8 +84,8 @@ $(document).ready(function(){initNavTree('classasl_1_1_log.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classasl_1_1_log-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Log Class Reference<div class="ingroups"><a class="el" href="group___logging.html">Message logger</a></div></div>  </div>
@@ -103,12 +103,12 @@ $(document).ready(function(){initNavTree('classasl_1_1_log.html',''); initResiza
 <div class="ttc" id="aclassasl_1_1_log_html_ae7a334da07117d5f8da3b8907031da6d"><div class="ttname"><a href="classasl_1_1_log.html#ae7a334da07117d5f8da3b8907031da6d">asl::Log::setFile</a></div><div class="ttdeci">static void setFile(const String &amp;file)</div><div class="ttdoc">Sets the name of the file to write messages to.</div></div>
 </div><!-- fragment --><p>The easiest way to write messages is with the provided macro ASL_LOG_ similar to a <code>printf</code> call. It uses the current source file as <em>category</em>.</p>
 <div class="fragment"><div class="line"><a class="code" href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a>(ERR, <span class="stringliteral">&quot;Port %i already in use&quot;</span>, port);</div>
-<div class="ttc" id="agroup___logging_html_ga6f87f5e6abc94f75bdc6fe78feeb9b28"><div class="ttname"><a href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a></div><div class="ttdeci">#define ASL_LOG_(LEVEL,...)</div><div class="ttdoc">Log a formatted message with the given level (ERR, WARNING, INFO, DEBUG or VERBOSE)</div><div class="ttdef"><b>Definition:</b> Log.h:120</div></div>
+<div class="ttc" id="agroup___logging_html_ga6f87f5e6abc94f75bdc6fe78feeb9b28"><div class="ttname"><a href="group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28">ASL_LOG_</a></div><div class="ttdeci">#define ASL_LOG_(LEVEL,...)</div><div class="ttdoc">Log a formatted message with the given level (ERR, WARNING, INFO, DEBUG or VERBOSE)</div><div class="ttdef"><b>Definition:</b> Log.h:129</div></div>
 </div><!-- fragment --><p>Writes something like:</p>
 <div class="fragment"><div class="line">[2021-03-18T12:35:00][Server] ERROR: Port 80 already in use</div>
 </div><!-- fragment --><p>There are recommended shorter macros for each log level: ASL_LOG_X (with X one of E, W, I, D, V):</p>
 <div class="fragment"><div class="line"><a class="code" href="group___logging.html#ga1cc80bd126cecc50ec064235176d7e61">ASL_LOG_E</a>(<span class="stringliteral">&quot;Port %i already in use&quot;</span>, port);</div>
-<div class="ttc" id="agroup___logging_html_ga1cc80bd126cecc50ec064235176d7e61"><div class="ttname"><a href="group___logging.html#ga1cc80bd126cecc50ec064235176d7e61">ASL_LOG_E</a></div><div class="ttdeci">#define ASL_LOG_E(...)</div><div class="ttdoc">Log a formatted message with the ERROR level.</div><div class="ttdef"><b>Definition:</b> Log.h:127</div></div>
+<div class="ttc" id="agroup___logging_html_ga1cc80bd126cecc50ec064235176d7e61"><div class="ttname"><a href="group___logging.html#ga1cc80bd126cecc50ec064235176d7e61">ASL_LOG_E</a></div><div class="ttdeci">#define ASL_LOG_E(...)</div><div class="ttdoc">Log a formatted message with the ERROR level.</div><div class="ttdef"><b>Definition:</b> Log.h:136</div></div>
 </div><!-- fragment --><p>On Android this class uses the system logger.</p>
 <p><a class="el" href="classasl_1_1_log.html" title="Log is a utility to log messages to either the console, a file or both.">Log</a> files do not grow indefinitely. When reaching about 1 MB, they will be moved to a file with "-1" appended to its name (like "log-1.log"), and a new empty file will be started. Any logs older than that will be lost. </p>
 </div>
@@ -128,13 +128,6 @@ Public Types</h2></td></tr>
 <tr class="memitem:a221b779e6bb7b8d40677d7642bfefac5"><td class="memItemLeft" align="right" valign="top"><a id="a221b779e6bb7b8d40677d7642bfefac5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5">Level</a> </td></tr>
 <tr class="memdesc:a221b779e6bb7b8d40677d7642bfefac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message levels (ERR, WARNING, INFO, DEBUG, VERBOSE). <br /></td></tr>
 <tr class="separator:a221b779e6bb7b8d40677d7642bfefac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aa28792a63eafbce168ddade4946a5318"><td class="memItemLeft" align="right" valign="top"><a id="aa28792a63eafbce168ddade4946a5318"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_log.html#aa28792a63eafbce168ddade4946a5318">log</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;cat, <a class="el" href="classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5">Log::Level</a> level, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;message)</td></tr>
-<tr class="memdesc:aa28792a63eafbce168ddade4946a5318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a log message with the given category and log level. <br /></td></tr>
-<tr class="separator:aa28792a63eafbce168ddade4946a5318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -167,7 +160,60 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 static <a class="el" href="classasl_1_1_log.html">Log</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_singleton.html#ade6193af70013295b23e0318cbb276bd">instance</a> ()</td></tr>
 <tr class="memdesc:ade6193af70013295b23e0318cbb276bd inherit pub_static_methods_classasl_1_1_singleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to an instance of class T, creating it on the first call. <br /></td></tr>
 <tr class="separator:ade6193af70013295b23e0318cbb276bd inherit pub_static_methods_classasl_1_1_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aa28792a63eafbce168ddade4946a5318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_log.html#aa28792a63eafbce168ddade4946a5318">log</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;cat, <a class="el" href="classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5">Log::Level</a> level, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;message)</td></tr>
+<tr class="separator:aa28792a63eafbce168ddade4946a5318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0262c2f8de25b1e866287d75d7b6d8"><td class="memItemLeft" align="right" valign="top"><a id="aef0262c2f8de25b1e866287d75d7b6d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_log.html#aef0262c2f8de25b1e866287d75d7b6d8">log</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;cat, <a class="el" href="classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5">Log::Level</a> level, const char *fmt,...) ASL_PRINTF_W2(3)</td></tr>
+<tr class="memdesc:aef0262c2f8de25b1e866287d75d7b6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a printf-like formatted log message with the given category and log level. <br /></td></tr>
+<tr class="separator:aef0262c2f8de25b1e866287d75d7b6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="aa28792a63eafbce168ddade4946a5318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28792a63eafbce168ddade4946a5318">&#9670;&nbsp;</a></span>log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>cat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5">Log::Level</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Writes a log message with the given category and log level.
+</pre> 
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Log.h</li>
 </ul>

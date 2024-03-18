@@ -99,7 +99,7 @@ class asl::Array_&lt; T, N &gt;</h3>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7">array_</a>(min, max); <span class="comment">// or C++11: return {min, max};</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup___containers_html_ga71024447df9e2d9fd615bdb9c940a0a7"><div class="ttname"><a href="group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7">asl::array_</a></div><div class="ttdeci">Array_&lt; T, 2 &gt; array_(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array_.h:241</div></div>
+<div class="ttc" id="agroup___containers_html_ga71024447df9e2d9fd615bdb9c940a0a7"><div class="ttname"><a href="group___containers.html#ga71024447df9e2d9fd615bdb9c940a0a7">asl::array_</a></div><div class="ttdeci">Array_&lt; T, 2 &gt; array_(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array_.h:233</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;Array_.h&gt;</code></p>
 <table class="memberdecls">
@@ -153,9 +153,6 @@ template&lt;class Less &gt; </td></tr>
 <tr class="memitem:a39f9ab210058f82a449eeb6f39cc14fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array__.html">Array_</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_array__.html#a39f9ab210058f82a449eeb6f39cc14fe">sort</a> (Less f)</td></tr>
 <tr class="memdesc:a39f9ab210058f82a449eeb6f39cc14fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the array using the elements' &lt; operator "in place". <br /></td></tr>
 <tr class="separator:a39f9ab210058f82a449eeb6f39cc14fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2500b704d297c0a2cde6256112d770e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array__.html#ad2500b704d297c0a2cde6256112d770e">operator String</a> () const</td></tr>
-<tr class="memdesc:ad2500b704d297c0a2cde6256112d770e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the array, formed by joining its elements with commas.  <a href="classasl_1_1_array__.html#ad2500b704d297c0a2cde6256112d770e">More...</a><br /></td></tr>
-<tr class="separator:ad2500b704d297c0a2cde6256112d770e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9566171d17edfd2d53be33e9d608aad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array__.html#ab9566171d17edfd2d53be33e9d608aad">join</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;sep) const</td></tr>
 <tr class="memdesc:ab9566171d17edfd2d53be33e9d608aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the array, formed by joining its elements with the given separator string sep.  <a href="classasl_1_1_array__.html#ab9566171d17edfd2d53be33e9d608aad">More...</a><br /></td></tr>
 <tr class="separator:ab9566171d17edfd2d53be33e9d608aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,23 +214,6 @@ template&lt;class Less &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Returns a string representation of the array, formed by joining its elements with the given separator string sep. </p>
-<p>The elements need to be convertible to <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> </p>
-
-</div>
-</div>
-<a id="ad2500b704d297c0a2cde6256112d770e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2500b704d297c0a2cde6256112d770e">&#9670;&nbsp;</a></span>operator String()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">operator <a class="el" href="classasl_1_1_string.html">String</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns a string representation of the array, formed by joining its elements with commas. </p>
 <p>The elements need to be convertible to <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> </p>
 
 </div>

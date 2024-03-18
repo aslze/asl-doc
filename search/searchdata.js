@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "bp",
   5: "cflms",
   6: "cdfhlnoprs",
-  7: "eo",
+  7: "elo",
   8: "bcdfgmrstx",
   9: "ad"
 };

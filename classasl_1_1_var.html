@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_var.html',''); initResiza
 <div class="line">Var indices = (Var(), 1, 3, 0, 2, -1);     <span class="comment">// any number of elements (but is slower)</span></div>
 <div class="line">Var numbers = {1, 3, 9, -2};               <span class="comment">// on C++11 compilers, for all same type elements</span></div>
 <div class="line">Var items = <a class="code" href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">Var::array</a>({1, <span class="stringliteral">&quot;a&quot;</span>, 9.5, -2}); <span class="comment">// on C++11 compilers, for different types</span></div>
-<div class="ttc" id="aclassasl_1_1_var_html_afd4ea9a14885012ec0ac816c7fefbdd3"><div class="ttname"><a href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">asl::Var::array</a></div><div class="ttdeci">Array&lt; Var &gt; array() const</div><div class="ttdoc">Returns the internal Array if this var is an array.</div><div class="ttdef"><b>Definition:</b> Var.h:313</div></div>
+<div class="ttc" id="aclassasl_1_1_var_html_afd4ea9a14885012ec0ac816c7fefbdd3"><div class="ttname"><a href="classasl_1_1_var.html#afd4ea9a14885012ec0ac816c7fefbdd3">asl::Var::array</a></div><div class="ttdeci">Array&lt; Var &gt; array() const</div><div class="ttdoc">Returns the internal Array if this var is an array.</div><div class="ttdef"><b>Definition:</b> Var.h:315</div></div>
 </div><!-- fragment --><p>An <b>object</b> can be constructed from an existing Dic&lt;T&gt; or by adding elements to a <a class="el" href="classasl_1_1_var.html" title="A Var is a type that can hold a value of one of several types, similarly to a var in JavaScript.">Var</a> with <code>var["key"]</code>:</p>
 <div class="fragment"><div class="line">Var person;</div>
 <div class="line">person[<span class="stringliteral">&quot;name&quot;</span>] = <span class="stringliteral">&quot;John&quot;</span>;  <span class="comment">// person.type() = OBJ</span></div>
@@ -200,14 +200,15 @@ Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_var.html#a67b76affb3b5d35fa419ac234144038b">operator bool</a> () const</td></tr>
 <tr class="memdesc:a67b76affb3b5d35fa419ac234144038b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the boolean value of this var (similar to JS conversion) <br /></td></tr>
 <tr class="separator:a67b76affb3b5d35fa419ac234144038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c1512d6a15dbd1d98697c97cf5744b"><td class="memItemLeft" align="right" valign="top"><a id="a22c1512d6a15dbd1d98697c97cf5744b"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_var.html#a22c1512d6a15dbd1d98697c97cf5744b">operator*</a> () const</td></tr>
+<tr class="memdesc:a22c1512d6a15dbd1d98697c97cf5744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a char pointer to the beginning of the string if this var is a string; this is faster than calling <code>.toString()</code> but will not stringify numbers or other types. <br /></td></tr>
+<tr class="separator:a22c1512d6a15dbd1d98697c97cf5744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1069a007f89d9946c53b59a2fa8ac543"><td class="memTemplParams" colspan="2"><a id="a1069a007f89d9946c53b59a2fa8ac543"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1069a007f89d9946c53b59a2fa8ac543"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_var.html#a1069a007f89d9946c53b59a2fa8ac543">operator|</a> (const T &amp;v) const</td></tr>
 <tr class="memdesc:a1069a007f89d9946c53b59a2fa8ac543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the left value if it is defined or the right otherwise. <br /></td></tr>
 <tr class="separator:a1069a007f89d9946c53b59a2fa8ac543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af86ff7fcda2d789fc75b7750e6acfb82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_var.html#af86ff7fcda2d789fc75b7750e6acfb82">isTrue</a> () const</td></tr>
-<tr class="memdesc:af86ff7fcda2d789fc75b7750e6acfb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bool value of this var.  <a href="classasl_1_1_var.html#af86ff7fcda2d789fc75b7750e6acfb82">More...</a><br /></td></tr>
-<tr class="separator:af86ff7fcda2d789fc75b7750e6acfb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cb7eaa663dc83af68bc28a596d09e6"><td class="memItemLeft" align="right" valign="top"><a id="a03cb7eaa663dc83af68bc28a596d09e6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_var.html#a03cb7eaa663dc83af68bc28a596d09e6">ok</a> () const</td></tr>
 <tr class="memdesc:a03cb7eaa663dc83af68bc28a596d09e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this var has a value (its type is not NONE) <br /></td></tr>
@@ -334,27 +335,6 @@ static <a class="el" href="classasl_1_1_var.html">Var</a>&#160;</td><td class="m
 <tr class="memdesc:a74d49448ed0f77957fccf5c3f3c91b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an array with an initializer list. <br /></td></tr>
 <tr class="separator:a74d49448ed0f77957fccf5c3f3c91b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af86ff7fcda2d789fc75b7750e6acfb82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af86ff7fcda2d789fc75b7750e6acfb82">&#9670;&nbsp;</a></span>isTrue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool isTrue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the bool value of this var. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Use <code>bool</code> conversion </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Var.h</li>
 </ul>

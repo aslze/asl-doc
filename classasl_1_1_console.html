@@ -115,8 +115,8 @@ $(document).ready(function(){initNavTree('classasl_1_1_console.html',''); initRe
 <div class="line">s &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">bg</a>() &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603">rgb</a>(255, 10, 10) &lt;&lt; <span class="stringliteral">&quot;Red &quot;</span>;</div>
 <div class="line">s &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">bg</a>() &lt;&lt; console.<a class="code" href="classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603">rgb</a>(10, 50, 215) &lt;&lt; <span class="stringliteral">&quot;blue.&quot;</span>;</div>
 <div class="line">printf(<span class="stringliteral">&quot;%s\n&quot;</span>, *s);</div>
-<div class="ttc" id="aclassasl_1_1_console_html_a0e28b2760f3ea114cf5700727a343159"><div class="ttname"><a href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">asl::Console::bg</a></div><div class="ttdeci">String bg() const</div><div class="ttdoc">Returns the prefix code to set a background color.</div><div class="ttdef"><b>Definition:</b> Console.h:122</div></div>
-<div class="ttc" id="aclassasl_1_1_console_html_ad70b5b8a64176f5621d49d1647da61e9"><div class="ttname"><a href="classasl_1_1_console.html#ad70b5b8a64176f5621d49d1647da61e9">asl::Console::setColorMode</a></div><div class="ttdeci">void setColorMode(int mode)</div><div class="ttdoc">Sets color mode: 1=256 colors (RGB 6x6x6), 2=true color (RGB 24bit) for RGB color setting functions (...</div><div class="ttdef"><b>Definition:</b> Console.h:96</div></div>
+<div class="ttc" id="aclassasl_1_1_console_html_a0e28b2760f3ea114cf5700727a343159"><div class="ttname"><a href="classasl_1_1_console.html#a0e28b2760f3ea114cf5700727a343159">asl::Console::bg</a></div><div class="ttdeci">String bg() const</div><div class="ttdoc">Returns the prefix code to set a background color.</div><div class="ttdef"><b>Definition:</b> Console.h:128</div></div>
+<div class="ttc" id="aclassasl_1_1_console_html_ad70b5b8a64176f5621d49d1647da61e9"><div class="ttname"><a href="classasl_1_1_console.html#ad70b5b8a64176f5621d49d1647da61e9">asl::Console::setColorMode</a></div><div class="ttdeci">void setColorMode(int mode)</div><div class="ttdoc">Sets color mode: 1=256 colors (RGB 6x6x6), 2=true color (RGB 24bit) for RGB color setting functions (...</div><div class="ttdef"><b>Definition:</b> Console.h:102</div></div>
 <div class="ttc" id="aclassasl_1_1_console_html_af3884bd84170ffb9c7b7ae4e37994603"><div class="ttname"><a href="classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603">asl::Console::rgb</a></div><div class="ttdeci">String rgb(int r, int g, int b) const</div><div class="ttdoc">Returns terminal code to set an RGB color (or the closest if full RGB is not supported)</div></div>
 </div><!-- fragment --><p>_(This is still work in progress)_ </p>
 </div>
@@ -130,10 +130,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af7c5183280ef85a2d1859b774f8dfcbd"><td class="memItemLeft" align="right" valign="top"><a id="af7c5183280ef85a2d1859b774f8dfcbd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#af7c5183280ef85a2d1859b774f8dfcbd">setCP</a> (int cp=0)</td></tr>
-<tr class="memdesc:af7c5183280ef85a2d1859b774f8dfcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">On Windows, sets the console output code page (if 0 given, uses the system code page, if -1 uses the default console page) <br /></td></tr>
-<tr class="separator:af7c5183280ef85a2d1859b774f8dfcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94dfaa3cddd46ad6757255e21b7b0ad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#a94dfaa3cddd46ad6757255e21b7b0ad8">setCP</a> (int cp=0, bool loc=false)</td></tr>
+<tr class="memdesc:a94dfaa3cddd46ad6757255e21b7b0ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">On Windows, sets the console output code page (if 0 given, uses the system code page, if -1 uses the default console page), and if loc is true sets the locale for string case management to the system locale.  <a href="classasl_1_1_console.html#a94dfaa3cddd46ad6757255e21b7b0ad8">More...</a><br /></td></tr>
+<tr class="separator:a94dfaa3cddd46ad6757255e21b7b0ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae824443b3f661414ba1f2718e17fe97d"><td class="memItemLeft" align="right" valign="top"><a id="ae824443b3f661414ba1f2718e17fe97d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_console.html#ae824443b3f661414ba1f2718e17fe97d">gotoxy</a> (int x, int y)</td></tr>
 <tr class="memdesc:ae824443b3f661414ba1f2718e17fe97d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cursor position to coordinates <code>x</code>, <code>y</code> <br /></td></tr>
@@ -191,6 +190,38 @@ Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a9a4c32403766cd16ca4e3a5479f075bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the console window in characters {width, height}. <br /></td></tr>
 <tr class="separator:a9a4c32403766cd16ca4e3a5479f075bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a94dfaa3cddd46ad6757255e21b7b0ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94dfaa3cddd46ad6757255e21b7b0ad8">&#9670;&nbsp;</a></span>setCP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCP </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>loc</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>On Windows, sets the console output code page (if 0 given, uses the system code page, if -1 uses the default console page), and if loc is true sets the locale for string case management to the system locale. </p>
+<p>(this behavior might change in the future) </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Console.h</li>
 </ul>

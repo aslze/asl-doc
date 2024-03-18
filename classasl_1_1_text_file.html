@@ -92,28 +92,29 @@ $(document).ready(function(){initNavTree('classasl_1_1_text_file.html',''); init
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class <a class="el" href="classasl_1_1_text_file.html" title="Class TextFile represents a text file in the filesystem.">TextFile</a> represents a text file in the filesystem. </p>
 <p>It can be used to get information about a file (its size, its modification date, whether it exists), to read or write in it in one step, or to open it and perform typical read/write operations as text, just like <code><a class="el" href="classasl_1_1_file.html" title="Class File represents a file in the filesystem.">File</a></code>.</p>
-<p>Functions <a class="el" href="classasl_1_1_text_file.html#a5f110c73ef9caee7bd4e5c745ca82381" title="Returns the textual content of the file as a string.">text()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#a9205172140cac805dee30b3fcf91beaa" title="Returns all the lines contained in the file as an array of strings.">lines()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#aeefb0d027e698a925c67bd5387a860b2" title="Replaces the content of the file with the given text string.">put()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#ad89a147da4f1940f571ebf0015e19349" title="Writes the given string at the end of the file.">append()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#a5a256367fcaaef71138b0e683b512e79" title="Prints formatted text as with the regular printf.">printf()</a>`, etc. read or write in the file by first opening it. Intended as a short-hand for one-line operations.</p>
+<p>Functions <a class="el" href="classasl_1_1_text_file.html#a5f110c73ef9caee7bd4e5c745ca82381" title="Returns the textual content of the file as a string.">text()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#a9205172140cac805dee30b3fcf91beaa" title="Returns all the lines contained in the file as an array of strings.">lines()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#a7577e1e88af45e0c3eb51aa009b71565" title="Writes the given string at the end of the file, opening in write mode if the file was not opened.">write()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#ad89a147da4f1940f571ebf0015e19349" title="Writes the given string at the end of the file, opening in append mode if the file was not opened.">append()</a><code>,</code><a class="el" href="classasl_1_1_text_file.html#a5c61d524c569481eefa9dfbf73d3f5b8" title="Prints formatted text as with the regular printf.">printf()</a>`, etc. read or write in the file by first opening it. Intended as a short-hand for one-line operations.</p>
 <div class="fragment"><div class="line">TextFile(<span class="stringliteral">&quot;info.log&quot;</span>).printf(<span class="stringliteral">&quot;Error connecting to port %i\n&quot;</span>, port);</div>
 <div class="line"> </div>
 <div class="line">String <a class="code" href="classasl_1_1_text_file.html#a5f110c73ef9caee7bd4e5c745ca82381">text</a> = TextFile(<span class="stringliteral">&quot;data.txt&quot;</span>).text();</div>
 <div class="line"> </div>
-<div class="line">TextFile(<span class="stringliteral">&quot;data.json&quot;</span>).put( <a class="code" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">Json::encode</a>(data) );</div>
+<div class="line">TextFile(<span class="stringliteral">&quot;data.json&quot;</span>).write(<a class="code" href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">Json::encode</a>(data));</div>
 <div class="line"> </div>
 <div class="line">String last_entry = TextFile(<span class="stringliteral">&quot;errors.log&quot;</span>).lines().last();</div>
 <div class="ttc" id="aclassasl_1_1_text_file_html_a5f110c73ef9caee7bd4e5c745ca82381"><div class="ttname"><a href="classasl_1_1_text_file.html#a5f110c73ef9caee7bd4e5c745ca82381">asl::TextFile::text</a></div><div class="ttdeci">String text()</div><div class="ttdoc">Returns the textual content of the file as a string.</div></div>
 <div class="ttc" id="astructasl_1_1_json_html_a4eff6560da9671779b17635393c9f878"><div class="ttname"><a href="structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878">asl::Json::encode</a></div><div class="ttdeci">static String encode(const Var &amp;v, Mode mode=NONE)</div><div class="ttdoc">Encodes the given Var into a JSON-format representation.</div></div>
 </div><!-- fragment --><p>Explicit opening allows reading or writing in an <code>stdio</code> conventional style:</p>
-<div class="fragment"><div class="line">TextFile log(<span class="stringliteral">&quot;info.log&quot;</span>, File::APPEND);</div>
-<div class="line">log.printf(<span class="stringliteral">&quot;There are %i new messages\n&quot;</span>, n_messages);</div>
-<div class="line">log &lt;&lt; <span class="stringliteral">&quot;App exited with code &quot;</span> &lt;&lt; exitCode &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="fragment"><div class="line">TextFile <a class="code" href="group___logging.html#gaa26c8028eb5810480d67c4e3afdc485b">log</a>(<span class="stringliteral">&quot;info.log&quot;</span>, File::APPEND);</div>
+<div class="line"><a class="code" href="group___logging.html#gaa26c8028eb5810480d67c4e3afdc485b">log</a>.printf(<span class="stringliteral">&quot;There are %i new messages\n&quot;</span>, n_messages);</div>
+<div class="line"><a class="code" href="group___logging.html#gaa26c8028eb5810480d67c4e3afdc485b">log</a> &lt;&lt; <span class="stringliteral">&quot;App exited with code &quot;</span> &lt;&lt; exitCode &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
-<div class="line">TextFile log(<span class="stringliteral">&quot;http-access.log&quot;</span>, File::READ)</div>
+<div class="line">TextFile <a class="code" href="group___logging.html#gaa26c8028eb5810480d67c4e3afdc485b">log</a>(<span class="stringliteral">&quot;http-access.log&quot;</span>, File::READ)</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">while</span>(!log.end())</div>
+<div class="line"><span class="keywordflow">while</span>(!<a class="code" href="group___logging.html#gaa26c8028eb5810480d67c4e3afdc485b">log</a>.end())</div>
 <div class="line">{</div>
-<div class="line">    String line = log.readLine();</div>
+<div class="line">    String line = <a class="code" href="group___logging.html#gaa26c8028eb5810480d67c4e3afdc485b">log</a>.readLine();</div>
 <div class="line">    ...</div>
 <div class="line">}</div>
+<div class="ttc" id="agroup___logging_html_gaa26c8028eb5810480d67c4e3afdc485b"><div class="ttname"><a href="group___logging.html#gaa26c8028eb5810480d67c4e3afdc485b">asl::log</a></div><div class="ttdeci">void log(const String &amp;cat, Log::Level level, const String &amp;message)</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;TextFile.h&gt;</code></p>
 <div class="dynheader">
@@ -128,9 +129,9 @@ Inheritance diagram for TextFile:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5a256367fcaaef71138b0e683b512e79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#a5a256367fcaaef71138b0e683b512e79">printf</a> (const char *fmt,...)</td></tr>
-<tr class="memdesc:a5a256367fcaaef71138b0e683b512e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints formatted text as with the regular printf.  <a href="classasl_1_1_text_file.html#a5a256367fcaaef71138b0e683b512e79">More...</a><br /></td></tr>
-<tr class="separator:a5a256367fcaaef71138b0e683b512e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c61d524c569481eefa9dfbf73d3f5b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#a5c61d524c569481eefa9dfbf73d3f5b8">printf</a> (const char *fmt,...) ASL_PRINTF_W2(2)</td></tr>
+<tr class="memdesc:a5c61d524c569481eefa9dfbf73d3f5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints formatted text as with the regular printf.  <a href="classasl_1_1_text_file.html#a5c61d524c569481eefa9dfbf73d3f5b8">More...</a><br /></td></tr>
+<tr class="separator:a5c61d524c569481eefa9dfbf73d3f5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49c94ef8890dc4541c2059c3c2e4c014"><td class="memItemLeft" align="right" valign="top"><a id="a49c94ef8890dc4541c2059c3c2e4c014"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#a49c94ef8890dc4541c2059c3c2e4c014">scanf</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;fmt, void *p1, void *p2=0, void *p3=0, void *p4=0)</td></tr>
 <tr class="memdesc:a49c94ef8890dc4541c2059c3c2e4c014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads formatted text as with the regular scanf up to 4 items only! <br /></td></tr>
@@ -146,14 +147,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:a9205172140cac805dee30b3fcf91beaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all the lines contained in the file as an array of strings.  <a href="classasl_1_1_text_file.html#a9205172140cac805dee30b3fcf91beaa">More...</a><br /></td></tr>
 <tr class="separator:a9205172140cac805dee30b3fcf91beaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad89a147da4f1940f571ebf0015e19349"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#ad89a147da4f1940f571ebf0015e19349">append</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;line)</td></tr>
-<tr class="memdesc:ad89a147da4f1940f571ebf0015e19349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the given string at the end of the file.  <a href="classasl_1_1_text_file.html#ad89a147da4f1940f571ebf0015e19349">More...</a><br /></td></tr>
+<tr class="memdesc:ad89a147da4f1940f571ebf0015e19349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the given string at the end of the file, opening in append mode if the file was not opened.  <a href="classasl_1_1_text_file.html#ad89a147da4f1940f571ebf0015e19349">More...</a><br /></td></tr>
 <tr class="separator:ad89a147da4f1940f571ebf0015e19349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeefb0d027e698a925c67bd5387a860b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#aeefb0d027e698a925c67bd5387a860b2">put</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;t)</td></tr>
-<tr class="memdesc:aeefb0d027e698a925c67bd5387a860b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the content of the file with the given text string.  <a href="classasl_1_1_text_file.html#aeefb0d027e698a925c67bd5387a860b2">More...</a><br /></td></tr>
-<tr class="separator:aeefb0d027e698a925c67bd5387a860b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599a726eefa94c759f3351a018891bc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#a599a726eefa94c759f3351a018891bc8">write</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;t)</td></tr>
-<tr class="memdesc:a599a726eefa94c759f3351a018891bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the given string into the file replacing its content.  <a href="classasl_1_1_text_file.html#a599a726eefa94c759f3351a018891bc8">More...</a><br /></td></tr>
-<tr class="separator:a599a726eefa94c759f3351a018891bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7577e1e88af45e0c3eb51aa009b71565"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#a7577e1e88af45e0c3eb51aa009b71565">write</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
+<tr class="memdesc:a7577e1e88af45e0c3eb51aa009b71565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the given string at the end of the file, opening in write mode if the file was not opened.  <a href="classasl_1_1_text_file.html#a7577e1e88af45e0c3eb51aa009b71565">More...</a><br /></td></tr>
+<tr class="separator:a7577e1e88af45e0c3eb51aa009b71565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02aa4712c5788c1c7c107f9cb58526dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_text_file.html#a02aa4712c5788c1c7c107f9cb58526dd">put</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
+<tr class="memdesc:a02aa4712c5788c1c7c107f9cb58526dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the given string at the end of the file, opening in write mode if the file was not opened.  <a href="classasl_1_1_text_file.html#a02aa4712c5788c1c7c107f9cb58526dd">More...</a><br /></td></tr>
+<tr class="separator:a02aa4712c5788c1c7c107f9cb58526dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasl_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasl_1_1_file')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasl_1_1_file.html">File</a></td></tr>
 <tr class="memitem:aa2399b233765f85aead662a2f1e67c4b inherit pub_methods_classasl_1_1_file"><td class="memItemLeft" align="right" valign="top"><a id="aa2399b233765f85aead662a2f1e67c4b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b">File</a> ()</td></tr>
@@ -212,12 +213,16 @@ const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><
 <tr class="separator:a12726cbe648de48a425ec2cacaae64de inherit pub_methods_classasl_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa202a4bc61612fc6a7fcf7682449c419 inherit pub_methods_classasl_1_1_file"><td class="memItemLeft" align="right" valign="top"><a id="aa202a4bc61612fc6a7fcf7682449c419"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#aa202a4bc61612fc6a7fcf7682449c419">isDirectory</a> () const</td></tr>
-<tr class="memdesc:aa202a4bc61612fc6a7fcf7682449c419 inherit pub_methods_classasl_1_1_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the file is a directory. <br /></td></tr>
+<tr class="memdesc:aa202a4bc61612fc6a7fcf7682449c419 inherit pub_methods_classasl_1_1_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the 'file' path is a directory. <br /></td></tr>
 <tr class="separator:aa202a4bc61612fc6a7fcf7682449c419 inherit pub_methods_classasl_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d8623150e6d43ab4bf7493aa8cbc1a inherit pub_methods_classasl_1_1_file"><td class="memItemLeft" align="right" valign="top"><a id="aa7d8623150e6d43ab4bf7493aa8cbc1a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#aa7d8623150e6d43ab4bf7493aa8cbc1a">exists</a> () const</td></tr>
-<tr class="memdesc:aa7d8623150e6d43ab4bf7493aa8cbc1a inherit pub_methods_classasl_1_1_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the file exists. <br /></td></tr>
+<tr class="memdesc:aa7d8623150e6d43ab4bf7493aa8cbc1a inherit pub_methods_classasl_1_1_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the 'file' path exists (file or directory) <br /></td></tr>
 <tr class="separator:aa7d8623150e6d43ab4bf7493aa8cbc1a inherit pub_methods_classasl_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3c94c2c4f638023958171569285076 inherit pub_methods_classasl_1_1_file"><td class="memItemLeft" align="right" valign="top"><a id="a4b3c94c2c4f638023958171569285076"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#a4b3c94c2c4f638023958171569285076">isFile</a> () const</td></tr>
+<tr class="memdesc:a4b3c94c2c4f638023958171569285076 inherit pub_methods_classasl_1_1_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the 'file' path exists and is actually a file. <br /></td></tr>
+<tr class="separator:a4b3c94c2c4f638023958171569285076 inherit pub_methods_classasl_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35130cfdcffdd1562427fbde56e98769 inherit pub_methods_classasl_1_1_file"><td class="memItemLeft" align="right" valign="top"><a id="a35130cfdcffdd1562427fbde56e98769"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_file.html#a35130cfdcffdd1562427fbde56e98769">copy</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;to)</td></tr>
 <tr class="memdesc:a35130cfdcffdd1562427fbde56e98769 inherit pub_methods_classasl_1_1_file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this file to a new directory or name. <br /></td></tr>
@@ -312,7 +317,7 @@ static <a class="el" href="classasl_1_1_file.html">File</a>&#160;</td><td class=
       </table>
 </div><div class="memdoc">
 
-<p>Writes the given string at the end of the file. </p>
+<p>Writes the given string at the end of the file, opening in append mode if the file was not opened. </p>
 <p>Returns false on failure. </p>
 
 </div>
@@ -337,8 +342,8 @@ static <a class="el" href="classasl_1_1_file.html">File</a>&#160;</td><td class=
 
 </div>
 </div>
-<a id="a5a256367fcaaef71138b0e683b512e79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a256367fcaaef71138b0e683b512e79">&#9670;&nbsp;</a></span>printf()</h2>
+<a id="a5c61d524c569481eefa9dfbf73d3f5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c61d524c569481eefa9dfbf73d3f5b8">&#9670;&nbsp;</a></span>printf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,23 +373,31 @@ static <a class="el" href="classasl_1_1_file.html">File</a>&#160;</td><td class=
 
 </div>
 </div>
-<a id="aeefb0d027e698a925c67bd5387a860b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeefb0d027e698a925c67bd5387a860b2">&#9670;&nbsp;</a></span>put()</h2>
+<a id="a02aa4712c5788c1c7c107f9cb58526dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02aa4712c5788c1c7c107f9cb58526dd">&#9670;&nbsp;</a></span>put()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool put </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Replaces the content of the file with the given text string. </p>
+<p>Writes the given string at the end of the file, opening in write mode if the file was not opened. </p>
 <p>Returns false on failure. </p>
 
 </div>
@@ -409,32 +422,24 @@ static <a class="el" href="classasl_1_1_file.html">File</a>&#160;</td><td class=
 
 </div>
 </div>
-<a id="a599a726eefa94c759f3351a018891bc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a599a726eefa94c759f3351a018891bc8">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a7577e1e88af45e0c3eb51aa009b71565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7577e1e88af45e0c3eb51aa009b71565">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool write </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Writes the given string into the file replacing its content. </p>
-<p>Returns false on failure. If the file was opened the text is written normally at the end. </p>
+<p>Writes the given string at the end of the file, opening in write mode if the file was not opened. </p>
+<p>Returns false on failure. </p>
 
 </div>
 </div>

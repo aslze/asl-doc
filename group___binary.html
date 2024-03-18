@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('group___binary.html',''); initResizabl
 <div class="line">buffer &lt;&lt; 3 &lt;&lt; 0.5;                                <span class="comment">// fill binary buffer</span></div>
 <div class="line">socket &lt;&lt; *buffer;                                 <span class="comment">// send it all at once</span></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><a class="code" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> data(12);</div>
-<div class="line">socket.read(data.ptr(), 12);                       <span class="comment">// read 12 bytes into a buffer</span></div>
+<div class="line">socket.read(data.data(), 12);                       <span class="comment">// read 12 bytes into a buffer</span></div>
 <div class="line">StreamBufferReader reader(ENDIAN_BIG);</div>
 <div class="line">int32_t x, y;</div>
 <div class="line">reader &gt;&gt; x &gt;&gt; y;                                  <span class="comment">// read 2 int32 variables from the buffer</span></div>
-<div class="ttc" id="agroup___containers_html_ga83ec16f5e316b5d33c0feed881d2c982"><div class="ttname"><a href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">asl::ByteArray</a></div><div class="ttdeci">Array&lt; byte &gt; ByteArray</div><div class="ttdoc">An alias for Array&lt;byte&gt;</div><div class="ttdef"><b>Definition:</b> Array.h:616</div></div>
+<div class="ttc" id="agroup___containers_html_ga83ec16f5e316b5d33c0feed881d2c982"><div class="ttname"><a href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">asl::ByteArray</a></div><div class="ttdeci">Array&lt; byte &gt; ByteArray</div><div class="ttdoc">An alias for Array&lt;byte&gt;</div><div class="ttdef"><b>Definition:</b> Array.h:613</div></div>
 </div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>

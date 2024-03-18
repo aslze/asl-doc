@@ -87,46 +87,56 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Member <a class="el" href="classasl_1_1_array2.html#ad299754f9775e7cbbbfd537e03dc8911">Array2&lt; T &gt;::data</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000005"></a>This will return a pointer to the beginning (for consistency)  </dd>
+<dt>Member <a class="el" href="classasl_1_1_array2.html#ad77e6bb84354180f7f15de2f5cff870d">Array2&lt; T &gt;::data</a>  () const</dt>
+<dd><a class="anchor" id="_deprecated000006"></a>This will return a pointer to the beginning (for consistency)  </dd>
 <dt>Member <a class="el" href="classasl_1_1_array.html#ac9ca720e14833f50c05bee6f3de9185c">Array&lt; T &gt;::operator const T *</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000001"></a>this conversion will not be implicit! Use .ptr()  </dd>
+<dd><a class="anchor" id="_deprecated000001"></a>This conversion will not be implicit! Use .data()  </dd>
 <dt>Member <a class="el" href="classasl_1_1_array.html#adec4d6e4697fff19761dfb957ab203f2">Array&lt; T &gt;::operator T*</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000002"></a>this conversion will not be implicit! Use .ptr()  </dd>
-<dt>Member <a class="el" href="classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c">Array&lt; T &gt;::sslice</a>  (int i1, int i2=0) const</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>Use .slice()  </dd>
+<dd><a class="anchor" id="_deprecated000002"></a>This conversion will not be implicit! Use .data()  </dd>
+<dt>Member <a class="el" href="classasl_1_1_array.html#a37a76417ba9a72b36f3d73588972c06a">Array&lt; T &gt;::ptr</a>  () const</dt>
+<dd><a class="anchor" id="_deprecated000003"></a>Use .data()  </dd>
+<dt>Member <a class="el" href="classasl_1_1_array.html#a3295aee3e56bc13ea3aa5d1a5dc6bcda">Array&lt; T &gt;::ptr</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000004"></a>Use .data()  </dd>
 <dt>Member <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">asl::byte</a>  </dt>
-<dd><a class="anchor" id="_deprecated000004"></a>This type will not be added to the global scope anymore; code should use <code>asl::byte</code>  </dd>
+<dd><a class="anchor" id="_deprecated000007"></a>This type will not be added to the global scope anymore; code should use <code>asl::byte</code>  </dd>
 <dt>Member <a class="el" href="group___global.html#gaafaccadaa1eb868bb06167a8deeea7a4">asl::decodeUrl</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;s)</dt>
-<dd><a class="anchor" id="_deprecated000008"></a>Use <a class="el" href="group___global.html#gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2" title="Decodes a string containing percent-encoded characters.">Url::decode()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000011"></a>Use <a class="el" href="group___global.html#gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2" title="Decodes a string containing percent-encoded characters.">Url::decode()</a>  </dd>
 <dt>Member <a class="el" href="group___global.html#ga003d2b8ccc13134ff70d8e8472de53e0">asl::encodeUrl</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;s)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>Use <a class="el" href="group___global.html#ga5cf5b29921907b007dba61589735d982" title="Encodes a string with percent encoding for chars not allowed in URLs, by default more characters are ...">Url::encode()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000010"></a>Use <a class="el" href="group___global.html#ga5cf5b29921907b007dba61589735d982" title="Encodes a string with percent encoding for chars not allowed in URLs, by default more characters are ...">Url::encode()</a>  </dd>
 <dt>Member <a class="el" href="group___containers.html#ga5e9a503d0bf64ea8e75d3e787f6f40b8">asl::shuffle</a>  (T *a, int n, <a class="el" href="classasl_1_1_random.html" title="A random number generator.">Random</a> &amp;rnd=random)</dt>
-<dd><a class="anchor" id="_deprecated000005"></a>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000008"></a>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a>  </dd>
 <dt>Member <a class="el" href="group___containers.html#ga5a09041efcb78eeb52ca410b10346db0">asl::shuffle</a>  (E &amp;a, <a class="el" href="classasl_1_1_random.html" title="A random number generator.">Random</a> &amp;rnd=random)</dt>
-<dd><a class="anchor" id="_deprecated000006"></a>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000009"></a>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a>  </dd>
 <dt>Member <a class="el" href="group___containers.html#ga42d368be19f431c99a509436048b734f">asl::split</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;s, const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;sep1, const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;sep2)</dt>
-<dd><a class="anchor" id="_deprecated000010"></a>Use String::split(s1, s2)  </dd>
-<dt>Member <a class="el" href="classasl_1_1_http_message.html#a5537dc1c93b1a4ed16388f3c93a25810">HttpMessage::data</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000009"></a>Use json()  </dd>
+<dd><a class="anchor" id="_deprecated000014"></a>Use String::split(s1, s2)  </dd>
+<dt>Member <a class="el" href="classasl_1_1_ini_file.html#a8a5bb31c13967d513f355a4aa9cc70f5">IniFile::array</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;field, int index) const</dt>
+<dd><a class="anchor" id="_deprecated000013"></a>Use ini[name/index\field]  </dd>
+<dt>Member <a class="el" href="classasl_1_1_ini_file.html#aad30fb0d1f6d7bf21a90b4a2bbefd391">IniFile::arraysize</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;name) const</dt>
+<dd><a class="anchor" id="_deprecated000012"></a>Use ini[name/size]  </dd>
 <dt>Member <a class="el" href="classasl_1_1_matrix4__.html#a063cafe75c73cd402238fd613edbb357">Matrix4_&lt; T &gt;::fromEuler</a>  (const Vec3_&lt; T &gt; &amp;r, int a0, int a1, int a2)</dt>
-<dd><a class="anchor" id="_deprecated000011"></a>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000015"></a>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a>  </dd>
 <dt>Member <a class="el" href="classasl_1_1_matrix4__.html#a194c4d34f3f0604391fdfbbd4a427cbe">Matrix4_&lt; T &gt;::fromEuler</a>  (const Vec3_&lt; T &gt; &amp;r, const char *a)</dt>
-<dd><a class="anchor" id="_deprecated000012"></a>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000016"></a>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a>  </dd>
 <dt>Class <a class="el" href="classasl_1_1_pointer.html">Pointer&lt; T &gt;</a>  </dt>
-<dd><a class="anchor" id="_deprecated000013"></a>This old class will disappear (use unique_ptr&lt;T&gt;, Shared&lt;T&gt;...)  </dd>
+<dd><a class="anchor" id="_deprecated000017"></a>This old class will disappear (use unique_ptr&lt;T&gt;, Shared&lt;T&gt;...)  </dd>
 <dt>Class <a class="el" href="classasl_1_1_shared_mem.html">SharedMem</a>  </dt>
-<dd><a class="anchor" id="_deprecated000014"></a>This class was an experiment and might be removed sometime. </dd>
+<dd><a class="anchor" id="_deprecated000018"></a>This class was an experiment and might be removed sometime. </dd>
+<dt>Member <a class="el" href="classasl_1_1_socket.html#a4ba95b2d1b16f84aa225ad9cfbb85b20">Socket::operator&gt;&gt;</a>  (<a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;x)</dt>
+<dd><a class="anchor" id="_deprecated000019"></a>Too specific  </dd>
 <dt>Member <a class="el" href="classasl_1_1_string.html#acb67799ac982ceafda8eaca69c3db31d">String::String</a>  (char c, int n)</dt>
-<dd><a class="anchor" id="_deprecated000015"></a>Use <code><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3" title="Constructs a string consisting of character c repeated n times.">String::repeat()</a></code> instead.  </dd>
-<dt>Member <a class="el" href="classasl_1_1_var.html#af86ff7fcda2d789fc75b7750e6acfb82">Var::isTrue</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000016"></a>Use <code>bool</code> conversion  </dd>
+<dd><a class="anchor" id="_deprecated000020"></a>Use <code><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3" title="Constructs a string consisting of character c repeated n times.">String::repeat()</a></code> instead.  </dd>
+<dt>Member <a class="el" href="classasl_1_1_thread.html#aae9d52caad9fb2892deeb25596cfd2ab">Thread::kill</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000021"></a>Threads should end when their function ends  </dd>
 <dt>Member <a class="el" href="classasl_1_1_xml.html#a70af2fbc3ff922b292f250803257ea57">Xml::set</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;value)</dt>
-<dd><a class="anchor" id="_deprecated000018"></a>Use put()  </dd>
+<dd><a class="anchor" id="_deprecated000023"></a>Use put()  </dd>
 <dt>Member <a class="el" href="classasl_1_1_xml.html#a8f8ee0e24ca48f20bc757e7da882aa53">Xml::set</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;name, const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;val)</dt>
-<dd><a class="anchor" id="_deprecated000019"></a>Use put(), set() will probably set an attribute in the future  </dd>
+<dd><a class="anchor" id="_deprecated000024"></a>Use put(), set() will probably set an attribute in the future  </dd>
 <dt>Member <a class="el" href="classasl_1_1_xml.html#a91044149834cf325bec3c1d1d37c010e">Xml::setTag</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;tag)</dt>
-<dd><a class="anchor" id="_deprecated000017"></a>Why would anyone do this?  </dd>
+<dd><a class="anchor" id="_deprecated000022"></a>Why would anyone do this?  </dd>
 <dt>Member <a class="el" href="classasl_1_1_xml.html#acfa66cd2902845b09f996ff1b8974e3b">Xml::write</a>  (const <a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a> &amp;file, const <a class="el" href="classasl_1_1_xml.html" title="This class represents an XML element and can be used to manipulate a document DOM tree.">Xml</a> &amp;e)</dt>
-<dd><a class="anchor" id="_deprecated000020"></a>Use Xml::write(xml, file) </dd>
+<dd><a class="anchor" id="_deprecated000025"></a>Use Xml::write(xml, file) </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

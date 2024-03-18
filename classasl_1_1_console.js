@@ -13,7 +13,7 @@ var classasl_1_1_console =
     [ "reset", "classasl_1_1_console.html#ad20897c5c8bd47f5d4005989bead0e55", null ],
     [ "rgb", "classasl_1_1_console.html#af3884bd84170ffb9c7b7ae4e37994603", null ],
     [ "setColorMode", "classasl_1_1_console.html#ad70b5b8a64176f5621d49d1647da61e9", null ],
-    [ "setCP", "classasl_1_1_console.html#af7c5183280ef85a2d1859b774f8dfcbd", null ],
+    [ "setCP", "classasl_1_1_console.html#a94dfaa3cddd46ad6757255e21b7b0ad8", null ],
     [ "showCursor", "classasl_1_1_console.html#a8adaa8c836707c251d585944df6fa013", null ],
     [ "size", "classasl_1_1_console.html#a9a4c32403766cd16ca4e3a5479f075bd", null ]
 ];

@@ -11,7 +11,7 @@ var classasl_1_1_http_request =
     [ "query", "classasl_1_1_http_request.html#aa65ea91cf18b0515b16bbadcbe283576", null ],
     [ "querystring", "classasl_1_1_http_request.html#ade787a6ed231b72d69a459dc75674fcd", null ],
     [ "sender", "classasl_1_1_http_request.html#a45dbb6b6c60a7633275f7016a34a5b2d", null ],
-    [ "setFollowRedirects", "classasl_1_1_http_request.html#aef4963d88779349a80742cd46a016ffd", null ],
+    [ "setFollowRedirects", "classasl_1_1_http_request.html#a30e4e2dbd85f835978f15a446861bd25", null ],
     [ "suffix", "classasl_1_1_http_request.html#ae27e7ef13482b77673d19c1069481edb", null ],
     [ "url", "classasl_1_1_http_request.html#a73a7b7d79474a4b87297e875679c19bd", null ]
 ];

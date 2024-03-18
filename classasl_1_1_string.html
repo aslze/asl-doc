@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_string.html',''); initRes
 <p>Strings are byte-based using UTF-8 (or Local 8-bit if ASL_ANSI is defined). In order to use string literals with non-ASCII characters, source code must be encoded in UTF-8. Indices and substrings operate on code-units.</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> firstName = <span class="stringliteral">&quot;John&quot;</span>, lastName = <span class="stringliteral">&quot;Doe&quot;</span>;</div>
 <div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> name = firstName + <span class="stringliteral">&quot; &quot;</span> + lastName;       <span class="comment">// use += when possible, it&#39;s faster</span></div>
-<div class="ttc" id="aclassasl_1_1_string_html_a8db865e64c3c3f65ec6a0b6fd8c09a94"><div class="ttname"><a href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">asl::String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Constructs an empty string.</div><div class="ttdef"><b>Definition:</b> String.h:141</div></div>
+<div class="ttc" id="aclassasl_1_1_string_html_a8db865e64c3c3f65ec6a0b6fd8c09a94"><div class="ttname"><a href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">asl::String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Constructs an empty string.</div><div class="ttdef"><b>Definition:</b> String.h:159</div></div>
 </div><!-- fragment --><p>Unicode (UTF-8) case conversions and case-insensitive comparisons are supported.</p>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> babel = <span class="stringliteral">&quot;Ñandú εξέλιξη жизни&quot;</span>; <span class="comment">// UTF-8 string with Latin, Greek and Cyrilic text</span></div>
 <div class="line">babel.toUpperCase() -&gt; <span class="stringliteral">&quot;ÑANDÚ ΕΞΈΛΙΞΗ ЖИЗНИ&quot;</span></div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_string.html',''); initRes
 <div class="line">a[number] = number + <span class="stringliteral">&quot;.5&quot;</span>;     <span class="comment">// -&gt; a[14] = 14.5  string to double</span></div>
 <div class="line">fopen(number + <span class="stringliteral">&quot;.txt&quot;</span>, <span class="stringliteral">&quot;r&quot;</span>);   <span class="comment">// -&gt; &quot;14.txt&quot;      string to const char*</span></div>
 <div class="line"><a class="code" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a> items = <a class="code" href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">array</a>(1, 2, 3); <span class="comment">// -&gt; &quot;[1,2,3]&quot;     array of ints to string</span></div>
-<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:755</div></div>
+<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:753</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;String.h&gt;</code></p>
 <table class="memberdecls">
@@ -139,10 +139,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a3187111b1552e687bd54f43b07525492">String</a> (int cap, int n)</td></tr>
 <tr class="memdesc:a3187111b1552e687bd54f43b07525492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an uninitialized string with internal capacity <code>cap</code> and length <code>n</code>, useful for writing to it externally. <br /></td></tr>
 <tr class="separator:a3187111b1552e687bd54f43b07525492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc4f2f5b7a91c56218a24fced6faf211"><td class="memItemLeft" align="right" valign="top"><a id="adc4f2f5b7a91c56218a24fced6faf211"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#adc4f2f5b7a91c56218a24fced6faf211">String</a> (char *txt)</td></tr>
-<tr class="memdesc:adc4f2f5b7a91c56218a24fced6faf211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string from a C string (pointer to null-terminated string) <br /></td></tr>
-<tr class="separator:adc4f2f5b7a91c56218a24fced6faf211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6ea115ae68459964478d15707c3f44"><td class="memItemLeft" align="right" valign="top"><a id="a7a6ea115ae68459964478d15707c3f44"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a7a6ea115ae68459964478d15707c3f44">String</a> (const char *txt)</td></tr>
 <tr class="memdesc:a7a6ea115ae68459964478d15707c3f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string from a C string (pointer to null-terminated string) <br /></td></tr>
@@ -174,9 +170,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a803082dd67d5b822e3f203ce30919f97">String</a> (const wchar_t *s)</td></tr>
 <tr class="memdesc:a803082dd67d5b822e3f203ce30919f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string from an Unicode UTF16 string. <br /></td></tr>
 <tr class="separator:a803082dd67d5b822e3f203ce30919f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65ee9a6eb54c520dde899336d20c404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#aa65ee9a6eb54c520dde899336d20c404">String</a> (int n, const char *fmt,...)</td></tr>
-<tr class="memdesc:aa65ee9a6eb54c520dde899336d20c404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string by formatting values using <code>printf</code>-style specification <code>fmt</code>.  <a href="classasl_1_1_string.html#aa65ee9a6eb54c520dde899336d20c404">More...</a><br /></td></tr>
-<tr class="separator:aa65ee9a6eb54c520dde899336d20c404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0ab30ee3d70109b85479a51e418692"><td class="memItemLeft" align="right" valign="top"><a id="a3f0ab30ee3d70109b85479a51e418692"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a3f0ab30ee3d70109b85479a51e418692">String</a> (Long x)</td></tr>
 <tr class="memdesc:a3f0ab30ee3d70109b85479a51e418692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string from a 64bit long integer number. <br /></td></tr>
@@ -229,6 +222,11 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a67b76affb3b5d35fa419ac234144038b">operator bool</a> () const</td></tr>
 <tr class="memdesc:a67b76affb3b5d35fa419ac234144038b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string is not empty (warning: this might change in the future to mean <a class="el" href="classasl_1_1_string.html#af86ff7fcda2d789fc75b7750e6acfb82" title="Returns true if this string represents a non-false value (e.g.">isTrue()</a>, use <code><a class="el" href="classasl_1_1_string.html#a03cb7eaa663dc83af68bc28a596d09e6" title="Returns true if this string is not empty.">ok()</a></code>) <br /></td></tr>
 <tr class="separator:a67b76affb3b5d35fa419ac234144038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43429c5a12dbbadf7ed4f91ad75ea7f7"><td class="memTemplParams" colspan="2"><a id="a43429c5a12dbbadf7ed4f91ad75ea7f7"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a43429c5a12dbbadf7ed4f91ad75ea7f7"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a43429c5a12dbbadf7ed4f91ad75ea7f7">to</a> () const</td></tr>
+<tr class="memdesc:a43429c5a12dbbadf7ed4f91ad75ea7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this string to another basic type, if supported <code>n = str.to&lt;int&gt;();</code> <br /></td></tr>
+<tr class="separator:a43429c5a12dbbadf7ed4f91ad75ea7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61efd4196a96540ee018fee8791f3f10"><td class="memItemLeft" align="right" valign="top"><a id="a61efd4196a96540ee018fee8791f3f10"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a61efd4196a96540ee018fee8791f3f10">operator!</a> () const</td></tr>
 <tr class="memdesc:a61efd4196a96540ee018fee8791f3f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string is empty (warning: this might change in the future to mean !isTrue(), use <code>!ok()</code>) <br /></td></tr>
@@ -245,14 +243,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a9546b93cd8f1ef10d06926b89df1a8fe">data</a> ()</td></tr>
 <tr class="memdesc:a9546b93cd8f1ef10d06926b89df1a8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the beginning of the character data (suitable for functions requiring C-style strings) <br /></td></tr>
 <tr class="separator:a9546b93cd8f1ef10d06926b89df1a8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bb232ad4362d5770f9b5c01cc76da1"><td class="memItemLeft" align="right" valign="top"><a id="ac5bb232ad4362d5770f9b5c01cc76da1"></a>
+const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#ac5bb232ad4362d5770f9b5c01cc76da1">dataw</a> () const</td></tr>
+<tr class="memdesc:ac5bb232ad4362d5770f9b5c01cc76da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a Unicode UTF16 representation of this string by expanding from the internal byte representation (suitable for functions requiring C-style wide strings (LPWSTR)) <br /></td></tr>
+<tr class="separator:ac5bb232ad4362d5770f9b5c01cc76da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa908f94f43015f22c4f756a118a96f"><td class="memItemLeft" align="right" valign="top"><a id="a2aa908f94f43015f22c4f756a118a96f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a2aa908f94f43015f22c4f756a118a96f">operator const wchar_t *</a> () const</td></tr>
 <tr class="memdesc:a2aa908f94f43015f22c4f756a118a96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to a Unicode UTF16 representation of this string by expanding from the internal byte representation (suitable for functions requiring C-style wide strings (LPCWSTR)) <br /></td></tr>
 <tr class="separator:a2aa908f94f43015f22c4f756a118a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ae06cffc453ed3cb8a9c5afb440903"><td class="memItemLeft" align="right" valign="top"><a id="a32ae06cffc453ed3cb8a9c5afb440903"></a>
-wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a32ae06cffc453ed3cb8a9c5afb440903">dataw</a> ()</td></tr>
-<tr class="memdesc:a32ae06cffc453ed3cb8a9c5afb440903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a Unicode UTF16 representation of this string by expanding from the internal byte representation (suitable for functions requiring C-style wide strings (LPWSTR)) <br /></td></tr>
-<tr class="separator:a32ae06cffc453ed3cb8a9c5afb440903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c1512d6a15dbd1d98697c97cf5744b"><td class="memItemLeft" align="right" valign="top"><a id="a22c1512d6a15dbd1d98697c97cf5744b"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a22c1512d6a15dbd1d98697c97cf5744b">operator*</a> () const</td></tr>
 <tr class="memdesc:a22c1512d6a15dbd1d98697c97cf5744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to the beginning of the character data (suitable for functions for functions requiring C-style strings) <br /></td></tr>
@@ -260,6 +258,10 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:af86ff7fcda2d789fc75b7750e6acfb82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#af86ff7fcda2d789fc75b7750e6acfb82">isTrue</a> () const</td></tr>
 <tr class="memdesc:af86ff7fcda2d789fc75b7750e6acfb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this string represents a non-false value (e.g.  <a href="classasl_1_1_string.html#af86ff7fcda2d789fc75b7750e6acfb82">More...</a><br /></td></tr>
 <tr class="separator:af86ff7fcda2d789fc75b7750e6acfb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2cdae48040049151c3b6e2e77671d2"><td class="memItemLeft" align="right" valign="top"><a id="a5b2cdae48040049151c3b6e2e77671d2"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a5b2cdae48040049151c3b6e2e77671d2">toLocal</a> () const</td></tr>
+<tr class="memdesc:a5b2cdae48040049151c3b6e2e77671d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a local charset version of this string (which is UTF8 or ANSI) <br /></td></tr>
+<tr class="separator:a5b2cdae48040049151c3b6e2e77671d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2f2c48ff3e8f77a322d02c0d03a4167"><td class="memItemLeft" align="right" valign="top"><a id="af2f2c48ff3e8f77a322d02c0d03a4167"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#af2f2c48ff3e8f77a322d02c0d03a4167">hexToInt</a> () const</td></tr>
 <tr class="memdesc:af2f2c48ff3e8f77a322d02c0d03a4167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this string to an unsigned integer number by interpreting it as an hexadecimal number. <br /></td></tr>
@@ -409,18 +411,22 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a50e22d409c0b156310348458db88c9f5">fromCode</a> (int code)</td></tr>
 <tr class="memdesc:a50e22d409c0b156310348458db88c9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a one-'character' string from an Unicode code point. <br /></td></tr>
 <tr class="separator:a50e22d409c0b156310348458db88c9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b39558a9485541e7eae07bd8ffc2d1"><td class="memItemLeft" align="right" valign="top"><a id="a26b39558a9485541e7eae07bd8ffc2d1"></a>
+static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a26b39558a9485541e7eae07bd8ffc2d1">fromLocal</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;a)</td></tr>
+<tr class="memdesc:a26b39558a9485541e7eae07bd8ffc2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a (UTF8 or ANSI) string from a string in the local charset. <br /></td></tr>
+<tr class="separator:a26b39558a9485541e7eae07bd8ffc2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d1874a06f96b8792652ab6d713087e3"><td class="memItemLeft" align="right" valign="top"><a id="a9d1874a06f96b8792652ab6d713087e3"></a>
 static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3">repeat</a> (char c, int n)</td></tr>
 <tr class="memdesc:a9d1874a06f96b8792652ab6d713087e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string consisting of character <code>c</code> repeated <code>n</code> times. <br /></td></tr>
 <tr class="separator:a9d1874a06f96b8792652ab6d713087e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aaea6f92b541beec9020045845e8ec0"><td class="memItemLeft" align="right" valign="top"><a id="a8aaea6f92b541beec9020045845e8ec0"></a>
-static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a8aaea6f92b541beec9020045845e8ec0">f</a> (const char *fmt,...)</td></tr>
-<tr class="memdesc:a8aaea6f92b541beec9020045845e8ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string by formatting values using <code>printf</code>-style specification <code>fmt</code>. <br /></td></tr>
-<tr class="separator:a8aaea6f92b541beec9020045845e8ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e9dbbb31008edf9e637fe4b9592b86"><td class="memItemLeft" align="right" valign="top"><a id="a27e9dbbb31008edf9e637fe4b9592b86"></a>
+static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_string.html#a27e9dbbb31008edf9e637fe4b9592b86">f</a> (const char *fmt,...) ASL_PRINTF_W2(1)</td></tr>
+<tr class="memdesc:a27e9dbbb31008edf9e637fe4b9592b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string by formatting values using <code>printf</code>-style specification <code>fmt</code>. <br /></td></tr>
+<tr class="separator:a27e9dbbb31008edf9e637fe4b9592b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acb67799ac982ceafda8eaca69c3db31d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb67799ac982ceafda8eaca69c3db31d">&#9670;&nbsp;</a></span>String() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acb67799ac982ceafda8eaca69c3db31d">&#9670;&nbsp;</a></span>String()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,52 +460,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Constructs a string consisting of character <code>c</code> repeated <code>n</code> times. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use <code><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3" title="Constructs a string consisting of character c repeated n times.">String::repeat()</a></code> instead. </dd></dl>
-
-</div>
-</div>
-<a id="aa65ee9a6eb54c520dde899336d20c404"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa65ee9a6eb54c520dde899336d20c404">&#9670;&nbsp;</a></span>String() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_string.html">String</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructs a string by formatting values using <code>printf</code>-style specification <code>fmt</code>. </p>
-<p>The first argument can give an initial buffer size, but will be automatically calculated if it is 0. In any case, the function will automatically allocate _space as needed. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>Use <code><a class="el" href="classasl_1_1_string.html#a9d1874a06f96b8792652ab6d713087e3" title="Constructs a string consisting of character c repeated n times.">String::repeat()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -520,7 +481,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Returns true if this string represents a non-false value (e.g. </p>
-<p>none of: "", "0", "N", "false", "no") </p>
+<p>none of: "", "0", "false", "False", "FALSE", "no", "NO") </p>
 
 </div>
 </div>

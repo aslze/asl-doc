@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_socket_server.html',''); 
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a reusable TCP socket server that listens to incoming connections and answers them concurrently (default) or sequentially. </p>
-<p>To make an actual server, derive a class from it and implement the virtual function <code><a class="el" href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b" title="This function is called in a new thread with each new incoming client connection.">serve()</a></code>. That function will whenever a new connection arrives.</p>
+<p>To make an actual server, derive a class from it and implement the virtual function <code><a class="el" href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b" title="This function is called in a new thread with each new incoming client connection.">serve()</a></code>. That function will be called whenever a new connection arrives.</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>HelloServer : <span class="keyword">public</span> SocketServer</div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>

@@ -18,6 +18,7 @@ var classasl_1_1_socket =
     [ "read", "classasl_1_1_socket.html#a7c6ae5ceb5a015e1f11090189c210386", null ],
     [ "read", "classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf", null ],
     [ "readLine", "classasl_1_1_socket.html#a79e7f2ee2b5e510148a290e49333c1e7", null ],
+    [ "readString", "classasl_1_1_socket.html#a4a4f69cba9e992211068b1fc43c94923", null ],
     [ "remoteAddress", "classasl_1_1_socket.html#a10e33d5f925b803ad2699ef4f1a0981e", null ],
     [ "skip", "classasl_1_1_socket.html#a22e04fd90a8da8fbaa968a171d19c6f8", null ],
     [ "waitData", "classasl_1_1_socket.html#a1369224aced95f8e426b57c32e31edb0", null ],

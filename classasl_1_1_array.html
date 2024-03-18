@@ -150,14 +150,14 @@ template&lt;class K &gt; </td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a91213974fa3ac3959b1c355a9e588f8d">length</a> () const</td></tr>
 <tr class="memdesc:a91213974fa3ac3959b1c355a9e588f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the array. <br /></td></tr>
 <tr class="separator:a91213974fa3ac3959b1c355a9e588f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a144066ea59e9e0759265d1682a6bdfd5"><td class="memItemLeft" align="right" valign="top"><a id="a144066ea59e9e0759265d1682a6bdfd5"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a144066ea59e9e0759265d1682a6bdfd5">resize</a> (int m)</td></tr>
-<tr class="memdesc:a144066ea59e9e0759265d1682a6bdfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the array to a capacity of m elements; up to m existing elements are preserved. <br /></td></tr>
-<tr class="separator:a144066ea59e9e0759265d1682a6bdfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e0d971cb52732bfc94ce25a5255a75"><td class="memItemLeft" align="right" valign="top"><a id="a56e0d971cb52732bfc94ce25a5255a75"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a56e0d971cb52732bfc94ce25a5255a75">reserve</a> (int m)</td></tr>
-<tr class="memdesc:a56e0d971cb52732bfc94ce25a5255a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves space for m elements without changing actual length. <br /></td></tr>
-<tr class="separator:a56e0d971cb52732bfc94ce25a5255a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aebfc19670b1df2327a79b3ae4cffe7"><td class="memItemLeft" align="right" valign="top"><a id="a8aebfc19670b1df2327a79b3ae4cffe7"></a>
+<a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a8aebfc19670b1df2327a79b3ae4cffe7">reserve</a> (int m)</td></tr>
+<tr class="memdesc:a8aebfc19670b1df2327a79b3ae4cffe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves space for m elements without increasing actual length (to make appending faster), but decreases length if m is less than current size. <br /></td></tr>
+<tr class="separator:a8aebfc19670b1df2327a79b3ae4cffe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1990a6be53c41dc25283e227c3f2bc"><td class="memItemLeft" align="right" valign="top"><a id="a6f1990a6be53c41dc25283e227c3f2bc"></a>
+<a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a6f1990a6be53c41dc25283e227c3f2bc">resize</a> (int m)</td></tr>
+<tr class="memdesc:a6f1990a6be53c41dc25283e227c3f2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the array to m elements; up to m existing elements are preserved. <br /></td></tr>
+<tr class="separator:a6f1990a6be53c41dc25283e227c3f2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top"><a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
 <tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all elements in the array. <br /></td></tr>
@@ -168,14 +168,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:adec4d6e4697fff19761dfb957ab203f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#adec4d6e4697fff19761dfb957ab203f2">operator T*</a> ()</td></tr>
 <tr class="memdesc:adec4d6e4697fff19761dfb957ab203f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the base of the array.  <a href="classasl_1_1_array.html#adec4d6e4697fff19761dfb957ab203f2">More...</a><br /></td></tr>
 <tr class="separator:adec4d6e4697fff19761dfb957ab203f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a76417ba9a72b36f3d73588972c06a"><td class="memItemLeft" align="right" valign="top"><a id="a37a76417ba9a72b36f3d73588972c06a"></a>
-const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a37a76417ba9a72b36f3d73588972c06a">ptr</a> () const</td></tr>
-<tr class="memdesc:a37a76417ba9a72b36f3d73588972c06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element. <br /></td></tr>
+<tr class="memitem:a37a76417ba9a72b36f3d73588972c06a"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a37a76417ba9a72b36f3d73588972c06a">ptr</a> () const</td></tr>
+<tr class="memdesc:a37a76417ba9a72b36f3d73588972c06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element.  <a href="classasl_1_1_array.html#a37a76417ba9a72b36f3d73588972c06a">More...</a><br /></td></tr>
 <tr class="separator:a37a76417ba9a72b36f3d73588972c06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3295aee3e56bc13ea3aa5d1a5dc6bcda"><td class="memItemLeft" align="right" valign="top"><a id="a3295aee3e56bc13ea3aa5d1a5dc6bcda"></a>
-T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a3295aee3e56bc13ea3aa5d1a5dc6bcda">ptr</a> ()</td></tr>
-<tr class="memdesc:a3295aee3e56bc13ea3aa5d1a5dc6bcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element. <br /></td></tr>
+<tr class="memitem:a3295aee3e56bc13ea3aa5d1a5dc6bcda"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a3295aee3e56bc13ea3aa5d1a5dc6bcda">ptr</a> ()</td></tr>
+<tr class="memdesc:a3295aee3e56bc13ea3aa5d1a5dc6bcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element.  <a href="classasl_1_1_array.html#a3295aee3e56bc13ea3aa5d1a5dc6bcda">More...</a><br /></td></tr>
 <tr class="separator:a3295aee3e56bc13ea3aa5d1a5dc6bcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1699472936b80a88d3fc8096975d21b2"><td class="memItemLeft" align="right" valign="top"><a id="a1699472936b80a88d3fc8096975d21b2"></a>
+T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a1699472936b80a88d3fc8096975d21b2">data</a> ()</td></tr>
+<tr class="memdesc:a1699472936b80a88d3fc8096975d21b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element. <br /></td></tr>
+<tr class="separator:a1699472936b80a88d3fc8096975d21b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce7ecceadabf1ae43d7fe0a016bb84b"><td class="memItemLeft" align="right" valign="top"><a id="a6ce7ecceadabf1ae43d7fe0a016bb84b"></a>
+const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a6ce7ecceadabf1ae43d7fe0a016bb84b">data</a> () const</td></tr>
+<tr class="memdesc:a6ce7ecceadabf1ae43d7fe0a016bb84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element. <br /></td></tr>
+<tr class="separator:a6ce7ecceadabf1ae43d7fe0a016bb84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428091eaae18f98678bf1ae3d3afb732"><td class="memItemLeft" align="right" valign="top"><a id="a428091eaae18f98678bf1ae3d3afb732"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a428091eaae18f98678bf1ae3d3afb732">operator==</a> (const <a class="el" href="classasl_1_1_array.html">Array</a> &amp;b) const</td></tr>
 <tr class="memdesc:a428091eaae18f98678bf1ae3d3afb732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests for equality of all elements of both arrays. <br /></td></tr>
@@ -232,14 +238,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a2858252780a1e9c712ed6cd81b93976f">operator,</a> (const T &amp;x)</td></tr>
 <tr class="memdesc:a2858252780a1e9c712ed6cd81b93976f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same as <code>&lt;&lt;</code>, useful to create pseudo-array-literals. <br /></td></tr>
 <tr class="separator:a2858252780a1e9c712ed6cd81b93976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db009df06cec3ad22c547a2b7b4f6c5"><td class="memItemLeft" align="right" valign="top"><a id="a0db009df06cec3ad22c547a2b7b4f6c5"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a0db009df06cec3ad22c547a2b7b4f6c5">remove</a> (int i)</td></tr>
-<tr class="memdesc:a0db009df06cec3ad22c547a2b7b4f6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at position i. <br /></td></tr>
-<tr class="separator:a0db009df06cec3ad22c547a2b7b4f6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e4498b7e24e734dc9e42734223b21d"><td class="memItemLeft" align="right" valign="top"><a id="a43e4498b7e24e734dc9e42734223b21d"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a43e4498b7e24e734dc9e42734223b21d">remove</a> (int i, int n)</td></tr>
-<tr class="memdesc:a43e4498b7e24e734dc9e42734223b21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes n elements starting at position i. <br /></td></tr>
-<tr class="separator:a43e4498b7e24e734dc9e42734223b21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272c16eb6e72c2a1bdcc1fb72de9abe0"><td class="memItemLeft" align="right" valign="top"><a id="a272c16eb6e72c2a1bdcc1fb72de9abe0"></a>
+<a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a272c16eb6e72c2a1bdcc1fb72de9abe0">remove</a> (int i, int n=1)</td></tr>
+<tr class="memdesc:a272c16eb6e72c2a1bdcc1fb72de9abe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes n elements (1 be default) starting at position i. <br /></td></tr>
+<tr class="separator:a272c16eb6e72c2a1bdcc1fb72de9abe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42c71c512d9366d10856c23464676fd"><td class="memItemLeft" align="right" valign="top"><a id="ae42c71c512d9366d10856c23464676fd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#ae42c71c512d9366d10856c23464676fd">removeOne</a> (const T &amp;x, int i0=0)</td></tr>
 <tr class="memdesc:ae42c71c512d9366d10856c23464676fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first element with value x starting at index i0; Returns true if an element was found and removed. <br /></td></tr>
@@ -256,9 +258,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classasl_1_1_array.html">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a04251d5d49cadb1a5e06827db1eae4cd">slice</a> (int i1, int i2=0) const</td></tr>
 <tr class="memdesc:a04251d5d49cadb1a5e06827db1eae4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a section of the array, from element i1 up to but not including element i2; If i2 is omitted the subarray will take elements up te the last. <br /></td></tr>
 <tr class="separator:a04251d5d49cadb1a5e06827db1eae4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8382ee2e4a41ce89feebcb2dec1a053c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c">sslice</a> (int i1, int i2=0) const</td></tr>
-<tr class="memdesc:a8382ee2e4a41ce89feebcb2dec1a053c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as slice()  <a href="classasl_1_1_array.html#a8382ee2e4a41ce89feebcb2dec1a053c">More...</a><br /></td></tr>
-<tr class="separator:a8382ee2e4a41ce89feebcb2dec1a053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1359cc28c154ce626fcbac7dc11eeb"><td class="memItemLeft" align="right" valign="top"><a id="a0d1359cc28c154ce626fcbac7dc11eeb"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_array.html#a0d1359cc28c154ce626fcbac7dc11eeb">append</a> (const <a class="el" href="classasl_1_1_array.html">Array</a> &amp;b)</td></tr>
 <tr class="memdesc:a0d1359cc28c154ce626fcbac7dc11eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all elements from array b at the end of the array. <br /></td></tr>
@@ -335,7 +334,7 @@ template&lt;class F &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Returns a pointer to the base of the array. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>this conversion will not be implicit! Use .ptr() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>This conversion will not be implicit! Use .data() </dd></dl>
 
 </div>
 </div>
@@ -355,38 +354,63 @@ template&lt;class F &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Returns a pointer to the base of the array. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>this conversion will not be implicit! Use .ptr() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>This conversion will not be implicit! Use .data() </dd></dl>
 
 </div>
 </div>
-<a id="a8382ee2e4a41ce89feebcb2dec1a053c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8382ee2e4a41ce89feebcb2dec1a053c">&#9670;&nbsp;</a></span>sslice()</h2>
+<a id="a3295aee3e56bc13ea3aa5d1a5dc6bcda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3295aee3e56bc13ea3aa5d1a5dc6bcda">&#9670;&nbsp;</a></span>ptr() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_array.html">Array</a> sslice </td>
+          <td class="memname">T* ptr </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i2</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Same as slice() </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use .slice() </dd></dl>
+<p>Returns a pointer to the first element. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use .data() </dd></dl>
+
+</div>
+</div>
+<a id="a37a76417ba9a72b36f3d73588972c06a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a76417ba9a72b36f3d73588972c06a">&#9670;&nbsp;</a></span>ptr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T* ptr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the first element. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use .data() </dd></dl>
 
 </div>
 </div>

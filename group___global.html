@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('group___global.html',''); initResizabl
 <div class="ttc" id="agroup___global_html_ga8a5d089416f7e5f28d51a3abefd6bd0f"><div class="ttname"><a href="group___global.html#ga8a5d089416f7e5f28d51a3abefd6bd0f">asl::now</a></div><div class="ttdeci">double now()</div><div class="ttdoc">Returns the current time as a real number in seconds since a fixed epoch (precision is platform-depen...</div></div>
 </div><!-- fragment --><p>Convert radians to degrees and limit to 0-360 deg interval:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> degrees = <a class="code" href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">clamp</a>(<a class="code" href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">rad2deg</a>(angle), 0, 360);</div>
-<div class="ttc" id="agroup___global_html_ga1158c41b115d2e2bae4c3020a427127c"><div class="ttname"><a href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">asl::clamp</a></div><div class="ttdeci">T clamp(T x, C a, C b)</div><div class="ttdoc">Clamps the value of x to make it lie inside the [a,b] interval.</div><div class="ttdef"><b>Definition:</b> defs.h:196</div></div>
-<div class="ttc" id="agroup___global_html_ga4cc2d428b391ef9e5bf5097fd7e000a8"><div class="ttname"><a href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">asl::rad2deg</a></div><div class="ttdeci">T rad2deg(T x)</div><div class="ttdoc">Returns x radians converted to degrees.</div><div class="ttdef"><b>Definition:</b> defs.h:207</div></div>
+<div class="ttc" id="agroup___global_html_ga1158c41b115d2e2bae4c3020a427127c"><div class="ttname"><a href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">asl::clamp</a></div><div class="ttdeci">T clamp(T x, C a, C b)</div><div class="ttdoc">Clamps the value of x to make it lie inside the [a,b] interval.</div><div class="ttdef"><b>Definition:</b> defs.h:205</div></div>
+<div class="ttc" id="agroup___global_html_ga4cc2d428b391ef9e5bf5097fd7e000a8"><div class="ttname"><a href="group___global.html#ga4cc2d428b391ef9e5bf5097fd7e000a8">asl::rad2deg</a></div><div class="ttdeci">T rad2deg(T x)</div><div class="ttdoc">Returns x radians converted to degrees.</div><div class="ttdef"><b>Definition:</b> defs.h:216</div></div>
 </div><!-- fragment --><p>Get random numbers in an interval:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> x = random(-1.0, 1.0);</div>
 <div class="line"> </div>
@@ -134,6 +134,11 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:ga7092e898a987d3fd7f760cac9c479fc7"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___global.html#ga7092e898a987d3fd7f760cac9c479fc7">fract</a> (T x)</td></tr>
 <tr class="memdesc:ga7092e898a987d3fd7f760cac9c479fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fractional part of <code>x</code> <br /></td></tr>
 <tr class="separator:ga7092e898a987d3fd7f760cac9c479fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5afe3c202e56e9ffa036e6f8699c55f2"><td class="memTemplParams" colspan="2"><a id="ga5afe3c202e56e9ffa036e6f8699c55f2"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga5afe3c202e56e9ffa036e6f8699c55f2"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___global.html#ga5afe3c202e56e9ffa036e6f8699c55f2">round</a> (T x, T k)</td></tr>
+<tr class="memdesc:ga5afe3c202e56e9ffa036e6f8699c55f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds a number to a multiple of k. <br /></td></tr>
+<tr class="separator:ga5afe3c202e56e9ffa036e6f8699c55f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1158c41b115d2e2bae4c3020a427127c"><td class="memTemplParams" colspan="2"><a id="ga1158c41b115d2e2bae4c3020a427127c"></a>
 template&lt;class T , class C &gt; </td></tr>
 <tr class="memitem:ga1158c41b115d2e2bae4c3020a427127c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___global.html#ga1158c41b115d2e2bae4c3020a427127c">clamp</a> (T x, C a, C b)</td></tr>
@@ -175,18 +180,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga764968a708bc825f26560aa66b4a884e">decodeBase64</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
 <tr class="memdesc:ga764968a708bc825f26560aa66b4a884e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a base64 encoded string into a byte array; the string can contain whitespace. <br /></td></tr>
 <tr class="separator:ga764968a708bc825f26560aa66b4a884e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47687865c2314d8e644e941947c9ab82"><td class="memItemLeft" align="right" valign="top"><a id="ga47687865c2314d8e644e941947c9ab82"></a>
-<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga47687865c2314d8e644e941947c9ab82">encodeBase64</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;s)</td></tr>
-<tr class="memdesc:ga47687865c2314d8e644e941947c9ab82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a byte array as a string using base64 encoding. <br /></td></tr>
-<tr class="separator:ga47687865c2314d8e644e941947c9ab82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc7f91cf69be3637ae7c34adfd9dd857"><td class="memItemLeft" align="right" valign="top"><a id="gacc7f91cf69be3637ae7c34adfd9dd857"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gacc7f91cf69be3637ae7c34adfd9dd857">encodeBase64</a> (const <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;s)</td></tr>
+<tr class="memdesc:gacc7f91cf69be3637ae7c34adfd9dd857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a byte array as a string using base64 encoding. <br /></td></tr>
+<tr class="separator:gacc7f91cf69be3637ae7c34adfd9dd857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6bae29174d19311edeb57f5570370c8b"><td class="memItemLeft" align="right" valign="top"><a id="ga6bae29174d19311edeb57f5570370c8b"></a>
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga6bae29174d19311edeb57f5570370c8b">encodeBase64</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
 <tr class="memdesc:ga6bae29174d19311edeb57f5570370c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a string as a string using base64 encoding. <br /></td></tr>
 <tr class="separator:ga6bae29174d19311edeb57f5570370c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e6d57f34660f25f64e4192e0af14ba"><td class="memItemLeft" align="right" valign="top"><a id="ga84e6d57f34660f25f64e4192e0af14ba"></a>
-<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga84e6d57f34660f25f64e4192e0af14ba">encodeHex</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;src)</td></tr>
-<tr class="memdesc:ga84e6d57f34660f25f64e4192e0af14ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a byte array as a string using hexadecimal. <br /></td></tr>
-<tr class="separator:ga84e6d57f34660f25f64e4192e0af14ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0af4ee5f513533c7c72e1ff75e01899"><td class="memItemLeft" align="right" valign="top"><a id="gac0af4ee5f513533c7c72e1ff75e01899"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gac0af4ee5f513533c7c72e1ff75e01899">encodeHex</a> (const <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;src)</td></tr>
+<tr class="memdesc:gac0af4ee5f513533c7c72e1ff75e01899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a byte array as a string using hexadecimal. <br /></td></tr>
+<tr class="separator:gac0af4ee5f513533c7c72e1ff75e01899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d466d4f7c75e527051d8a65bbd8be8a"><td class="memItemLeft" align="right" valign="top"><a id="ga1d466d4f7c75e527051d8a65bbd8be8a"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga1d466d4f7c75e527051d8a65bbd8be8a">decodeHex</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;src)</td></tr>
 <tr class="memdesc:ga1d466d4f7c75e527051d8a65bbd8be8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a hexadecimal encoded string into a byte array. <br /></td></tr>
@@ -215,7 +220,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 
 <p>An unsigned byte. </p>
 <p>This is also included in the global scope (<code>using asl::byte;</code>) for compatibility with old code, unless <code>ASL_NO_GLOBAL_BYTE</code> is defined.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This type will not be added to the global scope anymore; code should use <code>asl::byte</code> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>This type will not be added to the global scope anymore; code should use <code>asl::byte</code> </dd></dl>
 
 </div>
 </div>
@@ -245,7 +250,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Decodes a string with percent encoding. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Use <a class="el" href="group___global.html#gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2" title="Decodes a string containing percent-encoded characters.">Url::decode()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use <a class="el" href="group___global.html#gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2" title="Decodes a string containing percent-encoded characters.">Url::decode()</a> </dd></dl>
 
 </div>
 </div>
@@ -274,7 +279,7 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Encodes a string with percent encoding for use in a URL. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Use <a class="el" href="group___global.html#ga5cf5b29921907b007dba61589735d982" title="Encodes a string with percent encoding for chars not allowed in URLs, by default more characters are ...">Url::encode()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Use <a class="el" href="group___global.html#ga5cf5b29921907b007dba61589735d982" title="Encodes a string with percent encoding for chars not allowed in URLs, by default more characters are ...">Url::encode()</a> </dd></dl>
 
 </div>
 </div>

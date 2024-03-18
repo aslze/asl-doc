@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_cmd_args.html',''); initR
 <div class="line"> </div>
 <div class="line">String format = args[<span class="stringliteral">&quot;format&quot;</span>];</div>
 <div class="line"><span class="keywordtype">int</span> quality = args[<span class="stringliteral">&quot;q&quot;</span>] | 90;             <span class="comment">// use value 90 if the option is not given</span></div>
-<div class="line"><span class="keywordtype">bool</span> fast = args.is(<span class="stringliteral">&quot;fast&quot;</span>);</div>
+<div class="line"><span class="keywordtype">bool</span> fast = args.has(<span class="stringliteral">&quot;fast&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> i=0; i &lt; args.length(); i++)</div>
 <div class="line">{</div>
@@ -155,7 +155,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a16d464d2556adb491a776c668c547fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d4ec82a85b94f9b2d982151e3ad34a"><td class="memItemLeft" align="right" valign="top"><a id="aa0d4ec82a85b94f9b2d982151e3ad34a"></a>
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#aa0d4ec82a85b94f9b2d982151e3ad34a">operator[]</a> (int i) const</td></tr>
-<tr class="memdesc:aa0d4ec82a85b94f9b2d982151e3ad34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rest argument at index <code>i</code> (after the options) <br /></td></tr>
+<tr class="memdesc:aa0d4ec82a85b94f9b2d982151e3ad34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rest argument at index <code>i</code> (excluding options), or empty string if <code>i</code> is past the number of arguments. <br /></td></tr>
 <tr class="separator:aa0d4ec82a85b94f9b2d982151e3ad34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02072bfb60cf5f20f823708877e72117"><td class="memItemLeft" align="right" valign="top"><a id="a02072bfb60cf5f20f823708877e72117"></a>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_cmd_args.html#a02072bfb60cf5f20f823708877e72117">operator()</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;opt) const</td></tr>

@@ -201,11 +201,36 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:ac7e3655b2c506438e14c1a1498ab9c08"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_socket.html">Socket</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#ac7e3655b2c506438e14c1a1498ab9c08">operator&gt;&gt;</a> (T &amp;x)</td></tr>
 <tr class="memdesc:ac7e3655b2c506438e14c1a1498ab9c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads variable x from the socket respecting endianness in binary form. <br /></td></tr>
 <tr class="separator:ac7e3655b2c506438e14c1a1498ab9c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba95b2d1b16f84aa225ad9cfbb85b20"><td class="memItemLeft" align="right" valign="top"><a id="a4ba95b2d1b16f84aa225ad9cfbb85b20"></a>
-<a class="el" href="classasl_1_1_socket.html">Socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a4ba95b2d1b16f84aa225ad9cfbb85b20">operator&gt;&gt;</a> (<a class="el" href="classasl_1_1_string.html">String</a> &amp;x)</td></tr>
-<tr class="memdesc:a4ba95b2d1b16f84aa225ad9cfbb85b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a string from the socket that is preceded by its length as an int32 (the sender must send the byte length before) <br /></td></tr>
+<tr class="memitem:a4a4f69cba9e992211068b1fc43c94923"><td class="memItemLeft" align="right" valign="top"><a id="a4a4f69cba9e992211068b1fc43c94923"></a>
+<a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a4a4f69cba9e992211068b1fc43c94923">readString</a> (int n)</td></tr>
+<tr class="memdesc:a4a4f69cba9e992211068b1fc43c94923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n bytes from the socket a string. <br /></td></tr>
+<tr class="separator:a4a4f69cba9e992211068b1fc43c94923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba95b2d1b16f84aa225ad9cfbb85b20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_socket.html">Socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a4ba95b2d1b16f84aa225ad9cfbb85b20">operator&gt;&gt;</a> (<a class="el" href="classasl_1_1_string.html">String</a> &amp;x)</td></tr>
+<tr class="memdesc:a4ba95b2d1b16f84aa225ad9cfbb85b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a string from the socket that is preceded by its length as an int32 (the sender must send the byte length before)  <a href="classasl_1_1_socket.html#a4ba95b2d1b16f84aa225ad9cfbb85b20">More...</a><br /></td></tr>
 <tr class="separator:a4ba95b2d1b16f84aa225ad9cfbb85b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ba95b2d1b16f84aa225ad9cfbb85b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba95b2d1b16f84aa225ad9cfbb85b20">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_socket.html">Socket</a>&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a string from the socket that is preceded by its length as an int32 (the sender must send the byte length before) </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Too specific </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Socket.h</li>
 </ul>

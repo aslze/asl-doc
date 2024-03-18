@@ -1,9 +1,9 @@
 var searchData=
 [
   ['enable_751',['enable',['../classasl_1_1_log.html#a08d57afde6bfd8989add62a990b1245e',1,'asl::Log']]],
-  ['encode_752',['encode',['../group___global.html#ga5cf5b29921907b007dba61589735d982',1,'asl::Url::encode()'],['../structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878',1,'asl::Json::encode()'],['../structasl_1_1_xdl.html#a4d191205823ccdd2e3af21432505a7ef',1,'asl::Xdl::encode()'],['../classasl_1_1_xml.html#a46b17185c1aef544738749f8d14fd94f',1,'asl::Xml::encode()']]],
-  ['encodebase64_753',['encodeBase64',['../group___global.html#ga6bae29174d19311edeb57f5570370c8b',1,'asl::encodeBase64(const String &amp;s)'],['../group___global.html#ga47687865c2314d8e644e941947c9ab82',1,'asl::encodeBase64(const Array&lt; byte &gt; &amp;s)']]],
-  ['encodehex_754',['encodeHex',['../group___global.html#ga84e6d57f34660f25f64e4192e0af14ba',1,'asl']]],
+  ['encode_752',['encode',['../group___global.html#ga5cf5b29921907b007dba61589735d982',1,'asl::Url::encode()'],['../structasl_1_1_json.html#a4eff6560da9671779b17635393c9f878',1,'asl::Json::encode()'],['../structasl_1_1_xdl.html#a4d191205823ccdd2e3af21432505a7ef',1,'asl::Xdl::encode()'],['../classasl_1_1_xml.html#ad31e4f810cefd0e840fdaeb0b5859f31',1,'asl::Xml::encode()']]],
+  ['encodebase64_753',['encodeBase64',['../group___global.html#ga6bae29174d19311edeb57f5570370c8b',1,'asl::encodeBase64(const String &amp;s)'],['../group___global.html#gacc7f91cf69be3637ae7c34adfd9dd857',1,'asl::encodeBase64(const ByteArray &amp;s)']]],
+  ['encodehex_754',['encodeHex',['../group___global.html#gac0af4ee5f513533c7c72e1ff75e01899',1,'asl']]],
   ['encodeurl_755',['encodeUrl',['../group___global.html#ga003d2b8ccc13134ff70d8e8472de53e0',1,'asl']]],
   ['end_756',['end',['../classasl_1_1_file.html#af545ab12986d2fe462f1013c3bafb5f3',1,'asl::File']]],
   ['endswith_757',['endsWith',['../classasl_1_1_string.html#aa993cfc949231fa88689e5d80a67b967',1,'asl::String::endsWith(const String &amp;s) const'],['../classasl_1_1_string.html#a4b9b22737918037d68c44b87266de188',1,'asl::String::endsWith(char c) const']]],

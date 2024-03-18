@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"group___logging.html#gae9769f4136f2963d00b1d5501316ce94":[2,11,6],
+"group___math3_d.html":[2,8],
+"group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1":[2,8,8],
+"group___math3_d.html#ga99a52b78144a1fc854fe126c84dbd1f9":[2,8,7],
+"group___math3_d.html#gacae21691f921a211c83048ab2fca7bb3":[2,8,10],
+"group___math3_d.html#gafe779ed2205a78ace6d591e4ffebfbbb":[2,8,9],
+"group___shared.html":[2,7],
+"group___sockets.html":[2,6],
 "group___testing.html":[2,3],
 "group___testing.html#ga1f2c851878c4f646003836416b72495b":[2,3,1],
 "group___testing.html#ga2edf56724877b69c5c4fc0b18f9fb961":[2,3,0],
@@ -12,8 +20,8 @@ var NAVTREEINDEX4 =
 "group___threading.html":[2,4],
 "group___x_d_l.html":[2,2],
 "hierarchy.html":[3,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md0":[0,0],
 "index.html#autotoc_md1":[0,0,0],
 "modules.html":[2],

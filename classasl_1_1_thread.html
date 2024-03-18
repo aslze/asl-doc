@@ -125,9 +125,8 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#a60de64d75454385b23995437f1d72669">start</a> ()</td></tr>
 <tr class="memdesc:a60de64d75454385b23995437f1d72669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new thread by calling <a class="el" href="classasl_1_1_thread.html#a72fcb26a14f6beb1c3fbace9ab3e7dbb" title="The thread procedure.">run()</a> in parallel. <br /></td></tr>
 <tr class="separator:a60de64d75454385b23995437f1d72669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae9d52caad9fb2892deeb25596cfd2ab"><td class="memItemLeft" align="right" valign="top"><a id="aae9d52caad9fb2892deeb25596cfd2ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#aae9d52caad9fb2892deeb25596cfd2ab">kill</a> ()</td></tr>
-<tr class="memdesc:aae9d52caad9fb2892deeb25596cfd2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels a thread. <br /></td></tr>
+<tr class="memitem:aae9d52caad9fb2892deeb25596cfd2ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#aae9d52caad9fb2892deeb25596cfd2ab">kill</a> ()</td></tr>
+<tr class="memdesc:aae9d52caad9fb2892deeb25596cfd2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels a thread, but you should not normally do this.  <a href="classasl_1_1_thread.html#aae9d52caad9fb2892deeb25596cfd2ab">More...</a><br /></td></tr>
 <tr class="separator:aae9d52caad9fb2892deeb25596cfd2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c7abfff648dad193674fc432ad4840d"><td class="memItemLeft" align="right" valign="top"><a id="a6c7abfff648dad193674fc432ad4840d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_thread.html#a6c7abfff648dad193674fc432ad4840d">join</a> ()</td></tr>
@@ -170,6 +169,34 @@ template&lt;class F1 , class F2 , class F3 , class F4 &gt; </td></tr>
 <tr class="separator:ad9b7502af24e369ca3d5b32dc6b0486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aae9d52caad9fb2892deeb25596cfd2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9d52caad9fb2892deeb25596cfd2ab">&#9670;&nbsp;</a></span>kill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kill </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cancels a thread, but you should not normally do this. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>Threads should end when their function ends </dd></dl>
+
+</div>
+</div>
 <a id="a65d48648ca85756de4aff2bdb8c4f21e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65d48648ca85756de4aff2bdb8c4f21e">&#9670;&nbsp;</a></span>parallel_for()</h2>
 
@@ -221,7 +248,7 @@ template&lt;class F1 , class F2 , class F3 , class F4 &gt; </td></tr>
 <div class="fragment"><div class="line"><a class="code" href="classasl_1_1_thread.html#a65d48648ca85756de4aff2bdb8c4f21e">Thread::parallel_for</a>(i0, i1, [&amp;](<span class="keywordtype">int</span> i) {</div>
 <div class="line">    f(i);</div>
 <div class="line">});</div>
-<div class="ttc" id="aclassasl_1_1_thread_html_a65d48648ca85756de4aff2bdb8c4f21e"><div class="ttname"><a href="classasl_1_1_thread.html#a65d48648ca85756de4aff2bdb8c4f21e">asl::Thread::parallel_for</a></div><div class="ttdeci">static void parallel_for(int i0, int i1, const F &amp;f, int nth=8)</div><div class="ttdoc">Emulates an OpenMP parallel for by running function f several times in parallel.</div><div class="ttdef"><b>Definition:</b> Thread.h:287</div></div>
+<div class="ttc" id="aclassasl_1_1_thread_html_a65d48648ca85756de4aff2bdb8c4f21e"><div class="ttname"><a href="classasl_1_1_thread.html#a65d48648ca85756de4aff2bdb8c4f21e">asl::Thread::parallel_for</a></div><div class="ttdeci">static void parallel_for(int i0, int i1, const F &amp;f, int nth=8)</div><div class="ttdoc">Emulates an OpenMP parallel for by running function f several times in parallel.</div><div class="ttdef"><b>Definition:</b> Thread.h:296</div></div>
 </div><!-- fragment --><p>Is equivalent to running:</p>
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=i0; i&lt;i1; i++) {</div>
 <div class="line">    f(i);</div>
