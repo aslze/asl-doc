@@ -162,6 +162,10 @@ template&lt;class T2 &gt; </td></tr>
 <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#acf55c08c75e43cdc5b962bcadb0e2dbd">operator*</a> (const <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a> &amp;B) const</td></tr>
 <tr class="memdesc:acf55c08c75e43cdc5b962bcadb0e2dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this matrix multiplied by <code>B</code> <br /></td></tr>
 <tr class="separator:acf55c08c75e43cdc5b962bcadb0e2dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90e50ad198430b9646e154619f03ccb"><td class="memItemLeft" align="right" valign="top"><a id="ae90e50ad198430b9646e154619f03ccb"></a>
+<a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#ae90e50ad198430b9646e154619f03ccb">operator*=</a> (const <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a> &amp;B)</td></tr>
+<tr class="memdesc:ae90e50ad198430b9646e154619f03ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multipies this matrix by <code>B</code> <br /></td></tr>
+<tr class="separator:ae90e50ad198430b9646e154619f03ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dd8e29be7502115c01971030a24f17d"><td class="memItemLeft" align="right" valign="top"><a id="a8dd8e29be7502115c01971030a24f17d"></a>
 <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a8dd8e29be7502115c01971030a24f17d">operator*</a> (T t) const</td></tr>
 <tr class="memdesc:a8dd8e29be7502115c01971030a24f17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this matrix multipled by scalar <code>t</code> <br /></td></tr>
@@ -194,10 +198,6 @@ template&lt;class T2 &gt; </td></tr>
 <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a2862aa5892d5718b9de7ef10de16c621">eulerAngles</a> (const char *a) const</td></tr>
 <tr class="memdesc:a2862aa5892d5718b9de7ef10de16c621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Euler angles corresponding to this rotation matrix (the top-left 3x3 submatrix) for the given axes rotation order given as a string, such as "XYZ" or "XYZ*", equivalent to the fromEuler function. <br /></td></tr>
 <tr class="separator:a2862aa5892d5718b9de7ef10de16c621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90e50ad198430b9646e154619f03ccb"><td class="memItemLeft" align="right" valign="top"><a id="ae90e50ad198430b9646e154619f03ccb"></a>
-<a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#ae90e50ad198430b9646e154619f03ccb">operator*=</a> (const <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a> &amp;B)</td></tr>
-<tr class="memdesc:ae90e50ad198430b9646e154619f03ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multipies this matrix by <code>B</code> <br /></td></tr>
-<tr class="separator:ae90e50ad198430b9646e154619f03ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2657c478839eb8a17d03273c798ae166"><td class="memItemLeft" align="right" valign="top"><a id="a2657c478839eb8a17d03273c798ae166"></a>
 <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_matrix4__.html#a2657c478839eb8a17d03273c798ae166">inverse</a> () const</td></tr>
 <tr class="memdesc:a2657c478839eb8a17d03273c798ae166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inverse of this matrix. <br /></td></tr>
@@ -332,7 +332,7 @@ static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><
 </div><div class="memdoc">
 
 <p>Returns a rotation matrix created from Euler angles rotating the components of r in axes given as a string, such as "XYZ", if an '*' is appended then the result is equivalent to rotations on fixed axes, while by default it is equivalent to rotations on moving axes. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ static <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><
 </div><div class="memdoc">
 
 <p>Same as <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
 
 </div>
 </div>

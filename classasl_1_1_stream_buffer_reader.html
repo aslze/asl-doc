@@ -92,21 +92,22 @@ $(document).ready(function(){initNavTree('classasl_1_1_stream_buffer_reader.html
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allows reading a memory buffer as a binary stream. </p>
 <p>It can read bytes, integers of different sizes and floating point numbers in big-endian or little-endian byte order. You have to make sure you don't read past the bounds of the buffer.</p>
-<div class="fragment"><div class="line">Array&lt;byte&gt; data = File(<span class="stringliteral">&quot;data.bin&quot;</span>).content();</div>
-<div class="line"><a class="code" href="classasl_1_1_stream_buffer_reader.html#ab10dce9a7e47723e9731f92e822e3e62">StreamBufferReader</a> buffer (data, ENDIAN_BIG);</div>
+<div class="fragment"><div class="line"><a class="code" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> data = File(<span class="stringliteral">&quot;data.bin&quot;</span>).content();</div>
+<div class="line"><a class="code" href="classasl_1_1_stream_buffer_reader.html#ac5a480103d4b34986ebdb53bed024296">StreamBufferReader</a> buffer (data, ENDIAN_BIG);</div>
 <div class="line"><span class="keywordtype">int</span> n = buffer.read&lt;<span class="keywordtype">int</span>&gt;();</div>
 <div class="line"><span class="keywordtype">double</span> x, y, z;</div>
 <div class="line">buffer &gt;&gt; x &gt;&gt; y &gt;&gt; z;</div>
-<div class="ttc" id="aclassasl_1_1_stream_buffer_reader_html_ab10dce9a7e47723e9731f92e822e3e62"><div class="ttname"><a href="classasl_1_1_stream_buffer_reader.html#ab10dce9a7e47723e9731f92e822e3e62">asl::StreamBufferReader::StreamBufferReader</a></div><div class="ttdeci">StreamBufferReader(const Array&lt; byte &gt; &amp;data, Endian e=ENDIAN_LITTLE)</div><div class="ttdoc">Constructs a buffer reader from a byte array.</div><div class="ttdef"><b>Definition:</b> StreamBuffer.h:65</div></div>
+<div class="ttc" id="aclassasl_1_1_stream_buffer_reader_html_ac5a480103d4b34986ebdb53bed024296"><div class="ttname"><a href="classasl_1_1_stream_buffer_reader.html#ac5a480103d4b34986ebdb53bed024296">asl::StreamBufferReader::StreamBufferReader</a></div><div class="ttdeci">StreamBufferReader(const ByteArray &amp;data, Endian e=ENDIAN_LITTLE)</div><div class="ttdoc">Constructs a buffer reader from a byte array.</div><div class="ttdef"><b>Definition:</b> StreamBuffer.h:65</div></div>
+<div class="ttc" id="agroup___containers_html_ga83ec16f5e316b5d33c0feed881d2c982"><div class="ttname"><a href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">asl::ByteArray</a></div><div class="ttdeci">Array&lt; byte &gt; ByteArray</div><div class="ttdoc">An alias for Array&lt;byte&gt;</div><div class="ttdef"><b>Definition:</b> Array.h:613</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;StreamBuffer.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab10dce9a7e47723e9731f92e822e3e62"><td class="memItemLeft" align="right" valign="top"><a id="ab10dce9a7e47723e9731f92e822e3e62"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_stream_buffer_reader.html#ab10dce9a7e47723e9731f92e822e3e62">StreamBufferReader</a> (const <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt; &amp;data, Endian e=ENDIAN_LITTLE)</td></tr>
-<tr class="memdesc:ab10dce9a7e47723e9731f92e822e3e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a buffer reader from a byte array. <br /></td></tr>
-<tr class="separator:ab10dce9a7e47723e9731f92e822e3e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a480103d4b34986ebdb53bed024296"><td class="memItemLeft" align="right" valign="top"><a id="ac5a480103d4b34986ebdb53bed024296"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_stream_buffer_reader.html#ac5a480103d4b34986ebdb53bed024296">StreamBufferReader</a> (const <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;data, Endian e=ENDIAN_LITTLE)</td></tr>
+<tr class="memdesc:ac5a480103d4b34986ebdb53bed024296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a buffer reader from a byte array. <br /></td></tr>
+<tr class="separator:ac5a480103d4b34986ebdb53bed024296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f10dc05a144b1980abf1bb7c5accd98"><td class="memItemLeft" align="right" valign="top"><a id="a9f10dc05a144b1980abf1bb7c5accd98"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_stream_buffer_reader.html#a9f10dc05a144b1980abf1bb7c5accd98">StreamBufferReader</a> (const <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> *data, int n, Endian e=ENDIAN_LITTLE)</td></tr>
 <tr class="memdesc:a9f10dc05a144b1980abf1bb7c5accd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a buffer reader from a raw byte array. <br /></td></tr>
@@ -164,10 +165,10 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a16b887199560a8c482c1662eadaeadbe"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classasl_1_1_stream_buffer_reader.html#a16b887199560a8c482c1662eadaeadbe">read</a> ()</td></tr>
 <tr class="memdesc:a16b887199560a8c482c1662eadaeadbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one value from the buffer: <code>float x = buffer.read&lt;float&gt;()</code> <br /></td></tr>
 <tr class="separator:a16b887199560a8c482c1662eadaeadbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6ae5ceb5a015e1f11090189c210386"><td class="memItemLeft" align="right" valign="top"><a id="a7c6ae5ceb5a015e1f11090189c210386"></a>
-<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_stream_buffer_reader.html#a7c6ae5ceb5a015e1f11090189c210386">read</a> (int n=-1)</td></tr>
-<tr class="memdesc:a7c6ae5ceb5a015e1f11090189c210386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n bytes into an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a> (or all remaining bytes by default) <br /></td></tr>
-<tr class="separator:a7c6ae5ceb5a015e1f11090189c210386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f3e845a8b141385dae5f12f9507d89"><td class="memItemLeft" align="right" valign="top"><a id="a30f3e845a8b141385dae5f12f9507d89"></a>
+<a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_stream_buffer_reader.html#a30f3e845a8b141385dae5f12f9507d89">read</a> (int n=-1)</td></tr>
+<tr class="memdesc:a30f3e845a8b141385dae5f12f9507d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n bytes into an <a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a> (or all remaining bytes by default) <br /></td></tr>
+<tr class="separator:a30f3e845a8b141385dae5f12f9507d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>StreamBuffer.h</li>

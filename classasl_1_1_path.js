@@ -5,6 +5,7 @@ var classasl_1_1_path =
     [ "directory", "classasl_1_1_path.html#ab0ad654798ac3a42bf3b8c95a945a0b8", null ],
     [ "equals", "classasl_1_1_path.html#a9826f57f70f9f055993464273e7cb272", null ],
     [ "extension", "classasl_1_1_path.html#a532cbcfeabf2e538b6f8c84d6d94c9a6", null ],
+    [ "hasDirectory", "classasl_1_1_path.html#a89f2d77a91fb531552ecccaeb747e307", null ],
     [ "hasExtension", "classasl_1_1_path.html#a2c96b65f63eb2a2442dac8f5559b533c", null ],
     [ "isAbsolute", "classasl_1_1_path.html#a0a2c3a267729afe8318117770f72a69a", null ],
     [ "name", "classasl_1_1_path.html#a554c3e7ca3ebc1c1b358b92f5b5980c2", null ],

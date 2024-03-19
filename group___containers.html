@@ -94,10 +94,9 @@ $(document).ready(function(){initNavTree('group___containers.html',''); initResi
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>There are several container classes that can hold elements of any type (<a class="el" href="classasl_1_1_array.html" title="An Array is a contiguous and resizable array of any type of elements.">Array</a>, <a class="el" href="classasl_1_1_array__.html" title="This class represents a fixed-length array.">Array_</a>, <a class="el" href="classasl_1_1_array2.html" title="A simple 2-dimensional dynamic array or matrix.">Array2</a>, <a class="el" href="classasl_1_1_map.html" title="An associative container linking keys of type K with values of type T.">Map</a>, <a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a>, <a class="el" href="classasl_1_1_stack.html" title="This class represents a stack of elements of any type.">Stack</a>, <a class="el" href="classasl_1_1_hash_map.html" title="This class implements a hash map, an unordered map of keys to values.">HashMap</a>). </p>
 <p>These classes are reference-counted, so they are copied by reference. If a separate copy is required, use the <code>clone()</code> method:</p>
-<div class="fragment"><div class="line">Array&lt;int&gt; a = <a class="code" href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">array</a>(1, 2, 3);</div>
+<div class="fragment"><div class="line">Array&lt;int&gt; a = { 1, 2, 3 };</div>
 <div class="line">Array&lt;int&gt; b = a;               <span class="comment">// b is the same as a</span></div>
 <div class="line">Array&lt;int&gt; c = a.clone();       <span class="comment">// c is a separate copy of a</span></div>
-<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:753</div></div>
 </div><!-- fragment --><p>In C++11 compilers you can use <em>range-based for</em> loops to iterate over their items:</p>
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">float</span> x: numbers)</div>
 <div class="line">{</div>
@@ -237,6 +236,7 @@ template&lt;class T &gt; </td></tr>
 <p>In each iteration, <code>variable</code> takes the value of <em>each</em> element in <code>set</code>. Variable can have a type declaration (equaling the type of elements of <code>set</code>) and an even be a reference. In newer compilers just use <code>for(auto&amp; x : a)</code></p>
 <div class="fragment"><div class="line"><span class="keywordflow">foreach</span>(<span class="keywordtype">int</span>&amp; x, <a class="code" href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">array</a>)</div>
 <div class="line">    x *= 2;              <span class="comment">// multiplies each element of the array times 2</span></div>
+<div class="ttc" id="agroup___containers_html_ga3cfb454fbcdcc5ccf7964718bf1317ce"><div class="ttname"><a href="group___containers.html#ga3cfb454fbcdcc5ccf7964718bf1317ce">asl::array</a></div><div class="ttdeci">Array&lt; T &gt; array(const T &amp;a0, const T &amp;a1)</div><div class="ttdoc">Creates an array with the 2 elements given as arguments (there are overloads from 1 to 6 elements)</div><div class="ttdef"><b>Definition:</b> Array.h:753</div></div>
 </div><!-- fragment --><p>This will not work for temporary containers (i.e. returned by functions). </p>
 
 </div>
@@ -309,7 +309,7 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Shuffles an array of elements in place. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Shuffles an array of elements in place (n items starting at a). </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Parses a string and creates a <code><a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a></code> using <code>sep1</code> as pair separator, and <code>sep2</code> as key/value separator. </p>
-<p>It is the opposite of <code>join()</code>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use String::split(s1, s2) </dd></dl>
+<p>It is the opposite of <code>join()</code>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use String::split(s1, s2) </dd></dl>
 
 </div>
 </div>

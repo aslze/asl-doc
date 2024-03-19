@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"group___logging.html#gab02f490e27ac091f05cf18ab7ee9ac85":[2,11,7],
 "group___logging.html#gae9769f4136f2963d00b1d5501316ce94":[2,11,6],
 "group___math3_d.html":[2,8],
 "group___math3_d.html#ga845743284803d4bd9b9c67925ad858a1":[2,8,8],

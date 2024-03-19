@@ -7,7 +7,7 @@ var classasl_1_1_web_socket =
     [ "connect", "classasl_1_1_web_socket.html#ab7435c2d095801af47e247b9f4b512a4", null ],
     [ "hasInput", "classasl_1_1_web_socket.html#ab40c41376a2056236ae17fd7d92cfae3", null ],
     [ "receive", "classasl_1_1_web_socket.html#ae1b6956419d38fe20ea1b95597da96b8", null ],
-    [ "send", "classasl_1_1_web_socket.html#a326aa858d03d76beb81119aa64fd58b4", null ],
+    [ "send", "classasl_1_1_web_socket.html#a56aaf4cf781c7a2c8b504f4d1cc73078", null ],
     [ "send", "classasl_1_1_web_socket.html#a5880ab8c687799f3bfeb587fb2cd9ac8", null ],
     [ "send", "classasl_1_1_web_socket.html#aa75eb785dcb9c813c2fbe764960bbbfd", null ],
     [ "wait", "classasl_1_1_web_socket.html#aebba325cceda5c1ff44738518bd298ba", null ],

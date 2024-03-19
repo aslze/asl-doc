@@ -23,7 +23,7 @@ var group___sockets =
       [ "operator<<", "classasl_1_1_socket.html#a72fcf5238f1f9a67b0d0c67a5adbf0fd", null ],
       [ "operator>>", "classasl_1_1_socket.html#a4ba95b2d1b16f84aa225ad9cfbb85b20", null ],
       [ "operator>>", "classasl_1_1_socket.html#ac7e3655b2c506438e14c1a1498ab9c08", null ],
-      [ "read", "classasl_1_1_socket.html#a7c6ae5ceb5a015e1f11090189c210386", null ],
+      [ "read", "classasl_1_1_socket.html#a30f3e845a8b141385dae5f12f9507d89", null ],
       [ "read", "classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf", null ],
       [ "readLine", "classasl_1_1_socket.html#a79e7f2ee2b5e510148a290e49333c1e7", null ],
       [ "readString", "classasl_1_1_socket.html#a4a4f69cba9e992211068b1fc43c94923", null ],

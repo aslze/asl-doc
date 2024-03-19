@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_stream_buffer.html',''); 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a buffer that can be written to as a binary stream. </p>
 <p>The buffer is initially empty and grows as you append variables. You can change endianness at any moment.</p>
-<p>You can then get the content as an <a class="el" href="classasl_1_1_array.html">Array&lt;byte&gt;</a> and for example write it to a file or send it through a socket. </p><div class="fragment"><div class="line">StreamBuffer buffer(ENDIAN_BIG);</div>
+<p>You can then get the content as a ByteArray and for example write it to a file or send it through a socket. </p><div class="fragment"><div class="line">StreamBuffer buffer(ENDIAN_BIG);</div>
 <div class="line">buffer &lt;&lt; 1 &lt;&lt; <span class="stringliteral">&quot;abc&quot;</span> &lt;&lt; 1.5 &lt;&lt; short(33);</div>
 <div class="line"> </div>
 <div class="line">File(<span class="stringliteral">&quot;data&quot;</span>).put(buffer);</div>
