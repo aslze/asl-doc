@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_socket.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="classasl_1_1_socket.html" title="A Socket is a communication socket for TCP protocol.">Socket</a> is a communication socket for TCP protocol. </p>
+<div class="textblock"><p>A communication socket for the TCP/IP protocol. </p>
 </div>
 <p><code>#include &lt;Socket.h&gt;</code></p>
 <div class="dynheader">
@@ -99,9 +99,10 @@ Inheritance diagram for Socket:</div>
  <div class="center">
   <img src="classasl_1_1_socket.png" usemap="#Socket_map" alt=""/>
   <map id="Socket_map" name="Socket_map">
-<area href="classasl_1_1_packet_socket.html" title="A PacketSocket is a communication socket for UDP protocol." alt="PacketSocket" shape="rect" coords="0,56,100,80"/>
-<area href="classasl_1_1_tls_socket.html" title="A TLS secure socket." alt="TlsSocket" shape="rect" coords="110,56,210,80"/>
-<area href="classasl_1_1_multicast_socket.html" title="A MulticastSocket is a communication socket for multicast UDP protocol." alt="MulticastSocket" shape="rect" coords="0,112,100,136"/>
+<area href="classasl_1_1_local_socket.html" title="A Local or Unix socket for inter-process communication within a machine." alt="LocalSocket" shape="rect" coords="0,56,100,80"/>
+<area href="classasl_1_1_packet_socket.html" title="A communication socket for UDP/IP protocol." alt="PacketSocket" shape="rect" coords="110,56,210,80"/>
+<area href="classasl_1_1_tls_socket.html" title="A TLS secure socket." alt="TlsSocket" shape="rect" coords="220,56,320,80"/>
+<area href="classasl_1_1_multicast_socket.html" title="A communication socket for multicast UDP/IP protocol." alt="MulticastSocket" shape="rect" coords="110,112,210,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -111,6 +112,10 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72">disconnected</a> ()</td></tr>
 <tr class="memdesc:a7e04ee0f03fdea43f0956ab37a7c2c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the connection was lost. <br /></td></tr>
 <tr class="separator:a7e04ee0f03fdea43f0956ab37a7c2c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fc494d53391b27e2fd75cb750690d9"><td class="memItemLeft" align="right" valign="top"><a id="a59fc494d53391b27e2fd75cb750690d9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a59fc494d53391b27e2fd75cb750690d9">connected</a> ()</td></tr>
+<tr class="memdesc:a59fc494d53391b27e2fd75cb750690d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the connection is open. <br /></td></tr>
+<tr class="separator:a59fc494d53391b27e2fd75cb750690d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc75b2999f19ffc456b961bbcc1d27ac"><td class="memItemLeft" align="right" valign="top"><a id="afc75b2999f19ffc456b961bbcc1d27ac"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#afc75b2999f19ffc456b961bbcc1d27ac">bind</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;ip, int port)</td></tr>
 <tr class="memdesc:afc75b2999f19ffc456b961bbcc1d27ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds this socket to the given IP address and port number. <br /></td></tr>

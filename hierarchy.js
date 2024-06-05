@@ -89,6 +89,7 @@ var hierarchy =
       [ "Log", "classasl_1_1_log.html", null ]
     ] ],
     [ "Socket", "classasl_1_1_socket.html", [
+      [ "LocalSocket", "classasl_1_1_local_socket.html", null ],
       [ "PacketSocket", "classasl_1_1_packet_socket.html", [
         [ "MulticastSocket", "classasl_1_1_multicast_socket.html", null ]
       ] ],

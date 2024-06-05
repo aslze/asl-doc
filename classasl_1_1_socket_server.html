@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_socket_server.html',''); 
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a reusable TCP socket server that listens to incoming connections and answers them concurrently (default) or sequentially. </p>
+<div class="textblock"><p>This is a reusable TCP or Unix socket server that listens to incoming connections and answers them concurrently (default) or sequentially. </p>
 <p>To make an actual server, derive a class from it and implement the virtual function <code><a class="el" href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b" title="This function is called in a new thread with each new incoming client connection.">serve()</a></code>. That function will be called whenever a new connection arrives.</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>HelloServer : <span class="keyword">public</span> SocketServer</div>
 <div class="line">{</div>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_socket_server.html',''); 
 </div><!-- fragment --><p>For long-running connections, the recommended way of dealing with possible disconnections is this:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="classasl_1_1_socket_server.html#a51fc8458f0ba8cb6baa6238051bdfd1b">serve</a>(Socket client)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">while</span> (!client.disconnected())</div>
+<div class="line">    <span class="keywordflow">while</span> (client.connected())</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">if</span> (!client.waitData())</div>
 <div class="line">            <span class="keywordflow">continue</span>;</div>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae58264567927c6d6e295f3d574a44094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a1d847b3c8fbd8769c850e275e7f21e"><td class="memItemLeft" align="right" valign="top"><a id="a9a1d847b3c8fbd8769c850e275e7f21e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a9a1d847b3c8fbd8769c850e275e7f21e">bindPath</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;sname)</td></tr>
-<tr class="memdesc:a9a1d847b3c8fbd8769c850e275e7f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a Unix local socket to listen to (Only on Linux). <br /></td></tr>
+<tr class="memdesc:a9a1d847b3c8fbd8769c850e275e7f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a Unix local socket to listen to (where supported). <br /></td></tr>
 <tr class="separator:a9a1d847b3c8fbd8769c850e275e7f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a8d8c142273a22d37673b7e3a651a7f"><td class="memItemLeft" align="right" valign="top"><a id="a0a8d8c142273a22d37673b7e3a651a7f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html#a0a8d8c142273a22d37673b7e3a651a7f">bind</a> (int port)</td></tr>

@@ -7,6 +7,7 @@ var classasl_1_1_socket =
     [ "close", "classasl_1_1_socket.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
     [ "connect", "classasl_1_1_socket.html#a835bceb441732a46f630d199bdd9c14a", null ],
     [ "connect", "classasl_1_1_socket.html#ae8d90dc9077858552aa2e4d297ba5657", null ],
+    [ "connected", "classasl_1_1_socket.html#a59fc494d53391b27e2fd75cb750690d9", null ],
     [ "disconnected", "classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72", null ],
     [ "error", "classasl_1_1_socket.html#a1df37e13c22d2b00843cb04a70d92ae5", null ],
     [ "errorMsg", "classasl_1_1_socket.html#a03a8eea67c86b21778c2a2daa376df46", null ],

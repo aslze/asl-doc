@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('group___binary.html',''); initResizabl
 <div class="line"> </div>
 <div class="line">file &lt;&lt; 3 &lt;&lt; 0.5; <span class="comment">// writes a 32-bit int and an 64-bit double (12 bytes total) in little endian byte order.</span></div>
 </div><!-- fragment --><p>Using class <a class="el" href="classasl_1_1_text_file.html" title="Class TextFile represents a text file in the filesystem.">TextFile</a> instead woud write those variables as text (as "30.5" because we did not add whitespace separation).</p>
-<p>TCP sockets (class <a class="el" href="classasl_1_1_socket.html" title="A Socket is a communication socket for TCP protocol.">Socket</a>) can also be read or written as binary streams:</p>
+<p>TCP sockets (class <a class="el" href="classasl_1_1_socket.html" title="A communication socket for the TCP/IP protocol.">Socket</a>) can also be read or written as binary streams:</p>
 <div class="fragment"><div class="line">Socket socket;</div>
 <div class="line">socket.connect(<span class="stringliteral">&quot;someserver&quot;</span>, 9000);</div>
 <div class="line">socket.setEndian(ENDIAN_BIG);</div>

@@ -30,8 +30,8 @@ var NAVTREE =
         [ "SSL/TLS sockets and HTTPS support", "index.html#autotoc_md1", null ]
       ] ]
     ] ],
+    [ "Topics", "modules.html", "modules" ],
     [ "Deprecated List", "deprecated.html", null ],
-    [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -53,9 +53,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classasl_1_1_http_request.html#a5c3cca97c4e087572f6d539279514c6c",
-"classasl_1_1_random.html#aacb4040c75e1681774e5de70387cc867",
-"classasl_1_1_var.html#adc773c0f4033dfce2db104a1ed65603f",
-"group___logging.html#gab02f490e27ac091f05cf18ab7ee9ac85"
+"classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b",
+"classasl_1_1_var.html#ac8886ea25e3aa3b58d2c532e705ea6b1",
+"group___logging.html#ga2d837dfa31246202689b90e3ff05a20c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

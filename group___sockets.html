@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('group___sockets.html',''); initResizab
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These classes enable network communication with TCP (plain or TLS encrypted) and UDP sockets. </p>
-<p>The <code><a class="el" href="classasl_1_1_socket_server.html" title="This is a reusable TCP socket server that listens to incoming connections and answers them concurrent...">SocketServer</a></code> class implements a multithreaded socket server and is easier to use than using <code><a class="el" href="classasl_1_1_socket.html" title="A Socket is a communication socket for TCP protocol.">Socket</a></code> objects directly for serving.</p>
+<p>The <code><a class="el" href="classasl_1_1_socket_server.html" title="This is a reusable TCP or Unix socket server that listens to incoming connections and answers them co...">SocketServer</a></code> class implements a multithreaded socket server and is easier to use than using <code><a class="el" href="classasl_1_1_socket.html" title="A communication socket for the TCP/IP protocol.">Socket</a></code> objects directly for serving.</p>
 <p>This example would get a web page from an HTTP server (just an example, you should use the <code><a class="el" href="classasl_1_1_http.html" title="This class contains the basic HTTP/HTTPS client functionality.">Http</a></code> class for that).</p>
 <div class="fragment"><div class="line">String path = <span class="stringliteral">&quot;/index.html&quot;</span>, host = <span class="stringliteral">&quot;somehost.com&quot;</span>;</div>
 <div class="line">Socket socket;</div>
@@ -98,12 +98,10 @@ $(document).ready(function(){initNavTree('group___sockets.html',''); initResizab
 <div class="line">socket &lt;&lt; String(0, <span class="stringliteral">&quot;GET %s HTTP/1.0\r\nHost: %s\r\n\r\n&quot;</span>, *path, *host);</div>
 <div class="line">String response;</div>
 <div class="line"><span class="keywordtype">char</span> buffer[1001];</div>
-<div class="line"><span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
+<div class="line"><span class="keywordflow">while</span>(socket.connected())</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">if</span>(!socket.waitInput())</div>
+<div class="line">    <span class="keywordflow">if</span>(!socket.waitData())</div>
 <div class="line">        <span class="keywordflow">continue</span>;</div>
-<div class="line">    <span class="keywordflow">if</span>(socket.disconnected())</div>
-<div class="line">        <span class="keywordflow">break</span>;</div>
 <div class="line">    <span class="keywordtype">int</span> n = socket.read(buffer, min(socket.available(), 1000));</div>
 <div class="line">    <span class="keywordflow">if</span>(n &lt;= 0)</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
@@ -116,16 +114,19 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an endpoint of a socket which is ususally an IP address and a port.  <a href="classasl_1_1_inet_address.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html">Socket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classasl_1_1_socket.html" title="A Socket is a communication socket for TCP protocol.">Socket</a> is a communication socket for TCP protocol.  <a href="classasl_1_1_socket.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A communication socket for the TCP/IP protocol.  <a href="classasl_1_1_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_packet_socket.html">PacketSocket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classasl_1_1_packet_socket.html" title="A PacketSocket is a communication socket for UDP protocol.">PacketSocket</a> is a communication socket for UDP protocol.  <a href="classasl_1_1_packet_socket.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A communication socket for UDP/IP protocol.  <a href="classasl_1_1_packet_socket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_local_socket.html">LocalSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Local or Unix socket for inter-process communication within a machine.  <a href="classasl_1_1_local_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_multicast_socket.html">MulticastSocket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classasl_1_1_multicast_socket.html" title="A MulticastSocket is a communication socket for multicast UDP protocol.">MulticastSocket</a> is a communication socket for multicast UDP protocol.  <a href="classasl_1_1_multicast_socket.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A communication socket for multicast UDP/IP protocol.  <a href="classasl_1_1_multicast_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket_server.html">SocketServer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a reusable TCP socket server that listens to incoming connections and answers them concurrently (default) or sequentially.  <a href="classasl_1_1_socket_server.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a reusable TCP or Unix socket server that listens to incoming connections and answers them concurrently (default) or sequentially.  <a href="classasl_1_1_socket_server.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_tls_socket.html">TlsSocket</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A TLS secure socket.  <a href="classasl_1_1_tls_socket.html#details">More...</a><br /></td></tr>

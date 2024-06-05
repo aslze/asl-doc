@@ -15,6 +15,7 @@ var group___sockets =
       [ "close", "classasl_1_1_socket.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
       [ "connect", "classasl_1_1_socket.html#a835bceb441732a46f630d199bdd9c14a", null ],
       [ "connect", "classasl_1_1_socket.html#ae8d90dc9077858552aa2e4d297ba5657", null ],
+      [ "connected", "classasl_1_1_socket.html#a59fc494d53391b27e2fd75cb750690d9", null ],
       [ "disconnected", "classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72", null ],
       [ "error", "classasl_1_1_socket.html#a1df37e13c22d2b00843cb04a70d92ae5", null ],
       [ "errorMsg", "classasl_1_1_socket.html#a03a8eea67c86b21778c2a2daa376df46", null ],
@@ -40,10 +41,13 @@ var group___sockets =
       [ "sendTo", "classasl_1_1_packet_socket.html#aa6f07761e631847bb2c1656c46715eae", null ],
       [ "sendTo", "classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950", null ]
     ] ],
+    [ "LocalSocket", "classasl_1_1_local_socket.html", null ],
     [ "MulticastSocket", "classasl_1_1_multicast_socket.html", [
-      [ "join", "classasl_1_1_multicast_socket.html#a7497558088cb0a1f38746a8640582ddd", null ],
-      [ "leave", "classasl_1_1_multicast_socket.html#a4c3a4d2ef4c7cc57b94ac02ec905f59e", null ],
-      [ "multicast", "classasl_1_1_multicast_socket.html#a074815527f71a4ed6a8f70114f041dfc", null ]
+      [ "join", "classasl_1_1_multicast_socket.html#ac8b2074687139ad0fba56028cdc1c1ee", null ],
+      [ "leave", "classasl_1_1_multicast_socket.html#a4e3d0be48263d5ec505fe9ec8e7df682", null ],
+      [ "multicast", "classasl_1_1_multicast_socket.html#acac495585e97f9acb54099b959e20b2b", null ],
+      [ "setLoop", "classasl_1_1_multicast_socket.html#a91ff0e8b5b6d40d4aae704e82b051a1d", null ],
+      [ "setTTL", "classasl_1_1_multicast_socket.html#a82293c75b07e2811298b9f274b95de65", null ]
     ] ],
     [ "SocketServer", "classasl_1_1_socket_server.html", [
       [ "bind", "classasl_1_1_socket_server.html#afc75b2999f19ffc456b961bbcc1d27ac", null ],

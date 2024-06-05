@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_packet_socket.html',''); 
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="classasl_1_1_packet_socket.html" title="A PacketSocket is a communication socket for UDP protocol.">PacketSocket</a> is a communication socket for UDP protocol. </p>
+<div class="textblock"><p>A communication socket for UDP/IP protocol. </p>
 <p>A listening side binds to a port and receives packets. The <a class="el" href="classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297" title="Reads an incoming packet into the buffer data of size n, writes the address of the sending peer and r...">readFrom()</a> functions also identifies the sender so you can reply.</p>
 <div class="fragment"><div class="line">PacketSocket socket;</div>
 <div class="line">socket.bind(port);</div>
@@ -108,8 +108,8 @@ Inheritance diagram for PacketSocket:</div>
  <div class="center">
   <img src="classasl_1_1_packet_socket.png" usemap="#PacketSocket_map" alt=""/>
   <map id="PacketSocket_map" name="PacketSocket_map">
-<area href="classasl_1_1_socket.html" title="A Socket is a communication socket for TCP protocol." alt="Socket" shape="rect" coords="0,0,100,24"/>
-<area href="classasl_1_1_multicast_socket.html" title="A MulticastSocket is a communication socket for multicast UDP protocol." alt="MulticastSocket" shape="rect" coords="0,112,100,136"/>
+<area href="classasl_1_1_socket.html" title="A communication socket for the TCP/IP protocol." alt="Socket" shape="rect" coords="0,0,100,24"/>
+<area href="classasl_1_1_multicast_socket.html" title="A communication socket for multicast UDP/IP protocol." alt="MulticastSocket" shape="rect" coords="0,112,100,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -136,6 +136,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72">disconnected</a> ()</td></tr>
 <tr class="memdesc:a7e04ee0f03fdea43f0956ab37a7c2c72 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the connection was lost. <br /></td></tr>
 <tr class="separator:a7e04ee0f03fdea43f0956ab37a7c2c72 inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fc494d53391b27e2fd75cb750690d9 inherit pub_methods_classasl_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a id="a59fc494d53391b27e2fd75cb750690d9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a59fc494d53391b27e2fd75cb750690d9">connected</a> ()</td></tr>
+<tr class="memdesc:a59fc494d53391b27e2fd75cb750690d9 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the connection is open. <br /></td></tr>
+<tr class="separator:a59fc494d53391b27e2fd75cb750690d9 inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc75b2999f19ffc456b961bbcc1d27ac inherit pub_methods_classasl_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a id="afc75b2999f19ffc456b961bbcc1d27ac"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#afc75b2999f19ffc456b961bbcc1d27ac">bind</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;ip, int port)</td></tr>
 <tr class="memdesc:afc75b2999f19ffc456b961bbcc1d27ac inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds this socket to the given IP address and port number. <br /></td></tr>

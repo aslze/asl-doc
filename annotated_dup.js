@@ -48,6 +48,7 @@ var annotated_dup =
       [ "InetAddress", "classasl_1_1_inet_address.html", "classasl_1_1_inet_address" ],
       [ "Socket", "classasl_1_1_socket.html", "classasl_1_1_socket" ],
       [ "PacketSocket", "classasl_1_1_packet_socket.html", "classasl_1_1_packet_socket" ],
+      [ "LocalSocket", "classasl_1_1_local_socket.html", null ],
       [ "MulticastSocket", "classasl_1_1_multicast_socket.html", "classasl_1_1_multicast_socket" ],
       [ "SocketServer", "classasl_1_1_socket_server.html", "classasl_1_1_socket_server" ],
       [ "Stack", "classasl_1_1_stack.html", "classasl_1_1_stack" ],
