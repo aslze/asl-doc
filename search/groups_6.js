@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['reference_2dcounted_20objects_1169',['Reference-counted objects',['../group___shared.html',1,'']]]
+  ['math_1169',['Math',['../group___math3_d.html',1,'']]],
+  ['message_20logger_1170',['Message logger',['../group___logging.html',1,'']]]
 ];

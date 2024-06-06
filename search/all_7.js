@@ -15,8 +15,9 @@ var searchData=
   ['hours_199',['hours',['../classasl_1_1_date.html#a55fe533db50df16eb973aaf5c564d628',1,'asl::Date']]],
   ['http_200',['Http',['../classasl_1_1_http.html',1,'asl']]],
   ['http_201',['HTTP',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58a67e044074f46e6cea22788527da5f02e',1,'asl::Date']]],
-  ['httpmessage_202',['HttpMessage',['../classasl_1_1_http_message.html',1,'asl']]],
-  ['httprequest_203',['HttpRequest',['../classasl_1_1_http_request.html',1,'HttpRequest'],['../classasl_1_1_http_request.html#add0cb887e9d335fc7724c73cfd6480e4',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url)'],['../classasl_1_1_http_request.html#a5c3cca97c4e087572f6d539279514c6c',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url, const Dic&lt;&gt; &amp;headers)'],['../classasl_1_1_http_request.html#a30e9662dfa186062f567c52b26e408a1',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url, const T &amp;data)'],['../classasl_1_1_http_request.html#aff8f06d0c162c3729f0091cb7f7ad815',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url, const T &amp;data, const Dic&lt;&gt; &amp;headers)']]],
-  ['httpresponse_204',['HttpResponse',['../classasl_1_1_http_response.html',1,'asl']]],
-  ['httpserver_205',['HttpServer',['../classasl_1_1_http_server.html',1,'asl']]]
+  ['http_20clients_20and_20servers_202',['HTTP clients and servers',['../group___h_t_t_p.html',1,'']]],
+  ['httpmessage_203',['HttpMessage',['../classasl_1_1_http_message.html',1,'asl']]],
+  ['httprequest_204',['HttpRequest',['../classasl_1_1_http_request.html',1,'HttpRequest'],['../classasl_1_1_http_request.html#add0cb887e9d335fc7724c73cfd6480e4',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url)'],['../classasl_1_1_http_request.html#a5c3cca97c4e087572f6d539279514c6c',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url, const Dic&lt;&gt; &amp;headers)'],['../classasl_1_1_http_request.html#a30e9662dfa186062f567c52b26e408a1',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url, const T &amp;data)'],['../classasl_1_1_http_request.html#aff8f06d0c162c3729f0091cb7f7ad815',1,'asl::HttpRequest::HttpRequest(const String &amp;method, const String &amp;url, const T &amp;data, const Dic&lt;&gt; &amp;headers)']]],
+  ['httpresponse_205',['HttpResponse',['../classasl_1_1_http_response.html',1,'asl']]],
+  ['httpserver_206',['HttpServer',['../classasl_1_1_http_server.html',1,'asl']]]
 ];

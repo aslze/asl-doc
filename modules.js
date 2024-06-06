@@ -6,6 +6,7 @@ var modules =
     [ "Testing", "group___testing.html", "group___testing" ],
     [ "Threading", "group___threading.html", "group___threading" ],
     [ "Factory class and macros", "group___factory.html", "group___factory" ],
+    [ "HTTP clients and servers", "group___h_t_t_p.html", "group___h_t_t_p" ],
     [ "Socket communication", "group___sockets.html", "group___sockets" ],
     [ "Reference-counted objects", "group___shared.html", null ],
     [ "Math", "group___math3_d.html", "group___math3_d" ],

@@ -89,24 +89,13 @@ $(document).ready(function(){initNavTree('group___sockets.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>These classes enable network communication with TCP (plain or TLS encrypted) and UDP sockets. </p>
-<p>The <code><a class="el" href="classasl_1_1_socket_server.html" title="This is a reusable TCP or Unix socket server that listens to incoming connections and answers them co...">SocketServer</a></code> class implements a multithreaded socket server and is easier to use than using <code><a class="el" href="classasl_1_1_socket.html" title="A communication socket for the TCP/IP protocol.">Socket</a></code> objects directly for serving.</p>
-<p>This example would get a web page from an HTTP server (just an example, you should use the <code><a class="el" href="classasl_1_1_http.html" title="This class contains the basic HTTP/HTTPS client functionality.">Http</a></code> class for that).</p>
-<div class="fragment"><div class="line">String path = <span class="stringliteral">&quot;/index.html&quot;</span>, host = <span class="stringliteral">&quot;somehost.com&quot;</span>;</div>
-<div class="line">Socket socket;</div>
-<div class="line">socket.connect(host, 80);</div>
-<div class="line">socket &lt;&lt; String(0, <span class="stringliteral">&quot;GET %s HTTP/1.0\r\nHost: %s\r\n\r\n&quot;</span>, *path, *host);</div>
-<div class="line">String response;</div>
-<div class="line"><span class="keywordtype">char</span> buffer[1001];</div>
-<div class="line"><span class="keywordflow">while</span>(socket.connected())</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordflow">if</span>(!socket.waitData())</div>
-<div class="line">        <span class="keywordflow">continue</span>;</div>
-<div class="line">    <span class="keywordtype">int</span> n = socket.read(buffer, min(socket.available(), 1000));</div>
-<div class="line">    <span class="keywordflow">if</span>(n &lt;= 0)</div>
-<div class="line">        <span class="keywordflow">break</span>;</div>
-<div class="line">    response += String(buffer, n);</div>
-<div class="line">}</div>
+<p>These classes enable network communication with TCP (plain or TLS encrypted), UDP and Unix/Local sockets. </p>
+<p>The <code><a class="el" href="classasl_1_1_socket_server.html" title="This is a reusable TCP or Unix socket server that listens to incoming connections and answers them co...">SocketServer</a></code> class implements a multithreaded socket server and is easier to use than using <code><a class="el" href="classasl_1_1_socket.html" title="A communication socket for the TCP/IP protocol.">Socket</a></code> objects directly for serving multiple clients in parallel.</p>
+<p>This simplified example would connect to a server (at some host and TCP port), send a question and receive an answer.</p>
+<div class="fragment"><div class="line">Socket socket;</div>
+<div class="line">socket.connect(<span class="stringliteral">&quot;thehost&quot;</span>, 8000);</div>
+<div class="line">socket &lt;&lt; <span class="stringliteral">&quot;getname\n&quot;</span>;</div>
+<div class="line">String answer = socket.readLine();</div>
 </div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
