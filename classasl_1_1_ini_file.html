@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_ini_file.html',''); initR
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility to read and write configuration files in INI format. </p>
-<p>On destruction, if there was any variable added or modified the file is automatically saved. When reading a variable name, it is read from the current section. But if the name contains a <code>/</code> then it is considered a "section/name" pair.</p>
+<p>On destruction, if there was any variable added or modified the file is automatically saved. When reading a variable name it is considered a "section/name" pair.</p>
 <p>Example:</p>
 <div class="fragment"><div class="line">[main]</div>
 <div class="line">color = white</div>
@@ -99,13 +99,13 @@ $(document).ready(function(){initNavTree('classasl_1_1_ini_file.html',''); initR
 <div class="line">[network]</div>
 <div class="line">num_retries = 3</div>
 </div><!-- fragment --><p>Can be read and written with:</p>
-<div class="fragment"><div class="line"><a class="code" href="classasl_1_1_ini_file.html#a1e97abb845618efac593d45810a02673">IniFile</a> config(<span class="stringliteral">&quot;settings.ini&quot;</span>);</div>
+<div class="fragment"><div class="line"><a class="code" href="classasl_1_1_ini_file.html#ab819b53725c5855f96f34fa21ade1b9f">IniFile</a> config(<span class="stringliteral">&quot;settings.ini&quot;</span>);</div>
 <div class="line"><span class="keywordtype">int</span> num_retries = config[<span class="stringliteral">&quot;network/num_retries&quot;</span>];</div>
-<div class="line">config[<span class="stringliteral">&quot;main/color&quot;</span>] = <span class="stringliteral">&quot;black&quot;</span>;</div>
-<div class="ttc" id="aclassasl_1_1_ini_file_html_a1e97abb845618efac593d45810a02673"><div class="ttname"><a href="classasl_1_1_ini_file.html#a1e97abb845618efac593d45810a02673">asl::IniFile::IniFile</a></div><div class="ttdeci">IniFile(const String &amp;fname, bool shouldwrite=true)</div><div class="ttdoc">Opens an INI file from the given file.</div></div>
+<div class="line">config.set(<span class="stringliteral">&quot;main/color&quot;</span>, <span class="stringliteral">&quot;black&quot;</span>);</div>
+<div class="ttc" id="aclassasl_1_1_ini_file_html_ab819b53725c5855f96f34fa21ade1b9f"><div class="ttname"><a href="classasl_1_1_ini_file.html#ab819b53725c5855f96f34fa21ade1b9f">asl::IniFile::IniFile</a></div><div class="ttdeci">IniFile(const String &amp;path, bool shouldwrite=true)</div><div class="ttdoc">Opens an INI file from the given path.</div></div>
 </div><!-- fragment --><p>The file in that example will be saved if the original <code>color</code> in section <code>main</code> was not "black".</p>
 <p>The file can be cheked for correct reading and whether a variable exists:</p>
-<div class="fragment"><div class="line"><a class="code" href="classasl_1_1_ini_file.html#a1e97abb845618efac593d45810a02673">IniFile</a> config(<span class="stringliteral">&quot;settings.ini&quot;</span>);</div>
+<div class="fragment"><div class="line"><a class="code" href="classasl_1_1_ini_file.html#ab819b53725c5855f96f34fa21ade1b9f">IniFile</a> config(<span class="stringliteral">&quot;settings.ini&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span>(!config.ok()) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Error reading %s\n&quot;</span>, *config.fileName());</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
@@ -120,10 +120,10 @@ $(document).ready(function(){initNavTree('classasl_1_1_ini_file.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e97abb845618efac593d45810a02673"><td class="memItemLeft" align="right" valign="top"><a id="a1e97abb845618efac593d45810a02673"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a1e97abb845618efac593d45810a02673">IniFile</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;fname, bool shouldwrite=true)</td></tr>
-<tr class="memdesc:a1e97abb845618efac593d45810a02673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens an INI file from the given file. <br /></td></tr>
-<tr class="separator:a1e97abb845618efac593d45810a02673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab819b53725c5855f96f34fa21ade1b9f"><td class="memItemLeft" align="right" valign="top"><a id="ab819b53725c5855f96f34fa21ade1b9f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#ab819b53725c5855f96f34fa21ade1b9f">IniFile</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;path, bool shouldwrite=true)</td></tr>
+<tr class="memdesc:ab819b53725c5855f96f34fa21ade1b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens an INI file from the given path. <br /></td></tr>
+<tr class="separator:ab819b53725c5855f96f34fa21ade1b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0e356ba5d5901a4fbc0e1e7d1737590"><td class="memItemLeft" align="right" valign="top"><a id="ae0e356ba5d5901a4fbc0e1e7d1737590"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#ae0e356ba5d5901a4fbc0e1e7d1737590">~IniFile</a> ()</td></tr>
 <tr class="memdesc:ae0e356ba5d5901a4fbc0e1e7d1737590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the object and save the file if there were modifications. <br /></td></tr>
@@ -136,10 +136,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a307f4d44998fde78418ddab34e57b5be">fileName</a> () const</td></tr>
 <tr class="memdesc:a307f4d44998fde78418ddab34e57b5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file name of this <a class="el" href="classasl_1_1_ini_file.html" title="A utility to read and write configuration files in INI format.">IniFile</a>. <br /></td></tr>
 <tr class="separator:a307f4d44998fde78418ddab34e57b5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4497ea841a3b59eae25bb522d7524742"><td class="memItemLeft" align="right" valign="top"><a id="a4497ea841a3b59eae25bb522d7524742"></a>
-<a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a4497ea841a3b59eae25bb522d7524742">operator[]</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name)</td></tr>
-<tr class="memdesc:a4497ea841a3b59eae25bb522d7524742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with the key <code>name</code> in the current section if the name is like <code>section/name</code> then the given section is used. <br /></td></tr>
+<tr class="memitem:a4497ea841a3b59eae25bb522d7524742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a4497ea841a3b59eae25bb522d7524742">operator[]</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name)</td></tr>
+<tr class="memdesc:a4497ea841a3b59eae25bb522d7524742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with the key <code>name</code> in the current section if the name is like <code>section/name</code> then the given section is used.  <a href="classasl_1_1_ini_file.html#a4497ea841a3b59eae25bb522d7524742">More...</a><br /></td></tr>
 <tr class="separator:a4497ea841a3b59eae25bb522d7524742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8d6926b62108cdc765a20b4a9f7e9e"><td class="memItemLeft" align="right" valign="top"><a id="ada8d6926b62108cdc765a20b4a9f7e9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#ada8d6926b62108cdc765a20b4a9f7e9e">set</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;value)</td></tr>
+<tr class="memdesc:ada8d6926b62108cdc765a20b4a9f7e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value for a key like 'section/name'. <br /></td></tr>
+<tr class="separator:ada8d6926b62108cdc765a20b4a9f7e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad444386b9e5874deed980590a6c0912d"><td class="memItemLeft" align="right" valign="top"><a id="ad444386b9e5874deed980590a6c0912d"></a>
 const <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#ad444386b9e5874deed980590a6c0912d">operator()</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;defaultVal) const</td></tr>
 <tr class="memdesc:ad444386b9e5874deed980590a6c0912d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with the key <code>name</code> or <code>defaultVal</code> if it was not found. <br /></td></tr>
@@ -148,9 +151,8 @@ const <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cla
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a81615ee232f88bd646b229cd9e98152c">write</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;fname=&quot;&quot;)</td></tr>
 <tr class="memdesc:a81615ee232f88bd646b229cd9e98152c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the file with its modifications; this is done automatically on destruction, just call this if you need the file written before the object is detroyed. <br /></td></tr>
 <tr class="separator:a81615ee232f88bd646b229cd9e98152c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba64d5bde3196b601571021287854fd2"><td class="memItemLeft" align="right" valign="top"><a id="aba64d5bde3196b601571021287854fd2"></a>
-Section &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#aba64d5bde3196b601571021287854fd2">section</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name)</td></tr>
-<tr class="memdesc:aba64d5bde3196b601571021287854fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current section to 'name' (variables will be read from here by default) <br /></td></tr>
+<tr class="memitem:aba64d5bde3196b601571021287854fd2"><td class="memItemLeft" align="right" valign="top">Section &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#aba64d5bde3196b601571021287854fd2">section</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name)</td></tr>
+<tr class="memdesc:aba64d5bde3196b601571021287854fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current section to 'name' (variables will be read from here by default)  <a href="classasl_1_1_ini_file.html#aba64d5bde3196b601571021287854fd2">More...</a><br /></td></tr>
 <tr class="separator:aba64d5bde3196b601571021287854fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebd85cd4ea3e2530bf36de0ca752bb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a8ebd85cd4ea3e2530bf36de0ca752bb0">has</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;name) const</td></tr>
 <tr class="memdesc:a8ebd85cd4ea3e2530bf36de0ca752bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the file contains a key named <code>name</code>.  <a href="classasl_1_1_ini_file.html#a8ebd85cd4ea3e2530bf36de0ca752bb0">More...</a><br /></td></tr>
@@ -161,6 +163,10 @@ Section &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memitem:a8a5bb31c13967d513f355a4aa9cc70f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#a8a5bb31c13967d513f355a4aa9cc70f5">array</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;field, int index) const</td></tr>
 <tr class="memdesc:a8a5bb31c13967d513f355a4aa9cc70f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value associated with field <code>name</code> at the array position <code>index</code> of the array last specified with <code><a class="el" href="classasl_1_1_ini_file.html#aad30fb0d1f6d7bf21a90b4a2bbefd391" title="Returns the length of an &quot;array&quot; named name as written by the Qt library and enables reading its valu...">arraysize()</a></code>.  <a href="classasl_1_1_ini_file.html#a8a5bb31c13967d513f355a4aa9cc70f5">More...</a><br /></td></tr>
 <tr class="separator:a8a5bb31c13967d513f355a4aa9cc70f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc32ff3d5f7d943e7b3efbaec2227b7e"><td class="memItemLeft" align="right" valign="top"><a id="acc32ff3d5f7d943e7b3efbaec2227b7e"></a>
+<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#acc32ff3d5f7d943e7b3efbaec2227b7e">sectionNames</a> () const</td></tr>
+<tr class="memdesc:acc32ff3d5f7d943e7b3efbaec2227b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of sections in the file. <br /></td></tr>
+<tr class="separator:acc32ff3d5f7d943e7b3efbaec2227b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af694f5cebd906d17ba1e86de165da823"><td class="memItemLeft" align="right" valign="top"><a id="af694f5cebd906d17ba1e86de165da823"></a>
 <a class="el" href="classasl_1_1_dic.html">Dic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_ini_file.html#af694f5cebd906d17ba1e86de165da823">values</a> () const</td></tr>
 <tr class="memdesc:af694f5cebd906d17ba1e86de165da823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all keys and values as a map with keys as "section/key". <br /></td></tr>
@@ -198,7 +204,7 @@ Section &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div><div class="memdoc">
 
 <p>Returns the value associated with field <code>name</code> at the array position <code>index</code> of the array last specified with <code><a class="el" href="classasl_1_1_ini_file.html#aad30fb0d1f6d7bf21a90b4a2bbefd391" title="Returns the length of an &quot;array&quot; named name as written by the Qt library and enables reading its valu...">arraysize()</a></code>. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use ini[name/index\field] </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use ini[name/index\field] </dd></dl>
 
 </div>
 </div>
@@ -219,7 +225,7 @@ Section &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div><div class="memdoc">
 
 <p>Returns the length of an "array" named <code>name</code> as written by the Qt library and enables reading its values. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use ini[name/size] </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use ini[name/size] </dd></dl>
 
 </div>
 </div>
@@ -241,6 +247,48 @@ Section &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 <p>Returns true if the file contains a key named <code>name</code>. </p>
 <p>If the name is like <code>section/name</code> then function tests a variable <code>name</code> in section <code>section</code>. </p>
+
+</div>
+</div>
+<a id="a4497ea841a3b59eae25bb522d7524742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4497ea841a3b59eae25bb522d7524742">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_string.html">String</a>&amp; operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value associated with the key <code>name</code> in the current section if the name is like <code>section/name</code> then the given section is used. </p>
+<p>In the future this might return a const ref, so that modifications must be made with .set(k, v) </p>
+
+</div>
+</div>
+<a id="aba64d5bde3196b601571021287854fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba64d5bde3196b601571021287854fd2">&#9670;&nbsp;</a></span>section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Section&amp; section </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the current section to 'name' (variables will be read from here by default) </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use full names like "section/key" </dd></dl>
 
 </div>
 </div>

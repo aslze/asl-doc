@@ -1,6 +1,6 @@
 var classasl_1_1_ini_file =
 [
-    [ "IniFile", "classasl_1_1_ini_file.html#a1e97abb845618efac593d45810a02673", null ],
+    [ "IniFile", "classasl_1_1_ini_file.html#ab819b53725c5855f96f34fa21ade1b9f", null ],
     [ "~IniFile", "classasl_1_1_ini_file.html#ae0e356ba5d5901a4fbc0e1e7d1737590", null ],
     [ "array", "classasl_1_1_ini_file.html#a8a5bb31c13967d513f355a4aa9cc70f5", null ],
     [ "arraysize", "classasl_1_1_ini_file.html#aad30fb0d1f6d7bf21a90b4a2bbefd391", null ],
@@ -10,6 +10,8 @@ var classasl_1_1_ini_file =
     [ "operator()", "classasl_1_1_ini_file.html#ad444386b9e5874deed980590a6c0912d", null ],
     [ "operator[]", "classasl_1_1_ini_file.html#a4497ea841a3b59eae25bb522d7524742", null ],
     [ "section", "classasl_1_1_ini_file.html#aba64d5bde3196b601571021287854fd2", null ],
+    [ "sectionNames", "classasl_1_1_ini_file.html#acc32ff3d5f7d943e7b3efbaec2227b7e", null ],
+    [ "set", "classasl_1_1_ini_file.html#ada8d6926b62108cdc765a20b4a9f7e9e", null ],
     [ "values", "classasl_1_1_ini_file.html#af694f5cebd906d17ba1e86de165da823", null ],
     [ "values", "classasl_1_1_ini_file.html#a91ebd9a0766d636980ad2467d8a19eea", null ],
     [ "write", "classasl_1_1_ini_file.html#a81615ee232f88bd646b229cd9e98152c", null ]

@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"group___library.html#gafef76fbbf4dbf88b2ea5a44c7b3cc56f":[1,11,4],
+"group___logging.html":[1,12],
 "group___logging.html#ga1cc80bd126cecc50ec064235176d7e61":[1,12,3],
 "group___logging.html#ga2d837dfa31246202689b90e3ff05a20c":[1,12,5],
 "group___logging.html#ga32af1112ac8fc90ea5a5dbba1506cba5":[1,12,2],
@@ -27,8 +29,8 @@ var NAVTREEINDEX4 =
 "group___threading.html":[1,4],
 "group___x_d_l.html":[1,2],
 "hierarchy.html":[3,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md0":[0,0],
 "index.html#autotoc_md1":[0,0,0],
 "modules.html":[1],
