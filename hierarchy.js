@@ -55,11 +55,11 @@ var hierarchy =
     [ "Map< String, asl::Array< asl::String > >", "classasl_1_1_map.html", [
       [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ]
     ] ],
+    [ "Map< String, asl::Dic >", "classasl_1_1_map.html", [
+      [ "Dic< asl::Dic >", "classasl_1_1_dic.html", null ]
+    ] ],
     [ "Map< String, asl::String >", "classasl_1_1_map.html", [
       [ "Dic< asl::String >", "classasl_1_1_dic.html", null ]
-    ] ],
-    [ "Map< String, Section >", "classasl_1_1_map.html", [
-      [ "Dic< Section >", "classasl_1_1_dic.html", null ]
     ] ],
     [ "Map< String, String >", "classasl_1_1_map.html", [
       [ "Dic< T >", "classasl_1_1_dic.html", null ]

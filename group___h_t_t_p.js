@@ -71,6 +71,7 @@ var group___h_t_t_p =
       [ "closed", "classasl_1_1_web_socket.html#abfb68e4621fa77fb4c41d49357bb4bc3", null ],
       [ "code", "classasl_1_1_web_socket.html#a4aebcfaf2368eb240cf5111cc6fc140b", null ],
       [ "connect", "classasl_1_1_web_socket.html#ab7435c2d095801af47e247b9f4b512a4", null ],
+      [ "connected", "classasl_1_1_web_socket.html#a59fc494d53391b27e2fd75cb750690d9", null ],
       [ "hasInput", "classasl_1_1_web_socket.html#ab40c41376a2056236ae17fd7d92cfae3", null ],
       [ "receive", "classasl_1_1_web_socket.html#ae1b6956419d38fe20ea1b95597da96b8", null ],
       [ "send", "classasl_1_1_web_socket.html#a56aaf4cf781c7a2c8b504f4d1cc73078", null ],
