@@ -19,6 +19,7 @@ var classasl_1_1_matrix__ =
     [ "operator-", "classasl_1_1_matrix__.html#a2bf338bab6f45d93299bd10305727cac", null ],
     [ "operator-", "classasl_1_1_matrix__.html#a71a86ddf2a4ddea65705f7c6ee436c5f", null ],
     [ "operator-=", "classasl_1_1_matrix__.html#a5ea0c227ce776f2003d5bdf7da94c58d", null ],
+    [ "operator[]", "classasl_1_1_matrix__.html#a0534e977fc9fee424b3ef94f27a9ed61", null ],
     [ "pseudoinverse", "classasl_1_1_matrix__.html#a812a8f964c29516eac5dd921bf820d0a", null ],
     [ "row", "classasl_1_1_matrix__.html#abd0a085c3573a87544466cd27b80105d", null ],
     [ "slice", "classasl_1_1_matrix__.html#ae9b8e77240745684c997e16f7edfdb33", null ],
