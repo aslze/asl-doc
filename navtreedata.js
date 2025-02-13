@@ -25,12 +25,8 @@
 var NAVTREE =
 [
   [ "ASL", "index.html", [
-    [ "ASL - All-purpose Simple Library", "index.html", [
-      [ "Compilation and use", "index.html#autotoc_md0", [
-        [ "SSL/TLS sockets and HTTPS support", "index.html#autotoc_md1", null ]
-      ] ]
-    ] ],
-    [ "Topics", "modules.html", "modules" ],
+    [ "ASL - All-purpose Simple Library", "index.html", "index" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -43,7 +39,7 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -52,10 +48,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classasl_1_1_http_request.html#a5c3cca97c4e087572f6d539279514c6c",
-"classasl_1_1_random.html#a69ddd6268c47df2054a9ba803e634b71",
-"classasl_1_1_var.html#abf841651c80a716f58dfd1ea1e1a9010",
-"group___library.html#ga864c0dc3fca59aa6df0b2cf68998caec"
+"classasl_1_1_http_request.html#a517ccb22e2a11642c2da6b045ed57e4c",
+"classasl_1_1_random.html#a2d9a6d56307d01689be519719cf364aa",
+"classasl_1_1_var.html#abb503ac64ae8cfc187ce9e831e27fa16",
+"group___library.html#gafef76fbbf4dbf88b2ea5a44c7b3cc56f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -24,7 +24,7 @@
 */
 var menudata={children:[
 {text:"Intro",url:"index.html"},
-{text:"Topics",url:"modules.html"},
+{text:"Topics",url:"topics.html"},
 {text:"Related Pages",url:"pages.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
@@ -91,4 +91,4 @@ var menudata={children:[
 {text:"Typedefs",url:"functions_type.html"},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},
-{text:"Related Functions",url:"functions_rela.html"}]}]}]}
+{text:"Related Symbols",url:"functions_rela.html"}]}]}]}

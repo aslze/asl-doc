@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['socket_20communication_1173',['Socket communication',['../group___sockets.html',1,'']]]
+  ['libraries_0',['Dynamically loadable libraries',['../group___library.html',1,'']]],
+  ['loadable_20libraries_1',['Dynamically loadable libraries',['../group___library.html',1,'']]],
+  ['logger_2',['Message logger',['../group___logging.html',1,'']]]
 ];

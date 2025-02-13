@@ -6,11 +6,11 @@ var group___h_t_t_p =
       [ "query", "structasl_1_1_url.html#a6a64e30695366b7e75477aea159e193b", null ]
     ] ],
     [ "HttpMessage", "classasl_1_1_http_message.html", [
-      [ "body", "classasl_1_1_http_message.html#a97a889f281118d7f9d5eb0fc0ac15f67", null ],
+      [ "body", "classasl_1_1_http_message.html#afbb7965cec4fcd29ea03a3d60ea491fe", null ],
       [ "hasHeader", "classasl_1_1_http_message.html#a4bce25d6dc3ea7cdd381bab825847975", null ],
       [ "header", "classasl_1_1_http_message.html#a92978ec4dfe2499ebee6a3fb89e3c02d", null ],
       [ "json", "classasl_1_1_http_message.html#abdeca9d6e6ecf38c70a45ceb37bdf678", null ],
-      [ "protocol", "classasl_1_1_http_message.html#aee009da01de33bd9039b77e750007b84", null ],
+      [ "protocol", "classasl_1_1_http_message.html#a90a804c014c4595a1084694092f67632", null ],
       [ "put", "classasl_1_1_http_message.html#a75ea43750434b3eef23c0f52c05e7992", null ],
       [ "put", "classasl_1_1_http_message.html#a95c33d4d77a1c50c4a0fd5fccc0a7ece", null ],
       [ "put", "classasl_1_1_http_message.html#a11c94eb674260a86d52a4f5d29ff8ca5", null ],
@@ -30,14 +30,14 @@ var group___h_t_t_p =
       [ "HttpRequest", "classasl_1_1_http_request.html#aff8f06d0c162c3729f0091cb7f7ad815", null ],
       [ "is", "classasl_1_1_http_request.html#aa82638dcd84a0b1a16e9d5c142615dd0", null ],
       [ "is", "classasl_1_1_http_request.html#af1b34ee36f82ace7fbd651988374b6db", null ],
-      [ "method", "classasl_1_1_http_request.html#a0aca0d7a207a2777d9afce803d5a860e", null ],
-      [ "query", "classasl_1_1_http_request.html#a8f7021addf75a280bf1aeac342412132", null ],
-      [ "query", "classasl_1_1_http_request.html#aa65ea91cf18b0515b16bbadcbe283576", null ],
-      [ "querystring", "classasl_1_1_http_request.html#ade787a6ed231b72d69a459dc75674fcd", null ],
-      [ "sender", "classasl_1_1_http_request.html#a45dbb6b6c60a7633275f7016a34a5b2d", null ],
-      [ "setFollowRedirects", "classasl_1_1_http_request.html#a30e4e2dbd85f835978f15a446861bd25", null ],
-      [ "suffix", "classasl_1_1_http_request.html#ae27e7ef13482b77673d19c1069481edb", null ],
-      [ "url", "classasl_1_1_http_request.html#a73a7b7d79474a4b87297e875679c19bd", null ]
+      [ "method", "classasl_1_1_http_request.html#a1b293696fa55f70646e1154f01f1e31d", null ],
+      [ "query", "classasl_1_1_http_request.html#a3595ea3642da868c0bc98daf4caf9ea8", null ],
+      [ "query", "classasl_1_1_http_request.html#ab0986ac55d70228f220678b8d072f7bf", null ],
+      [ "querystring", "classasl_1_1_http_request.html#a3a2a2da15357344bdb28c1645709bc04", null ],
+      [ "sender", "classasl_1_1_http_request.html#a9864d473e28d486dea3269ead05d8ac2", null ],
+      [ "setFollowRedirects", "classasl_1_1_http_request.html#a5e633450d102b21ab7462c881e72277d", null ],
+      [ "suffix", "classasl_1_1_http_request.html#a517ccb22e2a11642c2da6b045ed57e4c", null ],
+      [ "url", "classasl_1_1_http_request.html#af40daedfbb5fead741b2b714b7a52e48", null ]
     ] ],
     [ "HttpResponse", "classasl_1_1_http_response.html", [
       [ "StatusType", "classasl_1_1_http_response.html#a90549f45cfc442187c1d769596107d3e", [
@@ -81,7 +81,7 @@ var group___h_t_t_p =
       [ "waitData", "classasl_1_1_web_socket.html#a5f5831e1d99408487b526e10ee60ad15", null ]
     ] ],
     [ "WebSocketServer", "classasl_1_1_web_socket_server.html", [
-      [ "clients", "classasl_1_1_web_socket_server.html#a9b87d9f36f639276803cc4853fd07a3a", null ],
+      [ "clients", "classasl_1_1_web_socket_server.html#ac22b5fd3fe2d626719f41248390833dd", null ],
       [ "serve", "classasl_1_1_web_socket_server.html#ac7624414722fee9512043e8544da38d2", null ]
     ] ]
 ];
