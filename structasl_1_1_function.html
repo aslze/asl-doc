@@ -103,7 +103,7 @@ struct asl::Function&lt; R, T1, T2 &gt;</div><p>A simple function object that ca
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Function&lt;bool, int&gt;</a> <a class="code hl_class" href="classasl_1_1_array.html">isEven</a> = [=](<span class="keywordtype">int</span> x) { <span class="keywordflow">return</span> x % 2 == 0; };</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">bool</span> <a class="code hl_class" href="classasl_1_1_array.html">sixeven</a> = <a class="code hl_class" href="classasl_1_1_array.html">isEven</a>(6);</div>
-<div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:69</div></div>
+<div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
 </div><!-- fragment --><p>A default constructed <a class="el" href="structasl_1_1_function.html" title="A simple function object that can wrap a function pointer, a functor or a lambda.">Function</a> object is null and cannot be invoked. You can check if the function has been initialized with the <code>bool</code> conversion:</p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code hl_class" href="classasl_1_1_array.html">function</a>)</div>
 <div class="line">    <a class="code hl_class" href="classasl_1_1_array.html">function</a>(a, b);</div>

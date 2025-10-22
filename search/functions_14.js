@@ -3,7 +3,7 @@ var searchData=
   ['unlock_0',['unlock',['../classasl_1_1_mutex.html#a9278be8203e1c42e2619179882ae4403',1,'asl::Mutex']]],
   ['untested_1',['untested',['../classasl_1_1_cmd_args.html#ad733c64d1cac546323460870a1b9f08a',1,'asl::CmdArgs']]],
   ['upload_2',['upload',['../classasl_1_1_http.html#a7383236bd12cb38583300d3bf1f1ef10',1,'asl::Http']]],
-  ['url_3',['url',['../classasl_1_1_http_request.html#af40daedfbb5fead741b2b714b7a52e48',1,'asl::HttpRequest::url()'],['../structasl_1_1_url.html#ae580696bcf0d3ff82a33ab3cd9d91d70',1,'asl::Url::Url()']]],
+  ['url_3',['url',['../structasl_1_1_url.html#ae580696bcf0d3ff82a33ab3cd9d91d70',1,'asl::Url::Url()'],['../classasl_1_1_http_request.html#af40daedfbb5fead741b2b714b7a52e48',1,'asl::HttpRequest::url()']]],
   ['use_4',['use',['../classasl_1_1_condition.html#a4dea93d3903a30a699bfc69942b67e8b',1,'asl::Condition']]],
   ['usecert_5',['usecert',['../classasl_1_1_socket_server.html#a6ad5c2153950961ffb2606abb35d5967',1,'asl::SocketServer::useCert()'],['../classasl_1_1_tls_socket.html#a78fda9218d1672ea047ddea4a21830f2',1,'asl::TlsSocket::useCert()']]],
   ['useconsole_6',['useConsole',['../classasl_1_1_log.html#ae4ee8d8423cdbfef136a878593adf1a3',1,'asl::Log']]],

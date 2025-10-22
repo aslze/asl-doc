@@ -46,6 +46,7 @@ var group___math3_d =
       [ "operator*", "classasl_1_1_matrix3__.html#a682baf745b8aec85c0d4b1e88b1f1bc4", null ],
       [ "operator*", "classasl_1_1_matrix3__.html#ac957c9e318802435ef31691e8d5d90b7", null ],
       [ "operator+", "classasl_1_1_matrix3__.html#a2b8b9832ecd06cf41ae7ec6d13993584", null ],
+      [ "operator-", "classasl_1_1_matrix3__.html#a71826200f262c4d3acc42ff5c6815a6e", null ],
       [ "operator^", "classasl_1_1_matrix3__.html#a52191cb1fb53f47b1bcd6135a514e9cb", null ],
       [ "rotation", "classasl_1_1_matrix3__.html#a2d00e2edcb30a795ae4df59e9406a164", null ],
       [ "rows", "classasl_1_1_matrix3__.html#ad107abcacb84cbabb41b87ba81360f91", null ],

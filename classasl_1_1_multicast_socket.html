@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_multicast_socket.html',''
 <div class="textblock"><p>A communication socket for multicast UDP/IP protocol. </p>
 <p>A socket can send packets to a multicast group and port, and another socket can join the group so it receives packets sent to it.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_inet_address.html">InetAddress</a> <a class="code hl_class" href="classasl_1_1_array.html">group</a>(<span class="stringliteral">&quot;224.0.1.1&quot;</span>, 18000);</div>
-<div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:69</div></div>
+<div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
 <div class="ttc" id="aclassasl_1_1_inet_address_html"><div class="ttname"><a href="classasl_1_1_inet_address.html">asl::InetAddress</a></div><div class="ttdoc">Represents an endpoint of a socket which is ususally an IP address and a port.</div><div class="ttdef"><b>Definition</b> Socket.h:49</div></div>
 </div><!-- fragment --><p>A listening side would bind to the port on a local interface, join the group, receive packets and then optionally leave (on socket destruction the group is automatically left):</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_multicast_socket.html">MulticastSocket</a> socket;</div>
