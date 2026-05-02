@@ -112,9 +112,9 @@ class asl::Matrix_&lt; T &gt;</div><p>A matrix supporting basic arithmetic opera
 <div class="fragment"><div class="line"><span class="keyword">auto</span> <a class="code hl_class" href="classasl_1_1_array.html">C</a> = <a class="code hl_class" href="classasl_1_1_array.html">A</a>.inverse() * <a class="code hl_class" href="classasl_1_1_array.html">A</a> + b * b.transposed();</div>
 </div><!-- fragment --><p>And you can solve linear systems, even using least-squares, if more equations than unknowns:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> x = <a class="code hl_function" href="group___math3_d.html#ga816d1574c9888634b0225276f55a41c0">solve</a>(<a class="code hl_class" href="classasl_1_1_array.html">A</a>, b); <span class="comment">// solution to linear system A * x = b</span></div>
-<div class="ttc" id="agroup___math3_d_html_ga816d1574c9888634b0225276f55a41c0"><div class="ttname"><a href="group___math3_d.html#ga816d1574c9888634b0225276f55a41c0">asl::solve</a></div><div class="ttdeci">Matrix_&lt; T &gt; solve(const Matrix_&lt; T &gt; &amp;A, const Matrix_&lt; T &gt; &amp;b)</div><div class="ttdoc">Solves the matrix equation A*x=b and returns x; if b is a matrix (not a column) then the equation is ...</div><div class="ttdef"><b>Definition</b> Matrix.h:388</div></div>
+<div class="ttc" id="agroup___math3_d_html_ga816d1574c9888634b0225276f55a41c0"><div class="ttname"><a href="group___math3_d.html#ga816d1574c9888634b0225276f55a41c0">asl::solve</a></div><div class="ttdeci">Matrix_&lt; T &gt; solve(const Matrix_&lt; T &gt; &amp;A, const Matrix_&lt; T &gt; &amp;b)</div><div class="ttdoc">Solves the matrix equation A*x=b and returns x; if b is a matrix (not a column) then the equation is ...</div><div class="ttdef"><b>Definition</b> Matrix.h:414</div></div>
 </div><!-- fragment --> </div>
-<p><code>#include &lt;Matrix.h&gt;</code></p>
+<p><code>#include &lt;asl/Matrix.h&gt;</code></p>
 
 <p>Inherits <a class="el" href="classasl_1_1_array2.html">Array2&lt; T &gt;</a>.</p>
 <table class="memberdecls">
@@ -320,6 +320,10 @@ Static Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>identity</b> (<a class="el" href="classasl_1_1_array.html">int</a> n)</td></tr>
 <tr class="memdesc:a6eea34188541a08765630f8e59c90a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an identity matrix of the given size. <br /></td></tr>
 <tr class="separator:a6eea34188541a08765630f8e59c90a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5caad2f7e715e8a0bd4d2cdc966e9223" id="r_a5caad2f7e715e8a0bd4d2cdc966e9223"><td class="memItemLeft" align="right" valign="top"><a id="a5caad2f7e715e8a0bd4d2cdc966e9223" name="a5caad2f7e715e8a0bd4d2cdc966e9223"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix__.html">Matrix_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zeros</b> (<a class="el" href="classasl_1_1_array.html">int</a> <a class="el" href="classasl_1_1_array2.html#ad107abcacb84cbabb41b87ba81360f91">rows</a>, <a class="el" href="classasl_1_1_array.html">int</a> <a class="el" href="classasl_1_1_array2.html#a8509d6f7951179378f848f5f4cc37720">cols</a>)</td></tr>
+<tr class="memdesc:a5caad2f7e715e8a0bd4d2cdc966e9223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a zero matrix of the given size. <br /></td></tr>
+<tr class="separator:a5caad2f7e715e8a0bd4d2cdc966e9223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><b>Matrix.h</b></li>

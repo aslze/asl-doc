@@ -21,7 +21,7 @@ var searchData=
   ['localsocket_18',['LocalSocket',['../classasl_1_1_local_socket.html',1,'asl']]],
   ['lock_19',['lock',['../classasl_1_1_lock.html',1,'Lock'],['../classasl_1_1_mutex.html#aa81aed607133209dade63a226818224d',1,'asl::Mutex::lock()']]],
   ['locked_20',['locked',['../classasl_1_1_atomic.html#ad519fa28b974579a2a10e64dc2990ee7',1,'asl::Atomic']]],
-  ['log_21',['log',['../classasl_1_1_log.html#aef0262c2f8de25b1e866287d75d7b6d8',1,'asl::Log::log'],['../group___logging.html#gaa28792a63eafbce168ddade4946a5318',1,'asl::log(const String &amp;cat, Log::Level level, const String &amp;message)'],['../group___logging.html#gaef0262c2f8de25b1e866287d75d7b6d8',1,'asl::log(const String &amp;cat, Log::Level level, const char *fmt,...) ASL_PRINTF_W2(3)'],['../classasl_1_1_log.html#aa28792a63eafbce168ddade4946a5318',1,'asl::Log::log'],['../classasl_1_1_log.html',1,'Log']]],
+  ['log_21',['log',['../classasl_1_1_log.html#a4843dd6acd412d4a49f136fd5afad609',1,'asl::Log::log'],['../group___logging.html#gaa28792a63eafbce168ddade4946a5318',1,'asl::log(const String &amp;cat, Log::Level level, const String &amp;message)'],['../group___logging.html#ga4843dd6acd412d4a49f136fd5afad609',1,'asl::log(const String &amp;cat, Log::Level level, const char *fmt,...)(3)'],['../classasl_1_1_log.html#aa28792a63eafbce168ddade4946a5318',1,'asl::Log::log'],['../classasl_1_1_log.html',1,'Log']]],
   ['logger_22',['Message logger',['../group___logging.html',1,'']]],
   ['long_23',['LONG',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58aaee055c4a5aba7d55774e4f1c01dacea',1,'asl::Date']]],
   ['lookup_24',['lookup',['../classasl_1_1_inet_address.html#a60f5ecef71800f4f99bc0a2f47b66dd8',1,'asl::InetAddress']]]

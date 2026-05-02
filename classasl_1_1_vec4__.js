@@ -1,5 +1,6 @@
 var classasl_1_1_vec4__ =
 [
+    [ "abs", "classasl_1_1_vec4__.html#a66e90a312456c5c2fd355b251dcae155", null ],
     [ "h2c", "classasl_1_1_vec4__.html#a0f1509b4cef0c620be689c31e1f5e207", null ],
     [ "length", "classasl_1_1_vec4__.html#a319b1046f6f739132918623ea8aa25d8", null ],
     [ "length2", "classasl_1_1_vec4__.html#afa9fffbf60ee884d989d5e337db4c3ca", null ],

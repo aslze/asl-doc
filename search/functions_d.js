@@ -6,12 +6,14 @@ var searchData=
   ['nextrow_3',['nextRow',['../classasl_1_1_tabular_data_file.html#ae48881f5f521ac690e74524bef95a9b5',1,'asl::TabularDataFile']]],
   ['noext_4',['noExt',['../classasl_1_1_path.html#a5adedebea1ce30afaeb37d6e519bc76e',1,'asl::Path']]],
   ['norm_5',['norm',['../classasl_1_1_matrix__.html#aaeb888c96528e67e9d5f2efb6fd8151e',1,'asl::Matrix_::norm()'],['../classasl_1_1_matrix3__.html#aaeb888c96528e67e9d5f2efb6fd8151e',1,'asl::Matrix3_::norm()'],['../classasl_1_1_matrix4__.html#aaeb888c96528e67e9d5f2efb6fd8151e',1,'asl::Matrix4_::norm()']]],
-  ['normal_6',['normal',['../classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033',1,'asl::Random::normal()'],['../classasl_1_1_random.html#aba05afa3d5ead80cd2dd91118eff14b8',1,'asl::Random::normal(double m, double s)'],['../classasl_1_1_random.html#a7cb9215d5a0d08e628960e059aed0188',1,'asl::Random::normal(float m, float s)']]],
-  ['normalized_7',['normalized',['../classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261',1,'asl::Vec2_::normalized()'],['../classasl_1_1_vec4__.html#a564fb691ab413062bfc8637076584eaf',1,'asl::Vec4_::normalized()'],['../classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e',1,'asl::Vec3_::normalized()']]],
-  ['normsq_8',['normsq',['../classasl_1_1_matrix__.html#a2513085c733ed35edc0c61bbf9453196',1,'asl::Matrix_::normSq()'],['../classasl_1_1_matrix3__.html#a2513085c733ed35edc0c61bbf9453196',1,'asl::Matrix3_::normSq()'],['../classasl_1_1_matrix4__.html#a2513085c733ed35edc0c61bbf9453196',1,'asl::Matrix4_::normSq()']]],
-  ['notin_9',['notIn',['../classasl_1_1_set.html#a647adcd79dcb6aab1012cd1ab53c5d4d',1,'asl::Set']]],
-  ['now_10',['now',['../classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58',1,'asl::Date::now()'],['../group___global.html#ga0b45d14ba5e1a942da23a731d636f7fd',1,'asl::now()']]],
-  ['numchildren_11',['numChildren',['../classasl_1_1_xml.html#abac75603813a179b4d11347cda47769f',1,'asl::Xml']]],
-  ['numcolumns_12',['numColumns',['../classasl_1_1_tabular_data_file.html#a46290746a0de85de8fcb5b7d70b833d5',1,'asl::TabularDataFile']]],
-  ['numprocessors_13',['numProcessors',['../classasl_1_1_thread.html#a97c4d3433c0050cfbd008133d94892a6',1,'asl::Thread']]]
+  ['norm1_6',['norm1',['../classasl_1_1_vec2__.html#a0e82658a26e93d5f118a01708e6b8507',1,'asl::Vec2_::norm1()'],['../classasl_1_1_vec3__.html#a0e82658a26e93d5f118a01708e6b8507',1,'asl::Vec3_::norm1()']]],
+  ['normal_7',['normal',['../classasl_1_1_random.html#aa0706c04d7c5b32dd0f7596fba6fc033',1,'asl::Random::normal()'],['../classasl_1_1_random.html#aba05afa3d5ead80cd2dd91118eff14b8',1,'asl::Random::normal(double m, double s)'],['../classasl_1_1_random.html#a7cb9215d5a0d08e628960e059aed0188',1,'asl::Random::normal(float m, float s)']]],
+  ['normalized_8',['normalized',['../classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261',1,'asl::Vec2_::normalized()'],['../classasl_1_1_vec4__.html#a564fb691ab413062bfc8637076584eaf',1,'asl::Vec4_::normalized()'],['../classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e',1,'asl::Vec3_::normalized()']]],
+  ['norminf_9',['norminf',['../classasl_1_1_vec2__.html#a06cacdd5dffb9c1c4e16765e037b235f',1,'asl::Vec2_::normInf()'],['../classasl_1_1_vec3__.html#a06cacdd5dffb9c1c4e16765e037b235f',1,'asl::Vec3_::normInf()']]],
+  ['normsq_10',['normsq',['../classasl_1_1_matrix__.html#a2513085c733ed35edc0c61bbf9453196',1,'asl::Matrix_::normSq()'],['../classasl_1_1_matrix3__.html#a2513085c733ed35edc0c61bbf9453196',1,'asl::Matrix3_::normSq()'],['../classasl_1_1_matrix4__.html#a2513085c733ed35edc0c61bbf9453196',1,'asl::Matrix4_::normSq()']]],
+  ['notin_11',['notIn',['../classasl_1_1_set.html#a647adcd79dcb6aab1012cd1ab53c5d4d',1,'asl::Set']]],
+  ['now_12',['now',['../classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58',1,'asl::Date::now()'],['../group___global.html#ga0b45d14ba5e1a942da23a731d636f7fd',1,'asl::now()']]],
+  ['numchildren_13',['numChildren',['../classasl_1_1_xml.html#abac75603813a179b4d11347cda47769f',1,'asl::Xml']]],
+  ['numcolumns_14',['numColumns',['../classasl_1_1_tabular_data_file.html#a46290746a0de85de8fcb5b7d70b833d5',1,'asl::TabularDataFile']]],
+  ['numprocessors_15',['numProcessors',['../classasl_1_1_thread.html#a97c4d3433c0050cfbd008133d94892a6',1,'asl::Thread']]]
 ];

@@ -2,7 +2,7 @@ var group___logging =
 [
     [ "Log", "classasl_1_1_log.html", [
       [ "Level", "classasl_1_1_log.html#a221b779e6bb7b8d40677d7642bfefac5", null ],
-      [ "log", "classasl_1_1_log.html#aef0262c2f8de25b1e866287d75d7b6d8", null ],
+      [ "log", "classasl_1_1_log.html#a4843dd6acd412d4a49f136fd5afad609", null ],
       [ "log", "classasl_1_1_log.html#aa28792a63eafbce168ddade4946a5318", null ]
     ] ],
     [ "ASL_LOG_", "group___logging.html#ga6f87f5e6abc94f75bdc6fe78feeb9b28", null ],
@@ -11,6 +11,6 @@ var group___logging =
     [ "ASL_LOG_I", "group___logging.html#ga73820d060158ab5717dd699557b20a56", null ],
     [ "ASL_LOG_V", "group___logging.html#ga2d837dfa31246202689b90e3ff05a20c", null ],
     [ "ASL_LOG_W", "group___logging.html#gae9769f4136f2963d00b1d5501316ce94", null ],
-    [ "log", "group___logging.html#gaef0262c2f8de25b1e866287d75d7b6d8", null ],
+    [ "log", "group___logging.html#ga4843dd6acd412d4a49f136fd5afad609", null ],
     [ "log", "group___logging.html#gaa28792a63eafbce168ddade4946a5318", null ]
 ];

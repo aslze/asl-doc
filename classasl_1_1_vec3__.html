@@ -107,12 +107,12 @@ class asl::Vec3_&lt; T &gt;</div><p>A <a class="el" href="classasl_1_1_vec3__.ht
 <div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Vec3</a> b (-5, 1.5, 50);</div>
 <div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Vec3</a> <a class="code hl_class" href="classasl_1_1_array.html">c</a> = -a + 2.f * (b - a).<a class="code hl_function" href="classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e">normalized</a>();</div>
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
-<div class="ttc" id="aclassasl_1_1_vec3___html_ab0cfbc100b6bedf08e4e2ea51b6e8b5e"><div class="ttname"><a href="classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e">asl::Vec3_::normalized</a></div><div class="ttdeci">Vec3_ normalized() const</div><div class="ttdoc">Returns a normalized version of this vector.</div><div class="ttdef"><b>Definition</b> Vec3.h:64</div></div>
+<div class="ttc" id="aclassasl_1_1_vec3___html_ab0cfbc100b6bedf08e4e2ea51b6e8b5e"><div class="ttname"><a href="classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e">asl::Vec3_::normalized</a></div><div class="ttdeci">Vec3_ normalized() const</div><div class="ttdoc">Returns a normalized version of this vector.</div><div class="ttdef"><b>Definition</b> Vec3.h:68</div></div>
 </div><!-- fragment --><p>There are operators for dot product (<code>*</code>), cross product (<code>^</code>) and multiplication by a scalar (<code>*</code>). </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> <a class="code hl_function" href="classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6">angle</a> = <a class="code hl_class" href="classasl_1_1_array.html">acos</a>((a * b) / (a.length() * b.length()));</div>
 <div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Vec3</a> <a class="code hl_class" href="classasl_1_1_array.html">trinormal</a> = ((b - a) ^ (<a class="code hl_class" href="classasl_1_1_array.html">c</a> - a)).<a class="code hl_function" href="classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e">normalized</a>();</div>
-<div class="ttc" id="aclassasl_1_1_vec3___html_abca2da47afe8fa19f32ae25ef1e0d8f6"><div class="ttname"><a href="classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6">asl::Vec3_::angle</a></div><div class="ttdeci">T angle(const Vec3_ &amp;b) const</div><div class="ttdoc">Returns the angle between this vector and b</div><div class="ttdef"><b>Definition</b> Vec3.h:75</div></div>
+<div class="ttc" id="aclassasl_1_1_vec3___html_abca2da47afe8fa19f32ae25ef1e0d8f6"><div class="ttname"><a href="classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6">asl::Vec3_::angle</a></div><div class="ttdeci">T angle(const Vec3_ &amp;b) const</div><div class="ttdoc">Returns the angle between this vector and b</div><div class="ttdef"><b>Definition</b> Vec3.h:84</div></div>
 </div><!-- fragment --> </div>
-<p><code>#include &lt;Vec3.h&gt;</code></p>
+<p><code>#include &lt;asl/Vec3.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -144,6 +144,18 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
 <tr class="memdesc:a7b164ea42c7c29a5876f7aec20a45544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the vector. <br /></td></tr>
 <tr class="separator:a7b164ea42c7c29a5876f7aec20a45544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e82658a26e93d5f118a01708e6b8507" id="r_a0e82658a26e93d5f118a01708e6b8507"><td class="memItemLeft" align="right" valign="top"><a id="a0e82658a26e93d5f118a01708e6b8507" name="a0e82658a26e93d5f118a01708e6b8507"></a>
+<a class="el" href="classasl_1_1_array.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>norm1</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
+<tr class="memdesc:a0e82658a26e93d5f118a01708e6b8507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 1-norm of this vector. <br /></td></tr>
+<tr class="separator:a0e82658a26e93d5f118a01708e6b8507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cacdd5dffb9c1c4e16765e037b235f" id="r_a06cacdd5dffb9c1c4e16765e037b235f"><td class="memItemLeft" align="right" valign="top"><a id="a06cacdd5dffb9c1c4e16765e037b235f" name="a06cacdd5dffb9c1c4e16765e037b235f"></a>
+<a class="el" href="classasl_1_1_array.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>normInf</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
+<tr class="memdesc:a06cacdd5dffb9c1c4e16765e037b235f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the infinity-norm of this vector. <br /></td></tr>
+<tr class="separator:a06cacdd5dffb9c1c4e16765e037b235f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba72717995e90bb51b85ab71b258afe6" id="r_aba72717995e90bb51b85ab71b258afe6"><td class="memItemLeft" align="right" valign="top"><a id="aba72717995e90bb51b85ab71b258afe6" name="aba72717995e90bb51b85ab71b258afe6"></a>
+<a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>abs</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
+<tr class="memdesc:aba72717995e90bb51b85ab71b258afe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this vector with absolute coordinates. <br /></td></tr>
+<tr class="separator:aba72717995e90bb51b85ab71b258afe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca2da47afe8fa19f32ae25ef1e0d8f6" id="r_abca2da47afe8fa19f32ae25ef1e0d8f6"><td class="memItemLeft" align="right" valign="top"><a id="abca2da47afe8fa19f32ae25ef1e0d8f6" name="abca2da47afe8fa19f32ae25ef1e0d8f6"></a>
 <a class="el" href="classasl_1_1_array.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a> &amp;b) <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
 <tr class="memdesc:abca2da47afe8fa19f32ae25ef1e0d8f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle between this vector and <code>b</code> <br /></td></tr>
@@ -208,13 +220,11 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
 <tr class="memdesc:a781a1385d183fd58af7a9467f4d79e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this vector negated. <br /></td></tr>
 <tr class="separator:a781a1385d183fd58af7a9467f4d79e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c538360b05cb0f2d641206c5e7be0c" id="r_a58c538360b05cb0f2d641206c5e7be0c"><td class="memItemLeft" align="right" valign="top"><a id="a58c538360b05cb0f2d641206c5e7be0c" name="a58c538360b05cb0f2d641206c5e7be0c"></a>
-<a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isNull</b> (<a class="el" href="classasl_1_1_array.html">T</a> <a class="el" href="classasl_1_1_array.html">tol</a>=(<a class="el" href="classasl_1_1_array.html">T</a>) 0.000001) <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
-<tr class="memdesc:a58c538360b05cb0f2d641206c5e7be0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this vector's length is less than a given threshold (almost zero) <br /></td></tr>
-<tr class="separator:a58c538360b05cb0f2d641206c5e7be0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44edadab6201fd717f9584bafbe68a49" id="r_a44edadab6201fd717f9584bafbe68a49"><td class="memItemLeft" align="right" valign="top"><a id="a44edadab6201fd717f9584bafbe68a49" name="a44edadab6201fd717f9584bafbe68a49"></a>
-<a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isParallelToVector</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a> &amp;<a class="el" href="classasl_1_1_array.html">v2</a>, <a class="el" href="classasl_1_1_array.html">T</a> <a class="el" href="classasl_1_1_array.html">tol</a>=(<a class="el" href="classasl_1_1_array.html">T</a>) 0.000001)</td></tr>
-<tr class="memdesc:a44edadab6201fd717f9584bafbe68a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this vector is nearly parallel to vector <code>v2</code> with a given tolerance. <br /></td></tr>
+<tr class="memitem:a90a6066509bc08aee18799a78d8d0497" id="r_a90a6066509bc08aee18799a78d8d0497"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_vec3__.html#a90a6066509bc08aee18799a78d8d0497">isNull</a> (<a class="el" href="classasl_1_1_array.html">T</a> <a class="el" href="classasl_1_1_array.html">tol</a>=<a class="el" href="classasl_1_1_array.html">T</a>(0.000001)) <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
+<tr class="memdesc:a90a6066509bc08aee18799a78d8d0497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this vector is almost null (norm1 less than given threshold)  <br /></td></tr>
+<tr class="separator:a90a6066509bc08aee18799a78d8d0497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44edadab6201fd717f9584bafbe68a49" id="r_a44edadab6201fd717f9584bafbe68a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_vec3__.html#a44edadab6201fd717f9584bafbe68a49">isParallelToVector</a> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a> &amp;<a class="el" href="classasl_1_1_array.html">v2</a>, <a class="el" href="classasl_1_1_array.html">T</a> <a class="el" href="classasl_1_1_array.html">tol</a>=(<a class="el" href="classasl_1_1_array.html">T</a>) 0.000001)</td></tr>
+<tr class="memdesc:a44edadab6201fd717f9584bafbe68a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this vector is nearly parallel to vector <code>v2</code> with a given tolerance.  <br /></td></tr>
 <tr class="separator:a44edadab6201fd717f9584bafbe68a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -231,6 +241,63 @@ Friends</h2></td></tr>
 <tr class="memdesc:aebb5c221ce6016697cdcc605f23d0b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this vector multiplied by scalar <code>r</code> <br /></td></tr>
 <tr class="separator:aebb5c221ce6016697cdcc605f23d0b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90a6066509bc08aee18799a78d8d0497" name="a90a6066509bc08aee18799a78d8d0497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a6066509bc08aee18799a78d8d0497">&#9670;&#160;</a></span>isNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el" href="classasl_1_1_array.html">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_array.html">bool</a> isNull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">T</a>&#160;</td>
+          <td class="paramname"><em>tol</em> = <code><a class="el" href="classasl_1_1_array.html">T</a>(0.000001)</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if this vector is almost null (norm1 less than given threshold) </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>Use other methods </dd></dl>
+
+</div>
+</div>
+<a id="a44edadab6201fd717f9584bafbe68a49" name="a44edadab6201fd717f9584bafbe68a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44edadab6201fd717f9584bafbe68a49">&#9670;&#160;</a></span>isParallelToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el" href="classasl_1_1_array.html">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_array.html">bool</a> isParallelToVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; <a class="el" href="classasl_1_1_array.html">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">T</a>&#160;</td>
+          <td class="paramname"><em>tol</em> = <code>(<a class="el" href="classasl_1_1_array.html">T</a>)0.000001</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if this vector is nearly parallel to vector <code>v2</code> with a given tolerance. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>Use dot product </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><b>Vec3.h</b></li>
 </ul>

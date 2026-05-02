@@ -1,11 +1,14 @@
 var classasl_1_1_vec2__ =
 [
     [ "Vec2_", "classasl_1_1_vec2__.html#a380088133c0a2ce2576ff95037cb8f66", null ],
+    [ "abs", "classasl_1_1_vec2__.html#a0163c146b267ae22b1a8a464410fff74", null ],
     [ "angle", "classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9", null ],
     [ "angle", "classasl_1_1_vec2__.html#ab9f5fac6baccb72afe87ed680fcdfaf5", null ],
     [ "length", "classasl_1_1_vec2__.html#a319b1046f6f739132918623ea8aa25d8", null ],
     [ "length2", "classasl_1_1_vec2__.html#afa9fffbf60ee884d989d5e337db4c3ca", null ],
+    [ "norm1", "classasl_1_1_vec2__.html#a0e82658a26e93d5f118a01708e6b8507", null ],
     [ "normalized", "classasl_1_1_vec2__.html#ade64e656c54a2638ed70a4c624890261", null ],
+    [ "normInf", "classasl_1_1_vec2__.html#a06cacdd5dffb9c1c4e16765e037b235f", null ],
     [ "operator!", "classasl_1_1_vec2__.html#a7b164ea42c7c29a5876f7aec20a45544", null ],
     [ "operator!=", "classasl_1_1_vec2__.html#a6dab3c99ad474f8d32c91f6cc9f942f0", null ],
     [ "operator%", "classasl_1_1_vec2__.html#ad703c358a1a44bc50baa96390a76be77", null ],

@@ -104,10 +104,10 @@ class asl::Matrix3_&lt; T &gt;</div><p>A Matrix3 is a 3x3 matrix useful for repr
 <div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Matrix3</a> <a class="code hl_function" href="classasl_1_1_matrix3__.html#a2d00e2edcb30a795ae4df59e9406a164">rotation</a> = Matrix3::rotate(PI/3) * Matrix3::scale(0.5);</div>
 <div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Vec2</a> v = <a class="code hl_function" href="classasl_1_1_matrix3__.html#a8972b630d243cc95f4fe90720ad3dbef">translation</a> * <a class="code hl_function" href="classasl_1_1_matrix3__.html#a2d00e2edcb30a795ae4df59e9406a164">rotation</a> * <a class="code hl_class" href="classasl_1_1_array.html">Vec2</a>(x, y);</div>
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
-<div class="ttc" id="aclassasl_1_1_matrix3___html_a2d00e2edcb30a795ae4df59e9406a164"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a2d00e2edcb30a795ae4df59e9406a164">asl::Matrix3_::rotation</a></div><div class="ttdeci">T rotation() const</div><div class="ttdoc">Returns the rotation part of this matrix (assuming there is no skew)</div><div class="ttdef"><b>Definition</b> Matrix3.h:282</div></div>
-<div class="ttc" id="aclassasl_1_1_matrix3___html_a8972b630d243cc95f4fe90720ad3dbef"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a8972b630d243cc95f4fe90720ad3dbef">asl::Matrix3_::translation</a></div><div class="ttdeci">Vec2_&lt; T &gt; translation() const</div><div class="ttdoc">Returns the translation part of this matrix (the last column) as a Vec2.</div><div class="ttdef"><b>Definition</b> Matrix3.h:272</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_a2d00e2edcb30a795ae4df59e9406a164"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a2d00e2edcb30a795ae4df59e9406a164">asl::Matrix3_::rotation</a></div><div class="ttdeci">T rotation() const</div><div class="ttdoc">Returns the rotation part of this matrix (assuming there is no skew)</div><div class="ttdef"><b>Definition</b> Matrix3.h:303</div></div>
+<div class="ttc" id="aclassasl_1_1_matrix3___html_a8972b630d243cc95f4fe90720ad3dbef"><div class="ttname"><a href="classasl_1_1_matrix3__.html#a8972b630d243cc95f4fe90720ad3dbef">asl::Matrix3_::translation</a></div><div class="ttdeci">Vec2_&lt; T &gt; translation() const</div><div class="ttdoc">Returns the translation part of this matrix (the last column) as a Vec2.</div><div class="ttdef"><b>Definition</b> Matrix3.h:293</div></div>
 </div><!-- fragment --> </div>
-<p><code>#include &lt;Matrix3.h&gt;</code></p>
+<p><code>#include &lt;asl/Matrix3.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -213,8 +213,12 @@ template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el"
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aed4041c43c0296721f4f417a2652eeec" id="r_aed4041c43c0296721f4f417a2652eeec"><td class="memItemLeft" align="right" valign="top"><a id="aed4041c43c0296721f4f417a2652eeec" name="aed4041c43c0296721f4f417a2652eeec"></a>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>identity</b> ()</td></tr>
-<tr class="memdesc:aed4041c43c0296721f4f417a2652eeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 3x3 identity matrix. <br /></td></tr>
+<tr class="memdesc:aed4041c43c0296721f4f417a2652eeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 3x3 identity matrix. <br /></td></tr>
 <tr class="separator:aed4041c43c0296721f4f417a2652eeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7b2f8ac9f339c8cf571825022f3738" id="r_a7b7b2f8ac9f339c8cf571825022f3738"><td class="memItemLeft" align="right" valign="top"><a id="a7b7b2f8ac9f339c8cf571825022f3738" name="a7b7b2f8ac9f339c8cf571825022f3738"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zeros</b> ()</td></tr>
+<tr class="memdesc:a7b7b2f8ac9f339c8cf571825022f3738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a zero matrix. <br /></td></tr>
+<tr class="separator:a7b7b2f8ac9f339c8cf571825022f3738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ac382502142c5ccbf18bd65cdd2a6d" id="r_a21ac382502142c5ccbf18bd65cdd2a6d"><td class="memItemLeft" align="right" valign="top"><a id="a21ac382502142c5ccbf18bd65cdd2a6d" name="a21ac382502142c5ccbf18bd65cdd2a6d"></a>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix3__.html">Matrix3_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rotate</b> (<a class="el" href="classasl_1_1_array.html">T</a> t)</td></tr>
 <tr class="memdesc:a21ac382502142c5ccbf18bd65cdd2a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 2D rotation matrix for angle t. <br /></td></tr>

@@ -16,6 +16,6 @@ var searchData=
   ['localoffset_13',['localOffset',['../classasl_1_1_date.html#a9e3aad536256cbd9e523b7c00d01af90',1,'asl::Date']]],
   ['lock_14',['lock',['../classasl_1_1_mutex.html#aa81aed607133209dade63a226818224d',1,'asl::Mutex']]],
   ['locked_15',['locked',['../classasl_1_1_atomic.html#ad519fa28b974579a2a10e64dc2990ee7',1,'asl::Atomic']]],
-  ['log_16',['log',['../group___logging.html#gaa28792a63eafbce168ddade4946a5318',1,'asl::log(const String &amp;cat, Log::Level level, const String &amp;message)'],['../group___logging.html#gaef0262c2f8de25b1e866287d75d7b6d8',1,'asl::log(const String &amp;cat, Log::Level level, const char *fmt,...) ASL_PRINTF_W2(3)']]],
+  ['log_16',['log',['../group___logging.html#gaa28792a63eafbce168ddade4946a5318',1,'asl::log(const String &amp;cat, Log::Level level, const String &amp;message)'],['../group___logging.html#ga4843dd6acd412d4a49f136fd5afad609',1,'asl::log(const String &amp;cat, Log::Level level, const char *fmt,...)(3)']]],
   ['lookup_17',['lookup',['../classasl_1_1_inet_address.html#a60f5ecef71800f4f99bc0a2f47b66dd8',1,'asl::InetAddress']]]
 ];

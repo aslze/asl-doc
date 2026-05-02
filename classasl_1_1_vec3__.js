@@ -1,12 +1,15 @@
 var classasl_1_1_vec3__ =
 [
+    [ "abs", "classasl_1_1_vec3__.html#aba72717995e90bb51b85ab71b258afe6", null ],
     [ "angle", "classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6", null ],
     [ "h2c", "classasl_1_1_vec3__.html#a1c3d6f126e1bf9582d4b8a5d06fc2fbb", null ],
-    [ "isNull", "classasl_1_1_vec3__.html#a58c538360b05cb0f2d641206c5e7be0c", null ],
+    [ "isNull", "classasl_1_1_vec3__.html#a90a6066509bc08aee18799a78d8d0497", null ],
     [ "isParallelToVector", "classasl_1_1_vec3__.html#a44edadab6201fd717f9584bafbe68a49", null ],
     [ "length", "classasl_1_1_vec3__.html#a319b1046f6f739132918623ea8aa25d8", null ],
     [ "length2", "classasl_1_1_vec3__.html#afa9fffbf60ee884d989d5e337db4c3ca", null ],
+    [ "norm1", "classasl_1_1_vec3__.html#a0e82658a26e93d5f118a01708e6b8507", null ],
     [ "normalized", "classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e", null ],
+    [ "normInf", "classasl_1_1_vec3__.html#a06cacdd5dffb9c1c4e16765e037b235f", null ],
     [ "operator!", "classasl_1_1_vec3__.html#a7b164ea42c7c29a5876f7aec20a45544", null ],
     [ "operator!=", "classasl_1_1_vec3__.html#a972768276348b6aa7602c899a254851f", null ],
     [ "operator%", "classasl_1_1_vec3__.html#a303924696e02264594026a73ba4f3ce3", null ],
