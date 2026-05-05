@@ -7,6 +7,7 @@ var classasl_1_1_vec3__ =
     [ "isParallelToVector", "classasl_1_1_vec3__.html#a44edadab6201fd717f9584bafbe68a49", null ],
     [ "length", "classasl_1_1_vec3__.html#a319b1046f6f739132918623ea8aa25d8", null ],
     [ "length2", "classasl_1_1_vec3__.html#afa9fffbf60ee884d989d5e337db4c3ca", null ],
+    [ "norm", "classasl_1_1_vec3__.html#aaeb888c96528e67e9d5f2efb6fd8151e", null ],
     [ "norm1", "classasl_1_1_vec3__.html#a0e82658a26e93d5f118a01708e6b8507", null ],
     [ "normalized", "classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e", null ],
     [ "normInf", "classasl_1_1_vec3__.html#a06cacdd5dffb9c1c4e16765e037b235f", null ],

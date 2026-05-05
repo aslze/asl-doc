@@ -110,7 +110,7 @@ class asl::Vec3_&lt; T &gt;</div><p>A <a class="el" href="classasl_1_1_vec3__.ht
 <div class="ttc" id="aclassasl_1_1_vec3___html_ab0cfbc100b6bedf08e4e2ea51b6e8b5e"><div class="ttname"><a href="classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e">asl::Vec3_::normalized</a></div><div class="ttdeci">Vec3_ normalized() const</div><div class="ttdoc">Returns a normalized version of this vector.</div><div class="ttdef"><b>Definition</b> Vec3.h:68</div></div>
 </div><!-- fragment --><p>There are operators for dot product (<code>*</code>), cross product (<code>^</code>) and multiplication by a scalar (<code>*</code>). </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> <a class="code hl_function" href="classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6">angle</a> = <a class="code hl_class" href="classasl_1_1_array.html">acos</a>((a * b) / (a.length() * b.length()));</div>
 <div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Vec3</a> <a class="code hl_class" href="classasl_1_1_array.html">trinormal</a> = ((b - a) ^ (<a class="code hl_class" href="classasl_1_1_array.html">c</a> - a)).<a class="code hl_function" href="classasl_1_1_vec3__.html#ab0cfbc100b6bedf08e4e2ea51b6e8b5e">normalized</a>();</div>
-<div class="ttc" id="aclassasl_1_1_vec3___html_abca2da47afe8fa19f32ae25ef1e0d8f6"><div class="ttname"><a href="classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6">asl::Vec3_::angle</a></div><div class="ttdeci">T angle(const Vec3_ &amp;b) const</div><div class="ttdoc">Returns the angle between this vector and b</div><div class="ttdef"><b>Definition</b> Vec3.h:84</div></div>
+<div class="ttc" id="aclassasl_1_1_vec3___html_abca2da47afe8fa19f32ae25ef1e0d8f6"><div class="ttname"><a href="classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6">asl::Vec3_::angle</a></div><div class="ttdeci">T angle(const Vec3_ &amp;b) const</div><div class="ttdoc">Returns the angle between this vector and b</div><div class="ttdef"><b>Definition</b> Vec3.h:87</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;asl/Vec3.h&gt;</code></p>
 <table class="memberdecls">
@@ -144,6 +144,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
 <tr class="memdesc:a7b164ea42c7c29a5876f7aec20a45544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the vector. <br /></td></tr>
 <tr class="separator:a7b164ea42c7c29a5876f7aec20a45544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb888c96528e67e9d5f2efb6fd8151e" id="r_aaeb888c96528e67e9d5f2efb6fd8151e"><td class="memItemLeft" align="right" valign="top"><a id="aaeb888c96528e67e9d5f2efb6fd8151e" name="aaeb888c96528e67e9d5f2efb6fd8151e"></a>
+<a class="el" href="classasl_1_1_array.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>norm</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
+<tr class="memdesc:aaeb888c96528e67e9d5f2efb6fd8151e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of this vector. <br /></td></tr>
+<tr class="separator:aaeb888c96528e67e9d5f2efb6fd8151e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e82658a26e93d5f118a01708e6b8507" id="r_a0e82658a26e93d5f118a01708e6b8507"><td class="memItemLeft" align="right" valign="top"><a id="a0e82658a26e93d5f118a01708e6b8507" name="a0e82658a26e93d5f118a01708e6b8507"></a>
 <a class="el" href="classasl_1_1_array.html">T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>norm1</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
 <tr class="memdesc:a0e82658a26e93d5f118a01708e6b8507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 1-norm of this vector. <br /></td></tr>

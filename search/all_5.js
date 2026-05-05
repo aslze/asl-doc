@@ -21,7 +21,7 @@ var searchData=
   ['dic_3c_20asl_3a_3adic_20_3e_18',['Dic&lt; asl::Dic &gt;',['../classasl_1_1_dic.html',1,'asl']]],
   ['dic_3c_20asl_3a_3astring_20_3e_19',['Dic&lt; asl::String &gt;',['../classasl_1_1_dic.html',1,'asl']]],
   ['dic_3c_20t_20_2a_28_2a_29_28_29_3e_20',['Dic&lt; T *(*)()&gt;',['../classasl_1_1_dic.html',1,'asl']]],
-  ['directory_21',['directory',['../classasl_1_1_path.html#ab0ad654798ac3a42bf3b8c95a945a0b8',1,'asl::Path::directory()'],['../classasl_1_1_file.html#a12726cbe648de48a425ec2cacaae64de',1,'asl::File::directory()'],['../classasl_1_1_directory.html#a12726cbe648de48a425ec2cacaae64de',1,'asl::Directory::directory() const'],['../classasl_1_1_directory.html#ab7ed3a2a1034415cbfdefeb63a1321dd',1,'asl::Directory::Directory(const String &amp;name)'],['../classasl_1_1_directory.html',1,'Directory']]],
+  ['directory_21',['directory',['../classasl_1_1_directory.html#ab7ed3a2a1034415cbfdefeb63a1321dd',1,'asl::Directory::Directory()'],['../classasl_1_1_path.html#ab0ad654798ac3a42bf3b8c95a945a0b8',1,'asl::Path::directory()'],['../classasl_1_1_file.html#a12726cbe648de48a425ec2cacaae64de',1,'asl::File::directory()'],['../classasl_1_1_directory.html#a12726cbe648de48a425ec2cacaae64de',1,'asl::Directory::directory()'],['../classasl_1_1_directory.html',1,'Directory']]],
   ['disconnected_22',['disconnected',['../classasl_1_1_socket.html#a7e04ee0f03fdea43f0956ab37a7c2c72',1,'asl::Socket']]],
   ['download_23',['download',['../classasl_1_1_http.html#a366f4336c7b4d7189eddd87e90bef9e2',1,'asl::Http']]],
   ['dup_24',['dup',['../classasl_1_1_array.html#a3a4da6c5430a4f89344354233b4443cb',1,'asl::Array::dup()'],['../classasl_1_1_map.html#ae3b5423e30445e07f965b7f365c20936',1,'asl::Map::dup()']]],
