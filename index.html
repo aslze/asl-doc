@@ -144,7 +144,7 @@ Compilation and use</h1>
 </div><!-- fragment --><p>There is no need to provide the library directory or set <em>include_directories</em>. <code>find_package</code> will find the library compatible with the current project among the versions compiled.</p>
 <p>With CMake 3.14+, instead of using <code>find_package()</code>, you can download and build the library automatically as a subproject (and then link with it as before):</p>
 <div class="fragment"><div class="line">include(FetchContent)</div>
-<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.14.zip)</span></div>
+<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.15.zip)</span></div>
 <div class="line">FetchContent_MakeAvailable(asl)</div>
 </div><!-- fragment --><p>Remember that all header files have the <code>asl/</code> prefix directory and are named like the class they define (case-sensitively), and that all symbols are in the <code>asl</code> namespace. So, for example, to use the <a class="el" href="classasl_1_1_directory.html" title="This class allows enumerating the contents of a directory, its files and subdirectories,...">Directory</a> class:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;asl/Directory.h&gt;</span></div>
@@ -153,19 +153,27 @@ Compilation and use</h1>
 <div class="ttc" id="aclassasl_1_1_directory_html"><div class="ttname"><a href="classasl_1_1_directory.html">asl::Directory</a></div><div class="ttdoc">This class allows enumerating the contents of a directory, its files and subdirectories,...</div><div class="ttdef"><b>Definition</b> Directory.h:55</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md1"></a>
 SSL/TLS sockets and HTTPS support</h2>
-<p>HTTPS, TLS WebSockets and <a class="el" href="classasl_1_1_tls_socket.html" title="A TLS secure socket.">TlsSocket</a> require the <a href="https://github.com/Mbed-TLS/mbedtls">mbedTLS</a> library (3.6.4+ or &lt;=v3.2.1). Download and build the library, enable <code>ASL_TLS</code> in CMake and provide the <em>mbedTLS</em> install directory. On Windows you can use <code>vcpkg install mbedtls</code>.</p>
-<p>On Ubuntu Linux you can just install package <b>libmbedtls-dev</b> with:</p>
+<p>HTTPS, TLS WebSockets and <a class="el" href="classasl_1_1_tls_socket.html" title="A TLS secure socket.">TlsSocket</a> require the <a href="https://github.com/Mbed-TLS/mbedtls">mbedTLS</a> library (&lt;=v3.2.1 or 3.6.4+). Download and build the library, enable <code>ASL_TLS</code> in CMake and provide the <em>mbedTLS</em> install directory.</p>
+<p>Since ASL 1.11.15 and with CMake 3.14+, mbedTLS can be automatically downloaded and built**. For this, enable <code>ASL_FETCH</code> together with <code>ASL_TLS</code> and nothing more will be needed. The <code>ASL_MBEDTLS_VER</code> cache variable can specify a version to download (default is "3.6.4").</p>
+<p>You can also link to an existing mbedTLS installation:</p>
+<p>On Windows you can use <code>vcpkg install mbedtls</code>. On Ubuntu Linux you can just install package <code>libmbedtls-dev</code> with:</p>
 <div class="fragment"><div class="line">sudo apt-get install libmbedtls-dev</div>
 </div><!-- fragment --><p>On FreeBSD use:</p>
 <div class="fragment"><div class="line">pkg install mbedtls</div>
-</div><!-- fragment --><p>With a recent CMake (3.14+) you can also build mbedTLS together with ASL as subprojects (e.g. using <code>FetchContent</code>):</p>
+</div><!-- fragment --><p>If you don't want the ASL_FETCH functionality, with CMake 3.14+ a project can build mbedTLS together with ASL (this is basically what <code>ASL_FETCH</code> does):</p>
 <div class="fragment"><div class="line">set(ASL_TLS ON)</div>
 <div class="line">set(ENABLE_PROGRAMS OFF CACHE BOOL <span class="stringliteral">&quot;&quot;</span>) <span class="preprocessor"># skip mbedtls samples</span></div>
 <div class="line">FetchContent_Declare(mtls URL https:<span class="comment">//github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.4/mbedtls-3.6.4.tar.bz2)</span></div>
-<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.14.zip)</span></div>
+<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.15.zip)</span></div>
 <div class="line">FetchContent_MakeAvailable(mtls asl)</div>
-</div><!-- fragment --><p>Then just link your project to <code>asls</code> after that block. </p>
-</div></div><!-- PageDoc -->
+</div><!-- fragment --><p>Then just link your project to <code>asls</code> after that block.</p>
+<p>Which is equivalent to:</p>
+<div class="fragment"><div class="line">set(ASL_TLS ON)</div>
+<div class="line">set(ASL_FETCH ON)</div>
+<div class="line">include(FetchContent)</div>
+<div class="line">FetchContent_Declare(asl URL https://github.com/aslze/asl/archive/1.11.15.zip)</div>
+<div class="line">FetchContent_MakeAvailable(asl)</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
