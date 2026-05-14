@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('classasl_1_1_directory.html',''); init
 <p><b><a class="el" href="classasl_1_1_file.html" title="Class File represents a file in the filesystem.">File</a> system operations</b> are available here or in the <code><a class="el" href="classasl_1_1_file.html" title="Class File represents a file in the filesystem.">File</a></code> class:</p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="classasl_1_1_directory.html#a5c145e5ac8508626dae54e97b56ffc5c">Directory::create</a>(<span class="stringliteral">&quot;/some_other_dir&quot;</span>);</div>
 <div class="line"><a class="code hl_function" href="classasl_1_1_directory.html#a15fcdf1fbf4c2b8c962581e1575b6a32">Directory::move</a>(<span class="stringliteral">&quot;/path/file.txt&quot;</span>, <span class="stringliteral">&quot;/some_other_dir&quot;</span>);</div>
-<div class="line"><a class="code hl_function" href="classasl_1_1_directory.html#a6308d52b83bba038c03150cbc31e2648">Directory::copy</a>(<span class="stringliteral">&quot;/path/dir&quot;</span>, <span class="stringliteral">&quot;/some_other_dir&quot;</span>);      <span class="comment">// copies the whole directory with all its content</span></div>
+<div class="line"><a class="code hl_function" href="classasl_1_1_directory.html#a4c909abf5eba9c47321ad883afe7a81a">Directory::copy</a>(<span class="stringliteral">&quot;/path/dir&quot;</span>, <span class="stringliteral">&quot;/some_other_dir&quot;</span>);      <span class="comment">// copies the whole directory with all its content</span></div>
 <div class="ttc" id="aclassasl_1_1_directory_html_a15fcdf1fbf4c2b8c962581e1575b6a32"><div class="ttname"><a href="classasl_1_1_directory.html#a15fcdf1fbf4c2b8c962581e1575b6a32">asl::Directory::move</a></div><div class="ttdeci">static bool move(const String &amp;from, const String &amp;to)</div><div class="ttdoc">Moves or renames file or directory from to to which can be a full name or a destination directory.</div></div>
+<div class="ttc" id="aclassasl_1_1_directory_html_a4c909abf5eba9c47321ad883afe7a81a"><div class="ttname"><a href="classasl_1_1_directory.html#a4c909abf5eba9c47321ad883afe7a81a">asl::Directory::copy</a></div><div class="ttdeci">static bool copy(const String &amp;from, const String &amp;to, bool onlyContent=false)</div><div class="ttdoc">Copies file or directory from to to which can be a full name or a destination directory.</div></div>
 <div class="ttc" id="aclassasl_1_1_directory_html_a5c145e5ac8508626dae54e97b56ffc5c"><div class="ttname"><a href="classasl_1_1_directory.html#a5c145e5ac8508626dae54e97b56ffc5c">asl::Directory::create</a></div><div class="ttdeci">static bool create(const String &amp;name)</div><div class="ttdoc">Creates a new directory (and its ancestors if they don't exist), returns false on failure.</div></div>
-<div class="ttc" id="aclassasl_1_1_directory_html_a6308d52b83bba038c03150cbc31e2648"><div class="ttname"><a href="classasl_1_1_directory.html#a6308d52b83bba038c03150cbc31e2648">asl::Directory::copy</a></div><div class="ttdeci">static bool copy(const String &amp;from, const String &amp;to)</div><div class="ttdoc">Copies file or directory from to to which can be a full name or a destination directory.</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;asl/Directory.h&gt;</code></p>
 <table class="memberdecls">
@@ -194,10 +194,9 @@ Static Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createTemp</b> ()</td></tr>
 <tr class="memdesc:a1a6ab15ecbc66072b4875adf4f00356d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new temporary directory with an arbitrary name and returns its path. <br /></td></tr>
 <tr class="separator:a1a6ab15ecbc66072b4875adf4f00356d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6308d52b83bba038c03150cbc31e2648" id="r_a6308d52b83bba038c03150cbc31e2648"><td class="memItemLeft" align="right" valign="top"><a id="a6308d52b83bba038c03150cbc31e2648" name="a6308d52b83bba038c03150cbc31e2648"></a>
-<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">from</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;to)</td></tr>
-<tr class="memdesc:a6308d52b83bba038c03150cbc31e2648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies file or directory <code>from</code> to <code>to</code> which can be a full name or a destination directory. <br /></td></tr>
-<tr class="separator:a6308d52b83bba038c03150cbc31e2648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c909abf5eba9c47321ad883afe7a81a" id="r_a4c909abf5eba9c47321ad883afe7a81a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#a4c909abf5eba9c47321ad883afe7a81a">copy</a> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">from</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;to, <a class="el" href="classasl_1_1_array.html">bool</a> <a class="el" href="classasl_1_1_array.html">onlyContent</a>=<a class="el" href="classasl_1_1_array.html">false</a>)</td></tr>
+<tr class="memdesc:a4c909abf5eba9c47321ad883afe7a81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies file or directory <code>from</code> to <code>to</code> which can be a full name or a destination directory.  <br /></td></tr>
+<tr class="separator:a4c909abf5eba9c47321ad883afe7a81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15fcdf1fbf4c2b8c962581e1575b6a32" id="r_a15fcdf1fbf4c2b8c962581e1575b6a32"><td class="memItemLeft" align="right" valign="top"><a id="a15fcdf1fbf4c2b8c962581e1575b6a32" name="a15fcdf1fbf4c2b8c962581e1575b6a32"></a>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">from</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;to)</td></tr>
 <tr class="memdesc:a15fcdf1fbf4c2b8c962581e1575b6a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves or renames file or directory <code>from</code> to <code>to</code> which can be a full name or a destination directory. <br /></td></tr>
@@ -206,15 +205,65 @@ Static Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a7d4160e1b36359c74dc6c5093547910b">path</a>)</td></tr>
 <tr class="memdesc:a1173b145fed3b2a68235ba0ebeed91e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes file or directory <code>path</code> (if it is a directory it must be empty) <br /></td></tr>
 <tr class="separator:a1173b145fed3b2a68235ba0ebeed91e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98276312cae4a78cd701054d56bd2037" id="r_a98276312cae4a78cd701054d56bd2037"><td class="memItemLeft" align="right" valign="top"><a id="a98276312cae4a78cd701054d56bd2037" name="a98276312cae4a78cd701054d56bd2037"></a>
-<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>removeRecursive</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a7d4160e1b36359c74dc6c5093547910b">path</a>)</td></tr>
-<tr class="memdesc:a98276312cae4a78cd701054d56bd2037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given directory with all its content recursively and returns true on success (USE WITH CARE!) <br /></td></tr>
-<tr class="separator:a98276312cae4a78cd701054d56bd2037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae259498347f901ee07244cf204906869" id="r_ae259498347f901ee07244cf204906869"><td class="memItemLeft" align="right" valign="top"><a id="ae259498347f901ee07244cf204906869" name="ae259498347f901ee07244cf204906869"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>removeRecursive</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a7d4160e1b36359c74dc6c5093547910b">path</a>, <a class="el" href="classasl_1_1_array.html">bool</a> <a class="el" href="classasl_1_1_array.html">onlyContent</a>=<a class="el" href="classasl_1_1_array.html">false</a>)</td></tr>
+<tr class="memdesc:ae259498347f901ee07244cf204906869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given directory with all its content recursively and returns true on success (USE WITH CARE!) <br /></td></tr>
+<tr class="separator:ae259498347f901ee07244cf204906869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10215ef69eb5c6f3ea1538d6d838a147" id="r_a10215ef69eb5c6f3ea1538d6d838a147"><td class="memItemLeft" align="right" valign="top"><a id="a10215ef69eb5c6f3ea1538d6d838a147" name="a10215ef69eb5c6f3ea1538d6d838a147"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a7d4160e1b36359c74dc6c5093547910b">path</a>)</td></tr>
+<tr class="memdesc:a10215ef69eb5c6f3ea1538d6d838a147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all content in the given directory (recursively) but not the directory itself, and returns true on success (USE WITH CARE!) <br /></td></tr>
+<tr class="separator:a10215ef69eb5c6f3ea1538d6d838a147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea5e65a33246ab3ca02c127a4cb63d5" id="r_aaea5e65a33246ab3ca02c127a4cb63d5"><td class="memItemLeft" align="right" valign="top"><a id="aaea5e65a33246ab3ca02c127a4cb63d5" name="aaea5e65a33246ab3ca02c127a4cb63d5"></a>
 <a class="el" href="classasl_1_1_array.html">static</a> Space&#160;</td><td class="memItemRight" valign="bottom"><b>freeSpace</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">dir</a>)</td></tr>
 <tr class="memdesc:aaea5e65a33246ab3ca02c127a4cb63d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns free space and total size of a file system. <br /></td></tr>
 <tr class="separator:aaea5e65a33246ab3ca02c127a4cb63d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4c909abf5eba9c47321ad883afe7a81a" name="a4c909abf5eba9c47321ad883afe7a81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c909abf5eba9c47321ad883afe7a81a">&#9670;&#160;</a></span>copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a> copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td>
+          <td class="paramname"><em>onlyContent</em> = <code><a class="el" href="classasl_1_1_array.html">false</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies file or directory <code>from</code> to <code>to</code> which can be a full name or a destination directory. </p>
+<p>If <code>onlyContent</code> is true, the content of the directory is copied but not the directory itself. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><b>Directory.h</b></li>
 </ul>

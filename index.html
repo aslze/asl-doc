@@ -162,9 +162,9 @@ SSL/TLS sockets and HTTPS support</h2>
 <div class="fragment"><div class="line">pkg install mbedtls</div>
 </div><!-- fragment --><p>If you don't want the ASL_FETCH functionality, with CMake 3.14+ a project can build mbedTLS together with ASL (this is basically what <code>ASL_FETCH</code> does):</p>
 <div class="fragment"><div class="line">set(ASL_TLS ON)</div>
-<div class="line">set(ENABLE_PROGRAMS OFF CACHE BOOL <span class="stringliteral">&quot;&quot;</span>) <span class="preprocessor"># skip mbedtls samples</span></div>
-<div class="line">FetchContent_Declare(mtls URL https:<span class="comment">//github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.4/mbedtls-3.6.4.tar.bz2)</span></div>
-<div class="line">FetchContent_Declare(asl URL https:<span class="comment">//github.com/aslze/asl/archive/1.11.15.zip)</span></div>
+<div class="line">set(ENABLE_PROGRAMS OFF CACHE BOOL &quot;&quot;) # skip mbedtls samples</div>
+<div class="line">FetchContent_Declare(mtls URL https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.4/mbedtls-3.6.4.tar.bz2)</div>
+<div class="line">FetchContent_Declare(asl URL https://github.com/aslze/asl/archive/1.11.15.zip)</div>
 <div class="line">FetchContent_MakeAvailable(mtls asl)</div>
 </div><!-- fragment --><p>Then just link your project to <code>asls</code> after that block.</p>
 <p>Which is equivalent to:</p>
