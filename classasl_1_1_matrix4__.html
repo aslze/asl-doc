@@ -305,10 +305,10 @@ Static Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rotateAlign</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; <a class="el" href="classasl_1_1_array.html">T</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">v1</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; <a class="el" href="classasl_1_1_array.html">T</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">v2</a>)</td></tr>
 <tr class="memdesc:ad1fbe61e072f1407812c565df1130e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a rotation matrix that aligns vector v1 with vector v2. <br /></td></tr>
 <tr class="separator:ad1fbe61e072f1407812c565df1130e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd7c47fad8bbea51ffb9418b07f159a" id="r_abcd7c47fad8bbea51ffb9418b07f159a"><td class="memItemLeft" align="right" valign="top"><a id="abcd7c47fad8bbea51ffb9418b07f159a" name="abcd7c47fad8bbea51ffb9418b07f159a"></a>
-<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>orthonormalBase</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; <a class="el" href="classasl_1_1_array.html">T</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">vec</a>)</td></tr>
-<tr class="memdesc:abcd7c47fad8bbea51ffb9418b07f159a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an orthonormal vector base using a given vector as the Z axis and creating two other unit vectors perpendicular to Z and between them. <br /></td></tr>
-<tr class="separator:abcd7c47fad8bbea51ffb9418b07f159a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7c946639c701343a520368b3aeaa10" id="r_a8e7c946639c701343a520368b3aeaa10"><td class="memItemLeft" align="right" valign="top"><a id="a8e7c946639c701343a520368b3aeaa10" name="a8e7c946639c701343a520368b3aeaa10"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_matrix4__.html">Matrix4_</a>&#160;</td><td class="memItemRight" valign="bottom"><b>orthonormalBase</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; <a class="el" href="classasl_1_1_array.html">T</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">vec</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; <a class="el" href="classasl_1_1_array.html">T</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">origin</a>=<a class="el" href="classasl_1_1_vec3__.html">Vec3_</a>&lt; <a class="el" href="classasl_1_1_array.html">T</a> &gt;(0, 0, 0))</td></tr>
+<tr class="memdesc:a8e7c946639c701343a520368b3aeaa10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an orthonormal vector base using a given vector as the Z axis and creating two other unit vectors perpendicular to Z and between them. <br /></td></tr>
+<tr class="separator:a8e7c946639c701343a520368b3aeaa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a194c4d34f3f0604391fdfbbd4a427cbe" name="a194c4d34f3f0604391fdfbbd4a427cbe"></a>
@@ -348,7 +348,7 @@ template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el"
 </div><div class="memdoc">
 
 <p>Returns a rotation matrix created from Euler angles rotating the components of r in axes given as a string, such as "XYZ", if an '*' is appended then the result is equivalent to rotations on fixed axes, while by default it is equivalent to rotations on moving axes. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el"
 </div><div class="memdoc">
 
 <p>Same as <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use <a class="el" href="classasl_1_1_matrix4__.html#ace1a8705cb25bb114b47d0090b935c62" title="Returns a rotation matrix created from Euler angles rotating the components of r in axes a0,...">rotateE()</a> </dd></dl>
 
 </div>
 </div>

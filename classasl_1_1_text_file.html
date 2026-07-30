@@ -108,10 +108,10 @@ $(document).ready(function(){initNavTree('classasl_1_1_text_file.html',''); init
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classasl_1_1_string.html">String</a> <a class="code hl_class" href="classasl_1_1_array.html">last_entry</a> = <a class="code hl_class" href="classasl_1_1_text_file.html">TextFile</a>(<span class="stringliteral">&quot;errors.log&quot;</span>).<a class="code hl_function" href="classasl_1_1_text_file.html#a06419ad30a64a085d72b8e212182ac7a">lines</a>().<a class="code hl_function" href="classasl_1_1_array.html#a7cf46742fdf85ce198e542001fc3f3fc">last</a>();</div>
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
-<div class="ttc" id="aclassasl_1_1_array_html_a7cf46742fdf85ce198e542001fc3f3fc"><div class="ttname"><a href="classasl_1_1_array.html#a7cf46742fdf85ce198e542001fc3f3fc">asl::Array::last</a></div><div class="ttdeci">const T &amp; last() const</div><div class="ttdoc">Returns a reference to the last element.</div><div class="ttdef"><b>Definition</b> Array.h:297</div></div>
+<div class="ttc" id="aclassasl_1_1_array_html_a7cf46742fdf85ce198e542001fc3f3fc"><div class="ttname"><a href="classasl_1_1_array.html#a7cf46742fdf85ce198e542001fc3f3fc">asl::Array::last</a></div><div class="ttdeci">const T &amp; last() const</div><div class="ttdoc">Returns a reference to the last element.</div><div class="ttdef"><b>Definition</b> Array.h:301</div></div>
 <div class="ttc" id="aclassasl_1_1_string_html"><div class="ttname"><a href="classasl_1_1_string.html">asl::String</a></div><div class="ttdoc">String represents a character string that behaves similarly to JavaScript strings in that it can be c...</div><div class="ttdef"><b>Definition</b> String.h:126</div></div>
 <div class="ttc" id="aclassasl_1_1_text_file_html"><div class="ttname"><a href="classasl_1_1_text_file.html">asl::TextFile</a></div><div class="ttdoc">Class TextFile represents a text file in the filesystem.</div><div class="ttdef"><b>Definition</b> TextFile.h:48</div></div>
-<div class="ttc" id="aclassasl_1_1_text_file_html_a06419ad30a64a085d72b8e212182ac7a"><div class="ttname"><a href="classasl_1_1_text_file.html#a06419ad30a64a085d72b8e212182ac7a">asl::TextFile::lines</a></div><div class="ttdeci">Array&lt; String &gt; lines()</div><div class="ttdoc">Returns all the lines contained in the file as an array of strings.</div></div>
+<div class="ttc" id="aclassasl_1_1_text_file_html_a06419ad30a64a085d72b8e212182ac7a"><div class="ttname"><a href="classasl_1_1_text_file.html#a06419ad30a64a085d72b8e212182ac7a">asl::TextFile::lines</a></div><div class="ttdeci">Array&lt; String &gt; lines()</div><div class="ttdoc">Returns all the lines contained in the file as an array of strings.</div><div class="ttdef"><b>Definition</b> TextFile.h:86</div></div>
 <div class="ttc" id="aclassasl_1_1_text_file_html_a5f110c73ef9caee7bd4e5c745ca82381"><div class="ttname"><a href="classasl_1_1_text_file.html#a5f110c73ef9caee7bd4e5c745ca82381">asl::TextFile::text</a></div><div class="ttdeci">String text()</div><div class="ttdoc">Returns the textual content of the file as a string.</div></div>
 <div class="ttc" id="aclassasl_1_1_text_file_html_a7577e1e88af45e0c3eb51aa009b71565"><div class="ttname"><a href="classasl_1_1_text_file.html#a7577e1e88af45e0c3eb51aa009b71565">asl::TextFile::write</a></div><div class="ttdeci">bool write(const String &amp;s)</div><div class="ttdoc">Writes the given string at the end of the file, opening in write mode if the file was not opened.</div></div>
 <div class="ttc" id="aclassasl_1_1_text_file_html_ae65eb067aa46d9f2ffde05e3e7f473f0"><div class="ttname"><a href="classasl_1_1_text_file.html#ae65eb067aa46d9f2ffde05e3e7f473f0">asl::TextFile::printf</a></div><div class="ttdeci">bool printf(const char *fmt,...)(2)</div><div class="ttdoc">Prints formatted text as with the regular printf.</div></div>
@@ -333,6 +333,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt; lines </td>
@@ -341,6 +344,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns all the lines contained in the file as an array of strings. </p>

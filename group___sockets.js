@@ -22,7 +22,6 @@ var group___sockets =
       [ "listen", "classasl_1_1_socket.html#af4926e2e36a362c7b6f3926c5d25151d", null ],
       [ "localAddress", "classasl_1_1_socket.html#af96eba3cd573fb1481412ac66dfe75ef", null ],
       [ "operator<<", "classasl_1_1_socket.html#ae671d6f3afd3f3a77008ae28ce328e78", null ],
-      [ "operator>>", "classasl_1_1_socket.html#a252640f7da3faf4d603ee38a0e7ad095", null ],
       [ "operator>>", "classasl_1_1_socket.html#a89a80e1ace31829ba2e10b874ef89a6d", null ],
       [ "read", "classasl_1_1_socket.html#a30f3e845a8b141385dae5f12f9507d89", null ],
       [ "read", "classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf", null ],
@@ -36,16 +35,15 @@ var group___sockets =
       [ "write", "classasl_1_1_socket.html#ac69387852b359a0c7490bb7133e77084", null ]
     ] ],
     [ "PacketSocket", "classasl_1_1_packet_socket.html", [
-      [ "readFrom", "classasl_1_1_packet_socket.html#a5098a943159fbafb0b1ef6006759ad59", null ],
+      [ "readFrom", "classasl_1_1_packet_socket.html#a5dc3674b18244b51efe94784114ebc5b", null ],
       [ "readFrom", "classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297", null ],
       [ "sendTo", "classasl_1_1_packet_socket.html#aa6f07761e631847bb2c1656c46715eae", null ],
-      [ "sendTo", "classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950", null ]
+      [ "sendTo", "classasl_1_1_packet_socket.html#a383f707b32449ef0a41fd9559a3d56b6", null ]
     ] ],
     [ "LocalSocket", "classasl_1_1_local_socket.html", null ],
     [ "MulticastSocket", "classasl_1_1_multicast_socket.html", [
       [ "join", "classasl_1_1_multicast_socket.html#ac8b2074687139ad0fba56028cdc1c1ee", null ],
       [ "leave", "classasl_1_1_multicast_socket.html#a4e3d0be48263d5ec505fe9ec8e7df682", null ],
-      [ "multicast", "classasl_1_1_multicast_socket.html#acac495585e97f9acb54099b959e20b2b", null ],
       [ "setLoop", "classasl_1_1_multicast_socket.html#a91ff0e8b5b6d40d4aae704e82b051a1d", null ],
       [ "setTTL", "classasl_1_1_multicast_socket.html#a82293c75b07e2811298b9f274b95de65", null ]
     ] ],

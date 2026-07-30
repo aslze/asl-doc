@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['statustype_0',['StatusType',['../classasl_1_1_http_response.html#a90549f45cfc442187c1d769596107d3e',1,'asl::HttpResponse']]]
+  ['place_0',['Place',['../classasl_1_1_directory.html#a6ea26687fc6b796b4e410106d5b8bc68',1,'asl::Directory']]]
 ];

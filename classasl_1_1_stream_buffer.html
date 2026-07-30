@@ -99,12 +99,13 @@ $(document).ready(function(){initNavTree('classasl_1_1_stream_buffer.html',''); 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a buffer that can be written to as a binary stream. </p>
 <p>The buffer is initially empty and grows as you append variables. You can change endianness at any moment.</p>
-<p>You can then get the content as a ByteArray and for example write it to a file or send it through a socket. </p><div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_stream_buffer.html">StreamBuffer</a> buffer(ENDIAN_BIG);</div>
-<div class="line">buffer &lt;&lt; 1 &lt;&lt; <span class="stringliteral">&quot;abc&quot;</span> &lt;&lt; 1.5 &lt;&lt; <a class="code hl_function" href="classasl_1_1_array.html#af9474cac29f3177edf5e8d72ea4a440c">short</a>(33);</div>
+<p>You can then get the content as a ByteArray and for example write it to a file or send it through a socket. </p><div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_stream_buffer.html">StreamBuffer</a> <a class="code hl_function" href="classasl_1_1_array.html#af9474cac29f3177edf5e8d72ea4a440c">buffer</a>(ENDIAN_BIG);</div>
+<div class="line"><a class="code hl_class" href="classasl_1_1_array.html">buffer</a> &lt;&lt; 1 &lt;&lt; <span class="stringliteral">&quot;abc&quot;</span> &lt;&lt; 1.5 &lt;&lt; <a class="code hl_function" href="classasl_1_1_array.html#af9474cac29f3177edf5e8d72ea4a440c">short</a>(33);</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="classasl_1_1_file.html">File</a>(<span class="stringliteral">&quot;data&quot;</span>).<a class="code hl_function" href="classasl_1_1_file.html#aa9255f1a0261cbe2a7728f41d0900166">put</a>(buffer);</div>
+<div class="line"><a class="code hl_class" href="classasl_1_1_file.html">File</a>(<span class="stringliteral">&quot;data&quot;</span>).<a class="code hl_function" href="classasl_1_1_file.html#aa9255f1a0261cbe2a7728f41d0900166">put</a>(<a class="code hl_class" href="classasl_1_1_array.html">buffer</a>);</div>
 <div class="line"> </div>
-<div class="line">socket &lt;&lt; *buffer;</div>
+<div class="line">socket &lt;&lt; *<a class="code hl_function" href="classasl_1_1_array.html#af9474cac29f3177edf5e8d72ea4a440c">buffer</a>;</div>
+<div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
 <div class="ttc" id="aclassasl_1_1_array_html_af9474cac29f3177edf5e8d72ea4a440c"><div class="ttname"><a href="classasl_1_1_array.html#af9474cac29f3177edf5e8d72ea4a440c">asl::Array&lt; byte &gt;::Array</a></div><div class="ttdeci">Array()</div><div class="ttdoc">Creates an empty array.</div><div class="ttdef"><b>Definition</b> Array.h:94</div></div>
 <div class="ttc" id="aclassasl_1_1_file_html"><div class="ttname"><a href="classasl_1_1_file.html">asl::File</a></div><div class="ttdoc">Class File represents a file in the filesystem.</div><div class="ttdef"><b>Definition</b> File.h:63</div></div>
 <div class="ttc" id="aclassasl_1_1_file_html_aa9255f1a0261cbe2a7728f41d0900166"><div class="ttname"><a href="classasl_1_1_file.html#aa9255f1a0261cbe2a7728f41d0900166">asl::File::put</a></div><div class="ttdeci">bool put(const ByteArray &amp;data)</div><div class="ttdoc">Writes the binary content of the file from an array of bytes.</div></div>
@@ -158,6 +159,10 @@ template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el"
 <a class="el" href="classasl_1_1_array.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
 <tr class="memdesc:a91213974fa3ac3959b1c355a9e588f8d inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the array. <br /></td></tr>
 <tr class="separator:a91213974fa3ac3959b1c355a9e588f8d inherit pub_methods_classasl_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644718bb2fb240de962dc3c9a1fdf0dc inherit pub_methods_classasl_1_1_array" id="r_a644718bb2fb240de962dc3c9a1fdf0dc"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
+<tr class="memdesc:a644718bb2fb240de962dc3c9a1fdf0dc inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the queue is empty. <br /></td></tr>
+<tr class="separator:a644718bb2fb240de962dc3c9a1fdf0dc inherit pub_methods_classasl_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aebfc19670b1df2327a79b3ae4cffe7 inherit pub_methods_classasl_1_1_array" id="r_a8aebfc19670b1df2327a79b3ae4cffe7"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classasl_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reserve</b> (<a class="el" href="classasl_1_1_array.html">int</a> m)</td></tr>
 <tr class="memdesc:a8aebfc19670b1df2327a79b3ae4cffe7 inherit pub_methods_classasl_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves space for m elements without increasing actual length (to make appending faster) <br /></td></tr>

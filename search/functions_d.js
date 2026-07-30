@@ -15,5 +15,6 @@ var searchData=
   ['now_12',['now',['../classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58',1,'asl::Date::now()'],['../group___global.html#ga0b45d14ba5e1a942da23a731d636f7fd',1,'asl::now()']]],
   ['numchildren_13',['numChildren',['../classasl_1_1_xml.html#abac75603813a179b4d11347cda47769f',1,'asl::Xml']]],
   ['numcolumns_14',['numColumns',['../classasl_1_1_tabular_data_file.html#a46290746a0de85de8fcb5b7d70b833d5',1,'asl::TabularDataFile']]],
-  ['numprocessors_15',['numProcessors',['../classasl_1_1_thread.html#a97c4d3433c0050cfbd008133d94892a6',1,'asl::Thread']]]
+  ['numevents_15',['numEvents',['../classasl_1_1_directory.html#a843b44822951bf5a2a69b4644934abaf',1,'asl::Directory']]],
+  ['numprocessors_16',['numProcessors',['../classasl_1_1_thread.html#a97c4d3433c0050cfbd008133d94892a6',1,'asl::Thread']]]
 ];

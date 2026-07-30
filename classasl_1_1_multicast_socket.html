@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_multicast_socket.html',''
 <p>A socket can send packets to a multicast group and port, and another socket can join the group so it receives packets sent to it.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_inet_address.html">InetAddress</a> <a class="code hl_class" href="classasl_1_1_array.html">group</a>(<span class="stringliteral">&quot;224.0.1.1&quot;</span>, 18000);</div>
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
-<div class="ttc" id="aclassasl_1_1_inet_address_html"><div class="ttname"><a href="classasl_1_1_inet_address.html">asl::InetAddress</a></div><div class="ttdoc">Represents an endpoint of a socket which is ususally an IP address and a port.</div><div class="ttdef"><b>Definition</b> Socket.h:51</div></div>
+<div class="ttc" id="aclassasl_1_1_inet_address_html"><div class="ttname"><a href="classasl_1_1_inet_address.html">asl::InetAddress</a></div><div class="ttdoc">Represents an endpoint of a socket which is ususally an IP address and a port.</div><div class="ttdef"><b>Definition</b> Socket.h:57</div></div>
 </div><!-- fragment --><p>A listening side would bind to the port on a local interface, join the group, receive packets and then optionally leave (on socket destruction the group is automatically left):</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_multicast_socket.html">MulticastSocket</a> socket;</div>
 <div class="line">socket.<a class="code hl_function" href="classasl_1_1_socket.html#afc75b2999f19ffc456b961bbcc1d27ac">bind</a>(<a class="code hl_class" href="classasl_1_1_array.html">group</a>.port());</div>
@@ -109,15 +109,15 @@ $(document).ready(function(){initNavTree('classasl_1_1_multicast_socket.html',''
 <div class="line"><a class="code hl_class" href="classasl_1_1_inet_address.html">InetAddress</a> sender;</div>
 <div class="line">socket.<a class="code hl_function" href="classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297">readFrom</a>(sender, data);</div>
 <div class="line">socket.<a class="code hl_function" href="classasl_1_1_multicast_socket.html#a4e3d0be48263d5ec505fe9ec8e7df682">leave</a>(<a class="code hl_class" href="classasl_1_1_array.html">group</a>);</div>
-<div class="ttc" id="aclassasl_1_1_multicast_socket_html"><div class="ttname"><a href="classasl_1_1_multicast_socket.html">asl::MulticastSocket</a></div><div class="ttdoc">A communication socket for multicast UDP/IP protocol.</div><div class="ttdef"><b>Definition</b> Socket.h:523</div></div>
-<div class="ttc" id="aclassasl_1_1_multicast_socket_html_a4e3d0be48263d5ec505fe9ec8e7df682"><div class="ttname"><a href="classasl_1_1_multicast_socket.html#a4e3d0be48263d5ec505fe9ec8e7df682">asl::MulticastSocket::leave</a></div><div class="ttdeci">bool leave(const InetAddress &amp;a, int interfac=0)</div><div class="ttdoc">Leaves a multicast group and stops receiving packets from it.</div><div class="ttdef"><b>Definition</b> Socket.h:533</div></div>
-<div class="ttc" id="aclassasl_1_1_multicast_socket_html_ac8b2074687139ad0fba56028cdc1c1ee"><div class="ttname"><a href="classasl_1_1_multicast_socket.html#ac8b2074687139ad0fba56028cdc1c1ee">asl::MulticastSocket::join</a></div><div class="ttdeci">bool join(const InetAddress &amp;a, int interfac=0)</div><div class="ttdoc">Joins a multicast group.</div><div class="ttdef"><b>Definition</b> Socket.h:528</div></div>
-<div class="ttc" id="aclassasl_1_1_packet_socket_html_a7d7129b0e26a2f291ba37b2dee373297"><div class="ttname"><a href="classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297">asl::PacketSocket::readFrom</a></div><div class="ttdeci">int readFrom(InetAddress &amp;addr, void *data, int n)</div><div class="ttdoc">Reads an incoming packet into the buffer data of size n, writes the address of the sending peer and r...</div><div class="ttdef"><b>Definition</b> Socket.h:427</div></div>
-<div class="ttc" id="aclassasl_1_1_socket_html_afc75b2999f19ffc456b961bbcc1d27ac"><div class="ttname"><a href="classasl_1_1_socket.html#afc75b2999f19ffc456b961bbcc1d27ac">asl::Socket::bind</a></div><div class="ttdeci">bool bind(const String &amp;ip, int port)</div><div class="ttdoc">Binds this socket to the given IP address and port number.</div><div class="ttdef"><b>Definition</b> Socket.h:187</div></div>
+<div class="ttc" id="aclassasl_1_1_multicast_socket_html"><div class="ttname"><a href="classasl_1_1_multicast_socket.html">asl::MulticastSocket</a></div><div class="ttdoc">A communication socket for multicast UDP/IP protocol.</div><div class="ttdef"><b>Definition</b> Socket.h:545</div></div>
+<div class="ttc" id="aclassasl_1_1_multicast_socket_html_a4e3d0be48263d5ec505fe9ec8e7df682"><div class="ttname"><a href="classasl_1_1_multicast_socket.html#a4e3d0be48263d5ec505fe9ec8e7df682">asl::MulticastSocket::leave</a></div><div class="ttdeci">bool leave(const InetAddress &amp;a, int interfac=0)</div><div class="ttdoc">Leaves a multicast group and stops receiving packets from it.</div><div class="ttdef"><b>Definition</b> Socket.h:555</div></div>
+<div class="ttc" id="aclassasl_1_1_multicast_socket_html_ac8b2074687139ad0fba56028cdc1c1ee"><div class="ttname"><a href="classasl_1_1_multicast_socket.html#ac8b2074687139ad0fba56028cdc1c1ee">asl::MulticastSocket::join</a></div><div class="ttdeci">bool join(const InetAddress &amp;a, int interfac=0)</div><div class="ttdoc">Joins a multicast group.</div><div class="ttdef"><b>Definition</b> Socket.h:550</div></div>
+<div class="ttc" id="aclassasl_1_1_packet_socket_html_a7d7129b0e26a2f291ba37b2dee373297"><div class="ttname"><a href="classasl_1_1_packet_socket.html#a7d7129b0e26a2f291ba37b2dee373297">asl::PacketSocket::readFrom</a></div><div class="ttdeci">int readFrom(InetAddress &amp;addr, void *data, int n)</div><div class="ttdoc">Reads an incoming packet into the buffer data of size n, writes the address of the sending peer and r...</div><div class="ttdef"><b>Definition</b> Socket.h:441</div></div>
+<div class="ttc" id="aclassasl_1_1_socket_html_afc75b2999f19ffc456b961bbcc1d27ac"><div class="ttname"><a href="classasl_1_1_socket.html#afc75b2999f19ffc456b961bbcc1d27ac">asl::Socket::bind</a></div><div class="ttdeci">bool bind(const String &amp;ip, int port)</div><div class="ttdoc">Binds this socket to the given IP address and port number.</div><div class="ttdef"><b>Definition</b> Socket.h:208</div></div>
 </div><!-- fragment --><p>And a sending side would start a multicast session to the same group and send packets to it:</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_multicast_socket.html">MulticastSocket</a> socket;</div>
-<div class="line">socket.<a class="code hl_function" href="classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950">sendTo</a>(<a class="code hl_class" href="classasl_1_1_array.html">group</a>, data);</div>
-<div class="ttc" id="aclassasl_1_1_packet_socket_html_aa57efdc235b0492159983ac2f030a950"><div class="ttname"><a href="classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950">asl::PacketSocket::sendTo</a></div><div class="ttdeci">String void sendTo(const InetAddress &amp;addr, const void *data, int n)</div><div class="ttdoc">Sends n bytes from data as a packet to the address addr.</div><div class="ttdef"><b>Definition</b> Socket.h:411</div></div>
+<div class="line">socket.<a class="code hl_function" href="classasl_1_1_packet_socket.html#a383f707b32449ef0a41fd9559a3d56b6">sendTo</a>(<a class="code hl_class" href="classasl_1_1_array.html">group</a>, data);</div>
+<div class="ttc" id="aclassasl_1_1_packet_socket_html_a383f707b32449ef0a41fd9559a3d56b6"><div class="ttname"><a href="classasl_1_1_packet_socket.html#a383f707b32449ef0a41fd9559a3d56b6">asl::PacketSocket::sendTo</a></div><div class="ttdeci">void sendTo(const InetAddress &amp;addr, const void *data, int n)</div><div class="ttdoc">Sends n bytes from data as a packet to the address addr.</div><div class="ttdef"><b>Definition</b> Socket.h:425</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;asl/Socket.h&gt;</code></p>
 
@@ -140,14 +140,11 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>setTTL</b> (<a class="el" href="classasl_1_1_array.html">int</a> n)</td></tr>
 <tr class="memdesc:a82293c75b07e2811298b9f274b95de65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the multicast socket's TTL value (default 1) <br /></td></tr>
 <tr class="separator:a82293c75b07e2811298b9f274b95de65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac495585e97f9acb54099b959e20b2b" id="r_acac495585e97f9acb54099b959e20b2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_multicast_socket.html#acac495585e97f9acb54099b959e20b2b">multicast</a> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;a, <a class="el" href="classasl_1_1_array.html">int</a> <a class="el" href="classasl_1_1_array.html">ttl</a>=1)</td></tr>
-<tr class="memdesc:acac495585e97f9acb54099b959e20b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a multicast session for group address <code>a</code>.  <br /></td></tr>
-<tr class="separator:acac495585e97f9acb54099b959e20b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasl_1_1_packet_socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasl_1_1_packet_socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasl_1_1_packet_socket.html">PacketSocket</a></td></tr>
-<tr class="memitem:aa57efdc235b0492159983ac2f030a950 inherit pub_methods_classasl_1_1_packet_socket" id="r_aa57efdc235b0492159983ac2f030a950"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classasl_1_1_string.html">String</a> <a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sendTo</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;<a class="el" href="classasl_1_1_array.html">addr</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_array.html">void</a> *data, <a class="el" href="classasl_1_1_array.html">int</a> n)</td></tr>
-<tr class="memdesc:aa57efdc235b0492159983ac2f030a950 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>n</code> bytes from <code>data</code> as a packet to the address <code>addr</code>. <br /></td></tr>
-<tr class="separator:aa57efdc235b0492159983ac2f030a950 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383f707b32449ef0a41fd9559a3d56b6 inherit pub_methods_classasl_1_1_packet_socket" id="r_a383f707b32449ef0a41fd9559a3d56b6"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sendTo</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;<a class="el" href="classasl_1_1_array.html">addr</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_array.html">void</a> *data, <a class="el" href="classasl_1_1_array.html">int</a> n)</td></tr>
+<tr class="memdesc:a383f707b32449ef0a41fd9559a3d56b6 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>n</code> bytes from <code>data</code> as a packet to the address <code>addr</code>. <br /></td></tr>
+<tr class="separator:a383f707b32449ef0a41fd9559a3d56b6 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f07761e631847bb2c1656c46715eae inherit pub_methods_classasl_1_1_packet_socket" id="r_aa6f07761e631847bb2c1656c46715eae"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sendTo</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;<a class="el" href="classasl_1_1_array.html">addr</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a> &amp;data)</td></tr>
 <tr class="memdesc:aa6f07761e631847bb2c1656c46715eae inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a data packet to the address <code>addr</code>. <br /></td></tr>
@@ -156,10 +153,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;<a class="el" href="classasl_1_1_array.html">addr</a>, <a class="el" href="classasl_1_1_array.html">void</a> *data, <a class="el" href="classasl_1_1_array.html">int</a> n)</td></tr>
 <tr class="memdesc:a7d7129b0e26a2f291ba37b2dee373297 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an incoming packet into the buffer <code>data</code> of size <code>n</code>, writes the address of the sending peer and returns the actual packet size. <br /></td></tr>
 <tr class="separator:a7d7129b0e26a2f291ba37b2dee373297 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5098a943159fbafb0b1ef6006759ad59 inherit pub_methods_classasl_1_1_packet_socket" id="r_a5098a943159fbafb0b1ef6006759ad59"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;<a class="el" href="classasl_1_1_array.html">addr</a>, <a class="el" href="classasl_1_1_array.html">int</a> n=1000)</td></tr>
-<tr class="memdesc:a5098a943159fbafb0b1ef6006759ad59 inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an incoming packet of at most n bytes and returns it, and gets the address of the sending peer. <br /></td></tr>
-<tr class="separator:a5098a943159fbafb0b1ef6006759ad59 inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc3674b18244b51efe94784114ebc5b inherit pub_methods_classasl_1_1_packet_socket" id="r_a5dc3674b18244b51efe94784114ebc5b"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;<a class="el" href="classasl_1_1_array.html">addr</a>, <a class="el" href="classasl_1_1_array.html">int</a> n=2048)</td></tr>
+<tr class="memdesc:a5dc3674b18244b51efe94784114ebc5b inherit pub_methods_classasl_1_1_packet_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an incoming packet of at most n bytes and returns it, and gets the address of the sending peer. <br /></td></tr>
+<tr class="separator:a5dc3674b18244b51efe94784114ebc5b inherit pub_methods_classasl_1_1_packet_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classasl_1_1_socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasl_1_1_socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classasl_1_1_socket.html">Socket</a></td></tr>
 <tr class="memitem:a7e04ee0f03fdea43f0956ab37a7c2c72 inherit pub_methods_classasl_1_1_socket" id="r_a7e04ee0f03fdea43f0956ab37a7c2c72"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>disconnected</b> ()</td></tr>
@@ -263,9 +260,6 @@ template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el"
 <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>readString</b> (<a class="el" href="classasl_1_1_array.html">int</a> n)</td></tr>
 <tr class="memdesc:a4a4f69cba9e992211068b1fc43c94923 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n bytes from the socket a string. <br /></td></tr>
 <tr class="separator:a4a4f69cba9e992211068b1fc43c94923 inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a252640f7da3faf4d603ee38a0e7ad095 inherit pub_methods_classasl_1_1_socket" id="r_a252640f7da3faf4d603ee38a0e7ad095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_socket.html">Socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_socket.html#a252640f7da3faf4d603ee38a0e7ad095">operator&gt;&gt;</a> (<a class="el" href="classasl_1_1_string.html">String</a> &amp;x)</td></tr>
-<tr class="memdesc:a252640f7da3faf4d603ee38a0e7ad095 inherit pub_methods_classasl_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a string from the socket that is preceded by its length as an int32 (the sender must send the byte length before)  <br /></td></tr>
-<tr class="separator:a252640f7da3faf4d603ee38a0e7ad095 inherit pub_methods_classasl_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac8b2074687139ad0fba56028cdc1c1ee" name="ac8b2074687139ad0fba56028cdc1c1ee"></a>
@@ -304,37 +298,6 @@ template&lt;<a class="el" href="classasl_1_1_array.html">class</a> <a class="el"
 
 <p>Joins a multicast group. </p>
 <p>Packets sent to the group's address will be received </p>
-
-</div>
-</div>
-<a id="acac495585e97f9acb54099b959e20b2b" name="acac495585e97f9acb54099b959e20b2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acac495585e97f9acb54099b959e20b2b">&#9670;&#160;</a></span>multicast()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_array.html">void</a> multicast </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_inet_address.html">InetAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">int</a>&#160;</td>
-          <td class="paramname"><em>ttl</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Starts a multicast session for group address <code>a</code>. </p>
-<p>Packets sent will be received by all sockets that join the group. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Use .connect() or .<a class="el" href="classasl_1_1_packet_socket.html#aa57efdc235b0492159983ac2f030a950" title="Sends n bytes from data as a packet to the address addr.">sendTo()</a> </dd></dl>
 
 </div>
 </div>

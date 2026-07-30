@@ -111,17 +111,18 @@ $(document).ready(function(){initNavTree('classasl_1_1_process.html',''); initRe
 <div class="line">    printf(<span class="stringliteral">&quot;Subprocess wrote %s\n&quot;</span>, *<a class="code hl_class" href="classasl_1_1_array.html">line</a>);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
-<div class="ttc" id="aclassasl_1_1_process_html"><div class="ttname"><a href="classasl_1_1_process.html">asl::Process</a></div><div class="ttdoc">A class allowing running subprocesses and communicating with them through stdin/stdout/stderr.</div><div class="ttdef"><b>Definition</b> Process.h:50</div></div>
+<div class="ttc" id="aclassasl_1_1_process_html"><div class="ttname"><a href="classasl_1_1_process.html">asl::Process</a></div><div class="ttdoc">A class allowing running subprocesses and communicating with them through stdin/stdout/stderr.</div><div class="ttdef"><b>Definition</b> Process.h:150</div></div>
 <div class="ttc" id="aclassasl_1_1_string_html"><div class="ttname"><a href="classasl_1_1_string.html">asl::String</a></div><div class="ttdoc">String represents a character string that behaves similarly to JavaScript strings in that it can be c...</div><div class="ttdef"><b>Definition</b> String.h:126</div></div>
 </div><!-- fragment --><p>A <b>shorthand</b> function allows executing a program and, after it finishes, getting its full output, errors and exitcode.</p>
-<div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_process.html">Process</a> p = <a class="code hl_function" href="classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f">Process::execute</a>(<span class="stringliteral">&quot;ipconfig&quot;</span>);</div>
+<div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_process.html">Process</a> p = <a class="code hl_function" href="classasl_1_1_process.html#aeec6db228c3e7129e3e66a9d3bb6297a">Process::execute</a>(<span class="stringliteral">&quot;ipconfig&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span>( p.<a class="code hl_function" href="classasl_1_1_process.html#a3213f56441bb36ed3f2cf2caae00d5f4">success</a>() )</div>
 <div class="line">    text = p.<a class="code hl_function" href="classasl_1_1_process.html#a5261504c9fcab47e49935e4f63c47cbd">output</a>();</div>
-<div class="ttc" id="aclassasl_1_1_process_html_a3213f56441bb36ed3f2cf2caae00d5f4"><div class="ttname"><a href="classasl_1_1_process.html#a3213f56441bb36ed3f2cf2caae00d5f4">asl::Process::success</a></div><div class="ttdeci">bool success()</div><div class="ttdoc">Returns true if the process executed correctly (exited with zero status)</div><div class="ttdef"><b>Definition</b> Process.h:177</div></div>
-<div class="ttc" id="aclassasl_1_1_process_html_a5261504c9fcab47e49935e4f63c47cbd"><div class="ttname"><a href="classasl_1_1_process.html#a5261504c9fcab47e49935e4f63c47cbd">asl::Process::output</a></div><div class="ttdeci">const String &amp; output() const</div><div class="ttdoc">Returns the standard output of a subprocess as a string (if executed with Process::execute())</div><div class="ttdef"><b>Definition</b> Process.h:118</div></div>
-<div class="ttc" id="aclassasl_1_1_process_html_ac586c5de894ad68e3b75324f7e2afc2f"><div class="ttname"><a href="classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f">asl::Process::execute</a></div><div class="ttdeci">static Process execute(const String &amp;command, const Array&lt; String &gt; &amp;args=Array&lt; String &gt;())</div><div class="ttdoc">Executes command and returns the process' output (written to stdout) as a String.</div></div>
-</div><!-- fragment --><p>In Windows you can append a '*' to program names (e.g. "notepad.exe*") to show their window if they are Win32 GUI apps. Or to show their console. Otherwise they run in the background with no window.</p>
-<p><b>Warning</b>: If a process is run with the <a class="el" href="classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207" title="Starts executing a program by a command line.">run()</a> method and we will not read its output, the process can hang if it writes a lot to its output stream (because it will fill a buffer that no one will free). To avoid that, call <a class="el" href="classasl_1_1_process.html#ac295bade8aee589f6718dfa79edc2a34" title="Indicates that we are not interested in the process&#39; output (must be called this before run()),...">detach()</a> before calling <a class="el" href="classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207" title="Starts executing a program by a command line.">run()</a>. </p>
+<div class="ttc" id="aclassasl_1_1_process_html_a3213f56441bb36ed3f2cf2caae00d5f4"><div class="ttname"><a href="classasl_1_1_process.html#a3213f56441bb36ed3f2cf2caae00d5f4">asl::Process::success</a></div><div class="ttdeci">bool success()</div><div class="ttdoc">Returns true if the process executed correctly (exited with zero status)</div><div class="ttdef"><b>Definition</b> Process.h:284</div></div>
+<div class="ttc" id="aclassasl_1_1_process_html_a5261504c9fcab47e49935e4f63c47cbd"><div class="ttname"><a href="classasl_1_1_process.html#a5261504c9fcab47e49935e4f63c47cbd">asl::Process::output</a></div><div class="ttdeci">const String &amp; output() const</div><div class="ttdoc">Returns the standard output of a subprocess as a string (if executed with Process::execute())</div><div class="ttdef"><b>Definition</b> Process.h:223</div></div>
+<div class="ttc" id="aclassasl_1_1_process_html_aeec6db228c3e7129e3e66a9d3bb6297a"><div class="ttname"><a href="classasl_1_1_process.html#aeec6db228c3e7129e3e66a9d3bb6297a">asl::Process::execute</a></div><div class="ttdeci">static Process execute(const String &amp;command, const Array&lt; String &gt; &amp;args=Array&lt; String &gt;(), const ProcParams &amp;env=ProcParams())</div><div class="ttdoc">Executes command with optional arguments, environment vars and a start directory, and returns the pro...</div></div>
+</div><!-- fragment --><p>In Windows you can append a '*' to program names (e.g. "notepad.exe*") or set <code>showWindow</code> in the process parameters to show their window if they are Win32 GUI apps. Or to show their console. Otherwise they run in the background with no window.</p>
+<p><b>Warning</b>: If a process is run with the <a class="el" href="classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207" title="Starts executing a program with optional command line arguments and environment variables.">run()</a> method and we will not read its output, the process can hang if it writes a lot to its output stream (because it will fill a buffer that no one will free). To avoid that, call <a class="el" href="classasl_1_1_process.html#ac295bade8aee589f6718dfa79edc2a34" title="Indicates that we are not interested in the process&#39; output (must be called this before run()),...">detach()</a> before calling <a class="el" href="classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207" title="Starts executing a program with optional command line arguments and environment variables.">run()</a>.</p>
+<p>You can set the environment variables to be used by the subprocess with <a class="el" href="classasl_1_1_process.html#ab72d84c9b86d8701a2aae2c8936026f4" title="Sets the environment variables to be used by the subprocess when run.">setSubprocessEnvironment()</a> before calling <a class="el" href="classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207" title="Starts executing a program with optional command line arguments and environment variables.">run()</a>, and set the directory where the process will start with <a class="el" href="classasl_1_1_process.html#ae0cb5233d082917c24bd987ad5c3d0c6" title="Sets the starting directory of the new process.">setStartDirectory()</a>. </p>
 </div>
 <p><code>#include &lt;asl/Process.h&gt;</code></p>
 <table class="memberdecls">
@@ -153,8 +154,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0b6493bc0c08219e3ab6930c0f927e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac295bade8aee589f6718dfa79edc2a34" id="r_ac295bade8aee589f6718dfa79edc2a34"><td class="memItemLeft" align="right" valign="top"><a id="ac295bade8aee589f6718dfa79edc2a34" name="ac295bade8aee589f6718dfa79edc2a34"></a>
 <a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>detach</b> ()</td></tr>
-<tr class="memdesc:ac295bade8aee589f6718dfa79edc2a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that we are not interested in the process' output (must be called this before <a class="el" href="classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207" title="Starts executing a program by a command line.">run()</a>), and the subprocess can continue running if the parent process ends. <br /></td></tr>
+<tr class="memdesc:ac295bade8aee589f6718dfa79edc2a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that we are not interested in the process' output (must be called this before <a class="el" href="classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207" title="Starts executing a program with optional command line arguments and environment variables.">run()</a>), and the subprocess can continue running if the parent process ends. <br /></td></tr>
 <tr class="separator:ac295bade8aee589f6718dfa79edc2a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cb5233d082917c24bd987ad5c3d0c6" id="r_ae0cb5233d082917c24bd987ad5c3d0c6"><td class="memItemLeft" align="right" valign="top"><a id="ae0cb5233d082917c24bd987ad5c3d0c6" name="ae0cb5233d082917c24bd987ad5c3d0c6"></a>
+<a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>setStartDirectory</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">dir</a>)</td></tr>
+<tr class="memdesc:ae0cb5233d082917c24bd987ad5c3d0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the starting directory of the new process. <br /></td></tr>
+<tr class="separator:ae0cb5233d082917c24bd987ad5c3d0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2b3badde0fbd59e6cbdd919198b5b5" id="r_a4a2b3badde0fbd59e6cbdd919198b5b5"><td class="memItemLeft" align="right" valign="top"><a id="a4a2b3badde0fbd59e6cbdd919198b5b5" name="a4a2b3badde0fbd59e6cbdd919198b5b5"></a>
 <a class="el" href="classasl_1_1_array.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputAvailable</b> ()</td></tr>
 <tr class="memdesc:a4a2b3badde0fbd59e6cbdd919198b5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that can be read from the process' standard output. <br /></td></tr>
@@ -165,15 +170,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6aa0b56e44dc637eb1414b6b834de0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5261504c9fcab47e49935e4f63c47cbd" id="r_a5261504c9fcab47e49935e4f63c47cbd"><td class="memItemLeft" align="right" valign="top"><a id="a5261504c9fcab47e49935e4f63c47cbd" name="a5261504c9fcab47e49935e4f63c47cbd"></a>
 <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
-<tr class="memdesc:a5261504c9fcab47e49935e4f63c47cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the standard output of a subprocess as a string (if executed with <a class="el" href="classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f" title="Executes command and returns the process&#39; output (written to stdout) as a String.">Process::execute()</a>) <br /></td></tr>
+<tr class="memdesc:a5261504c9fcab47e49935e4f63c47cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the standard output of a subprocess as a string (if executed with <a class="el" href="classasl_1_1_process.html#aeec6db228c3e7129e3e66a9d3bb6297a" title="Executes command with optional arguments, environment vars and a start directory, and returns the pro...">Process::execute()</a>) <br /></td></tr>
 <tr class="separator:a5261504c9fcab47e49935e4f63c47cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f0e77c511d53a6f3ef7bec8018c095" id="r_a66f0e77c511d53a6f3ef7bec8018c095"><td class="memItemLeft" align="right" valign="top"><a id="a66f0e77c511d53a6f3ef7bec8018c095" name="a66f0e77c511d53a6f3ef7bec8018c095"></a>
 <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>errors</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
-<tr class="memdesc:a66f0e77c511d53a6f3ef7bec8018c095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the standard errors of a subprocess as a string (if executed with <a class="el" href="classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f" title="Executes command and returns the process&#39; output (written to stdout) as a String.">Process::execute()</a>) <br /></td></tr>
+<tr class="memdesc:a66f0e77c511d53a6f3ef7bec8018c095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the standard errors of a subprocess as a string (if executed with <a class="el" href="classasl_1_1_process.html#aeec6db228c3e7129e3e66a9d3bb6297a" title="Executes command with optional arguments, environment vars and a start directory, and returns the pro...">Process::execute()</a>) <br /></td></tr>
 <tr class="separator:a66f0e77c511d53a6f3ef7bec8018c095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74efb2a3cae82bd3cf7310b387fe4207" id="r_a74efb2a3cae82bd3cf7310b387fe4207"><td class="memItemLeft" align="right" valign="top"><a id="a74efb2a3cae82bd3cf7310b387fe4207" name="a74efb2a3cae82bd3cf7310b387fe4207"></a>
 <a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">command</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">args</a>=<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;())</td></tr>
-<tr class="memdesc:a74efb2a3cae82bd3cf7310b387fe4207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts executing a program by a command line. <br /></td></tr>
+<tr class="memdesc:a74efb2a3cae82bd3cf7310b387fe4207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts executing a program with optional command line arguments and environment variables. <br /></td></tr>
 <tr class="separator:a74efb2a3cae82bd3cf7310b387fe4207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0659ce466366fc566dc1425c658a019" id="r_ae0659ce466366fc566dc1425c658a019"><td class="memItemLeft" align="right" valign="top"><a id="ae0659ce466366fc566dc1425c658a019" name="ae0659ce466366fc566dc1425c658a019"></a>
 <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ready</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
@@ -203,6 +208,13 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>exitStatus</b> ()</td></tr>
 <tr class="memdesc:a674b88c61390cb2cd29f2eeddbe4a2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the exit code of the process, if finished. <br /></td></tr>
 <tr class="separator:a674b88c61390cb2cd29f2eeddbe4a2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14805d7c45822a35ebcf289f04557e2d" id="r_a14805d7c45822a35ebcf289f04557e2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_process.html#a14805d7c45822a35ebcf289f04557e2d">use</a> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="structasl_1_1_proc_params.html">ProcParams</a> &amp;params)</td></tr>
+<tr class="memdesc:a14805d7c45822a35ebcf289f04557e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parameters to be used by the subprocess when run.  <br /></td></tr>
+<tr class="separator:a14805d7c45822a35ebcf289f04557e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72d84c9b86d8701a2aae2c8936026f4" id="r_ab72d84c9b86d8701a2aae2c8936026f4"><td class="memItemLeft" align="right" valign="top"><a id="ab72d84c9b86d8701a2aae2c8936026f4" name="ab72d84c9b86d8701a2aae2c8936026f4"></a>
+<a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>setSubprocessEnvironment</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_proc_env.html">ProcEnv</a> &amp;<a class="el" href="classasl_1_1_process.html#a8cb553e83de017bfbfe33c627666f5ac">env</a>)</td></tr>
+<tr class="memdesc:ab72d84c9b86d8701a2aae2c8936026f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the environment variables to be used by the subprocess when run. <br /></td></tr>
+<tr class="separator:ab72d84c9b86d8701a2aae2c8936026f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -230,13 +242,28 @@ Static Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>setEnv</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">var</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;value)</td></tr>
 <tr class="memdesc:aaf20891ee25283341198203f9e8f4134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of an environment variable. <br /></td></tr>
 <tr class="separator:aaf20891ee25283341198203f9e8f4134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac586c5de894ad68e3b75324f7e2afc2f" id="r_ac586c5de894ad68e3b75324f7e2afc2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_process.html">Process</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_process.html#ac586c5de894ad68e3b75324f7e2afc2f">execute</a> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">command</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">args</a>=<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;())</td></tr>
-<tr class="memdesc:ac586c5de894ad68e3b75324f7e2afc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes <code>command</code> and returns the process' output (written to <em>stdout</em>) as a <code><a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a></code>.  <br /></td></tr>
-<tr class="separator:ac586c5de894ad68e3b75324f7e2afc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebdddbb76a4f7ca55134e02aaccb9b3" id="r_a3ebdddbb76a4f7ca55134e02aaccb9b3"><td class="memItemLeft" align="right" valign="top"><a id="a3ebdddbb76a4f7ca55134e02aaccb9b3" name="a3ebdddbb76a4f7ca55134e02aaccb9b3"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_proc_env.html">ProcEnv</a>&#160;</td><td class="memItemRight" valign="bottom"><b>environment</b> ()</td></tr>
+<tr class="memdesc:a3ebdddbb76a4f7ca55134e02aaccb9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a dictionary of all environment variables of the current process. <br /></td></tr>
+<tr class="separator:a3ebdddbb76a4f7ca55134e02aaccb9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec6db228c3e7129e3e66a9d3bb6297a" id="r_aeec6db228c3e7129e3e66a9d3bb6297a"><td class="memItemLeft" align="right" valign="top"><a id="aeec6db228c3e7129e3e66a9d3bb6297a" name="aeec6db228c3e7129e3e66a9d3bb6297a"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_process.html">Process</a>&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">command</a>, <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt; &amp;<a class="el" href="classasl_1_1_array.html">args</a>=<a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;(), <a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="structasl_1_1_proc_params.html">ProcParams</a> &amp;<a class="el" href="classasl_1_1_process.html#a8cb553e83de017bfbfe33c627666f5ac">env</a>=<a class="el" href="structasl_1_1_proc_params.html">ProcParams</a>())</td></tr>
+<tr class="memdesc:aeec6db228c3e7129e3e66a9d3bb6297a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes <code>command</code> with optional arguments, environment vars and a start directory, and returns the process' data (including output (written to <em>stdout</em> and <em>stderr</em>);. <br /></td></tr>
+<tr class="separator:aeec6db228c3e7129e3e66a9d3bb6297a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712270ee97ba8c1eb3239cd8d1959c78" id="r_a712270ee97ba8c1eb3239cd8d1959c78"><td class="memItemLeft" align="right" valign="top"><a id="a712270ee97ba8c1eb3239cd8d1959c78" name="a712270ee97ba8c1eb3239cd8d1959c78"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_process_info.html">ProcessInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>list</b> ()</td></tr>
+<tr class="memdesc:a712270ee97ba8c1eb3239cd8d1959c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of all running processes in the system, with their PID and executable path. <br /></td></tr>
+<tr class="separator:a712270ee97ba8c1eb3239cd8d1959c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb0c0412486acb8fc37957d189ca072" id="r_a4eb0c0412486acb8fc37957d189ca072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_process.html#a4eb0c0412486acb8fc37957d189ca072">kill</a> (<a class="el" href="classasl_1_1_array.html">int</a> <a class="el" href="classasl_1_1_process.html#ae418d6c60c77bee5db1cc314b683c0f2">pid</a>)</td></tr>
+<tr class="memdesc:a4eb0c0412486acb8fc37957d189ca072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kills the process with the given PID.  <br /></td></tr>
+<tr class="separator:a4eb0c0412486acb8fc37957d189ca072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e14aaca571589e75d59c3b4aa391a9" id="r_a05e14aaca571589e75d59c3b4aa391a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_process.html#a05e14aaca571589e75d59c3b4aa391a9">killAll</a> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;name)</td></tr>
+<tr class="memdesc:a05e14aaca571589e75d59c3b4aa391a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kills all processes with the given name.  <br /></td></tr>
+<tr class="separator:a05e14aaca571589e75d59c3b4aa391a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac586c5de894ad68e3b75324f7e2afc2f" name="ac586c5de894ad68e3b75324f7e2afc2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac586c5de894ad68e3b75324f7e2afc2f">&#9670;&#160;</a></span>execute()</h2>
+<a id="a4eb0c0412486acb8fc37957d189ca072" name="a4eb0c0412486acb8fc37957d189ca072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb0c0412486acb8fc37957d189ca072">&#9670;&#160;</a></span>kill()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,21 +272,11 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_process.html">Process</a> execute </td>
+          <td class="memname"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a> kill </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>command</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">int</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em> = <code><a class="el" href="classasl_1_1_array.html">Array</a>&lt;&#160;<a class="el" href="classasl_1_1_string.html">String</a>&#160;&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -269,8 +286,66 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Executes <code>command</code> and returns the process' output (written to <em>stdout</em>) as a <code><a class="el" href="classasl_1_1_string.html" title="String represents a character string that behaves similarly to JavaScript strings in that it can be c...">String</a></code>. </p>
-<p>Add a '*' at the end of the command name to show the program's window in case of Win32 apps. </p>
+<p>Kills the process with the given PID. </p>
+<p>Returns true if the process was killed successfully. </p>
+
+</div>
+</div>
+<a id="a05e14aaca571589e75d59c3b4aa391a9" name="a05e14aaca571589e75d59c3b4aa391a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e14aaca571589e75d59c3b4aa391a9">&#9670;&#160;</a></span>killAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">int</a> killAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kills all processes with the given name. </p>
+<p>Returns the number of processes killed. </p>
+
+</div>
+</div>
+<a id="a14805d7c45822a35ebcf289f04557e2d" name="a14805d7c45822a35ebcf289f04557e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14805d7c45822a35ebcf289f04557e2d">&#9670;&#160;</a></span>use()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classasl_1_1_array.html">void</a> use </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="structasl_1_1_proc_params.html">ProcParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the parameters to be used by the subprocess when run. </p>
+<p>This includes environment variables, working directory, and other options. </p>
 
 </div>
 </div>

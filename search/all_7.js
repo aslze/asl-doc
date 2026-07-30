@@ -4,7 +4,7 @@ var searchData=
   ['factory_1',['Factory',['../classasl_1_1_factory.html',1,'asl']]],
   ['factory_20class_20and_20macros_2',['Factory class and macros',['../group___factory.html',1,'']]],
   ['fg_3',['fg',['../classasl_1_1_console.html#aa8fd8e5e7b6d9a4346094f5357a8f065',1,'asl::Console']]],
-  ['file_4',['file',['../classasl_1_1_file.html',1,'File'],['../classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b',1,'asl::File::File()'],['../classasl_1_1_file.html#ab5cfdf44e333e62051d88c279fa83b6c',1,'asl::File::File(const String &amp;name)'],['../classasl_1_1_file.html#a208d11162405a15bab26acdb81746562',1,'asl::File::File(const String &amp;name, OpenMode mode)']]],
+  ['file_4',['file',['../classasl_1_1_file.html',1,'File'],['../classasl_1_1_file.html#a208d11162405a15bab26acdb81746562',1,'asl::File::File(const String &amp;name, OpenMode mode)'],['../classasl_1_1_file.html#aa2399b233765f85aead662a2f1e67c4b',1,'asl::File::File()'],['../classasl_1_1_file.html#ab5cfdf44e333e62051d88c279fa83b6c',1,'asl::File::File(const String &amp;name)']]],
   ['filename_5',['fileName',['../classasl_1_1_ini_file.html#a041ac27f914cd6ed2ca57337d45bf869',1,'asl::IniFile']]],
   ['files_6',['files',['../classasl_1_1_directory.html#a9d05b79036e163c3a08b54743217061f',1,'asl::Directory']]],
   ['filter_7',['filter',['../classasl_1_1_array.html#af978710d306340e2d6c9e19ced23c924',1,'asl::Array']]],
@@ -29,6 +29,7 @@ var searchData=
   ['fromlocal_26',['fromLocal',['../classasl_1_1_string.html#a26b39558a9485541e7eae07bd8ffc2d1',1,'asl::String']]],
   ['full_27',['FULL',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58ad08f8ac0aa8dfb59589824359772459e',1,'asl::Date']]],
   ['function_28',['Function',['../structasl_1_1_function.html',1,'asl']]],
-  ['function_3c_20void_2c_20const_20httpstatus_20_26_20_3e_29',['Function&lt; void, const HttpStatus &amp; &gt;',['../structasl_1_1_function.html',1,'asl']]],
-  ['functions_30',['Global functions',['../group___global.html',1,'']]]
+  ['function_3c_20void_20_3e_29',['Function&lt; void &gt;',['../structasl_1_1_function.html',1,'asl']]],
+  ['function_3c_20void_2c_20const_20httpstatus_20_26_20_3e_30',['Function&lt; void, const HttpStatus &amp; &gt;',['../structasl_1_1_function.html',1,'asl']]],
+  ['functions_31',['Global functions',['../group___global.html',1,'']]]
 ];

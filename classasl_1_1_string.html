@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_string.html',''); initRes
 <div class="line"><span class="keywordflow">if</span>( !<a class="code hl_class" href="classasl_1_1_array.html">email</a>.<a class="code hl_function" href="classasl_1_1_array.html#aae2d1504474002708583858f474c4d55">contains</a>(<span class="charliteral">&#39;@&#39;</span>) ) {}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classasl_1_1_array.html">Array&lt;String&gt;</a> parts = path.split(<span class="stringliteral">&quot;/&quot;</span>); <span class="comment">// cut a path into its parts</span></div>
-<div class="ttc" id="aclassasl_1_1_array_html_aae2d1504474002708583858f474c4d55"><div class="ttname"><a href="classasl_1_1_array.html#aae2d1504474002708583858f474c4d55">asl::Array::contains</a></div><div class="ttdeci">bool contains(const T &amp;x) const</div><div class="ttdoc">Returns true if the array contains an element equal to x.</div><div class="ttdef"><b>Definition</b> Array.h:320</div></div>
+<div class="ttc" id="aclassasl_1_1_array_html_aae2d1504474002708583858f474c4d55"><div class="ttname"><a href="classasl_1_1_array.html#aae2d1504474002708583858f474c4d55">asl::Array::contains</a></div><div class="ttdeci">bool contains(const T &amp;x) const</div><div class="ttdoc">Returns true if the array contains an element equal to x.</div><div class="ttdef"><b>Definition</b> Array.h:324</div></div>
 <div class="ttc" id="aclassasl_1_1_string_html_a91ccf483645fb318fe4cc31caa081c44"><div class="ttname"><a href="classasl_1_1_string.html#a91ccf483645fb318fe4cc31caa081c44">asl::String::trim</a></div><div class="ttdeci">String &amp; trim()</div><div class="ttdoc">Removes space at the beginning and end of the string.</div></div>
 </div><!-- fragment --><p>Remember in UTF-8 characters can have different byte-length. Use the <a class="el" href="classasl_1_1_string.html#a91213974fa3ac3959b1c355a9e588f8d" title="Returns the length of this string in bytes.">length()</a> method to get the number of bytes (i.e. code units) and <a class="el" href="classasl_1_1_string.html#a0e2c15c517007b91c37b2aa68bf2484a" title="Returns the number of full characters (code points) in the string.">count()</a> to get the number of code points (i.e. actual characters). To get the individual wide characters you can use the <a class="el" href="classasl_1_1_string.html#a68b4ed8671ac377a3527f80de50e8817" title="Returns a list of Unicode characters (code points) in this string.">chars()</a> method which returns an array of code points or iterate the string with a <code>foreach</code> loop.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_string.html">String</a> <a class="code hl_class" href="classasl_1_1_array.html">euros</a> = <span class="stringliteral">&quot;3€&quot;</span>;</div>
@@ -470,7 +470,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a string consisting of character <code>c</code> repeated <code>n</code> times. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>Use <code>String::repeat()</code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Use <code>String::repeat()</code> instead. </dd></dl>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns a list of strings obtained by cutting this string by whitespace. </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">String</a>(<span class="stringliteral">&quot;  a  \t\n b  c   &quot;</span>).split() -&gt; [<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>, <span class="stringliteral">&quot;c&quot;</span>]</div>
-<div class="ttc" id="aclassasl_1_1_string_html_a8db865e64c3c3f65ec6a0b6fd8c09a94"><div class="ttname"><a href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">asl::String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Constructs an empty string.</div><div class="ttdef"><b>Definition</b> String.h:154</div></div>
+<div class="ttc" id="aclassasl_1_1_string_html_a8db865e64c3c3f65ec6a0b6fd8c09a94"><div class="ttname"><a href="classasl_1_1_string.html#a8db865e64c3c3f65ec6a0b6fd8c09a94">asl::String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Constructs an empty string.</div><div class="ttdef"><b>Definition</b> String.h:162</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

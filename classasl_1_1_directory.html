@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('classasl_1_1_directory.html',''); init
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classasl_1_1_directory-members.html">List of all members</a>  </div>
@@ -108,8 +109,8 @@ $(document).ready(function(){initNavTree('classasl_1_1_directory.html',''); init
 <div class="line">}</div>
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array</a></div><div class="ttdoc">An Array is a contiguous and resizable array of any type of elements.</div><div class="ttdef"><b>Definition</b> Array.h:77</div></div>
 <div class="ttc" id="aclassasl_1_1_date_html_ad766d6222d4a7710cb5df9bb78014d58"><div class="ttname"><a href="classasl_1_1_date.html#ad766d6222d4a7710cb5df9bb78014d58">asl::Date::now</a></div><div class="ttdeci">static Date now()</div><div class="ttdoc">Returns the current date-time.</div></div>
-<div class="ttc" id="aclassasl_1_1_directory_html"><div class="ttname"><a href="classasl_1_1_directory.html">asl::Directory</a></div><div class="ttdoc">This class allows enumerating the contents of a directory, its files and subdirectories,...</div><div class="ttdef"><b>Definition</b> Directory.h:55</div></div>
-<div class="ttc" id="aclassasl_1_1_directory_html_a9d05b79036e163c3a08b54743217061f"><div class="ttname"><a href="classasl_1_1_directory.html#a9d05b79036e163c3a08b54743217061f">asl::Directory::files</a></div><div class="ttdeci">Array&lt; File &gt; files(const String &amp;which=&quot;*&quot;)</div><div class="ttdoc">Returns the files in a directory, optionally matching a wildcard or several separated by '|'.</div><div class="ttdef"><b>Definition</b> Directory.h:97</div></div>
+<div class="ttc" id="aclassasl_1_1_directory_html"><div class="ttname"><a href="classasl_1_1_directory.html">asl::Directory</a></div><div class="ttdoc">This class allows enumerating the contents of a directory, its files and subdirectories,...</div><div class="ttdef"><b>Definition</b> Directory.h:86</div></div>
+<div class="ttc" id="aclassasl_1_1_directory_html_a9d05b79036e163c3a08b54743217061f"><div class="ttname"><a href="classasl_1_1_directory.html#a9d05b79036e163c3a08b54743217061f">asl::Directory::files</a></div><div class="ttdeci">Array&lt; File &gt; files(const String &amp;which=&quot;*&quot;)</div><div class="ttdoc">Returns the files in a directory, optionally matching a wildcard or several separated by '|'.</div><div class="ttdef"><b>Definition</b> Directory.h:134</div></div>
 <div class="ttc" id="aclassasl_1_1_file_html"><div class="ttname"><a href="classasl_1_1_file.html">asl::File</a></div><div class="ttdoc">Class File represents a file in the filesystem.</div><div class="ttdef"><b>Definition</b> File.h:63</div></div>
 </div><!-- fragment --><p>In a <a class="el" href="classasl_1_1_directory.html" title="This class allows enumerating the contents of a directory, its files and subdirectories,...">Directory</a> object, <code><a class="el" href="classasl_1_1_directory.html#a9d05b79036e163c3a08b54743217061f" title="Returns the files in a directory, optionally matching a wildcard or several separated by &#39;|&#39;.">files()</a></code> enumerates files, <code><a class="el" href="classasl_1_1_directory.html#a495087ad83d6cb3c109153f3502a6ff8" title="Returns the subdirectories of a directory, optionally matching a wildcard.">subdirs()</a></code> enumerates subdirectories, and <code><a class="el" href="classasl_1_1_directory.html#a66dc6c8232a211345bdbb90679d185e3" title="Returns the contents of a directory, optionally matching a wildcard.">items()</a></code> enumerates both. In all three a wildcard can be given as argument to filter the search.</p>
 <p>The wildcard can contain more than one pattern separated by <code>|</code>, like <code>dir.files("*.txt|*.doc")</code>. If the <em>directory</em> actually refers to a file, then only that file is returned.</p>
@@ -130,9 +131,25 @@ $(document).ready(function(){initNavTree('classasl_1_1_directory.html',''); init
 <div class="ttc" id="aclassasl_1_1_directory_html_a15fcdf1fbf4c2b8c962581e1575b6a32"><div class="ttname"><a href="classasl_1_1_directory.html#a15fcdf1fbf4c2b8c962581e1575b6a32">asl::Directory::move</a></div><div class="ttdeci">static bool move(const String &amp;from, const String &amp;to)</div><div class="ttdoc">Moves or renames file or directory from to to which can be a full name or a destination directory.</div></div>
 <div class="ttc" id="aclassasl_1_1_directory_html_a4c909abf5eba9c47321ad883afe7a81a"><div class="ttname"><a href="classasl_1_1_directory.html#a4c909abf5eba9c47321ad883afe7a81a">asl::Directory::copy</a></div><div class="ttdeci">static bool copy(const String &amp;from, const String &amp;to, bool onlyContent=false)</div><div class="ttdoc">Copies file or directory from to to which can be a full name or a destination directory.</div></div>
 <div class="ttc" id="aclassasl_1_1_directory_html_a5c145e5ac8508626dae54e97b56ffc5c"><div class="ttname"><a href="classasl_1_1_directory.html#a5c145e5ac8508626dae54e97b56ffc5c">asl::Directory::create</a></div><div class="ttdeci">static bool create(const String &amp;name)</div><div class="ttdoc">Creates a new directory (and its ancestors if they don't exist), returns false on failure.</div></div>
+</div><!-- fragment --><p>Monitoring a directory for changes is also possible with the <code><a class="el" href="classasl_1_1_directory.html#a992cc743adb7108081223df29eeeb1ce" title="Waits for changes in the directory and returns the next event (new file, deleted file).">wait()</a></code> function, which blocks until a change occurs and returns.</p>
+<div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_directory.html">Directory</a> <a class="code hl_class" href="classasl_1_1_array.html">dir</a>(<span class="stringliteral">&quot;/watch-dir&quot;</span>);</div>
+<div class="line"><span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line">{</div>
+<div class="line">    DirEvent <span class="keyword">event</span> = <a class="code hl_class" href="classasl_1_1_array.html">dir</a>.wait();</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code hl_class" href="classasl_1_1_array.html">event</a>.type == DirEvent::NEW_FILE)</div>
+<div class="line">        printf(<span class="stringliteral">&quot;New file: %s\n&quot;</span>, *<a class="code hl_class" href="classasl_1_1_array.html">event</a>.name);</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_class" href="classasl_1_1_array.html">event</a>.type == DirEvent::DELETED)</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Deleted: %s\n&quot;</span>, *<a class="code hl_class" href="classasl_1_1_array.html">event</a>.name);</div>
+<div class="line">}</div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;asl/Directory.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6ea26687fc6b796b4e410106d5b8bc68" id="r_a6ea26687fc6b796b4e410106d5b8bc68"><td class="memItemLeft" align="right" valign="top"><a id="a6ea26687fc6b796b4e410106d5b8bc68" name="a6ea26687fc6b796b4e410106d5b8bc68"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#a6ea26687fc6b796b4e410106d5b8bc68">Place</a> </td></tr>
+<tr class="memdesc:a6ea26687fc6b796b4e410106d5b8bc68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of special directories that can be obtained with <code><a class="el" href="classasl_1_1_directory.html#a2f869a9dd36d621074bb7be470c8b1a0" title="Returns the path of a special directory, like the user&#39;s home directory, desktop, documents,...">Directory::special()</a></code> <br /></td></tr>
+<tr class="separator:a6ea26687fc6b796b4e410106d5b8bc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7ed3a2a1034415cbfdefeb63a1321dd" id="r_ab7ed3a2a1034415cbfdefeb63a1321dd"><td class="memItemLeft" align="right" valign="top"><a id="ab7ed3a2a1034415cbfdefeb63a1321dd" name="ab7ed3a2a1034415cbfdefeb63a1321dd"></a>
@@ -167,6 +184,13 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">Array</a>&lt; <a class="el" href="classasl_1_1_file.html">File</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subdirs</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">which</a>=&quot;*&quot;)</td></tr>
 <tr class="memdesc:a495087ad83d6cb3c109153f3502a6ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the subdirectories of a directory, optionally matching a wildcard. <br /></td></tr>
 <tr class="separator:a495087ad83d6cb3c109153f3502a6ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992cc743adb7108081223df29eeeb1ce" id="r_a992cc743adb7108081223df29eeeb1ce"><td class="memItemLeft" align="right" valign="top">DirEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasl_1_1_directory.html#a992cc743adb7108081223df29eeeb1ce">wait</a> ()</td></tr>
+<tr class="memdesc:a992cc743adb7108081223df29eeeb1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for changes in the directory and returns the next event (new file, deleted file).  <br /></td></tr>
+<tr class="separator:a992cc743adb7108081223df29eeeb1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843b44822951bf5a2a69b4644934abaf" id="r_a843b44822951bf5a2a69b4644934abaf"><td class="memItemLeft" align="right" valign="top"><a id="a843b44822951bf5a2a69b4644934abaf" name="a843b44822951bf5a2a69b4644934abaf"></a>
+<a class="el" href="classasl_1_1_array.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numEvents</b> () <a class="el" href="classasl_1_1_array.html">const</a></td></tr>
+<tr class="memdesc:a843b44822951bf5a2a69b4644934abaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of events that have occurred in the directory since the last call to <code><a class="el" href="classasl_1_1_directory.html#a992cc743adb7108081223df29eeeb1ce" title="Waits for changes in the directory and returns the next event (new file, deleted file).">wait()</a></code> <br /></td></tr>
+<tr class="separator:a843b44822951bf5a2a69b4644934abaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -213,6 +237,10 @@ Static Public Member Functions</h2></td></tr>
 <a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_directory.html#a7d4160e1b36359c74dc6c5093547910b">path</a>)</td></tr>
 <tr class="memdesc:a10215ef69eb5c6f3ea1538d6d838a147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all content in the given directory (recursively) but not the directory itself, and returns true on success (USE WITH CARE!) <br /></td></tr>
 <tr class="separator:a10215ef69eb5c6f3ea1538d6d838a147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f869a9dd36d621074bb7be470c8b1a0" id="r_a2f869a9dd36d621074bb7be470c8b1a0"><td class="memItemLeft" align="right" valign="top"><a id="a2f869a9dd36d621074bb7be470c8b1a0" name="a2f869a9dd36d621074bb7be470c8b1a0"></a>
+<a class="el" href="classasl_1_1_array.html">static</a> <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>special</b> (<a class="el" href="classasl_1_1_directory.html#a6ea26687fc6b796b4e410106d5b8bc68">Place</a> p)</td></tr>
+<tr class="memdesc:a2f869a9dd36d621074bb7be470c8b1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path of a special directory, like the user's home directory, desktop, documents, downloads, etc. <br /></td></tr>
+<tr class="separator:a2f869a9dd36d621074bb7be470c8b1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea5e65a33246ab3ca02c127a4cb63d5" id="r_aaea5e65a33246ab3ca02c127a4cb63d5"><td class="memItemLeft" align="right" valign="top"><a id="aaea5e65a33246ab3ca02c127a4cb63d5" name="aaea5e65a33246ab3ca02c127a4cb63d5"></a>
 <a class="el" href="classasl_1_1_array.html">static</a> Space&#160;</td><td class="memItemRight" valign="bottom"><b>freeSpace</b> (<a class="el" href="classasl_1_1_array.html">const</a> <a class="el" href="classasl_1_1_string.html">String</a> &amp;<a class="el" href="classasl_1_1_array.html">dir</a>)</td></tr>
 <tr class="memdesc:aaea5e65a33246ab3ca02c127a4cb63d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns free space and total size of a file system. <br /></td></tr>
@@ -261,6 +289,26 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Copies file or directory <code>from</code> to <code>to</code> which can be a full name or a destination directory. </p>
 <p>If <code>onlyContent</code> is true, the content of the directory is copied but not the directory itself. </p>
+
+</div>
+</div>
+<a id="a992cc743adb7108081223df29eeeb1ce" name="a992cc743adb7108081223df29eeeb1ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992cc743adb7108081223df29eeeb1ce">&#9670;&#160;</a></span>wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DirEvent wait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits for changes in the directory and returns the next event (new file, deleted file). </p>
+<p>This function blocks until an event occurs. </p>
 
 </div>
 </div>

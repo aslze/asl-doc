@@ -14,8 +14,11 @@ var classasl_1_1_process =
     [ "ready", "classasl_1_1_process.html#ae0659ce466366fc566dc1425c658a019", null ],
     [ "run", "classasl_1_1_process.html#a74efb2a3cae82bd3cf7310b387fe4207", null ],
     [ "running", "classasl_1_1_process.html#aaa6432a11cc8aa43cdcac30e43bf038f", null ],
+    [ "setStartDirectory", "classasl_1_1_process.html#ae0cb5233d082917c24bd987ad5c3d0c6", null ],
+    [ "setSubprocessEnvironment", "classasl_1_1_process.html#ab72d84c9b86d8701a2aae2c8936026f4", null ],
     [ "started", "classasl_1_1_process.html#af41b8630e5466023133f31442906e682", null ],
     [ "success", "classasl_1_1_process.html#a3213f56441bb36ed3f2cf2caae00d5f4", null ],
+    [ "use", "classasl_1_1_process.html#a14805d7c45822a35ebcf289f04557e2d", null ],
     [ "wait", "classasl_1_1_process.html#a95db92d0c2ab12b431e38f7642c918a2", null ],
     [ "writeInput", "classasl_1_1_process.html#af4d8d0e01cb383637044372901821719", null ],
     [ "writeInput", "classasl_1_1_process.html#a0f38415de96160130fbf537b390e628f", null ]

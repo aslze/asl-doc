@@ -6,5 +6,6 @@ var classasl_1_1_http_server =
     [ "serve", "classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161", null ],
     [ "serveFile", "classasl_1_1_http_server.html#a84b30a79171ee83b75738431c80eb507", null ],
     [ "setCrossDomain", "classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7", null ],
+    [ "setMaxUploadSize", "classasl_1_1_http_server.html#ae1afc46c3d3743878f3c0c3f8244f33c", null ],
     [ "setRoot", "classasl_1_1_http_server.html#aca9748a3512cc787bb1b1e012fbc2354", null ]
 ];

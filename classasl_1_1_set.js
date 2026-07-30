@@ -4,6 +4,7 @@ var classasl_1_1_set =
     [ "contains", "classasl_1_1_set.html#a33d7cc565dbce650cf5fa1e61aed5b35", null ],
     [ "contains", "classasl_1_1_set.html#aae2d1504474002708583858f474c4d55", null ],
     [ "containsAny", "classasl_1_1_set.html#ad75e4b86c64b0f87651fd3819a71558c", null ],
+    [ "empty", "classasl_1_1_set.html#a644718bb2fb240de962dc3c9a1fdf0dc", null ],
     [ "in", "classasl_1_1_set.html#af2b8badfeb159e1ef9e21aa878075a4e", null ],
     [ "notIn", "classasl_1_1_set.html#a647adcd79dcb6aab1012cd1ab53c5d4d", null ],
     [ "operator!=", "classasl_1_1_set.html#abe50d64e9688f8682a86aecb7c8f2f6f", null ],

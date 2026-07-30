@@ -14,7 +14,6 @@ var classasl_1_1_socket =
     [ "listen", "classasl_1_1_socket.html#af4926e2e36a362c7b6f3926c5d25151d", null ],
     [ "localAddress", "classasl_1_1_socket.html#af96eba3cd573fb1481412ac66dfe75ef", null ],
     [ "operator<<", "classasl_1_1_socket.html#ae671d6f3afd3f3a77008ae28ce328e78", null ],
-    [ "operator>>", "classasl_1_1_socket.html#a252640f7da3faf4d603ee38a0e7ad095", null ],
     [ "operator>>", "classasl_1_1_socket.html#a89a80e1ace31829ba2e10b874ef89a6d", null ],
     [ "read", "classasl_1_1_socket.html#a30f3e845a8b141385dae5f12f9507d89", null ],
     [ "read", "classasl_1_1_socket.html#a494f625565a99b19813e03c618e82daf", null ],

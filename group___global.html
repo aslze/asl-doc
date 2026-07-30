@@ -164,12 +164,6 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:gaf2fa1cf296546d5435c7c72c61a8d02d"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>rad2deg</b> (T x)</td></tr>
 <tr class="memdesc:gaf2fa1cf296546d5435c7c72c61a8d02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>x</code> radians converted to degrees. <br /></td></tr>
 <tr class="separator:gaf2fa1cf296546d5435c7c72c61a8d02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaff8a19954dde92de7f3b079cc317ba9" id="r_gaaff8a19954dde92de7f3b079cc317ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#gaaff8a19954dde92de7f3b079cc317ba9">encodeUrl</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
-<tr class="memdesc:gaaff8a19954dde92de7f3b079cc317ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a string with percent encoding for use in a URL.  <br /></td></tr>
-<tr class="separator:gaaff8a19954dde92de7f3b079cc317ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e3945734b1e83714751c1fe4e1bf99b" id="r_ga1e3945734b1e83714751c1fe4e1bf99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___global.html#ga1e3945734b1e83714751c1fe4e1bf99b">decodeUrl</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
-<tr class="memdesc:ga1e3945734b1e83714751c1fe4e1bf99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a string with percent encoding.  <br /></td></tr>
-<tr class="separator:ga1e3945734b1e83714751c1fe4e1bf99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b45d14ba5e1a942da23a731d636f7fd" id="r_ga0b45d14ba5e1a942da23a731d636f7fd"><td class="memItemLeft" align="right" valign="top"><a id="ga0b45d14ba5e1a942da23a731d636f7fd" name="ga0b45d14ba5e1a942da23a731d636f7fd"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>now</b> ()</td></tr>
 <tr class="memdesc:ga0b45d14ba5e1a942da23a731d636f7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as a real number in seconds since a fixed epoch (precision is platform-dependent, often around a microsecond). <br /></td></tr>
@@ -202,14 +196,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>usleep</b> (int us)</
 <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>decodeHex</b> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;src)</td></tr>
 <tr class="memdesc:gab79893b28cdeb317a7c8d1c2e9b6b1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a hexadecimal encoded string into a byte array. <br /></td></tr>
 <tr class="separator:gab79893b28cdeb317a7c8d1c2e9b6b1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5cf5b29921907b007dba61589735d982" id="r_ga5cf5b29921907b007dba61589735d982"><td class="memItemLeft" align="right" valign="top"><a id="ga5cf5b29921907b007dba61589735d982" name="ga5cf5b29921907b007dba61589735d982"></a>
-static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>encode</b> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s, bool component=false)</td></tr>
-<tr class="memdesc:ga5cf5b29921907b007dba61589735d982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a string with percent encoding for chars not allowed in URLs, by default more characters are left untouched (including '/', ':', like in JS <code>encodeURI()</code>), if the <code>component</code> flag is set, then more characters are encoded (like JS <code>encodeURIComponent()</code>) <br /></td></tr>
-<tr class="separator:ga5cf5b29921907b007dba61589735d982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2" id="r_gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2"><td class="memItemLeft" align="right" valign="top"><a id="gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2" name="gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2"></a>
-static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>decode</b> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s)</td></tr>
-<tr class="memdesc:gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a string containing percent-encoded characters. <br /></td></tr>
-<tr class="separator:gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga0c8186d9b9b7880309c27230bbb5e69d" name="ga0c8186d9b9b7880309c27230bbb5e69d"></a>
@@ -227,65 +213,6 @@ static <a class="el" href="classasl_1_1_string.html">String</a>&#160;</td><td cl
 <p>An unsigned byte. </p>
 <p>This is also included in the global scope (<code>using <a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d" title="An unsigned byte.">asl::byte</a>;</code>) for compatibility with old code, unless <code>ASL_NO_GLOBAL_BYTE</code> is defined.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>This type will not be added to the global scope anymore; code should use <code><a class="el" href="group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d" title="An unsigned byte.">asl::byte</a></code> </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga1e3945734b1e83714751c1fe4e1bf99b" name="ga1e3945734b1e83714751c1fe4e1bf99b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e3945734b1e83714751c1fe4e1bf99b">&#9670;&#160;</a></span>decodeUrl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_string.html">String</a> decodeUrl </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Decodes a string with percent encoding. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use <a class="el" href="group___global.html#gae5c7f2ba6d49ed4b1fd2847ad8fdf3f2" title="Decodes a string containing percent-encoded characters.">Url::decode()</a> </dd></dl>
-
-</div>
-</div>
-<a id="gaaff8a19954dde92de7f3b079cc317ba9" name="gaaff8a19954dde92de7f3b079cc317ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaff8a19954dde92de7f3b079cc317ba9">&#9670;&#160;</a></span>encodeUrl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_string.html">String</a> encodeUrl </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Encodes a string with percent encoding for use in a URL. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Use <a class="el" href="group___global.html#ga5cf5b29921907b007dba61589735d982" title="Encodes a string with percent encoding for chars not allowed in URLs, by default more characters are ...">Url::encode()</a> </dd></dl>
 
 </div>
 </div>

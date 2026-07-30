@@ -19,8 +19,8 @@ var group___h_t_t_p =
       [ "sendHeaders", "classasl_1_1_http_message.html#ac84497f55b0206c1b4cd2b9d034c6957", null ],
       [ "setHeader", "classasl_1_1_http_message.html#a52593078e5cd7510dd80c19d100e37af", null ],
       [ "text", "classasl_1_1_http_message.html#a54804c489764ed1e4180199953fb360c", null ],
-      [ "write", "classasl_1_1_http_message.html#aeaf3373ebcd7ede5d938418cb277b24f", null ],
       [ "write", "classasl_1_1_http_message.html#a58944fc497c2494c84d5d0621015a2cd", null ],
+      [ "write", "classasl_1_1_http_message.html#a93f980dc60da998c3b5a5ef2eece7edb", null ],
       [ "writeFile", "classasl_1_1_http_message.html#a78745cb12fe387c226fad914de472d6e", null ]
     ] ],
     [ "HttpRequest", "classasl_1_1_http_request.html", [
@@ -63,6 +63,7 @@ var group___h_t_t_p =
       [ "serve", "classasl_1_1_http_server.html#a0b16fecfe08b1deb60f9f5faa4370161", null ],
       [ "serveFile", "classasl_1_1_http_server.html#a84b30a79171ee83b75738431c80eb507", null ],
       [ "setCrossDomain", "classasl_1_1_http_server.html#ad8771be7e25d1b20d0b7e071f32419c7", null ],
+      [ "setMaxUploadSize", "classasl_1_1_http_server.html#ae1afc46c3d3743878f3c0c3f8244f33c", null ],
       [ "setRoot", "classasl_1_1_http_server.html#aca9748a3512cc787bb1b1e012fbc2354", null ]
     ] ],
     [ "WebSocket", "classasl_1_1_web_socket.html", [

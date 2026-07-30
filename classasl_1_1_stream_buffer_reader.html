@@ -100,13 +100,13 @@ $(document).ready(function(){initNavTree('classasl_1_1_stream_buffer_reader.html
 <div class="textblock"><p>This class allows reading a memory buffer as a binary stream. </p>
 <p>It can read bytes, integers of different sizes and floating point numbers in big-endian or little-endian byte order. You have to make sure you don't read past the bounds of the buffer.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classasl_1_1_array.html">ByteArray</a> data = <a class="code hl_class" href="classasl_1_1_file.html">File</a>(<span class="stringliteral">&quot;data.bin&quot;</span>).<a class="code hl_function" href="classasl_1_1_file.html#a8c278aaf9abda301edda81159a171c63">content</a>();</div>
-<div class="line"><a class="code hl_class" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> buffer (data, ENDIAN_BIG);</div>
-<div class="line"><span class="keywordtype">int</span> n = buffer.read&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><a class="code hl_class" href="classasl_1_1_stream_buffer_reader.html">StreamBufferReader</a> <a class="code hl_class" href="classasl_1_1_array.html">buffer</a> (data, ENDIAN_BIG);</div>
+<div class="line"><span class="keywordtype">int</span> n = <a class="code hl_class" href="classasl_1_1_array.html">buffer</a>.read&lt;<span class="keywordtype">int</span>&gt;();</div>
 <div class="line"><span class="keywordtype">double</span> x, y, z;</div>
-<div class="line">buffer &gt;&gt; x &gt;&gt; y &gt;&gt; z;</div>
+<div class="line"><a class="code hl_class" href="classasl_1_1_array.html">buffer</a> &gt;&gt; x &gt;&gt; y &gt;&gt; z;</div>
 <div class="ttc" id="aclassasl_1_1_array_html"><div class="ttname"><a href="classasl_1_1_array.html">asl::Array&lt; byte &gt;</a></div></div>
 <div class="ttc" id="aclassasl_1_1_file_html"><div class="ttname"><a href="classasl_1_1_file.html">asl::File</a></div><div class="ttdoc">Class File represents a file in the filesystem.</div><div class="ttdef"><b>Definition</b> File.h:63</div></div>
-<div class="ttc" id="aclassasl_1_1_file_html_a8c278aaf9abda301edda81159a171c63"><div class="ttname"><a href="classasl_1_1_file.html#a8c278aaf9abda301edda81159a171c63">asl::File::content</a></div><div class="ttdeci">ByteArray content()</div><div class="ttdoc">Returns the binary content of the file as an array of bytes.</div></div>
+<div class="ttc" id="aclassasl_1_1_file_html_a8c278aaf9abda301edda81159a171c63"><div class="ttname"><a href="classasl_1_1_file.html#a8c278aaf9abda301edda81159a171c63">asl::File::content</a></div><div class="ttdeci">ByteArray content()</div><div class="ttdoc">Returns the binary content of the file as an array of bytes.</div><div class="ttdef"><b>Definition</b> File.h:217</div></div>
 <div class="ttc" id="aclassasl_1_1_stream_buffer_reader_html"><div class="ttname"><a href="classasl_1_1_stream_buffer_reader.html">asl::StreamBufferReader</a></div><div class="ttdoc">This class allows reading a memory buffer as a binary stream.</div><div class="ttdef"><b>Definition</b> StreamBuffer.h:60</div></div>
 </div><!-- fragment --> </div>
 <p><code>#include &lt;asl/StreamBuffer.h&gt;</code></p>
