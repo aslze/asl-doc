@@ -5,7 +5,7 @@ var searchData=
   ['binary_20data_2',['Binary data',['../group___binary.html',1,'']]],
   ['bind_3',['bind',['../classasl_1_1_socket.html#afc75b2999f19ffc456b961bbcc1d27ac',1,'asl::Socket::bind(const String &amp;ip, int port)'],['../classasl_1_1_socket.html#a0a8d8c142273a22d37673b7e3a651a7f',1,'asl::Socket::bind(int port)'],['../classasl_1_1_socket_server.html#a0a8d8c142273a22d37673b7e3a651a7f',1,'asl::SocketServer::bind(int port)'],['../classasl_1_1_socket_server.html#afc75b2999f19ffc456b961bbcc1d27ac',1,'asl::SocketServer::bind(const String &amp;ip, int port)']]],
   ['bindpath_4',['bindPath',['../classasl_1_1_socket_server.html#a9a1d847b3c8fbd8769c850e275e7f21e',1,'asl::SocketServer']]],
-  ['bindtls_5',['bindtls',['../classasl_1_1_socket_server.html#a02ee755ca44d92ba25f25b23562d4f4d',1,'asl::SocketServer::bindTLS(const String &amp;ip, int port)'],['../classasl_1_1_socket_server.html#aaa0dc2a3c76cdebf846778d448848738',1,'asl::SocketServer::bindTLS(int port)']]],
+  ['bindtls_5',['bindTLS',['../classasl_1_1_socket_server.html#a02ee755ca44d92ba25f25b23562d4f4d',1,'asl::SocketServer::bindTLS(const String &amp;ip, int port)'],['../classasl_1_1_socket_server.html#aaa0dc2a3c76cdebf846778d448848738',1,'asl::SocketServer::bindTLS(int port)']]],
   ['body_6',['body',['../classasl_1_1_http_message.html#afbb7965cec4fcd29ea03a3d60ea491fe',1,'asl::HttpMessage']]],
   ['byte_7',['byte',['../group___global.html#ga0c8186d9b9b7880309c27230bbb5e69d',1,'asl']]],
   ['bytearray_8',['ByteArray',['../group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982',1,'asl']]]

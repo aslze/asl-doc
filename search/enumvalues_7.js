@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pretty_0',['PRETTY',['../structasl_1_1_json.html#a46c8a310cf4c094f8c80e1cb8dc1f911a87bf74375453ec4f1ab76108981db94e',1,'asl::Json']]]
+  ['long_0',['LONG',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58aaee055c4a5aba7d55774e4f1c01dacea',1,'asl::Date']]]
 ];

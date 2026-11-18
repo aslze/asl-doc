@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['all_20purpose_20simple_20library_0',['ASL - All-purpose Simple Library',['../index.html',1,'']]],
-  ['asl_20all_20purpose_20simple_20library_1',['ASL - All-purpose Simple Library',['../index.html',1,'']]]
+  ['2d_203d_20geometry_0',['Vectors and matrices for 2D/3D geometry',['../group___math3_d.html#autotoc_md2',1,'']]]
 ];

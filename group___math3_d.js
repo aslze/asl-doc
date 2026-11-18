@@ -1,6 +1,6 @@
 var group___math3_d =
 [
-    [ "Matrix_< T >", "classasl_1_1_matrix__.html", [
+    [ "Matrix_&lt; T &gt;", "classasl_1_1_matrix__.html", [
       [ "Matrix_", "classasl_1_1_matrix__.html#a28a9f97031be4dc612d37002d4f0be16", null ],
       [ "Matrix_", "classasl_1_1_matrix__.html#a9e75be8a377dbad4cf8963aa14b778d1", null ],
       [ "Matrix_", "classasl_1_1_matrix__.html#a2e6781b31ebf0d11e2e6b50c0c0a22e3", null ],
@@ -30,7 +30,7 @@ var group___math3_d =
       [ "transposed", "classasl_1_1_matrix__.html#a608452fc8d3cfed85ddcdeb874d6a103", null ],
       [ "with", "classasl_1_1_matrix__.html#a8257fa9ee4d96734e338f5ca99f45387", null ]
     ] ],
-    [ "Matrix3_< T >", "classasl_1_1_matrix3__.html", [
+    [ "Matrix3_&lt; T &gt;", "classasl_1_1_matrix3__.html", [
       [ "Matrix3_", "classasl_1_1_matrix3__.html#ad6749f52252ef189ba2fffc52c247ab4", null ],
       [ "Matrix3_", "classasl_1_1_matrix3__.html#a7f33fdb8f228e411e71fbcd24df46150", null ],
       [ "cols", "classasl_1_1_matrix3__.html#a8509d6f7951179378f848f5f4cc37720", null ],
@@ -56,7 +56,7 @@ var group___math3_d =
       [ "transposed", "classasl_1_1_matrix3__.html#a1fb9db55ba39efbac6caef95310ca424", null ],
       [ "with", "classasl_1_1_matrix3__.html#a2436da1cd306913fe0a126305011cfac", null ]
     ] ],
-    [ "Matrix4_< T >", "classasl_1_1_matrix4__.html", [
+    [ "Matrix4_&lt; T &gt;", "classasl_1_1_matrix4__.html", [
       [ "Matrix4_", "classasl_1_1_matrix4__.html#aebe3b6073453fcd442f4c5f66c37d603", null ],
       [ "Matrix4_", "classasl_1_1_matrix4__.html#ad2762e7753b406b1af8b6d23e5a246e6", null ],
       [ "Matrix4_", "classasl_1_1_matrix4__.html#a9f706cd7da9532a6577b19757094f1aa", null ],
@@ -90,7 +90,7 @@ var group___math3_d =
       [ "transposed", "classasl_1_1_matrix4__.html#a5e2dc95ece45df7046160aa4a83faa6e", null ],
       [ "with", "classasl_1_1_matrix4__.html#a8e39333a3ce6d524a152ab98407df9bf", null ]
     ] ],
-    [ "Quaternion_< T >", "classasl_1_1_quaternion__.html", [
+    [ "Quaternion_&lt; T &gt;", "classasl_1_1_quaternion__.html", [
       [ "Quaternion_", "classasl_1_1_quaternion__.html#a5c5ef75e45f1c7d95e00c6c9be0dedaf", null ],
       [ "Quaternion_", "classasl_1_1_quaternion__.html#a709b89781d634de3323f14437d28a0a2", null ],
       [ "angle", "classasl_1_1_quaternion__.html#a0c14f664b5a14473eadf565b05ce54d9", null ],
@@ -109,7 +109,7 @@ var group___math3_d =
       [ "operator^", "classasl_1_1_quaternion__.html#ac8bf72ed364e93843a15f429f53b712d", null ],
       [ "slerp", "classasl_1_1_quaternion__.html#ab2103f284d7c61a4f9ffd8eb88775ba2", null ]
     ] ],
-    [ "Vec2_< T >", "classasl_1_1_vec2__.html", [
+    [ "Vec2_&lt; T &gt;", "classasl_1_1_vec2__.html", [
       [ "Vec2_", "classasl_1_1_vec2__.html#a380088133c0a2ce2576ff95037cb8f66", null ],
       [ "abs", "classasl_1_1_vec2__.html#a0163c146b267ae22b1a8a464410fff74", null ],
       [ "angle", "classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9", null ],
@@ -138,7 +138,7 @@ var group___math3_d =
       [ "rotate", "classasl_1_1_vec2__.html#a6444b0e6a62214f2807114d6fb1ab3f6", null ],
       [ "operator*", "classasl_1_1_vec2__.html#af389491dd3cf5df5ecfa7dab2982d9cd", null ]
     ] ],
-    [ "Vec3_< T >", "classasl_1_1_vec3__.html", [
+    [ "Vec3_&lt; T &gt;", "classasl_1_1_vec3__.html", [
       [ "abs", "classasl_1_1_vec3__.html#aba72717995e90bb51b85ab71b258afe6", null ],
       [ "angle", "classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6", null ],
       [ "h2c", "classasl_1_1_vec3__.html#a1c3d6f126e1bf9582d4b8a5d06fc2fbb", null ],
@@ -168,7 +168,7 @@ var group___math3_d =
       [ "operator*", "classasl_1_1_vec3__.html#aebb5c221ce6016697cdcc605f23d0b6b", null ],
       [ "x", "classasl_1_1_vec3__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d", null ]
     ] ],
-    [ "Vec4_< T >", "classasl_1_1_vec4__.html", [
+    [ "Vec4_&lt; T &gt;", "classasl_1_1_vec4__.html", [
       [ "abs", "classasl_1_1_vec4__.html#a66e90a312456c5c2fd355b251dcae155", null ],
       [ "h2c", "classasl_1_1_vec4__.html#a0f1509b4cef0c620be689c31e1f5e207", null ],
       [ "length", "classasl_1_1_vec4__.html#a319b1046f6f739132918623ea8aa25d8", null ],
@@ -193,8 +193,8 @@ var group___math3_d =
       [ "operator*", "classasl_1_1_vec4__.html#a4908de90f34c0b2482551e9b80575547", null ],
       [ "x", "classasl_1_1_vec4__.html#a9a4f74af87a76a4c3dcb729cb0e68f8d", null ]
     ] ],
-    [ "orthonormalize", "group___math3_d.html#ga4edd34e564873359a8431291cc11b4b0", null ],
-    [ "solve", "group___math3_d.html#ga816d1574c9888634b0225276f55a41c0", null ],
-    [ "solveZero", "group___math3_d.html#ga4d52ea3732c6395d973134ca204e9a9a", null ],
-    [ "solveZero", "group___math3_d.html#gaf3e807767f44464bb990628293ecfafa", null ]
+    [ "asl::orthonormalize", "group___math3_d.html#ga4edd34e564873359a8431291cc11b4b0", null ],
+    [ "asl::solve", "group___math3_d.html#ga816d1574c9888634b0225276f55a41c0", null ],
+    [ "asl::solveZero", "group___math3_d.html#ga4d52ea3732c6395d973134ca204e9a9a", null ],
+    [ "asl::solveZero", "group___math3_d.html#gaf3e807767f44464bb990628293ecfafa", null ]
 ];

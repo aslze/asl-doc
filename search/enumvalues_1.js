@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['date_5fonly_0',['DATE_ONLY',['../classasl_1_1_date.html#ab4e88c89b3b7ea1735996cc4def22d58a282b0f3108fea36b6e174b42db19b411',1,'asl::Date']]]
+  ['client_5ferror_0',['CLIENT_ERROR',['../classasl_1_1_http_response.html#a90549f45cfc442187c1d769596107d3eaaca90933117f2814f84a28607bcf7ce3',1,'asl::HttpResponse']]]
 ];

@@ -17,7 +17,7 @@ var group___threading =
       [ "wait", "classasl_1_1_condition.html#a3be50c5fde5c5a2edee4efe73a92f05b", null ]
     ] ],
     [ "Lock", "classasl_1_1_lock.html", null ],
-    [ "Atomic< T >", "classasl_1_1_atomic.html", [
+    [ "Atomic&lt; T &gt;", "classasl_1_1_atomic.html", [
       [ "locked", "classasl_1_1_atomic.html#ad519fa28b974579a2a10e64dc2990ee7", null ],
       [ "mutex", "classasl_1_1_atomic.html#a4b71bb3f4acfb0d771b8280af8cbf259", null ],
       [ "operator T", "classasl_1_1_atomic.html#a54724b9dd792a6022b918eae2f393734", null ],

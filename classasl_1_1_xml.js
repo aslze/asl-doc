@@ -27,8 +27,6 @@ var classasl_1_1_xml =
     [ "remove", "classasl_1_1_xml.html#a8455224cf66e74a434efa17340af7e4b", null ],
     [ "remove", "classasl_1_1_xml.html#a06f887a6ec25372a9d534273501af0a5", null ],
     [ "removeAttr", "classasl_1_1_xml.html#ac70b89811526c62855628692ec33b4ff", null ],
-    [ "set", "classasl_1_1_xml.html#a6e79622a9a5ba557b3bbf15076fad079", null ],
-    [ "set", "classasl_1_1_xml.html#a20f6a2efb3532e94c2e74af15650b4fc", null ],
     [ "setAttr", "classasl_1_1_xml.html#a9117ae298de23d2f398b02ffe74f66b1", null ],
     [ "setTag", "classasl_1_1_xml.html#a91044149834cf325bec3c1d1d37c010e", null ],
     [ "tag", "classasl_1_1_xml.html#a5d84de68b14cfc89fdc7fd36516a9167", null ],

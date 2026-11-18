@@ -1,32 +1,30 @@
 var hierarchy =
 [
-    [ "Array< T >", "classasl_1_1_array.html", [
-      [ "Stack< Context >", "classasl_1_1_stack.html", null ],
-      [ "Stack< asl::Var >", "classasl_1_1_stack.html", null ],
-      [ "Stack< asl::String >", "classasl_1_1_stack.html", null ],
+    [ "Array&lt; T &gt;", "classasl_1_1_array.html", [
       [ "Queue< T >", "classasl_1_1_queue.html", null ],
       [ "Stack< T >", "classasl_1_1_stack.html", null ]
     ] ],
-    [ "Array2< T >", "classasl_1_1_array2.html", [
+    [ "Array2&lt; T &gt;", "classasl_1_1_array2.html", [
+      [ "Matrix_< double >", "classasl_1_1_matrix__.html", null ],
+      [ "Matrix_< float >", "classasl_1_1_matrix__.html", null ],
       [ "Matrix_< T >", "classasl_1_1_matrix__.html", null ]
     ] ],
-    [ "Array< asl::File >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::Socket >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::String >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::Thread >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::Var >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::WebSocket * >", "classasl_1_1_array.html", null ],
-    [ "Array< asl::Xml >", "classasl_1_1_array.html", null ],
-    [ "Array< byte >", "classasl_1_1_array.html", [
+    [ "Array&lt; asl::String &gt;", "classasl_1_1_array.html", [
+      [ "Stack< asl::String >", "classasl_1_1_stack.html", null ]
+    ] ],
+    [ "Array&lt; asl::Var &gt;", "classasl_1_1_array.html", [
+      [ "Stack< asl::Var >", "classasl_1_1_stack.html", null ]
+    ] ],
+    [ "Array&lt; byte &gt;", "classasl_1_1_array.html", [
       [ "StreamBuffer", "classasl_1_1_stream_buffer.html", null ]
     ] ],
-    [ "Array< Context >", "classasl_1_1_array.html", null ],
-    [ "Array< KeyVal >", "classasl_1_1_array.html", null ],
-    [ "Array< KeyValN * >", "classasl_1_1_array.html", null ],
-    [ "Array_< T, N >", "classasl_1_1_array__.html", null ],
-    [ "Atomic< T >", "classasl_1_1_atomic.html", null ],
+    [ "Array&lt; Context &gt;", "classasl_1_1_array.html", [
+      [ "Stack< Context >", "classasl_1_1_stack.html", null ]
+    ] ],
+    [ "Array_&lt; T, N &gt;", "classasl_1_1_array__.html", null ],
+    [ "Atomic&lt; T &gt;", "classasl_1_1_atomic.html", null ],
     [ "CmdArgs", "classasl_1_1_cmd_args.html", null ],
-    [ "Complex< T >", "classasl_1_1_complex.html", null ],
+    [ "Complex&lt; T &gt;", "classasl_1_1_complex.html", null ],
     [ "Condition", "classasl_1_1_condition.html", null ],
     [ "Console", "classasl_1_1_console.html", null ],
     [ "Date", "classasl_1_1_date.html", null ],
@@ -35,11 +33,9 @@ var hierarchy =
     [ "File", "classasl_1_1_file.html", [
       [ "TextFile", "classasl_1_1_text_file.html", null ]
     ] ],
-    [ "Function< R, T1, T2 >", "structasl_1_1_function.html", null ],
-    [ "Function< void >", "structasl_1_1_function.html", null ],
-    [ "Function< void, const HttpStatus & >", "structasl_1_1_function.html", null ],
-    [ "HashMap< K, T >", "classasl_1_1_hash_map.html", null ],
-    [ "HashMap< String, T >", "classasl_1_1_hash_map.html", null ],
+    [ "Function&lt; R, T1, T2 &gt;", "structasl_1_1_function.html", null ],
+    [ "HashMap&lt; K, T &gt;", "classasl_1_1_hash_map.html", null ],
+    [ "HashMap&lt; String, T &gt;", "classasl_1_1_hash_map.html", null ],
     [ "Http", "classasl_1_1_http.html", null ],
     [ "HttpMessage", "classasl_1_1_http_message.html", [
       [ "HttpRequest", "classasl_1_1_http_request.html", null ],
@@ -50,43 +46,47 @@ var hierarchy =
     [ "Json", "structasl_1_1_json.html", null ],
     [ "Library", "classasl_1_1_library.html", null ],
     [ "Lock", "classasl_1_1_lock.html", null ],
-    [ "Map< K, T >", "classasl_1_1_map.html", [
-      [ "Dic< asl::String >", "classasl_1_1_dic.html", null ],
-      [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ],
-      [ "Dic< T *(*)()>", "classasl_1_1_dic.html", null ],
-      [ "Dic< asl::Dic >", "classasl_1_1_dic.html", null ],
+    [ "Map&lt; K, T &gt;", "classasl_1_1_map.html", null ],
+    [ "Map&lt; String, asl::Array&lt; asl::String &gt; &gt;", "classasl_1_1_map.html", [
+      [ "Dic< asl::Array< asl::String > >", "classasl_1_1_dic.html", null ]
+    ] ],
+    [ "Map&lt; String, asl::Dic&lt; String &gt; &gt;", "classasl_1_1_map.html", [
+      [ "Dic< asl::Dic< String > >", "classasl_1_1_dic.html", null ]
+    ] ],
+    [ "Map&lt; String, asl::String &gt;", "classasl_1_1_map.html", [
+      [ "Dic< asl::String >", "classasl_1_1_dic.html", null ]
+    ] ],
+    [ "Map&lt; String, String &gt;", "classasl_1_1_map.html", [
+      [ "Dic< String >", "classasl_1_1_dic.html", null ],
       [ "Dic< T >", "classasl_1_1_dic.html", null ]
     ] ],
-    [ "Map< K, T >", "classasl_1_1_map.html", null ],
-    [ "Map< String, asl::Array< asl::String > >", "classasl_1_1_map.html", null ],
-    [ "Map< String, asl::Dic >", "classasl_1_1_map.html", null ],
-    [ "Map< String, asl::String >", "classasl_1_1_map.html", null ],
-    [ "Map< String, String >", "classasl_1_1_map.html", null ],
-    [ "Map< String, T * >", "classasl_1_1_map.html", null ],
-    [ "Matrix3_< T >", "classasl_1_1_matrix3__.html", null ],
-    [ "Matrix4_< T >", "classasl_1_1_matrix4__.html", null ],
+    [ "Map&lt; String, T &gt;", "classasl_1_1_map.html", [
+      [ "Dic< T *(*)()>", "classasl_1_1_dic.html", null ]
+    ] ],
+    [ "Matrix3_&lt; T &gt;", "classasl_1_1_matrix3__.html", null ],
+    [ "Matrix4_&lt; T &gt;", "classasl_1_1_matrix4__.html", null ],
     [ "Mutex", "classasl_1_1_mutex.html", null ],
     [ "Path", "classasl_1_1_path.html", null ],
-    [ "Pointer< T >", "classasl_1_1_pointer.html", null ],
-    [ "Pose_< T >", "classasl_1_1_pose__.html", null ],
+    [ "Pointer&lt; T &gt;", "classasl_1_1_pointer.html", null ],
+    [ "Pose_&lt; T &gt;", "classasl_1_1_pose__.html", null ],
     [ "ProcEnv", "classasl_1_1_proc_env.html", null ],
     [ "Process", "classasl_1_1_process.html", null ],
     [ "ProcessInfo", "classasl_1_1_process_info.html", null ],
     [ "ProcParams", "structasl_1_1_proc_params.html", null ],
-    [ "Quaternion_< T >", "classasl_1_1_quaternion__.html", null ],
+    [ "Quaternion_&lt; T &gt;", "classasl_1_1_quaternion__.html", null ],
     [ "Random", "classasl_1_1_random.html", null ],
     [ "SafeString", "classasl_1_1_safe_string.html", null ],
     [ "Semaphore", "classasl_1_1_semaphore.html", null ],
     [ "SerialPort", "classasl_1_1_serial_port.html", null ],
-    [ "Set< T >", "classasl_1_1_set.html", null ],
+    [ "Set&lt; T &gt;", "classasl_1_1_set.html", null ],
     [ "SHA1", "classasl_1_1_s_h_a1.html", null ],
     [ "SHA256", "classasl_1_1_s_h_a256.html", null ],
     [ "SharedMem", "classasl_1_1_shared_mem.html", null ],
-    [ "Singleton< T >", "classasl_1_1_singleton.html", null ],
-    [ "Singleton< Factory< T > >", "classasl_1_1_singleton.html", [
+    [ "Singleton&lt; T &gt;", "classasl_1_1_singleton.html", null ],
+    [ "Singleton&lt; Factory&lt; T &gt; &gt;", "classasl_1_1_singleton.html", [
       [ "Factory< T >", "classasl_1_1_factory.html", null ]
     ] ],
-    [ "Singleton< Log >", "classasl_1_1_singleton.html", [
+    [ "Singleton&lt; Log &gt;", "classasl_1_1_singleton.html", [
       [ "Log", "classasl_1_1_log.html", null ]
     ] ],
     [ "Socket", "classasl_1_1_socket.html", [
@@ -106,13 +106,13 @@ var hierarchy =
     [ "String", "classasl_1_1_string.html", null ],
     [ "TabularDataFile", "classasl_1_1_tabular_data_file.html", null ],
     [ "Thread", "classasl_1_1_thread.html", null ],
-    [ "ThreadGroup< Thread >", "classasl_1_1_thread_group.html", null ],
+    [ "ThreadGroup&lt; Thread &gt;", "classasl_1_1_thread_group.html", null ],
     [ "Url", "structasl_1_1_url.html", null ],
     [ "Uuid", "classasl_1_1_uuid.html", null ],
     [ "Var", "classasl_1_1_var.html", null ],
-    [ "Vec2_< T >", "classasl_1_1_vec2__.html", null ],
-    [ "Vec3_< T >", "classasl_1_1_vec3__.html", null ],
-    [ "Vec4_< T >", "classasl_1_1_vec4__.html", null ],
+    [ "Vec2_&lt; T &gt;", "classasl_1_1_vec2__.html", null ],
+    [ "Vec3_&lt; T &gt;", "classasl_1_1_vec3__.html", null ],
+    [ "Vec4_&lt; T &gt;", "classasl_1_1_vec4__.html", null ],
     [ "WebSocket", "classasl_1_1_web_socket.html", null ],
     [ "Xdl", "structasl_1_1_xdl.html", null ],
     [ "Xml", "classasl_1_1_xml.html", null ]

@@ -13,5 +13,6 @@ var classasl_1_1_http_request =
     [ "sender", "classasl_1_1_http_request.html#a9864d473e28d486dea3269ead05d8ac2", null ],
     [ "setFollowRedirects", "classasl_1_1_http_request.html#a5e633450d102b21ab7462c881e72277d", null ],
     [ "suffix", "classasl_1_1_http_request.html#a517ccb22e2a11642c2da6b045ed57e4c", null ],
-    [ "url", "classasl_1_1_http_request.html#af40daedfbb5fead741b2b714b7a52e48", null ]
+    [ "url", "classasl_1_1_http_request.html#af40daedfbb5fead741b2b714b7a52e48", null ],
+    [ "useCert", "classasl_1_1_http_request.html#a6ad5c2153950961ffb2606abb35d5967", null ]
 ];

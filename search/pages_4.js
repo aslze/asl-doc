@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simple_20library_0',['ASL - All-purpose Simple Library',['../index.html',1,'']]]
+  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]]
 ];
