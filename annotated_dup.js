@@ -5,7 +5,7 @@ var annotated_dup =
       [ "Array_", "classasl_1_1_array__.html", "classasl_1_1_array__" ],
       [ "Array2", "classasl_1_1_array2.html", "classasl_1_1_array2" ],
       [ "CmdArgs", "classasl_1_1_cmd_args.html", "classasl_1_1_cmd_args" ],
-      [ "Complex", "classasl_1_1_complex.html", "classasl_1_1_complex" ],
+      [ "Complex_", "classasl_1_1_complex__.html", "classasl_1_1_complex__" ],
       [ "Console", "classasl_1_1_console.html", "classasl_1_1_console" ],
       [ "DateData", "structasl_1_1_date_data.html", null ],
       [ "Date", "classasl_1_1_date.html", "classasl_1_1_date" ],

@@ -19,8 +19,8 @@ var searchData=
   ['execute_16',['execute',['../classasl_1_1_process.html#aeec6db228c3e7129e3e66a9d3bb6297a',1,'asl::Process']]],
   ['exists_17',['exists',['../classasl_1_1_directory.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::Directory::exists()'],['../classasl_1_1_file.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::File::exists()']]],
   ['exitstatus_18',['exitStatus',['../classasl_1_1_process.html#a674b88c61390cb2cd29f2eeddbe4a2a9',1,'asl::Process']]],
-  ['exp_19',['exp',['../classasl_1_1_complex.html#a0341a25e9a17ebb0a7f89496592e3579',1,'asl::Complex']]],
-  ['exp_5fi_20',['exp_i',['../classasl_1_1_complex.html#ad988e173c7234870690ea388e899a950',1,'asl::Complex::exp_i(T t)'],['../classasl_1_1_complex.html#a2cd6f43b039c9a8e3090a506ef6b85a4',1,'asl::Complex::exp_i(T t) const']]],
+  ['exp_19',['exp',['../classasl_1_1_complex__.html#a0c2ee7d2c88b1c1a5159f9a8ee9476bc',1,'asl::Complex_']]],
+  ['exp_5fi_20',['exp_i',['../classasl_1_1_complex__.html#aeff57ca0f68c047201b4b195283d3b8b',1,'asl::Complex_::exp_i(T t)'],['../classasl_1_1_complex__.html#a15a8827299a30ccb1bb4e2cb80236413',1,'asl::Complex_::exp_i(T t) const']]],
   ['extend_21',['extend',['../classasl_1_1_var.html#a9d69cb6ac87cedeedba1813984ec6eca',1,'asl::Var']]],
   ['extension_22',['extension',['../classasl_1_1_file.html#a532cbcfeabf2e538b6f8c84d6d94c9a6',1,'asl::File::extension()'],['../classasl_1_1_path.html#a532cbcfeabf2e538b6f8c84d6d94c9a6',1,'asl::Path::extension()']]]
 ];

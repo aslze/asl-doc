@@ -186,8 +186,6 @@ template&lt;class T&gt; </td></tr>
 <tr class="memitem:ga15efdb0f30378291db86ad3b05b59abb" id="r_ga15efdb0f30378291db86ad3b05b59abb"><td class="memTemplParams" colspan="2">template&lt;typename E&gt; </td></tr>
 <tr class="memitem:ga15efdb0f30378291db86ad3b05b59abb template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga15efdb0f30378291db86ad3b05b59abb">shuffle</a> (E &amp;a, <a class="el" href="classasl_1_1_random.html">Random</a> &amp;rnd=random)</td></tr>
 <tr class="memdesc:ga15efdb0f30378291db86ad3b05b59abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles an array of elements in place.  <br /></td></tr>
-<tr class="memitem:gaea9cb7030efb99d0c3041b1d4590db96" id="r_gaea9cb7030efb99d0c3041b1d4590db96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classasl_1_1_dic.html">Dic</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaea9cb7030efb99d0c3041b1d4590db96">split</a> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;s, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;sep1, const <a class="el" href="classasl_1_1_string.html">String</a> &amp;sep2)</td></tr>
-<tr class="memdesc:gaea9cb7030efb99d0c3041b1d4590db96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string and creates a <span class="tt"><a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a></span> using <span class="tt">sep1</span> as pair separator, and <span class="tt">sep2</span> as key/value separator.  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="gaf4fcfe5872c70e4998812a767e267925" name="gaf4fcfe5872c70e4998812a767e267925"></a>
@@ -298,7 +296,7 @@ template&lt;typename E&gt; </div>
 </div><div class="memdoc">
 
 <p>Shuffles an array of elements in place. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
 
 </div>
 </div>
@@ -329,44 +327,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Shuffles an array of elements in place (n items starting at a). </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
-
-</div>
-</div>
-<a id="gaea9cb7030efb99d0c3041b1d4590db96" name="gaea9cb7030efb99d0c3041b1d4590db96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaea9cb7030efb99d0c3041b1d4590db96">&#9670;&#160;</a></span>split()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classasl_1_1_dic.html">Dic</a>&lt; <a class="el" href="classasl_1_1_string.html">String</a> &gt; split </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sep1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classasl_1_1_string.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sep2</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Parses a string and creates a <span class="tt"><a class="el" href="classasl_1_1_dic.html" title="Dic is a particular case of Map in which keys are strings.">Dic</a></span> using <span class="tt">sep1</span> as pair separator, and <span class="tt">sep2</span> as key/value separator. </p>
-<p>It is the opposite of <span class="tt">join()</span>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated</a></b></dt><dd>Use String::split(s1, s2) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated</a></b></dt><dd>Use <a class="el" href="classasl_1_1_random.html#a825fd10b5dc7f87ae270ced27b28408b" title="Shuffles an array of elements in place (n items starting at a).">Random::shuffle()</a> </dd></dl>
 
 </div>
 </div>

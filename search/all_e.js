@@ -1,8 +1,8 @@
 var searchData=
 [
   ['macros_0',['Factory class and macros',['../group___factory.html',1,'']]],
-  ['magnitude_1',['magnitude',['../classasl_1_1_complex.html#a72ececb75ae72a493f34b27c064c3041',1,'asl::Complex']]],
-  ['magnitude2_2',['magnitude2',['../classasl_1_1_complex.html#a652693807481fd69ee6bc455fa733f54',1,'asl::Complex']]],
+  ['magnitude_1',['magnitude',['../classasl_1_1_complex__.html#a72ececb75ae72a493f34b27c064c3041',1,'asl::Complex_']]],
+  ['magnitude2_2',['magnitude2',['../classasl_1_1_complex__.html#a652693807481fd69ee6bc455fa733f54',1,'asl::Complex_']]],
   ['map_3',['Map',['../classasl_1_1_map.html',1,'Map&lt; K, T &gt;'],['../classasl_1_1_map.html#a34d2b2e3b342a958b7006fe8f38ae13a',1,'asl::Map::Map()']]],
   ['map_4',['map',['../classasl_1_1_array.html#a88b8561f01f01e0a481f9c2223e99037',1,'asl::Array']]],
   ['map_3c_20k_2c_20t_20_3e_5',['Map&lt; K, T &gt;',['../classasl_1_1_map.html',1,'asl']]],

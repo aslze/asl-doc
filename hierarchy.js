@@ -24,7 +24,7 @@ var hierarchy =
     [ "Array_&lt; T, N &gt;", "classasl_1_1_array__.html", null ],
     [ "Atomic&lt; T &gt;", "classasl_1_1_atomic.html", null ],
     [ "CmdArgs", "classasl_1_1_cmd_args.html", null ],
-    [ "Complex&lt; T &gt;", "classasl_1_1_complex.html", null ],
+    [ "Complex_&lt; T &gt;", "classasl_1_1_complex__.html", null ],
     [ "Condition", "classasl_1_1_condition.html", null ],
     [ "Console", "classasl_1_1_console.html", null ],
     [ "Date", "classasl_1_1_date.html", null ],

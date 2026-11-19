@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['magnitude_0',['magnitude',['../classasl_1_1_complex.html#a72ececb75ae72a493f34b27c064c3041',1,'asl::Complex']]],
-  ['magnitude2_1',['magnitude2',['../classasl_1_1_complex.html#a652693807481fd69ee6bc455fa733f54',1,'asl::Complex']]],
+  ['magnitude_0',['magnitude',['../classasl_1_1_complex__.html#a72ececb75ae72a493f34b27c064c3041',1,'asl::Complex_']]],
+  ['magnitude2_1',['magnitude2',['../classasl_1_1_complex__.html#a652693807481fd69ee6bc455fa733f54',1,'asl::Complex_']]],
   ['map_2',['Map',['../classasl_1_1_map.html#a34d2b2e3b342a958b7006fe8f38ae13a',1,'asl::Map']]],
   ['map_3',['map',['../classasl_1_1_array.html#a88b8561f01f01e0a481f9c2223e99037',1,'asl::Array']]],
   ['map_5f_4',['map_',['../classasl_1_1_array.html#a795a6b632768183a86ccd6f3cf332183',1,'asl::Array']]],

@@ -102,7 +102,7 @@ $(function(){initNavTree('group___global.html','',''); });
 <div class="ttc" id="agroup___global_html_ga0b45d14ba5e1a942da23a731d636f7fd"><div class="ttname"><a href="#ga0b45d14ba5e1a942da23a731d636f7fd">asl::now</a></div><div class="ttdeci">double now()</div><div class="ttdoc">Returns the current time as a real number in seconds since a fixed epoch (precision is platform-depen...</div></div>
 </div><!-- fragment --><p>Convert radians to degrees and limit to 0-360 deg interval:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> degrees = <a class="code hl_function" href="#ga76e3c9c60522afdc646cadb352ab3843">clamp</a>(rad2deg(angle), 0, 360);</div>
-<div class="ttc" id="agroup___global_html_ga76e3c9c60522afdc646cadb352ab3843"><div class="ttname"><a href="#ga76e3c9c60522afdc646cadb352ab3843">asl::clamp</a></div><div class="ttdeci">T clamp(T x, C a, C b)</div><div class="ttdoc">Clamps the value of x to make it lie inside the [a,b] interval.</div><div class="ttdef"><b>Definition</b> defs.h:208</div></div>
+<div class="ttc" id="agroup___global_html_ga76e3c9c60522afdc646cadb352ab3843"><div class="ttname"><a href="#ga76e3c9c60522afdc646cadb352ab3843">asl::clamp</a></div><div class="ttdeci">T clamp(T x, C a, C b)</div><div class="ttdoc">Clamps the value of x to make it lie inside the [a,b] interval.</div><div class="ttdef"><b>Definition</b> defs.h:206</div></div>
 </div><!-- fragment --><p>Get random numbers in an interval:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> x = random(-1.0, 1.0);</div>
 <div class="line"> </div>
@@ -112,8 +112,9 @@ $(function(){initNavTree('group___global.html','',''); });
 </div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0c8186d9b9b7880309c27230bbb5e69d" id="r_ga0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
-<tr class="memdesc:ga0c8186d9b9b7880309c27230bbb5e69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An unsigned byte.  <br /></td></tr>
+<tr class="memitem:ga0c8186d9b9b7880309c27230bbb5e69d" id="r_ga0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top"><a id="ga0c8186d9b9b7880309c27230bbb5e69d" name="ga0c8186d9b9b7880309c27230bbb5e69d"></a>
+typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>byte</b></td></tr>
+<tr class="memdesc:ga0c8186d9b9b7880309c27230bbb5e69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An unsigned byte. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -175,25 +176,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>usleep</b> (int us)</
 <a class="el" href="group___containers.html#ga83ec16f5e316b5d33c0feed881d2c982">ByteArray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>decodeHex</b> (const <a class="el" href="classasl_1_1_string.html">String</a> &amp;src)</td></tr>
 <tr class="memdesc:gab79893b28cdeb317a7c8d1c2e9b6b1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a hexadecimal encoded string into a byte array. <br /></td></tr>
 </table>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
-<a id="ga0c8186d9b9b7880309c27230bbb5e69d" name="ga0c8186d9b9b7880309c27230bbb5e69d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c8186d9b9b7880309c27230bbb5e69d">&#9670;&#160;</a></span>byte</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef unsigned char <a class="el" href="#ga0c8186d9b9b7880309c27230bbb5e69d">byte</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An unsigned byte. </p>
-<p>This is also included in the global scope (<span class="tt">using <a class="el" href="#ga0c8186d9b9b7880309c27230bbb5e69d" title="An unsigned byte.">asl::byte</a>;</span>) for compatibility with old code, unless <span class="tt">ASL_NO_GLOBAL_BYTE</span> is defined.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated</a></b></dt><dd>This type will not be added to the global scope anymore; code should use <span class="tt"><a class="el" href="#ga0c8186d9b9b7880309c27230bbb5e69d" title="An unsigned byte.">asl::byte</a></span> </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

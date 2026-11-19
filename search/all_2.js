@@ -15,7 +15,7 @@ var searchData=
   ['and_20matrices_20of_20any_20size_12',['Vectors and matrices of any size',['../group___math3_d.html#autotoc_md4',1,'']]],
   ['and_20servers_13',['HTTP clients and servers',['../group___h_t_t_p.html',1,'']]],
   ['and_20use_14',['Compilation and use',['../index.html#autotoc_md0',1,'']]],
-  ['angle_15',['angle',['../classasl_1_1_complex.html#a0c14f664b5a14473eadf565b05ce54d9',1,'asl::Complex::angle()'],['../classasl_1_1_quaternion__.html#a0c14f664b5a14473eadf565b05ce54d9',1,'asl::Quaternion_::angle()'],['../classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9',1,'asl::Vec2_::angle() const'],['../classasl_1_1_vec2__.html#ab9f5fac6baccb72afe87ed680fcdfaf5',1,'asl::Vec2_::angle(const Vec2_ &amp;b) const'],['../classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6',1,'asl::Vec3_::angle()']]],
+  ['angle_15',['angle',['../classasl_1_1_complex__.html#a0c14f664b5a14473eadf565b05ce54d9',1,'asl::Complex_::angle()'],['../classasl_1_1_quaternion__.html#a0c14f664b5a14473eadf565b05ce54d9',1,'asl::Quaternion_::angle()'],['../classasl_1_1_vec2__.html#a0c14f664b5a14473eadf565b05ce54d9',1,'asl::Vec2_::angle() const'],['../classasl_1_1_vec2__.html#ab9f5fac6baccb72afe87ed680fcdfaf5',1,'asl::Vec2_::angle(const Vec2_ &amp;b) const'],['../classasl_1_1_vec3__.html#abca2da47afe8fa19f32ae25ef1e0d8f6',1,'asl::Vec3_::angle()']]],
   ['any_20size_16',['Vectors and matrices of any size',['../group___math3_d.html#autotoc_md4',1,'']]],
   ['appconfig_17',['APPCONFIG',['../classasl_1_1_directory.html#a6ea26687fc6b796b4e410106d5b8bc68ae2ea3bab0f570eb3ec195332a72ae4df',1,'asl::Directory']]],
   ['appdata_18',['APPDATA',['../classasl_1_1_directory.html#a6ea26687fc6b796b4e410106d5b8bc68ab0641a3f5bcb1e08ee72afe9583ff5e6',1,'asl::Directory']]],

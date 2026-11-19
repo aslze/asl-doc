@@ -147,6 +147,5 @@ var group___containers =
     [ "asl::array", "group___containers.html#ga1d6758777ca90caacfeb64748130f4a3", null ],
     [ "asl::array_", "group___containers.html#gadd6d9185d04585c993fcb797f948b6f5", null ],
     [ "asl::shuffle", "group___containers.html#ga15efdb0f30378291db86ad3b05b59abb", null ],
-    [ "asl::shuffle", "group___containers.html#ga9a320be4f2f13b4c5910d4572c020540", null ],
-    [ "asl::split", "group___containers.html#gaea9cb7030efb99d0c3041b1d4590db96", null ]
+    [ "asl::shuffle", "group___containers.html#ga9a320be4f2f13b4c5910d4572c020540", null ]
 ];

@@ -18,7 +18,7 @@ var searchData=
   ['execute_15',['execute',['../classasl_1_1_process.html#aeec6db228c3e7129e3e66a9d3bb6297a',1,'asl::Process']]],
   ['exists_16',['exists',['../classasl_1_1_directory.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::Directory::exists()'],['../classasl_1_1_file.html#aa7d8623150e6d43ab4bf7493aa8cbc1a',1,'asl::File::exists()']]],
   ['exitstatus_17',['exitStatus',['../classasl_1_1_process.html#a674b88c61390cb2cd29f2eeddbe4a2a9',1,'asl::Process']]],
-  ['exp_5fi_18',['exp_i',['../classasl_1_1_complex.html#a2cd6f43b039c9a8e3090a506ef6b85a4',1,'asl::Complex']]],
+  ['exp_5fi_18',['exp_i',['../classasl_1_1_complex__.html#a15a8827299a30ccb1bb4e2cb80236413',1,'asl::Complex_']]],
   ['extend_19',['extend',['../classasl_1_1_var.html#a9d69cb6ac87cedeedba1813984ec6eca',1,'asl::Var']]],
   ['extension_20',['extension',['../classasl_1_1_file.html#a532cbcfeabf2e538b6f8c84d6d94c9a6',1,'asl::File::extension()'],['../classasl_1_1_path.html#a532cbcfeabf2e538b6f8c84d6d94c9a6',1,'asl::Path::extension()']]]
 ];
